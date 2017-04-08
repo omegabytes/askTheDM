@@ -10,37 +10,55 @@
 
 'use strict';
 
-const Alexa = require('alexa-sdk');
-const recipes = require('./spells');
+var Alexa = require('alexa-sdk');
+var spells = require('./spells');
 
-const APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
+var APP_ID = amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690;
 
-const handlers = {
-    'NewSession': function () {
-        this.attributes.speechOutput = this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+    alexa.APP_ID = APP_ID;
+    // To enable string internationalization (i18n) features, set a resources object.
+    alexa.resources = languageStrings;
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+}
+
+var handlers = {
+    // Use LaunchRequest, instead of NewSession if you want to use the one-shot model
+    // Alexa, ask [my-skill-invocation-name] to (do something)...
+    'LaunchRequest': function () {
+        this.attributes['speechOutput'] = this.t("WELCOME_MESSAGE", this.t("SKILL_NAME"));
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
-        this.attributes.repromptSpeech = this.t('WELCOME_REPROMT');
-        this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+        this.attributes['repromptSpeech'] = this.t("WELCOME_REPROMPT");
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
-    'RecipeIntent': function () {
+    // 'NewSession': function () {
+    //     this.attributes.speechOutput = this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
+    //     // If the user either does not reply to the welcome message or says something that is not
+    //     // understood, they will be prompted again with this text.
+    //     this.attributes.repromptSpeech = this.t('WELCOME_REPROMT');
+    //     this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+    // },
+    'SpellsIntent': function () {
         const itemSlot = this.event.request.intent.slots.Item;
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
         }
 
-        const cardTitle = this.t('DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
-        const myRecipes = this.t('SPELLS');
-        const recipe = myRecipes[itemName];
+        var cardTitle = this.t('DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        var mySpells = this.t('SPELLS');
+        var spell = myRecipes[itemName];
 
-        if (recipe) {
-            this.attributes.speechOutput = recipe;
-            this.attributes.repromptSpeech = this.t('DESCRIPTION_REPEAT_MESSAGE');
-            this.emit(':askWithCard', recipe, this.attributes.repromptSpeech, cardTitle, recipe);
+        if (spell) {
+            this.attributes['speechOutput'] = spell;
+            this.attributes['repromptSpeech'] = this.t('DESCRIPTION_REPEAT_MESSAGE');
+            this.emit(':tellWithCard', spell, this.attributes['repromptSpeech'], cardTitle, spell);
         } else {
-            let speechOutput = this.t('DESCRIPTION_NOT_FOUND_MESSAGE');
-            const repromptSpeech = this.t('DESCRIPTION_NOT_FOUND_REPROMPT');
+            var speechOutput = this.t('DESCRIPTION_NOT_FOUND_MESSAGE');
+            var repromptSpeech = this.t('DESCRIPTION_NOT_FOUND_REPROMPT');
             if (itemName) {
                 speechOutput += this.t('DESCRIPTION_NOT_FOUND_WITH_ITEM_NAME', itemName);
             } else {
@@ -48,8 +66,11 @@ const handlers = {
             }
             speechOutput += repromptSpeech;
 
-            this.attributes.speechOutput = speechOutput;
-            this.attributes.repromptSpeech = repromptSpeech;
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            // this.attributes.speechOutput = speechOutput;
+            // this.attributes.repromptSpeech = repromptSpeech;
 
             this.emit(':ask', speechOutput, repromptSpeech);
         }
@@ -57,10 +78,12 @@ const handlers = {
     'AMAZON.HelpIntent': function () {
         this.attributes.speechOutput = this.t('HELP_MESSAGE');
         this.attributes.repromptSpeech = this.t('HELP_REPROMT');
-        this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
+        // this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
     },
     'AMAZON.RepeatIntent': function () {
-        this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
+        // this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
     },
     'AMAZON.StopIntent': function () {
         this.emit('SessionEndedRequest');
@@ -71,10 +94,18 @@ const handlers = {
     'SessionEndedRequest': function () {
         this.emit(':tell', this.t('STOP_MESSAGE'));
     },
+    'Unhandled': function () {
+        this.attributes['speechOutput'] = this.t("HELP_MESSAGE");
+        this.attributes['repromptSpeech'] = this.t("HELP_REPROMPT");
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
+        // this.attributes.speechOutput = this.t("HELP_MESSAGE");
+        // this.attributes.repromptSpeech = this.t("HELP_REPROMPT");
+        // this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech)
+    }
 };
 
 const languageStrings = {
-    'en-US': {
+    'en': {
         translation: {
             SPELLS: spells.SPELLS_EN_US,
             SKILL_NAME: 'Ask the DM',
@@ -90,14 +121,20 @@ const languageStrings = {
             DESCRIPTION_NOT_FOUND_WITHOUT_ITEM_NAME: 'that information. ',
             DESCRIPTION_NOT_FOUND_REPROMPT: 'What else can I help with?',
         }
+    },
+    "en-US": {
+        "translation" : {
+            "SPELLS" : spells.SPELLS_EN_US,
+            "SKILL_NAME" : "American Ask the DM"
+        }
     }
 };
 
-exports.handler = (event, context) => {
-    const alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
-    // To enable string internationalization (i18n) features, set a resources object.
-    alexa.resources = languageStrings;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
-};
+// exports.handler = (event, context) => {
+//     const alexa = Alexa.handler(event, context);
+//     alexa.APP_ID = APP_ID;
+//     // To enable string internationalization (i18n) features, set a resources object.
+//     alexa.resources = languageStrings;
+//     alexa.registerHandlers(handlers);
+//     alexa.execute();
+// };
