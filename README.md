@@ -1,8 +1,8 @@
 # Ask The DM
-## D&D Alexa Skill
-### Version 0.1
+### D&D Alexa Skill
+#### Version 0.1
 
-### Alex Gaesser 2017
+#### Alex Gaesser 2017
 
 Ask the DM is a quick-reference tool designed for use during Dungeons and Dragons play sessions. The skill provides spell descriptions to players through a voice-command interface.
 
