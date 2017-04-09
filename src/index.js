@@ -1,4 +1,4 @@
-        /* eslint-disable  func-names */
+/* eslint-disable  func-names */
 /* eslint quote-props: ["error", "consistent"]*/
 /**
  * This sample demonstrates a sample skill built with Amazon Alexa Skills nodejs
@@ -13,11 +13,11 @@
 var Alexa = require('alexa-sdk');
 var spells = require('./spells');
 
-var APP_ID = amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690;
+//var APP_ID = amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690;
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
+    //alexa.APP_ID = APP_ID;
     // To enable string internationalization (i18n) features, set a resources object.
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
@@ -50,7 +50,7 @@ var handlers = {
 
         var cardTitle = this.t('DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
         var mySpells = this.t('SPELLS');
-        var spell = myRecipes[itemName];
+        var spell = mySpells[itemName];
 
         if (spell) {
             this.attributes['speechOutput'] = spell;
