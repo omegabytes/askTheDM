@@ -21,4 +21,4 @@ class SpellItem(scrapy.Item):
     duration = scrapy.Field()
     description = scrapy.Field()
     source = scrapy.Field()
-    
+    url = scrapy.Field()
