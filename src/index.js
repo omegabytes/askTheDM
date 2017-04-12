@@ -3,7 +3,7 @@
 var Alexa = require('alexa-sdk');
 var APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
 var spells = require('./spells');
-// var spellObjects = require('./spells.json')
+
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -44,7 +44,18 @@ var handlers = {
         var spellAttributes = this.t("ATTRIBUTES");
         var spellAttribute = spellAttributes[attributeName];
 
-        if (spell) {
+        //if the user asks for the attribute of a spell
+        if (spell && spellAttribute) {
+            if (spellAttribute == "range") {
+                var range = spell.range;
+                this.attributes['speechOutput'] = range;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', range, this.attributes['repromptSpeech'], cardTitle, range);
+            }
+        }
+
+        //if the user asks only about the spell
+        else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell;
             this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
             this.emit(':tellWithCard', spell, this.attributes['repromptSpeech'], cardTitle, spell);
