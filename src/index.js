@@ -46,61 +46,9 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
-            //return the range
-            if (spellAttribute == "range") {
-                var range = spell.range;
-                this.attributes['speechOutput'] = range;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', range, this.attributes['repromptSpeech'], cardTitle, range);
-            }
-
-            //return the casting time
-            if (spellAttribute == "castingTime") {
-                var castingTime = spell.castingTime;
-                this.attributes['speechOutput'] = castingTime;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', castingTime, this.attributes['repromptSpeech'], cardTitle, castingTime);
-            }
-
-            //return the duration
-            if (spellAttribute == "duration") {
-                var duration = spell.duration;
-                this.attributes['speechOutput'] = duration;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', duration, this.attributes['repromptSpeech'], cardTitle, duration);
-            }
-
-            //return the spell type
-            if (spellAttribute == "spellType") {
-                var spellType = spell.spellType;
-                this.attributes['speechOutput'] = spellType;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', spellType, this.attributes['repromptSpeech'], cardTitle, spellType);
-            }
-
-            //return the components
-            if (spellAttribute == "components") {
-                var components = spell.components;
-                this.attributes['speechOutput'] = components;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', components, this.attributes['repromptSpeech'], cardTitle, components);
-            }
-
-            //return the short description
-            if (spellAttribute == "shortDescription") {
-                var shortDescription = spell.shortDescription;
-                this.attributes['speechOutput'] = shortDescription;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', shortDescription, this.attributes['repromptSpeech'], cardTitle, shortDescription);
-            }
-
-            //return the long description
-            if (spellAttribute == "longDescription") {
-                var longDescription = spell.longDescription;
-                this.attributes['speechOutput'] = longDescription;
-                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-                this.emit(':tellWithCard', longDescription, this.attributes['repromptSpeech'], cardTitle, longDescription);
-            }
+            this.attributes['speechOutput'] = spell[spellAttribute];
+            this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+            this.emit(':tellWithCard', spell[spellAttribute], this.attributes['repromptSpeech'], cardTitle, spell[spellAttribute]);
         }
 
         //if the user asks only about the spell
@@ -173,29 +121,5 @@ var languageStrings = {
             "ATTRIBUTES" : spells.ATTRIBUTES_EN_US,
             "SKILL_NAME" : "Ask the DM"
         }
-    },
-    "en-GB": {
-        "translation": {
-            "SPELLS": spells.SPELL_EN_GB,
-            "SKILL_NAME": "British Ask the DM"
-        }
     }
-    // },
-    // "de": {
-    //     "translation": {
-    //         "RECIPES" : recipes.RECIPE_DE_DE,
-    //         "SKILL_NAME" : "Assistent für Minecraft in Deutsch",
-    //         "WELCOME_MESSAGE": "Willkommen bei %s. Du kannst beispielsweise die Frage stellen: Welche Rezepte gibt es für eine Truhe? ... Nun, womit kann ich dir helfen?",
-    //         "WELCOME_REPROMPT": "Wenn du wissen möchtest, was du sagen kannst, sag einfach „Hilf mir“.",
-    //         "DISPLAY_CARD_TITLE": "%s - Rezept für %s.",
-    //         "HELP_MESSAGE": "Du kannst beispielsweise Fragen stellen wie „Wie geht das Rezept für“ oder du kannst „Beenden“ sagen ... Wie kann ich dir helfen?",
-    //         "HELP_REPROMPT": "Du kannst beispielsweise Sachen sagen wie „Wie geht das Rezept für“ oder du kannst „Beenden“ sagen ... Wie kann ich dir helfen?",
-    //         "STOP_MESSAGE": "Auf Wiedersehen!",
-    //         "RECIPE_REPEAT_MESSAGE": "Sage einfach „Wiederholen“.",
-    //         "RECIPE_NOT_FOUND_MESSAGE": "Tut mir leid, ich kenne derzeit ",
-    //         "RECIPE_NOT_FOUND_WITH_ITEM_NAME": "das Rezept für %s nicht. ",
-    //         "RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME": "dieses Rezept nicht. ",
-    //         "RECIPE_NOT_FOUND_REPROMPT": "Womit kann ich dir sonst helfen?"
-    //     }
-    // }
 };
