@@ -46,11 +46,60 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
+            //return the range
             if (spellAttribute == "range") {
                 var range = spell.range;
                 this.attributes['speechOutput'] = range;
                 this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
                 this.emit(':tellWithCard', range, this.attributes['repromptSpeech'], cardTitle, range);
+            }
+
+            //return the casting time
+            if (spellAttribute == "castingTime") {
+                var castingTime = spell.castingTime;
+                this.attributes['speechOutput'] = castingTime;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', castingTime, this.attributes['repromptSpeech'], cardTitle, castingTime);
+            }
+
+            //return the duration
+            if (spellAttribute == "duration") {
+                var duration = spell.duration;
+                this.attributes['speechOutput'] = duration;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', duration, this.attributes['repromptSpeech'], cardTitle, duration);
+            }
+
+            //return the spell type
+            if (spellAttribute == "spellType") {
+                var spellType = spell.spellType;
+                this.attributes['speechOutput'] = spellType;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', spellType, this.attributes['repromptSpeech'], cardTitle, spellType);
+            }
+
+            //return the components
+            if (spellAttribute == "components") {
+                var components = spell.components;
+                this.attributes['speechOutput'] = components;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', components, this.attributes['repromptSpeech'], cardTitle, components);
+            }
+
+            //return the short description
+            if (spellAttribute == "shortDescription") {
+                var shortDescription = spell.shortDescription;
+                this.attributes['speechOutput'] = shortDescription;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', shortDescription, this.attributes['repromptSpeech'], cardTitle, shortDescription);
+            }
+
+            //return the long description
+            if (spellAttribute == "longDescription") {
+                var longDescription = spell.longDescription;
+                this.attributes['speechOutput'] = longDescription;
+                this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
+                this.emit(':tellWithCard', longDescription, this.attributes['repromptSpeech'], cardTitle, longDescription);
             }
         }
 
