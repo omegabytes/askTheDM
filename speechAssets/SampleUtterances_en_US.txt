@@ -1,1 +1,12 @@
-SpellIntent what is {Spell}
+SpellsIntent what is {Spell}?
+SpellsIntent what's {Spell}?
+SpellsIntent look up {Spell}
+SpellsIntent tell me about {Spell}
+SpellsIntent I forget what {Spell} is
+SpellsIntent to get information on {Spell}
+SpellsIntent to get info on {Spell}
+SpellsIntent get information on {Spell}
+SpellsIntent get info on {Spell}
+SpellsIntent about {Spell}
+
+SpellsIntent what is the {Attribute} of {Spell}?
