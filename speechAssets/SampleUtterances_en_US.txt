@@ -8,5 +8,35 @@ SpellsIntent to get info on {Spell}
 SpellsIntent get information on {Spell}
 SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
-
 SpellsIntent what is the {Attribute} of {Spell}?
+SpellsIntent what's the {Attribute} of {Spell}?
+SpellsIntent what is {Spell}'s {Attribute}?
+SpellsIntent what's {Spell}'s {Attribute}?
+SpellsIntent to get the {Attribute} of {Spell}
+SpellsIntent get the {Attribute} of {Spell}
+
+ItemsIntent lookup {Item}
+ItemsIntent what is {Item}?
+ItemsIntent what is a {Item}?
+ItemsIntent what is an {Item}?
+ItemsIntent what does a {Item} do?
+ItemsIntent what does an {Item} do?
+ItemsIntent tell me about {Item}
+ItemsIntent I forget what {Item} is
+ItemsIntent I forget what a {Item} is
+ItemsIntent I forget what an {Item} is
+ItemsIntent to get information on {Item}
+ItemsIntent to get info on {Item}
+ItemsIntent get information on {Item}
+ItemsIntent get info on {Item}
+ItemsIntent about {Item}
+ItemsIntent what is the {Attribute} of {Item}?
+ItemsIntent what's the {Attribute} of {Item}?
+SpellsIntent what is the {Items}'s {Attribute}?
+SpellsIntent what is a {Items}'s {Attribute}?
+SpellsIntent what is an {Items}'s {Attribute}?
+SpellsIntent what's the {Items}'s {Attribute}?
+SpellsIntent what's a {Items}'s {Attribute}?
+SpellsIntent what's an {Items}'s {Attribute}?
+SpellsIntent to get the {Attribute} of {Item}
+SpellsIntent get the {Attribute} of {Item}
