@@ -1,5 +1,16 @@
 [
-{"spellclass": "Conjuration", "description": "", "level": "Cantrip", "url": "https://www.dnd-spells.com/spell/acid-splash", "spellrange": "60 feet", "casting_time": "1 Action", "source": "", "intro": "", "components": "V, S", "duration": "Instantaneous", "name": "Acid Splash"},
+{"spellclass": "Conjuration",
+ "description": "",
+ "level": "Cantrip",
+ "url": "https://www.dnd-spells.com/spell/acid-splash", 
+ "spellrange": "60 feet",
+ "casting_time": "1 Action",
+ "source": "", 
+ "intro": "", 
+ "components": "V, S", 
+ "duration": "Instantaneous", 
+ "name": "Acid Splash"},
+ 
 {"spellclass": "Divination", "description": "", "level": " 3", "url": "https://www.dnd-spells.com/spell/clairvoyance", "spellrange": "1 mile", "casting_time": "10 Minutes", "source": "", "intro": "", "components": "V, S, M  (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing", "duration": "Concentration, up to 10 minutes", "name": "Clairvoyance"},
 {"spellclass": "Abjuration", "description": "", "level": " 5", "url": "https://www.dnd-spells.com/spell/circle-of-power", "spellrange": "Self (30-foot radius)", "casting_time": "1 Action", "source": "", "intro": "", "components": "V", "duration": "Concentration, up to 10 minutes", "name": "Circle of Power"},
 {"spellclass": "Enchantment", "description": "", "level": " 1", "url": "https://www.dnd-spells.com/spell/command", "spellrange": "60 feet", "casting_time": "1 Action", "source": "", "intro": "", "components": "V", "duration": "1 round", "name": "Command"},
