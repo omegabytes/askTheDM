@@ -13,7 +13,7 @@ module.exports = {
 "move earth": {
     "url": "https://www.dnd-spells.com/spell/move-earth", 
     "range": "120 feet", 
-    "components": "Verbal, Somatic, Material (an iron blade and a small bag containing a mixture of soils\u2014clay, loam, and sand)", 
+    "components": "Verbal, Somatic, Material (an iron blade and a small bag containing a mixture of soils, clay, loam, and sand)", 
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 2 hours", 
     "castingTime": "1 Action", 
@@ -390,7 +390,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "heroes\u2019 feast": {
+  "heroes feast": {
     "url": "https://www.dnd-spells.com/spell/heroes-feast", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes)", 
@@ -480,7 +480,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "crusader\u2019s mantle": {
+  "crusader's mantle": {
     "url": "https://www.dnd-spells.com/spell/crusaders-mantle", 
     "range": "Self", 
     "components": "Verbal", 
@@ -503,7 +503,7 @@ module.exports = {
   "jump": {
     "url": "https://www.dnd-spells.com/spell/jump", 
     "range": "Touch", 
-    "components": "Verbal, Somatic, Material (a grasshopper\u2019s hind leg)", 
+    "components": "Verbal, Somatic, Material (a grasshopper's hind leg)", 
     "spellType": "level 1 Transmutation", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
@@ -630,7 +630,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "tasha\u2019s hideous laughter": {
+  "tasha's hideous laughter": {
     "url": "https://www.dnd-spells.com/spell/tashas-hideous-laughter", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (tiny tarts and a feather that is waved in the air)", 
@@ -760,7 +760,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "mordenkainen\u2019s magnificent mansion": {
+  "mordenkainen's magnificent mansion": {
     "url": "https://www.dnd-spells.com/spell/mordenkainens-magnificent-mansion", 
     "range": "300 feet", 
     "components": "Verbal, Somatic, Material (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp)", 
@@ -800,7 +800,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "maximilian\u2019s earthen grasp": {
+  "maximilian's earthen grasp": {
     "url": "https://www.dnd-spells.com/spell/maximilians-earthen-grasp", 
     "range": "30 feet", 
     "components": "Verbal,Somatic,Material (a miniature hand sculpted from clay)", 
@@ -813,14 +813,14 @@ module.exports = {
   "find the path": {
     "url": "https://www.dnd-spells.com/spell/find-the-path", 
     "range": "Self", 
-    "components": "Verbal, Somatic, Material (a set of divinatory tools \u2013 such as bones, ivory sticks, cards, teeth, or carved runes \u2013 worth 100 gp and an object from the location you wish to find)", 
+    "components": "Verbal, Somatic, Material (a set of divinatory tools such as bones, ivory sticks, cards, teeth, or carved runes worth 100 gp and an object from the location you wish to find)", 
     "spellType": "level 6 Divination", 
     "duration": "Concentration, up to 1 day", 
     "castingTime": "1 Minute", 
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "otto\u2019s irresistible dance": {
+  "otto's irresistible dance": {
     "url": "https://www.dnd-spells.com/spell/ottos-irresistible-dance", 
     "range": "30 feet", 
     "components": "Verbal", 
@@ -853,7 +853,7 @@ module.exports = {
   "suggestion": {
     "url": "https://www.dnd-spells.com/spell/suggestion", 
     "range": "30 feet", 
-    "components": "Verbal, Material (a snake\u2019s tongue and either a bit of honeycomb or a drop of sweet oil)", 
+    "components": "Verbal, Material (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)", 
     "spellType": "level 2 Enchantment", 
     "duration": "Concentration, up to 8 hours", 
     "castingTime": "1 Action", 
@@ -1000,7 +1000,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "otiluke\u2019s freezing sphere": {
+  "otiluke's freezing sphere": {
     "url": "https://www.dnd-spells.com/spell/otilukes-freezing-sphere", 
     "range": "300 feet", 
     "components": "Verbal, Somatic, Material (a small crystal sphere)", 
@@ -1080,7 +1080,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "snilloc\u2019s snowball swarm": {
+  "snilloc's snowball swarm": {
     "url": "https://www.dnd-spells.com/spell/snillocs-snowball-swarm", 
     "range": "90 feet", 
     "components": "Verbal, Somatic, Material", 
@@ -1270,7 +1270,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "mordenkainen\u2019s private sanctum": {
+  "mordenkainen's private sanctum": {
     "url": "https://www.dnd-spells.com/spell/mordenkainens-private-sanctum", 
     "range": "120 feet", 
     "components": "Verbal, Somatic, Material (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)", 
@@ -1400,7 +1400,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "melf\u2019s minute meteors ": {
+  "melf's minute meteors ": {
     "url": "https://www.dnd-spells.com/spell/melfs-minute-meteors", 
     "range": "Self", 
     "components": "Verbal, Somatic, Material", 
@@ -1420,7 +1420,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "drawmij\u2019s instant summons ": {
+  "drawmij's instant summons ": {
     "url": "https://www.dnd-spells.com/spell/drawmijs-instant-summons-ritual", 
     "range": "Touch", 
     "components": "Verbal, Somatic, Material  (a sapphire worth 1,000 gp)", 
@@ -1430,7 +1430,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "bigby\u2019s hand": {
+  "bigby's hand": {
     "url": "https://www.dnd-spells.com/spell/bigbys-hand", 
     "range": "120 feet", 
     "components": "Verbal, Somatic, Material  (An eggshell and a snakeskin glove) ", 
@@ -1570,7 +1570,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "mordenkainen\u2019s sword": {
+  "mordenkainen's sword": {
     "url": "https://www.dnd-spells.com/spell/mordenkainens-sword", 
     "range": "60 feet", 
     "components": "Verbal, Somatic, Material (a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp)", 
@@ -1580,10 +1580,10 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "melf\u2019s acid arrow": {
+  "melf's acid arrow": {
     "url": "https://www.dnd-spells.com/spell/melfs-acid-arrow", 
     "range": "90 feet", 
-    "components": "Verbal, Somatic, Material (powdered rhubarb leaf and an adder\u2019s stomach)", 
+    "components": "Verbal, Somatic, Material (powdered rhubarb leaf and an adder's stomach)", 
     "spellType": "level 2 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
@@ -1640,7 +1640,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "leomund\u2019s secret chest": {
+  "leomund's secret chest": {
     "url": "https://www.dnd-spells.com/spell/leomunds-secret-chest", 
     "range": "Touch", 
     "components": "Verbal, Somatic, Material (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp)", 
@@ -1700,7 +1700,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "rary\u2019s telepathic bond ": {
+  "rary's telepathic bond ": {
     "url": "https://www.dnd-spells.com/spell/rarys-telepathic-bond-ritual", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (pieces of eggshell from two different kinds of creatures)", 
@@ -2000,7 +2000,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "abi-dalzim\u2019s horrid wilting": {
+  "abi-dalzim's horrid wilting": {
     "url": "https://www.dnd-spells.com/spell/abi-dalzims-horrid-wilting", 
     "range": "150 feet", 
     "components": "Verbal, Somatic, Material", 
@@ -2210,7 +2210,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "tenser\u2019s floating disk ": {
+  "tenser's floating disk ": {
     "url": "https://www.dnd-spells.com/spell/tensers-floating-disk-ritual", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (a drop of mercury)", 
@@ -2350,7 +2350,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "mordenkainen\u2019s faithful hound": {
+  "mordenkainen's faithful hound": {
     "url": "https://www.dnd-spells.com/spell/mordenkainens-faithful-hound", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (a tiny silver whistle, a piece of bone, and a thread)", 
@@ -2430,7 +2430,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "hunter\u2019s mark": {
+  "hunter's mark": {
     "url": "https://www.dnd-spells.com/spell/hunters-mark", 
     "range": "90 feet", 
     "components": "Verbal", 
@@ -2550,7 +2550,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "leomund\u2019s tiny hut ": {
+  "leomund's tiny hut ": {
     "url": "https://www.dnd-spells.com/spell/leomunds-tiny-hut-ritual", 
     "range": "Self (10-foot-radius hemisphere)", 
     "components": "Verbal, Somatic, Material (a small crystal bead)", 
@@ -2600,7 +2600,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "evard\u2019s black tentacles": {
+  "evard's black tentacles": {
     "url": "https://www.dnd-spells.com/spell/evards-black-tentacles", 
     "range": "90 feet", 
     "components": "Verbal, Somatic, Material (a piece of tentacle from a giant octopus or a giant squid)", 
@@ -2700,7 +2700,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "nystul\u2019s magic aura": {
+  "nystul's magic aura": {
     "url": "https://www.dnd-spells.com/spell/nystuls-magic-aura", 
     "range": "Touch", 
     "components": "Verbal, Somatic, Material (a small square of silk)", 
@@ -2943,7 +2943,7 @@ module.exports = {
   "gentle repose ": {
     "url": "https://www.dnd-spells.com/spell/gentle-repose-ritual", 
     "range": "Touch", 
-    "components": "Verbal, Somatic, Material (a pinch of salt and one copper piece placed on each of the corpse\u2019s eyes, which must remain there for the duration)", 
+    "components": "Verbal, Somatic, Material (a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration)", 
     "spellType": "level 2 Necromancy Ritual", 
     "duration": "10 days", 
     "castingTime": "1 Action", 
@@ -3223,7 +3223,7 @@ module.exports = {
   "holy aura": {
     "url": "https://www.dnd-spells.com/spell/holy-aura", 
     "range": "Self", 
-    "components": "Verbal, Somatic, Material (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint\u2019s robe or a piece of parchment from a religious text)", 
+    "components": "Verbal, Somatic, Material (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text)", 
     "spellType": "level 8 Abjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
@@ -3400,10 +3400,10 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "aganazzar\u2019s scorcher": {
+  "aganazzar's scorcher": {
     "url": "https://www.dnd-spells.com/spell/aganazzars-scorcher", 
     "range": "30 feet", 
-    "components": "Verbal, Somatic, Material (a red dragon\u2019s scale)", 
+    "components": "Verbal, Somatic, Material (a red dragon's scale)", 
     "spellType": "level 2 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
@@ -3720,7 +3720,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }, 
-  "otiluke\u2019s resilient sphere": {
+  "otiluke's resilient sphere": {
     "url": "https://www.dnd-spells.com/spell/otilukes-resilient-sphere", 
     "range": "30 feet", 
     "components": "Verbal, Somatic, Material (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)", 
@@ -3743,7 +3743,7 @@ module.exports = {
   "simulacrum": {
     "url": "https://www.dnd-spells.com/spell/simulacrum", 
     "range": "Touch", 
-    "components": "Verbal, Somatic, Material (snow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature\u2019s body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell)", 
+    "components": "Verbal, Somatic, Material (snow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell)", 
     "spellType": "level 7 Illusion", 
     "duration": "Until dispelled", 
     "castingTime": "12 Hours", 
@@ -3933,7 +3933,7 @@ module.exports = {
   "mass suggestion": {
     "url": "https://www.dnd-spells.com/spell/mass-suggestion", 
     "range": "60 feet", 
-    "components": "Verbal, Material (a snake\u2019s tongue and either a bit of honeycomb or a drop of sweet oil)", 
+    "components": "Verbal, Material (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)", 
     "spellType": "level 6 Enchantment", 
     "duration": "24 hours", 
     "castingTime": "1 Action", 
@@ -4090,7 +4090,7 @@ module.exports = {
     "shortDescription": "", 
     "longDescription": ""
   }
-  
+
  }
 
 }

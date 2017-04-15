@@ -1,6 +1,6 @@
 //spells
 SpellsIntent what is {Spell}?
-SpellsIntent what's {Spell}?
+SpellsIntent whats {Spell}?
 SpellsIntent look up {Spell}
 SpellsIntent tell me about {Spell}
 SpellsIntent I forget what {Spell} is
@@ -13,25 +13,25 @@ SpellsIntent how do I cast {Spell}?
 SpellsIntent how to cast {Spell}
 
 //spell attribute
-SpellsIntent what is the {Attribute} of {Spell}?
-SpellsIntent what's the {Attribute} of {Spell}?
-SpellsIntent what is {Spell}'s {Attribute}?
-SpellsIntent what's {Spell}'s {Attribute}?
+SpellsIntent what is the {Attribute} of {Spell}
+SpellsIntent whats the {Attribute} of {Spell}
+SpellsIntent what is {Spell}'s {Attribute}
+SpellsIntent whats {Spell}'s {Attribute}
 SpellsIntent to get the {Attribute} of {Spell}
 SpellsIntent get the {Attribute} of {Spell}
-SpellsIntent what {Attribute} do I need to cast {Spell}?
-SpellsIntent what are the {Attribute} to cast {Spell}?
-SpellsIntent what are the {Attribute} needed to cast {Spell}?
-SpellsIntent what is the {Attribute} of {Spell}?
-SpellsIntent what's the {Attribute} of {Spell}?
+SpellsIntent what {Attribute} do I need to cast {Spell}
+SpellsIntent what are the {Attribute} to cast {Spell}
+SpellsIntent what are the {Attribute} needed to cast {Spell}
+SpellsIntent what is the {Attribute} of {Spell}
+SpellsIntent whats the {Attribute} of {Spell}
 
 //items
 ItemsIntent lookup {Item}
-ItemsIntent what is {Item}?
-ItemsIntent what is a {Item}?
-ItemsIntent what is an {Item}?
-ItemsIntent what does a {Item} do?
-ItemsIntent what does an {Item} do?
+ItemsIntent what is {Item}
+ItemsIntent what is a {Item}
+ItemsIntent what is an {Item}
+ItemsIntent what does a {Item} do
+ItemsIntent what does an {Item} do
 ItemsIntent tell me about {Item}
 ItemsIntent I forget what {Item} is
 ItemsIntent I forget what a {Item} is
@@ -43,13 +43,13 @@ ItemsIntent get info on {Item}
 ItemsIntent about {Item}
 
 //item attribute
-ItemsIntent what is the {Attribute} of {Item}?
-ItemsIntent what's the {Attribute} of {Item}?
-ItemsIntent what is the {Items}'s {Attribute}?
-ItemsIntent what is a {Items}'s {Attribute}?
-ItemsIntent what is an {Items}'s {Attribute}?
-ItemsIntent what's the {Items}'s {Attribute}?
-ItemsIntent what's a {Items}'s {Attribute}?
-ItemsIntent what's an {Items}'s {Attribute}?
+ItemsIntent what is the {Attribute} of {Item}
+ItemsIntent whats the {Attribute} of {Item}
+ItemsIntent what is the {Items}'s {Attribute}
+ItemsIntent what is a {Items}'s {Attribute}
+ItemsIntent what is an {Items}'s {Attribute}
+ItemsIntent whats the {Items}'s {Attribute}
+ItemsIntent whats a {Items}'s {Attribute}
+ItemsIntent whats an {Items}'s {Attribute}
 ItemsIntent to get the {Attribute} of {Item}
 ItemsIntent get the {Attribute} of {Item}
