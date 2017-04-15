@@ -1,6 +1,6 @@
 //spells
-SpellsIntent what is {Spell}?
-SpellsIntent whats {Spell}?
+SpellsIntent what is {Spell}
+SpellsIntent whats {Spell}
 SpellsIntent look up {Spell}
 SpellsIntent tell me about {Spell}
 SpellsIntent I forget what {Spell} is
@@ -15,8 +15,8 @@ SpellsIntent how to cast {Spell}
 //spell attribute
 SpellsIntent what is the {Attribute} of {Spell}
 SpellsIntent whats the {Attribute} of {Spell}
-SpellsIntent what is {Spell}'s {Attribute}
-SpellsIntent whats {Spell}'s {Attribute}
+SpellsIntent what is {Spell} {Attribute}
+SpellsIntent whats {Spell} {Attribute}
 SpellsIntent to get the {Attribute} of {Spell}
 SpellsIntent get the {Attribute} of {Spell}
 SpellsIntent what {Attribute} do I need to cast {Spell}

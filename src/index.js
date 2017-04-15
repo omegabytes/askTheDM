@@ -45,7 +45,7 @@ var handlers = {
         var spellAttribute = spellAttributes[attributeName];
 
         //if the user asks for the attribute of a spell
-        if (spell && spellAttribute) {
+        if (spell  && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
             this.emit(':tellWithCard', spell[spellAttribute], this.attributes['repromptSpeech'], cardTitle, spell[spellAttribute]);
