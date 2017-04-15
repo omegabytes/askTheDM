@@ -9,7 +9,7 @@ Ask the DM is a quick-reference tool designed for use during Dungeons and Dragon
 
 The core skill is a simple question-and-answer session. Users can get full spell descriptions, short descriptions, or single spell attributes such as casting time or range.
 
-If you'd like to get involved, please go through Amazon's [how-to template skill.](https://github.com/alexa/skill-sample-nodejs-howto) tutorial. You don't need an Echo or Dot to develop or teset this application. Next, check out the [issues and milestones.](https://github.com/omegabytes/askTheDM.git/issues)
+If you'd like to get involved, please go through Amazon's [how-to template skill.](https://github.com/alexa/skill-sample-nodejs-howto) tutorial. You don't need an Echo or Dot to develop or teset this application. Next, check out the [issues and milestones.](https://github.com/omegabytes/askTheDM/issues)
 
 
 ##### Version 1.0 features
