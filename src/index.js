@@ -48,14 +48,14 @@ var handlers = {
         if (spell  && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-            this.emit(':tellWithCard', spell[spellAttribute], this.attributes['repromptSpeech'], cardTitle, spell[spellAttribute]);
+            this.emit(':tellWithCard', spell[spellAttribute], this.attributes['SKILL_NAME'], cardTitle, spell[spellAttribute]);
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.longDescription;
             this.attributes['repromptSpeech'] = this.t("SPELL_REPEAT_MESSAGE");
-            this.emit(':tellWithCard', spell.longDescription, this.attributes['repromptSpeech'], cardTitle, spell.longDescription);
+            this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
         } else {
             var speechOutput = this.t("SPELL_NOT_FOUND_MESSAGE");
             var repromptSpeech = this.t("SPELL_NOT_FOUND_REPROMPT");
