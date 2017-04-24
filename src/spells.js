@@ -17,8 +17,8 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 2 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square’s elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect. Because the terrain’s transformation occurs slowly, creatures in the area can’t usually be trapped or injured by the ground’s movement. This spell can’t manipulate natural stone orstone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse. Similarly, this spell doesn’t directly affect plant growth. The moved earth carries any plants along with it."
+    "shortDescription": "Reshape soft terrain for an area up to 40ft within a range of 120ft.  Extent of terrain change can't exceed half of the affected area's largest dimension.  Change takes 10 minutes to complete.  Objects or structures interacting with the terrain will shift to accommodate change.  Needs concentration.", 
+    "longDescription": "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square’s elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect. Because the terrain’s transformation occurs slowly, creatures in the area can’t usually be trapped or injured by the ground’s movement. This spell can’t manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse. Similarly, this spell doesn’t directly affect plant growth. The moved earth carries any plants along with it."
   }, 
   "sanctuary": {
     "url": "https://www.dnd-spells.com/spell/sanctuary", 
@@ -37,8 +37,8 @@ module.exports = {
     "spellType": "level 3 Transmutation", 
     "duration": "10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances. You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the DM’s discretion. The spell doesn’t enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks. If a plant creature is in the area, you can communicate with it as if you shared a com m on language, but you gain no magical ability to influence it. This spell can cause the plants created by the entangle spell to release a restrained creature."
+    "shortDescription": "Imbue plants within a 30ft radius with limited sentience.  Plants will follow simple commands, affect their terrain, move without uprooting, answer questions about their surroundings, and other tasks at the DM's discretion.  Can be used to overcome entanglement spell.  If a plant creature is in the area, you can communicate with it but have no other influence.", 
+    "longDescription": "You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances. You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the DM’s discretion. The spell doesn’t enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks. If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it. This spell can cause the plants created by the entangle spell to release a restrained creature."
   }, 
   "alter self": {
     "url": "https://www.dnd-spells.com/spell/alter-self", 
@@ -47,7 +47,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Assume a different form for up to 1 hour from three options:  Aquatic Adaptation, which adapts your body to an aquatic environment.  Change Appearance, which changes aspects of your appearance, such as weight or hair color, but not your basic shape.  Natural Weapons, which adds proficiency to unarmed strikes and allows you to grow a natural weapon of choice (such as claws) for damage of 1d6.  Needs concentration.", 
     "longDescription": "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one. AquaticAdaptation. You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed. ChangeAppearance. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again. Natural Weapons. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
   }, 
   "teleportation circle": {
@@ -57,7 +57,7 @@ module.exports = {
     "spellType": "level 5 Conjuration", 
     "duration": "1 round", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
+    "shortDescription": "Draw a 10ft diameter circle within 10ft range to link to a teleportation circle whose sigil sequence you know and is on the same plane of existence as you.  Circle remains open until end of turn.  You can create a permanent circle by casting this spell in same location for one year.  When you first get this spell, you learn two sigil sequences on the Material Plane as determined by the DM.", 
     "longDescription": "As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied. Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence—a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute. You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way."
   }, 
   "nondetection": {
@@ -77,7 +77,7 @@ module.exports = {
     "spellType": "level 3 Abjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Give any number of creatures within 30ft advantage on wisdom and death saves and max health from healing", 
+    "shortDescription": "Give max healing and advantage on wisdom and death saves to any number of creatures within 30ft for up to 1 minute.  Needs concentration.", 
     "longDescription": "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
   }, 
   "resistance": {
@@ -87,7 +87,7 @@ module.exports = {
     "spellType": "Abjuration cantrip", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "The target can add a d4 to a saving throw of its choice, before or after the throw.", 
+    "shortDescription": "The target can add a d4 to a saving throw of its choice, before or after the throw.  Needs concentration.", 
     "longDescription": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
   }, 
   "investiture of stone": {
@@ -97,7 +97,7 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Resistance to bludgeoning, piercing and slashing damage from nonmagical weapons.  Use action to create an earthquake within 15ft radius that knocks prone any creature that fails a Dex save.  Use normal movement to cross difficult earth or stone terrain, or to move through solid terrain as if it was air.  Needs concentration.", 
     "longDescription": "Until the spell ends, bits of rock spread across your body, and you gain the following benefits: • You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons. • You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone. • You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can’t end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn."
   }, 
   "hellish rebuke": {
@@ -107,7 +107,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "Special", 
-    "shortDescription": "", 
+    "shortDescription": "Deals 2d10 fire damage on a failed Dex save or half as much damage on a successful save to a creature that damaged you.  Increase damage by 1d10 for each spell slot after 1st.", 
     "longDescription": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1dlO for each slot level above 1st."
   }, 
   "sleep": {
@@ -117,7 +117,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Starting with the lowest, make any creatures within 90ft and with current hit points equal to or less than 5d8 fall asleep until otherwise woken.  Subtract each creature's hit points from total before moving onto next creature.  Does not affect undead or creatures immune to charm.  Increase by 2d8 for any spell slot after 1st.", 
     "longDescription": "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren’t affected by this spell. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
   }, 
   "prismatic spray": {
