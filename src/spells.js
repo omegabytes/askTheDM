@@ -17,7 +17,7 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 2 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "Reshape soft terrain for an area up to 40ft within a range of 120ft.  Extent of terrain change can't exceed half of the affected area's largest dimension.  Change takes 10 minutes to complete.  Objects or structures interacting with the terrain will shift to accommodate change.", 
+    "shortDescription": "Reshape soft terrain for an area up to 40ft within a range of 120ft.  Extent of terrain change can't exceed half of the affected area's largest dimension.  Change takes 10 minutes to complete.  Objects or structures interacting with the terrain will shift to accommodate change.  Needs concentration.", 
     "longDescription": "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square’s elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect. Because the terrain’s transformation occurs slowly, creatures in the area can’t usually be trapped or injured by the ground’s movement. This spell can’t manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse. Similarly, this spell doesn’t directly affect plant growth. The moved earth carries any plants along with it."
   }, 
   "sanctuary": {
@@ -47,7 +47,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Assume a different form for up to 1 hour from three options:  Aquatic Adaptation, which adapts your body to an aquatic environment.  Change Appearance, which changes aspects of your appearance, such as weight or hair color, but not your basic shape.  Natural Weapons, which adds proficiency to unarmed strikes and allows you to grow a natural weapon of choice (such as claws) for damage of 1d6.", 
+    "shortDescription": "Assume a different form for up to 1 hour from three options:  Aquatic Adaptation, which adapts your body to an aquatic environment.  Change Appearance, which changes aspects of your appearance, such as weight or hair color, but not your basic shape.  Natural Weapons, which adds proficiency to unarmed strikes and allows you to grow a natural weapon of choice (such as claws) for damage of 1d6.  Needs concentration.", 
     "longDescription": "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one. AquaticAdaptation. You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed. ChangeAppearance. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again. Natural Weapons. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
   }, 
   "teleportation circle": {
@@ -87,7 +87,7 @@ module.exports = {
     "spellType": "Abjuration cantrip", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "The target can add a d4 to a saving throw of its choice, before or after the throw.", 
+    "shortDescription": "The target can add a d4 to a saving throw of its choice, before or after the throw.  Needs concentration.", 
     "longDescription": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
   }, 
   "investiture of stone": {
@@ -97,7 +97,7 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Gain resistance to bludgeoning, piercing and slashing damage from nonmagical weapons.  Use an action to create an earthquake within 15ft radius that knocks prone any creature within range after a failed Dex saving throw.  Use normal movement to move across difficult earth or stone terrain, or move through solid terrain as if it was air.", 
+    "shortDescription": "Resistance to bludgeoning, piercing and slashing damage from nonmagical weapons.  Use action to create an earthquake within 15ft radius that knocks prone any creature that fails a Dex save.  Use normal movement to cross difficult earth or stone terrain, or to move through solid terrain as if it was air.  Needs concentration.", 
     "longDescription": "Until the spell ends, bits of rock spread across your body, and you gain the following benefits: • You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons. • You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone. • You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can’t end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn."
   }, 
   "hellish rebuke": {
@@ -107,7 +107,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "Special", 
-    "shortDescription": "", 
+    "shortDescription": "Deals 2d10 fire damage on a failed Dex save or half as much damage on a successful save to a creature that damaged you.  Increase damage by 1d10 for each spell slot after 1st.", 
     "longDescription": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1dlO for each slot level above 1st."
   }, 
   "sleep": {
@@ -117,7 +117,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Starting with the lowest, make any creatures within 90ft and with current hit points equal to or less than 5d8 fall asleep until otherwise woken.  Subtract each creature's hit points from total before moving onto next creature.  Does not affect undead or creatures immune to charm.  Increase by 2d8 for any spell slot after 1st.", 
     "longDescription": "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren’t affected by this spell. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
   }, 
   "prismatic spray": {
