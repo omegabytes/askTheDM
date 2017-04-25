@@ -127,7 +127,7 @@ module.exports = {
     "spellType": "level 7 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Affects creatures in 60ft cone on a failed Dex save, with half damage on a winning save.  Emits eight multicolored rays of light, each with a different damage determined by d8.  1 is Red or 10d6 fire, 2 is Orange or 10d6 acid, 3 is Yellow or 10d6 lightning, 4 is Green or 10d6 poison, 5 is Blue or 10d6 cold.  6 is Indigo to restrain target.  Needs a Con save after each of the target's turns.  3 wins ends spell, 3 fails petrifies target.  7 is Violet, which blinds target.  Spell ends with a successful Wisdom safe at start of caster's next turn.  Otherwise, target is sent to a plane of existence of DM's choosing.  8 is Special.  Roll twice more, re-rolling any 8.", 
     "longDescription": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it. 1. Red. The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one. 2. Orange. The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one. 3. Yellow. The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. 4. Green. The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one. 5. Blue. The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one. 6. Indigo. On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind. 7. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) 8. Special. The target is struck by two rays. Roll twice more, rerolling any 8."
   }, 
   "frostbite": {
@@ -137,7 +137,7 @@ module.exports = {
     "spellType": "Evocation cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Deals 1d6 cold damage and to a target seen within 60ft range after a failed Con save.  Also gives disadvantage to next weapon attack roll.  Damage increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.", 
     "longDescription": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn. The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
   }, 
   "fear": {
@@ -147,7 +147,7 @@ module.exports = {
     "spellType": "level 3 Illusion", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration.  Creatures in a 30ft cone must succeed a Wisdom save or drop everything they hold, becoming freightened for up to 1 minute.  On each turn, creatures must Dash away from you until out of sight, and make a Wisdom save to end spell.", 
     "longDescription": "You project a phantasmal image of a creature’s worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration. While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a wisdom saving throw. On a successful save, the spell ends for that creature. "
   }, 
   "lightning bolt": {
@@ -157,7 +157,7 @@ module.exports = {
     "spellType": "level 3 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "For a 100ft long line in chosen direction, deals 8d6 lightning damage on a failed Dex save or half as much on a successful save.  Ignites any flammable uncarried items.  Increase damage by 1d6 for each spell slot after 3rd.", 
     "longDescription": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren’t being worn or carried. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
   }, 
   "slow": {
@@ -167,8 +167,8 @@ module.exports = {
     "spellType": "level 3 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a wisdom saving throw or be affected by this spell for the duration. An affected target’s speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can’t usereactions.Onitsturn,itcanuseeitheranactionor a bonus action, not both. Regardless of the creature’s abilities or magic items, it can’t make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t take effect until the creature’s next turn, and the creature must use its action on that turn to complete the spell. If it can’t, the spell is wasted. A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it."
+    "shortDescription":"Needs concentration and lasts 1 minute.  On a failed Wisdom save, time slows by half and deals -2 AC and Dex penalty for up to 6 creatures in a 40ft cube within 120ft range.  Disables reactions, and can only use an action or bonus action, not both.  If target casts a spell, roll a d20.  Spell takes effect on next turn if roll is 11 or higher, but target uses an action on next turn to complete the spell.  Spell is wasted otherwise.  End spell with a Wisdom save at end of turn.", 
+    "longDescription": "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a wisdom saving throw or be affected by this spell for the duration. An affected target’s speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can’t use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature’s abilities or magic items, it can’t make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t take effect until the creature’s next turn, and the creature must use its action on that turn to complete the spell. If it can’t, the spell is wasted. A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it."
   }, 
   "druidcraft": {
     "url": "https://www.dnd-spells.com/spell/druidcraft", 
@@ -187,8 +187,8 @@ module.exports = {
     "spellType": "level 4 Enchantment", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charm ed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels: When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours."
+    "shortDescription": "Needs concentration.  After a failed Wisdom save, charms a beast to take your commands telepathically for up to 1 minute.  5th spell slot increases duration to 10 minutes, 6th to 1 hour, and 7th or above to 8 hours.  Beast takes Wisdom throw each time it takes damage and spell wears off on a win.", 
+    "longDescription": "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels: When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours."
   }, 
   "guidance": {
     "url": "https://www.dnd-spells.com/spell/guidance", 
@@ -197,7 +197,7 @@ module.exports = {
     "spellType": "Divination cantrip", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Touch one target to add d4 to an ability check of its choice.  Needs concentration.", 
     "longDescription": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
   }, 
   "control weather": {
