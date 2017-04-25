@@ -127,9 +127,9 @@ module.exports = {
     "spellType": "level 7 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each creater in the range must make a dextarity saving throw. Roll an d8 to determine the ray affect. 1 through 6 elemental damage. Creatures take half damage on a successful throw. 1 fire, 2 acid, 3 lightning 4 poison, 5 cold. 6 On a failed save the target is retrained. Make consitution saves end of each turn. Successfully save three non consecutive times spell ends. Fail three non consecutive times creature turns to stone. 7 On a failed save target is blinded. Creature must make wisdom saving throw at the start of the next turn. Successful save the blindness ends. Failed save the creature is transported to another plane of exsistence. 8 The target is struck by two rays, roll twice more rerolling any 8", 
     "longDescription": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it. 1. Red. The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one. 2. Orange. The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one. 3. Yellow. The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. 4. Green. The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one. 5. Blue. The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one. 6. Indigo. On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind. 7. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) 8. Special. The target is struck by two rays. Roll twice more, rerolling any 8."
-  }, 
+  },
   "frostbite": {
     "url": "https://www.dnd-spells.com/spell/frostbite", 
     "range": "60 feet", 
@@ -137,7 +137,7 @@ module.exports = {
     "spellType": "Evocation cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Select one creature you see within range. Targets makes constitution saving throw. On failed save target take 1d6 cold damage and has disadvantage. Damage increases level 5 2d6, level 11 3d6, level 17 4d6", 
     "longDescription": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn. The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
   }, 
   "fear": {
