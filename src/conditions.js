@@ -1,6 +1,6 @@
 module.exports = {     
- "ATTRIBUTES_EN_US" : { 
- "description" : "description" 
+ "EXHAUSTION_LEVELS_EN_US" : { 
+ "level" : "level" 
  },    
  "CONDITIONS_EN_US" : {
  	"blinded" 	 	: "A blinded creature can’t see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.",

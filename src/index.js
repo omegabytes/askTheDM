@@ -60,7 +60,8 @@ var handlers = {
             this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
         } else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
-            var repromptSpeech = this.t("SPELL_NOT_FOUND_REPROMPT");
+            var repromptSpeech = this.t("NOT_FOUND_REPROMPT");
+            
             if (spellName) {
                 speechOutput += this.t("SPELL_NOT_FOUND_WITH_SPELL_NAME", spellName);
             } else {
@@ -76,6 +77,7 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
+        var levelSlot = this.event.request.intent.slots.ExhaustionLevel;
         var conditionName;
         var exhaustionLevel;
 
@@ -83,33 +85,62 @@ var handlers = {
             conditionName = conditionSlot.value.to toLowerCase();
         }
 
+        if (levelSlot && levelSlot.value) {
+            exhaustionLevel = levelSlot.value.toLowerCase();
+        }
+
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
         var conditons = this.t("CONDITIONS");
         var conditon  = conditions[conditionName];
-
+        
         //user requests information on exhaustion
         if (conditon == 'exhaustion') {
             //if the user just asks about exhaustion, iterate through each level and read it out loud
-            for (levels : 'exhaustion') {
-
+            var speechOutput = "Exhaustion has escalating effects at the following levels: ";
+            int i =0;
+            for (levels : in conditon[exhaustionLevel]) {
+                speechOutput = "level " + i + " " + conditon[exhaustionLevel];
+                i++;
             }
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            this.emit(':tellWithCard', speechOutput, this.attribute['SKILL_NAME'], cardTitle, speechOutput);
+            
         } 
 
         //otherwise, if the user asks for the level of exhaustion, get the description for the level
         else if (conditon == 'exhaustion' && exhaustionLevel) {
-
+            this.attributes['speechOutput'] = conditon[exhaustionLevel];
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            this.emit(':tellWithCard', conditon[exhaustionLevel], this.attribute['SKILL_NAME'], cardTitle, conditon[exhaustionLevel]);
         }
 
         //user requests information on conditon
         else if (conditon) {
-         this.attributes['speechOutput'] = conditon;
-         this.attribute['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-         this.emit(':tellWithCard', conditon, this.attribute['SKILL_NAME'], cardTitle, conditon);
-
-        } else {
+            this.attributes['speechOutput'] = conditon;
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            this.emit(':tellWithCard', conditon, this.attribute['SKILL_NAME'], cardTitle, conditon);
 
         }
 
+        //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
+        else {
+            var speechOutput = this.t("NOT_FOUND_MESSAGE");
+            var repromptSpeech =this.t("NOT_FOUND_REPROMPT");
+
+            if (conditionName) {
+                speechOutput += this.t("CONDITION_NOT_FOUND_WITH_CONDITION_NAME", conditionName);
+            } else {
+                speechOutput += this.t("CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME");
+            }
+            speechOutput += repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            this.emit(':ask', speechOutput, repromptSpeech);
+        }
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = this.t("HELP_MESSAGE");
