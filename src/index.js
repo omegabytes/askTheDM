@@ -77,50 +77,56 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
-        var levelSlot = this.event.request.intent.slots.ExhaustionLevel;
+        // var levelSlot = this.event.request.intent.slots.ExhaustionLevel;
         var conditionName;
-        var exhaustionLevel;
+        // var exhaustionLevel;
 
         if (conditionSlot && conditionSlot.value) {
-            conditionName = conditionSlot.value.to toLowerCase();
+            conditionName = conditionSlot.value.toLowerCase();
         }
 
-        if (levelSlot && levelSlot.value) {
-            exhaustionLevel = levelSlot.value.toLowerCase();
-        }
+        // if (levelSlot && levelSlot.value) {
+        //     exhaustionLevel = levelSlot.value.toLowerCase();
+        // }
 
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
-        var conditons = this.t("CONDITIONS");
-        var conditon  = conditions[conditionName];
+        var conditions = this.t("CONDITIONS");
+        var condition  = conditions[conditionName];
         
         //user requests information on exhaustion
-        if (conditon == 'exhaustion') {
-            //if the user just asks about exhaustion, iterate through each level and read it out loud
-            var speechOutput = "Exhaustion has escalating effects at the following levels: ";
-            int i =0;
-            for (levels : in conditon[exhaustionLevel]) {
-                speechOutput = "level " + i + " " + conditon[exhaustionLevel];
-                i++;
-            }
+        // if (condition == 'exhaustion') {
+        //     //if the user just asks about exhaustion, iterate through each level and read it out loud
+        //     var speechOutput = "Exhaustion has escalating effects at the following levels - ";
+        //     var i = 0;
+        //     for (levels in condition[exhaustionLevel]) {
+        //         speechOutput = "level " + i + " " + condition[exhaustionLevel];
+        //         i++;
+        //     }
 
-            this.attributes['speechOutput'] = speechOutput;
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', speechOutput, this.attribute['SKILL_NAME'], cardTitle, speechOutput);
-            
-        } 
+        //     this.attributes['speechOutput'] = speechOutput;
+        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+        //     this.emit(':tellWithCard', speechOutput, this.attribute['SKILL_NAME'], cardTitle, speechOutput);
+        // } 
 
-        //otherwise, if the user asks for the level of exhaustion, get the description for the level
-        else if (conditon == 'exhaustion' && exhaustionLevel) {
-            this.attributes['speechOutput'] = conditon[exhaustionLevel];
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', conditon[exhaustionLevel], this.attribute['SKILL_NAME'], cardTitle, conditon[exhaustionLevel]);
-        }
+        // //otherwise, if the user asks for the level of exhaustion, get the description for the level
+        // else if (condition == 'exhaustion' && exhaustionLevel) {
+        //     this.attributes['speechOutput'] = condition[exhaustionLevel];
+        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+        //     this.emit(':tellWithCard', condition[exhaustionLevel], this.attribute['SKILL_NAME'], cardTitle, condition[exhaustionLevel]);
+        // }
 
-        //user requests information on conditon
-        else if (conditon) {
-            this.attributes['speechOutput'] = conditon;
+        //user requests information on condition
+        // else if (condition) {
+        //     this.attributes['speechOutput'] = condition;
+        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+        //     this.emit(':tellWithCard', condition, this.attribute['SKILL_NAME'], cardTitle, condition);
+
+        // }
+
+        if (condition) {
+            this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', conditon, this.attribute['SKILL_NAME'], cardTitle, conditon);
+            this.emit(':tellWithCard', condition, this.attribute['SKILL_NAME'], cardTitle, condition);
 
         }
 
@@ -172,6 +178,7 @@ var languageStrings = {
             "SPELLS":                                       spells.SPELLS_EN_US,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
+            "EXHAUSTION_LEVELS" :                           conditions.EXHAUSTION_LEVELS_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
@@ -184,8 +191,8 @@ var languageStrings = {
             "NOT_FOUND_REPROMPT":                           "What else can I help with?",
             "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s. ",
             "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
-            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the conditon info for %s. ",
-            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that conditon. "
+            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s. ",
+            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition. "
         }
     },
     "en-US": {
