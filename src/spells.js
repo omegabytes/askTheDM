@@ -4037,7 +4037,7 @@ module.exports = {
     "spellType": "level 4 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "", 
+    "shortDescription": "Your next attack deals 4d6 psychic damage. On a failed wisdom save the target has disadvantage on attack rolls and ability checks, and can't take reactions until the end of its next turn.", 
     "longDescription": "The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn."
   }, 
   "conjure minor elementals": {
@@ -4047,7 +4047,7 @@ module.exports = {
     "spellType": "level 4 Conjuration", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
+    "shortDescription": "Summon up to 8 elemental beasts sharing a total of 2 challenge rating. Roll initiative as a group.", 
     "longDescription": "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the 4 following options for what appears: 1) One elemental of challenge rating 2 or lower. 2) Two elementals of challenge rating 1 or lower. 3) Four elementals of challenge rating 1/2 or lower. 4) Eight elementals of challenge rating 1/4 or lower. An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The DM has the creatures' statistics. At Higher Levels: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
   }, 
   "conjure animals": {
@@ -4057,7 +4057,7 @@ module.exports = {
     "spellType": "level 3 Conjuration", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Summon up to 8 fey beasts sharing a total of 2 challenge levels. Roll initiative as a group. ", 
     "longDescription": "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the four following options for what appears: 1) One beast of challenge rating 2 or lower. 2) Two beasts of challenge rating 1 or lower. 3) Four beasts of challenge rating 1/2 or lower. 4) Eight beasts of challenge rating 1/4 or lower. Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The DM has the creatures’ statistics. At Higher Levels: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
   }, 
   "storm of vengeance": {
@@ -4067,7 +4067,7 @@ module.exports = {
     "spellType": "level 9 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Effects increase by round. Round 1: Each creature less then 5000ft under the storm cloud must make a Constitution save or take 2d6 thunder damage and is deafened for 5 minutes. Round 2: Each creature takes 1d6 acid damage from rain. Round 3: Call six bolts of lightning. Up to six creatures take 10d6 lightning damage on a dex fail, half as much on a save. Round 4: Each creature takes 2d6 bludgeoning damage from hail. Rounds 5 through 10: The area becomes difficult terrain. Each creature takes 1d6 cold damage. Ranged weapon attacks are impossible. Concentraion is broken. Fog and mists are dispersed.", 
     "longDescription": "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes. Each round you maintain concentration on this spell, the storm produces additional effects on your turn. Round 2. Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage. Round 3. You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can’t be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. Round 4. Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage. Round 5-10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical."
   }, 
   "find traps": {
@@ -4077,7 +4077,7 @@ module.exports = {
     "spellType": "level 2 Divination", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You sense the presence, but not the location, of traps within line of sight.", 
     "longDescription": "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, aglyph ofwarding,or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole. This spell merely reveals that a trap is present. You don’t learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
   }, 
   "sunbeam": {
@@ -4087,7 +4087,7 @@ module.exports = {
     "spellType": "level 6 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A 5ft by 60ft beam of light flashes from your hand. On a failed Constitution save, each creature is blinded until your next turn and takes 6d8 radiant damage. The targets aren't blinded and take half damage on a successful save. Undead and oozes have disadvantage", 
     "longDescription": "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw. You can create a new line of radiance as your action on any turn until the spell ends. For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
   }, 
   "detect poison and disease": {
@@ -4097,7 +4097,7 @@ module.exports = {
     "spellType": "level 1 Divination", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You see the location and kind of posions, posionous creatures, and diseases within 30ft.", 
     "longDescription": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
   }
 
