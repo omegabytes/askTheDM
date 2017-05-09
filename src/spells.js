@@ -3927,7 +3927,7 @@ module.exports = {
     "spellType": "Enchantment cantrip", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You have advantage on all Charisma checks against a nonhostile target. The target realizes you cast a spell when it ends, and may attack you or seek retribution per the DM", 
     "longDescription": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn’t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM’s discretion), depending on the nature of your interaction with it."
   }, 
   "magic missile": {
@@ -3937,8 +3937,8 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You create three glowing darts of magical force. Each darthitsacreatureofyourchoicethatyoucansee within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
+    "shortDescription": "Cast three darts dealing 1d4+1 force damage to up to three targets. The spell creats one dart for each slot used.", 
+    "longDescription": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
   }, 
   "mass suggestion": {
     "url": "https://www.dnd-spells.com/spell/mass-suggestion", 
@@ -3947,7 +3947,7 @@ module.exports = {
     "spellType": "level 6 Enchantment", 
     "duration": "24 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "On a wisdom fail, up to twelve creatures perform any reasonable action you suggest. Creatures who can't be charmed are immmune. Spell ends if target is damaged or action is performed.", 
     "longDescription": "You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell. Each target must make a wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the first beggar they meet. If the condition isn’t met before the spell ends, the activity isn’t performed. If you or any of your companions damage a creature affected by this spell, the spell ends for that creature. At Higher Levels: When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day."
   }, 
   "chromatic orb": {
@@ -3957,7 +3957,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "On a ranged spell attack success, a target takes 3d8 acid, cold, fire, lightning, poison, orth thunder damage. Damage increases by 1d8 for each slot above 1st.", 
     "longDescription": "You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes 3d8 damage of the type you chose. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
   }, 
   "protection from evil and good": {
@@ -3967,7 +3967,7 @@ module.exports = {
     "spellType": "level 1 Abjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attacks against the target. The target can't be charmed, frightened, or possessed, and has advantage on saves against these conditions", 
     "longDescription": "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead. The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can’t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect."
   }, 
   "major image": {
@@ -3977,7 +3977,7 @@ module.exports = {
     "spellType": "level 3 Illusion", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Create an image no larger than a 20ft cube. It seems completely real to all senses except touch. You can move it around in a way that seems natural. A creature can determine its an illusion on an Intelligence check against your spell save", 
     "longDescription": "You create the image of an object, a creature, or some othervisiblephenomenonthatisnolargerthana 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can’t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte’s stench). As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example. Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
   }, 
   "warding wind": {
@@ -3987,8 +3987,8 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration. The wind has the following effects: • It deafens you and other creatures in its area. • It extinguishes unprotected flames in its area that are torch-sized or smaller. • The area is difficult terrain for creatures other than you. • The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind. • It hedges out vapor, gas, and fog that can be dispersed by strong wind."
+    "shortDescription": "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration. The wind has the following effects: It deafens you and other creatures in its area. It extinguishes unprotected flames in its area that are torch-sized or smaller. The area is difficult terrain for creatures other than you. The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind. It hedges out vapor, gas, and fog that can be dispersed by strong wind.", 
+    "longDescription": "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration. The wind has the following effects: It deafens you and other creatures in its area. It extinguishes unprotected flames in its area that are torch-sized or smaller. The area is difficult terrain for creatures other than you. The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind. It hedges out vapor, gas, and fog that can be dispersed by strong wind."
   }, 
   "create bonfire": {
     "url": "https://www.dnd-spells.com/spell/create-bonfire", 
@@ -3997,7 +3997,7 @@ module.exports = {
     "spellType": "Conjuration cantrip", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Any creature starting, ending or moving through the 5ft cube of the bonfire takes 1d8 fire damage on a Dexterity fail.", 
     "longDescription": "You create a bonfire on ground that you can see within range. Until the spells ends, the bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire’s space for the first time on a turn or ends its turn there. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
   },
   "flame strike": {
@@ -4007,7 +4007,7 @@ module.exports = {
     "spellType": "level 5 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each creature in the 10foot radius by 40 foot high takes 4d6 fire and 4d6 radiant damage on a failed Dexterity save, and half as much on a success", 
     "longDescription": "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
   }, 
   "cloud of daggers": {
@@ -4017,7 +4017,7 @@ module.exports = {
     "spellType": "level 2 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A create takes 4d4 slashing damage the first time it moves into or starts its turn in the cloud.", 
     "longDescription": "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there. At Higher Levels: When you cast this spell using a  spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd."
   }, 
   "dispel magic": {
@@ -4027,7 +4027,7 @@ module.exports = {
     "spellType": "level 3 Abjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Any spell fo 3rd level or lower ends. Spells 4th level and up end on a successful spell check against DC + spell level.", 
     "longDescription": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used."
   }, 
   "staggering smite": {
