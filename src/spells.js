@@ -3797,7 +3797,7 @@ module.exports = {
     "spellType": "level 1 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "", 
+    "shortDescription": "On your next hit, the target must succeed a Strength save or is restrained until the spell ends. Large and ", 
     "longDescription": "The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away. While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed. AtHigherLevels. If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   }, 
   "detect evil and good": {
@@ -3807,7 +3807,7 @@ module.exports = {
     "spellType": "level 1 Divination", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You know if and where there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, or if a place has been consecrated or desecrated within 30 ft.", 
     "longDescription": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
   }, 
   "command": {
@@ -3817,7 +3817,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A creature follows a one word command on a wisdom fail. The spell does not affect undead or creatures that cant understand you, or if the command is directly harmful to it. Some example commands are approach, drop, flee, grovel, and halt. You can affect one additional creature for each spell slot used above 1st.", 
     "longDescription": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. Ifyou do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends. Approach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you. Drop. The target drops whatever it is holding and then ends its turn. Flee. The target spends its turn moving away from you by the fastest available means. Grovel. The target falls prone and then ends its turn. Halt. The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
   }, 
   "fog cloud": {
@@ -3827,7 +3827,7 @@ module.exports = {
     "spellType": "level 1 Conjuration", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A 20ft radius sphere of fog heavily obscures the area. Radius increases by 20ft for each spell slot above 1st.", 
     "longDescription": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
   }, 
   "symbol": {
@@ -3837,7 +3837,7 @@ module.exports = {
     "spellType": "level 7 Abjuration", 
     "duration": "Until dispelled or triggered", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
+    "shortDescription": "Cast a glyph on a surface or object. The glyph breaks if the object is moved more than 10ft. The glyph requires an Investigation check to find. You decide what triggers the glyph. Once the glyph is triggered, it fills a 60ft radius sphere with fim light for 10 minutes. The glyph affects creatures in the sphere when it's activated, when the enter it for the first time, or when they end their turn in the sphere. Choose one of the following 8 effects: 1) Death: creatures take 10d10 necrotic damage on a failed Constitution save, half as much on a success. 2) Discord: On a failed Constitution save, each target is incapable of communication and has disadvantage on attack rolls and ability checks for one minute. 3) Fear: On a failed wisdom save, each target drops what it was holding and move at least 20 ft from the glyph for one minute. 4) Hopelessness: On a failed Charisma save, targets are overwhelmed with dispair for 1 minute and cannot take harmful actions. 5) Insanity: Each target is driven insane for 1 minute on a failed intelligence save. The target cannot take actions, speak, understand, and is moved randomly by the DM. 6) Pain: each target becomes incapacitated for one minute on a failed Constitution save. 7) Sleep: Each target falls unconscious for 10 minutes on a failed Constitution save. Awakens by damage or if another creature uses an action to wake it. 8) Stunning: targets stunned for one minute on a failed wisdom save.", 
     "longDescription": "When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it. You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph. You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature’s physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don’t trigger the glyph, such as those who say a certain password. When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there. Death. Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save. Discord. Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks. Fear. Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able. Hopelessness. Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can’t attack or target any creature with harmful abilities, spells, or other magical effects. Insanity. Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can’t take actions, can't understand what other creatures say, can’t read, and speaks only in gibberish. The DM controls its movement, which is erratic. Pain. Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save. Sleep. Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake. Stunning. Each target must make a wisdom saving throw and becomes stunned for 1 minute on a failed save."
   }, 
   "branding smite": {
@@ -3847,7 +3847,7 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "", 
+    "shortDescription": "Your next attack deals an extra 2d6 radiant damage to the target, which becomes visible if invisible, and can't become visible again until the spell ends.", 
     "longDescription": "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it’s invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
   }, 
   "hunger of hadar": {
@@ -3857,7 +3857,7 @@ module.exports = {
     "spellType": "level 3 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A 20ft radius sphere blinds creatures inside of it. The area inside is difficult terrain, and any creature that starts its turn inside takes 2d6 cold damage, and must succeed a Dexterity save at the end of their turn or take 2d6 acid damage.", 
     "longDescription": "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded. The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it."
   }, 
   "elemental bane": {
@@ -3867,7 +3867,7 @@ module.exports = {
     "spellType": "level 4 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Choose acid, cold, fire, lightning, or thunder damage. The target takes 2d6 damage each turn it fails a Constitution save. Each turn the target takes additional 2d6 damage.", 
     "longDescription": "Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends. At higher levels: When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them."
   }, 
   "false life": {
@@ -3877,7 +3877,7 @@ module.exports = {
     "spellType": "level 1 Necromancy", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Gain 1d4+4 temporary health. Gain 5 additional health for every slot above 1st level.", 
     "longDescription": "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
   }, 
   "spare the dying": {
@@ -3897,7 +3897,7 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You transmute rock into mud, or mud into rock. In mud, creatures sink, move at 1/4 speed. Each turn, a creature must make a strength save or become restrained unless it uses an action. If you cast mud on a ceiling, creatures must make a Dexterity save or take 4d8 bludgeoning damage (half as much on a save). If you turn mud into rock, creatures in the mud become restrained on a Dexterity fail. The creature can use an action or deal 25 damge to the rock to break free.", 
     "longDescription": "You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the 2 following effects. 1) Transmute Rock to Mud. Nonmagical rock of any sort in the area becomes an equal volume of thick and flowing mud that remains for the spell’s duration. If you cast the spell on an area of ground, it becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength saving throw. A creature must also make this save the first time it enters the area on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is restrained, though it can use an action to end the restrained condition on itself by pulling itself free of the mud. If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one. 2) Transmute Mud to Rock. Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell’s duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a failed save, a creature becomes restrained by the rock. The restrained creature can use an action to try to break free by succeeding on a Strength check (DC 20) or by dealing 25 damage to the rock around it. On a successful save, a creature is shunted safely to the surface to an unoccupied space."
   }, 
   "thunderclap": {
@@ -3907,7 +3907,7 @@ module.exports = {
     "spellType": "Evocation cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "On a failed Constitution save, each creature within 5 ft of you takes 1d6 thunder damage.", 
     "longDescription": "You create a burst of thunderous sound, which can be heard 100 feet away.  Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage. The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
   }, 
   "enhance ability": {
@@ -3917,7 +3917,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Choose one of the following effects: 1)  The target has advantage on Constitution checks. It also gains 2d6 temporary hit points. 2) The target has advantage on Strength checks, and carrying capacity doubles. 3) The target has advantage on Dexterity checks. It also doesn’t take damage from falling up to 20 feet. 4) The target has advantage on Charisma checks 5) The target thas advantage on Intelligence checks 6) The target has advantage on Wisdom checks", 
     "longDescription": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends. Bear’s Endurance: The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends. Bull’s Strength: The target has advantage on Strength checks, and his or her carrying capacity doubles. Cat’s Grace: The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated. Eagle’s Splendor: The target has advantage on Charisma checks. Fox’s Cunning: The target has advantage on Intelligence checks. Owl’s Wisdom: The target has advantage on Wisdom checks. At HigherLevels: W hen you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   }, 
   "friends": {
