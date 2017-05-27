@@ -3667,7 +3667,7 @@ module.exports = {
     "spellType": "level 2 Abjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.", 
     "longDescription": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned."
   }, 
   "aura of life": {
@@ -3677,7 +3677,7 @@ module.exports = {
     "spellType": "level 4 Abjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each nonhostile creature within 30ft of you (including you) have resistence to necrotic damage, its health maximum can't be reduced, and rgains 1 health at the start of each turn.", 
     "longDescription": "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
   }, 
   "counterspell": {
@@ -3687,7 +3687,7 @@ module.exports = {
     "spellType": "level 3 Abjuration", 
     "duration": "Instantaneous", 
     "castingTime": "Special", 
-    "shortDescription": "", 
+    "shortDescription": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. Otherwise, make a spellcasting ability check. The DC equals 10 + the spells level. The creatures spell fails on a success.", 
     "longDescription": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
   }, 
   "power word kill": {
@@ -3707,7 +3707,7 @@ module.exports = {
     "spellType": "level 3 Conjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You conjure up a wave of water that crashes down on an area within range up to 30 feet long, 10 feet wide, and 10 feet tall. On a failed Dexterity save, creatures are knocked prone and take 4d8 bludgeoning damage. On a success, the creature takes half as much damage and isn't knocked prone. The water extinguishes flames winthin 30ft.", 
     "longDescription": "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn’t knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it."
   }, 
   "magic circle": {
@@ -3717,8 +3717,8 @@ module.exports = {
     "spellType": "level 3 Abjuration", 
     "duration": "1 hour", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
-    "longDescription": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways: The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use tele portation or interplanar travel to do so, it must first succeed on a Charisma saving throw. The creature has disadvantage on attack rolls against targets within the cylinder. Targets within the cylinder can’t be charmed, fright ened, or possessed by the creature. When you cast this spell, youcanelecttocauseits magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
+    "shortDescription": "ou create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The creature can't enter the area by nonmagical means. It must make a charisma save to enter by magical means. Targets within the cylinder can’t be charmed, frightened, or possessed by the creature. You can also elect to cause its magic to operate in the reverse direction The spell duration increases by 1 hour for each spell slot of 4th level or higher.", 
+    "longDescription": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways: The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw. The creature has disadvantage on attack rolls against targets within the cylinder. Targets within the cylinder can’t be charmed, frightened, or possessed by the creature. When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
   }, 
   "erupting earth": {
     "url": "https://www.dnd-spells.com/spell/erupting-earth", 
@@ -3727,7 +3727,7 @@ module.exports = {
     "spellType": "level 3 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A fountain of churned earth and stone erupts in a 20-foot cube. Each creature in that area must make a Dexterity save or takes 3d12 bludgeoning damage, and takes half as much on a save. The ground becomes difficult terrain until cleared. The damage increases by 1d12 for each spell slot above 2nd.", 
     "longDescription": "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared away. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand. At higher levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd."
   }, 
   "otiluke's resilient sphere": {
@@ -3737,7 +3737,7 @@ module.exports = {
     "spellType": "level 4 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "On a failed Dexterity save, a large or smaller creature is enclosed in a shimmering sphere of force. Nothing-not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The creature can roll around at half movement speed. A disintegrate spell destroys the sphere.", 
     "longDescription": "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration. Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can’t be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere’s walls and thus roll the sphere at up to half the creature’s speed. Similarly, the globe can be picked up and moved by other creatures. A disintegrate spell targeting the globe destroys it without harming anything inside it."
   }, 
   "mirage arcane": {
@@ -3747,7 +3747,7 @@ module.exports = {
     "spellType": "level 7 Illusion", 
     "duration": "10 days", 
     "castingTime": "10 Minutes", 
-    "shortDescription": "", 
+    "shortDescription": "You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. Similarly, you can alter the appearance of structures, or add them where none are present. The spell can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell’s area disappears immediately. Creatures with truesight see through the illusion but can still interact with it.", 
     "longDescription": "You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain’s general shape remains the same, however. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Similarly, you can alter the appearance of structures, or add them where none are present. The spell doesn’t disguise, conceal, or add creatures. The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell’s area disappears immediately. Creatures with truesight can see through the illusion to the terrain’s true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion’s presence, the creature can still physically interact with the illusion."
   }, 
   "simulacrum": {
@@ -3757,7 +3757,7 @@ module.exports = {
     "spellType": "level 7 Illusion", 
     "duration": "Until dispelled", 
     "castingTime": "12 Hours", 
-    "shortDescription": "", 
+    "shortDescription": "Shape an illusory duplicate of a creature from snow. This copy is a duplicate with half the health of the original creature, starts with no equipment, and obeys your commands. It can be healed in a alchemical lab using rare herbs and minerals worth 100 gold. You can only have one copy active at a time.", 
     "longDescription": "You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creature’s hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates. The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor can it regain expended spell slots. If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly. If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed."
   }, 
   "demiplane": {
@@ -3767,8 +3767,8 @@ module.exports = {
     "spellType": "level 8 Conjuration", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side. Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, ifyou know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
+    "shortDescription": "Create a door to an empty 30ft square room. Medium ceatures fit through the door. When the spell ends, anything in the room is trapped there. You can recast the spell to either connect to an existing room, or a new room.", 
+    "longDescription": "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side. Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
   }, 
   "enthrall": {
     "url": "https://www.dnd-spells.com/spell/enthrall", 
@@ -3777,7 +3777,7 @@ module.exports = {
     "spellType": "level 2 Enchantment", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "On a failed wisdom save, the target has disadvantage on perception checks against other creatures. Does not affect targts immune to charm, and targets in combat have advantage", 
     "longDescription": "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can’t be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak."
   }, 
   "reverse gravity": {
@@ -3787,8 +3787,8 @@ module.exports = {
     "spellType": "level 7 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "This spell reverses gravity in a 50-foot-radius, 100- foot high cylinder centered on a point within range. All creatures and objects that aren’t somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If som e solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike itjust as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration. At the end of the duration, affected objects and creatures fall back down."
+    "shortDescription": "Reverses gravity in a 50-foot-radius, 100-foot high cylinder. All creatures and objects that arent anchored to the gorund fall upwards. Creatures can avoid the fall and grab onto something on a Dexterity save.", 
+    "longDescription": "This spell reverses gravity in a 50-foot-radius, 100- foot high cylinder centered on a point within range. All creatures and objects that aren’t somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike itjust as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration. At the end of the duration, affected objects and creatures fall back down."
   }, 
   "ensnaring strike": {
     "url": "https://www.dnd-spells.com/spell/ensnaring-strike", 
