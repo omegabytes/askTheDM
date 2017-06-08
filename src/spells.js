@@ -3627,7 +3627,7 @@ module.exports = {
     "spellType": "Evocation cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Make a ranged spell attack against the target. On a hit, the target takes 1dlO force damage.", 
     "longDescription": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1dlO force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
   }, 
   "ray of frost": {
@@ -3657,7 +3657,7 @@ module.exports = {
     "spellType": "level 6 Abjuration Ritual", 
     "duration": "1 day", 
     "castingTime": "10 Minutes", 
-    "shortDescription": "", 
+    "shortDescription": "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor.", 
     "longDescription": "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can’t teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell. In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell’s area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell). When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell. The spell’s area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting."
   }, 
   "lesser restoration": {
@@ -3717,7 +3717,7 @@ module.exports = {
     "spellType": "level 3 Abjuration", 
     "duration": "1 hour", 
     "castingTime": "1 Minute", 
-    "shortDescription": "ou create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The creature can't enter the area by nonmagical means. It must make a charisma save to enter by magical means. Targets within the cylinder can’t be charmed, frightened, or possessed by the creature. You can also elect to cause its magic to operate in the reverse direction The spell duration increases by 1 hour for each spell slot of 4th level or higher.", 
+    "shortDescription": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The creature can't enter the area by nonmagical means. It must make a charisma save to enter by magical means. Targets within the cylinder can’t be charmed, frightened, or possessed by the creature. You can also elect to cause its magic to operate in the reverse direction The spell duration increases by 1 hour for each spell slot of 4th level or higher.", 
     "longDescription": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways: The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw. The creature has disadvantage on attack rolls against targets within the cylinder. Targets within the cylinder can’t be charmed, frightened, or possessed by the creature. When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
   }, 
   "erupting earth": {
