@@ -9,8 +9,7 @@
 		},
 		{
 			"slots" : [
-				{"name" : "Condition", 		 "type" : "LIST_OF_CONDITIONS"},
-				{"name" : "ExhaustionLevel", "type" : "LIST_OF_EXHAUSTION_LEVELS"}
+				{"name" : "Condition", 		 "type" : "LIST_OF_CONDITIONS"}
 			],
 			"intent": "ConditionsIntent"
 		},

@@ -126,7 +126,7 @@ var handlers = {
         if (condition) {
             this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', condition, this.attribute['SKILL_NAME'], cardTitle, condition);
+            this.emit(':tellWithCard', condition, this.attributes['SKILL_NAME'], cardTitle, condition);
 
         }
 
