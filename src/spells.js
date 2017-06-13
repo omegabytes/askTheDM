@@ -447,7 +447,7 @@ module.exports = {
     "spellType": "level 2 Transmutation Ritual", 
     "duration": "Concentration, up to 1 day", 
     "castingTime": "1 Action", 
-    "shortDescription": "Needs concentration. You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early."
+    "shortDescription": "Needs concentration. You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
     "longDescription": "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early."
   }, 
   "create undead": {
