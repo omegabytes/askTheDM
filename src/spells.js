@@ -837,7 +837,7 @@ module.exports = {
     "spellType": "level 3 Conjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Call forth spirits to protect you, they float a distance of 15 feet around you. They are flavored to your alignment, and you can designate any number of creature to be unaffected by the guardians. An affected creature's speed is halved while in the area, when a creature enters the area for the first time or starts its turn there, it must make a Wis save or take 3d8 radiant damage or 3d8 necrotic depending on your alignment. When cast using a spell slot of 4th or higher the damage increases by 1d8 for each level above 3rd.", 
     "longDescription": "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature’s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage. At higher levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
   }, 
   "reincarnate": {
@@ -847,7 +847,7 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Hour", 
-    "shortDescription": "", 
+    "shortDescription": "Touch a dead humanoid or a piece of a dead humanoid, provided it has not been dead longer than 10 days. The spell forms a new adult body and then calls the soul to the body. The Dm rolls a d100 and consults a table to determine what form the creature takes when restored to life, or the DM chooses the form. It retains its former life and experiences, but changes its original race and traits accordingly. Consult the Alexa app or page 271 of the player's handbook for the table.", 
     "longDescription": "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target’s soul isn’t free or willing to do so, the spell fails. The magic fashions a new body for the creature to inhabit, which likely causes the creature’s race to change. The DM rolls a d100 and consults a table to determine what form the creature takes when restored to life, or the DM chooses a form. The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly. Please see the Alexa app or page 271 of the players hand book for the table"
   }, 
   "suggestion": {
@@ -857,7 +857,7 @@ module.exports = {
     "spellType": "level 2 Enchantment", 
     "duration": "Concentration, up to 8 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Suggest a course of activity, limited to maximum of two sentences to influence a creature you can see, that can hear and understand you. The suggestion can not be harmful in nature, the target must make a Wis save or be charmed to pursue the course of action described.", 
     "longDescription": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell. The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed. If you or any of your companions damage the target, the spell ends."
   }, 
   "weird": {
@@ -867,7 +867,7 @@ module.exports = {
     "spellType": "level 9 Illusion", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each creature in a 30 foot radius centered on a point must make a Wis save or become frightened. At the start of each frightened creature's turn, it makes another Wis save ortake 4d10 psychic damage.", 
     "longDescription": "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the start of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature."
   }, 
   "protection from poison": {
