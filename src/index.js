@@ -77,49 +77,18 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
-        var levelSlot = this.event.request.intent.slots.Level;
         var conditionName;
-        var exhaustionAttribute;
 
         if (conditionSlot && conditionSlot.value) {
             conditionName = conditionSlot.value.toLowerCase();
         }
 
-        if (levelSlot && levelSlot.value) {
-            exhaustionAttribute = levelSlot.value.toLowerCase();
-        }
-
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
         var conditions = this.t("CONDITIONS");
         var condition  = conditions[conditionName];
-        var exhaustionLevels = this.t("EXHAUSTION_LEVELS");
-        var exhaustionLevel = exhaustionLevels[exhaustionAttribute];
-
-        
-        //user requests information on exhaustion
-        if (condition == 'exhaustion' && !exhaustionLevel) {
-            //if the user just asks about exhaustion, iterate through each level and read it out loud
-            var speechOutput = "Exhaustion has escalating effects at the following levels - ";
-            // var i = 0;
-            // for (levels in condition[exhaustionLevel]) {
-            //     speechOutput = "level " + i + " " + condition[exhaustionLevel];
-            //     i++;
-            // }
-
-            this.attributes['speechOutput'] = speechOutput;
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', speechOutput, this.attributes['SKILL_NAME'], cardTitle, speechOutput);
-        } 
-
-        // //otherwise, if the user asks for the level of exhaustion, get the description for the level
-        else if (condition == 'exhaustion' && exhaustionLevel) {
-            this.attributes['speechOutput'] = condition[exhaustionLevel];
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', condition[exhaustionLevel], this.attributes['SKILL_NAME'], cardTitle, condition[exhaustionLevel]);
-        }
 
         //user requests information on condition
-        else if (condition != 'exhaustion') {
+        if (condition) {
             this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
             this.emit(':tellWithCard', condition, this.attributes['SKILL_NAME'], cardTitle, condition);

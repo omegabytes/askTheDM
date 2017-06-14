@@ -18,10 +18,6 @@
         {
           "name": "Condition",
           "type": "LIST_OF_CONDITIONS"
-        },
-        {
-          "name": "Level",
-          "type": "LIST_OF_EXHAUSTION_LEVELS"
         }
       ],
       "intent": "ConditionsIntent"
