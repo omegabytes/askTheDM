@@ -1,7 +1,7 @@
 //spells
 SpellsIntent what is {Spell}
 SpellsIntent whats {Spell}
-ConditionsIntent what are the effects of {Spell}
+SpellsIntent what are the effects of {Spell}
 SpellsIntent look up {Spell}
 SpellsIntent tell me about {Spell}
 SpellsIntent I forget what {Spell} is
@@ -11,7 +11,7 @@ SpellsIntent to get info on {Spell}
 SpellsIntent get information on {Spell}
 SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
-SpellsIntent how do I cast {Spell}?
+SpellsIntent how do I cast {Spell}
 SpellsIntent how to cast {Spell}
 
 //spell attribute
@@ -50,29 +50,29 @@ ItemsIntent about {Item}
 //item attribute
 ItemsIntent what is the {Attribute} of {Item}
 ItemsIntent whats the {Attribute} of {Item}
-//ItemsIntent what is the {Items}s {Attribute}
-//ItemsIntent what is a {Items}s {Attribute}
-//ItemsIntent what is an {Items}s {Attribute}
-//ItemsIntent whats the {Items}s {Attribute}
-//ItemsIntent whats a {Items}s {Attribute}
-//ItemsIntent whats an {Items}s {Attribute}
+//ItemsIntent what is the {Items} {Attribute}
+//ItemsIntent what is a {Items} {Attribute}
+//ItemsIntent what is an {Items} {Attribute}
+//ItemsIntent whats the {Items} {Attribute}
+//ItemsIntent whats a {Items} {Attribute}
+//ItemsIntent whats an {Items} {Attribute}
 ItemsIntent to get the {Attribute} of {Item}
 ItemsIntent get the {Attribute} of {Item}
 
 //conditions
 ConditionsIntent what is {Condition}
 ConditionsIntent whats {Condition}
-ConditionsIntent what does being {Condition} mean?
-ConditionsIntent what does {Condition} mean?
+ConditionsIntent what does being {Condition} mean
+ConditionsIntent what does {Condition} mean
 ConditionsIntent what are the effects of {Condition}
 ConditionsIntent lookup {Condition}
 ConditionsIntent tell me about {Condition}
-ConditionsIntent I forget what {condition} is
-ConditionsIntent I forget what {condition} does
-ConditionsIntent I forget what the conditions of {condition} are
-ConditionsIntent I forget what the conditions of being {condition} are
-ConditionsIntent I forget what the conditions of the {condition} condition are
-ConditionsIntent I forget what the conditions of having the {condition} condition are
+ConditionsIntent I forget what {Condition} is
+ConditionsIntent I forget what {Condition} does
+ConditionsIntent I forget what the conditions of {Condition} are
+ConditionsIntent I forget what the conditions of being {Condition} are
+ConditionsIntent I forget what the conditions of the {Condition} condition are
+ConditionsIntent I forget what the conditions of having the {Condition} condition are
 ConditionsIntent to get information on {Condition}
 ConditionsIntent to get information about {Condition}
 ConditionsIntent to get info on {Condition}
@@ -92,43 +92,43 @@ ConditionsIntent get the effects of the {Condition} condition
 ConditionsIntent about {Condition}
 ConditionsIntent about the {Condition} condition
 ConditionsIntent about being {Condition}
-ConditionsIntent how does {Condition} work?
-ConditionsIntent how does {Condition} affect me?
-ConditionsIntent how does {Condition} affect a player?
-ConditionsIntent how does {Condition} affect a creature?
-ConditionsIntent how does {Condition} affect a character?
-ConditionsIntent how does {Condition} affect someone?
-ConditionsIntent how does {Condition} affect something?
-ConditionsIntent how does being {Condition} work?
-ConditionsIntent how does being {Condition} affect me?
-ConditionsIntent how does being {Condition} affect a player?
-ConditionsIntent how does being {Condition} affect a creature?
-ConditionsIntent how does being {Condition} affect a character?
-ConditionsIntent how does being {Condition} affect someone?
-ConditionsIntent how does being {Condition} affect something?
-ConditionsIntent what effect does {Condition} have?
-ConditionsIntent what effect does {Condition} have on me?
-ConditionsIntent what effect does {Condition} have on a player?
-ConditionsIntent what effect does {Condition} have on a creature?
-ConditionsIntent what effect does {Condition} have on a character?
-ConditionsIntent what effect does {Condition} have on someone?
-ConditionsIntent what effect does {Condition} have on something?
-ConditionsIntent what effect does being {Condition} have?
-ConditionsIntent what effect does being {Condition} have on me?
-ConditionsIntent what effect does being {Condition} have on a player?
-ConditionsIntent what effect does being {Condition} have on a creature?
-ConditionsIntent what effect does being {Condition} have on a character?
-ConditionsIntent what effect does being {Condition} have on someone?
-ConditionsIntent what effect does being {Condition} have on something?
-ConditionsIntent how does the {Condition} condition work?
-ConditionsIntent how does the {Condition} affect a player?
-ConditionsIntent how does the {Condition} condition affect a character?
-ConditionsIntent how does the {Condition} condition affect someone?
-ConditionsIntent how does the {Condition} condition affect something?
-ConditionsIntent what does the {Condition} condition do?
-ConditionsIntent what does the {Condition} condition do to me?
-ConditionsIntent what does the {Condition} condition do to a player?
-ConditionsIntent what does the {Condition} condition do to a creature?
-ConditionsIntent what does the {Condition} condition do to a character?
-ConditionsIntent what does the {Condition} condition do to someone?
-ConditionsIntent what does the {Condition} condition do to something?
+ConditionsIntent how does {Condition} work
+ConditionsIntent how does {Condition} affect me
+ConditionsIntent how does {Condition} affect a player
+ConditionsIntent how does {Condition} affect a creature
+ConditionsIntent how does {Condition} affect a character
+ConditionsIntent how does {Condition} affect someone
+ConditionsIntent how does {Condition} affect something
+ConditionsIntent how does being {Condition} work
+ConditionsIntent how does being {Condition} affect me
+ConditionsIntent how does being {Condition} affect a player
+ConditionsIntent how does being {Condition} affect a creature
+ConditionsIntent how does being {Condition} affect a character
+ConditionsIntent how does being {Condition} affect someone
+ConditionsIntent how does being {Condition} affect something
+ConditionsIntent what effect does {Condition} have
+ConditionsIntent what effect does {Condition} have on me
+ConditionsIntent what effect does {Condition} have on a player
+ConditionsIntent what effect does {Condition} have on a creature
+ConditionsIntent what effect does {Condition} have on a character
+ConditionsIntent what effect does {Condition} have on someone
+ConditionsIntent what effect does {Condition} have on something
+ConditionsIntent what effect does being {Condition} have
+ConditionsIntent what effect does being {Condition} have on me
+ConditionsIntent what effect does being {Condition} have on a player
+ConditionsIntent what effect does being {Condition} have on a creature
+ConditionsIntent what effect does being {Condition} have on a character
+ConditionsIntent what effect does being {Condition} have on someone
+ConditionsIntent what effect does being {Condition} have on something
+ConditionsIntent how does the {Condition} condition work
+ConditionsIntent how does the {Condition} affect a player
+ConditionsIntent how does the {Condition} condition affect a character
+ConditionsIntent how does the {Condition} condition affect someone
+ConditionsIntent how does the {Condition} condition affect something
+ConditionsIntent what does the {Condition} condition do
+ConditionsIntent what does the {Condition} condition do to me
+ConditionsIntent what does the {Condition} condition do to a player
+ConditionsIntent what does the {Condition} condition do to a creature
+ConditionsIntent what does the {Condition} condition do to a character
+ConditionsIntent what does the {Condition} condition do to someone
+ConditionsIntent what does the {Condition} condition do to something
