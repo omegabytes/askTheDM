@@ -40,6 +40,7 @@ var handlers = {
         }
 
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), spellName);
+        
         var spells = this.t("SPELLS");
         var spell = spells[spellName];
 
@@ -50,6 +51,7 @@ var handlers = {
         if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            
             this.emit(':tellWithCard', spell[spellAttribute], this.attributes['SKILL_NAME'], cardTitle, spell[spellAttribute]);
         }
 
@@ -57,8 +59,11 @@ var handlers = {
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.longDescription;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            
             this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
-        } else {
+        } 
+
+        else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
             var repromptSpeech = this.t("NOT_FOUND_REPROMPT");
             
@@ -112,6 +117,80 @@ var handlers = {
             this.emit(':ask', speechOutput, repromptSpeech);
         }
     },
+
+
+
+
+
+
+    'ItemIntent': function () {
+        var itemSlot = this.event.request.intent.slots.Item;
+        var attributeSlot = this.event.request.intent.slots.Attribute;
+        var itemName;
+        var attributeName;
+
+        if (itemSlot && itemSlot.value) {
+            itemName = itemSlot.value.toLowerCase();
+        }
+
+        if (attributeSlot && attributeSlot.value) {
+            attributeName = attributeName.value.toLowerCase();
+        }
+
+        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), itemName);
+
+        var items = this.t("ITEMS");
+        var item  = items[itemName];
+
+        var itemAttributes = this.t("ATTRIBUTES");
+        var itemAttribute = itemAttributes[attributeName];
+
+        //if the user asks for the attribute of a spell
+        if (item && itemAttribute) {
+            this.attributes['speechOutput'] = item[itemAttribute];
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            
+            this.emit(':tellWithCard', item[itemAttribute], this.attributes['SKILL_NAME'], cardTitle, item[itemAttribute]);
+        }
+
+        //if the user asks only about the spell
+        else if (item && !itemAttribute) {
+            this.attributes['speechOutput'] = item.damage;
+            this.attributes['speechOutput'] = item.properties;
+            this.attributes['speechOutput'] = item.weaponType;
+
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            
+            //this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
+        } 
+
+
+
+        //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
+        else {
+            var speechOutput = this.t("NOT_FOUND_MESSAGE");
+            var repromptSpeech =this.t("NOT_FOUND_REPROMPT");
+
+            if (conditionName) {
+                speechOutput += this.t("CONDITION_NOT_FOUND_WITH_CONDITION_NAME", conditionName);
+            } else {
+                speechOutput += this.t("CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME");
+            }
+            speechOutput += repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            this.emit(':ask', speechOutput, repromptSpeech);
+        }
+    },
+
+
+
+
+
+
+
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = this.t("HELP_MESSAGE");
         this.attributes['repromptSpeech'] = this.t("HELP_REPROMPT");
