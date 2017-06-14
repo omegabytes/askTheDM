@@ -1,7 +1,7 @@
 //spells
 SpellsIntent what is {Spell}
 SpellsIntent whats {Spell}
-ConditionsIntent what are the effects of {Spell}
+SpellsIntent what are the effects of {Spell}
 SpellsIntent look up {Spell}
 SpellsIntent tell me about {Spell}
 SpellsIntent I forget what {Spell} is
@@ -67,12 +67,12 @@ ConditionsIntent what does {Condition} mean
 ConditionsIntent what are the effects of {Condition}
 ConditionsIntent lookup {Condition}
 ConditionsIntent tell me about {Condition}
-ConditionsIntent I forget what {condition} is
-ConditionsIntent I forget what {condition} does
-ConditionsIntent I forget what the conditions of {condition} are
-ConditionsIntent I forget what the conditions of being {condition} are
-ConditionsIntent I forget what the conditions of the {condition} condition are
-ConditionsIntent I forget what the conditions of having the {condition} condition are
+ConditionsIntent I forget what {Condition} is
+ConditionsIntent I forget what {Condition} does
+ConditionsIntent I forget what the conditions of {Condition} are
+ConditionsIntent I forget what the conditions of being {Condition} are
+ConditionsIntent I forget what the conditions of the {Condition} condition are
+ConditionsIntent I forget what the conditions of having the {Condition} condition are
 ConditionsIntent to get information on {Condition}
 ConditionsIntent to get information about {Condition}
 ConditionsIntent to get info on {Condition}
