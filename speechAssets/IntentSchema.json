@@ -1,15 +1,38 @@
 {
-	"intents": [
-		{
-			"slots": [
-				{"name" : "Spell", 		"type" : "LIST_OF_SPELLS"},
-				{"name" : "Attribute", 	"type" : "LIST_OF_ATTRIBUTES"}
-			],
-			"intent": "SpellsIntent"
-		},
-		    {"intent": "AMAZON.RepeatIntent"},
-    		{"intent": "AMAZON.HelpIntent"},
-    		{"intent": "AMAZON.StopIntent"},
-    		{"intent": "AMAZON.CancelIntent"}
-	]
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "Attribute",
+          "type": "LIST_OF_ATTRIBUTES"
+        }
+      ],
+      "intent": "SpellsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Condition",
+          "type": "LIST_OF_CONDITIONS"
+        }
+      ],
+      "intent": "ConditionsIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
 }

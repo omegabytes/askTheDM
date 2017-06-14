@@ -26,5 +26,8 @@ You don't need an echo to develop or test this application. Services like https:
 		- short description 
 		- long description 
 		- spell type and level
+	- Conditions
+		- description
+		- exhaustion by level
 
 - [Sample Utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances_en_US.txt)
