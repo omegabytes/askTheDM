@@ -47,7 +47,7 @@ var handlers = {
         var spellAttribute = spellAttributes[attributeName];
 
         //if the user asks for the attribute of a spell
-        if (spell  && spellAttribute) {
+        if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
             this.emit(':tellWithCard', spell[spellAttribute], this.attributes['SKILL_NAME'], cardTitle, spell[spellAttribute]);
@@ -142,7 +142,6 @@ var languageStrings = {
             "SPELLS":                                       spells.SPELLS_EN_US,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
-            "EXHAUSTION_LEVELS" :                           conditions.EXHAUSTION_LEVELS_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
