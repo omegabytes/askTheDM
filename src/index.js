@@ -77,57 +77,52 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
-        // var levelSlot = this.event.request.intent.slots.ExhaustionLevel;
+        var levelSlot = this.event.request.intent.slots.Level;
         var conditionName;
-        // var exhaustionLevel;
+        var exhaustionAttribute;
 
         if (conditionSlot && conditionSlot.value) {
             conditionName = conditionSlot.value.toLowerCase();
         }
 
-        // if (levelSlot && levelSlot.value) {
-        //     exhaustionLevel = levelSlot.value.toLowerCase();
-        // }
+        if (levelSlot && levelSlot.value) {
+            exhaustionAttribute = levelSlot.value.toLowerCase();
+        }
 
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
         var conditions = this.t("CONDITIONS");
         var condition  = conditions[conditionName];
+        var exhaustionLevels = this.t("EXHAUSTION_LEVELS");
+        var exhaustionLevel = exhaustionLevels[exhaustionAttribute];
+
         
         //user requests information on exhaustion
-        // if (condition == 'exhaustion') {
-        //     //if the user just asks about exhaustion, iterate through each level and read it out loud
-        //     var speechOutput = "Exhaustion has escalating effects at the following levels - ";
-        //     var i = 0;
-        //     for (levels in condition[exhaustionLevel]) {
-        //         speechOutput = "level " + i + " " + condition[exhaustionLevel];
-        //         i++;
-        //     }
+        if (condition == 'exhaustion' && !exhaustionLevel) {
+            //if the user just asks about exhaustion, iterate through each level and read it out loud
+            var speechOutput = "Exhaustion has escalating effects at the following levels - ";
+            // var i = 0;
+            // for (levels in condition[exhaustionLevel]) {
+            //     speechOutput = "level " + i + " " + condition[exhaustionLevel];
+            //     i++;
+            // }
 
-        //     this.attributes['speechOutput'] = speechOutput;
-        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-        //     this.emit(':tellWithCard', speechOutput, this.attribute['SKILL_NAME'], cardTitle, speechOutput);
-        // } 
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            this.emit(':tellWithCard', speechOutput, this.attributes['SKILL_NAME'], cardTitle, speechOutput);
+        } 
 
         // //otherwise, if the user asks for the level of exhaustion, get the description for the level
-        // else if (condition == 'exhaustion' && exhaustionLevel) {
-        //     this.attributes['speechOutput'] = condition[exhaustionLevel];
-        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-        //     this.emit(':tellWithCard', condition[exhaustionLevel], this.attribute['SKILL_NAME'], cardTitle, condition[exhaustionLevel]);
-        // }
+        else if (condition == 'exhaustion' && exhaustionLevel) {
+            this.attributes['speechOutput'] = condition[exhaustionLevel];
+            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
+            this.emit(':tellWithCard', condition[exhaustionLevel], this.attributes['SKILL_NAME'], cardTitle, condition[exhaustionLevel]);
+        }
 
         //user requests information on condition
-        // else if (condition) {
-        //     this.attributes['speechOutput'] = condition;
-        //     this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-        //     this.emit(':tellWithCard', condition, this.attribute['SKILL_NAME'], cardTitle, condition);
-
-        // }
-
-        if (condition) {
+        else if (condition != 'exhaustion') {
             this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
             this.emit(':tellWithCard', condition, this.attributes['SKILL_NAME'], cardTitle, condition);
-
         }
 
         //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
@@ -178,7 +173,7 @@ var languageStrings = {
             "SPELLS":                                       spells.SPELLS_EN_US,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
-            // "EXHAUSTION_LEVELS" :                           conditions.EXHAUSTION_LEVELS_EN_US,
+            "EXHAUSTION_LEVELS" :                           conditions.EXHAUSTION_LEVELS_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
