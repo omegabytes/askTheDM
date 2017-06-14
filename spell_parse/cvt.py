@@ -13,6 +13,7 @@ with open('spells.json', 'r') as f:
 
 
 newjson = {}
+spell_names = []
 
 for spell in spelljs:
     if spell["level"].lower() == "cantrip":             #if the spell is a cantrip, don't append level to the front of the spelltype string
@@ -24,9 +25,10 @@ for spell in spelljs:
         spell["name"] = ritualRE.sub("",spell["name"])  #replaces (Ritual) with an empty string in the name
         spelltype += " Ritual"                          #and adds it to the spellType
 
+
     if (spell["components"] is not None):
         if verbalRE.findall(spell["components"]):
-            print spell["components"]
+            #print spell["components"]
             spell["components"] = verbalRE.sub("Verbal",spell["components"])
 
         if somaticRE.findall(spell["components"]):
@@ -34,9 +36,13 @@ for spell in spelljs:
 
         if materialRE.findall(spell["components"]):
             spell["components"] = materialRE.sub("Material",spell["components"])
+
+    spell_names.append(spell["name"].encode('ascii', 'ignore'))
     
         
     # print spell["components"]
+
+    print spell_names
 
 
     newjson.update(
@@ -56,3 +62,8 @@ for spell in spelljs:
 
 with open('correction.json', 'w') as f:
     json.dump(newjson,f, indent=2)
+
+spellfile = open('spellnames.txt','w')
+for spell in spell_names:
+    spellfile.write("%s\n" % spell)
+

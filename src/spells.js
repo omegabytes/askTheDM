@@ -3617,8 +3617,8 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "Until the spell ends, wind whirls around you, and you gain the following benefits: • Ranged weapon attacks made against you have disad- vantage on the attack roll. • You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can some- how prevent it. • You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
+    "shortDescription": "Requres concentration. Ranged attacks have disadvantage against you and you gain a flying speed of 60 ft. You can also use your action to create a 15 ft cube with 60 ft. Creatures inside take 2d10 bludgeoning damage on a failed Constitution save, half as much on a success, and large or smaller creatures are pushed 10 ft away from the centure of the cube.", 
+    "longDescription": "Until the spell ends, wind whirls around you, and you gain the following benefits: Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it. You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
   }, 
   "eldritch blast": {
     "url": "https://www.dnd-spells.com/spell/eldritch-blast", 
