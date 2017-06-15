@@ -33,7 +33,7 @@
         },
         {
           "name" : "Attribute",
-          "type" : "LIST_OF_ATTRIBUTES"
+          "type" : "LIST_OF_ITEM_ATTRIBUTES"
         }
       ],
       "intent": "ItemsIntent"

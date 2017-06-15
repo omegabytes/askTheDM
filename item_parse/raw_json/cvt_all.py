@@ -44,7 +44,43 @@ for weapon in weaponjs:
             }
         )
 
-with open('armor_weapons_correction.json', 'w') as f:
+with open('adventure_gear_raw.json', 'r') as f:
+    adventurejs = json.load(f)
+
+for gear in adventurejs:
+    item_name.append(gear["name"].lower())
+
+    newjson.update(
+        {
+            gear["name"].lower() : {
+                'cost' : gear["cost"],
+                'weight' : gear["weight"],
+                'catagory' : gear["catagory"],
+                'itemType' : gear["itemType"]
+                }
+            }
+        )
+
+with open('vehicle_raw.json', 'r') as f:
+    vehiclejs = json.load(f)
+
+for vehicle in vehiclejs:
+    item_name.append(vehicle["name"].lower())
+
+    newjson.update(
+        {
+            vehicle["name"].lower() : {
+                'cost' : vehicle["cost"],
+                'speed' : vehicle["speed"],
+                'carryCapacity' : vehicle["carry capacity"],
+                'catagory' : vehicle["catagory"],
+                'type' : vehicle["item type"]
+                }
+            }
+        )
+
+
+with open('items.json', 'w') as f:
     json.dump(newjson,f, indent=2)
 
 itemFile = open('itemnames.txt','w')

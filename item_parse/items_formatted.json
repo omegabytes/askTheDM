@@ -1,22 +1,4 @@
-module.exports = {     
- "ITEM_ATTRIBUTES_EN_US" : {    
-   "category" :        "category",    
-   "cost" :            "cost",            
-   "weapon type" :     "weaponType",   
-   "weight" :          "weight",    
-   "properties" :      "properties",
-   "damage" :          "damage",
-   "strength" :        "strength",
-   "armor class" :     "armorClass",
-   "ac" :              "armorClass",
-   "type" :            "type",
-   "capacity":         "capacity",
-   "speed" :           "speed",
-   "carry capacity" :  "carryCapacity",
-   "quality" :         "quality",
-   "dice roll" :       "dice roll"
- },    
- "ITEMS_EN_US" : {
+{
   "padded": {
     "cost": "5 gp",
     "weight": "8 lb.",
@@ -1350,5 +1332,4 @@ module.exports = {
     "catagory": "Vehicles",
     "type": "Waterborne"
   }
-}
 }

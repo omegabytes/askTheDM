@@ -147,6 +147,18 @@ torch
 vial
 waterskin
 whetstone
+backpack*
+basket
+bottle
+bucket
+chest
+flask or tankard
+jug or pitcher
+pot, iron
+pouch
+sack
+vial
+waterskin
 alchemist's supplies
 brewer's supplies
 calligrapher's supplies
