@@ -18,7 +18,7 @@ for weapon in weaponjs:
                 'weight' : weapon["weight"],
                 'properties' : weapon["properties"],
                 'catagory' : weapon["catagory"],
-                'weapon type' : weapon["weapon type"]
+                'weaponType' : weapon["weapon type"]
                 }
             }
         )

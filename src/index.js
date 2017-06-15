@@ -4,6 +4,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
 var spells = require('./spells');
 var conditions = require('./conditions');
+var items = require('./items');
 
 
 exports.handler = function(event, context, callback) {
@@ -117,62 +118,40 @@ var handlers = {
             this.emit(':ask', speechOutput, repromptSpeech);
         }
     },
-
-
-
-
-
-
-    'ItemIntent': function () {
+    'ItemsIntent': function () {
         var itemSlot = this.event.request.intent.slots.Item;
-        var attributeSlot = this.event.request.intent.slots.Attribute;
+        var itemAttributeSlot = this.event.request.intent.slots.ItemAttribute;
         var itemName;
-        var attributeName;
+        var itemAttributeName;
 
-        if (itemSlot && itemSlot.value) {
+        if(itemSlot && itemSlot.value){
             itemName = itemSlot.value.toLowerCase();
         }
 
-        if (attributeSlot && attributeSlot.value) {
-            attributeName = attributeName.value.toLowerCase();
+        if(itemAttributeSlot && itemAttributeSlot.value){
+            itemAttributeName = itemAttributeSlot.value.toLowerCase();
         }
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), itemName);
+        var items = this.t("ITEMS")
+        var itemAttributes = this.t("ITEM_ATTRIBUTES")
 
-        var items = this.t("ITEMS");
-        var item  = items[itemName];
+        var item = items[itemName];
+        var itemAttibute = itemAttributes[itemAttributeName];
 
-        var itemAttributes = this.t("ATTRIBUTES");
-        var itemAttribute = itemAttributes[attributeName];
-
-        //if the user asks for the attribute of a spell
-        if (item && itemAttribute) {
-            this.attributes['speechOutput'] = item[itemAttribute];
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            
-            this.emit(':tellWithCard', item[itemAttribute], this.attributes['SKILL_NAME'], cardTitle, item[itemAttribute]);
+        if(item && itemAttibute){
+            this.attributes['speechOutput'] = item[itemAttibute];
         }
 
-        //if the user asks only about the spell
-        else if (item && !itemAttribute) {
-            this.attributes['speechOutput'] = item.damage;
-            this.attributes['speechOutput'] = item.properties;
-            this.attributes['speechOutput'] = item.weaponType;
+        else if(item && !itemAttibute){
+            this.attributes['speechOutput'] = "this got here";
+        }
 
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            
-            //this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
-        } 
-
-
-
-        //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
         else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
             var repromptSpeech =this.t("NOT_FOUND_REPROMPT");
 
-            if (conditionName) {
-                speechOutput += this.t("CONDITION_NOT_FOUND_WITH_CONDITION_NAME", conditionName);
+            if (itemAttribute) {
+                speechOutput += this.t("CONDITION_NOT_FOUND_WITH_CONDITION_NAME", itemAttribute);
             } else {
                 speechOutput += this.t("CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME");
             }
@@ -183,14 +162,8 @@ var handlers = {
 
             this.emit(':ask', speechOutput, repromptSpeech);
         }
+
     },
-
-
-
-
-
-
-
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = this.t("HELP_MESSAGE");
         this.attributes['repromptSpeech'] = this.t("HELP_REPROMPT");
@@ -221,6 +194,8 @@ var languageStrings = {
             "SPELLS":                                       spells.SPELLS_EN_US,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
+            "ITEMS" :                                       items.ITEMS_EN_US,
+            "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
@@ -239,10 +214,12 @@ var languageStrings = {
     },
     "en-US": {
         "translation": {
-            "SPELLS" :      spells.SPELLS_EN_US,
-            "ATTRIBUTES" :  spells.ATTRIBUTES_EN_US,
-            "CONDITIONS" :  conditions.CONDITIONS_EN_US,
-            "SKILL_NAME" :  "Ask the DM"
+            "SPELLS" :               spells.SPELLS_EN_US,
+            "ATTRIBUTES" :           spells.ATTRIBUTES_EN_US,
+            "CONDITIONS" :           conditions.CONDITIONS_EN_US,
+            "ITEMS" :                items.ITEMS_EN_US,
+            "ITEM_ATTRIBUTES" :      items.ITEM_ATTRIBUTES_EN_US,
+            "SKILL_NAME" :           "Ask the DM"
         }
     }
 };

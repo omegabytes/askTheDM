@@ -1,13 +1,4 @@
-module.exports = {     
- "ITEM_ATTRIBUTES_EN_US" : {    
-   "catagory" :        "catagory",    
-   "cost" :            "cost",            
-   "weapon type" :     "weaponType",   
-   "weight" :          "weight",    
-   "properties" :      "properties",
-   "damage" :          "damage"
- },    
- "ITEMS_EN_US" : {
+{
   "club": {
     "cost": "1 sp",
     "damage": "1d4 bludgeoning",
@@ -304,5 +295,4 @@ module.exports = {
     "catagory": "Weapon",
     "weaponType": "Martial Ranged Weapons"
   }
-}
 }
