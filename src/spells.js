@@ -3080,16 +3080,26 @@ module.exports = {
     "shortDescription": "Up to six creatures gain health equal to 2d8 + your spellcasting modifier", 
     "longDescription": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
   }, 
-  "blindness/deafness": {
+  "deafness": {
     "url": "https://www.dnd-spells.com/spell/blindnessdeafness", 
     "range": "30 feet", 
     "components": "Verbal", 
     "spellType": "level 2 Necromancy", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends. At Higher Levels.When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
-  }, 
+    "shortDescription": "Deafen a foe.", 
+    "longDescription": "You can deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is deafened for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends. At Higher Levels.When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+  },
+  "blindness": {
+    "url": "https://www.dnd-spells.com/spell/blindnessdeafness", 
+    "range": "30 feet", 
+    "components": "Verbal", 
+    "spellType": "level 2 Necromancy", 
+    "duration": "1 minute", 
+    "castingTime": "1 Action", 
+    "shortDescription": "Blind a foe.", 
+    "longDescription": "You can blind a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends. At Higher Levels.When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+  },
   "harm": {
     "url": "https://www.dnd-spells.com/spell/harm", 
     "range": "60 feet", 
@@ -3097,7 +3107,7 @@ module.exports = {
     "spellType": "level 6 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A target takes 14d6 necrotic damage on a failed Constitution save, half as much on a success. Cannot reduce health below one. Health max is also reduced to the damage taken on a fail.", 
     "longDescription": "You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can’t reduce the target’s hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes."
   }, 
   "immolation": {
@@ -3107,7 +3117,7 @@ module.exports = {
     "spellType": "level 5 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A target takes 7d6 fire damage on a failed Dexterity save, half as much on a success. Also on a fail, the target burns and sheds bright light. While burning, the target takes 3d6 fire damage on a failed Dexterity saves. Flames cannot be extinguished nonmagically.", 
     "longDescription": "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell’s duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can’t be extinguished through nonmagical means. If damage from this spell reduces a target to 0 hit points, the target is turned to ash."
   }, 
   "sequester": {
@@ -3117,7 +3127,7 @@ module.exports = {
     "spellType": "level 7 Transmutation", 
     "duration": "Until dispelled", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A target becomes invisible on touch and can’t be targeted by divination spells or perceived through scrying sensors created by divination spells. If the target is a creature, it falls into a state of suspended animation, until damaged or dispelled, or a certain condition is reached.", 
     "longDescription": "By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can’t be targeted by divination spells or perceived through scrying sensors created by divination spells. If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn’t grow older. You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include after 1,000 years or when the tarrasque awakens. This spell also ends if the target takes any damage."
   }, 
   "bones of the earth": {
@@ -3127,7 +3137,7 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Cause up to six 5 by 30 foot pillars of stone to burst from places on the ground. Creatures must succeed a Dexterity save or are lifted by the pillars. Creatures can be pinned to a ceiling, taking 6d6 bludgeoning damage. Creatures can escape on a successful strength or dex check against the spell save DC", 
     "longDescription": "You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius. The rubble lasts until cleared. If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save. If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes 6d6 bludgeoning damage and is restrained, pinched between the pillar and the obstacle. The restrained creature can use an action to make a Strength or Dexterity check (the creature’s choice) against the spell’s saving throw DC. On a success, the creature is no longer restrained and must either move off the pillar or fall off it. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th."
   }, 
   "animal friendship": {
@@ -3137,8 +3147,8 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "24 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast’s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell’s duration. If you or one of your companions harms the target, the spells ends. AtHigherLevels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+    "shortDescription": "You convince a beast with less than 4 intelligence that you mean it no harm", 
+    "longDescription": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast’s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell’s duration. If you or one of your companions harms the target, the spells ends. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
   }, 
   "plane shift": {
     "url": "https://www.dnd-spells.com/spell/plane-shift", 
@@ -3147,7 +3157,7 @@ module.exports = {
     "spellType": "level 7 Conjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms.", 
     "longDescription": "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City o f Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM’s discretion. Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle. You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
   }, 
   "message": {
@@ -3157,7 +3167,7 @@ module.exports = {
     "spellType": "Transmutation cantrip", 
     "duration": "1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A target hears a message and can reply, only the two of you can hear the exchange.", 
     "longDescription": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence. 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings."
   }, 
   "zone of truth": {
@@ -3167,8 +3177,8 @@ module.exports = {
     "spellType": "level 2 Enchantment", 
     "duration": "10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point o f your choice within range. Until the spell ends, a creature that enters the spell’s area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw. An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
+    "shortDescription": "Create a magical zone that guards against deception in a 15-foot-radius sphere. A creature that enters the spell’s area for the first time on a turn or starts its turn there must make a Charisma saving throw. The creature can't lie on a fail. Affected creatures are aware of the spell and can be evasive.", 
+    "longDescription": "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell’s area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw. An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
   }, 
   "antipathy": {
     "url": "https://www.dnd-spells.com/spell/antipathysympathy", 
@@ -3177,8 +3187,8 @@ module.exports = {
     "spellType": "level 8 Enchantment", 
     "duration": "10 days", 
     "castingTime": "1 Hour", 
-    "shortDescription": "", 
-    "longDescription": "This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura’s effect. Antipathy. The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can’t see the target. If the creature moves more than 60 feet from the target and can’t see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it. Ending the Effect. If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+    "shortDescription": "The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can’t see the target. See long description.", 
+    "longDescription": "The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can’t see the target. If the creature moves more than 60 feet from the target and can’t see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it. Ending the Effect. If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
   }, 
    "sympathy": {
     "url": "https://www.dnd-spells.com/spell/antipathysympathy", 
