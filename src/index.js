@@ -40,8 +40,6 @@ var handlers = {
             attributeName = attributeSlot.value.toLowerCase();
         }
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), spellName);
-        
         var spells = this.t("SPELLS");
         var spell = spells[spellName];
 
@@ -52,19 +50,17 @@ var handlers = {
         if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            
-            this.emit(':tellWithCard', spell[spellAttribute], this.attributes['SKILL_NAME'], cardTitle, spell[spellAttribute]);
+
+            this.emit(':tell', spell[spellAttribute]);
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.longDescription;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            
-            this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
-        } 
 
-        else {
+            this.emit(':tell', spell.longDescription);
+        } else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
             var repromptSpeech = this.t("NOT_FOUND_REPROMPT");
             
@@ -89,7 +85,6 @@ var handlers = {
             conditionName = conditionSlot.value.toLowerCase();
         }
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
         var conditions = this.t("CONDITIONS");
         var condition  = conditions[conditionName];
 
@@ -97,7 +92,7 @@ var handlers = {
         if (condition) {
             this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', condition, this.attributes['SKILL_NAME'], cardTitle, condition);
+            this.emit(':tell', condition);
         }
 
         //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
