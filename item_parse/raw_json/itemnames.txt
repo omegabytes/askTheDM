@@ -1,0 +1,50 @@
+padded
+leather
+studded leather
+hide
+chain shirt
+scale mail
+breastplate
+half plate
+ring mail
+chain mail
+splint
+plate
+shield
+club
+dagger
+greatclub
+handaxe
+javelin
+light hammer
+mace
+quarterstaff
+sickle
+spear
+light crossbow
+dart
+shortbow
+sling
+battleaxe
+flail
+glaive
+greataxe
+greatsword
+halberd
+lance
+longsword
+maul
+morningstar
+pike
+rapier
+scimitar
+shortsword
+trident
+war pick
+warhammer
+whip
+blowgun
+hand crossbow
+heavy crossbow
+longbow
+net

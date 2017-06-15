@@ -132,18 +132,23 @@ var handlers = {
             itemAttributeName = itemAttributeSlot.value.toLowerCase();
         }
 
-        var items = this.t("ITEMS")
-        var itemAttributes = this.t("ITEM_ATTRIBUTES")
+        var items = this.t("ITEMS");
+        var itemAttributes = this.t("ITEM_ATTRIBUTES");
 
         var item = items[itemName];
-        var itemAttibute = itemAttributes[itemAttributeName];
+        var itemAttribute  = itemAttributes[itemAttributeName];
 
-        if(item && itemAttibute){
-            this.attributes['speechOutput'] = item[itemAttibute];
+        if(item && itemAttribute){
+            if(!item[itemAttributeName]){
+                this.emit(':tell', "NOT_FOUND_MESSAGE")
+            }
+            else{
+                this.emit(':tell', item[itemAttribute]);
+            }
         }
 
         else if(item && !itemAttibute){
-            this.attributes['speechOutput'] = "this got here";
+            this.emit(':tell', item.damage);
         }
 
         else {
