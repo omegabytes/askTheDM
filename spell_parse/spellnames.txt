@@ -1,409 +1,409 @@
-Acid Splash
-Clairvoyance
-Circle of Power
-Command
-Commune with Nature 
-Color Spray
-Cloudkill
-Clone
-Cloud of Daggers
-Commune 
-Circle of Death
-Chill Touch
-Chromatic Orb
-Charm Person
-Calm Emotions
-Chain Lightning
-Sword Burst
-Green-Flame Blade
-Lightning Lure
-Wall of Sand
-Booming Blade
-Abi-Dalzims Horrid Wilting
-Immolation
-Vitriolic Sphere
-Melfs Minute Meteors 
-Storm Sphere
-Snillocs Snowball Swarm
-Maximilians Earthen Grasp
-Catapult
-Aganazzars Scorcher
-Whirlwind
-Investiture of Wind
-Primordial Ward
-Investiture of Stone
-Investiture of Ice
-Investiture of Flame
-Bones of the Earth
-Transmute Rock
-Maelstrom
-Control Winds
-Watery Sphere
-Elemental Bane
-Wall of Water
-Tidal Wave
-Flame Arrows
-Erupting Earth
-Earthbind
-Dust Devil
-Beast Bond
-Ice Knife
-Absorb Elements 
-Shape Water
-Mold earth
-Gust
-Magic Stone
-Frostbite
-Control Flames
-Create Bonfire
-Warding Wind
-Skywrite 
-Pyrotechnics
-Earth Tremor 
-Thunderclap
-Trap the Soul
-Vicious Mockery
-Power Word Heal
-Zone of Truth
-Wrathful Smite
-Word of Recall
-Witch Bolt
-Wind Wall
-Wish
-Wind Walk
-Weird
-Web
-Water Walk 
-Water Breathing 
-Warding Bond
-Wall of Stone
-Wall of Thorns
-Wall of Force
-Wall of Fire
-Wall of Ice
-Vampiric Touch
-Unseen Servant 
-True Seeing
-Tsunami
-True Strike
-Tree Stride
-True Resurrection
-True Polymorph
-Transport via Plants
-Tongues
-Time Stop
-Thunderwave
-Thunderous Smite
-Thaumaturgy
-Thorn Whip
-Tensers Floating Disk 
-Teleportation Circle
-Teleport
-Telepathy
-Telekinesis
-Tashas Hideous Laughter
-Swift Quiver
-Sunburst
-Symbol
-Sunbeam
-Suggestion
-Storm of Vengeance
-Stoneskin
-Stone Shape
-Spiritual Weapon
-Stinking Cloud
-Staggering Smite
-Spirit Guardians
-Spike Growth
-Speak with Plants
-Spider Climb
-Speak with Dead
-Spare the Dying
-Sleet Storm
-Slow
-Speak with Animals 
-Sleep
-Simulacrum
-Silence 
-Silent Image
-Shocking Grasp
-Shillelagh
-Shield of Faith
-Shield
-Shatter
-Shapechange
-Sequester
-See invisibility
-Seeming
-Sending
-Searing Smite
-Scrying
-Scorching Ray
-Sanctuary
-Sacred Flame
-Rope Trick
-Resurrection
-Reverse Gravity
-Resistance
-Revivify
-Remove Curse
-Ray of Sickness
-Reincarnate
-Regenerate
-Ray of Frost
-Rarys Telepathic Bond 
-Ray of Enfeeblement
-Raise Dead
-Purify Food and Drink 
-Protection from Poison
-Protection from Evil and Good
-Protection from Energy
-Programmed Illusion
-Project Image
-Prismatic Wall
-Produce Flame
-Prismatic Spray
-Prestidigitation
-Prayer of Healing
-Power Word Stun
-Power Word Kill
-Plant Growth
-Polymorph
-Plane Shift
-Poison Spray
-Planar Ally
-Planar Binding
-Phantom Steed 
-Phantasmal Killer
-Phantasmal Force
-Passwall
-Ottos Irresistible Dance
-Pass Without Trace
-Otilukes Resilient Sphere
-Otilukes Freezing Sphere
-Nondetection
-Nystuls Magic Aura
-Move Earth
-Mordenkainens Sword
-Mordenkainens Private Sanctum
-Mordenkainens Magnificent Mansion
-Mordenkainens Faithful Hound
-Moonbeam
-Modify Memory
-Mislead
-Misty Step
-Mirage Arcane
-Mirror Image
-Minor Illusion
-Mind Blank
-Meteor Swarm
-Message
-Melfs Acid Arrow
-Mending
-Meld into Stone 
-Maze
-Mass Suggestion
-Mass Healing Word
-Mass Heal
-Mass Cure Wounds
-Magic Weapon
-Major Image
-Magic Missile
-Magic Mouth 
-Magic Jar
-Mage Hand
-Magic Circle
-Mage Armor
-Locate Object
-Locate Creature
-Longstrider
-Locate Animals or Plants 
-Lightning Bolt
-Lightning Arrow
-Light
-Levitate
-Lesser Restoration
-Leomunds Tiny Hut 
-Leomunds Secret Chest
-Knock
-Legend Lore
-Jump
-Invisibility
-Insect Plague
-Inflict Wounds
-Illusory Script 
-Incendiary Cloud
-Imprisonment
-Identify 
-Ice Storm
-Hypnotic Pattern
-Hunters Mark
-Hunger of Hadar
-Holy Aura
-Hold Monster
-Hold Person
-Heroism
-Hex
-Heroes Feast
-Hellish Rebuke
-Heat Metal
-Healing Word
-Harm
-Heal
-Haste
-Hallucinatory Terrain
-Hallow
-Gust of Wind
-Hail of Thorns
-Guiding Bolt
-Guidance
-Guards and Wards
-Guardian of Faith
-Greater Restoration
-Greater Invisibility
-Grease
-Grasping Vine
-Goodberry
-Glyph of Warding
-Globe of Invulnerability
-Glibness
-Giant Insect
-Gentle Repose 
-Geas
-Gate
-Friends
-Gaseous Form
-Foresight
-Forbiddance 
-Freedom of Movement
-Forcecage
-Fog Cloud
-Fly
-Flesh to Stone
-Flaming Sphere
-Flame Strike
-Flame Blade
-Fire Storm
-Fireball
-Fire Shield
-Fire Bolt
-Finger of Death
-Find Traps
-Find Steed
-Find the Path
-Find Familiar 
-Feign Death 
-Feeblemind
-Feather Fall
-Fear
-False Life
-Faerie Fire
-Fabricate
-Eyebite
-Expeditious Retreat
-Evards Black Tentacles
-Etherealness
-Enthrall
-Entangle
-Ensnaring Strike
-Enlarge/Reduce
-Elemental Weapon
-Enhance Ability
-Eldritch Blast
-Earthquake
-Druidcraft
-Dream
-Drawmijs Instant Summons 
-Dominate Person
-Dominate Monster
-Divine Word
-Dominate Beast
-Divine Favor
-Divination 
-Dissonant Whispers
-Dispel Magic
-Dispel Evil and Good
-Disguise Self
-Disintegrate
-Dimension Door
-Detect Thoughts
-Detect Poison and Disease
-Detect Magic 
-Detect Evil and Good
-Destructive Wave
-Demiplane
-Death Ward
-Daylight
-Delayed Blast Fireball
-Darkvision
-Darkness
-Dancing Lights
-Crusaders Mantle
-Cure Wounds
-Creation
-Crown of Madness
-Create Undead
-Create or Destroy Water
-Create Food and Water
-Counterspell
-Cordon of Arrows
-Control Weather
-Control Water
-Continual Flame
-Contingency
-Contagion
-Contact Other Plane 
-Conjure Woodland Beings
-Conjure Volley
-Conjure Minor Elementals
-Conjure Fey
-Conjure Barrage
-Conjure Elemental
-Conjure Celestial
-Confusion
-Conjure Animals
-Cone of Cold
-Compulsion
-Comprehend Languages 
-Compelled Duel
-Burning Hands
-Call Lightning
-Branding Smite
-Blur
-Blink
-Blinding Smite
-Blindness/Deafness
-Blight
-Bless
-Blade Ward
-Bigbys Hand
-Blade Barrier
-Bestow Curse
-Beast Sense 
-Beacon of Hope
-Barkskin
-Banishment
-Banishing Smite
-Bane
-Awaken
-Aura of Vitality
-Aura of Purity
-Aura of Life
-Augury 
-Astral Projection
-Arms of Hadar
-Armor of Agathys
-Arcane Lock
-Arcane Gate
-Arcane Eye
-Antipathy/Sympathy
-Antimagic Field
-Antilife Shell
-Animate Objects
-Animal Shapes
-Animate Dead
-Alarm 
-Animal Messenger 
-Animal Friendship
-Alter Self
-Aid
+acid splash
+clairvoyance
+circle of power
+command
+commune with nature 
+color spray
+cloudkill
+clone
+cloud of daggers
+commune 
+circle of death
+chill touch
+chromatic orb
+charm person
+calm emotions
+chain lightning
+sword burst
+green-flame blade
+lightning lure
+wall of sand
+booming blade
+abi-dalzims horrid wilting
+immolation
+vitriolic sphere
+melfs minute meteors 
+storm sphere
+snillocs snowball swarm
+maximilians earthen grasp
+catapult
+aganazzars scorcher
+whirlwind
+investiture of wind
+primordial ward
+investiture of stone
+investiture of ice
+investiture of flame
+bones of the earth
+transmute rock
+maelstrom
+control winds
+watery sphere
+elemental bane
+wall of water
+tidal wave
+flame arrows
+erupting earth
+earthbind
+dust devil
+beast bond
+ice knife
+absorb elements 
+shape water
+mold earth
+gust
+magic stone
+frostbite
+control flames
+create bonfire
+warding wind
+skywrite 
+pyrotechnics
+earth tremor 
+thunderclap
+trap the soul
+vicious mockery
+power word heal
+zone of truth
+wrathful smite
+word of recall
+witch bolt
+wind wall
+wish
+wind walk
+weird
+web
+water walk 
+water breathing 
+warding bond
+wall of stone
+wall of thorns
+wall of force
+wall of fire
+wall of ice
+vampiric touch
+unseen servant 
+true seeing
+tsunami
+true strike
+tree stride
+true resurrection
+true polymorph
+transport via plants
+tongues
+time stop
+thunderwave
+thunderous smite
+thaumaturgy
+thorn whip
+tensers floating disk 
+teleportation circle
+teleport
+telepathy
+telekinesis
+tashas hideous laughter
+swift quiver
+sunburst
+symbol
+sunbeam
+suggestion
+storm of vengeance
+stoneskin
+stone shape
+spiritual weapon
+stinking cloud
+staggering smite
+spirit guardians
+spike growth
+speak with plants
+spider climb
+speak with dead
+spare the dying
+sleet storm
+slow
+speak with animals 
+sleep
+simulacrum
+silence 
+silent image
+shocking grasp
+shillelagh
+shield of faith
+shield
+shatter
+shapechange
+sequester
+see invisibility
+seeming
+sending
+searing smite
+scrying
+scorching ray
+sanctuary
+sacred flame
+rope trick
+resurrection
+reverse gravity
+resistance
+revivify
+remove curse
+ray of sickness
+reincarnate
+regenerate
+ray of frost
+rarys telepathic bond 
+ray of enfeeblement
+raise dead
+purify food and drink 
+protection from poison
+protection from evil and good
+protection from energy
+programmed illusion
+project image
+prismatic wall
+produce flame
+prismatic spray
+prestidigitation
+prayer of healing
+power word stun
+power word kill
+plant growth
+polymorph
+plane shift
+poison spray
+planar ally
+planar binding
+phantom steed 
+phantasmal killer
+phantasmal force
+passwall
+ottos irresistible dance
+pass without trace
+otilukes resilient sphere
+otilukes freezing sphere
+nondetection
+nystuls magic aura
+move earth
+mordenkainens sword
+mordenkainens private sanctum
+mordenkainens magnificent mansion
+mordenkainens faithful hound
+moonbeam
+modify memory
+mislead
+misty step
+mirage arcane
+mirror image
+minor illusion
+mind blank
+meteor swarm
+message
+melfs acid arrow
+mending
+meld into stone 
+maze
+mass suggestion
+mass healing word
+mass heal
+mass cure wounds
+magic weapon
+major image
+magic missile
+magic mouth 
+magic jar
+mage hand
+magic circle
+mage armor
+locate object
+locate creature
+longstrider
+locate animals or plants 
+lightning bolt
+lightning arrow
+light
+levitate
+lesser restoration
+leomunds tiny hut 
+leomunds secret chest
+knock
+legend lore
+jump
+invisibility
+insect plague
+inflict wounds
+illusory script 
+incendiary cloud
+imprisonment
+identify 
+ice storm
+hypnotic pattern
+hunters mark
+hunger of hadar
+holy aura
+hold monster
+hold person
+heroism
+hex
+heroes feast
+hellish rebuke
+heat metal
+healing word
+harm
+heal
+haste
+hallucinatory terrain
+hallow
+gust of wind
+hail of thorns
+guiding bolt
+guidance
+guards and wards
+guardian of faith
+greater restoration
+greater invisibility
+grease
+grasping vine
+goodberry
+glyph of warding
+globe of invulnerability
+glibness
+giant insect
+gentle repose 
+geas
+gate
+friends
+gaseous form
+foresight
+forbiddance 
+freedom of movement
+forcecage
+fog cloud
+fly
+flesh to stone
+flaming sphere
+flame strike
+flame blade
+fire storm
+fireball
+fire shield
+fire bolt
+finger of death
+find traps
+find steed
+find the path
+find familiar 
+feign death 
+feeblemind
+feather fall
+fear
+false life
+faerie fire
+fabricate
+eyebite
+expeditious retreat
+evards black tentacles
+etherealness
+enthrall
+entangle
+ensnaring strike
+enlarge/reduce
+elemental weapon
+enhance ability
+eldritch blast
+earthquake
+druidcraft
+dream
+drawmijs instant summons 
+dominate person
+dominate monster
+divine word
+dominate beast
+divine favor
+divination 
+dissonant whispers
+dispel magic
+dispel evil and good
+disguise self
+disintegrate
+dimension door
+detect thoughts
+detect poison and disease
+detect magic 
+detect evil and good
+destructive wave
+demiplane
+death ward
+daylight
+delayed blast fireball
+darkvision
+darkness
+dancing lights
+crusaders mantle
+cure wounds
+creation
+crown of madness
+create undead
+create or destroy water
+create food and water
+counterspell
+cordon of arrows
+control weather
+control water
+continual flame
+contingency
+contagion
+contact other plane 
+conjure woodland beings
+conjure volley
+conjure minor elementals
+conjure fey
+conjure barrage
+conjure elemental
+conjure celestial
+confusion
+conjure animals
+cone of cold
+compulsion
+comprehend languages 
+compelled duel
+burning hands
+call lightning
+branding smite
+blur
+blink
+blinding smite
+blindness/deafness
+blight
+bless
+blade ward
+bigbys hand
+blade barrier
+bestow curse
+beast sense 
+beacon of hope
+barkskin
+banishment
+banishing smite
+bane
+awaken
+aura of vitality
+aura of purity
+aura of life
+augury 
+astral projection
+arms of hadar
+armor of agathys
+arcane lock
+arcane gate
+arcane eye
+antipathy/sympathy
+antimagic field
+antilife shell
+animate objects
+animal shapes
+animate dead
+alarm 
+animal messenger 
+animal friendship
+alter self
+aid

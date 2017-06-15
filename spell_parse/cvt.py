@@ -37,7 +37,7 @@ for spell in spelljs:
         if materialRE.findall(spell["components"]):
             spell["components"] = materialRE.sub("Material",spell["components"])
 
-    spell_names.append(spell["name"].encode('ascii', 'ignore'))
+    spell_names.append(spell["name"].encode('ascii', 'ignore').lower())
     
         
     # print spell["components"]
