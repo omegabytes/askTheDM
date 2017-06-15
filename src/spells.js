@@ -3187,8 +3187,8 @@ module.exports = {
     "spellType": "level 8 Enchantment", 
     "duration": "10 days", 
     "castingTime": "1 Hour", 
-    "shortDescription": "", 
-    "longDescription": "This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura’s effect. Sympathy. The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or com es within 60 feet of it, the creature must succeed on a wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can’t willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.Ending the Effect. If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+    "shortDescription": "The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or com es within 60 feet of it, the creature must succeed on a wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can’t willingly move away from the target. See long description", 
+    "longDescription": "This spell attracts creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that attracts the specified creatures for the duration. The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or com es within 60 feet of it, the creature must succeed on a wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can’t willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.Ending the Effect. If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
   }, 
   "stoneskin": {
     "url": "https://www.dnd-spells.com/spell/stoneskin", 
@@ -3207,7 +3207,7 @@ module.exports = {
     "spellType": "level 3 Conjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60 foot cone takes 3d8 damage on a failed Dexterity save, half as much on a success.", 
     "longDescription": "You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 3d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component."
   }, 
   "earth tremor ": {
@@ -3217,7 +3217,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each creature within 10 feet takes 1d6 bludgeoning damage  and is knocked prone on a failed Dexterity save. Loose earth or stone becomes difficult terrain.", 
     "longDescription": "You cause a tremor in the ground in a 10-foot radius. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   }, 
   "thaumaturgy": {
@@ -3227,8 +3227,8 @@ module.exports = {
     "spellType": "Transmutation cantrip", 
     "duration": "Up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the 6 following magical effects within range: 1) Your voice booms up to three times as loud as normal for 1 minute. 2) You cause flames to flicker, brighten, dim, or change color for 1 minute. 3) You cause harmless tremors in the ground for 1 minute. 4) You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. 5) You instantaneously cause an unlocked door or win dow to fly open or slam shut. 6) You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+    "shortDescription": "Manifest a sign of supernatural power that has one of the following six effects: 1) Your voice becomes three times as loud, 2) alter flame brightness or color, 3) harmless ground tremors, 4) throw a created sound, 5) open or slam an unlocked door or window, 6) alter the appearance of your eyes", 
+    "longDescription": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the 6 following magical effects within range: 1) Your voice booms up to three times as loud as normal for 1 minute. 2) You cause flames to flicker, brighten, dim, or change color for 1 minute. 3) You cause harmless tremors in the ground for 1 minute. 4) You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. 5) You instantaneously cause an unlocked door or window to fly open or slam shut. 6) You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
   }, 
   "holy aura": {
     "url": "https://www.dnd-spells.com/spell/holy-aura", 
@@ -3237,7 +3237,7 @@ module.exports = {
     "spellType": "level 8 Abjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Creatures of your choice within 30 feet of you shed dim light for 5 feet and have advantage on all saves. Creatures who attack them have disadvantage on attack rolls. Fiends or undead must make a Constitution save on hit or become blinded.", 
     "longDescription": "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends."
   }, 
   "arcane eye": {
@@ -3247,7 +3247,7 @@ module.exports = {
     "spellType": "level 4 Divination", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "You create an invisible, magical eye within range that hovers in the air for the duration. You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. Move the eye up to 30 feet as an action.", 
     "longDescription": "You create an invisible, magical eye within range that hovers in the air for the duration. You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction. As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can’t enter another plane of existence. A solid barrier blocks the eye’s movement, but the eye can pass through an opening as small as 1 inch in diameter."
   }, 
   "find familiar ": {
@@ -3257,7 +3257,7 @@ module.exports = {
     "spellType": "level 1 Conjuration Ritual", 
     "duration": "Instantaneous", 
     "castingTime": "1 Hour", 
-    "shortDescription": "", 
+    "shortDescription": "You gain the service of a spirit that takes an animal form. It has the statistics of the chosen form but is a celestial, fey, or fiend. It acts independently of you, and has its own rolls and turns, but always obeys you. It can't attack but can take other actions. You communicate with it telepathically, and as an action you can see and hear through it.", 
     "longDescription": "You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast. Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can’t attack, but it can take other actions as normal. When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses. As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. You can’t have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature. Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
   }, 
   "wall of ice": {
@@ -3267,7 +3267,7 @@ module.exports = {
     "spellType": "level 6 Evocation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Requires concentration. Create a wall of ice on a solid surface within 120 feet. It can be a flat wall, a dome, or a sphere, and is one foot thick. Creatures in the same space as where the wall was created are pushed aside, and take 10d6 cold damage on a failed Dexterity save, or half as much on a success. The wall has AC 12 and 30 health per 10 foot section, and is vulnerable to fire. When a section is destroyed it leaves behind a veil of air that creatures enterng for the first time must make a Constitution save or take 5d6 cold damage, half as much on a success.", 
     "longDescription": "You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save. The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one. AtHigherLevels. When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th."
   }, 
   "animal messenger ": {
@@ -3277,8 +3277,8 @@ module.exports = {
     "spellType": "level 2 Enchantment Ritual", 
     "duration": "24 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals. When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell. AtHigherLevels. If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
+    "shortDescription": "Use an animal to deliver a message up to 25 words to a person you can describe in a place you have visited. Flying animals can go 50 miles, land animals can go 25 miles.", 
+    "longDescription": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals. When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell. At Higher Levels: If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
   }, 
   "circle of power": {
     "url": "https://www.dnd-spells.com/spell/circle-of-power", 
@@ -3287,7 +3287,7 @@ module.exports = {
     "spellType": "level 5 Abjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each friendly creature within 30 feet of you has advantage on saving throws against spells and other magical effects. Saves that would result in half damage instead take no damage.", 
     "longDescription": "Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw."
   }, 
   "ray of sickness": {
@@ -3307,7 +3307,7 @@ module.exports = {
     "spellType": "Conjuration cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Up to two creatures within 5 feet of each other must succeed a Dexterity save or take 1d6 acid damage.", 
     "longDescription": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage. This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
   }, 
   "longstrider": {
@@ -3327,7 +3327,7 @@ module.exports = {
     "spellType": "level 2 Illusion", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "A creature you touch becomes invisible until the spell ends. The spell ends for a target that attacks or casts a spell. ", 
     "longDescription": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   }, 
   "catapult": {
@@ -3337,7 +3337,7 @@ module.exports = {
     "spellType": "level 1 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Launch one object weighing 1 to 5 pounds within 150 feet that isn’t being worn or carried up to 90 feet in a straight line. Struck objects or creatures that faile a Dexterity save take 3d8 bludgeoning damage.", 
     "longDescription": "Choose one object weighing 1 to 5 pounds within range that isn’t being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st."
   }, 
   "imprisonment": {
@@ -3347,7 +3347,7 @@ module.exports = {
     "spellType": "level 9 Abjuration", 
     "duration": "Until dispelled", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
+    "shortDescription": "Create a magical restraint to hold a creature that you can see within 30ft. The creature becomes restrained on failed wisdom save, and is immune to future castings of this spell on a success. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn’t age. Divination spells can’t locate or perceive the target. When you cast the spell, you choose one of the 5 following forms of imprisonment: burial, chaining, hedged prison, minimus containment, or slumber. See long description for specific effects. You decide the conditons that end the spell when you cast it.", 
     "longDescription": "You create a magical restraint to hold a creature that you can see within range. The target must succeed on a wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn’t age. Divination spells can’t locate or perceive the target. When you cast the spell, you choose one of the 5 following forms of imprisonment. 1) Burial. The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it. The special component for this version of the spell is a small mithral orb. 2) Chaining. Heavy chains, firmly rooted in the ground, hold the target in place. The target is restrained until the spell ends, and it can’t move or be moved by any means until then. The special component for this version of the spell is a fine chain of precious metal. 3) Hedged Prison. The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice. The special component for this version of the spell is a miniature representation of the prison made from jade. 4) Minimus Containment. The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can’t be cut or broken while the spell remains in effect. The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby. 5) Slumber. The target falls asleep and can’t be awoken. The special component for this version of the spell consists of rare soporific herbs. Ending the Spell. During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature’s name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points. A dispel magic spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it. You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding."
   }, 
   "geas": {
@@ -3357,7 +3357,7 @@ module.exports = {
     "spellType": "level 5 Enchantment", 
     "duration": "30 days", 
     "castingTime": "1 Minute", 
-    "shortDescription": "", 
+    "shortDescription": "Force a creature in within 60ft to take carry out or refrain from doing an activity of your choice except actions that would result in death. if the creature understands you, it must make a wisdom save or becomes charmed. While the creture is charmed, it takes 510d psychic damage once a day if it doesn't do what you want", 
     "longDescription": "You place a magical command on a creature that you can see within range, forcing it to carry out some service  or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell. You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends. You can end the spell early by using an action to dismiss it. A remove curse, greaterrestoration, or wish spell also ends it. At Higher Levels: When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
   }, 
   "lightning arrow": {
