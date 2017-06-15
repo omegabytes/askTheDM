@@ -50,7 +50,6 @@ var handlers = {
         if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-
             this.emit(':tell', spell[spellAttribute]);
         }
 
@@ -58,7 +57,6 @@ var handlers = {
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.longDescription;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-
             this.emit(':tell', spell.longDescription);
         } else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
