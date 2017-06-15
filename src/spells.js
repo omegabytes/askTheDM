@@ -1077,7 +1077,7 @@ module.exports = {
     "spellType": "level 6 Necromancy", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "One creature of your choice within 60 feet of you must make a Wis save or be affected by one of the following effects: Asleep: The target falls unconscious, it wakes up if it takes any damage or if another creature uses its action to wake it. Panic: The target is frightened by you, on each of its turns, the frightened creature must make take the Dash action and move away from you, unless there is nowhere to move, if it moves 60 feet away from you where it can no longer see you, the effect ends. Sickened: The target has disadvantage on attack rolls and ability checks. At the end of each of its turns it can make another Wis save to end the effect.", 
     "longDescription": "For the spell’s duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can’t target a creature again if it has succeeded on a saving throw against this casting of eyebite. Asleep. The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake. Panicked. The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends. Sickened. The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
   }, 
   "snilloc's snowball swarm": {
@@ -1087,7 +1087,7 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Each creature in a 5ft radius sphere centered on a point you choose, must make a Dex save or take 3d6 cold damage, or half on a success. When cast at 3rd level or higher, increase the damage by 1d6 for each slot above 2nd.", 
     "longDescription": "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd"
   }, 
   "mass heal": {
