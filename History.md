@@ -1,5 +1,5 @@
 
-n.n.n / 2017-06-15
+0.1.1 / 2017-06-15
 ==================
 
   * Merge branch 'master' of https://github.com/omegabytes/askTheDM
