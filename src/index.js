@@ -4,6 +4,8 @@ var Alexa = require('alexa-sdk');
 var APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
 var spells = require('./spells');
 var conditions = require('./conditions');
+//shouldnt this be stored as its own file, just like spells.js?
+var languageStrings = require('./languageStrings');
 
 
 exports.handler = function(event, context, callback) {
@@ -134,34 +136,4 @@ var handlers = {
     }
 };
 
-var languageStrings = {
-    "en": {
-        "translation": {
-            "SPELLS":                                       spells.SPELLS_EN_US,
-            "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
-            "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
-            "SKILL_NAME":                                   "Ask the DM",
-            "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
-            "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
-            "DISPLAY_CARD_TITLE":                           "%s  - Info for %s.",
-            "HELP_MESSAGE":                                 "You can ask questions such as, what\'s Cure Wounds, or, you can say exit...Now, what can I help you with?",
-            "HELP_REPROMPT":                                "You can say things like, what\'s Death Ward, or you can say exit...Now, what can I help you with?",
-            "STOP_MESSAGE":                                 "Goodbye!",
-            "REPEAT_MESSAGE":                               "Try saying repeat.",
-            "NOT_FOUND_MESSAGE":                            "I\'m sorry, I currently do not know ",
-            "NOT_FOUND_REPROMPT":                           "What else can I help with?",
-            "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s. ",
-            "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
-            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s. ",
-            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition. "
-        }
-    },
-    "en-US": {
-        "translation": {
-            "SPELLS" :      spells.SPELLS_EN_US,
-            "ATTRIBUTES" :  spells.ATTRIBUTES_EN_US,
-            "CONDITIONS" :  conditions.CONDITIONS_EN_US,
-            "SKILL_NAME" :  "Ask the DM"
-        }
-    }
-};
+
