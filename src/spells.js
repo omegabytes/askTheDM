@@ -1697,7 +1697,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Choose 3 creatures within range, they must make a Cha save. If they fail, any attack roll or saving throw they must roll a d4 and subtract the number from their attack or saving throw. When cast using a spell slot of 2nd level or higher target one additional creature for each slot above 1st.", 
     "longDescription": "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   }, 
   "rary's telepathic bond ": {
@@ -1707,7 +1707,7 @@ module.exports = {
     "spellType": "level 5 Divination Ritual", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Forge a telepathic bond with up to 8 creatures of your choice, the targets can communicate through the bond whether or not they have a common language shared. Communication is possible over any distance, though not to other planes of existence.", 
     "longDescription": "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren’t affected by this spell. Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can’t extend to other planes of existence."
   }, 
   "comprehend languages ": {
@@ -1717,8 +1717,8 @@ module.exports = {
     "spellType": "level 1 Divination Ritual", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.This spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language."
+    "shortDescription": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. This spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language.", 
+    "longDescription": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language."
   }, 
   "expeditious retreat": {
     "url": "https://www.dnd-spells.com/spell/expeditious-retreat", 
@@ -1727,7 +1727,7 @@ module.exports = {
     "spellType": "level 1 Transmutation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.", 
     "longDescription": "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action."
   }, 
   "watery sphere": {
@@ -1737,7 +1737,7 @@ module.exports = {
     "spellType": "level 4 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Conjure a 10ft radius sphere of water on a point within range. Any creature in the sphere's space must make a Str save or be restrained and engulfed by the water. The sphere can restrain a maximum of 4 medium or smaller creatures, or one large creature. As an action you can move the sphere up to 30ft in a straight line.", 
     "longDescription": "You conjure up a sphere of water with a 10-foot radius on a point you can see within range. The sphere can hover in the air, but no more than 10 feet off the ground. The sphere remains for the spell’s duration. Any creature in the sphere’s space must make a Strength saving throw. On a successful save, a creature is ejected from that space to the nearest unoccupied space outside it. A Huge or larger creature succeeds on the saving throw automatically. On a failed save, a creature is restrained by the sphere and is engulfed by the water. At the end of each of its turns, a restrained target can repeat the saving throw. The sphere can restrain a maximum of four Medium or smaller creatures or one Large creature. If the sphere restrains a creature in excess of these numbers, a random creature that was already restrained by the sphere falls out of it and lands prone in a space within 5 feet of it. As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, cliff, or other drop, it safely descends until it is hovering 10 feet over ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw, but no more than once per turn. When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature restrained by the sphere is knocked prone in the space where it falls."
   }, 
   "control winds": {
@@ -1747,7 +1747,7 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Control the air in a 100ft cube within range. Choose one of the following: 1) Gusts, wind picks up in a horizontal direction, choose the intensity of the wind from calm, moderate or strong. If the wind is moderate or strong ranged weapon attacks that pass through it or made against targets within the cube have disadvantage on attack rolls. 2) Downdraft, Cause a sustained blast of strong wind, ranged weapon attacks passing through the cube, or that are made against targets within it have disadvantage on their attack rolls. If a creature flys through the cube, make a Str save or it is knocked prone. 3) Updraft, cause a sustained updraft within the cube, creatures that end a fall within the cube, take half fall damage. When a creature makes a vertical jump in the cube, they can jump 10ft higher.", 
     "longDescription": "You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you’ve halted. Gusts. A wind picks up within the cube, continually blowing in a horizontal direction that you choose. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved. Downdraft. You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone. Updraft. You cause a sustained updraft within the cube, rising upward from the cube’s bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
   }, 
   "barkskin": {
@@ -1757,7 +1757,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Touch a willing creature, their AC can't be less than 16.", 
     "longDescription": "You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing."
   }, 
   "wall of water": {
@@ -1767,7 +1767,7 @@ module.exports = {
     "spellType": "level 3 Evocation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Conjure a wall of water, which can be up to 30ft long, 10ft high and a ft thick, or a ringed wall up to 20ft in diameter, 20ft high, and a ft thick. The wall's space is difficult terrain, and any ranged attack that enters the space has disadvantage on attack rolls, and fire damage is reduced by half. Spells that deal cold damage that pass through the space will freeze a 5ft square section. Each frozen section has AC 5 and 15 hit points.", 
     "longDescription": "You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall’s space is difficult terrain. Any ranged weapon attack that enters the wall’s space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall’s water doesn’t fill it."
   }, 
   "mislead": {
@@ -1777,7 +1777,7 @@ module.exports = {
     "spellType": "level 5 Illusion", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Become invisible as an illusory double of you appears. The double lasts for the duration, yet the invisibility ends if you attack or cast a spell. As an action you can move your double up to 2x your speed and make it gesture, speak, and behave in whatever way you choose. You can see and hear through it, as if you were located where it is. As a bonus action on each of your turns you can switch from using its sesnes, or your own, and back again.", 
     "longDescription": "You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell. You can use your action to move your illusory double up to twice your speed and make it gesture, speak, and behave in whatever way you choose. You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings."
   }, 
   "produce flame": {
@@ -1787,7 +1787,7 @@ module.exports = {
     "spellType": "Conjuration cantrip", 
     "duration": "10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Conjure a flame in your hand that can produce bright light in a radius of 10ft and dim light in another 10ft. You may attack using the flame, which ends the spell. As an action you can hurl the flame at a creature in 30ft, make a ranged spell attack, on a hit the target takes 1d8 fire damage. When you reach level 5, 11 and 17 increase the damage by an additional 1d8 each time.", 
     "longDescription": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
   }, 
   "vitriolic sphere": {
@@ -1797,7 +1797,7 @@ module.exports = {
     "spellType": "level 4 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Choose a point in range, launch a 1ft ball that streaks there and explodes in a 20ft radius. Each creature in the area must make a Dex save or take 10d4 acid damage and 5d4 acid damage at the end of its next turn, or half the initial damage and no extra damage on a save. When cast at a spell slot of 5th or higher increase the initial damage by 2d4 for each slot above 4th.", 
     "longDescription": "You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn. At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th."
   }, 
   "haste": {
@@ -1807,7 +1807,7 @@ module.exports = {
     "spellType": "level 3 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
+    "shortDescription": "Needs concentration. Choose a willing creature within range. Double their speed, give them +2 bonus to AC, they gain advantage on Dex saves, and they gain an additional action on each of its turns. That action can only be used to take the weapon attack, dash, disengage, hide, or use an object action.", 
     "longDescription": "Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the spell ends, the target can’t move or take actions until after its next turn, as a wave of lethargy sweeps over it."
   }, 
   "animate objects": {
@@ -1817,8 +1817,8 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "", 
-    "longDescription": "Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points. As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. Ifyou issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form. If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form. AtHigherLevels. Ifyou cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+    "shortDescription": "Needs concentration. Choose up to 10 nonmagical objects within range and are not being worn or carried. Medium targets count as two objects, large as four and huge as eight objects. Each target animates and becomes a creature under your control. As a bonus action you can command any creature made with this spell if it is within 500ft of you. You decide what command and where it will move during its next turn. An animated object is a construct with AC, hit points, attack, Str, and Dex determined by its size. Its Con is 10, with Int and Wis of 3, and its Cha is 1. It has a movement speed of 30ft, and can make a single melee attack with an attack bonus and bludgeoning damage based on its size. When cast using a spell slot of 6th level or higher, you can animate two additional objects for each slot above 5th.", 
+    "longDescription": "Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points. As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form. If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form. At Higher Levels. If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
   }, 
   "speak with dead": {
     "url": "https://www.dnd-spells.com/spell/speak-with-dead", 
@@ -1967,7 +1967,7 @@ module.exports = {
     "spellType": "level 1 Abjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Requires concentration. A creature gets +2 AC for up to 10 minutes.", 
+    "shortDescription": "A creature gets +2 AC", 
     "longDescription": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
   }, 
   "minor illusion": {
@@ -1977,7 +1977,7 @@ module.exports = {
     "spellType": "Illusion cantrip", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Create a sound or image of your choosing that lasts for a minute. Physical interaction with the illusion reveals it to be a fake, as well as a successful investigation check.", 
+    "shortDescription": "", 
     "longDescription": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else’s voice, a lion’s roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends. If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it. If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
   }, 
   "hallow": {
@@ -1987,7 +1987,7 @@ module.exports = {
     "spellType": "level 5 Evocation", 
     "duration": "Until dispelled", 
     "castingTime": "24 Hours", 
-    "shortDescription": "Create a 60 foot radius of hallowed area that lasts until dispelled. Celestials, elementals, fey, fiends, and undead can’t enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. Also, you can bind an additional effect to the area, such as courage, darkness, daylight, energy protection, everlasting rest, extradimensional tnterference, or tongues. See the long description or players handbook for more information.", 
+    "shortDescription": "", 
     "longDescription": "You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects. First, celestials, elementals, fey, fiends, and undead can’t enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect. Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the DM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as ores or trolls. When a creature that would be affected enters the spell’s area for the first time on a turn or starts its turn there, it can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area. Courage. Affected creatures can’t be frightened while in the area. Darkness. Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can’t illuminate the area. Daylight. Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can’t extinguish the light. Energy Protection. Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing. Energy Vulnerability. Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing. Everlasting Rest. Dead bodies interred in the area can’t be turned into undead. Extradimensional Interference. Affected creatures can’t move or travel using teleportation or by extradimensional or interplanar means. Fear. Affected creatures are frightened while in the area. Silence. No sound can emanate from within the area, and no sound can reach into it. Tongues. Affected creatures can communicate with any other creature in the area, even if they don’t share a common language."
   }, 
   "locate animals or plants ": {
@@ -1997,7 +1997,7 @@ module.exports = {
     "spellType": "level 2 Divination Ritual", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.", 
+    "shortDescription": "", 
     "longDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present."
   }, 
   "abi-dalzim's horrid wilting": {
@@ -2007,7 +2007,7 @@ module.exports = {
     "spellType": "level 8 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one. Doesnt effect constructs or undead, and plants and water elementals have disadvantage.", 
+    "shortDescription": "", 
     "longDescription": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren’t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one."
   }, 
   "dissonant whispers": {
@@ -2017,8 +2017,8 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "A target takes 3d6 psychic damage on a failed wisdom save and must use its reaction to move away from you. On a successful save, the target takes half damage and doesn’t move away. Deafened creatures automatically succeed.", 
-    "longDescription": "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A deafened creature automatically succeeds on the save. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+    "shortDescription": "", 
+    "longDescription": "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A deafened creature automatically succeeds on the save. AtHigherLevels.Whenyoucastthisspellusinga spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   }, 
   "awaken": {
     "url": "https://www.dnd-spells.com/spell/awaken", 
@@ -2027,7 +2027,7 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "8 Hours", 
-    "shortDescription": "Targets with Intelligence scores of 3 or less gain an intelligence of 10 and can speak any language you know, and is charmed for 30 days. Plants become ambulatory.", 
+    "shortDescription": "", 
     "longDescription": "After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human’s. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree. The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed."
   }, 
   "armor of agathys": {
@@ -2037,7 +2037,7 @@ module.exports = {
     "spellType": "level 1 Abjuration", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Gain 5 temporary health. Creatures that hit you take 5 cold damage.", 
+    "shortDescription": "", 
     "longDescription": "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st."
   }, 
   "time stop": {
@@ -2047,7 +2047,7 @@ module.exports = {
     "spellType": "level 9 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Stop time and take 1d4 + 1 turns in a row. The spell ends if your actions effect a creature or object carried by a creature, or you move 1000 feet away.", 
+    "shortDescription": "", 
     "longDescription": "You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal. This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
   }, 
   "moonbeam": {
@@ -2057,8 +2057,8 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A 5 by 40 foot cylinder of light shines down. Creatures entering or starting thier turn in the cylinder take 2d10 radiant damage on a failed Constitution save, or half as much on a success. Shape changers have disadvantage and revert to thier original form on a fail. You can move the beam 60 feet as an action.", 
-    "longDescription": "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shape changer makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1dlO for each slot level above 2nd."
+    "shortDescription": "", 
+    "longDescription": "A silvery beam of pale light shines down in a 5-foot- radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shape changer makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1dlO for each slot level above 2nd."
   }, 
   "divination ": {
     "url": "https://www.dnd-spells.com/spell/divination-ritual", 
@@ -2067,7 +2067,7 @@ module.exports = {
     "spellType": "level 4 Divination Ritual", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "You can ask a single question concerning a specific event, goal, or activty every 7 days. The DM ansers truthfully, though not necessarily clearly.", 
+    "shortDescription": "", 
     "longDescription": "Your magic and an offering put you in contact with a god or a god’s servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen. The spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
   }, 
   "heroism": {
@@ -2077,7 +2077,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A willing creature you touch is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. ", 
+    "shortDescription": "", 
     "longDescription": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   }, 
   "pass without trace": {
@@ -2087,7 +2087,7 @@ module.exports = {
     "spellType": "level 2 Abjuration", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Each creature you choose +10 to Dexterity checks and can only be tracked by magical means", 
+    "shortDescription": "each creature you choose +10 to Dexterity checks and can only be tracked by magical means", 
     "longDescription": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
   }, 
   "enlarge/reduce": {
@@ -2097,7 +2097,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weaps do an extra 1d4 damage. Reduce has the opposite effect.", 
+    "shortDescription": "", 
     "longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The target’s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category—from Medium to Large, for example. If there isn’t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target’s weapons also grow to match its new size. While these weapons are enlarged, the target’s attacks with them deal 1d4 extra damage. Reduce. The target’s size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category—from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target’s weapons also shrink to match its new size. While these weapons are reduced, the target’s attacks with them deal 1d4 less damage (this can’t reduce the damage below 1)."
   }, 
   "rope trick": {
@@ -2107,7 +2107,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "A rope 60 feet long or less raises up into the air, leading into an extradimensional door at the toop. Spells and damage can't cross the door, and any creatures that climbed into the door fall out when the spells end.", 
+    "shortDescription": "", 
     "longDescription": "You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends. The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space. Attacks and spells can’t cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope. Anything inside the extradimensional space drops out when the spell ends."
   }, 
   "burning hands": {
@@ -2117,7 +2117,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Each creature in a 15 foot cone takes 3d6 fire damage on a failed Dexterity save, or half as much on a success.", 
+    "shortDescription": "", 
     "longDescription": "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   }, 
   "antimagic field": {
@@ -2127,7 +2127,7 @@ module.exports = {
     "spellType": "level 8 Abjuration", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. You are surrounded by a 10 foot radius sphere of antimagic. Within the sphere, spells can't be cast, summoned creatures disappear, and magic items become mundane. Existing spell effects are suspended, but the timers continue. ", 
+    "shortDescription": "", 
     "longDescription": "A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can’t be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you. Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can’t protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn’t function, but the time it spends suppressed counts against its duration. Targeted Effects. Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target. Areas of Magic. The area of another spell or magical effect, such as fireball, can’t extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall offire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough. Spells. Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it. Magic Items. The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword. A magic weapon’s properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, ifyou fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits. Magical Travel. Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere. Creatures and Objects. A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere. Dispel Magic. Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don’t nullify each other."
   }, 
   "earthbind": {
@@ -2137,7 +2137,7 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. One target must succeed on a strength save or its flying speed is reduced to 0, falling at 60 feet per round.", 
+    "shortDescription": "", 
     "longDescription": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell’s duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends."
   }, 
   "aura of vitality": {
@@ -2147,7 +2147,7 @@ module.exports = {
     "spellType": "level 3 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.", 
+    "shortDescription": "", 
     "longDescription": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points."
   }, 
   "passwall": {
@@ -2167,7 +2167,7 @@ module.exports = {
     "spellType": "level 5 Divination Ritual", 
     "duration": "Instantaneous", 
     "castingTime": "1 Minute", 
-    "shortDescription": "Gain knowledge of up to 3 facts about the surrounding territory. If you are outside, you know about land within 3 miles, and if you are underground the radius is limited to 300 feet.", 
+    "shortDescription": "", 
     "longDescription": "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn’t function where nature has been replaced by construction, such as in dungeons and towns. You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area: terrain and bodies of water prevalent plants, minerals, animals, or peoples powerful celestials, fey, fiends, elementals, or undead influence from other planes of existence buildings For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
   }, 
   "shape water": {
@@ -2177,8 +2177,8 @@ module.exports = {
     "spellType": "Transmutation cantrip", 
     "duration": "Instantaneous or 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "You can modify water that fits within a 5 foot cube. You can change the flow of the water, form it into simple shapes, change its color or opacity, or freeze it provided there are no creatures in it. Effects last an hour.", 
-    "longDescription": "You choose an area of water that you can see within range and that fits within a 5-foot cube.  You manipulate it in one of the 4 following ways: 1) You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage. 2) You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour. 3) You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour. 4) You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour. If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+    "shortDescription": "", 
+    "longDescription": "You choose an area of water that you can see within range and that fits within a 5-foot cube.  You manipulate it in one of the 4 following ways: 1) You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage. 2) You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour. 3) You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour. 4) You freeze the water, provided that there are no crea- tures in it. The water unfreezes in 1 hour. If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
   }, 
   "wall of stone": {
     "url": "https://www.dnd-spells.com/spell/wall-of-stone", 
@@ -2187,8 +2187,8 @@ module.exports = {
     "spellType": "level 5 Evocation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Create a stone wall consisting of 6 inch thick panels 10 by 10 feet in size. Creatures can make a Dexterity save to escape boxes you try to create around them. The wall does not have to be vertical. Each panel has AC 15 and 30 health per inch of thickness.", 
-    "longDescription": "A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall. The wall can have any shape you desire, though it can’t occupy the same space as a creature or object. The wall doesn’t need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp. If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on. The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM’s discretion. If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends."
+    "shortDescription": "", 
+    "longDescription": "A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is com posed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall. The wall can have any shape you desire, though it can’t occupy the same space as a creature or object. The wall doesn’t need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp. If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on. The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM’s discretion. If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends."
   }, 
   "destructive wave": {
     "url": "https://www.dnd-spells.com/spell/destructive-wave", 
@@ -2197,7 +2197,7 @@ module.exports = {
     "spellType": "level 5 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Each creature of your choosing within 30 feet must make a Constitution save or takes 5d6 thunder damage, as well as as 5d6 radiant or necrotic damage, and is knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn’t knocked prone.", 
+    "shortDescription": "", 
     "longDescription": "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn’t knocked prone."
   }, 
   "shatter": {
@@ -2207,7 +2207,7 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Each creature in a 10-foot radius sphere takes 3d8 thunder damage on a failed Constitution save, half as much on a success. Inorganic creatures have disadvantage on this roll.", 
+    "shortDescription": "", 
     "longDescription": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell's area. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
   }, 
   "tenser's floating disk ": {
@@ -2217,8 +2217,8 @@ module.exports = {
     "spellType": "level 1 Conjuration Ritual", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Create a 3 foot diameter disk that follows you around and can hold 500 lbs.", 
-    "longDescription": "This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground. The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can’t cross an elevation change of 10 feet or more. For example, the disk can’t move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can’t move around an obstacle to follow you), the spell ends."
+    "shortDescription": "", 
+    "longDescription": "Thisspellcreatesacircular,horizontalplaneofforce, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground. The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can’t cross an elevation change of 10 feet or more. For example, the disk can’t move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can’t move around an obstacle to follow you), the spell ends."
   }, 
   "flesh to stone": {
     "url": "https://www.dnd-spells.com/spell/flesh-to-stone", 
@@ -2227,7 +2227,7 @@ module.exports = {
     "spellType": "level 6 Transmutation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A target creature must make a Constitution save or slowly begins turning to stone. If it successfully saves against the spell three times, the spell ends. Otherwise, it is turned to stone. The creature makes Constitution saves at the end of each turn. ", 
+    "shortDescription": "", 
     "longDescription": "You attempt to turn one creature that you can see within range into stone. If the target’s body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn’t affected. A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind. If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
   }, 
   "spiritual weapon": {
@@ -2237,7 +2237,7 @@ module.exports = {
     "spellType": "level 2 Evocation", 
     "duration": "1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Create a spectral weapon that can make a melee spekk attack on creatures within 5 feet. The target takes 1d8 + your spellcasting ability modifier on hit. You can move the weapon 20 feet and repeat the attack as a bonus action.", 
+    "shortDescription": "", 
     "longDescription": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier. As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it. The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell’s effect resemble that weapon. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd."
   }, 
   "chill touch": {
@@ -2247,7 +2247,7 @@ module.exports = {
     "spellType": "Necromancy cantrip", 
     "duration": "1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "A ghostly skeletal hand attacks a creature within 120 feet. If a ranged spell attack hits, the target takes 1d8 necrotic damage and can't regain health until the start of your next turn.", 
+    "shortDescription": "", 
     "longDescription": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
   }, 
   "hold person": {
@@ -2257,7 +2257,7 @@ module.exports = {
     "spellType": "level 2 Enchantment", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A humanoid target must succeed on a wisdom save or becomes paralyzed. It can make a wisdom save at the end of each turn to end the spell.", 
+    "shortDescription": "", 
     "longDescription": "Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
   }, 
   "thorn whip": {
@@ -2277,7 +2277,7 @@ module.exports = {
     "spellType": "level 2 Conjuration", 
     "duration": "Instantaneous", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Teleport up to 30 feet to an unoccupied space that you can see", 
+    "shortDescription": "teleport up to 30 feet to an unoccupied space that you can see", 
     "longDescription": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
   }, 
   "blinding smite": {
@@ -2287,7 +2287,7 @@ module.exports = {
     "spellType": "level 3 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Requires concentration. The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.", 
+    "shortDescription": "", 
     "longDescription": "The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."
   }, 
   "guiding bolt": {
@@ -2297,7 +2297,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "Make a ranged spell attack on a target. On hit, the target takes 4d6 radiant damage, and your next attack roll against this target has advantage.", 
+    "shortDescription": "", 
     "longDescription": "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   }, 
   "blink": {
@@ -2307,7 +2307,7 @@ module.exports = {
     "spellType": "level 3 Transmutation", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "At the end of each of your turns, roll a d20. On an 11 or higher, you disappear into the ethereal plane and reappear in a space 10 feet away on your next turn.", 
+    "shortDescription": "", 
     "longDescription": "Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action. While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren’t there can’t perceive you or interact with you, unless they have the ability to do so."
   }, 
   "mage hand": {
@@ -2317,8 +2317,8 @@ module.exports = {
     "spellType": "Conjuration cantrip", 
     "duration": "1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Create a floating hand that you can control with your action. It must stay within 30 feet of you. It can't attack, activate magic items, or carry more than 10 lbs.", 
-    "longDescription": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can’t attack, activate magic items, or carry more than 10 pounds."
+    "shortDescription": "", 
+    "longDescription": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever m ore than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can’t attack, activate magic items, or carry more than 10 pounds."
   }, 
   "knock": {
     "url": "https://www.dnd-spells.com/spell/knock", 
@@ -2327,8 +2327,8 @@ module.exports = {
     "spellType": "level 2 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Any locked, barred, or stuck object becomes openable. Only one locking mechanism is released per use. A loud audible knock is heard within 300 feet.", 
-    "longDescription": "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked. If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
+    "shortDescription": "", 
+    "longDescription": "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. Ifthe object has multiple locks, only one of them is unlocked. If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
   }, 
   "circle of death": {
     "url": "https://www.dnd-spells.com/spell/circle-of-death", 
@@ -2337,8 +2337,8 @@ module.exports = {
     "spellType": "level 6 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Every creature in a 60 foot radius sphere takes 8d6 necrotic damage on a failed Constitution save, or half as much on a success.", 
-    "longDescription": "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th"
+    "shortDescription": "", 
+    "longDescription": "A sphere of negative energy ripples out in a 60-foot- radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th"
   }, 
   "finger of death": {
     "url": "https://www.dnd-spells.com/spell/finger-of-death", 
@@ -2347,7 +2347,7 @@ module.exports = {
     "spellType": "level 7 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Your target takes 7d8 + 30 necrotic damage on a failed Constitution save, or half as much on a success. A humanoid killed by this spell is raised as a zombie under your control on the next turn, and is under your command.", 
+    "shortDescription": "", 
     "longDescription": "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one. A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability."
   }, 
   "mordenkainen's faithful hound": {
@@ -2357,8 +2357,8 @@ module.exports = {
     "spellType": "level 4 Conjuration", 
     "duration": "8 hours", 
     "castingTime": "1 Action", 
-    "shortDescription": "A watchdog alerts you of any creatures, invisible, on this plane, or otherwise obscured by illusions, that doesn't speak a password when they come within 50 feet of it. At the start of each turn, the hound bites a one target within 5ft with attack bonus equal to your spellcasting modifier + your proficiency bonus, and does 4d8 piercing damage.", 
-    "longDescription": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions. At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound’s attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage."
+    "shortDescription": "", 
+    "longDescription": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature com es within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions. At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound’s attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage."
   }, 
   "true strike": {
     "url": "https://www.dnd-spells.com/spell/true-strike", 
@@ -2367,7 +2367,7 @@ module.exports = {
     "spellType": "Divination cantrip", 
     "duration": "Concentration, up to 1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. On your next turn, you gain advantage on your first attack roll against the target", 
+    "shortDescription": "On your next turn, you gain advantage on your first attack roll against the target", 
     "longDescription": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended."
   }, 
   "bless": {
@@ -2377,7 +2377,7 @@ module.exports = {
     "spellType": "level 1 Enchantment", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.", 
+    "shortDescription": "", 
     "longDescription": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   }, 
   "tsunami": {
@@ -2387,7 +2387,7 @@ module.exports = {
     "spellType": "level 8 Conjuration", 
     "duration": "Concentration, up to 6 rounds", 
     "castingTime": "1 Minute", 
-    "shortDescription": "Requires concentration. Create a wall of water up to 300 feet long, 300 feet high, and 50 feet thick. Creatures in the wave take 6d10 bludgeoning damage on a failed strength save, half as much on a success. Each turn, the wall moves 50 feet away from you, taking huge or smaller creatures with it. Creatures subsequently struck by the wave take 5d10 damage, or half as much on a strength save. The wall's hieght reduces by 50 feet each turn, and damage is reduced by 1d10.", 
+    "shortDescription": "", 
     "longDescription": "A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much damage on a successful save. At the start of each of your turns after the wall appears, the wall, along with any creatures in it, moves 50 feet away from you. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take 5d10 bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the wall’s height is reduced by 50 feet, and the damage creatures take from the spell on subsequent rounds is reduced by 1d10. When the wall reaches 0 feet in height, the spell ends. A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength (Athletics) check against your spell save DC in order to move at all. If it fails the check, it can’t move. A creature that moves out of the area falls to the ground."
   }, 
   "incendiary cloud": {
@@ -2397,7 +2397,7 @@ module.exports = {
     "spellType": "level 8 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requies concentration. Create a 20 foot radius sphere smokey cloud of burning embers. Creatures in the cloud must make a dex save or take 10d8 fire damage, half as much on a success.", 
+    "shortDescription": "", 
     "longDescription": "A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there. The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns."
   }, 
   "locate object": {
@@ -2407,7 +2407,7 @@ module.exports = {
     "spellType": "level 2 Divination", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Yese the direction of an objects location within 1000 feet. Lead blocks the spell from working.", 
+    "shortDescription": "", 
     "longDescription": "Describe or name an object that is familiar to you. You sense the direction to the object’s location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement. The spell can locate a specific object known to you, as long as you have seen it up close—within 30 feet—at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon. This spell can’t locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object."
   }, 
   "true resurrection": {
@@ -2417,7 +2417,7 @@ module.exports = {
     "spellType": "level 9 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Hour", 
-    "shortDescription": "Revive a willing creature that has been dead less than 200 years. The spell restores full health, lifts all curses, removes all diseases and poisons, replaces missing limbs and organs, or even provides a new body if the original no longer exists.", 
+    "shortDescription": "", 
     "longDescription": "You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature’s soul is free and willing, the creature is restored to life with all its hit points. This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs. The spell can even provide a new body if the original no longer exists, in which case you must speak the creature’s name. The creature then appears in an unoccupied space you choose within 10 feet of you."
   }, 
   "storm sphere": {
@@ -2427,7 +2427,7 @@ module.exports = {
     "spellType": "level 4 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Create a 20 foot radius sphere of whirling air that is difficult terrain. Each creature in the sphere on creation or ending its turn there must make a strength save or take 2d6 bludgeoning damage. You can use a bonus action to make a ranged spell attack on a creature within 60 feet of the sphere with a bolt of lightning dealing 4d6 lightning damage.", 
+    "shortDescription": "", 
     "longDescription": "A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain. Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage. Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen. At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th."
   }, 
   "hunter's mark": {
@@ -2437,7 +2437,7 @@ module.exports = {
     "spellType": "level 1 Divination", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Requires concentration. ", 
+    "shortDescription": "", 
     "longDescription": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any wisdom (Perception) or wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature. At Higher Levels: When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
   }, 
   "searing smite": {
@@ -2447,7 +2447,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "Requires concentration. Your next melee hit  does an additional 1d6 fire damage and sets the target on fire. On each turn, the target takes 1d6 fire damage on a failed Constitution save. The spell ends on a success.", 
+    "shortDescription": "", 
     "longDescription": "The next time you hit a creature with a melee weapon attack during the spell’s duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot level above 1st."
   }, 
   "transport via plants": {
@@ -2457,7 +2457,7 @@ module.exports = {
     "spellType": "level 6 Conjuration", 
     "duration": "1 round", 
     "castingTime": "1 Action", 
-    "shortDescription": "This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.", 
+    "shortDescription": "", 
     "longDescription": "This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement."
   }, 
   "feeblemind": {
@@ -2467,7 +2467,7 @@ module.exports = {
     "spellType": "level 8 Enchantment", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Blast the mind of a creature in range. The target takes 4d6 psychic damage and must make an intelligence save. On a fail, the craetures intelligence and charisma scores drop to 1, it can't cast spells, understand language, or active magic items. It can follow and protect its friends, and can reroll the save every 30 days.", 
+    "shortDescription": "", 
     "longDescription": "You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw. On a failed save, the creature’s Intelligence and Charisma scores become 1. The creature can’t cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends. The spell can also be ended by greater restoration, heal, or wish."
   }, 
   "detect magic ": {
@@ -2477,7 +2477,7 @@ module.exports = {
     "spellType": "level 1 Divination Ritual", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. You sense the presence of magic within 30 feet of you.", 
+    "shortDescription": "", 
     "longDescription": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
   }, 
   "vampiric touch": {
@@ -2487,7 +2487,7 @@ module.exports = {
     "spellType": "level 3 Necromancy", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. On a melee spell attack hit, your target takes 3d6 necrotic damage and you gain half that amount back in health back.", 
+    "shortDescription": "", 
     "longDescription": "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
   }, 
   "magic weapon": {
@@ -2517,8 +2517,8 @@ module.exports = {
     "spellType": "level 5 Conjuration", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Create a 20-foot-radius sphere of poisonous fog within 120 feet. Creatures entering the fog for the first time or beginning a turn there take 5d8 posion damage on a failed Constitution save, and half as much on a success. Holding your breath won't help.", 
-    "longDescription": "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured. When a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don’t need to breathe. The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+    "shortDescription": "", 
+    "longDescription": "You create a 20-foot-radius sphere of poisonous, yellow- green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured. When a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don’t need to breathe. The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
   }, 
   "dominate person": {
     "url": "https://www.dnd-spells.com/spell/dominate-person", 
@@ -2526,8 +2526,8 @@ module.exports = {
     "components": "Verbal, Somatic", 
     "spellType": "level 5 Enchantment",    "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A humanoid must succeeded a wisdom save or becomes charmed by you. It has advantage if it is fighting your party. You have a telepathic link and can issue commands like attack, move, or get an object. You can use your action to take precise contol of the target, where it will only act exactly as you will it to. It makes a wisdom throw each time it is attacks, and the spell ends on a success.", 
-    "longDescription": "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels: When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+    "shortDescription": "", 
+    "longDescription": "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. AtHigherLevels. When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
   }, 
   "inflict wounds": {
     "url": "https://www.dnd-spells.com/spell/inflict-wounds", 
@@ -2536,7 +2536,7 @@ module.exports = {
     "spellType": "level 1 Necromancy", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.", 
+    "shortDescription": "", 
     "longDescription": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
   }, 
   "daylight": {
@@ -2546,7 +2546,7 @@ module.exports = {
     "spellType": "level 3 Evocation", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. You an cast it on an object. Displess darkness created by 3rd level or lower spells.", 
+    "shortDescription": "", 
     "longDescription": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled."
   }, 
   "leomund's tiny hut ": {
@@ -2556,7 +2556,7 @@ module.exports = {
     "spellType": "level 3 Evocation Ritual", 
     "duration": "8 hours", 
     "castingTime": "1 Minute", 
-    "shortDescription": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for 8 hours. Fits 10 medium creatures including you. Creatures outside of the dome are barred from passage. It is comfortable and dry.", 
+    "shortDescription": "", 
     "longDescription": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can’t extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside."
   }, 
   "greater invisibility": {
@@ -2566,7 +2566,7 @@ module.exports = {
     "spellType": "level 4 Illusion", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person.", 
+    "shortDescription": "", 
     "longDescription": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person."
   }, 
   "wrathful smite": {
@@ -2576,7 +2576,7 @@ module.exports = {
     "spellType": "level 1 Evocation", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Bonus Action", 
-    "shortDescription": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a wisdom saving throw or be frightened of you. The creature can make a wisdom check against your spell save DC to end this spell.", 
+    "shortDescription": "", 
     "longDescription": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a wisdom check against your spell save DC to steel its resolve and end this spell."
   }, 
   "poison spray": {
@@ -2596,7 +2596,7 @@ module.exports = {
     "spellType": "level 1 Divination", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Establish a telepathic link between a friendly or charmed creature of intelligence 3 or less. The link is active while within line of sight. The beast gains advantage on attack rolls within 5 feet of you.", 
+    "shortDescription": "", 
     "longDescription": "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast’s Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see."
   }, 
   "evard's black tentacles": {
@@ -2606,7 +2606,7 @@ module.exports = {
     "spellType": "level 4 Conjuration", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Tentacles fill a 20-foot square on ground, turning the area into difficult terrain.  When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature can escape with a successful strength or dex check against your spell save DC.", 
+    "shortDescription": "", 
     "longDescription": "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain. When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage. A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
   }, 
   "hypnotic pattern": {
@@ -2616,7 +2616,7 @@ module.exports = {
     "spellType": "level 3 Illusion", 
     "duration": "Concentration, up to 1 minute", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. Create a pattern in the air. Each craetures that sees the pattern makes a wisdom saving throw. On a fail, the creature becomes charmed and incapacitated. The effect ends if a target is damaged or another craeture uses its action to shake the target.", 
+    "shortDescription": "", 
     "longDescription": "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
   }, 
   "shocking grasp": {
@@ -2626,7 +2626,7 @@ module.exports = {
     "spellType": "Evocation cantrip", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.", 
+    "shortDescription": "", 
     "longDescription": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
   }, 
   "planar binding": {
@@ -2636,7 +2636,7 @@ module.exports = {
     "spellType": "level 5 Abjuration", 
     "duration": "24 hours", 
     "castingTime": "1 Hour", 
-    "shortDescription": "At the completion of the casting, the target celestial, elemental, fey, or fiend must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. A bound creature must follow your instructions to the best of its ability. If it was hostile to you, it tries to twist your words to achieve its own ends.", 
+    "shortDescription": "", 
     "longDescription": "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell’s duration is extended to match the duration of this spell. A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends. At Higher Levels: When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
   }, 
   "control water": {
@@ -2646,7 +2646,7 @@ module.exports = {
     "spellType": "level 4 Transmutation", 
     "duration": "Concentration, up to 10 minutes", 
     "castingTime": "1 Action", 
-    "shortDescription": "Control a 100 foot cube of freestanding water in a few ways. You can raise the water level up to 20ft, or make a trench that slowly fills in over the next, redirect the flow, or create a whirlpool that restrains creatures on a failed Athletics check. Creatures in the whrlpool take 2d8 bludgeoning damage for each round on the fail, and half as much on a save.", 
+    "shortDescription": "", 
     "longDescription": "Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one. Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave’s path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing. The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts. Part Water. You cause water in the area to move apart and create a trench. The trench extends across the spell’s area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored. Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell’s area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect. Whirlpool. This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC. When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn’t caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so. The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex."
   }, 
   "mass cure wounds": {
@@ -3326,7 +3326,7 @@ module.exports = {
     "spellType": "level 1 Transmutation", 
     "duration": "1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Target’s speed increases by 10 feet. One target per spell slot.", 
+    "shortDescription": "target’s speed increases by 10 feet", 
     "longDescription": "You touch a creature. The target’s speed increases by 10 feet until the spell ends. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   }, 
   "invisibility": {
@@ -3336,7 +3336,7 @@ module.exports = {
     "spellType": "level 2 Illusion", 
     "duration": "Concentration, up to 1 hour", 
     "castingTime": "1 Action", 
-    "shortDescription": "Requires concentration. A creature you touch becomes invisible until the spell ends. The spell ends for a target that attacks or casts a spell. ", 
+    "shortDescription": "A creature you touch becomes invisible until the spell ends. The spell ends for a target that attacks or casts a spell. ", 
     "longDescription": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   }, 
   "catapult": {
@@ -3906,7 +3906,7 @@ module.exports = {
     "spellType": "level 5 Transmutation", 
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
-    "shortDescription": "You transmute rock into mud, or mud into rock. In mud, creatures sink, move at 1/4 speed. Each turn, a creature must make a strength save or become restrained unless it uses an action. If you cast mud on a ceiling, creatures must make a Dexterity save or take 4d8 bludgeoning damage (half as much on a save). If you turn mud into rock, creatures in the mud become restrained on a Dexterity fail. The creature can use an action or deal 25 damage to the rock to break free.", 
+    "shortDescription": "You transmute rock into mud, or mud into rock. In mud, creatures sink, move at 1/4 speed. Each turn, a creature must make a strength save or become restrained unless it uses an action. If you cast mud on a ceiling, creatures must make a Dexterity save or take 4d8 bludgeoning damage (half as much on a save). If you turn mud into rock, creatures in the mud become restrained on a Dexterity fail. The creature can use an action or deal 25 damge to the rock to break free.", 
     "longDescription": "You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the 2 following effects. 1) Transmute Rock to Mud. Nonmagical rock of any sort in the area becomes an equal volume of thick and flowing mud that remains for the spell’s duration. If you cast the spell on an area of ground, it becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength saving throw. A creature must also make this save the first time it enters the area on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is restrained, though it can use an action to end the restrained condition on itself by pulling itself free of the mud. If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one. 2) Transmute Mud to Rock. Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell’s duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a failed save, a creature becomes restrained by the rock. The restrained creature can use an action to try to break free by succeeding on a Strength check (DC 20) or by dealing 25 damage to the rock around it. On a successful save, a creature is shunted safely to the surface to an unoccupied space."
   }, 
   "thunderclap": {
