@@ -1,6 +1,7 @@
 module.exports = {     
  "ATTRIBUTES_EN_US" : {    
-   "casting time" :        "castingTime",    
+   "casting time" :        "castingTime",
+   "cast"   :              "castingTime",     
    "duration" :            "duration",     
    "range" :               "range",    
    "components" :          "components",   
