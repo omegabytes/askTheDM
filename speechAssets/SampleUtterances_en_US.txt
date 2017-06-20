@@ -13,6 +13,7 @@ SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
 SpellsIntent how do I cast {Spell}
 SpellsIntent how to cast {Spell}
+SpellsIntent how does {Spell} work
 
 //spell attribute
 SpellsIntent what is the {Attribute} of {Spell}
@@ -22,6 +23,7 @@ SpellsIntent whats the {Attribute} of {Spell}
 SpellsIntent to get the {Attribute} of {Spell}
 SpellsIntent get the {Attribute} of {Spell}
 SpellsIntent what {Attribute} do I need to cast {Spell}
+//SpellsIntent whats needed to cast {Spell}
 SpellsIntent what are the {Attribute} to cast {Spell}
 SpellsIntent what are the {Attribute} needed to cast {Spell}
 SpellsIntent what is the {Attribute} of {Spell}
@@ -73,6 +75,11 @@ ConditionsIntent I forget what the conditions of {Condition} are
 ConditionsIntent I forget what the conditions of being {Condition} are
 ConditionsIntent I forget what the conditions of the {Condition} condition are
 ConditionsIntent I forget what the conditions of having the {Condition} condition are
+ConditionsIntent I forget how {Condition} affects me
+ConditionsIntent I forget how {Condition} affects a player
+ConditionsIntent I forget how {Condition} affects a creature
+ConditionsIntent I forget how {Condition} affects a character
+ConditionsIntent I forget how {Condition} affects someone
 ConditionsIntent to get information on {Condition}
 ConditionsIntent to get information about {Condition}
 ConditionsIntent to get info on {Condition}
