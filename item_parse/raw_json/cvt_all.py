@@ -55,7 +55,7 @@ for gear in adventurejs:
             gear["name"].lower() : {
                 'cost' : gear["cost"],
                 'weight' : gear["weight"],
-                'catagory' : gear["catagory"],
+                'category' : gear["catagory"],
                 'itemType' : gear["itemType"]
                 }
             }
@@ -73,7 +73,7 @@ for vehicle in vehiclejs:
                 'cost' : vehicle["cost"],
                 'speed' : vehicle["speed"],
                 'carryCapacity' : vehicle["carry capacity"],
-                'catagory' : vehicle["catagory"],
+                'category' : vehicle["catagory"],
                 'type' : vehicle["item type"]
                 }
             }

@@ -433,921 +433,915 @@ module.exports = {
   "abacus": {
     "cost": "2 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "acid (vial)": {
     "cost": "25 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "alchemist's fire (flask)": {
     "cost": "50 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "arrows (20)": {
     "cost": "1 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Ammunition"
   },
   "blowgun needles (5)": {
     "cost": "1 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Ammunition"
   },
   "crossbow bolts (20)": {
     "cost": "1 gp",
     "weight": "1\u00bd lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Ammunition"
   },
   "sling bullets (20)": {
     "cost": "4 cp",
     "weight": "1\u00bd lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Ammunition"
   },
   "antitoxin (vial)": {
     "cost": "50 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Ammunition"
   },
   "crystal": {
     "cost": "10 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "orb": {
     "cost": "20 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "rod": {
     "cost": "10 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "staff": {
     "cost": "5 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "wand": {
     "cost": "10 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "backpack": {
     "cost": "2 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "ball bearings (bag of 1,000)": {
     "cost": "1 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "barrel": {
     "cost": "2 gp",
     "weight": "70 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "basket": {
     "cost": "2 cubic feet/40 pounds of gear",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "bedroll": {
     "cost": "1 gp",
     "weight": "7 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "bell": {
     "cost": "1 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "blanket": {
     "cost": "5 sp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "block and tackle": {
     "cost": "1 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "book": {
     "cost": "25 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "bottle, glass": {
     "cost": "2 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "bucket": {
     "cost": "3 gallons liquid, 1/2 cubic foot solid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "caltrops (bag of 20)": {
     "cost": "1 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "candle": {
     "cost": "1 cp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "case, crossbow bolt": {
     "cost": "1 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "case, map or scroll": {
     "cost": "1 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "chain (10 feet)": {
     "cost": "5 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "chalk (1 piece)": {
     "cost": "1 cp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "chest": {
     "cost": "12 cubic feet/300 pounds of gear",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "climber's kit": {
     "cost": "25 gp",
     "weight": "12 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "clothes, common": {
     "cost": "5 sp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "clothes, costume": {
     "cost": "5 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "clothes, fine": {
     "cost": "15 gp",
     "weight": "6 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "clothes, traveler's": {
     "cost": "2 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "component pouch": {
     "cost": "25 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "crowbar": {
     "cost": "2 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Arcane focus"
   },
   "sprig of mistletoe": {
     "cost": "1 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "totem": {
     "cost": "1 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "wooden staff": {
     "cost": "5 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "yew wand": {
     "cost": "10 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "fishing tackle": {
     "cost": "1 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "flask or tankard": {
     "cost": "1 pint liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "grappling hook": {
     "cost": "2 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "hammer": {
     "cost": "1 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "hammer, sledge": {
     "cost": "2 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "healer's kit": {
     "cost": "5 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Druidic focus"
   },
   "amulet": {
     "cost": "5 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "emblem": {
     "cost": "5 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "reliquary": {
     "cost": "5 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "holy water (flask)": {
     "cost": "25 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "hourglass": {
     "cost": "25 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "hunting trap": {
     "cost": "5 gp",
     "weight": "25 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "ink (1 ounce bottle)": {
     "cost": "10 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "ink pen": {
     "cost": "2 cp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "jug or pitcher": {
     "cost": "1 gallon liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "ladder (10-foot)": {
     "cost": "1 sp",
     "weight": "25 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "lamp": {
     "cost": "5 sp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "lantern, bullseye": {
     "cost": "10 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "lantern, hooded": {
     "cost": "5 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "lock": {
     "cost": "10 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "magnifying glass": {
     "cost": "100 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "manacles": {
     "cost": "2 gp",
     "weight": "6 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "mess kit": {
     "cost": "2 sp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "mirror, steel": {
     "cost": "5 gp",
     "weight": "1/2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "oil (flask)": {
     "cost": "1 sp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "paper (one sheet)": {
     "cost": "2 sp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "parchment (one sheet)": {
     "cost": "1 sp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "perfume (vial)": {
     "cost": "5 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "pick, miner's": {
     "cost": "2 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "piton": {
     "cost": "5 cp",
     "weight": "1/4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "poison, basic (vial)": {
     "cost": "100 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "pole (10-foot)": {
     "cost": "5 cp",
     "weight": "7 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "pot, iron": {
     "cost": "1 gallon liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "potion of healing": {
     "cost": "50 gp",
     "weight": "1/2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "pouch": {
     "cost": "1/5 cubic foot/6 pounds of gear",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "quiver": {
     "cost": "1 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "ram, portable": {
     "cost": "4 gp",
     "weight": "35 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "rations (1 day)": {
     "cost": "5 sp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "robes": {
     "cost": "1 gp",
     "weight": "4 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "rope, hempen (50 feet)": {
     "cost": "1 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "rope, silk (50 feet)": {
     "cost": "10 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "sack": {
     "cost": "1 cubic foot/30 pounds of gear",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "scale, merchant's": {
     "cost": "5 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "sealing wax": {
     "cost": "5 sp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "shovel": {
     "cost": "2 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "signal whistle": {
     "cost": "5 cp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "signet ring": {
     "cost": "5 gp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "soap": {
     "cost": "2 cp",
     "weight": "---",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "spellbook": {
     "cost": "50 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "spikes, iron (10)": {
     "cost": "1 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "spyglass": {
     "cost": "1,000 g",
     "weight": "p    1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "tent, two-person": {
     "cost": "2 gp",
     "weight": "20 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "tinderbox": {
     "cost": "5 sp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "torch": {
     "cost": "1 cp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "vial": {
     "cost": "4 ounces liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "waterskin": {
     "cost": "4 pints liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "whetstone": {
     "cost": "1 cp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Holy symbol"
   },
   "backpack*": {
     "cost": "1 cubic foot/30 pounds of gear",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "bottle": {
     "cost": "1\u00bd pints liquid",
     "weight": null,
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": null
   },
   "alchemist's supplies": {
     "cost": "50 gp",
     "weight": "8 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "brewer's supplies": {
     "cost": "20 gp",
     "weight": "9 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "calligrapher's supplie  s": {
     "cost": "10 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "carpenter's tools": {
     "cost": "8 gp",
     "weight": "6 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "cartographer's tools": {
     "cost": "15 gp.",
     "weight": "6 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "cobbler's tools": {
     "cost": "5 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "cook's utensils": {
     "cost": "1 gp",
     "weight": "8 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "glassblower's tools": {
     "cost": "30 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "jeweler's tools": {
     "cost": "25 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "leatherworker's tools": {
     "cost": "5 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "mason's tools": {
     "cost": "10 gp",
     "weight": "8 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "painter's supplies": {
     "cost": "10 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "potter's tools": {
     "cost": "10 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "smith's tools": {
     "cost": "20 gp",
     "weight": "8 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "tinker's tools": {
     "cost": "50 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "weaver's tools": {
     "cost": "1 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "woodcarver's tools": {
     "cost": "1 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "disguise kit": {
     "cost": "25 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "forgery kit": {
     "cost": "15 gp",
     "weight": "5 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Artisan's tools"
   },
   "dice set": {
     "cost": "1 sp",
     "weight": "--",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Gaming set"
   },
   "playing card set": {
     "cost": "5 sp",
     "weight": "--",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Gaming set"
   },
   "herbalism kit": {
     "cost": "5 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Gaming set"
   },
   "bagpipes": {
     "cost": "30 gp",
     "weight": "6 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "drum": {
     "cost": "6 gp",
     "weight": "3 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "dulcimer": {
     "cost": "25 gp",
     "weight": "10 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "flute": {
     "cost": "2 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "lute": {
     "cost": "35 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "lyre": {
     "cost": "30 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "horn": {
     "cost": "3 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "pan flute": {
     "cost": "12 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "shawm": {
     "cost": "2 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "viol": {
     "cost": "30 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "navigator's tools": {
     "cost": "25 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "poisoner's kit": {
     "cost": "50 gp",
     "weight": "2 lb.",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "thieves' tools": {
     "cost": "25 gp",
     "weight": "1 lb.",
-    "catagory": "Adventure Gear",
-    "itemType": "Musical instrument"
-  },
-  "vehicles (land or water)": {
-    "cost": "*",
-    "weight": "*",
-    "catagory": "Adventure Gear",
+    "category": "Adventure Gear",
     "itemType": "Musical instrument"
   },
   "camel": {
     "cost": "50 gp",
     "speed": "50 ft.",
     "carryCapacity": "480 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "donkey or mule": {
     "cost": "8 gp",
     "speed": "40 ft.",
     "carryCapacity": "420 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "elephant": {
     "cost": "200 gp",
     "speed": "40 ft.",
     "carryCapacity": "1,320 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "horse, draft": {
     "cost": "50 gp",
     "speed": "40 ft.",
     "carryCapacity": "540 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "horse, riding": {
     "cost": "75 gp",
     "speed": "60 ft.",
     "carryCapacity": "480 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "mastiff": {
     "cost": "25 gp",
     "speed": "40 ft.",
     "carryCapacity": "195 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "pony": {
     "cost": "30 gp",
     "speed": "40 ft.",
     "carryCapacity": "225 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "warhorse": {
     "cost": "400 gp",
     "speed": "60 ft.",
     "carryCapacity": "540 lb.",
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Mount"
   },
   "galley": {
     "cost": "30,000 gp",
     "speed": "4 mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   },
   "keelboat": {
     "cost": "3,000 gp",
     "speed": "1 mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   },
   "longship": {
     "cost": "10,000 gp",
     "speed": "3 mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   },
   "rowboat": {
     "cost": "50 gp",
     "speed": "1\u00bd mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   },
   "sailing ship": {
     "cost": "10,000 gp",
     "speed": "2 mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   },
   "warship": {
     "cost": "25,000 gp",
     "speed": "2\u00bd mph",
     "carryCapacity": null,
-    "catagory": "Vehicles",
+    "category": "Vehicles",
     "type": "Waterborne"
   }
 }
