@@ -5,6 +5,7 @@ var APP_ID = undefined; // TODO replace with amzn1.ask.skill.30397146-5043-48df-
 var spells = require('./spells');
 var conditions = require('./conditions');
 var items = require('./items');
+
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
