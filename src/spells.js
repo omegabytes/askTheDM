@@ -10,7 +10,7 @@ module.exports = {
    "url" :                 "url"   
  },    
  "SPELLS_EN_US" : {
- "move earth": {
+"move earth": {
     "url": "https://www.dnd-spells.com/spell/move-earth", 
     "range": "120 feet", 
     "components": "Verbal, Somatic, Material (an iron blade and a small bag containing a mixture of soils, clay, loam, and sand)", 
