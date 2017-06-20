@@ -1,9 +1,11 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
-var APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
+var APP_ID = undefined; // TODO replace with amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690
 var spells = require('./spells');
 var conditions = require('./conditions');
+//shouldnt this be stored as its own file, just like spells.js?
+// var languageStrings = require('./languageStrings');
 
 
 exports.handler = function(event, context, callback) {
@@ -39,7 +41,6 @@ var handlers = {
             attributeName = attributeSlot.value.toLowerCase();
         }
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), spellName);
         var spells = this.t("SPELLS");
         var spell = spells[spellName];
 
@@ -47,17 +48,17 @@ var handlers = {
         var spellAttribute = spellAttributes[attributeName];
 
         //if the user asks for the attribute of a spell
-        if (spell  && spellAttribute) {
+        if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', spell[spellAttribute], this.attributes['SKILL_NAME'], cardTitle, spell[spellAttribute]);
+            this.emit(':tell', spell[spellAttribute]);
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.longDescription;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', spell.longDescription, this.attributes['SKILL_NAME'], cardTitle, spell.longDescription);
+            this.emit(':tell', spell.longDescription);
         } else {
             var speechOutput = this.t("NOT_FOUND_MESSAGE");
             var repromptSpeech = this.t("NOT_FOUND_REPROMPT");
@@ -77,51 +78,20 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
-        var levelSlot = this.event.request.intent.slots.ExhaustionLevel;
         var conditionName;
-        var exhaustionLevel;
 
         if (conditionSlot && conditionSlot.value) {
-            conditionName = conditionSlot.value.to toLowerCase();
+            conditionName = conditionSlot.value.toLowerCase();
         }
 
-        if (levelSlot && levelSlot.value) {
-            exhaustionLevel = levelSlot.value.toLowerCase();
-        }
+        var conditions = this.t("CONDITIONS");
+        var condition  = conditions[conditionName];
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), conditionName);
-        var conditons = this.t("CONDITIONS");
-        var conditon  = conditions[conditionName];
-        
-        //user requests information on exhaustion
-        if (conditon == 'exhaustion') {
-            //if the user just asks about exhaustion, iterate through each level and read it out loud
-            var speechOutput = "Exhaustion has escalating effects at the following levels: ";
-            int i =0;
-            for (levels : in conditon[exhaustionLevel]) {
-                speechOutput = "level " + i + " " + conditon[exhaustionLevel];
-                i++;
-            }
-
-            this.attributes['speechOutput'] = speechOutput;
+        //user requests information on condition
+        if (condition) {
+            this.attributes['speechOutput'] = condition;
             this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', speechOutput, this.attribute['SKILL_NAME'], cardTitle, speechOutput);
-            
-        } 
-
-        //otherwise, if the user asks for the level of exhaustion, get the description for the level
-        else if (conditon == 'exhaustion' && exhaustionLevel) {
-            this.attributes['speechOutput'] = conditon[exhaustionLevel];
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', conditon[exhaustionLevel], this.attribute['SKILL_NAME'], cardTitle, conditon[exhaustionLevel]);
-        }
-
-        //user requests information on conditon
-        else if (conditon) {
-            this.attributes['speechOutput'] = conditon;
-            this.attributes['repromptSpeech'] = this.t("REPEAT_MESSAGE");
-            this.emit(':tellWithCard', conditon, this.attribute['SKILL_NAME'], cardTitle, conditon);
-
+            this.emit(':tell', condition);
         }
 
         //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
@@ -173,19 +143,19 @@ var languageStrings = {
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
-            "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with.",
+            "WELCOME_MESSAGE":                              "Welcome to %s. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with? You can also say help.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
             "DISPLAY_CARD_TITLE":                           "%s  - Info for %s.",
-            "HELP_MESSAGE":                                 "You can ask questions such as, what\'s Cure Wounds, or, you can say exit...Now, what can I help you with?",
+            "HELP_MESSAGE":                                 "Ask The DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask The DM and follow with your quesition. For example say, Alexa ask the dm what is the range of fireball. As of version 1.0, you can get information about conditions and spells. For spells, you can get the following information: casting time, duration, range, components, spell type, short description and long description. For conditions, simply ask about the conditions name. If you are in interactive mode, say exit to quit.",
             "HELP_REPROMPT":                                "You can say things like, what\'s Death Ward, or you can say exit...Now, what can I help you with?",
             "STOP_MESSAGE":                                 "Goodbye!",
             "REPEAT_MESSAGE":                               "Try saying repeat.",
             "NOT_FOUND_MESSAGE":                            "I\'m sorry, I currently do not know ",
             "NOT_FOUND_REPROMPT":                           "What else can I help with?",
-            "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s. ",
-            "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
-            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the conditon info for %s. ",
-            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that conditon. "
+            "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s.",
+            "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell.",
+            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s.",
+            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition."
         }
     },
     "en-US": {
@@ -197,3 +167,5 @@ var languageStrings = {
         }
     }
 };
+
+
