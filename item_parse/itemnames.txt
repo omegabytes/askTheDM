@@ -161,7 +161,7 @@ vial
 waterskin
 alchemist's supplies
 brewer's supplies
-calligrapher's supplies
+calligrapher's supplie  s
 carpenter's tools
 cartographer's tools
 cobbler's tools
@@ -194,7 +194,6 @@ viol
 navigator's tools
 poisoner's kit
 thieves' tools
-vehicles (land or water)
 camel
 donkey or mule
 elephant
