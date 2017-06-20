@@ -16,19 +16,19 @@ module.exports = {
             "STOP_MESSAGE":                                 "Goodbye!",
             "REPEAT_MESSAGE":                               "Try saying repeat.",
             "NOT_FOUND_MESSAGE":                            "I\'m sorry, I currently do not know ",
-            "NOT_FOUND_REPROMPT":                           "What else can I help with?",
-            "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s.",
-            "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell.",
-            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s.",
-            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition."
+            "NOT_FOUND_REPROMPT":                           "What else can I help with? ",
+            "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s. ",
+            "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
+            "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s. ",
+            "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition. "
         }
     },
     "en-US": {
         "translation": {
-            "SPELLS" :               spells.SPELLS_EN_US,
-            "ATTRIBUTES" :           spells.ATTRIBUTES_EN_US,
-            "CONDITIONS" :           conditions.CONDITIONS_EN_US,
-            "SKILL_NAME" :           "Ask the DM"
+            "SPELLS" :      spells.SPELLS_EN_US,
+            "ATTRIBUTES" :  spells.ATTRIBUTES_EN_US,
+            "CONDITIONS" :  conditions.CONDITIONS_EN_US,
+            "SKILL_NAME" :  "Ask the DM"
         }
     }
-}
+};
