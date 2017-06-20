@@ -1,7 +1,6 @@
 {
   "intents": [
     {
-
       "slots": [
         {
           "name": "Spell",
@@ -14,7 +13,6 @@
       ],
       "intent": "SpellsIntent"
     },
-
     {
       "slots": [
         {
@@ -24,22 +22,6 @@
       ],
       "intent": "ConditionsIntent"
     },
-
-    {
-      "slots": [
-        {
-          "name": "Item",
-          "type": "LIST_OF_ITEMS"
-        },
-        {
-          "name" : "Attribute",
-          "type" : "LIST_OF_ITEM_ATTRIBUTES"
-        }
-      ],
-      "intent": "ItemsIntent"
-    },
-
-
     {
       "intent": "AMAZON.RepeatIntent"
     },
