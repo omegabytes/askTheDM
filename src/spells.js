@@ -1,14 +1,14 @@
 module.exports = {     
  "ATTRIBUTES_EN_US" : {    
-   "casting time" :        "castingTime",
-   "cast"   :              "castingTime",     
-   "duration" :            "duration",     
-   "range" :               "range",    
-   "components" :          "components",   
-   "spell type" :          "spellType",    
-   "short description" :   "shortDescription",   
-   "long description" :    "longDescription",    
-   "url" :                 "url"   
+   "casting time"      : "castingTime",
+   "cast"              : "castingTime",     
+   "duration"          : "duration",     
+   "range"             : "range",    
+   "components"        : "components",   
+   "spell type"        : "spellType",    
+   "short description" : "shortDescription",   
+   "long description"  : "longDescription",    
+   "url"               :  "url"   
  },    
  "SPELLS_EN_US" : {
 "move earth": {
@@ -4039,7 +4039,7 @@ module.exports = {
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
     "shortDescription": "Any spell fo 3rd level or lower ends. Spells 4th level and up end on a successful spell check against DC + spell level.", 
-    "longDescription": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used."
+    "longDescription": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. Fffects of a spell on the target end if the spell’s level is equal to or less than the level of the spell slot you used."
   }, 
   "staggering smite": {
     "url": "https://www.dnd-spells.com/spell/staggering-smite", 
