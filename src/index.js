@@ -124,9 +124,8 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
-            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMT;
-            this.emit(':tell', this.attributes['speechOutput']);
-            this.emit(':ask', this.attributes['repromptSpeech'])
+            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
