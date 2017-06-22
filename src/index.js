@@ -50,12 +50,11 @@ var handlers = {
             this.attributes['speechOutput'] = spell[spellAttribute];
             this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.longDescription;
+            this.attributes['speechOutput'] = spell.shortDescription;
             this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
 
