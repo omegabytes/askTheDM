@@ -1,3 +1,7 @@
+//spell cast
+SpellCastIntent how do I cast {Spell}
+SpellCastIntent how to cast {Spell}
+
 //spells
 SpellsIntent what is {Spell}
 SpellsIntent whats {Spell}
@@ -11,8 +15,6 @@ SpellsIntent to get info on {Spell}
 SpellsIntent get information on {Spell}
 SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
-SpellsIntent how do I cast {Spell}
-SpellsIntent how to cast {Spell}
 SpellsIntent how does {Spell} work
 
 //spell attribute
