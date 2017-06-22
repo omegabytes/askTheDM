@@ -66,7 +66,7 @@ var handlers = {
             if (spellName) {
                 speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
             } else {
-                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAMEPELL;
+                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
             speechOutput += repromptSpeech;
 
