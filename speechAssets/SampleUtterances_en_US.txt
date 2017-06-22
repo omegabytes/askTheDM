@@ -141,3 +141,6 @@ ConditionsIntent what does the {Condition} condition do to a creature
 ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
+
+//Exhaustion level
+ExhaustionLevelIntent what is {Level} of exhaustion
