@@ -107,6 +107,8 @@ var handlers = {
         var exhaustionSlot = this.event.request.intent.slots.Level;
         var exhaustionName;
 
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
         if (exhaustionSlot && exhaustionSlot.value) {
             exhaustionName = exhaustionSlot.value.toLowerCase();
         }
@@ -117,7 +119,6 @@ var handlers = {
         //user requests information on exhaustion levels
         if (exhaustion) {
             this.attributes['speechOutput'] = exhaustion;
-            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
@@ -131,11 +132,7 @@ var handlers = {
             } else {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
-            speechOutput += repromptSpeech;
-
             this.attributes['speechOutput'] = speechOutput;
-            this.attributes['repromptSpeech'] = repromptSpeech;
-
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
