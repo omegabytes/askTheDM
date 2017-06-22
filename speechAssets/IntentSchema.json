@@ -23,6 +23,15 @@
       "intent": "ConditionsIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        }
+      ],
+      "intent": "SpellCastIntent"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {

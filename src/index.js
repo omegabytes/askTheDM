@@ -54,9 +54,9 @@ var handlers = {
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.longDescription;
+            this.attributes['speechOutput'] = spell.shortDescription;
             this.attributes['repromptSpeech'] = languageStrings.en.translation.REPEAT_MESSAGE;
-            this.emit(':tell', spell.longDescription);
+            this.emit(':tell', spell.shortDescription);
         } else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             var repromptSpeech = languageStrings.en.translation.NOT_FOUND_REPROMPT;
@@ -101,6 +101,43 @@ var handlers = {
                 speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, conditionName);
             } else {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
+            }
+            speechOutput += repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            this.emit(':ask', speechOutput, repromptSpeech);
+        }
+    },
+    'SpellCastIntent': function () {
+        var spellSlot = this.event.request.intent.slots.Spell;
+        var spellName;
+
+        if (spellSlot && spellSlot.value) {
+            spellName = spellSlot.value.toLowerCase();
+        }
+
+        var spells = languageStrings.en.translation.SPELLS;
+        var spell  = spells[spellName];
+
+        //user requests information on casting spell
+        if (spell) {
+            this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
+            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMT;
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech'])
+        }
+
+        //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
+        else {
+            var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+            var repromptSpeech = languageStrings.en.translation.NOT_FOUND_REPROMPT;
+
+            if (conditionName) {
+                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
+            } else {
+                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAMEPELL;
             }
             speechOutput += repromptSpeech;
 
