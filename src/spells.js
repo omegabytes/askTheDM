@@ -1,14 +1,14 @@
 module.exports = {     
  "ATTRIBUTES_EN_US" : {    
-   "casting time" :        "castingTime",
-   "cast"   :              "castingTime",     
-   "duration" :            "duration",     
-   "range" :               "range",    
-   "components" :          "components",   
-   "spell type" :          "spellType",    
-   "short description" :   "shortDescription",   
-   "long description" :    "longDescription",    
-   "url" :                 "url"   
+   "casting time"      : "castingTime",
+   "cast"              : "castingTime",     
+   "duration"          : "duration",     
+   "range"             : "range",    
+   "components"        : "components",   
+   "spell type"        : "spellType",    
+   "short description" : "shortDescription",   
+   "long description"  : "longDescription",    
+   "url"               :  "url"   
  },    
  "SPELLS_EN_US" : {
 "move earth": {
@@ -419,7 +419,7 @@ module.exports = {
     "duration": "Instantaneous", 
     "castingTime": "1 Minute", 
     "shortDescription": "Create an undead servant. Choose a pile of bones or a corpse of a medium or small humanoid within range. The target becomes a skeleton if you chose bones, or a zombie if you chose a corpse. On each of your turns, use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you. You decide what action the creature will take and where it will move during its next turn, or you can issue general commands. If no command is issued, the creature only defends itself against hostile creatures. The spells only lasts 24 hours, or you must cast again to reassert control. When cast at a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot above 3rd.", 
-    "longDescription": "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics). On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you contol multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. Ifyou issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+    "longDescription": "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics). On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you contol multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
   }, 
   "green-flame blade": {
     "url": "https://www.dnd-spells.com/spell/green-flame-blade", 
@@ -4039,7 +4039,7 @@ module.exports = {
     "duration": "Instantaneous", 
     "castingTime": "1 Action", 
     "shortDescription": "Any spell fo 3rd level or lower ends. Spells 4th level and up end on a successful spell check against DC + spell level.", 
-    "longDescription": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used."
+    "longDescription": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. Fffects of a spell on the target end if the spell’s level is equal to or less than the level of the spell slot you used."
   }, 
   "staggering smite": {
     "url": "https://www.dnd-spells.com/spell/staggering-smite", 
