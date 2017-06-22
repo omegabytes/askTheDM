@@ -19,7 +19,7 @@ var handlers = {
     //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
     // Alexa, ask [my-skill-invocation-name] to (do something)...
     'LaunchRequest': function () {
-        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE, languageStrings.en.translation.SKILL_NAME);
+        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
