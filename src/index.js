@@ -57,6 +57,7 @@ var handlers = {
             this.attributes['speechOutput'] = spell.shortDescription;
             this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+
         } else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             var repromptSpeech = languageStrings.en.translation.REPROMPT;
@@ -64,7 +65,7 @@ var handlers = {
             if (spellName) {
                 speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
             } else {
-                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAMEPELL;
+                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
             speechOutput += repromptSpeech;
 
@@ -108,6 +109,42 @@ var handlers = {
             this.attributes['repromptSpeech'] = repromptSpeech;
 
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        }
+    },
+    'SpellCastIntent': function () {
+        var spellSlot = this.event.request.intent.slots.Spell;
+        var spellName;
+
+        if (spellSlot && spellSlot.value) {
+            spellName = spellSlot.value.toLowerCase();
+        }
+
+        var spells = languageStrings.en.translation.SPELLS;
+        var spell  = spells[spellName];
+
+        //user requests information on casting spell
+        if (spell) {
+            this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
+            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        }
+
+        //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
+        else {
+            var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+            var repromptSpeech = languageStrings.en.translation.NOT_FOUND_REPROMPT;
+
+            if (conditionName) {
+                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
+            } else {
+                speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAMEPELL;
+            }
+            speechOutput += repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            this.emit(':ask', speechOutput, repromptSpeech);
         }
     },
     'AMAZON.HelpIntent': function () {
