@@ -111,6 +111,42 @@ var handlers = {
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
+    'ExhaustionLevelIntent': function () {
+        var exhaustionSlot = this.event.request.intent.slots.Level;
+        var exhaustionName;
+
+        if (exhaustionSlot && exhaustionSlot.value) {
+            exhaustionName = exhaustionSlot.value.toLowerCase();
+        }
+
+        var exhaustions = languageStrings.en.translation.CONDITIONS; 
+        var condition  = conditions[conditionName];
+
+        //user requests information on condition
+        if (condition) {
+            this.attributes['speechOutput'] = condition;
+            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        }
+
+        //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
+        else {
+            var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+            var repromptSpeech = languageStrings.en.translation.REPROMPT;
+
+            if (conditionName) {
+                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, conditionName);
+            } else {
+                speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
+            }
+            speechOutput += repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        }
+    },
     'SpellCastIntent': function () {
         var spellSlot = this.event.request.intent.slots.Spell;
         var spellName;
