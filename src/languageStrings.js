@@ -1,5 +1,6 @@
 var spells = require('./spells');
 var conditions = require('./conditions');
+var exhaustionLevel = require('./exhaustionLevel');
 
 module.exports = {
     "en": {
@@ -7,6 +8,7 @@ module.exports = {
             "SPELLS":                                       spells.SPELLS_EN_US,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
+            "EXHAUSTION_LEVEL" :                            exhaustionLevel.EXHAUSTION_LEVELS_EN_US,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with? You can also say help.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
