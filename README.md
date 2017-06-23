@@ -13,6 +13,7 @@ If you'd like to get involved, please go through Amazon's [how-to template skill
 
 You don't need an echo to develop or test this application. Services like https://echosim.io/ have you covered.
 
+Icon is used with explicit permission from Jason Newman (gojirra@gmail.com). For any related inquiries please contact him directly. The icon is intended for use with this application only and may not be used in part or full without permission.
 
 ##### Version 1.0 features
 - Editions:
@@ -26,8 +27,10 @@ You don't need an echo to develop or test this application. Services like https:
 		- short description 
 		- long description 
 		- spell type and level
+		- what's needed to cast a spell
 	- Conditions
 		- description
 		- exhaustion by level
+
 
 - [Sample Utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances_en_US.txt)
