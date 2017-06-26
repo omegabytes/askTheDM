@@ -105,20 +105,20 @@ var handlers = {
     },
     'ExhaustionLevelIntent': function () {
         var exhaustionSlot = this.event.request.intent.slots.Level;
-        var exhaustionName;
+        var exhaustionLevel;
 
         this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
 
         if (exhaustionSlot && exhaustionSlot.value) {
-            exhaustionName = exhaustionSlot.value.toLowerCase();
+            exhaustionLevel = exhaustionSlot.value.toLowerCase();
         }
 
-        var exhaustions = languageStrings.en.translation.EXHAUSTION_LEVEL; 
-        var exhaustion  = exhaustions[exhaustionName];
+        var exhaustionLevelList = languageStrings.en.translation.EXHAUSTION_LEVEL; 
+        var thisExhaustionLevel  = exhaustionLevelList[exhaustionLevel];
 
         //user requests information on exhaustion levels
-        if (exhaustion) {
-            this.attributes['speechOutput'] = exhaustion;
+        if (thisExhaustionLevel) {
+            this.attributes['speechOutput'] = thisExhaustionLevel;
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
@@ -127,8 +127,8 @@ var handlers = {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             var repromptSpeech = languageStrings.en.translation.REPROMPT;
 
-            if (exhaustionName) {
-                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, exhaustionName);
+            if (exhaustionLevel) {
+                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, exhaustionLevel);
             } else {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
