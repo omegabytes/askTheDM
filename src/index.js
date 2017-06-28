@@ -175,7 +175,7 @@ var handlers = {
         var modifierSlot = this.event.request.intent.slots.Modifier;
         var numberOfDice;
         var diceSides;
-        var modifier;
+        var modifier = 0;
         var result;
 
         this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
@@ -212,7 +212,9 @@ var handlers = {
         // calculate the result
         result = rollDice(numberOfDice,diceSides) + modifier;
 
+        speechOutput = "The result of the roll is " + result;
 
+        this.emit('ask', this.attributes['speechOutput'], this.attributes{'repromptSpeech'});
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
