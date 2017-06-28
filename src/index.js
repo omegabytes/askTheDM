@@ -169,6 +169,51 @@ var handlers = {
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
+    'DiceIntent' : function () {
+        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
+        var diceSidesSlot = this.event.request.intent.slots.Sides;
+        var modifierSlot = this.event.request.intent.slots.Modifier;
+        var numberOfDice;
+        var diceSides;
+        var modifier;
+        var result;
+
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        // get the number of dice, dice sides, and any modifiers from the user
+
+        if (numberOfDiceSlot && numberOfDiceSlot.value) {
+            // get the number of dice to roll
+            numberOfDice = numberOfDiceSlot.value;
+        }
+
+        if (diceSidesSlot && diceSidesSlot.value) {
+            // get the kind of dice to roll (faces, like six-sided or 20-sided)
+            diceSides = diceSidesSlot.value;
+        }
+
+        if (modifierSlot && modifierSlot.value) {
+            // get the modifier to add at the end of the roll calculation
+            modifier = modifierSlot.value;
+        }
+
+        // roll dice function
+        function rollDice(quantity,sides) {
+            var facevalue;
+            var output = 0;
+
+            for (i=0;i<quantity;i++) {
+                facevalue = Math.floor(Math.random * sides);
+                output += facevalue;
+            }
+            return output;
+        };
+
+        // calculate the result
+        result = rollDice(numberOfDice,diceSides) + modifier;
+
+
+    },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;

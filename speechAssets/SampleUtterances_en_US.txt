@@ -175,3 +175,11 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
+
+//DiceIntent
+DiceIntent roll {Quantity} d {Sides}
+DiceIntent roll a {Quantity} d {Sides}
+DiceIntent can you roll a {Quantity} d {Sides}
+DiceIntent can you roll {Quantity} d {Sides}
+DiceIntent to roll {Quantity} d {Sides}
+DiceIntent to roll a {Quantity} d {Sides}
