@@ -160,7 +160,6 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
-            //console.log(this.attributes['repromptSpeech']);
             this.emit(':tell', this.attributes['speechOutput']);
             this.emit(':ask', this.attributes['repromptSpeech']);
         }
@@ -169,8 +168,8 @@ var handlers = {
         else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
 
-            if (conditionName) {
-                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
+            if (spell) {
+                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spell);
             } else {
                 speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
