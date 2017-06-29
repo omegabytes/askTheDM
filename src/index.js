@@ -151,7 +151,12 @@ var handlers = {
 
         //user requests information on casting spell
         if (spell) {
-            this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
+            this.attributes['speechOutput'] = spellName + " is a " 
+                                            + spell.spellType + ". You can cast it " 
+                                            + spell.components + ". The spell duration is " 
+                                            + spell.duration + ". " 
+                                            + spell.shortDescription;
+                                            
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
@@ -197,28 +202,17 @@ var handlers = {
             modifier = modifierSlot.value;
         }
 
-        if (modifier == null) {
+        if (!modifier) {
             modifier = 0;
-        }
-
-        // roll dice function
-        function rollDice(quantity,sides) {
-            var facevalue;
-            var output = 0;
-
-            for (i=0;i<quantity;i++) {
-                facevalue = Math.floor(Math.random()*sides);
-                output += facevalue;
-            }
-            return output;
         }
 
         // calculate the result
         result = rollDice(numberOfDice,diceSides) + modifier;
 
-        speechOutput = "The result of the roll is " + result;
+        this.attributes['speechOutput'] = "The result of the roll is " + result;
 
-        this.emit('ask', this.attributes['speechOutput'], this.attributes{'repromptSpeech'});
+        this.emit(':tell', this.attributes['speechOutput']);
+        this.emit(':ask', this.attributes['repromptSpeech']);
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
@@ -242,4 +236,19 @@ var handlers = {
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     }
+};
+/*************************
+ *       Functions       *
+ *************************/
+
+// roll dice function
+function rollDice(quantity,sides) {
+    var facevalue;
+    var output = 0;
+
+    for (var i=0;i<quantity;i++) {
+        facevalue = Math.floor(Math.random()*sides);
+        output += facevalue;
+    }
+    return output;
 };
