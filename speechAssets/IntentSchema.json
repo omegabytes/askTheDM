@@ -32,6 +32,15 @@
       "intent": "SpellCastIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Level",
+          "type": "LIST_OF_EXHAUSTION_LEVELS"
+        }
+      ],
+      "intent": "ExhaustionLevelIntent"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {
