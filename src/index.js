@@ -175,7 +175,7 @@ var handlers = {
         var modifierSlot = this.event.request.intent.slots.Modifier;
         var numberOfDice;
         var diceSides;
-        var modifier = 0;
+        var modifier;
         var result;
 
         this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
@@ -195,6 +195,10 @@ var handlers = {
         if (modifierSlot && modifierSlot.value) {
             // get the modifier to add at the end of the roll calculation
             modifier = modifierSlot.value;
+        }
+
+        if (modifier == null) {
+            modifier = 0;
         }
 
         // roll dice function
