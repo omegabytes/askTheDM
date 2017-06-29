@@ -203,11 +203,11 @@ var handlers = {
             var output = 0;
 
             for (i=0;i<quantity;i++) {
-                facevalue = Math.floor(Math.random * sides);
+                facevalue = Math.floor(Math.random()*sides);
                 output += facevalue;
             }
             return output;
-        };
+        }
 
         // calculate the result
         result = rollDice(numberOfDice,diceSides) + modifier;
