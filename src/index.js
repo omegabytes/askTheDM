@@ -24,7 +24,8 @@ var handlers = {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
+        this.emit(':tell', this.attributes['speechOutput']);
+        this.emit(':ask', this.attributes['repromptSpeech']);
     },
     'SpellsIntent': function () {
         var spellSlot = this.event.request.intent.slots.Spell;
@@ -51,13 +52,15 @@ var handlers = {
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute];
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
 
         } else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
@@ -68,7 +71,8 @@ var handlers = {
                 speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
             this.attributes['speechOutput'] = speechOutput;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
     },
     'ConditionsIntent': function () {
@@ -86,7 +90,8 @@ var handlers = {
         //user requests information on condition
         if (condition) {
             this.attributes['speechOutput'] = condition;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
@@ -100,26 +105,28 @@ var handlers = {
             }
 
             this.attributes['speechOutput'] = speechOutput;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
     },
     'ExhaustionLevelIntent': function () {
         var exhaustionSlot = this.event.request.intent.slots.Level;
-        var exhaustionName;
+        var exhaustionLevel;
 
         this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
 
         if (exhaustionSlot && exhaustionSlot.value) {
-            exhaustionName = exhaustionSlot.value.toLowerCase();
+            exhaustionLevel = exhaustionSlot.value.toLowerCase();
         }
 
-        var exhaustions = languageStrings.en.translation.EXHAUSTION_LEVEL; 
-        var exhaustion  = exhaustions[exhaustionName];
+        var exhaustionLevelList = languageStrings.en.translation.EXHAUSTION_LEVEL; 
+        var thisExhaustionLevel  = exhaustionLevelList[exhaustionLevel];
 
         //user requests information on exhaustion levels
-        if (exhaustion) {
-            this.attributes['speechOutput'] = exhaustion;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        if (thisExhaustionLevel) {
+            this.attributes['speechOutput'] = thisExhaustionLevel;
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
@@ -127,13 +134,14 @@ var handlers = {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             var repromptSpeech = languageStrings.en.translation.REPROMPT;
 
-            if (exhaustionName) {
-                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, exhaustionName);
+            if (exhaustionLevel) {
+                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, exhaustionLevel);
             } else {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
             this.attributes['speechOutput'] = speechOutput;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
     },
     'SpellCastIntent': function () {
@@ -152,30 +160,34 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
         else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
 
-            if (conditionName) {
-                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
+            if (spell) {
+                speechOutput += (languageStrings.en.translation.SPELL_NOT_FOUND_WITH_SPELL_NAME, spell);
             } else {
                 speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
 
             this.attributes['speechOutput'] = speechOutput;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
         }
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        this.emit(':tell', this.attributes['speechOutput']);
+        this.emit(':ask', this.attributes['repromptSpeech']);
     },
     'AMAZON.RepeatIntent': function () {
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        this.emit(':tell', this.attributes['speechOutput']);
+        this.emit(':ask', this.attributes['repromptSpeech']);
     },
     'AMAZON.StopIntent': function () {
         this.emit('SessionEndedRequest');
@@ -189,6 +201,7 @@ var handlers = {
     'Unhandled': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        this.emit(':tell', this.attributes['speechOutput']);
+        this.emit(':ask', this.attributes['repromptSpeech']);
     }
 };
