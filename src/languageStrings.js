@@ -1,6 +1,7 @@
 var spells = require('./spells');
 var conditions = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
+var items = require('./items');
 
 module.exports = {
     "en": {
@@ -9,6 +10,8 @@ module.exports = {
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
             "EXHAUSTION_LEVEL" :                            exhaustionLevel.EXHAUSTION_LEVELS_EN_US,
+            "ITEMS" :                                       items.ITEMS_EN_US,
+            "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES_EN_US,
             "SKILL_NAME":                                   "Ask my handbook",
             "WELCOME_MESSAGE":                              "Welcome to my handbook. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with? You can also say help.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
@@ -30,6 +33,8 @@ module.exports = {
             "SPELLS" :      spells.SPELLS_EN_US,
             "ATTRIBUTES" :  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :  conditions.CONDITIONS_EN_US,
+            "ITEMS" :                items.ITEMS_EN_US,
+            "ITEM_ATTRIBUTES" :      items.ITEM_ATTRIBUTES_EN_US,
             "SKILL_NAME" :  "my handbook"
         }
     }

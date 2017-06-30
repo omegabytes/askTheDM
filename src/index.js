@@ -5,6 +5,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var spells = require('./spells');
 var conditions = require('./conditions');
+var items = require('./items');
 var languageStrings = require('./languageStrings');
 
 exports.handler = function(event, context, callback) {
@@ -177,6 +178,70 @@ var handlers = {
             this.attributes['speechOutput'] = speechOutput;
             this.emit(':tell', this.attributes['speechOutput']);
             this.emit(':ask', this.attributes['repromptSpeech']);
+        }
+    },
+    'ItemsIntent': function () {
+        var itemSlot = this.event.request.intent.slots.Item;
+        var itemAttributeSlot = this.event.request.intent.slots.ItemAttribute;
+        var itemName;
+        var itemAttributeName;
+
+        if(itemSlot && itemSlot.value){
+            itemName = itemSlot.value.toLowerCase();
+        }
+
+        if(itemAttributeSlot && itemAttributeSlot.value){
+            itemAttributeName = itemAttributeSlot.value.toLowerCase();
+        }
+
+        var itemList = languageStrings.en.translation.ITEMS;
+        var itemAttributeList= languageStrings.en.translation.ITEM_ATTRIBUTES;
+
+        var item = itemList[itemName];
+        var itemAttribute  = itemAttributeList[itemAttributeName];
+
+        if(item && itemAttribute){
+            if(!item[itemAttribute]){
+                this.attributes['speechOutput'] = languageStrings.en.translation.ATTRIBUTE_DOES_NOT_EXSIST;
+                this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+                this.emit(':ask', this.attributes['speechOutput']);
+                this.emit(':tell', this.attributes['repromptSpeech']);
+            }
+            else{
+                this.attributes['speechOutput'] = item[itemAttribute];
+                this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+                this.emit(':ask', this.attributes['speechOutput']);
+                this.emit(':tell', this.attributes['repromptSpeech']);
+            }
+        }
+
+        else if(item && !itemAttribute){
+            if(item.itemType){
+                this.attributes['speechOutput'] = "It is a "+item.itemType;
+            }
+            else{
+                this.attributes['speechOutput'] = "It is a "+item.category;
+            }
+            this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+            this.emit(':ask', this.attributes['speechOutput']);
+            this.emit(':tell', this.attributes['repromptSpeech']);
+        }
+
+        else {
+            var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+            var repromptSpeech = languageStrings.en.translation.NOT_FOUND_REPROMPT;
+
+            if (item) {
+                speechOutput = (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, item);
+            } else {
+                speechOutput = languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
+            }
+            speechOutput = repromptSpeech;
+
+            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['repromptSpeech'] = repromptSpeech;
+            this.emit(':ask', this.attributes['speechOutput']);
+            this.emit(':tell', this.attributes['repromptSpeech']);
         }
     },
     'AMAZON.HelpIntent': function () {
