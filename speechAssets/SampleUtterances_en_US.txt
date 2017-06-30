@@ -175,3 +175,7 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
+
+//Feats
+FeatsIntent what does {Feats} do
+

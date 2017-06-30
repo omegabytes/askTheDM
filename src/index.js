@@ -5,6 +5,8 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var spells = require('./spells');
 var conditions = require('./conditions');
+var feats = require('./feats');
+var exhaustion = require('./exhaustionLevel');
 var languageStrings = require('./languageStrings');
 
 exports.handler = function(event, context, callback) {
@@ -136,6 +138,51 @@ var handlers = {
 
             if (exhaustionLevel) {
                 speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, exhaustionLevel);
+            } else {
+                speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
+            }
+            this.attributes['speechOutput'] = speechOutput;
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
+        }
+    },
+    'FeatsIntent': function() {
+        var featSlot = this.event.request.intent.slots.Feats;
+        //var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
+        //var featAttrName;
+        var featsName;
+
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        if (featSlot && featSlot.value) {
+            featsName = featSlot.value.toLowerCase();
+        }
+
+        //if(featAttributeSlot && featAttributeSlot.value) {
+          //  featAttrName = featAttributeSlot.value.toLowerCase();
+        //}
+
+        var featsList = languageStrings.en.translation.FEATS; 
+        var thisFeat  = featsList[featsName];
+
+        //var featsAttrList = languageStrings.en.translation.FEATS_ATTRIBUTES;
+        //var thisFeatAttr = featsAttrList[featAttrName];
+
+        //user requests information on feats
+        if (thisFeat) {
+            this.attributes['speechOutput'] = thisFeat.description;
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
+        }
+        // add elseif similar to spells attribute here
+
+        //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
+        else {
+            var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+            var repromptSpeech = languageStrings.en.translation.REPROMPT;
+
+            if (thisFeat) {
+                speechOutput += (languageStrings.en.translation.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, thisFeat);
             } else {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
