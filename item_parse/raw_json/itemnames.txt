@@ -1,0 +1,211 @@
+padded
+leather
+studded leather
+hide
+chain shirt
+scale mail
+breastplate
+half plate
+ring mail
+chain mail
+splint
+plate
+shield
+club
+dagger
+greatclub
+handaxe
+javelin
+light hammer
+mace
+quarterstaff
+sickle
+spear
+crossbow, light
+dart
+shortbow
+sling
+battleaxe
+flail
+glaive
+greataxe
+greatsword
+halberd
+lance
+longsword
+maul
+morningstar
+pike
+rapier
+scimitar
+shortsword
+trident
+war pick
+warhammer
+whip
+blowgun
+crossbow, hand
+crossbow, heavy
+longbow
+net
+abacus
+acid (vial)
+alchemist's fire (flask)
+arrows (20)
+blowgun needles (5)
+crossbow bolts (20)
+sling bullets (20)
+antitoxin (vial)
+crystal
+orb
+rod
+staff
+wand
+backpack
+ball bearings (bag of 1,000)
+barrel
+basket
+bedroll
+bell
+blanket
+block and tackle
+book
+bottle, glass
+bucket
+caltrops (bag of 20)
+candle
+case, crossbow bolt
+case, map or scroll
+chain (10 feet)
+chalk (1 piece)
+chest
+climber's kit
+clothes, common
+clothes, costume
+clothes, fine
+clothes, traveler's
+component pouch
+crowbar
+sprig of mistletoe
+totem
+wooden staff
+yew wand
+fishing tackle
+flask or tankard
+grappling hook
+hammer
+hammer, sledge
+healer's kit
+amulet
+emblem
+reliquary
+holy water (flask)
+hourglass
+hunting trap
+ink (1 ounce bottle)
+ink pen
+jug or pitcher
+ladder (10-foot)
+lamp
+lantern, bullseye
+lantern, hooded
+lock
+magnifying glass
+manacles
+mess kit
+mirror, steel
+oil (flask)
+paper (one sheet)
+parchment (one sheet)
+perfume (vial)
+pick, miner's
+piton
+poison, basic (vial)
+pole (10-foot)
+pot, iron
+potion of healing
+pouch
+quiver
+ram, portable
+rations (1 day)
+robes
+rope, hempen (50 feet)
+rope, silk (50 feet)
+sack
+scale, merchant's
+sealing wax
+shovel
+signal whistle
+signet ring
+soap
+spellbook
+spikes, iron (10)
+spyglass
+tent, two-person
+tinderbox
+torch
+vial
+waterskin
+whetstone
+backpack*
+basket
+bottle
+bucket
+chest
+flask or tankard
+jug or pitcher
+pot, iron
+pouch
+sack
+vial
+waterskin
+alchemist's supplies
+brewer's supplies
+calligrapher's supplie  s
+carpenter's tools
+cartographer's tools
+cobbler's tools
+cook's utensils
+glassblower's tools
+jeweler's tools
+leatherworker's tools
+mason's tools
+painter's supplies
+potter's tools
+smith's tools
+tinker's tools
+weaver's tools
+woodcarver's tools
+disguise kit
+forgery kit
+dice set
+playing card set
+herbalism kit
+bagpipes
+drum
+dulcimer
+flute
+lute
+lyre
+horn
+pan flute
+shawm
+viol
+navigator's tools
+poisoner's kit
+thieves' tools
+vehicles (land or water)
+camel
+donkey or mule
+elephant
+horse, draft
+horse, riding
+mastiff
+pony
+warhorse
+galley
+keelboat
+longship
+rowboat
+sailing ship
+warship

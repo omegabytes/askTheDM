@@ -1,0 +1,16 @@
+[
+{"name": "Camel", "cost": "50 gp", "speed": "50 ft.", "carry capacity": "480 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Donkey or mule", "cost": "8 gp", "speed": "40 ft.", "carry capacity": "420 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Elephant", "cost": "200 gp", "speed": "40 ft.", "carry capacity": "1,320 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Horse, draft", "cost": "50 gp", "speed": "40 ft.", "carry capacity": "540 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Horse, riding", "cost": "75 gp", "speed": "60 ft.", "carry capacity": "480 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Mastiff", "cost": "25 gp", "speed": "40 ft.", "carry capacity": "195 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Pony", "cost": "30 gp", "speed": "40 ft.", "carry capacity": "225 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Warhorse", "cost": "400 gp", "speed": "60 ft.", "carry capacity": "540 lb.", "catagory": "Vehicles", "item type": "Mount"},
+{"name": "Galley", "cost": "30,000 gp", "speed": "4 mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"},
+{"name": "Keelboat", "cost": "3,000 gp", "speed": "1 mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"},
+{"name": "Longship", "cost": "10,000 gp", "speed": "3 mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"},
+{"name": "Rowboat", "cost": "50 gp", "speed": "1\u00bd mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"},
+{"name": "Sailing ship", "cost": "10,000 gp", "speed": "2 mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"},
+{"name": "Warship", "cost": "25,000 gp", "speed": "2\u00bd mph", "carry capacity": null, "catagory": "Vehicles", "item type": "Waterborne"}
+]
