@@ -9,11 +9,11 @@ module.exports = {
             "ATTRIBUTES" :                                  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :                                  conditions.CONDITIONS_EN_US,
             "EXHAUSTION_LEVEL" :                            exhaustionLevel.EXHAUSTION_LEVELS_EN_US,
-            "SKILL_NAME":                                   "Ask my handbook",
-            "WELCOME_MESSAGE":                              "Welcome to my handbook. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with? You can also say help.",
+            "SKILL_NAME":                                   "Ask the DM",
+            "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask a question like, what\'s the range of fireball? ... Now, what can I help you with? You can also say help.",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
             "DISPLAY_CARD_TITLE":                           "%s  - Info for %s.",
-            "HELP_MESSAGE":                                 "my handbook was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, open my handbook and follow with your quesition. For example say, Alexa ask my handbook what is the range of fireball. As of version 1.0, you can get information about conditions and spells. For spells, you can get the following information: casting time, duration, range, components, spell type, short description and long description. For conditions, simply ask about the conditions name. If you are in interactive mode, say exit to quit. ",
+            "HELP_MESSAGE":                                 "Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, open my handbook and follow with your quesition. For example say, Alexa ask my handbook what is the range of fireball. As of version 1.0, you can get information about conditions and spells. For spells, you can get the following information: casting time, duration, range, components, spell type, short description and long description. For conditions, simply ask about the conditions name. If you are in interactive mode, say exit to quit. ",
             "HELP_REPROMPT":                                "You can say things like, what\'s Death Ward, or you can say exit...Now, what can I help you with?",
             "STOP_MESSAGE":                                 "Goodbye!",
             "REPEAT_MESSAGE":                               "Try saying repeat.",
@@ -30,7 +30,7 @@ module.exports = {
             "SPELLS" :      spells.SPELLS_EN_US,
             "ATTRIBUTES" :  spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :  conditions.CONDITIONS_EN_US,
-            "SKILL_NAME" :  "my handbook"
+            "SKILL_NAME" :  "Ask the DM"
         }
     }
 };
