@@ -16,6 +16,19 @@
     {
       "slots": [
         {
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
+        },
+        {
+          "name": "ItemAttribute",
+          "type": "LIST_OF_ITEM_ATTRIBUTES"
+        }
+      ],
+      "intent": "ItemsIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Condition",
           "type": "LIST_OF_CONDITIONS"
         }

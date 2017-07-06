@@ -1,0 +1,204 @@
+padded
+leather
+studded leather
+hide
+chain shirt
+scale mail
+breastplate
+half plate
+ring mail
+chain mail
+splint
+plate
+shield
+club
+dagger
+greatclub
+handaxe
+javelin
+light hammer
+mace
+quarterstaff
+sickle
+spear
+light crossbow
+dart
+shortbow
+sling
+battleaxe
+flail
+glaive
+greataxe
+greatsword
+halberd
+lance
+longsword
+maul
+morningstar
+pike
+rapier
+scimitar
+shortsword
+trident
+war pick
+warhammer
+whip
+blowgun
+hand crossbow
+heavy crossbow
+longbow
+net
+abacus
+acid
+alchemist's fire
+arrows
+blowgun needles
+crossbow bolts
+sling bullets
+antitoxin
+crystal
+orb
+rod
+staff
+wand
+backpack
+ball bearings
+barrel
+basket
+bedroll
+bell
+blanket
+block and tackle
+book
+glass bottle
+bucket
+caltrops
+candle
+case of crossbow bolt
+case for map
+case for scroll
+chain
+chalk
+chest
+climber's kit
+common clothes
+costume
+fine clothes
+traveler's clothes
+component pouch
+crowbar
+sprig of mistletoe
+totem
+wooden staff
+yew wand
+fishing tackle
+flask
+tankard
+grappling hook
+hammer
+hammer, sledge
+healer's kit
+amulet
+emblem
+reliquary
+holy water
+hourglass
+hunting trap
+ink
+ink pen
+jug
+pitcher
+ladder
+lamp
+bullseye lantern
+hooded lantern
+lantern
+lock
+magnifying glass
+manacles
+mess kit
+mirror
+oil
+paper
+parchment
+perfume
+miner's pick
+piton
+basic poison
+pole
+iron pot
+potion of healing
+pouch
+quiver
+portable ram
+rations
+robes
+hempen rope
+silk rope
+rope
+sack
+merchant's scale
+sealing wax
+shovel
+signal whistle
+signet ring
+soap
+spellbook
+iron spikes
+spyglass
+two-person tent
+tinderbox
+torch
+vial
+whetstone
+waterskin
+alchemist's supplies
+brewer's supplies
+calligrapher's supplies
+carpenter's tools
+cartographer's tools
+cobbler's tools
+cook's utensils
+glassblower's tools
+jeweler's tools
+leatherworker's tools
+mason's tools
+painter's supplies
+potter's tools
+smith's tools
+tinker's tools
+weaver's tools
+woodcarver's tools
+disguise kit
+forgery kit
+dice set
+playing card set
+herbalism kit
+bagpipes
+drum
+dulcimer
+flute
+lute
+lyre
+horn
+pan flute
+shawm
+viol
+navigator's tools
+poisoner's kit
+thieves' tools
+camel
+donkey 
+mule
+elephant
+draft horse
+riding horse
+mastiff
+pony
+warhorse
+galley
+keelboat
+longship
+rowboat
+sailing ship
+warship
