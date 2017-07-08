@@ -118,7 +118,7 @@ module.exports = {
 			"benefits":"Increase your Strength or Dexterity score by 1 to a maximum of 20. Additionally, gain proficiency with medium armor and shields.",
 			"prereq":"Proficiency with light armor."
 		},
-		"mounted combat":{
+		"mounted combatant":{
 			"description":"You are a dangerous foe to face while mounted.",
 			"benefits":"You gain advantage on melee attack rolls against any unmounted creature that is smaller than your mount. You can also force an attack targeted towards your mount to you instead. Additionally, if your mount is subject to an effect that allows it to make a Dexterity saving throw to take only half damage, it takes no damage instead if it succeeds the save and only half if it fails."
 		},
