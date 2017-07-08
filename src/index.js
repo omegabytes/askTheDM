@@ -148,8 +148,8 @@ var handlers = {
     },
     'FeatsIntent': function() {
         var featSlot = this.event.request.intent.slots.Feats;
-        //var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
-        //var featAttrName;
+        var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
+        var featAttrName;
         var featsName;
 
         this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
@@ -158,26 +158,27 @@ var handlers = {
             featsName = featSlot.value.toLowerCase();
         }
 
-        //if(featAttributeSlot && featAttributeSlot.value) {
-          //  featAttrName = featAttributeSlot.value.toLowerCase();
-        //}
+        if(featAttributeSlot && featAttributeSlot.value) {
+            featAttrName = featAttributeSlot.value.toLowerCase();
+        }
 
         var featsList = languageStrings.en.translation.FEATS; 
         var thisFeat  = featsList[featsName];
 
-        //var featsAttrList = languageStrings.en.translation.FEATS_ATTRIBUTES;
-        //var thisFeatAttr = featsAttrList[featAttrName];
+        var featsAttrList = languageStrings.en.translation.FEATS_ATTRIBUTES;
+        var thisFeatAttr = featsAttrList[featAttrName];
 
         //user requests information on feats
-        if (thisFeat) {
-            this.attributes['speechOutput'] = thisFeat.description;
+        if (thisFeat && thisFeatAttr) {
+            this.attributes['speechOutput'] = thisFeat[thisFeatAttr]; //Jeffrey please double check this logic, I think its right
             this.emit(':tell', this.attributes['speechOutput']);
             this.emit(':ask', this.attributes['repromptSpeech']);
         }
-        // add elseif similar to spells attribute here
-
-        //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-        else {
+        else if(thisFeat && !thisFeatAttr){
+            this.attributes['speechOutput'] = thisFeat.description;
+            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':ask', this.attributes['repromptSpeech']);
+        } else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             var repromptSpeech = languageStrings.en.translation.REPROMPT;
 
