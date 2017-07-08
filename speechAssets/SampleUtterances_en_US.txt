@@ -196,5 +196,4 @@ FeatsIntent I forget what the {FeatsAttr} for {Feats} is
 FeatsIntent I forgot what the {FeatsAttr} for {Feats} was
 FeatsIntent lookup {FeatsAttr} for {Feats}
 FeatsIntent what are the {FeatsAttr} for {Feats}
-FeatsIntent what {Feats} have a {FeatsAttr}
 FeatsIntent tell me about {FeatsAttr} for {Feats}
