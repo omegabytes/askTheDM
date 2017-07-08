@@ -41,6 +41,19 @@
       "intent": "ExhaustionLevelIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Feats",
+          "type": "LIST_OF_FEATS"
+        },
+        {
+          "name": "FeatsAttr",
+          "type": "LIST_OF_FEATS_ATTRIBUTES"
+        }
+      ],
+      "intent": "FeatsIntent"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {
