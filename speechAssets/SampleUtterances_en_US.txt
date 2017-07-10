@@ -292,3 +292,25 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
+
+//Feats
+FeatsIntent what does {Feats} do
+FeatsIntent whats {Feats} do
+FeatsIntent whats {Feats}
+FeatsIntent what does the {Feats} feat do to me
+FeatsIntent what does the {Feats} feat do 
+FeatsIntent lookup {Feats}
+FeatsIntent tell me about {Feats}
+FeatsIntent I forgot what {Feats} does
+FeatsIntent I forgot what {Feats} is
+FeatsIntent get information on {Feats}
+FeatsIntent how does {Feats} work
+FeatsIntent what is the {FeatsAttr} for {Feats}
+FeatsIntent for {Feats} what is the {FeatsAttr}
+FeatsIntent for {Feats} whats the {FeatsAttr}
+FeatsIntent tell me the {FeatsAttr} for {Feats}
+FeatsIntent I forget what the {FeatsAttr} for {Feats} is
+FeatsIntent I forgot what the {FeatsAttr} for {Feats} was
+FeatsIntent lookup {FeatsAttr} for {Feats}
+FeatsIntent what are the {FeatsAttr} for {Feats}
+FeatsIntent tell me about {FeatsAttr} for {Feats}
