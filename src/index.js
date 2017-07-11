@@ -50,13 +50,13 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
-            this.attributes['speechOutput'] = spell[spellAttribute];
+            this.attributes['speechOutput'] = spell[spellAttribute] + ", What else can I help you with?";
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.shortDescription;
+            this.attributes['speechOutput'] = spell.shortDescription + ", What else can I help you with?";
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
 
         } else {
@@ -67,7 +67,7 @@ var handlers = {
             } else {
                 speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
-            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['speechOutput'] = speechOutput + ", What else can I help you with?";
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
@@ -85,7 +85,7 @@ var handlers = {
 
         //user requests information on condition
         if (condition) {
-            this.attributes['speechOutput'] = condition;
+            this.attributes['speechOutput'] = condition + ", What else can I help you with?";
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
@@ -99,7 +99,7 @@ var handlers = {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
 
-            this.attributes['speechOutput'] = speechOutput;
+            this.attributes['speechOutput'] = speechOutput+ ", What else can I help you with?";
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
