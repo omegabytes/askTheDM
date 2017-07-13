@@ -51,6 +51,7 @@ var handlers = {
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
             this.attributes['speechOutput'] = spell[spellAttribute] + ", What else can I help you with?";
+            console.log(spellAttribute);
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
