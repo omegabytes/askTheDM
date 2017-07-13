@@ -41,6 +41,9 @@
       "intent": "ExhaustionLevelIntent"
     },
     {
+      "intent": "Unhandled"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {

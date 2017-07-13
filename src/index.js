@@ -26,6 +26,11 @@ var handlers = {
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
+    'Unhandled': function () {
+        this.attributes['speechOutput'] = languageStrings.en.translation.UNHANDLED;
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+    },
     'SpellsIntent': function () {
         var spellSlot = this.event.request.intent.slots.Spell;
         var attributeSlot = this.event.request.intent.slots.Attribute;
@@ -186,10 +191,5 @@ var handlers = {
     },
     'SessionEndedRequest':function () {
         this.emit(':tell', languageStrings.en.translation.STOP_MESSAGE);
-    },
-    'Unhandled': function () {
-        this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
-        this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     }
 };

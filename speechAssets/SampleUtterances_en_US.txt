@@ -175,3 +175,25 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
+
+//Unhandled
+Unhandled to
+Unhandled to get
+Unhandled and
+Unhandled what
+Unhandled what is
+Unhandled what does
+Unhandled how
+Unhandled how to
+Unhandled how do
+Unhandled how can
+Unhandled whats
+Unhandled what are
+Unhandled about
+Unhandled I forgot
+Unhandled get
+Unhandled get info
+Unhandled get information
+Unhandled get the
+
+
