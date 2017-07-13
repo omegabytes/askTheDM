@@ -5,8 +5,6 @@ module.exports = {
 		"prerequisite"	: "prereq"
 	},
 	"FEATS_EN_US"  : {
-		//"Feat" : "Description",
-
 		"alert":{
 			"description":"Always on the lookout for danger.",
 			"benefits":"You gain +5 to initiative, can no longer be surprised while conscious, and other creatures don't gain advantage on attack rolls against you as a result of being hidden from you." 
@@ -28,12 +26,12 @@ module.exports = {
 			"benefits":"You ignore the loading quality of crossbows that you are proficient in. Being within 5ft of a hostile creature doesn't impose disadvantage on your ranged attack rolls. When you use the Attack action to attack with a one-handed weapon, you can use your bonus action to attack with a loaded hand crossbow."
 		},	
 		"defensive duelist":{
-			"description":"When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, as a reaction you can add your proficiency bonus to your AC for that attack, potentially causing the attack to miss.",
+			"description":"When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, as a reaction you can add your proficiency bonus to your A. C. for that attack, potentially causing the attack to miss.",
 			"prereq":"Dexterity 13 or higher."
 		},
 		"dual wielder":{
 			"description":"You have mastered fighting with two one-handed weapons.",
-			"benefits":"Gain +1 bonus to AC while you are wielding a separate melee weapon in each hand. You can use the two-weapon fighting technique even when the one-handed melee weapons you are wielding aren't light. While dual wielding you can draw or stow two one-handed weapons together, instead of one at a time."
+			"benefits":"Gain +1 bonus to A. C. while you are wielding a separate melee weapon in each hand. You can use the two-weapon fighting technique even when the one-handed melee weapons you are wielding aren't light. While dual wielding you can draw or stow two one-handed weapons together, instead of one at a time."
 		},
 		"dungeon delver":{
 			"description":"You have experienced many dungeons in your time, making you alert to hidden traps and secret doors commonly found in dungeons.",
@@ -106,7 +104,7 @@ module.exports = {
 		},
 		"medium armor master":{
 			"description":"You have trained to become a master of fighting in medium armor.",
-			"benefits":"Wearing medium armor doesn't impose disadvantage on your Dexterity(Stealth) checks. Additional, when you wear medium armor, add 3 instead of 2 to your AC. Only if your Dexterity is 16 or higher.",
+			"benefits":"Wearing medium armor doesn't impose disadvantage on your Dexterity(Stealth) checks. Additional, when you wear medium armor, add 3 instead of 2 to your A. C.. Only if your Dexterity is 16 or higher.",
 			"prereq":"Proficiency with medium armor."
 		},
 		"mobile":{
@@ -153,7 +151,7 @@ module.exports = {
 		},
 		"shield master":{
 			"description":"Your combat prowess with shields has taught you to not only use them for protection but also for offense.",
-			"benefits":"If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5ft of you with your shield. If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, using your reaction you can interpose your shield between you and the source to take no damage on a successful save. Additionally, if you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that effects you."
+			"benefits":"If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5ft of you with your shield. If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, using your reaction you can interpose your shield between you and the source to take no damage on a successful save. Additionally, if you aren't incapacitated, you can add your shield's A. C. bonus to any Dexterity saving throw you make against a spell or other harmful effect that effects you."
 		},
 		"skilled":{
 			"description":"Along your travels you have become adept using many tools and have practiced many different skills.",
