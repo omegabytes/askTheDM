@@ -67,6 +67,9 @@
       "intent": "FeatsIntent"
     },
     {
+      "intent": "Unhandled"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {
