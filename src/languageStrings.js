@@ -36,6 +36,7 @@ module.exports = {
             "SPELLS" :               spells.SPELLS_EN_US,
             "ATTRIBUTES" :           spells.ATTRIBUTES_EN_US,
             "CONDITIONS" :           conditions.CONDITIONS_EN_US,
+            "EXHAUSTION_LEVEL" :     exhaustionLevel.EXHAUSTION_LEVELS_EN_US,
             "ITEMS" :                items.ITEMS_EN_US,
             "ITEM_ATTRIBUTES" :      items.ITEM_ATTRIBUTES_EN_US,
             "FEATS" :                feats.FEATS_EN_US,

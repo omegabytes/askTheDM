@@ -1,8 +1,7 @@
-//spell cast
+
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}
 
-//spells
 SpellsIntent what is {Spell}
 SpellsIntent whats {Spell}
 SpellsIntent what are the effects of {Spell}
@@ -17,21 +16,138 @@ SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
 SpellsIntent how does {Spell} work
 
-//spell attribute
+SpellsIntent what does {Spell} do
+SpellsIntent what does {Spell} affect
+SpellsIntent what does {Spell} mean
+SpellsIntent what is {Spell}
+SpellsIntent what is {Spell} spell
+SpellsIntent what is {Attribute} do {Spell}
+SpellsIntent what is {Attribute} of {Spell}
+SpellsIntent what's {Spell} do
+SpellsIntent what's {Spell} affect
+SpellsIntent what's {Spell} mean
+SpellsIntent what's {Attribute} of {Spell}
+SpellsIntent what does the {Spell} do
+SpellsIntent what does the {Spell} mean
+SpellsIntent what does the {Attribute} of {Spell} do
+SpellsIntent what does the {Attribute} of {Spell} mean
+SpellsIntent lookup {Spell}
+SpellsIntent lookup {Attribute} of {Spell}
+SpellsIntent tell me about {Spell}
+SpellsIntent tell me about {Attribute} of {Spell}
+SpellsIntent I forgot what {Spell} does
+SpellsIntent I forgot what {Spell} does to me
+SpellsIntent I forgot what {Spell} does to us
+SpellsIntent I forgot what {Spell} does to someone
+SpellsIntent I forgot what {Spell} does to a player
+SpellsIntent I forgot what {Spell} affects
+SpellsIntent I forgot what {Spell} means
+SpellsIntent I forgot what {Spell} is
+SpellsIntent I forgot what {Attribute} of {Spell} means
+SpellsIntent I forgot what {Attribute} of {Spell} does
+SpellsIntent I forgot what {Attribute} of {Spell} is
+SpellsIntent get information on {Spell}
+SpellsIntent get information on {Attribute} of {Spell}
+SpellsIntent how does {Spell} work
+SpellsIntent how does {Spell} affect me
+SpellsIntent how does {Spell} affect us
+SpellsIntent how does {Spell} affect someone
+SpellsIntent how does {Spell} affect a player
+SpellsIntent how does {Attribute} of {Spell} affect me
+SpellsIntent how does {Attribute} of {Spell} affect us
+SpellsIntent how does {Attribute} of {Spell} affect a player
+SpellsIntent how does {Attribute} of {Spell} affect someone
+SpellsIntent how does {Attribute} of {Spell} affect a creature
+SpellsIntent get info on {Spell}
+SpellsIntent get info on {Attribute} of {Spell}
+SpellsIntent about {Spell}
+SpellsIntent about {Attribute} of {Spell}
+SpellsIntent get the {Spell}
+SpellsIntent get the {Attribute} of {Spell}
+SpellsIntent to get info on {Spell}
+SpellsIntent to get info on {Spell} spell
+SpellsIntent to get info on {Attribute} of {Spell}
+SpellsIntent to get information on {Spell}
+SpellsIntent to get information on {Spell} spell
+SpellsIntent to get information on {Attribute} of {Spell}
+SpellsIntent tell me what {Spell} does
+SpellsIntent tell me what {Spell} does to me
+SpellsIntent tell me what {Spell} does to us
+SpellsIntent tell me what {Spell} does to someone
+SpellsIntent tell me what {Spell} does to a player
+SpellsIntent tell me what {Spell} affects
+SpellsIntent tell me what {Spell} means
+SpellsIntent tell me what {Attribute} of {Spell} does
+SpellsIntent tell me what {Attribute} of {Spell} means
+SpellsIntent tell me what {Attribute} of {Spell} affects
+SpellsIntent tell me what the {Spell} does
+SpellsIntent tell me what the {Spell} does to me
+SpellsIntent tell me what the {Spell} does to us
+SpellsIntent tell me what the {Spell} does to someone
+SpellsIntent tell me what the {Spell} does to a player
+SpellsIntent tell me what the {Spell} affects
+SpellsIntent tell me what the {Attribute} of {Spell} is
+SpellsIntent tell me how {Spell} works
+SpellsIntent tell me how {Spell} affects me
+SpellsIntent tell me how {Spell} affects us
+SpellsIntent tell me how {Spell} affects someone
+SpellsIntent tell me how {Spell} affects a player
+SpellsIntent tell me how {Attribute} of {Spell} works
+SpellsIntent tell me how {Attribute} of {Spell} affects me
+SpellsIntent tell me how {Attribute} of {Spell} affects us
+SpellsIntent tell me how {Attribute} of {Spell} affects someone
+SpellsIntent tell me how {Attribute} of {Spell} affects a player
+SpellsIntent tell me how {Attribute} of {Spell} affects a creature
+SpellsIntent tell us whats {Spell} do 
+SpellsIntent tell us whats {Spell} do to me
+SpellsIntent tell us whats {Spell} do to us
+SpellsIntent tell us whats {Spell} do to someone
+SpellsIntent tell us whats {Spell} do to a player
+SpellsIntent tell us whats {Spell} affect
+SpellsIntent tell us whats {Spell} mean
+SpellsIntent tell us whats the {Attribute} of {Spell}
+SpellsIntent tell us what is {Spell}
+SpellsIntent tell us what is the {Attribute} of {Spell}
+SpellsIntent tell us what the {Spell} does
+SpellsIntent tell us what the {Spell} does to me
+SpellsIntent tell us what the {Spell} does to us
+SpellsIntent tell us what the {Spell} does to someone
+SpellsIntent tell us what the {Spell} does to a player
+SpellsIntent tell us what the {Spell} affects
+SpellsIntent tell us what the {Spell} mean
+SpellsIntent tell us what the {Attribute} of {Spell} is
+SpellsIntent tell us how {Spell} works
+SpellsIntent tell us how {Spell} affects me
+SpellsIntent tell us how {Spell} affects us
+SpellsIntent tell us how {Spell} affects someone
+SpellsIntent tell us how {Spell} affects a player
+SpellsIntent I forgot what the {Spell} does
+SpellsIntent I forgot what the {Spell} does to me
+SpellsIntent I forgot what the {Spell} does to us
+SpellsIntent I forgot what the {Spell} does to someone
+SpellsIntent I forgot what the {Spell} does to a player
+SpellsIntent I forgot what the {Spell} does to a creature
+SpellsIntent I forgot what the {Spell} affects
+SpellsIntent I forgot what the {Spell} means
+SpellsIntent I forgot what the {Attribute} of {Spell} is
+SpellsIntent what is the {Spell} spell
+SpellsIntent what is the {Attribute} of {Spell}
+SpellsIntent what is the {Attribute} of {Spell} mean
+SpellsIntent what is the {Attribute} of {Spell} do
+SpellsIntent what is the {Attribute} of {Spell} affect
+SpellsIntent for {Spell}
+SpellsIntent for {Spell} spell
+SpellsIntent for {Attribute} of {Spell}
 SpellsIntent what is the {Attribute} of {Spell}
 SpellsIntent whats the {Attribute} of {Spell}
-//SpellsIntent what is {Spell} {Attribute}
-//SpellsIntent whats {Spell} {Attribute}
 SpellsIntent to get the {Attribute} of {Spell}
 SpellsIntent get the {Attribute} of {Spell}
 SpellsIntent what {Attribute} do I need to cast {Spell}
-//SpellsIntent whats needed to cast {Spell}
 SpellsIntent what are the {Attribute} to cast {Spell}
 SpellsIntent what are the {Attribute} needed to cast {Spell}
 SpellsIntent what is the {Attribute} of {Spell}
 SpellsIntent whats the {Attribute} of {Spell}
 
-//items
 ItemsIntent lookup {Item}
 ItemsIntent What a {Item}
 ItemsIntent What an {Item}
@@ -180,7 +296,6 @@ ItemsIntent get information for an {Item}
 ItemsIntent to get the {ItemAttribute} of {Item}
 ItemsIntent get the {ItemAttribute} of {Item}
 
-//conditions
 ConditionsIntent what is {Condition}
 ConditionsIntent whats {Condition}
 ConditionsIntent what does being {Condition} mean
@@ -259,7 +374,6 @@ ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
 
-//Exhaustion level
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
 ExhaustionLevelIntent what does {Level} exhaustion mean
@@ -293,7 +407,6 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
 
-//Feats
 FeatsIntent what does {Feats} do
 FeatsIntent whats {Feats} do
 FeatsIntent whats {Feats}
@@ -314,3 +427,201 @@ FeatsIntent I forgot what the {FeatsAttr} for {Feats} was
 FeatsIntent lookup {FeatsAttr} for {Feats}
 FeatsIntent what are the {FeatsAttr} for {Feats}
 FeatsIntent tell me about {FeatsAttr} for {Feats}
+
+FeatsIntent what does {Feats} do 
+FeatsIntent what does {Feats} affect 
+FeatsIntent what does {Feats} mean 
+FeatsIntent what does {FeatsAttr} do
+FeatsIntent what does {FeatsAttr} affect
+FeatsIntent what does {FeatsAttr} mean
+FeatsIntent what does {FeatsAttr} mean {Feats}
+FeatsIntent what is {Feats}
+FeatsIntent what is {FeatsAttr} of {Feats}
+FeatsIntent what's {Feats} do
+FeatsIntent what's {Feats} affect
+FeatsIntent what's {Feats} mean
+FeatsIntent what's {FeatsAttr} mean
+FeatsIntent what's {Feats} feat
+FeatsIntent what does the {Feats} do
+FeatsIntent what does the {Feats} affect
+FeatsIntent what does the {Feats} mean
+FeatsIntent what does the {FeatsAttr} affect
+FeatsIntent what does the {FeatsAttr} mean
+FeatsIntent what does the {FeatsAttr} mean {Feats}
+FeatsIntent what does the {FeatsAttr} of {Feats}
+FeatsIntent lookup {Feats} feat
+FeatsIntent lookup {FeatsAttr} of {Feats}
+FeatsIntent tell me about {Feats}
+FeatsIntent tell me about {FeatsAttr} of {Feats}
+FeatsIntent I forgot what {Feats} does
+FeatsIntent I forgot what {Feats} does to me
+FeatsIntent I forgot what {Feats} does to us
+FeatsIntent I forgot what {Feats} does to someone
+FeatsIntent I forgot what {Feats} does to a player
+FeatsIntent I forgot what {Feats} means
+FeatsIntent I forgot what {FeatsAttr} of {Feats} does
+FeatsIntent get information on {Feats}
+FeatsIntent get information on {FeatsAttr} of {Feats}
+FeatsIntent how does {Feats} work
+FeatsIntent how does {Feats} affect me
+FeatsIntent how does {Feats} affect us
+FeatsIntent how does {Feats} affect someone
+FeatsIntent how does {Feats} affect a player
+FeatsIntent how does {FeatsAttr} of {Feats} work
+FeatsIntent get info on {Feats}
+FeatsIntent get info on {FeatsAttr} of {Feats}
+FeatsIntent about {Feats}
+FeatsIntent about {FeatsAttr} of {Feats}
+FeatsIntent about {FeatsAttr} of {FeatsAttr}
+FeatsIntent get the {Feats} feat
+FeatsIntent get the {FeatsAttr} of {Feats}
+FeatsIntent to get info on {Feats}
+FeatsIntent to get info on {Feats} feat
+FeatsIntent to get info on {FeatsAttr} of {Feats}
+FeatsIntent to get information on {Feats}
+FeatsIntent to get information on {Feats} feat
+FeatsIntent to get information on {FeatsAttr} of {Feats}
+FeatsIntent tell me what {Feats} does
+FeatsIntent tell me what {Feats} does to me
+FeatsIntent tell me what {Feats} does to us
+FeatsIntent tell me what {Feats} does to someone
+FeatsIntent tell me what {Feats} does to a player
+FeatsIntent tell me what {Feats} affects
+FeatsIntent tell me what {Feats} means
+FeatsIntent tell me what {Feats} is
+FeatsIntent tell me what the {Feats} does
+FeatsIntent tell me what the {Feats} does to me
+FeatsIntent tell me what the {Feats} does to us
+FeatsIntent tell me what the {Feats} does to someone
+FeatsIntent tell me what the {Feats} does to a player
+FeatsIntent tell me what the {Feats} means
+FeatsIntent tell me what the {FeatsAttr} of {Feats} does
+FeatsIntent tell me how {Feats} works
+FeatsIntent tell me how {Feats} affect me
+FeatsIntent tell me how {Feats} affect us
+FeatsIntent tell me how {Feats} affect someone
+FeatsIntent tell me how {Feats} affect a player
+FeatsIntent tell us whats {Feats}
+FeatsIntent tell us whats {Feats} do
+FeatsIntent tell us whats {Feats} mean
+FeatsIntent tell us whats {Feats} feat
+FeatsIntent tell us whats {FeatsAttr} of {Feats}
+FeatsIntent tell us what is {Feats}
+FeatsIntent tell us what the {Feats} feat
+FeatsIntent tell us what the {FeatsAttr} of {Feats}
+FeatsIntent tell us how {Feats} works
+FeatsIntent tell us how {Feats} affect me
+FeatsIntent tell us how {Feats} affect us
+FeatsIntent tell us how {Feats} affect someone
+FeatsIntent tell us how {Feats} affect a player
+FeatsIntent I forgot what the {Feats} feat does
+FeatsIntent I forgot what the {Feats} feat does to me
+FeatsIntent I forgot what the {Feats} feat does to us
+FeatsIntent I forgot what the {Feats} feat does to someone
+FeatsIntent I forgot what the {Feats} feat does to a player
+FeatsIntent I forgot what the {Feats} feat is
+FeatsIntent I forgot what the {FeatsAttr} of {Feats} is
+FeatsIntent what is the {Feats} feat
+FeatsIntent what is the {FeatsAttr} of {Feats}
+FeatsIntent for {Feats}
+FeatsIntent for {FeatsAttr} of {Feats}
+
+Unhandled to
+Unhandled to get
+Unhandled and
+Unhandled what
+Unhandled what is
+Unhandled what does
+Unhandled how
+Unhandled how to
+Unhandled how do
+Unhandled how can
+Unhandled whats
+Unhandled what are
+Unhandled about
+Unhandled I forgot
+Unhandled get
+Unhandled get info
+Unhandled get information
+Unhandled get the
+Unhandled for 
+Unhandled what 
+Unhandled whats 
+Unhandled what is 
+Unhandled does 
+Unhandled do 
+Unhandled tell me 
+Unhandled tell us 
+Unhandled tell me what 
+Unhandled tell me whats 
+Unhandled tell us what 
+Unhandled tell us whats 
+Unhandled tell me how 
+Unhandled tell us how 
+Unhandled I forgot what the 
+Unhandled what is the 
+Unhandled to get information on 
+Unhandled to get info on 
+Unhandled get the 
+Unhandled about 
+Unhandled how does 
+Unhandled get info 
+Unhandled get information 
+Unhandled what does the 
+Unhandled what's 
+Unhandled what does 
+Unhandled lookup 
+Unhandled I forgot how 
+Unhandled how does having 
+Unhandled what are the effects of 
+Unhandled what is 
+Unhandled what does the 
+Unhandled what effect does being 
+Unhandled what effect does 
+Unhandled how does 
+Unhandled about being 
+Unhandled get information about 
+Unhandled get info on 
+Unhandled get information on 
+Unhandled get the effects of 
+Unhandled get effects of the 
+Unhandled what are the effects of 
+Unhandled tell me about 
+Unhandled tell us about 
+Unhandled get the 
+Unhandled to get the 
+Unhandled get the information on 
+Unhandled get the information on a 
+Unhandled get the information about 
+Unhandled get the information about a 
+Unhandled get the information about an 
+Unhandled get the information for a 
+Unhandled get the information for an 
+Unhandled get the info on a 
+Unhandled get the info on an 
+Unhandled get the info about a 
+Unhandled get the info about an 
+Unhandled get the info for a 
+Unhandled get the info for an 
+Unhandled tell me what a 
+Unhandled tell me what an 
+Unhandled tell me what 
+Unhandled tell us what a 
+Unhandled tell us what an 
+Unhandled tell me how the 
+Unhandled tell us how the 
+Unhandled tell me how a 
+Unhandled tell us how a 
+Unhandled how does a 
+Unhandled how does an 
+Unhandled how does the 
+Unhandled how does 
+Unhandled I forgot what a 
+Unhandled I forgot what an 
+Unhandled what's a 
+Unhandled what's an 
+Unhandled what the 
+Unhandled what's the 
+Unhandled what is 
+Unhandled what is a 
+Unhandled what is an 
