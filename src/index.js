@@ -3,9 +3,8 @@
 var Alexa = require('alexa-sdk');
 // var APP_ID = undefined;
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
-var spells = require('./spells');
-var conditions = require('./conditions');
 var languageStrings = require('./languageStrings');
+var oneShot = true;
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -20,13 +19,15 @@ var handlers = {
     //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
     // Alexa, ask [my-skill-invocation-name] to (do something)...
     'LaunchRequest': function () {
-        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
+        oneShot = false;
+        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
-    'Unhandled': function () {
+    'Unhandled': function (){
+        oneShot = false;
         this.attributes['speechOutput'] = languageStrings.en.translation.UNHANDLED;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
@@ -55,16 +56,12 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
-            this.attributes['speechOutput'] = spell[spellAttribute] + ", What else can I help you with?";
-            console.log(spellAttribute);
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.attributes['speechOutput'] = spell[spellAttribute];
         }
 
         //if the user asks only about the spell
         else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.shortDescription + ", What else can I help you with?";
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-
+            this.attributes['speechOutput'] = spell.shortDescription;
         } else {
             var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
             
@@ -73,7 +70,16 @@ var handlers = {
             } else {
                 speechOutput += languageStrings.en.translation.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
             }
-            this.attributes['speechOutput'] = speechOutput + ", What else can I help you with?";
+            this.attributes['speechOutput'] = speechOutput;
+        }
+
+        //if we are a one shot question the answer will be provided 
+        //as a statement. if not the session will remain open and
+        //alexa provide our reprompt speech
+        if(oneShot){
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+        else{
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
@@ -91,8 +97,7 @@ var handlers = {
 
         //user requests information on condition
         if (condition) {
-            this.attributes['speechOutput'] = condition + ", What else can I help you with?";
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.attributes['speechOutput'] = condition;
         }
 
         //otherwise, the user asks for an unknown condition, or Alexa doesn't understand
@@ -105,7 +110,16 @@ var handlers = {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
 
-            this.attributes['speechOutput'] = speechOutput+ ", What else can I help you with?";
+            this.attributes['speechOutput'] = speechOutput;
+        }
+
+        //if we are a one shot question the answer will be provided 
+        //as a statement. if not the session will remain open and
+        //alexa provide our reprompt speech
+        if(oneShot){
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+        else{
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
@@ -125,7 +139,6 @@ var handlers = {
         //user requests information on exhaustion levels
         if (thisExhaustionLevel) {
             this.attributes['speechOutput'] = thisExhaustionLevel;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
@@ -139,6 +152,15 @@ var handlers = {
                 speechOutput += languageStrings.en.translation.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
             }
             this.attributes['speechOutput'] = speechOutput;
+        }
+
+        //if we are a one shot question the answer will be provided 
+        //as a statement. if not the session will remain open and
+        //alexa provide our reprompt speech
+        if(oneShot){
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+        else{
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
@@ -158,7 +180,6 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
 
         //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
@@ -172,6 +193,15 @@ var handlers = {
             }
 
             this.attributes['speechOutput'] = speechOutput;
+        }
+
+        //if we are a one shot question the answer will be provided 
+        //as a statement. if not the session will remain open and
+        //alexa provide our reprompt speech
+        if(oneShot){
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+        else{
             this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
     },
