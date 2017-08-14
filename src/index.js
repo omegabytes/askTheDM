@@ -4,7 +4,6 @@ var Alexa = require('alexa-sdk');
 // var APP_ID = undefined;
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var languageStrings = require('./languageStrings');
-var oneShot = true;
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -21,13 +20,13 @@ var handlers = {
     'LaunchRequest': function () {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
-        oneShot = false;
+        this.attributes['continue'] = true;
         this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'Unhandled': function (){
-        oneShot = false;
+        this.attributes['continue'] = true;
         this.attributes['speechOutput'] = languageStrings.en.translation.UNHANDLED;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
@@ -76,11 +75,11 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(oneShot){
-            this.emit(':tell', this.attributes['speechOutput']);
+        if(this.attributes['continue']){
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
         else{
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'ConditionsIntent': function () {
@@ -157,11 +156,11 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(oneShot){
-            this.emit(':tell', this.attributes['speechOutput']);
+        if(this.attributes['continue']){
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
         else{
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'SpellCastIntent': function () {
@@ -198,11 +197,11 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(oneShot){
-            this.emit(':tell', this.attributes['speechOutput']);
+        if(this.attributes['continue']){
+            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
         }
         else{
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'AMAZON.HelpIntent': function () {
