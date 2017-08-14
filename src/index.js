@@ -75,8 +75,8 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(this.attributes['continue']){
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -115,11 +115,11 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(oneShot){
-            this.emit(':tell', this.attributes['speechOutput']);
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+            this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'ExhaustionLevelIntent': function () {
@@ -156,8 +156,8 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(this.attributes['continue']){
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -197,8 +197,8 @@ var handlers = {
         //if we are a one shot question the answer will be provided 
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
-        if(this.attributes['continue']){
-            this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
