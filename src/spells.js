@@ -8,7 +8,8 @@ module.exports = {
    "spell type"        : "spellType",    
    "short description" : "shortDescription",   
    "long description"  : "longDescription",    
-   "url"               :  "url"   
+   "url"               :  "url",
+   "damage"            : "damage" 
  },    
  "SPELLS_EN_US" : {
 "move earth": {
