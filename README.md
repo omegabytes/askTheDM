@@ -18,11 +18,64 @@ Icon is used with explicit permission from Jason Newman (gojirra@gmail.com). For
 ##### Version 2.0 adds:
 - Information:
 	- Items
+		- Armor
+			- description
+			- name
+			- cost
+			- AC
+			- strength
+			- type
+			- weight
+		- Weapons
+			- name
+			- cost
+			- weight
+			- damage
+			- properties
+			- description
+		- Tools
+			- name
+			- cost
+			- weight
+			- description
+		- Gear
+			- name
+			- cost
+			- weight
+			- description
+			- capacity
+		- Mounts/vehicles
+			- name
+			- cost
+			- weight
+			- description
+			- carrying capacity
+			- speed
+		- Trade Goods
+			- name
+			- cost
+		- Services
+			- name
+			- cost
+		- Food, Drink, and Lodging
+			- name
+			- cost
+			- quality
+		- Trinkets
+			- dice roll
+			- name
+			- description
+		- Packs
+			- name
+			- cost
+			- description
 	- Feats
+		- description
+		- benefits
+		- prerequisites
 - Dice rolls:
 	- modifiers (eg. 1d8+6)
 	- advantage and disadvantage on d20 rolls
-
 
 
 ##### Version 1.0 features:
