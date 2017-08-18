@@ -2,11 +2,6 @@
 
 var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
-var spells = require('./spells');
-var conditions = require('./conditions');
-var exhaustion = require('./exhaustionLevel');
-var items = require('./items');
-var feats = require('./feats');
 var languageStrings = require('./languageStrings');
 var alexaLib = require('./functions.js');
 
