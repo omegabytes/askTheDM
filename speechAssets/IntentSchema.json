@@ -67,6 +67,23 @@
       "intent": "FeatsIntent"
     },
     {
+    	"slots": [
+       {
+         "name": "Quantity",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Sides",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Modifier",
+         "type": "AMAZON.NUMBER"
+       },
+     ],
+    	"intent": "DiceIntent"
+    },
+        {
       "intent": "Unhandled"
     },
     {

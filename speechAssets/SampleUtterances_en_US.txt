@@ -407,6 +407,7 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
 
+<<<<<<< HEAD
 FeatsIntent what does {Feats} do
 FeatsIntent whats {Feats} do
 FeatsIntent whats {Feats}
@@ -623,3 +624,12 @@ Unhandled what's the
 Unhandled what is 
 Unhandled what is a 
 Unhandled what is an 
+=======
+//DiceIntent
+DiceIntent roll {Quantity} d {Sides}
+DiceIntent roll a {Quantity} d {Sides}
+DiceIntent can you roll a {Quantity} d {Sides}
+DiceIntent can you roll {Quantity} d {Sides}
+DiceIntent to roll {Quantity} d {Sides}
+DiceIntent to roll a {Quantity} d {Sides}
+>>>>>>> dice_intent

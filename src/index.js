@@ -1,7 +1,6 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
-// var APP_ID = undefined;
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var spells = require('./spells');
 var conditions = require('./conditions');
@@ -9,6 +8,7 @@ var exhaustion = require('./exhaustionLevel');
 var items = require('./items');
 var feats = require('./feats');
 var languageStrings = require('./languageStrings');
+var alexaLib = require('./functions.js');
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -230,7 +230,11 @@ var handlers = {
 
         //user requests information on casting spell
         if (spell) {
-            this.attributes['speechOutput'] = spellName + " is a " + spell.spellType + ". You can cast it " + spell.components + ". The spell duration is " + spell.duration + ". " + spell.shortDescription;
+            this.attributes['speechOutput'] = spellName + " is a " 
+                                            + spell.spellType + ". You can cast it " 
+                                            + spell.components + ". The spell duration is " 
+                                            + spell.duration + ". " 
+                                            + spell.shortDescription;
         }
 
         //otherwise, the user asks for an unknown spells, or Alexa doesn't understand
@@ -311,6 +315,50 @@ var handlers = {
             this.attributes['speechOutput'] = speechOutput;
             this.attributes['repromptSpeech'] = repromptSpeech;
         }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
+    'DiceIntent' : function () {
+        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
+        var diceSidesSlot = this.event.request.intent.slots.Sides;
+        var modifierSlot = this.event.request.intent.slots.Modifier;
+        var numberOfDice;
+        var diceSides;
+        var modifier;
+        var result;
+
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        // get the number of dice, dice sides, and any modifiers from the user
+
+        if (numberOfDiceSlot && numberOfDiceSlot.value) {
+            // get the number of dice to roll
+            numberOfDice = numberOfDiceSlot.value;
+        }
+
+        if (diceSidesSlot && diceSidesSlot.value) {
+            // get the kind of dice to roll (faces, like six-sided or 20-sided)
+            diceSides = diceSidesSlot.value;
+        }
+
+        if (modifierSlot && modifierSlot.value) {
+            // get the modifier to add at the end of the roll calculation
+            modifier = modifierSlot.value;
+        }
+
+        if (!modifier) {
+            modifier = 0;
+        }
+
+        // calculate the result
+        result = alexaLib.rollDice(numberOfDice,diceSides) + modifier;
+
+        this.attributes['speechOutput'] = "The result of the roll is " + result;
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
