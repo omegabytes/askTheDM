@@ -57,8 +57,7 @@ var handlers = {
         if (spell && spellAttribute) {
             if(spellAttribute=="damage" && spell[spellAttribute]==null){
                 this.attributes['speechOutput'] = spellName + ' does not have damage'
-            }
-            else{
+            }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
         }
