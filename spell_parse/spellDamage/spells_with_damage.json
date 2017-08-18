@@ -1,17 +1,4 @@
-module.exports = {     
- "ATTRIBUTES_EN_US" : {    
-   "casting time"      : "castingTime",
-   "cast"              : "castingTime",     
-   "duration"          : "duration",     
-   "range"             : "range",    
-   "components"        : "components",   
-   "spell type"        : "spellType",    
-   "short description" : "shortDescription",   
-   "long description"  : "longDescription",    
-   "url"               :  "url",
-   "damage"            : "damage" 
- },    
- "SPELLS_EN_US" : {
+{
   "move earth": {
     "castingTime": "1 Action",
     "duration": "Concentration, up to 2 hours",
@@ -4522,5 +4509,4 @@ module.exports = {
     "url": "https://www.dnd-spells.com/spell/detect-poison-and-disease",
     "damage": null
   }
-}
 }
