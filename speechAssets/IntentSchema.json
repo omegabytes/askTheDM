@@ -54,6 +54,39 @@
       "intent": "ExhaustionLevelIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Feats",
+          "type": "LIST_OF_FEATS"
+        },
+        {
+          "name": "FeatsAttr",
+          "type": "LIST_OF_FEATS_ATTRIBUTES"
+        }
+      ],
+      "intent": "FeatsIntent"
+    },
+    {
+    	"slots": [
+       {
+         "name": "Quantity",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Sides",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Modifier",
+         "type": "AMAZON.NUMBER"
+       },
+     ],
+    	"intent": "DiceIntent"
+    },
+        {
+      "intent": "Unhandled"
+    },
+    {
       "intent": "AMAZON.RepeatIntent"
     },
     {

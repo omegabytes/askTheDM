@@ -1,9 +1,9 @@
 # Ask The DM
 ### D&D Alexa Skill
-#### Version 0.1
+#### Version 1.0
 
 #### Alex Gaesser 2017
-#### Brought to you proudly by the Arena Hounds
+#### Brought to you proudly by the [Arena Hounds](https://github.com/omegabytes/askTheDM/blob/master/AUTHORS)
 
 Ask the DM is a quick-reference tool designed for use during Dungeons and Dragons play sessions. The skill provides spell descriptions to players through a voice-command interface.
 
@@ -15,7 +15,70 @@ You don't need an echo to develop or test this application. Services like https:
 
 Icon is used with explicit permission from Jason Newman (gojirra@gmail.com). For any related inquiries please contact him directly. The icon is intended for use with this application only and may not be used in part or full without permission.
 
-##### Version 1.0 features
+##### Version 2.0 adds:
+- Information:
+	- Items
+		- Armor
+			- description
+			- name
+			- cost
+			- AC
+			- strength
+			- type
+			- weight
+		- Weapons
+			- name
+			- cost
+			- weight
+			- damage
+			- properties
+			- description
+		- Tools
+			- name
+			- cost
+			- weight
+			- description
+		- Gear
+			- name
+			- cost
+			- weight
+			- description
+			- capacity
+		- Mounts/vehicles
+			- name
+			- cost
+			- weight
+			- description
+			- carrying capacity
+			- speed
+		- Trade Goods
+			- name
+			- cost
+		- Services
+			- name
+			- cost
+		- Food, Drink, and Lodging
+			- name
+			- cost
+			- quality
+		- Trinkets
+			- dice roll
+			- name
+			- description
+		- Packs
+			- name
+			- cost
+			- description
+	- Feats
+		- description
+		- benefits
+		- prerequisites
+- Dice rolls:
+	- modifiers (eg. 1d8+6)
+	- advantage and disadvantage on d20 rolls
+
+
+##### Version 1.0 features:
 - Editions:
 	- 5e
 - Information:
