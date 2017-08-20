@@ -61,7 +61,7 @@
         },
         {
           "name": "FeatsAttr",
-          "type": "LIST_OF_FEATS_ATTRIBUTES"
+          "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],
       "intent": "FeatsIntent"
@@ -80,10 +80,14 @@
          "name": "Modifier",
          "type": "AMAZON.NUMBER"
        },
+       {
+         "name": "Status",
+         "type": "LIST_OF_STATUS"
+       }
      ],
     	"intent": "DiceIntent"
     },
-        {
+    {
       "intent": "Unhandled"
     },
     {
