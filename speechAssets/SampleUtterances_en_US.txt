@@ -407,6 +407,7 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
 
+<<<<<<< HEAD
 FeatsIntent what does {Feats} do
 FeatsIntent whats {Feats} do
 FeatsIntent whats {Feats}
@@ -526,11 +527,12 @@ FeatsIntent what is the {FeatsAttr} of {Feats}
 FeatsIntent for {Feats}
 FeatsIntent for {FeatsAttr} of {Feats}
 
+=======
+//Unhandled
 Unhandled to
 Unhandled to get
 Unhandled and
 Unhandled what
-Unhandled what is
 Unhandled what does
 Unhandled how
 Unhandled how to
@@ -547,7 +549,6 @@ Unhandled get the
 Unhandled for 
 Unhandled what 
 Unhandled whats 
-Unhandled what is 
 Unhandled does 
 Unhandled do 
 Unhandled tell me 
@@ -568,13 +569,11 @@ Unhandled how does
 Unhandled get info 
 Unhandled get information 
 Unhandled what does the 
-Unhandled what's 
 Unhandled what does 
 Unhandled lookup 
 Unhandled I forgot how 
 Unhandled how does having 
 Unhandled what are the effects of 
-Unhandled what is 
 Unhandled what does the 
 Unhandled what effect does being 
 Unhandled what effect does 
@@ -625,3 +624,12 @@ Unhandled what's the
 Unhandled what is 
 Unhandled what is a 
 Unhandled what is an 
+=======
+//DiceIntent
+DiceIntent roll {Quantity} d {Sides}
+DiceIntent roll a {Quantity} d {Sides}
+DiceIntent can you roll a {Quantity} d {Sides}
+DiceIntent can you roll {Quantity} d {Sides}
+DiceIntent to roll {Quantity} d {Sides}
+DiceIntent to roll a {Quantity} d {Sides}
+>>>>>>> dice_intent
