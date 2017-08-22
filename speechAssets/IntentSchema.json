@@ -61,12 +61,34 @@
         },
         {
           "name": "FeatsAttr",
-          "type": "LIST_OF_FEATS_ATTRIBUTES"
+          "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],
       "intent": "FeatsIntent"
     },
-        {
+
+    {
+    	"slots": [
+       {
+         "name": "Quantity",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Sides",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Modifier",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Status",
+         "type": "LIST_OF_STATUS"
+       }
+     ],
+    	"intent": "DiceIntent"
+    },
+    {
       "intent": "Unhandled"
     },
     {

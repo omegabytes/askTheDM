@@ -80,7 +80,7 @@ var handlers = {
         //as a statement. if not the session will remain open and
         //alexa provide our reprompt speech
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ", " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -186,7 +186,7 @@ var handlers = {
         var featsList = languageStrings.en.translation.FEATS; 
         var thisFeat  = featsList[featsName];
 
-        var featsAttrList = languageStrings.en.translation.FEATS_ATTRIBUTES;
+        var featsAttrList = languageStrings.en.translation.FEAT_ATTRIBUTES;
         var thisFeatAttr = featsAttrList[featAttrName];
 
         //user requests information on feats
@@ -313,6 +313,84 @@ var handlers = {
 
             this.attributes['speechOutput'] = speechOutput;
             this.attributes['repromptSpeech'] = repromptSpeech;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
+    'DiceIntent' : function () {
+        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
+        var diceSidesSlot = this.event.request.intent.slots.Sides;
+        var modifierSlot = this.event.request.intent.slots.Modifier;
+        var statusSlot = this.event.request.intent.slots.Status;
+        var numberOfDice = 1;
+        var diceSides = null;
+        var status = null;
+        var modifier = 0;
+        var firstRoll;
+        var secondRoll;
+        var result;
+
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+        // this.attributes['repromptSpeech'] = "failed to update speech";
+
+        // get the number of dice, dice sides, and any modifiers from the user
+        if (numberOfDiceSlot && numberOfDiceSlot.value) {
+            // get the number of dice to roll
+            numberOfDice = numberOfDiceSlot.value;
+        }
+
+        if (diceSidesSlot && diceSidesSlot.value) {
+            // get the kind of dice to roll (faces, like six-sided or 20-sided)
+            diceSides = diceSidesSlot.value;
+        }
+
+        if (statusSlot && statusSlot.value) {
+            // rolling with advantage or disadvantage
+            status = statusSlot.value.toLowerCase();
+        }
+
+        if (modifierSlot && modifierSlot.value) {
+            // get the modifier to add at the end of the roll calculation
+            modifier = modifierSlot.value;
+        }
+
+        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
+            this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
+            this.emit(':ask', this.attributes['speechOutput']);
+        }
+
+        if (status == null) {
+            // calculate the result of a normal roll
+            result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);
+            this.attributes['speechOutput'] = "The result of the roll is " + result;
+        }else if(diceSides==20){
+            // calculate the result of a roll with advantage/disadvantage
+            firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);
+            secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
+
+            if (status == "advantage") {
+                result = Math.max(firstRoll,secondRoll) + Number(modifier);
+            }
+
+            if (status == "disadvantage") {
+                result = Math.min(firstRoll,secondRoll) + Number(modifier);
+            }
+
+            this.attributes['speechOutput'] = "You roll with "
+                                            + status 
+                                            + ". Your first roll is " 
+                                            + firstRoll
+                                            + ", and your second roll is "
+                                            + secondRoll
+                                            + ". The result of the roll with modifiers is "
+                                            + result;
+        }else{
+            this.attributes['speechOutput'] = "You can only have advantage or disadvantage on d 20 rolls"
         }
 
         if(this.attributes['continue']){ 

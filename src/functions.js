@@ -19,15 +19,15 @@ exports.notFoundMessage = function(objectName) {
 }
 
 // roll dice function
-function rollDice(quantity,sides) {
+exports.rollDice = function(quantity,sides) {
     var facevalue;
     var output = 0;
 
     for (var i=0;i<quantity;i++) {
-        facevalue = Math.floor(Math.random()*sides);
+        facevalue = Number(Math.floor(Math.random()*sides) + 1);
         output += facevalue;
     }
-    return output;
+    return Number(output);
 };
 
 // todo: speak function encapsulation
