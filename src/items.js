@@ -1,5 +1,5 @@
 module.exports = {     
- "ITEM_ATTRIBUTES_EN_US" : {    
+ "ITEM_ATTRIBUTES" : {    
    "category" :        "category",    
    "cost" :            "cost",   
    "weight" :          "weight",    

@@ -1,5 +1,5 @@
 module.exports = {     
- "ATTRIBUTES_EN_US" : {    
+ "ATTRIBUTES" : {    
    "casting time"      : "castingTime",
    "cast"              : "castingTime",     
    "duration"          : "duration",     

@@ -1,5 +1,5 @@
 module.exports = {
-	"FEATS_ATTRIBUTES_EN_US"	:{
+	"FEATS_ATTRIBUTES"	:{
 		"description"	: "description",
 		"benefits"		: "benefits",
 		"prerequisite"	: "prereq"
