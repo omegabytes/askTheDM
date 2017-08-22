@@ -4,6 +4,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var languageStrings = require('./languageStrings');
 var alexaLib = require('./functions.js');
+var lang = languageStrings.en.translation;
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -14,15 +15,14 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
-var handlersUK = handlersUS;
-var handlersUS = {
+var handlers = {
     //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
     // Alexa, ask [my-skill-invocation-name] to (do something)...
     'LaunchRequest': function () {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
+        this.attributes['speechOutput'] = (lang.WELCOME_MESSAGE);
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
