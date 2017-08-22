@@ -323,10 +323,10 @@ var handlers = {
         var diceSidesSlot = this.event.request.intent.slots.Sides;
         var modifierSlot = this.event.request.intent.slots.Modifier;
         var statusSlot = this.event.request.intent.slots.Status;
-        var numberOfDice;
+        var numberOfDice = 1;
         var diceSides;
-        var status;
-        var modifier;
+        var status = null;
+        var modifier = 0;
         var firstRoll;
         var secondRoll;
         var result;
@@ -338,9 +338,6 @@ var handlers = {
         if (numberOfDiceSlot && numberOfDiceSlot.value) {
             // get the number of dice to roll
             numberOfDice = numberOfDiceSlot.value;
-        }else{
-            // the user probably said "roll 'a' d6, d20, etc"
-            numberOfDice = 1;
         }
 
         if (diceSidesSlot && diceSidesSlot.value) {
@@ -351,8 +348,6 @@ var handlers = {
         if (statusSlot && statusSlot.value) {
             // rolling with advantage or disadvantage
             status = statusSlot.value.toLowerCase();
-        }else{
-            status == null;
         }
 
         if (modifierSlot && modifierSlot.value) {
@@ -360,6 +355,11 @@ var handlers = {
             modifier = modifierSlot.value;
         }else{
             modifier = 0;
+        }
+
+        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
+            this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
+            this.emit(':ask', this.attributes['speechOutput']);
         }
 
         if (status == null) {
@@ -373,11 +373,11 @@ var handlers = {
             secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
 
             if (status == "advantage") {
-                result = Number(Math.max(firstRoll,secondRoll)) + Number(modifier);
+                result = Math.max(firstRoll,secondRoll) + Number(modifier);
             }
 
             if (status == "disadvantage") {
-                result = Number(Math.min(firstRoll,secondRoll)) + Number(modifier);
+                result = Math.min(firstRoll,secondRoll) + Number(modifier);
             }
 
             this.attributes['speechOutput'] = "You roll with "
