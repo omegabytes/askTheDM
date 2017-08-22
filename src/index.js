@@ -4,6 +4,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var languageStrings = require('./languageStrings');
 var alexaLib = require('./functions.js');
+var lang = languageStrings.en.translation;
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -21,7 +22,7 @@ var handlers = {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
+        this.attributes['speechOutput'] = (lang.WELCOME_MESSAGE);
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
@@ -55,7 +56,11 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
-            this.attributes['speechOutput'] = spell[spellAttribute];
+            if(spellAttribute=="damage" && spell[spellAttribute]==null){
+                this.attributes['speechOutput'] = spellName + ' does not have damage'
+            }else{
+                this.attributes['speechOutput'] = spell[spellAttribute];
+            }
         }
 
         //if the user asks only about the spell
