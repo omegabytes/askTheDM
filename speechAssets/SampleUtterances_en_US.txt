@@ -1,3 +1,4 @@
+
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}
 
@@ -406,6 +407,27 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
 
+FeatsIntent what does {Feats} do
+FeatsIntent whats {Feats} do
+FeatsIntent whats {Feats}
+FeatsIntent what does the {Feats} feat do to me
+FeatsIntent what does the {Feats} feat do 
+FeatsIntent lookup {Feats}
+FeatsIntent tell me about {Feats}
+FeatsIntent I forgot what {Feats} does
+FeatsIntent I forgot what {Feats} is
+FeatsIntent get information on {Feats}
+FeatsIntent how does {Feats} work
+FeatsIntent what is the {FeatsAttr} for {Feats}
+FeatsIntent for {Feats} what is the {FeatsAttr}
+FeatsIntent for {Feats} whats the {FeatsAttr}
+FeatsIntent tell me the {FeatsAttr} for {Feats}
+FeatsIntent I forget what the {FeatsAttr} for {Feats} is
+FeatsIntent I forgot what the {FeatsAttr} for {Feats} was
+FeatsIntent lookup {FeatsAttr} for {Feats}
+FeatsIntent what are the {FeatsAttr} for {Feats}
+FeatsIntent tell me about {FeatsAttr} for {Feats}
+
 FeatsIntent what does {Feats} do 
 FeatsIntent what does {Feats} affect 
 FeatsIntent what does {Feats} mean 
@@ -504,54 +526,6 @@ FeatsIntent what is the {FeatsAttr} of {Feats}
 FeatsIntent for {Feats}
 FeatsIntent for {FeatsAttr} of {Feats}
 
-DiceIntent roll {Quantity} d {Sides}
-DiceIntent roll a {Quantity} d {Sides}
-DiceIntent can you roll a {Quantity} d {Sides}
-DiceIntent can you roll {Quantity} d {Sides}
-DiceIntent to roll {Quantity} d {Sides}
-DiceIntent to roll a {Quantity} d {Sides}
-
-DiceIntent roll {Quantity} d {Sides} plus {Modifier}
-DiceIntent roll a {Quantity} d {Sides} plus {Modifier}
-DiceIntent can you roll a {Quantity} d {Sides} plus {Modifier}
-DiceIntent can you roll {Quantity} d {Sides} plus {Modifier}
-DiceIntent to roll {Quantity} d {Sides} plus {Modifier}
-DiceIntent to roll a {Quantity} d {Sides} plus {Modifier}
-
-DiceIntent roll {Quantity} d {Sides} with {Status}
-DiceIntent roll a {Quantity} d {Sides} with {Status}
-DiceIntent can you roll a {Quantity} d {Sides} with {Status}
-DiceIntent can you roll {Quantity} d {Sides} with {Status}
-DiceIntent to roll {Quantity} d {Sides} with {Status}
-DiceIntent to roll a {Quantity} d {Sides} with {Status}
-
-DiceIntent roll {Quantity} d {Sides} with {Status} plus {Modifier}
-DiceIntent roll a {Quantity} d {Sides} with {Status} plus {Modifier}
-DiceIntent can you roll a {Quantity} d {Sides} with {Status} plus {Modifier}
-DiceIntent can you roll {Quantity} d {Sides} with {Status} plus {Modifier}
-DiceIntent to roll {Quantity} d {Sides} with {Status} plus {Modifier}
-DiceIntent to roll a {Quantity} d {Sides} with {Status} plus {Modifier}
-
-DiceIntent roll {Quantity} d {Sides} plus {Modifier} with {Status}
-DiceIntent roll a {Quantity} d {Sides} plus {Modifier} with {Status}
-DiceIntent can you roll a {Quantity} d {Sides} plus {Modifier} with {Status}
-DiceIntent can you roll {Quantity} d {Sides} plus {Modifier} with {Status}
-DiceIntent to roll {Quantity} d {Sides} plus {Modifier} with {Status}
-DiceIntent to roll a {Quantity} d {Sides} plus {Modifier} with {Status}
-
-DiceIntent roll a d {Sides}
-DiceIntent roll a d {Sides} with {Status}
-DiceIntent roll a d {Sides} plus {Modifier}
-DiceIntent roll a d {Sides} plus {Modifier} with {Status}
-DiceIntent can you roll a d {Sides}
-DiceIntent can you roll a d {Sides} with {Status}
-DiceIntent can you roll a d {Sides} plus {Modifier}
-DiceIntent can you roll a d {Sides} plus {Modifier} with {Status}
-DiceIntent please roll a d {Sides}
-DiceIntent please roll a d {Sides} with {Status}
-DiceIntent please roll a d {Sides} plus {Modifier}
-DiceIntent please roll a d {Sides} plus {Modifier} with {Status}
-
 Unhandled to
 Unhandled to get
 Unhandled and
@@ -647,3 +621,11 @@ Unhandled what's the
 Unhandled what is 
 Unhandled what is a 
 Unhandled what is an 
+
+
+DiceIntent roll {Quantity} d {Sides}
+DiceIntent roll a {Quantity} d {Sides}
+DiceIntent can you roll a {Quantity} d {Sides}
+DiceIntent can you roll {Quantity} d {Sides}
+DiceIntent to roll {Quantity} d {Sides}
+DiceIntent to roll a {Quantity} d {Sides}
