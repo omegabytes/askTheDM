@@ -324,7 +324,7 @@ var handlers = {
         var modifierSlot = this.event.request.intent.slots.Modifier;
         var statusSlot = this.event.request.intent.slots.Status;
         var numberOfDice = 1;
-        var diceSides;
+        var diceSides = null;
         var status = null;
         var modifier = 0;
         var firstRoll;
@@ -353,8 +353,6 @@ var handlers = {
         if (modifierSlot && modifierSlot.value) {
             // get the modifier to add at the end of the roll calculation
             modifier = modifierSlot.value;
-        }else{
-            modifier = 0;
         }
 
         if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
@@ -365,9 +363,8 @@ var handlers = {
         if (status == null) {
             // calculate the result of a normal roll
             result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);
-
             this.attributes['speechOutput'] = "The result of the roll is " + result;
-        }else{
+        }else if(diceSides==20){
             // calculate the result of a roll with advantage/disadvantage
             firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);
             secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
@@ -388,6 +385,8 @@ var handlers = {
                                             + secondRoll
                                             + ". The result of the roll with modifiers is "
                                             + result;
+        }else{
+            this.attributes['speechOutput'] = "You can only have advantage or disadvantage on d 20 rolls"
         }
 
         if(this.attributes['continue']){ 
