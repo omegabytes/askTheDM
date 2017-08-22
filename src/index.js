@@ -14,7 +14,8 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
-var handlers = {
+var handlersUK = handlersUS;
+var handlersUS = {
     //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
     // Alexa, ask [my-skill-invocation-name] to (do something)...
     'LaunchRequest': function () {
