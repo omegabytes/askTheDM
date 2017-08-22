@@ -1,7 +1,3 @@
-
-SpellCastIntent how do I cast {Spell}
-SpellCastIntent how to cast {Spell}
-
 SpellsIntent what is {Spell}
 SpellsIntent whats {Spell}
 SpellsIntent what are the effects of {Spell}
@@ -15,7 +11,6 @@ SpellsIntent get information on {Spell}
 SpellsIntent get info on {Spell}
 SpellsIntent about {Spell}
 SpellsIntent how does {Spell} work
-
 SpellsIntent what does {Spell} do
 SpellsIntent what does {Spell} affect
 SpellsIntent what does {Spell} mean
@@ -98,7 +93,7 @@ SpellsIntent tell me how {Attribute} of {Spell} affects us
 SpellsIntent tell me how {Attribute} of {Spell} affects someone
 SpellsIntent tell me how {Attribute} of {Spell} affects a player
 SpellsIntent tell me how {Attribute} of {Spell} affects a creature
-SpellsIntent tell us whats {Spell} do 
+SpellsIntent tell us whats {Spell} do
 SpellsIntent tell us whats {Spell} do to me
 SpellsIntent tell us whats {Spell} do to us
 SpellsIntent tell us whats {Spell} do to someone
@@ -147,7 +142,6 @@ SpellsIntent what are the {Attribute} to cast {Spell}
 SpellsIntent what are the {Attribute} needed to cast {Spell}
 SpellsIntent what is the {Attribute} of {Spell}
 SpellsIntent whats the {Attribute} of {Spell}
-
 ItemsIntent lookup {Item}
 ItemsIntent What a {Item}
 ItemsIntent What an {Item}
@@ -235,52 +229,52 @@ ItemsIntent how does {Item} work
 ItemsIntent how does {Item} do
 ItemsIntent Tell me what the {Item} works
 ItemsIntent Tell me what the {Item} does
-ItemsIntent Tell me what the {Item}  
+ItemsIntent Tell me what the {Item}
 ItemsIntent Tell me what a {Item} works
 ItemsIntent Tell me what a {Item} does
-ItemsIntent Tell me what a {Item}  
+ItemsIntent Tell me what a {Item}
 ItemsIntent Tell me what an {Item} works
 ItemsIntent Tell me what an {Item} does
-ItemsIntent Tell me what an {Item}  
+ItemsIntent Tell me what an {Item}
 ItemsIntent Tell me what {Item} works
 ItemsIntent Tell me what {Item} does
-ItemsIntent Tell me what {Item}  
+ItemsIntent Tell me what {Item}
 ItemsIntent Tell me how the {Item} works
 ItemsIntent Tell me how the {Item} does
-ItemsIntent Tell me how the {Item}  
+ItemsIntent Tell me how the {Item}
 ItemsIntent Tell me how a {Item} works
 ItemsIntent Tell me how a {Item} does
-ItemsIntent Tell me how a {Item}  
+ItemsIntent Tell me how a {Item}
 ItemsIntent Tell me how an {Item} works
 ItemsIntent Tell me how an {Item} does
-ItemsIntent Tell me how an {Item}  
+ItemsIntent Tell me how an {Item}
 ItemsIntent Tell me how {Item} works
 ItemsIntent Tell me how {Item} does
-ItemsIntent Tell me how {Item}  
+ItemsIntent Tell me how {Item}
 ItemsIntent Tell us what the {Item} works
 ItemsIntent Tell us what the {Item} does
-ItemsIntent Tell us what the {Item}  
+ItemsIntent Tell us what the {Item}
 ItemsIntent Tell us what a {Item} works
 ItemsIntent Tell us what a {Item} does
-ItemsIntent Tell us what a {Item}  
+ItemsIntent Tell us what a {Item}
 ItemsIntent Tell us what an {Item} works
 ItemsIntent Tell us what an {Item} does
-ItemsIntent Tell us what an {Item}  
+ItemsIntent Tell us what an {Item}
 ItemsIntent Tell us what {Item} works
 ItemsIntent Tell us what {Item} does
-ItemsIntent Tell us what {Item}  
+ItemsIntent Tell us what {Item}
 ItemsIntent Tell us how the {Item} works
 ItemsIntent Tell us how the {Item} does
-ItemsIntent Tell us how the {Item}  
+ItemsIntent Tell us how the {Item}
 ItemsIntent Tell us how a {Item} works
 ItemsIntent Tell us how a {Item} does
-ItemsIntent Tell us how a {Item}  
+ItemsIntent Tell us how a {Item}
 ItemsIntent Tell us how an {Item} works
 ItemsIntent Tell us how an {Item} does
-ItemsIntent Tell us how an {Item}  
+ItemsIntent Tell us how an {Item}
 ItemsIntent Tell us how {Item} works
 ItemsIntent Tell us how {Item} does
-ItemsIntent Tell us how {Item}  
+ItemsIntent Tell us how {Item}
 ItemsIntent get the information on a {Item}
 ItemsIntent get the information on an {Item}
 ItemsIntent get the information about a {Item}
@@ -295,7 +289,6 @@ ItemsIntent get information for a {Item}
 ItemsIntent get information for an {Item}
 ItemsIntent to get the {ItemAttribute} of {Item}
 ItemsIntent get the {ItemAttribute} of {Item}
-
 ConditionsIntent what is {Condition}
 ConditionsIntent whats {Condition}
 ConditionsIntent what does being {Condition} mean
@@ -373,7 +366,8 @@ ConditionsIntent what does the {Condition} condition do to a creature
 ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
-
+SpellCastIntent how do I cast {Spell}
+SpellCastIntent how to cast {Spell}
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
 ExhaustionLevelIntent what does {Level} exhaustion mean
@@ -406,31 +400,9 @@ ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
-
 FeatsIntent what does {Feats} do
-FeatsIntent whats {Feats} do
-FeatsIntent whats {Feats}
-FeatsIntent what does the {Feats} feat do to me
-FeatsIntent what does the {Feats} feat do 
-FeatsIntent lookup {Feats}
-FeatsIntent tell me about {Feats}
-FeatsIntent I forgot what {Feats} does
-FeatsIntent I forgot what {Feats} is
-FeatsIntent get information on {Feats}
-FeatsIntent how does {Feats} work
-FeatsIntent what is the {FeatsAttr} for {Feats}
-FeatsIntent for {Feats} what is the {FeatsAttr}
-FeatsIntent for {Feats} whats the {FeatsAttr}
-FeatsIntent tell me the {FeatsAttr} for {Feats}
-FeatsIntent I forget what the {FeatsAttr} for {Feats} is
-FeatsIntent I forgot what the {FeatsAttr} for {Feats} was
-FeatsIntent lookup {FeatsAttr} for {Feats}
-FeatsIntent what are the {FeatsAttr} for {Feats}
-FeatsIntent tell me about {FeatsAttr} for {Feats}
-
-FeatsIntent what does {Feats} do 
-FeatsIntent what does {Feats} affect 
-FeatsIntent what does {Feats} mean 
+FeatsIntent what does {Feats} affect
+FeatsIntent what does {Feats} mean
 FeatsIntent what does {FeatsAttr} do
 FeatsIntent what does {FeatsAttr} affect
 FeatsIntent what does {FeatsAttr} mean
@@ -525,7 +497,48 @@ FeatsIntent what is the {Feats} feat
 FeatsIntent what is the {FeatsAttr} of {Feats}
 FeatsIntent for {Feats}
 FeatsIntent for {FeatsAttr} of {Feats}
-
+DiceIntent roll {Quantity} d. {Sides}
+DiceIntent roll a {Quantity} d. {Sides}
+DiceIntent can you roll a {Quantity} d. {Sides}
+DiceIntent can you roll {Quantity} d. {Sides}
+DiceIntent to roll {Quantity} d. {Sides}
+DiceIntent to roll a {Quantity} d. {Sides}
+DiceIntent roll {Quantity} d. {Sides} plus {Modifier}
+DiceIntent roll a {Quantity} d. {Sides} plus {Modifier}
+DiceIntent can you roll a {Quantity} d. {Sides} plus {Modifier}
+DiceIntent can you roll {Quantity} d. {Sides} plus {Modifier}
+DiceIntent to roll {Quantity} d. {Sides} plus {Modifier}
+DiceIntent to roll a {Quantity} d. {Sides} plus {Modifier}
+DiceIntent roll {Quantity} d. {Sides} with {Status}
+DiceIntent roll a {Quantity} d. {Sides} with {Status}
+DiceIntent can you roll a {Quantity} d. {Sides} with {Status}
+DiceIntent can you roll {Quantity} d. {Sides} with {Status}
+DiceIntent to roll {Quantity} d. {Sides} with {Status}
+DiceIntent to roll a {Quantity} d. {Sides} with {Status}
+DiceIntent roll {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent to roll {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent to roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
+DiceIntent roll {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent to roll {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent to roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
+DiceIntent roll a d. {Sides}
+DiceIntent roll a d. {Sides} with {Status}
+DiceIntent roll a d. {Sides} plus {Modifier}
+DiceIntent roll a d. {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll a d. {Sides}
+DiceIntent can you roll a d. {Sides} with {Status}
+DiceIntent can you roll a d. {Sides} plus {Modifier}
+DiceIntent can you roll a d. {Sides} plus {Modifier} with {Status}
+DiceIntent please roll a d. {Sides}
+DiceIntent please roll a d. {Sides} with {Status}
+DiceIntent please roll a d. {Sides} plus {Modifier}
+DiceIntent please roll a d. {Sides} plus {Modifier} with {Status}
 Unhandled to
 Unhandled to get
 Unhandled and
@@ -543,89 +556,81 @@ Unhandled get
 Unhandled get info
 Unhandled get information
 Unhandled get the
-Unhandled for 
-Unhandled what 
-Unhandled whats 
-Unhandled does 
-Unhandled do 
-Unhandled tell me 
-Unhandled tell us 
-Unhandled tell me what 
-Unhandled tell me whats 
-Unhandled tell us what 
-Unhandled tell us whats 
-Unhandled tell me how 
-Unhandled tell us how 
-Unhandled I forgot what the 
-Unhandled what is the 
-Unhandled to get information on 
-Unhandled to get info on 
-Unhandled get the 
-Unhandled about 
-Unhandled how does 
-Unhandled get info 
-Unhandled get information 
-Unhandled what does the 
-Unhandled what does 
-Unhandled lookup 
-Unhandled I forgot how 
-Unhandled how does having 
-Unhandled what are the effects of 
-Unhandled what does the 
-Unhandled what effect does being 
-Unhandled what effect does 
-Unhandled how does 
-Unhandled about being 
-Unhandled get information about 
-Unhandled get info on 
-Unhandled get information on 
-Unhandled get the effects of 
-Unhandled get effects of the 
-Unhandled what are the effects of 
-Unhandled tell me about 
-Unhandled tell us about 
-Unhandled get the 
-Unhandled to get the 
-Unhandled get the information on 
-Unhandled get the information on a 
-Unhandled get the information about 
-Unhandled get the information about a 
-Unhandled get the information about an 
-Unhandled get the information for a 
-Unhandled get the information for an 
-Unhandled get the info on a 
-Unhandled get the info on an 
-Unhandled get the info about a 
-Unhandled get the info about an 
-Unhandled get the info for a 
-Unhandled get the info for an 
-Unhandled tell me what a 
-Unhandled tell me what an 
-Unhandled tell me what 
-Unhandled tell us what a 
-Unhandled tell us what an 
-Unhandled tell me how the 
-Unhandled tell us how the 
-Unhandled tell me how a 
-Unhandled tell us how a 
-Unhandled how does a 
-Unhandled how does an 
-Unhandled how does the 
-Unhandled how does 
-Unhandled I forgot what a 
-Unhandled I forgot what an 
-Unhandled what's a 
-Unhandled what's an 
-Unhandled what the 
-Unhandled what's the 
-Unhandled what is 
-Unhandled what is a 
-Unhandled what is an 
-
-
-DiceIntent roll {Quantity} d {Sides}
-DiceIntent roll a {Quantity} d {Sides}
-DiceIntent can you roll a {Quantity} d {Sides}
-DiceIntent can you roll {Quantity} d {Sides}
-DiceIntent to roll {Quantity} d {Sides}
-DiceIntent to roll a {Quantity} d {Sides}
+Unhandled for
+Unhandled what
+Unhandled whats
+Unhandled does
+Unhandled do
+Unhandled tell me
+Unhandled tell us
+Unhandled tell me what
+Unhandled tell me whats
+Unhandled tell us what
+Unhandled tell us whats
+Unhandled tell me how
+Unhandled tell us how
+Unhandled I forgot what the
+Unhandled what is the
+Unhandled to get information on
+Unhandled to get info on
+Unhandled get the
+Unhandled about
+Unhandled how does
+Unhandled get info
+Unhandled get information
+Unhandled what does the
+Unhandled what does
+Unhandled lookup
+Unhandled I forgot how
+Unhandled how does having
+Unhandled what are the effects of
+Unhandled what does the
+Unhandled what effect does being
+Unhandled what effect does
+Unhandled how does
+Unhandled about being
+Unhandled get information about
+Unhandled get info on
+Unhandled get information on
+Unhandled get the effects of
+Unhandled get effects of the
+Unhandled what are the effects of
+Unhandled tell me about
+Unhandled tell us about
+Unhandled get the
+Unhandled to get the
+Unhandled get the information on
+Unhandled get the information on a
+Unhandled get the information about
+Unhandled get the information about a
+Unhandled get the information about an
+Unhandled get the information for a
+Unhandled get the information for an
+Unhandled get the info on a
+Unhandled get the info on an
+Unhandled get the info about a
+Unhandled get the info about an
+Unhandled get the info for a
+Unhandled get the info for an
+Unhandled tell me what a
+Unhandled tell me what an
+Unhandled tell me what
+Unhandled tell us what a
+Unhandled tell us what an
+Unhandled tell me how the
+Unhandled tell us how the
+Unhandled tell me how a
+Unhandled tell us how a
+Unhandled how does a
+Unhandled how does an
+Unhandled how does the
+Unhandled how does
+Unhandled I forgot what a
+Unhandled I forgot what an
+Unhandled what's a
+Unhandled what's an
+Unhandled what the
+Unhandled what's the
+Unhandled what is
+Unhandled what is a
+Unhandled what is an
