@@ -187,7 +187,7 @@ var handlers = {
         var featsList = langEN.FEATS; 
         var thisFeat  = featsList[featsName];
 
-        var featsAttrList = langEN.FEATS_ATTRIBUTES;
+        var featsAttrList = langEN.FEAT_ATTRIBUTES;
         var thisFeatAttr = featsAttrList[featAttrName];
 
         //user requests information on feats
