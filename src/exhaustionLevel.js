@@ -1,5 +1,5 @@
 module.exports = {
-	"EXHAUSTION_LEVELS_EN_US"  : {
+	"EXHAUSTION_LEVELS"  : {
 		"level 1"		: "Creature has disadvantage on all ability checks.",
 	 	"level 2"		: "Creature has their speed halved.",
 	 	"level 3"		: "Creature has disadvantage on attack rolls and saving throws.",

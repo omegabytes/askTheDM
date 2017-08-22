@@ -11,7 +11,7 @@ module.exports = {
    "url"               :  "url",
    "damage"            : "damage" 
  },    
- "SPELLS_EN_US" : {
+ "SPELLS" : {
   "move earth": {
     "castingTime": "1 Action",
     "duration": "Concentration, up to 2 hours",

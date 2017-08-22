@@ -21,7 +21,7 @@ var handlers = {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (languageStrings.en.translation.WELCOME_MESSAGE);
+        this.attributes['speechOutput'] = languageStrings.en.translation.WELCOME_MESSAGE;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },

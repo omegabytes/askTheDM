@@ -12,7 +12,7 @@ module.exports = {
    "speed" :           "speed",
    "carry capacity" :  "carryCapacity"
  },    
- "ITEMS_EN_US" : {
+ "ITEMS" : {
   "padded": {
     "cost": "5 Gold Piece",
     "weight": "8 lb.",
