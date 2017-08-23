@@ -3,7 +3,6 @@ var conditions = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
 var items = require('./items');
 var feats = require('./feats');
-var index = require('./indexInfo');
 
 module.exports = {
     "en": {
@@ -30,7 +29,6 @@ module.exports = {
             "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
             "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s. ",
             "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition. ",
-            "INDEX_NOT_FOUND":                              "that index entry",
             "UNHANDLED" :                                    "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'"
         }
     }
