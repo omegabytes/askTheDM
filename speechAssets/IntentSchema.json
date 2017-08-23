@@ -61,7 +61,7 @@
         },
         {
           "name": "FeatsAttr",
-          "type": "LIST_OF_FEATS_ATTRIBUTES"
+          "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],
       "intent": "FeatsIntent"

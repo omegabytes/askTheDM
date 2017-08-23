@@ -1,5 +1,5 @@
 module.exports = {     
-   "CONDITIONS_EN_US" : {
+   "CONDITIONS" : {
 	 	"blinded" 	 		  : "A blinded creature can’t see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.",
 	 	"blind"				  : "A blinded creature can’t see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.",
 	 	"charmed" 	 		  : "A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects. The charmer has advantage on any ability check to interact socially with the creature.",
