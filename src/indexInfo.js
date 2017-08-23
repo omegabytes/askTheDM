@@ -39,12 +39,12 @@ module.exports = {
         204
       ]
     },
-    "Abjuration Savant": {
+    "abjuration savant": {
       "pages": [
         115
       ]
     },
-    "Abjure Enemy": {
+    "abjure enemy": {
       "pages": [
         88
       ]
@@ -54,17 +54,17 @@ module.exports = {
         115
       ]
     },
-    "Abyss, the": {
+    "abyss, the": {
       "pages": [
         302
       ]
     },
-    "Abyssal": {
+    "abyssal": {
       "pages": [
         123
       ]
     },
-    "AC": {
+    "ac": {
       "pages": [
         7,
         14,
@@ -72,7 +72,7 @@ module.exports = {
         177
       ]
     },
-    "Archeron": {
+    "archeron": {
       "pages": [
         302
       ]
@@ -87,12 +87,12 @@ module.exports = {
         127
       ]
     },
-    "Acolyte of Nature": {
+    "acolyte of nature": {
       "pages": [
         62
       ]
     },
-    "Acrobatics": {
+    "acrobatics": {
       "pages": [
         176
       ]
@@ -103,7 +103,7 @@ module.exports = {
         "192-193"
       ]
     },
-    "Action Surge": {
+    "action surge": {
       "pages": [
         72
       ]
@@ -147,7 +147,7 @@ module.exports = {
         17
       ]
     },
-    "Agonizing Blast": {
+    "agonizing blast": {
       "pages": [
         110
       ]
@@ -157,7 +157,7 @@ module.exports = {
         122
       ]
     },
-    "Alter Memories": {
+    "alter memories": {
       "pages": [
         117
       ]
@@ -167,32 +167,32 @@ module.exports = {
         146
       ]
     },
-    "Animal Handling": {
+    "animal handling": {
       "pages": [
         178
       ]
     },
-    "Aquan": {
+    "aquan": {
       "pages": [
         123
       ]
     },
-    "Arborea": {
+    "arborea": {
       "pages": [
         302
       ]
     },
-    "Arcadia": {
+    "arcadia": {
       "pages": [
         302
       ]
     },
-    "Arcana": {
+    "arcana": {
       "pages": [
         177
       ]
     },
-    "Arcane Charge": {
+    "arcane charge": {
       "pages": [
         75
       ]
@@ -207,12 +207,12 @@ module.exports = {
         205
       ]
     },
-    "Arcane Recovery": {
+    "arcane recovery": {
       "pages": [
         115
       ]
     },
-    "Arcane Tradition": {
+    "arcane tradition": {
       "pages": [
         115
       ]
@@ -222,28 +222,28 @@ module.exports = {
         "115-119"
       ]
     },
-    "Arcane Trickster": {
+    "arcane trickster": {
       "pages": [
         97
       ]
     },
-    "Arcane Ward": {
+    "arcane ward": {
       "pages": [
         115
       ]
     },
-    "Archdruid": {
+    "archdruid": {
       "pages": [
         "67-68"
       ]
     },
-    "Archery": {
+    "archery": {
       "pages": [
         72,
         91
       ]
     },
-    "Archfey, the": {
+    "archfey, the": {
       "pages": [
         "108-109"
       ]
@@ -258,7 +258,7 @@ module.exports = {
         "144-146"
       ]
     },
-    "Armor Class": {
+    "armor class": {
       "pages": [
         7,
         14,
@@ -266,7 +266,7 @@ module.exports = {
         177
       ]
     },
-    "Armor of Shadows": {
+    "armor of shadows": {
       "pages": [
         110
       ]
@@ -276,37 +276,37 @@ module.exports = {
         144
       ]
     },
-    "Artificer's Lore": {
+    "artificer's lore": {
       "pages": [
         37
       ]
     },
-    "Ascendant Step": {
+    "ascendant step": {
       "pages": [
         110
       ]
     },
-    "Aspect of the Beast": {
+    "aspect of the beast": {
       "pages": [
         50
       ]
     },
-    "Assassin": {
+    "assassin": {
       "pages": [
         97
       ]
     },
-    "Assassinate": {
+    "assassinate": {
       "pages": [
         97
       ]
     },
-    "Astral Plane": {
+    "astral plane": {
       "pages": [
         302
       ]
     },
-    "Athletics": {
+    "athletics": {
       "pages": [
         175
       ]
@@ -342,27 +342,27 @@ module.exports = {
         194
       ]
     },
-    "Auran": {
+    "auran": {
       "pages": [
         123
       ]
     },
-    "Aura of Courage": {
+    "aura of courage": {
       "pages": [
         85
       ]
     },
-    "Aura of Devotion": {
+    "aura of devotion": {
       "pages": [
         86
       ]
     },
-    "Aura of Protection": {
+    "aura of protection": {
       "pages": [
         85
       ]
     },
-    "Aura of Warding": {
+    "aura of warding": {
       "pages": [
         87
       ]
@@ -377,17 +377,17 @@ module.exports = {
         194
       ]
     },
-    "Avatar of Battle": {
+    "avatar of battle": {
       "pages": [
         63
       ]
     },
-    "Avenging Angel": {
+    "avenging angel": {
       "pages": [
         88
       ]
     },
-    "Awakened Mind": {
+    "awakened mind": {
       "pages": [
         110
       ]
@@ -400,7 +400,7 @@ module.exports = {
         "125-141"
       ]
     },
-    "Bad Reputation": {
+    "bad reputation": {
       "pages": [
         139
       ]
@@ -417,7 +417,7 @@ module.exports = {
         "51-55"
       ]
     },
-    "Bard College": {
+    "bard college": {
       "pages": [
         54
       ]
@@ -427,7 +427,7 @@ module.exports = {
         "54-55"
       ]
     },
-    "Bardic Inspiration": {
+    "bardic inspiration": {
       "pages": [
         "53-54"
       ]
@@ -457,12 +457,12 @@ module.exports = {
         304
       ]
     },
-    "Battle Magic": {
+    "battle magic": {
       "pages": [
         55
       ]
     },
-    "Battle Master": {
+    "battle master": {
       "pages": [
         73
       ]
@@ -477,67 +477,67 @@ module.exports = {
         304
       ]
     },
-    "Beastlands, the": {
+    "beastlands, the": {
       "pages": [
         302
       ]
     },
-    "Beast Master": {
+    "beast master": {
       "pages": [
         93
       ]
     },
-    "Beast Speech": {
+    "beast speech": {
       "pages": [
         110
       ]
     },
-    "Beast Spells": {
+    "beast spells": {
       "pages": [
         67
       ]
     },
-    "Beguiling Defenses": {
+    "beguiling defenses": {
       "pages": [
         109
       ]
     },
-    "Beguiling Influence": {
+    "beguiling influence": {
       "pages": [
         110
       ]
     },
-    "Bend Luck": {
+    "bend luck": {
       "pages": [
         103
       ]
     },
-    "Benign Transposition": {
+    "benign transposition": {
       "pages": [
         116
       ]
     },
-    "Bestial Fury": {
+    "bestial fury": {
       "pages": [
         93
       ]
     },
-    "Bewitching Whispers": {
+    "bewitching whispers": {
       "pages": [
         110
       ]
     },
-    "Blessed Healer": {
+    "blessed healer": {
       "pages": [
         60
       ]
     },
-    "Blessings of Knowledge": {
+    "blessings of knowledge": {
       "pages": [
         59
       ]
     },
-    "Blessing of the Trickster": {
+    "blessing of the trickster": {
       "pages": [
         63
       ]
@@ -547,7 +547,7 @@ module.exports = {
         290
       ]
     },
-    "Blindsense": {
+    "blindsense": {
       "pages": [
         96
       ]
@@ -582,22 +582,22 @@ module.exports = {
         189
       ]
     },
-    "Book of Ancient Secrets": {
+    "book of ancient secrets": {
       "pages": [
         110
       ]
     },
-    "Book of Shadows": {
+    "book of shadows": {
       "pages": [
         108
       ]
     },
-    "Border Ethereal": {
+    "border ethereal": {
       "pages": [
         302
       ]
     },
-    "Brave": {
+    "brave": {
       "pages": [
         28
       ]
@@ -607,12 +607,12 @@ module.exports = {
         203
       ]
     },
-    "Breath of Winter": {
+    "breath of winter": {
       "pages": [
         81
       ]
     },
-    "Breath Weapon": {
+    "breath weapon": {
       "pages": [
         34
       ]
@@ -623,9 +623,9 @@ module.exports = {
       ]
     },
     "bringing back the dead": {
-      "pages": "See the spell descriptions for raise dead (270), reincarnate (271), resurrection (272), revivify (272), true resurrection (284)"
+      "pages": "see the spell descriptions for raise dead (270), reincarnate (271), resurrection (272), revivify (272), true resurrection (284)"
     },
-    "Brutal Critical": {
+    "brutal critical": {
       "pages": [
         49
       ]
@@ -635,17 +635,17 @@ module.exports = {
         195
       ]
     },
-    "By Popular Demand": {
+    "by popular demand": {
       "pages": [
         130
       ]
     },
-    "Bytopia": {
+    "bytopia": {
       "pages": [
         302
       ]
     },
-    "Calishite": {
+    "calishite": {
       "pages": [
         30
       ]
@@ -661,12 +661,12 @@ module.exports = {
         201
       ]
     },
-    "Carceri": {
+    "carceri": {
       "pages": [
         302
       ]
     },
-    "Careful Spell": {
+    "careful spell": {
       "pages": [
         102
       ]
@@ -691,17 +691,17 @@ module.exports = {
         305
       ]
     },
-    "Celestial": {
+    "celestial": {
       "pages": [
         123
       ]
     },
-    "Chains of Carceri": {
+    "chains of carceri": {
       "pages": [
         110
       ]
     },
-    "Champion": {
+    "champion": {
       "pages": [
         72
       ]
@@ -754,7 +754,7 @@ module.exports = {
         128
       ]
     },
-    "Charm Animals and plants": {
+    "charm animals and plants": {
       "pages": [
         62
       ]
@@ -765,39 +765,39 @@ module.exports = {
       ]
     },
     "check": {
-      "pages": "See ability check"
+      "pages": "see ability check"
     },
-    "Chondathan": {
+    "chondathan": {
       "pages": [
         30
       ]
     },
-    "Circle Forms": {
+    "circle forms": {
       "pages": [
         69
       ]
     },
-    "Circle of the Land": {
+    "circle of the land": {
       "pages": [
         68
       ]
     },
-    "Circle of the Moon": {
+    "circle of the moon": {
       "pages": [
         69
       ]
     },
-    "Circle Spells": {
+    "circle spells": {
       "pages": [
         68
       ]
     },
-    "City Secrets": {
+    "city secrets": {
       "pages": [
         141
       ]
     },
-    "Cleansing Touch": {
+    "cleansing touch": {
       "pages": [
         85
       ]
@@ -819,7 +819,7 @@ module.exports = {
         204
       ]
     },
-    "Clench of the North Wind": {
+    "clench of the north wind": {
       "pages": [
         81
       ]
@@ -846,17 +846,17 @@ module.exports = {
         196
       ]
     },
-    "College of Lore": {
+    "college of lore": {
       "pages": [
         54
       ]
     },
-    "College of Valor": {
+    "college of valor": {
       "pages": [
         55
       ]
     },
-    "Colossus Slayer": {
+    "colossus slayer": {
       "pages": [
         93
       ]
@@ -867,7 +867,7 @@ module.exports = {
         "189-198"
       ]
     },
-    "Combat Inspiration": {
+    "combat inspiration": {
       "pages": [
         55
       ]
@@ -878,12 +878,12 @@ module.exports = {
         189
       ]
     },
-    "Combat Superiority": {
+    "combat superiority": {
       "pages": [
         73
       ]
     },
-    "Combat Wild Shape": {
+    "combat wild shape": {
       "pages": [
         69
       ]
@@ -893,12 +893,12 @@ module.exports = {
         205
       ]
     },
-    "Commander's Strike maneuver": {
+    "commander's strike maneuver": {
       "pages": [
         74
       ]
     },
-    "Common": {
+    "common": {
       "pages": [
         123
       ]
@@ -908,7 +908,7 @@ module.exports = {
         17
       ]
     },
-    "Command Undead": {
+    "command undead": {
       "pages": [
         119
       ]
@@ -939,7 +939,7 @@ module.exports = {
         203
       ]
     },
-    "Conjuration Savant": {
+    "conjuration savant": {
       "pages": [
         116
       ]
@@ -965,12 +965,12 @@ module.exports = {
         174
       ]
     },
-    "Controlled Chaos": {
+    "controlled chaos": {
       "pages": [
         103
       ]
     },
-    "Converting a spell slot to sorcery points": {
+    "converting a spell slot to sorcery points": {
       "pages": [
         101
       ]
@@ -980,12 +980,12 @@ module.exports = {
         143
       ]
     },
-    "Corona of Light": {
+    "corona of light": {
       "pages": [
         61
       ]
     },
-    "Countercharm": {
+    "countercharm": {
       "pages": [
         54
       ]
@@ -1006,7 +1006,7 @@ module.exports = {
         191
       ]
     },
-    "Create Thrall": {
+    "create thrall": {
       "pages": [
         110
       ]
@@ -1031,7 +1031,7 @@ module.exports = {
         "129-130"
       ]
     },
-    "Criminal Contact": {
+    "criminal contact": {
       "pages": [
         129
       ]
@@ -1051,7 +1051,7 @@ module.exports = {
         204
       ]
     },
-    "Cunning Action": {
+    "cunning action": {
       "pages": [
         96
       ]
@@ -1061,7 +1061,7 @@ module.exports = {
         196
       ]
     },
-    "Cutting Words": {
+    "cutting words": {
       "pages": [
         "54-55"
       ]
@@ -1082,7 +1082,7 @@ module.exports = {
         97
       ]
     },
-    "Damage Resistance": {
+    "damage resistance": {
       "pages": [
         34
       ]
@@ -1105,22 +1105,22 @@ module.exports = {
         197
       ]
     },
-    "Damaran": {
+    "damaran": {
       "pages": [
         31
       ]
     },
-    "Dampen Elements": {
+    "dampen elements": {
       "pages": [
         62
       ]
     },
-    "Danger Sense": {
+    "danger sense": {
       "pages": [
         48
       ]
     },
-    "Dark Delirium": {
+    "dark delirium": {
       "pages": [
         109
       ]
@@ -1135,12 +1135,12 @@ module.exports = {
         183
       ]
     },
-    "Dark One's Blessing": {
+    "dark one's blessing": {
       "pages": [
         109
       ]
     },
-    "Dark One's Own Luck": {
+    "dark one's own luck": {
       "pages": [
         109
       ]
@@ -1156,7 +1156,7 @@ module.exports = {
         192
       ]
     },
-    "DC": {
+    "dc": {
       "pages": [
         7,
         174
@@ -1187,12 +1187,12 @@ module.exports = {
         197
       ]
     },
-    "Death Strike": {
+    "death strike": {
       "pages": [
         97
       ]
     },
-    "Deception": {
+    "deception": {
       "pages": [
         178
       ]
@@ -1202,24 +1202,24 @@ module.exports = {
         36
       ]
     },
-    "Deep Speech": {
+    "deep speech": {
       "pages": [
         123
       ]
     },
-    "Defense": {
+    "defense": {
       "pages": [
         72,
         84,
         91
       ]
     },
-    "Defensive Tactics": {
+    "defensive tactics": {
       "pages": [
         93
       ]
     },
-    "Deflect Missiles": {
+    "deflect missiles": {
       "pages": [
         78
       ]
@@ -1239,17 +1239,17 @@ module.exports = {
         302
       ]
     },
-    "Destroy Undead": {
+    "destroy undead": {
       "pages": [
         59
       ]
     },
-    "Destructive Wrath": {
+    "destructive wrath": {
       "pages": [
         62
       ]
     },
-    "Devil's Sight": {
+    "devil's sight": {
       "pages": [
         110
       ]
@@ -1260,7 +1260,7 @@ module.exports = {
         "176-177"
       ]
     },
-    "Diamond Soul": {
+    "diamond soul": {
       "pages": [
         79
       ]
@@ -1281,7 +1281,7 @@ module.exports = {
         190
       ]
     },
-    "Difficulty Class": {
+    "difficulty class": {
       "pages": [
         7,
         174
@@ -1298,22 +1298,22 @@ module.exports = {
         173
       ]
     },
-    "Disarming Attack maneuver": {
+    "disarming attack maneuver": {
       "pages": [
         74
       ]
     },
-    "Disciple of Life": {
+    "disciple of life": {
       "pages": [
         60
       ]
     },
-    "Disciple of the Elements": {
+    "disciple of the elements": {
       "pages": [
         80
       ]
     },
-    "Discovery": {
+    "discovery": {
       "pages": [
         134
       ]
@@ -1323,12 +1323,12 @@ module.exports = {
         192
       ]
     },
-    "Distant Spell": {
+    "distant spell": {
       "pages": [
         102
       ]
     },
-    "Distracting Strike maneuver": {
+    "distracting strike maneuver": {
       "pages": [
         74
       ]
@@ -1339,12 +1339,12 @@ module.exports = {
         203
       ]
     },
-    "Divination Savant": {
+    "divination savant": {
       "pages": [
         116
       ]
     },
-    "Divine Domain": {
+    "divine domain": {
       "pages": [
         58
       ]
@@ -1354,12 +1354,12 @@ module.exports = {
         59
       ]
     },
-    "Divine Health": {
+    "divine health": {
       "pages": [
         85
       ]
     },
-    "Divine Intervention": {
+    "divine intervention": {
       "pages": [
         59
       ]
@@ -1374,17 +1374,17 @@ module.exports = {
         116
       ]
     },
-    "Divine Sense": {
+    "divine sense": {
       "pages": [
         84
       ]
     },
-    "Divine Smite": {
+    "divine smite": {
       "pages": [
         85
       ]
     },
-    "Divine Strike": {
+    "divine strike": {
       "pages": [
         60,
         62,
@@ -1393,7 +1393,7 @@ module.exports = {
         63
       ]
     },
-    "DM": {
+    "dm": {
       "pages": [
         5
       ]
@@ -1432,22 +1432,22 @@ module.exports = {
         123
       ]
     },
-    "Draconic Ancestry": {
+    "draconic ancestry": {
       "pages": [
         24
       ]
     },
-    "Draconic Presence": {
+    "draconic presence": {
       "pages": [
         102
       ]
     },
-    "Draconic Resilience": {
+    "draconic resilience": {
       "pages": [
         102
       ]
     },
-    "Dragon Ancestor": {
+    "dragon ancestor": {
       "pages": [
         102
       ]
@@ -1467,7 +1467,7 @@ module.exports = {
         34
       ]
     },
-    "Dragon Wings": {
+    "dragon wings": {
       "pages": [
         103
       ]
@@ -1477,7 +1477,7 @@ module.exports = {
         190
       ]
     },
-    "Dreadful Word": {
+    "dreadful word": {
       "pages": [
         110
       ]
@@ -1534,7 +1534,7 @@ module.exports = {
         69
       ]
     },
-    "Dueling": {
+    "dueling": {
       "pages": [
         72,
         84,
@@ -1546,12 +1546,12 @@ module.exports = {
         20
       ]
     },
-    "Dungeon Master": {
+    "dungeon master": {
       "pages": [
         5
       ]
     },
-    "Durable Summons": {
+    "durable summons": {
       "pages": [
         116
       ]
@@ -1576,7 +1576,7 @@ module.exports = {
         20
       ]
     },
-    "Dwarven Armor Training": {
+    "dwarven armor training": {
       "pages": [
         20
       ]
@@ -1591,7 +1591,7 @@ module.exports = {
         20
       ]
     },
-    "Dwarven Toughness": {
+    "dwarven toughness": {
       "pages": [
         20
       ]
@@ -1611,12 +1611,12 @@ module.exports = {
         201
       ]
     },
-    "Elder Champion": {
+    "elder champion": {
       "pages": [
         87
       ]
     },
-    "Eldritch Invocations": {
+    "eldritch invocations": {
       "pages": [
         107
       ]
@@ -1626,27 +1626,27 @@ module.exports = {
         "110-111"
       ]
     },
-    "Eldritch Knight": {
+    "eldritch knight": {
       "pages": [
         74
       ]
     },
-    "Eldritch Master": {
+    "eldritch master": {
       "pages": [
         108
       ]
     },
-    "Eldritch Sight": {
+    "eldritch sight": {
       "pages": [
         110
       ]
     },
-    "Eldritch Spear": {
+    "eldritch spear": {
       "pages": [
         111
       ]
     },
-    "Eldritch Strike": {
+    "eldritch strike": {
       "pages": [
         75
       ]
@@ -1656,32 +1656,32 @@ module.exports = {
         143
       ]
     },
-    "Elemental Affinity": {
+    "elemental affinity": {
       "pages": [
         103
       ]
     },
-    "Elemental Attunement": {
+    "elemental attunement": {
       "pages": [
         81
       ]
     },
-    "Elemental Chaos": {
+    "elemental chaos": {
       "pages": [
         301
       ]
     },
-    "Elemental Disciplines": {
+    "elemental disciplines": {
       "pages": [
         81
       ]
     },
-    "Elemental Planes": {
+    "elemental planes": {
       "pages": [
         301
       ]
     },
-    "Elemental Wild Shape": {
+    "elemental wild shape": {
       "pages": [
         69
       ]
@@ -1707,7 +1707,7 @@ module.exports = {
         24
       ]
     },
-    "Elusive": {
+    "elusive": {
       "pages": [
         96
       ]
@@ -1717,22 +1717,22 @@ module.exports = {
         23
       ]
     },
-    "Elysium": {
+    "elysium": {
       "pages": [
         302
       ]
     },
-    "Empowered Evocation": {
+    "empowered evocation": {
       "pages": [
         117
       ]
     },
-    "Empowered Spell": {
+    "empowered spell": {
       "pages": [
         102
       ]
     },
-    "Empty Body": {
+    "empty body": {
       "pages": [
         79
       ]
@@ -1743,7 +1743,7 @@ module.exports = {
         203
       ]
     },
-    "Enchantment Savant": {
+    "enchantment savant": {
       "pages": [
         117
       ]
@@ -1768,7 +1768,7 @@ module.exports = {
         "130-131"
       ]
     },
-    "Entropic Ward": {
+    "entropic ward": {
       "pages": [
         110
       ]
@@ -1790,7 +1790,7 @@ module.exports = {
         151
       ]
     },
-    "Escape the Horde": {
+    "escape the horde": {
       "pages": [
         93
       ]
@@ -1800,12 +1800,12 @@ module.exports = {
         195
       ]
     },
-    "Eternal Mountain Defense": {
+    "eternal mountain defense": {
       "pages": [
         81
       ]
     },
-    "Ethereal Plane": {
+    "ethereal plane": {
       "pages": [
         301
       ]
@@ -1817,7 +1817,7 @@ module.exports = {
         96
       ]
     },
-    "Evasive Footwork maneuver": {
+    "evasive footwork maneuver": {
       "pages": [
         74
       ]
@@ -1828,7 +1828,7 @@ module.exports = {
         203
       ]
     },
-    "Evocation Savant": {
+    "evocation savant": {
       "pages": [
         117
       ]
@@ -1838,7 +1838,7 @@ module.exports = {
         117
       ]
     },
-    "Exceptional Training": {
+    "exceptional training": {
       "pages": [
         93
       ]
@@ -1871,7 +1871,7 @@ module.exports = {
         15
       ]
     },
-    "Expert Divination": {
+    "expert divination": {
       "pages": [
         116
       ]
@@ -1887,7 +1887,7 @@ module.exports = {
         8
       ]
     },
-    "Extended Spell": {
+    "extended spell": {
       "pages": [
         102
       ]
@@ -1902,12 +1902,12 @@ module.exports = {
         92
       ]
     },
-    "Eyes of the Rune Keeper": {
+    "eyes of the rune keeper": {
       "pages": [
         111
       ]
     },
-    "Faerie": {
+    "faerie": {
       "pages": [
         300
       ]
@@ -1917,7 +1917,7 @@ module.exports = {
         183
       ]
     },
-    "False Identity": {
+    "false identity": {
       "pages": [
         128
       ]
@@ -1927,27 +1927,27 @@ module.exports = {
         107
       ]
     },
-    "Fangs of the Fire Snake": {
+    "fangs of the fire snake": {
       "pages": [
         81
       ]
     },
-    "Far Realm": {
+    "far realm": {
       "pages": [
         302
       ]
     },
-    "Fast Hands": {
+    "fast hands": {
       "pages": [
         97
       ]
     },
-    "Fast Movement": {
+    "fast movement": {
       "pages": [
         49
       ]
     },
-    "Favored Enemy": {
+    "favored enemy": {
       "pages": [
         91
       ]
@@ -1957,17 +1957,17 @@ module.exports = {
         "165-170"
       ]
     },
-    "Feinting Attack maneuver": {
+    "feinting attack maneuver": {
       "pages": [
         74
       ]
     },
-    "Feral Instinct": {
+    "feral instinct": {
       "pages": [
         49
       ]
     },
-    "Feral Senses": {
+    "feral senses": {
       "pages": [
         92
       ]
@@ -1978,27 +1978,27 @@ module.exports = {
         39
       ]
     },
-    "Fey Presence": {
+    "fey presence": {
       "pages": [
         108
       ]
     },
-    "Feywild, the": {
+    "feywild, the": {
       "pages": [
         300
       ]
     },
-    "Fiendish Resilience": {
+    "fiendish resilience": {
       "pages": [
         10
       ]
     },
-    "Fiendish Vigor": {
+    "fiendish vigor": {
       "pages": [
         111
       ]
     },
-    "Fiend, the": {
+    "fiend, the": {
       "pages": [
         109
       ]
@@ -2043,17 +2043,17 @@ module.exports = {
         196
       ]
     },
-    "Fist of Four Thunders": {
+    "fist of four thunders": {
       "pages": [
         81
       ]
     },
-    "Fist of Unbroken Air": {
+    "fist of unbroken air": {
       "pages": [
         81
       ]
     },
-    "Flames of the phoenix": {
+    "flames of the phoenix": {
       "pages": [
         81
       ]
@@ -2063,17 +2063,17 @@ module.exports = {
         124
       ]
     },
-    "Fleet of Foot": {
+    "fleet of foot": {
       "pages": [
         24
       ]
     },
-    "Flexible Casting": {
+    "flexible casting": {
       "pages": [
         101
       ]
     },
-    "Flurry of Blows": {
+    "flurry of blows": {
       "pages": [
         78
       ]
@@ -2083,12 +2083,12 @@ module.exports = {
         191
       ]
     },
-    "Focused Conjuration": {
+    "focused conjuration": {
       "pages": [
         116
       ]
     },
-    "Foe Slayer": {
+    "foe slayer": {
       "pages": [
         92
       ]
@@ -2098,12 +2098,12 @@ module.exports = {
         "131-132"
       ]
     },
-    "Font of Inspiration": {
+    "font of inspiration": {
       "pages": [
         54
       ]
     },
-    "Font of Magic": {
+    "font of magic": {
       "pages": [
         101
       ]
@@ -2134,7 +2134,7 @@ module.exports = {
         37
       ]
     },
-    "Frenzy": {
+    "frenzy": {
       "pages": [
         49
       ]
@@ -2154,17 +2154,17 @@ module.exports = {
         15
       ]
     },
-    "Gargantuan": {
+    "gargantuan": {
       "pages": [
         191
       ]
     },
-    "Gaze of Two Minds": {
+    "gaze of two minds": {
       "pages": [
         111
       ]
     },
-    "Gehenna": {
+    "gehenna": {
       "pages": [
         302
       ]
@@ -2179,12 +2179,12 @@ module.exports = {
         146
       ]
     },
-    "Giant": {
+    "giant": {
       "pages": [
         123
       ]
     },
-    "Giant Killer": {
+    "giant killer": {
       "pages": [
         93
       ]
@@ -2199,7 +2199,7 @@ module.exports = {
         "35-37"
       ]
     },
-    "Gnome Cunning": {
+    "gnome cunning": {
       "pages": [
         37
       ]
@@ -2214,13 +2214,13 @@ module.exports = {
         "36-37"
       ]
     },
-    "Gnomish": {
+    "gnomish": {
       "pages": [
         37,
         123
       ]
     },
-    "Goading Attack maneuver": {
+    "goading attack maneuver": {
       "pages": [
         74
       ]
@@ -2235,7 +2235,7 @@ module.exports = {
         14
       ]
     },
-    "Gong of the Summit": {
+    "gong of the summit": {
       "pages": [
         81
       ]
@@ -2255,23 +2255,23 @@ module.exports = {
         20
       ]
     },
-    "Greater Portent": {
+    "greater portent": {
       "pages": [
         117
       ]
     },
-    "Great Old One, the": {
+    "great old one, the": {
       "pages": [
         "109-110"
       ]
     },
-    "Great Weapon Fighting": {
+    "great weapon fighting": {
       "pages": [
         72,
         84
       ]
     },
-    "Great Wheel, the": {
+    "great wheel, the": {
       "pages": [
         302
       ]
@@ -2281,7 +2281,7 @@ module.exports = {
         192
       ]
     },
-    "Grim Harvest": {
+    "grim harvest": {
       "pages": [
         118
       ]
@@ -2291,7 +2291,7 @@ module.exports = {
         175
       ]
     },
-    "Guided Strike": {
+    "guided strike": {
       "pages": [
         63
       ]
@@ -2301,7 +2301,7 @@ module.exports = {
         "132-133"
       ]
     },
-    "Guild Membership": {
+    "guild membership": {
       "pages": [
         133
       ]
@@ -2311,7 +2311,7 @@ module.exports = {
         133
       ]
     },
-    "Hades": {
+    "hades": {
       "pages": [
         302
       ]
@@ -2341,7 +2341,7 @@ module.exports = {
         "26-28"
       ]
     },
-    "Hallfing": {
+    "hallfing": {
       "pages": [
         28,
         123
@@ -2417,12 +2417,12 @@ module.exports = {
         121
       ]
     },
-    "Heightened Spell": {
+    "heightened spell": {
       "pages": [
         102
       ]
     },
-    "Hellish Resistance": {
+    "hellish resistance": {
       "pages": [
         43
       ]
@@ -2448,7 +2448,7 @@ module.exports = {
         192
       ]
     },
-    "Hide in Plain Sight": {
+    "hide in plain sight": {
       "pages": [
         92
       ]
@@ -2473,7 +2473,7 @@ module.exports = {
         159
       ]
     },
-    "History": {
+    "history": {
       "pages": [
         "177-178"
       ]
@@ -2504,7 +2504,7 @@ module.exports = {
         183
       ]
     },
-    "Holy Nimbus": {
+    "holy nimbus": {
       "pages": [
         86
       ]
@@ -2517,7 +2517,7 @@ module.exports = {
         85
       ]
     },
-    "Horde Breaker": {
+    "horde breaker": {
       "pages": [
         93
       ]
@@ -2532,7 +2532,7 @@ module.exports = {
         6
       ]
     },
-    "Huge": {
+    "huge": {
       "pages": [
         191
       ]
@@ -2558,17 +2558,17 @@ module.exports = {
         31
       ]
     },
-    "Hunter": {
+    "hunter": {
       "pages": [
         93
       ]
     },
-    "Hunter's Prey": {
+    "hunter's prey": {
       "pages": [
         93
       ]
     },
-    "Hurl Through Hell": {
+    "hurl through hell": {
       "pages": [
         109
       ]
@@ -2578,7 +2578,7 @@ module.exports = {
         192
       ]
     },
-    "Hypnotic Gaze": {
+    "hypnotic gaze": {
       "pages": [
         117
       ]
@@ -2588,7 +2588,7 @@ module.exports = {
         124
       ]
     },
-    "Ignan": {
+    "ignan": {
       "pages": [
         123
       ]
@@ -2604,22 +2604,22 @@ module.exports = {
         118
       ]
     },
-    "Illusion Savant": {
+    "illusion savant": {
       "pages": [
         118
       ]
     },
-    "Illuskan": {
+    "illuskan": {
       "pages": [
         31
       ]
     },
-    "Illusory Reality": {
+    "illusory reality": {
       "pages": [
         118
       ]
     },
-    "Illusory Self": {
+    "illusory self": {
       "pages": [
         118
       ]
@@ -2629,47 +2629,47 @@ module.exports = {
         306
       ]
     },
-    "Impostor": {
+    "impostor": {
       "pages": [
         97
       ]
     },
-    "Improved Abjuration": {
+    "improved abjuration": {
       "pages": [
         115
       ]
     },
-    "Improved Combat Superiority": {
+    "improved combat superiority": {
       "pages": [
         74
       ]
     },
-    "Improved Critical": {
+    "improved critical": {
       "pages": [
         72
       ]
     },
-    "Improved Divine Smite": {
+    "improved divine smite": {
       "pages": [
         85
       ]
     },
-    "Improved Duplicity": {
+    "improved duplicity": {
       "pages": [
         63
       ]
     },
-    "Improved Flare": {
+    "improved flare": {
       "pages": [
         61
       ]
     },
-    "Improved Minor Illusion": {
+    "improved minor illusion": {
       "pages": [
         118
       ]
     },
-    "Improved War Magic": {
+    "improved war magic": {
       "pages": [
         75
       ]
@@ -2684,27 +2684,27 @@ module.exports = {
         290
       ]
     },
-    "Indomitable": {
+    "indomitable": {
       "pages": [
         72
       ]
     },
-    "Indomitable Might": {
+    "indomitable might": {
       "pages": [
         49
       ]
     },
-    "Infernal": {
+    "infernal": {
       "pages": [
         123
       ]
     },
-    "Infernal Legacy": {
+    "infernal legacy": {
       "pages": [
         43
       ]
     },
-    "Infiltration Expertise": {
+    "infiltration expertise": {
       "pages": [
         97
       ]
@@ -2715,12 +2715,12 @@ module.exports = {
         189
       ]
     },
-    "Inner Planes": {
+    "inner planes": {
       "pages": [
         301
       ]
     },
-    "Insight": {
+    "insight": {
       "pages": [
         178
       ]
@@ -2735,7 +2735,7 @@ module.exports = {
         203
       ]
     },
-    "Instinctive Charm": {
+    "instinctive charm": {
       "pages": [
         117
       ]
@@ -2746,22 +2746,22 @@ module.exports = {
         "177-178"
       ]
     },
-    "Intimidating Presence": {
+    "intimidating presence": {
       "pages": [
         "49-50"
       ]
     },
-    "Intimidation": {
+    "intimidation": {
       "pages": [
         179
       ]
     },
-    "Inured to Undeath": {
+    "inured to undeath": {
       "pages": [
         119
       ]
     },
-    "Investigation": {
+    "investigation": {
       "pages": [
         178
       ]
@@ -2771,12 +2771,12 @@ module.exports = {
         291
       ]
     },
-    "Invoke Duplicity": {
+    "invoke duplicity": {
       "pages": [
         63
       ]
     },
-    "Jack of All Trades": {
+    "jack of all trades": {
       "pages": [
         54
       ]
@@ -2787,17 +2787,17 @@ module.exports = {
         190
       ]
     },
-    "Keen Senses": {
+    "keen senses": {
       "pages": [
         23
       ]
     },
-    "Ki": {
+    "ki": {
       "pages": [
         78
       ]
     },
-    "Ki-Empowered Strikes": {
+    "ki-empowered strikes": {
       "pages": [
         79
       ]
@@ -2817,17 +2817,17 @@ module.exports = {
         198
       ]
     },
-    "Know Your Enemy": {
+    "know your enemy": {
       "pages": [
         "73-74"
       ]
     },
-    "Knowledge domain": {
+    "knowledge domain": {
       "pages": [
         "59-60"
       ]
     },
-    "Knowledge of the Ages": {
+    "knowledge of the ages": {
       "pages": [
         59
       ]
@@ -2845,7 +2845,7 @@ module.exports = {
         125
       ]
     },
-    "Large": {
+    "large": {
       "pages": [
         191
       ]
@@ -2865,13 +2865,13 @@ module.exports = {
         122
       ]
     },
-    "Lay on Hands": {
+    "lay on hands": {
       "pages": [
         84
       ]
     },
     "learning spells": {
-      "pages": "See specific class Spellcasting entries: bard (52); cleric (58); druid (66); fighter, Eldritch Knight (75); ranger (91); rogue, Arcane Trickster (98); sorcerer (101); warlock (107); wizard (114)"
+      "pages": "see specific class spellcasting entries: bard (52); cleric (58); druid (66); fighter, eldritch knight (75); ranger (91); rogue, arcane trickster (98); sorcerer (101); warlock (107); wizard (114)"
     },
     "lethal damage": {
       "pages": [
@@ -2884,12 +2884,12 @@ module.exports = {
         15
       ]
     },
-    "Life domain": {
+    "life domain": {
       "pages": [
         60
       ]
     },
-    "Lifedrinker": {
+    "lifedrinker": {
       "pages": [
         111
       ]
@@ -2934,7 +2934,7 @@ module.exports = {
         196
       ]
     },
-    "Limbo": {
+    "limbo": {
       "pages": [
         302
       ]
@@ -2985,7 +2985,7 @@ module.exports = {
         186
       ]
     },
-    "Lower Planes": {
+    "lower planes": {
       "pages": [
         302
       ]
@@ -2996,27 +2996,27 @@ module.exports = {
         185
       ]
     },
-    "Lucky": {
+    "lucky": {
       "pages": [
         28
       ]
     },
-    "Lunging Attack maneuver": {
+    "lunging attack maneuver": {
       "pages": [
         74
       ]
     },
-    "Mage Hand Legerdemain": {
+    "mage hand legerdemain": {
       "pages": [
         98
       ]
     },
-    "Magical Ambush": {
+    "magical ambush": {
       "pages": [
         98
       ]
     },
-    "Magical Secrets": {
+    "magical secrets": {
       "pages": [
         54
       ]
@@ -3038,7 +3038,7 @@ module.exports = {
         "112-119"
       ]
     },
-    "Malleable Illusions": {
+    "malleable illusions": {
       "pages": [
         118
       ]
@@ -3048,7 +3048,7 @@ module.exports = {
         73
       ]
     },
-    "Maneuvering Attack maneuver": {
+    "maneuvering attack maneuver": {
       "pages": [
         74
       ]
@@ -3069,7 +3069,7 @@ module.exports = {
         182
       ]
     },
-    "Martial Archetype": {
+    "martial archetype": {
       "pages": [
         72
       ]
@@ -3079,7 +3079,7 @@ module.exports = {
         "72-75"
       ]
     },
-    "Martial Arts": {
+    "martial arts": {
       "pages": [
         78
       ]
@@ -3089,27 +3089,27 @@ module.exports = {
         146
       ]
     },
-    "Mask of Many Faces": {
+    "mask of many faces": {
       "pages": [
         111
       ]
     },
-    "Mask of the Wild": {
+    "mask of the wild": {
       "pages": [
         24
       ]
     },
-    "Master of Myriad Forms": {
+    "master of myriad forms": {
       "pages": [
         111
       ]
     },
-    "Master of Nature": {
+    "master of nature": {
       "pages": [
         62
       ]
     },
-    "Master Transmuter": {
+    "master transmuter": {
       "pages": [
         119
       ]
@@ -3124,22 +3124,22 @@ module.exports = {
         203
       ]
     },
-    "Material Plane": {
+    "material plane": {
       "pages": [
         300
       ]
     },
-    "Mechanus": {
+    "mechanus": {
       "pages": [
         302
       ]
     },
-    "Medicine": {
+    "medicine": {
       "pages": [
         178
       ]
     },
-    "Medium": {
+    "medium": {
       "pages": [
         191
       ]
@@ -3162,62 +3162,62 @@ module.exports = {
         195
       ]
     },
-    "Menacing": {
+    "menacing": {
       "pages": [
         41
       ]
     },
-    "Menacing Attack maneuver": {
+    "menacing attack maneuver": {
       "pages": [
         74
       ]
     },
-    "Metamagic": {
+    "metamagic": {
       "pages": [
         "101-102"
       ]
     },
-    "Military Rank": {
+    "military rank": {
       "pages": [
         140
       ]
     },
-    "Mindless Rage": {
+    "mindless rage": {
       "pages": [
         49
       ]
     },
-    "Minions of Chaos": {
+    "minions of chaos": {
       "pages": [
         111
       ]
     },
-    "Minor Alchemy": {
+    "minor alchemy": {
       "pages": [
         119
       ]
     },
-    "Minor Conjuration": {
+    "minor conjuration": {
       "pages": [
         116
       ]
     },
-    "Mire the Mind": {
+    "mire the mind": {
       "pages": [
         111
       ]
     },
-    "Mist Stance": {
+    "mist stance": {
       "pages": [
         81
       ]
     },
-    "Misty Escape": {
+    "misty escape": {
       "pages": [
         109
       ]
     },
-    "Misty Visions": {
+    "misty visions": {
       "pages": [
         111
       ]
@@ -3232,7 +3232,7 @@ module.exports = {
         81
       ]
     },
-    "Monastic Tradition": {
+    "monastic tradition": {
       "pages": [
         78
       ]
@@ -3269,7 +3269,7 @@ module.exports = {
         20
       ]
     },
-    "Mount Celestia": {
+    "mount celestia": {
       "pages": [
         302
       ]
@@ -3302,7 +3302,7 @@ module.exports = {
         195
       ]
     },
-    "Mulan": {
+    "mulan": {
       "pages": [
         31
       ]
@@ -3312,12 +3312,12 @@ module.exports = {
         307
       ]
     },
-    "Multiattack": {
+    "multiattack": {
       "pages": [
         93
       ]
     },
-    "Multiattack Defense": {
+    "multiattack defense": {
       "pages": [
         93
       ]
@@ -3334,7 +3334,7 @@ module.exports = {
         300
       ]
     },
-    "Mystic Arcanum": {
+    "mystic arcanum": {
       "pages": [
         108
       ]
@@ -3344,47 +3344,47 @@ module.exports = {
         121
       ]
     },
-    "Natural Explorer": {
+    "natural explorer": {
       "pages": [
         91
       ]
     },
-    "Natural Illusionist": {
+    "natural illusionist": {
       "pages": [
         37
       ]
     },
-    "Naturally Stealthy": {
+    "naturally stealthy": {
       "pages": [
         28
       ]
     },
-    "Natural Recovery": {
+    "natural recovery": {
       "pages": [
         68
       ]
     },
-    "Nature": {
+    "nature": {
       "pages": [
         178
       ]
     },
-    "Nature domain": {
+    "nature domain": {
       "pages": [
         "61-62"
       ]
     },
-    "Nature's Sanctuary": {
+    "nature's sanctuary": {
       "pages": [
         69
       ]
     },
-    "Nature's Ward": {
+    "nature's ward": {
       "pages": [
         69
       ]
     },
-    "Nature's Wrath": {
+    "nature's wrath": {
       "pages": [
         87
       ]
@@ -3405,7 +3405,7 @@ module.exports = {
         203
       ]
     },
-    "Necromancy Savant": {
+    "necromancy savant": {
       "pages": [
         118
       ]
@@ -3415,7 +3415,7 @@ module.exports = {
         196
       ]
     },
-    "Negative Plane": {
+    "negative plane": {
       "pages": [
         300
       ]
@@ -3435,7 +3435,7 @@ module.exports = {
         122
       ]
     },
-    "Nine Hells, the": {
+    "nine hells, the": {
       "pages": [
         302
       ]
@@ -3464,7 +3464,7 @@ module.exports = {
         196
       ]
     },
-    "NPC": {
+    "npc": {
       "pages": [
         8,
         159,
@@ -3473,17 +3473,17 @@ module.exports = {
         198
       ]
     },
-    "Oath of Devotion": {
+    "oath of devotion": {
       "pages": [
         "85-86"
       ]
     },
-    "Oath of the Ancients": {
+    "oath of the ancients": {
       "pages": [
         "86-87"
       ]
     },
-    "Oath of Vengeance": {
+    "oath of vengeance": {
       "pages": [
         "87-88"
       ]
@@ -3498,12 +3498,12 @@ module.exports = {
         185
       ]
     },
-    "One with Shadows": {
+    "one with shadows": {
       "pages": [
         111
       ]
     },
-    "Open Hand Technique": {
+    "open hand technique": {
       "pages": [
         79
       ]
@@ -3513,7 +3513,7 @@ module.exports = {
         154
       ]
     },
-    "Opportunist": {
+    "opportunist": {
       "pages": [
         80
       ]
@@ -3533,12 +3533,12 @@ module.exports = {
         201
       ]
     },
-    "Otherworldly Leap": {
+    "otherworldly leap": {
       "pages": [
         111
       ]
     },
-    "Otherworldly Patron": {
+    "otherworldly patron": {
       "pages": [
         107
       ]
@@ -3548,7 +3548,7 @@ module.exports = {
         "108-110"
       ]
     },
-    "Outer Planes": {
+    "outer planes": {
       "pages": [
         300,
         301
@@ -3559,12 +3559,12 @@ module.exports = {
         "136-137"
       ]
     },
-    "Outlands, the": {
+    "outlands, the": {
       "pages": [
         302
       ]
     },
-    "Overchannel": {
+    "overchannel": {
       "pages": [
         118
       ]
@@ -3574,12 +3574,12 @@ module.exports = {
         308
       ]
     },
-    "Pact Boon": {
+    "pact boon": {
       "pages": [
         "107-108"
       ]
     },
-    "Pact Magic": {
+    "pact magic": {
       "pages": [
         107
       ]
@@ -3595,7 +3595,7 @@ module.exports = {
         "82-88"
       ]
     },
-    "Pandemonium": {
+    "pandemonium": {
       "pages": [
         302
       ]
@@ -3610,7 +3610,7 @@ module.exports = {
         291
       ]
     },
-    "Parry maneuver": {
+    "parry maneuver": {
       "pages": [
         74
       ]
@@ -3625,22 +3625,22 @@ module.exports = {
         175
       ]
     },
-    "Path of the Berserker": {
+    "path of the berserker": {
       "pages": [
         "49-50"
       ]
     },
-    "Path of the Totem Warrior": {
+    "path of the totem warrior": {
       "pages": [
         50
       ]
     },
-    "Patient Defense": {
+    "patient defense": {
       "pages": [
         78
       ]
     },
-    "Peerless Skill": {
+    "peerless skill": {
       "pages": [
         55
       ]
@@ -3655,22 +3655,22 @@ module.exports = {
         6
       ]
     },
-    "Perception": {
+    "perception": {
       "pages": [
         178
       ]
     },
-    "Perfect Self": {
+    "perfect self": {
       "pages": [
         79
       ]
     },
-    "Performance": {
+    "performance": {
       "pages": [
         179
       ]
     },
-    "Persistent Rage": {
+    "persistent rage": {
       "pages": [
         49
       ]
@@ -3680,7 +3680,7 @@ module.exports = {
         "122-124"
       ]
     },
-    "Persuasion": {
+    "persuasion": {
       "pages": [
         179
       ]
@@ -3715,32 +3715,32 @@ module.exports = {
         301
       ]
     },
-    "Plane of Air": {
+    "plane of air": {
       "pages": [
         301
       ]
     },
-    "Plane of Earth": {
+    "plane of earth": {
       "pages": [
         301
       ]
     },
-    "Plane of Faerie": {
+    "plane of faerie": {
       "pages": [
         301
       ]
     },
-    "plane of Fire": {
+    "plane of fire": {
       "pages": [
         301
       ]
     },
-    "Plane of Shadow": {
+    "plane of shadow": {
       "pages": [
         301
       ]
     },
-    "Plane of Water": {
+    "plane of water": {
       "pages": [
         301
       ]
@@ -3777,33 +3777,33 @@ module.exports = {
         292
       ]
     },
-    "Position of Privilege": {
+    "position of privilege": {
       "pages": [
         135
       ]
     },
-    "Positive Plane": {
+    "positive plane": {
       "pages": [
         300
       ]
     },
-    "Portent": {
+    "portent": {
       "pages": [
         116
       ]
     },
-    "Potent Cantrip": {
+    "potent cantrip": {
       "pages": [
         117
       ]
     },
-    "Potent Spellcasting": {
+    "potent spellcasting": {
       "pages": [
         60,
         61
       ]
     },
-    "Precision Attack maneuver": {
+    "precision attack maneuver": {
       "pages": [
         74
       ]
@@ -3814,20 +3814,20 @@ module.exports = {
         "(druid) 66",
         "(paladin) 84-85",
         "(wizard) 114",
-        "See Spellcasting"
+        "see spellcasting"
       ]
     },
-    "Preserve life": {
+    "preserve life": {
       "pages": [
         60
       ]
     },
-    "Primal Champion": {
+    "primal champion": {
       "pages": [
         49
       ]
     },
-    "Primal Path": {
+    "primal path": {
       "pages": [
         48
       ]
@@ -3837,17 +3837,17 @@ module.exports = {
         "49-50"
       ]
     },
-    "Primal Strike": {
+    "primal strike": {
       "pages": [
         69
       ]
     },
-    "Primeval Awareness": {
+    "primeval awareness": {
       "pages": [
         92
       ]
     },
-    "Primordial": {
+    "primordial": {
       "pages": [
         123
       ]
@@ -3872,7 +3872,7 @@ module.exports = {
         194
       ]
     },
-    "Projected Ward": {
+    "projected ward": {
       "pages": [
         115
       ]
@@ -3887,7 +3887,7 @@ module.exports = {
         "190-191"
       ]
     },
-    "Protection": {
+    "protection": {
       "pages": [
         72,
         84
@@ -3908,17 +3908,17 @@ module.exports = {
         195
       ]
     },
-    "Purity of Body": {
+    "purity of body": {
       "pages": [
         79
       ]
     },
-    "Purity of Spirit": {
+    "purity of spirit": {
       "pages": [
         86
       ]
     },
-    "Pushing Attack maneuver": {
+    "pushing attack maneuver": {
       "pages": [
         74
       ]
@@ -3933,12 +3933,12 @@ module.exports = {
         11
       ]
     },
-    "Quickened Spell": {
+    "quickened spell": {
       "pages": [
         102
       ]
     },
-    "Quivering Palm": {
+    "quivering palm": {
       "pages": [
         80
       ]
@@ -3962,7 +3962,7 @@ module.exports = {
         17
       ]
     },
-    "Radiance of the Dawn": {
+    "radiance of the dawn": {
       "pages": [
         61
       ]
@@ -3972,12 +3972,12 @@ module.exports = {
         196
       ]
     },
-    "Rage": {
+    "rage": {
       "pages": [
         48
       ]
     },
-    "Rally maneuver": {
+    "rally maneuver": {
       "pages": [
         74
       ]
@@ -4011,7 +4011,7 @@ module.exports = {
         "89-93"
       ]
     },
-    "Ranger Archetype": {
+    "ranger archetype": {
       "pages": [
         92
       ]
@@ -4021,12 +4021,12 @@ module.exports = {
         93
       ]
     },
-    "Ranger's Companion": {
+    "ranger's companion": {
       "pages": [
         93
       ]
     },
-    "Rashemi": {
+    "rashemi": {
       "pages": [
         31
       ]
@@ -4051,7 +4051,7 @@ module.exports = {
         190
       ]
     },
-    "Read Thoughts": {
+    "read thoughts": {
       "pages": [
         59
       ]
@@ -4061,7 +4061,7 @@ module.exports = {
         193
       ]
     },
-    "Reckless Attack": {
+    "reckless attack": {
       "pages": [
         48
       ]
@@ -4081,27 +4081,27 @@ module.exports = {
         144
       ]
     },
-    "Relentless": {
+    "relentless": {
       "pages": [
         78
       ]
     },
-    "Relentless Avenger": {
+    "relentless avenger": {
       "pages": [
         88
       ]
     },
-    "Relentless Endurance": {
+    "relentless endurance": {
       "pages": [
         41
       ]
     },
-    "Relentless Rage": {
+    "relentless rage": {
       "pages": [
         49
       ]
     },
-    "Reliable Talent": {
+    "reliable talent": {
       "pages": [
         96
       ]
@@ -4111,7 +4111,7 @@ module.exports = {
         293
       ]
     },
-    "Religion": {
+    "religion": {
       "pages": [
         178
       ]
@@ -4121,12 +4121,12 @@ module.exports = {
         146
       ]
     },
-    "Remarkable Athlete": {
+    "remarkable athlete": {
       "pages": [
         72
       ]
     },
-    "Repelling Blast": {
+    "repelling blast": {
       "pages": [
         111
       ]
@@ -4136,7 +4136,7 @@ module.exports = {
         187
       ]
     },
-    "Researcher": {
+    "researcher": {
       "pages": [
         138
       ]
@@ -4161,30 +4161,30 @@ module.exports = {
         7
       ]
     },
-    "Retainers": {
+    "retainers": {
       "pages": [
         136
       ]
     },
-    "Retaliation": {
+    "retaliation": {
       "pages": [
         50
       ]
     },
-    "Ride the Wind": {
+    "ride the wind": {
       "pages": [
         81
       ]
     },
-    "Riposte maneuver": {
+    "riposte maneuver": {
       "pages": [
         74
       ]
     },
-    "Ritual Casting": {
+    "ritual casting": {
       "pages": [
         169,
-        "See Spellcasting: bard (52-53); cleric (58); druid (66); wizard"
+        "see spellcasting: bard (52-53); cleric (58); druid (66); wizard"
       ]
     },
     "rituals": {
@@ -4192,7 +4192,7 @@ module.exports = {
         "201-202"
       ]
     },
-    "River of Hungry Flame": {
+    "river of hungry flame": {
       "pages": [
         81
       ]
@@ -4208,7 +4208,7 @@ module.exports = {
         "94-98"
       ]
     },
-    "Roguish Archetype": {
+    "roguish archetype": {
       "pages": [
         96
       ]
@@ -4255,17 +4255,17 @@ module.exports = {
         192
       ]
     },
-    "Rush of the Gale Spirits": {
+    "rush of the gale spirits": {
       "pages": [
         81
       ]
     },
-    "Rustic Hospitality": {
+    "rustic hospitality": {
       "pages": [
         131
       ]
     },
-    "Sacred Oath": {
+    "sacred oath": {
       "pages": [
         85
       ]
@@ -4280,7 +4280,7 @@ module.exports = {
         66
       ]
     },
-    "Sacred Weapon": {
+    "sacred weapon": {
       "pages": [
         86
       ]
@@ -4295,7 +4295,7 @@ module.exports = {
         139
       ]
     },
-    "Savage Attacks": {
+    "savage attacks": {
       "pages": [
         41
       ]
@@ -4315,42 +4315,42 @@ module.exports = {
         205
       ]
     },
-    "School of Abjuration": {
+    "school of abjuration": {
       "pages": [
         "115-116"
       ]
     },
-    "School of Conjuration": {
+    "school of conjuration": {
       "pages": [
         116
       ]
     },
-    "School of Divination": {
+    "school of divination": {
       "pages": [
         "116-117"
       ]
     },
-    "School of Enchantment": {
+    "school of enchantment": {
       "pages": [
         117
       ]
     },
-    "School of Evocation": {
+    "school of evocation": {
       "pages": [
         "117-118"
       ]
     },
-    "School of Illusion": {
+    "school of illusion": {
       "pages": [
         118
       ]
     },
-    "School of Necromancy": {
+    "school of necromancy": {
       "pages": [
         "118-119"
       ]
     },
-    "School of Transmutation": {
+    "school of transmutation": {
       "pages": [
         119
       ]
@@ -4360,22 +4360,22 @@ module.exports = {
         "115-119"
       ]
     },
-    "Sculptor of Flesh": {
+    "sculptor of flesh": {
       "pages": [
         111
       ]
     },
-    "Sculpt Spells": {
+    "sculpt spells": {
       "pages": [
         117
       ]
     },
-    "Second-Story Work": {
+    "second-story work": {
       "pages": [
         97
       ]
     },
-    "Second Wind": {
+    "second wind": {
       "pages": [
         72
       ]
@@ -4406,32 +4406,32 @@ module.exports = {
         121
       ]
     },
-    "Shadow Arts": {
+    "shadow arts": {
       "pages": [
         80
       ]
     },
-    "Shadowfell, the": {
+    "shadowfell, the": {
       "pages": [
         300
       ]
     },
-    "Shadow Step": {
+    "shadow step": {
       "pages": [
         80
       ]
     },
-    "Shapechanger": {
+    "shapechanger": {
       "pages": [
         119
       ]
     },
-    "Shape the Flowing River": {
+    "shape the flowing river": {
       "pages": [
         81
       ]
     },
-    "Share Spells": {
+    "share spells": {
       "pages": [
         93
       ]
@@ -4441,7 +4441,7 @@ module.exports = {
         309
       ]
     },
-    "Shelter of the Faithful": {
+    "shelter of the faithful": {
       "pages": [
         127
       ]
@@ -4456,7 +4456,7 @@ module.exports = {
         20
       ]
     },
-    "Ship's Passage": {
+    "ship's passage": {
       "pages": [
         139
       ]
@@ -4466,7 +4466,7 @@ module.exports = {
         186
       ]
     },
-    "Shou": {
+    "shou": {
       "pages": [
         31
       ]
@@ -4476,17 +4476,17 @@ module.exports = {
         195
       ]
     },
-    "Sigil": {
+    "sigil": {
       "pages": [
         302
       ]
     },
-    "Signature Spells": {
+    "signature spells": {
       "pages": [
         115
       ]
     },
-    "Sign of Ill Omen": {
+    "sign of ill omen": {
       "pages": [
         111
       ]
@@ -4527,7 +4527,7 @@ module.exports = {
         "174-175"
       ]
     },
-    "Skill Versatility": {
+    "skill versatility": {
       "pages": [
         39
       ]
@@ -4542,22 +4542,22 @@ module.exports = {
         196
       ]
     },
-    "Sleight of Hand": {
+    "sleight of hand": {
       "pages": [
         177
       ]
     },
-    "Slippery Mind": {
+    "slippery mind": {
       "pages": [
         96
       ]
     },
-    "Slow Fall": {
+    "slow fall": {
       "pages": [
         78
       ]
     },
-    "Small": {
+    "small": {
       "pages": [
         191
       ]
@@ -4572,7 +4572,7 @@ module.exports = {
         308
       ]
     },
-    "Sneak Attack": {
+    "sneak attack": {
       "pages": [
         96
       ]
@@ -4593,7 +4593,7 @@ module.exports = {
         203
       ]
     },
-    "Song of Rest": {
+    "song of rest": {
       "pages": [
         54
       ]
@@ -4619,12 +4619,12 @@ module.exports = {
         102
       ]
     },
-    "Sorcery Pointer": {
+    "sorcery pointer": {
       "pages": [
         101
       ]
     },
-    "Soul of Vengeance": {
+    "soul of vengeance": {
       "pages": [
         88
       ]
@@ -4634,7 +4634,7 @@ module.exports = {
         "191-192"
       ]
     },
-    "Speak with Small Beasts": {
+    "speak with small beasts": {
       "pages": [
         37
       ]
@@ -4657,19 +4657,19 @@ module.exports = {
       ]
     },
     "spell attack modifier": {
-      "pages": "See Spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
+      "pages": "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
     },
     "spell attack roll": {
       "pages": [
         205
       ]
     },
-    "Spell Bombardment": {
+    "spell bombardment": {
       "pages": [
         103
       ]
     },
-    "Spellbook": {
+    "spellbook": {
       "pages": [
         114
       ]
@@ -4702,7 +4702,7 @@ module.exports = {
       ]
     },
     "spellcasting focus": {
-      "pages": "See Spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
+      "pages": "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
     },
     "spell components": {
       "pages": [
@@ -4724,7 +4724,7 @@ module.exports = {
         "207-211"
       ]
     },
-    "Spell Mastery": {
+    "spell mastery": {
       "pages": [
         115
       ]
@@ -4732,10 +4732,10 @@ module.exports = {
     "spell preparation": {
       "pages": [
         165,
-        "See Spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
+        "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
       ]
     },
-    "Spell Resistance": {
+    "spell resistance": {
       "pages": [
         116
       ]
@@ -4760,7 +4760,7 @@ module.exports = {
         201
       ]
     },
-    "Spell Thief": {
+    "spell thief": {
       "pages": [
         98
       ]
@@ -4775,17 +4775,17 @@ module.exports = {
         306
       ]
     },
-    "Spirit Seeker": {
+    "spirit seeker": {
       "pages": [
         50
       ]
     },
-    "Spirit Walker": {
+    "spirit walker": {
       "pages": [
         50
       ]
     },
-    "Split Enchantment": {
+    "split enchantment": {
       "pages": [
         118
       ]
@@ -4830,7 +4830,7 @@ module.exports = {
         123
       ]
     },
-    "Stand Against the Tide": {
+    "stand against the tide": {
       "pages": [
         93
       ]
@@ -4845,37 +4845,37 @@ module.exports = {
         185
       ]
     },
-    "Stealth": {
+    "stealth": {
       "pages": [
         177
       ]
     },
-    "Steel Will": {
+    "steel will": {
       "pages": [
         93
       ]
     },
-    "Step of the Wind": {
+    "step of the wind": {
       "pages": [
         78
       ]
     },
-    "Stillness of Mind": {
+    "stillness of mind": {
       "pages": [
         79
       ]
     },
-    "Stonecunning": {
+    "stonecunning": {
       "pages": [
         20
       ]
     },
-    "Stormborn": {
+    "stormborn": {
       "pages": [
         62
       ]
     },
-    "Stout Resilience": {
+    "stout resilience": {
       "pages": [
         28
       ]
@@ -4886,7 +4886,7 @@ module.exports = {
         "175-176"
       ]
     },
-    "Stroke of luck": {
+    "stroke of luck": {
       "pages": [
         96
       ]
@@ -4896,7 +4896,7 @@ module.exports = {
         28
       ]
     },
-    "Student of War": {
+    "student of war": {
       "pages": [
         73
       ]
@@ -4906,7 +4906,7 @@ module.exports = {
         292
       ]
     },
-    "Stunning Strike": {
+    "stunning strike": {
       "pages": [
         79
       ]
@@ -4916,7 +4916,7 @@ module.exports = {
         17
       ]
     },
-    "Subtle Spell": {
+    "subtle spell": {
       "pages": [
         102
       ]
@@ -4931,27 +4931,27 @@ module.exports = {
         23
       ]
     },
-    "Sunlight Sensitivity": {
+    "sunlight sensitivity": {
       "pages": [
         24
       ]
     },
-    "Superior Critical": {
+    "superior critical": {
       "pages": [
         73
       ]
     },
-    "Superior Darkvision": {
+    "superior darkvision": {
       "pages": [
         24
       ]
     },
-    "Superior Hunter's Defense": {
+    "superior hunter's defense": {
       "pages": [
         93
       ]
     },
-    "Superior Inspiration": {
+    "superior inspiration": {
       "pages": [
         54
       ]
@@ -4961,12 +4961,12 @@ module.exports = {
         73
       ]
     },
-    "Supreme Healing": {
+    "supreme healing": {
       "pages": [
         60
       ]
     },
-    "Supreme Sneak": {
+    "supreme sneak": {
       "pages": [
         97
       ]
@@ -4976,12 +4976,12 @@ module.exports = {
         189
       ]
     },
-    "Survival": {
+    "survival": {
       "pages": [
         178
       ]
     },
-    "Survivor": {
+    "survivor": {
       "pages": [
         73
       ]
@@ -4991,17 +4991,17 @@ module.exports = {
         36
       ]
     },
-    "Sweeping Attack maneuver": {
+    "sweeping attack maneuver": {
       "pages": [
         74
       ]
     },
-    "Sweeping Cinder Strike": {
+    "sweeping cinder strike": {
       "pages": [
         81
       ]
     },
-    "Sylvan": {
+    "sylvan": {
       "pages": [
         123
       ]
@@ -5016,7 +5016,7 @@ module.exports = {
         7
       ]
     },
-    "Tempest domain": {
+    "tempest domain": {
       "pages": [
         62
       ]
@@ -5026,32 +5026,32 @@ module.exports = {
         198
       ]
     },
-    "Tenets of Devotion": {
+    "tenets of devotion": {
       "pages": [
         86
       ]
     },
-    "Tenets of the Ancients": {
+    "tenets of the ancients": {
       "pages": [
         "86-87"
       ]
     },
-    "Tenets of Vengeance": {
+    "tenets of vengeance": {
       "pages": [
         88
       ]
     },
-    "Terran": {
+    "terran": {
       "pages": [
         123
       ]
     },
-    "Tethyrian": {
+    "tethyrian": {
       "pages": [
         31
       ]
     },
-    "THAC0": {
+    "thac0": {
       "pages": [
         7,
         14,
@@ -5060,17 +5060,17 @@ module.exports = {
         194
       ]
     },
-    "Thief": {
+    "thief": {
       "pages": [
         97
       ]
     },
-    "Thief of Five Fates": {
+    "thief of five fates": {
       "pages": [
         111
       ]
     },
-    "Thief's Reflexes": {
+    "thief's reflexes": {
       "pages": [
         97
       ]
@@ -5085,22 +5085,22 @@ module.exports = {
         154
       ]
     },
-    "Third Eye, The": {
+    "third eye, the": {
       "pages": [
         "116-117"
       ]
     },
-    "Thirsting Blade": {
+    "thirsting blade": {
       "pages": [
         111
       ]
     },
-    "Thought Shield": {
+    "thought shield": {
       "pages": [
         110
       ]
     },
-    "Thousand Forms": {
+    "thousand forms": {
       "pages": [
         69
       ]
@@ -5115,7 +5115,7 @@ module.exports = {
         147
       ]
     },
-    "Thunderbolt Strike": {
+    "thunderbolt strike": {
       "pages": [
         62
       ]
@@ -5125,7 +5125,7 @@ module.exports = {
         196
       ]
     },
-    "Tides of Chaos": {
+    "tides of chaos": {
       "pages": [
         103
       ]
@@ -5166,17 +5166,17 @@ module.exports = {
         79
       ]
     },
-    "Tinker": {
+    "tinker": {
       "pages": [
         37
       ]
     },
-    "Tiny": {
+    "tiny": {
       "pages": [
         191
       ]
     },
-    "Tongue of the Sun and Moon": {
+    "tongue of the sun and moon": {
       "pages": [
         79
       ]
@@ -5196,12 +5196,12 @@ module.exports = {
         196
       ]
     },
-    "Totemic Attunement": {
+    "totemic attunement": {
       "pages": [
         50
       ]
     },
-    "Totem Spirit": {
+    "totem spirit": {
       "pages": [
         50
       ]
@@ -5227,17 +5227,17 @@ module.exports = {
         123
       ]
     },
-    "Trance": {
+    "trance": {
       "pages": [
         23
       ]
     },
-    "Transitive Planes": {
+    "transitive planes": {
       "pages": [
         301
       ]
     },
-    "Tranquility": {
+    "tranquility": {
       "pages": [
         80
       ]
@@ -5248,7 +5248,7 @@ module.exports = {
         203
       ]
     },
-    "Transmutation Savant": {
+    "transmutation savant": {
       "pages": [
         119
       ]
@@ -5258,7 +5258,7 @@ module.exports = {
         119
       ]
     },
-    "Transmuter's Stone": {
+    "transmuter's stone": {
       "pages": [
         119
       ]
@@ -5279,7 +5279,7 @@ module.exports = {
         "181-183"
       ]
     },
-    "Trickery domain": {
+    "trickery domain": {
       "pages": [
         "62-63"
       ]
@@ -5289,7 +5289,7 @@ module.exports = {
         "160-161"
       ]
     },
-    "Trip Attack maneuver": {
+    "trip attack maneuver": {
       "pages": [
         74
       ]
@@ -5299,7 +5299,7 @@ module.exports = {
         185
       ]
     },
-    "Turami": {
+    "turami": {
       "pages": [
         31
       ]
@@ -5314,22 +5314,22 @@ module.exports = {
         "189-190"
       ]
     },
-    "Turn the Faithless": {
+    "turn the faithless": {
       "pages": [
         87
       ]
     },
-    "Turn the Unholy": {
+    "turn the unholy": {
       "pages": [
         86
       ]
     },
-    "Turn Undead": {
+    "turn undead": {
       "pages": [
         59
       ]
     },
-    "Twinned Spell": {
+    "twinned spell": {
       "pages": [
         102
       ]
@@ -5344,7 +5344,7 @@ module.exports = {
         195
       ]
     },
-    "Two-Weapon Fighting": {
+    "two-weapon fighting": {
       "pages": [
         72,
         91
@@ -5361,7 +5361,7 @@ module.exports = {
         78
       ]
     },
-    "Unarmored Movement": {
+    "unarmored movement": {
       "pages": [
         78
       ]
@@ -5372,7 +5372,7 @@ module.exports = {
         96
       ]
     },
-    "Undead Thralls": {
+    "undead thralls": {
       "pages": [
         119
       ]
@@ -5382,7 +5382,7 @@ module.exports = {
         17
       ]
     },
-    "Undying Sentinel": {
+    "undying sentinel": {
       "pages": [
         87
       ]
@@ -5398,7 +5398,7 @@ module.exports = {
         198
       ]
     },
-    "Undercommon": {
+    "undercommon": {
       "pages": [
         123
       ]
@@ -5413,7 +5413,7 @@ module.exports = {
         "194-195"
       ]
     },
-    "Upper Planes": {
+    "upper planes": {
       "pages": [
         302
       ]
@@ -5428,7 +5428,7 @@ module.exports = {
         193
       ]
     },
-    "Use Magic Device": {
+    "use magic device": {
       "pages": [
         97
       ]
@@ -5438,7 +5438,7 @@ module.exports = {
         6
       ]
     },
-    "Vanish": {
+    "vanish": {
       "pages": [
         92
       ]
@@ -5459,7 +5459,7 @@ module.exports = {
         147
       ]
     },
-    "Versatile Trickster": {
+    "versatile trickster": {
       "pages": [
         98
       ]
@@ -5469,27 +5469,27 @@ module.exports = {
         183
       ]
     },
-    "Visions of Distant Realms": {
+    "visions of distant realms": {
       "pages": [
         111
       ]
     },
-    "Visions of the Past": {
+    "visions of the past": {
       "pages": [
         60
       ]
     },
-    "Voice of the Chain Master": {
+    "voice of the chain master": {
       "pages": [
         111
       ]
     },
-    "Volley": {
+    "volley": {
       "pages": [
         93
       ]
     },
-    "Vow of Enmity": {
+    "vow of enmity": {
       "pages": [
         88
       ]
@@ -5499,22 +5499,22 @@ module.exports = {
         197
       ]
     },
-    "Wanderer": {
+    "wanderer": {
       "pages": [
         136
       ]
     },
-    "Warding Flare": {
+    "warding flare": {
       "pages": [
         61
       ]
     },
-    "War domain": {
+    "war domain": {
       "pages": [
         63
       ]
     },
-    "War God's Blessing": {
+    "war god's blessing": {
       "pages": [
         63
       ]
@@ -5524,17 +5524,17 @@ module.exports = {
         311
       ]
     },
-    "War Magic": {
+    "war magic": {
       "pages": [
         75
       ]
     },
-    "War Priest": {
+    "war priest": {
       "pages": [
         63
       ]
     },
-    "Water Whip": {
+    "water whip": {
       "pages": [
         81
       ]
@@ -5545,7 +5545,7 @@ module.exports = {
         "105-111"
       ]
     },
-    "Wave of Rolling Earth": {
+    "wave of rolling earth": {
       "pages": [
         81
       ]
@@ -5562,7 +5562,7 @@ module.exports = {
         149
       ]
     },
-    "Weapon Bond": {
+    "weapon bond": {
       "pages": [
         75
       ]
@@ -5588,17 +5588,17 @@ module.exports = {
         205
       ]
     },
-    "Whirlwind Attack": {
+    "whirlwind attack": {
       "pages": [
         93
       ]
     },
-    "Whispers of the Grave": {
+    "whispers of the grave": {
       "pages": [
         111
       ]
     },
-    "Wholeness of Body": {
+    "wholeness of body": {
       "pages": [
         "79-80"
       ]
@@ -5608,17 +5608,17 @@ module.exports = {
         24
       ]
     },
-    "Wild Magic": {
+    "wild magic": {
       "pages": [
         103
       ]
     },
-    "Wild Magic Surge": {
+    "wild magic surge": {
       "pages": [
         103
       ]
     },
-    "Wild Shape": {
+    "wild shape": {
       "pages": [
         "66-67"
       ]
@@ -5629,7 +5629,7 @@ module.exports = {
         178
       ]
     },
-    "Witch Sight": {
+    "witch sight": {
       "pages": [
         111
       ]
@@ -5661,17 +5661,17 @@ module.exports = {
         8
       ]
     },
-    "Wraith of the Storm": {
+    "wraith of the storm": {
       "pages": [
         62
       ]
     },
-    "XP": {
+    "xp": {
       "pages": [
         15
       ]
     },
-    "Ysgard": {
+    "ysgard": {
       "pages": [
         302
       ]

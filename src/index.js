@@ -22,7 +22,7 @@ var handlers = {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
         this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (lang.WELCOME_MESSAGE);
+        this.attributes['speechOutput'] = (langEN.WELCOME_MESSAGE);
         this.attributes['repromptSpeech'] = langEN.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
@@ -269,7 +269,6 @@ var handlers = {
         if(itemSlot && itemSlot.value){
             itemName = itemSlot.value.toLowerCase();
         }
-
         if(itemAttributeSlot && itemAttributeSlot.value){
             itemAttributeName = itemAttributeSlot.value.toLowerCase();
         }
@@ -284,42 +283,24 @@ var handlers = {
             if(!item[itemAttribute]){
                 this.attributes['speechOutput'] = langEN.ATTRIBUTE_DOES_NOT_EXSIST;
                 this.attributes['repromptSpeech'] = langEN.REPROMPT;
-            }
-            else{
+            }else{
                 this.attributes['speechOutput'] = item[itemAttribute];
                 this.attributes['repromptSpeech'] = langEN.REPROMPT;
             }
-        }
-
-        else if(item && !itemAttribute){
+        }else if(item && !itemAttribute){
             if(item.itemType){
                 this.attributes['speechOutput'] = "It is a "+item.itemType;
-            }
-            else{
+            }else{
                 this.attributes['speechOutput'] = "It is a "+item.category;
             }
             this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        }
-
-        else {
-            var speechOutput = langEN.NOT_FOUND_MESSAGE;
-            var repromptSpeech = langEN.NOT_FOUND_REPROMPT;
-
-            if (item) {
-                speechOutput = (langEN.CONDITION_NOT_FOUND_WITH_CONDITION_NAMED, item);
-            } else {
-                speechOutput = langEN.CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME;
-            }
-            speechOutput = repromptSpeech;
-
-            this.attributes['speechOutput'] = speechOutput;
-            this.attributes['repromptSpeech'] = repromptSpeech;
+        }else {
+            this.attributes['speechOutput'] = "I'm sorry I don't know " + itemName;
         }
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
-        }
-        else{
+        }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
@@ -332,7 +313,7 @@ var handlers = {
         var modifier;
         var result;
 
-        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         // get the number of dice, dice sides, and any modifiers from the user
 
@@ -370,13 +351,13 @@ var handlers = {
     'IndexIntent' : function(){
         var indexSlot = this.event.request.intent.slots.Index;
         var indexName;
-        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if(indexSlot && indexSlot.value){
             indexName = indexSlot.value.toLowerCase();
         }
 
-        var indexList = languageStrings.en.translation.INDEX;
+        var indexList = langEN.INDEX;
         var index = indexList[indexName];
 
         if(index){
@@ -399,7 +380,7 @@ var handlers = {
             this.attributes['speechOutput'] = indexName + " can be found on " + pageString;
         }
         else{
-            this.attributes['speechOutput'] = languageStrings.en.translation.NOT_FOUND_MESSAGE + languageStrings.en.translation.INDEX_NOT_FOUND;
+            this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.INDEX_NOT_FOUND;
         }
 
         if(this.attributes['continue']){ 

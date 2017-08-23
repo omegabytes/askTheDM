@@ -1225,7 +1225,7 @@ module.exports = {
     "category"      : "Vehicle",
     "itemType"      : "Mount"
   },
-  "warhorse": {
+  "war horse": {
     "cost"          : "400 Gold Piece",
     "speed"         : "60 ft.",
     "carryCapacity" : "540 lb.",

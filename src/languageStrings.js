@@ -16,6 +16,7 @@ module.exports = {
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
             "FEATS" :                                       feats.FEATS,
             "FEATS_ATTRIBUTES" :                            feats.FEATS_ATTRIBUTES,
+            "INDEX":                                        index.INDEX,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with?",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
