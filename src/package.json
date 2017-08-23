@@ -1,6 +1,6 @@
 {
   "name": "skill-ask-the-dm",
-  "version": "0.0.1",
+  "version": "2.0",
   "description": "Get basic info about DND spells, items, and rules",
   "main": "index.js",
   "scripts": {
