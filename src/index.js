@@ -366,6 +366,49 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'IndexIntent' : function(){
+        var indexSlot = this.event.request.intent.slots.Index;
+        var indexName;
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        if(indexSlot && indexSlot.value){
+            indexName = indexSlot.value.toLowerCase();
+        }
+
+        var indexList = languageStrings.en.translation.INDEX;
+        var index = indexList[indexName];
+
+        if(index){
+            var pageString = ""
+            if(typeof index.pages === 'string'){
+                pageString = index.pages
+            }
+            else{
+                if(index.pages.length>1){
+                    pageString += "pages "
+                    for(var i = 0; i <= index.pages.length-2; i++){
+                        pageString += index.pages[i] + ", "
+                    }
+                    pageString += "and " + index.pages[index.pages.length-1]
+                }
+                else{
+                    pageString = "page " + index.pages 
+                }
+            }
+            this.attributes['speechOutput'] = indexName + " can be found on " + pageString;
+        }
+        else{
+            this.attributes['speechOutput'] = languageStrings.en.translation.NOT_FOUND_MESSAGE + languageStrings.en.translation.INDEX_NOT_FOUND;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+
+    },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = languageStrings.en.translation.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = languageStrings.en.translation.HELP_REPROMPT;
