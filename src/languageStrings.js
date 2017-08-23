@@ -1,8 +1,8 @@
-var spells = require('./spells');
-var conditions = require('./conditions');
+var spells          = require('./spells');
+var conditions      = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
-var items = require('./items');
-var feats = require('./feats');
+var items           = require('./items');
+var feats           = require('./feats');
 
 module.exports = {
     "en": {
@@ -10,7 +10,7 @@ module.exports = {
             "SPELLS":                                       spells.SPELLS,
             "ATTRIBUTES" :                                  spells.ATTRIBUTES,
             "CONDITIONS" :                                  conditions.CONDITIONS,
-            "EXHAUSTION_LEVEL" :                            exhaustionLevel.EXHAUSTION_LEVELS,
+            "EXHAUSTION_LEVELS" :                            exhaustionLevel.EXHAUSTION_LEVELS,
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
             "FEATS" :                                       feats.FEATS,
@@ -24,6 +24,8 @@ module.exports = {
             "STOP_MESSAGE":                                 "Goodbye!",
             "REPEAT_MESSAGE":                               "Try saying repeat.",
             "NOT_FOUND_MESSAGE":                            "I\'m sorry, I currently do not know ",
+            "NOT_FOUND_MESSAGE_WITH_OBJECT_NAME":           "the info for ",
+            "NOT_FOUND_WITHOUT_OBJECT_NAME":                "the info for that.",
             "REPROMPT":                                     "What else can I help with? ",
             "SPELL_NOT_FOUND_WITH_SPELL_NAME":              "the spell info for %s. ",
             "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",

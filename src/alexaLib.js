@@ -1,20 +1,22 @@
 var languageStrings = require('./languageStrings');
 var langEN = languageStrings.en.translation;
 
-// validates the slot matches the value, and sets it
+// validates the slot, matches the value, and sets it
 exports.validateAndSetSlot = function(slot) {
 	if (slot && slot.value) {
 		return slot.value.toLowerCase();
+	}else {
+		return null;
 	}
 }
 // not found message handler
 exports.notFoundMessage = function(objectName) {
 	var speechOutput = langEN.NOT_FOUND_MESSAGE;
     
-    if (objectName) {
-        speechOutput += (langEN.NOT_FOUND_WITH_NAME, objectName);
-    } else {
-        speechOutput += langEN.NOT_FOUND_WITHOUT_NAME;
+    if(objectName) {
+    	speechOutput += langEN.NOT_FOUND_WITHOUT_NAME;
+    }else {
+    	speechOutput += (langEN.NOT_FOUND_WITH_NAME, objectName);
     }
     return speechOutput;
 }
