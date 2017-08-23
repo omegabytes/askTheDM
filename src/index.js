@@ -323,6 +323,93 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'DiceIntent' : function () {
+        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
+        var diceSidesSlot = this.event.request.intent.slots.Sides;
+        var modifierSlot = this.event.request.intent.slots.Modifier;
+        var numberOfDice;
+        var diceSides;
+        var modifier;
+        var result;
+
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        // get the number of dice, dice sides, and any modifiers from the user
+
+        if (numberOfDiceSlot && numberOfDiceSlot.value) {
+            // get the number of dice to roll
+            numberOfDice = numberOfDiceSlot.value;
+        }
+
+        if (diceSidesSlot && diceSidesSlot.value) {
+            // get the kind of dice to roll (faces, like six-sided or 20-sided)
+            diceSides = diceSidesSlot.value;
+        }
+
+        if (modifierSlot && modifierSlot.value) {
+            // get the modifier to add at the end of the roll calculation
+            modifier = modifierSlot.value;
+        }
+
+        if (!modifier) {
+            modifier = 0;
+        }
+
+        // calculate the result
+        result = alexaLib.rollDice(numberOfDice,diceSides) + modifier;
+
+        this.attributes['speechOutput'] = "The result of the roll is " + result;
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
+    'IndexIntent' : function(){
+        var indexSlot = this.event.request.intent.slots.Index;
+        var indexName;
+        this.attributes['repromptSpeech'] = languageStrings.en.translation.REPROMPT;
+
+        if(indexSlot && indexSlot.value){
+            indexName = indexSlot.value.toLowerCase();
+        }
+
+        var indexList = languageStrings.en.translation.INDEX;
+        var index = indexList[indexName];
+
+        if(index){
+            var pageString = ""
+            if(typeof index.pages === 'string'){
+                pageString = index.pages
+            }
+            else{
+                if(index.pages.length>1){
+                    pageString += "pages "
+                    for(var i = 0; i <= index.pages.length-2; i++){
+                        pageString += index.pages[i] + ", "
+                    }
+                    pageString += "and " + index.pages[index.pages.length-1]
+                }
+                else{
+                    pageString = "page " + index.pages 
+                }
+            }
+            this.attributes['speechOutput'] = indexName + " can be found on " + pageString;
+        }
+        else{
+            this.attributes['speechOutput'] = languageStrings.en.translation.NOT_FOUND_MESSAGE + languageStrings.en.translation.INDEX_NOT_FOUND;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+
+    },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;

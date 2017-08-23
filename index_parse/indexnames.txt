@@ -1,0 +1,1095 @@
+0 hit points 
+ability check
+ability modifier
+ability score
+ability score improvement. see specific class entries
+abjuration
+Abjuration Savant 
+Abjure Enemy 
+abjurer
+Abyss, the 
+Abyssal 
+AC 
+Archeron 
+acid damage 
+acolyte 
+Acolyte of Nature 
+Acrobatics 
+action
+Action Surge 
+advancement 
+advantage
+adventure
+adventurer 
+adventuring
+adventuring gear
+age 
+Agonizing Blast 
+alignment
+Alter Memories 
+ammunition 
+Animal Handling 
+Aquan 
+Arborea 
+Arcadia 
+Arcana 
+Arcane Charge 
+arcane focus
+arcane magic
+Arcane Recovery 
+Arcane Tradition 
+arcane traditions
+Arcane Trickster 
+Arcane Ward 
+Archdruid 
+Archery 
+Archfey, the 
+area of effect
+armor and shields
+Armor Class 
+Armor of Shadows 
+armor proficiency
+Artificer's Lore 
+Ascendant Step 
+Aspect of the Beast 
+Assassin 
+Assassinate 
+Astral Plane 
+Athletics 
+attack of opportunity
+attack
+attack action
+attack modifier
+attack roll
+Auran 
+Aura of Courage 
+Aura of Devotion 
+Aura of Protection 
+Aura of Warding 
+automatic hit 
+automatic miss 
+Avatar of Battle 
+Avenging Angel 
+Awakened Mind 
+background
+Bad Reputation 
+barbarian
+bard
+Bard College 
+bard colleges
+Bardic Inspiration 
+barding
+base attack bonus 
+base save bonus 
+bat 
+Battle Magic 
+Battle Master 
+bear, black 
+bear, brown 
+Beastlands, the 
+Beast Master 
+Beast Speech 
+Beast Spells 
+Beguiling Defenses 
+Beguiling Influence 
+Bend Luck 
+Benign Transposition 
+Bestial Fury 
+Bewitching Whispers 
+Blessed Healer 
+Blessings of Knowledge 
+Blessing of the Trickster 
+blinded 
+Blindsense 
+blindsight
+bludgeoning damage 
+boar 
+bonds 
+bonus
+bonus action
+Book of Ancient Secrets 
+Book of Shadows 
+Border Ethereal 
+Brave 
+breaking concentration
+Breath of Winter 
+Breath Weapon 
+bright light
+bringing back the dead, 
+Brutal Critical 
+bull rush 
+By Popular Demand 
+Bytopia 
+Calishite 
+campaign
+cantrips
+Carceri 
+Careful Spell 
+carrying capacity 
+casting a spell
+casting time
+cat 
+Celestial 
+Chains of Carceri 
+Champion 
+channel divinity, cleric
+channel divinity, paladin
+chaotic evil 
+chaotic good 
+chaotic neutral 
+character
+character sheet
+charisma
+charlatan 
+Charm Animals and plants 
+charmed 
+check. 
+Chondathan 
+Circle Forms 
+Circle of the Land 
+Circle of the Moon 
+Circle Spells 
+City Secrets 
+Cleansing Touch 
+cloak of shadows
+class
+clear path to the target 
+Clench of the North Wind 
+cleric
+climbing 
+coinage
+cold damage 
+College of Lore 
+College of Valor 
+Colossus Slayer 
+combat
+Combat Inspiration 
+combat round 
+Combat Superiority 
+Combat Wild Shape 
+combining spell effects 
+Commander's Strike maneuver 
+Common 
+common races
+Command Undead 
+component, spell 
+concentration
+conditions
+cone 
+conjuration
+Conjuration Savant 
+conjurer
+constitution
+container capacity
+contest 
+Controlled Chaos 
+Converting a spell slot to sorcery points 
+copper piece (cp) 
+Corona of Light 
+Countercharm 
+cover
+crafting 
+crawling 
+Create Thrall 
+creating a character
+creating spell slots 
+creature statistics
+criminal 
+Criminal Contact 
+critical hit
+crocodile 
+cube 
+Cunning Action 
+current hit points 
+Cutting Words 
+cylinder 
+damage
+damage resistance
+Damage Resistance 
+damage roll
+damage types
+damage vulnerability
+Damaran 
+Dampen Elements 
+Danger Sense 
+Dark Delirium 
+dark elf
+darkness
+Dark One's Blessing 
+Dark One's Own Luck 
+darkvision
+dash action
+DC 
+dead
+deafened 
+death
+death domain
+death saving throw
+Death Strike 
+Deception 
+deep gnome
+Deep Speech 
+Defense 
+Defensive Tactics 
+Deflect Missiles 
+dehydration 
+deities
+demiplanes 
+Destroy Undead 
+Destructive Wrath 
+Devil's Sight 
+dexterity
+Diamond Soul 
+d 
+dice
+difficult terrain 
+Difficulty Class 
+dim light
+disadvantage
+Disarming Attack maneuver 
+Disciple of Life 
+Disciple of the Elements 
+Discovery 
+disengage action
+Distant Spell 
+Distracting Strike maneuver 
+divination
+Divination Savant 
+Divine Domain 
+divine domains
+Divine Health 
+Divine Intervention 
+divine magic
+diviner
+Divine Sense 
+Divine Smite 
+Divine Strike 
+DM 
+dodge action
+domain spells 
+donning and doffing armor 
+downtime activities
+draconians
+draconic
+Draconic Ancestry 
+Draconic Presence 
+Draconic Resilience 
+Dragon Ancestor 
+dragonborn
+dragonborn names
+dragonborn traits
+Dragon Wings 
+draw or sheathe a weapon 
+Dreadful Word 
+drink 
+drop an object 
+drow 
+drow magic
+druid
+druid circle
+druid circles
+druidic
+druidic focus
+druids and the gods
+Dueling 
+duergar (gray dwarf) 
+Dungeon Master 
+Durable Summons 
+duration 
+dwarf
+dwarf names
+dwarf traits
+Dwarven Armor Training 
+dwarven combat training
+dwarven resilience
+Dwarven Toughness 
+dwarvish
+eagle, giant 
+effect
+Elder Champion 
+Eldritch Invocations 
+eldritch invocations
+Eldritch Knight 
+Eldritch Master 
+Eldritch Sight 
+Eldritch Spear 
+Eldritch Strike 
+electrum piece (ep) 
+Elemental Affinity 
+Elemental Attunement 
+Elemental Chaos 
+Elemental Disciplines 
+Elemental Planes 
+Elemental Wild Shape 
+elf
+elf names
+elf traits
+elf weapon training
+Elusive 
+elvish
+Elysium 
+Empowered Evocation 
+Empowered Spell 
+Empty Body 
+enchantment
+Enchantment Savant 
+enchanter
+encounters 
+encumbrance 
+entertainer 
+Entropic Ward 
+environment
+equipment
+equipment packs
+Escape the Horde 
+escaping a grapple
+Eternal Mountain Defense 
+Ethereal Plane 
+evasion
+Evasive Footwork maneuver 
+evocation
+Evocation Savant 
+evoker
+Exceptional Training 
+exception-based rules
+exhaustion
+exotic language 
+expenses
+experience points 
+Expert Divination 
+expertise
+exploration
+Extended Spell 
+extra attack
+Eyes of the Rune Keeper 
+Faerie 
+falling
+False Identity 
+familiar 
+Fangs of the Fire Snake 
+Far Realm 
+Fast Hands 
+Fast Movement 
+Favored Enemy 
+feats
+Feinting Attack maneuver 
+Feral Instinct 
+Feral Senses 
+fey ancestry
+Fey Presence 
+Feywild, the 
+Fiendish Resilience 
+Fiendish Vigor 
+Fiend, the 
+fighter
+fighting style
+fighting styles
+finding a hidden creature
+finding a hidden object
+finesse 
+fire damage 
+Fist of Four Thunders 
+Fist of Unbroken Air 
+Flames of the phoenix 
+flaws 
+Fleet of Foot 
+Flexible Casting 
+Flurry of Blows 
+flying 
+Focused Conjuration 
+Foe Slayer 
+folk hero 
+Font of Inspiration 
+Font of Magic 
+food and drink
+foraging 
+force damage 
+forced march 
+forest gnome 
+Frenzy 
+frightened 
+frog 
+gaining a level
+Gargantuan 
+Gaze of Two Minds 
+Gehenna 
+gender 
+getting into and out of armor 
+Giant 
+Giant Killer 
+gladiator 
+gnome
+Gnome Cunning 
+gnome names
+gnome traits
+Gnomish 
+Goading Attack maneuver 
+gold dwarf 
+gold piece 
+Gong of the Summit 
+grappled 
+grappling
+gray dwarf (duergar) 
+Greater Portent 
+Great Old One, the 
+Great Weapon Fighting 
+Great Wheel, the 
+grid 
+Grim Harvest 
+group checks 
+Guided Strike 
+guild artisan 
+Guild Membership 
+guild merchant 
+Hades 
+half cover 
+half-elf
+half-elf names
+half-elf traits
+halfling
+Hallfing 
+halfling names
+halfling nimbleness
+halfling traits
+half-orc
+half-orc names
+half-orc traits
+hawk (falcon) 
+healing
+hearing 
+heavily obscured
+heavy 
+heavy armor 
+heavy weapons and small creatures
+height and weight 
+Heightened Spell 
+Hellish Resistance 
+help action
+hermit 
+hidden
+hide action
+Hide in Plain Sight 
+hiding
+high elf 
+hill dwarf 
+hirelings
+History 
+hit dice
+hit point maximum
+hit points
+holding breath
+Holy Nimbus 
+holy symbol
+Horde Breaker 
+horse, riding 
+how to play 
+Huge 
+human
+human ethnicities
+human names
+human traits
+Hunter 
+Hunter's Prey 
+Hurl Through Hell 
+hustle 
+Hypnotic Gaze 
+ideals 
+Ignan 
+illusion
+illusionist
+Illusion Savant 
+Illuskan 
+Illusory Reality 
+Illusory Self 
+imp 
+Impostor 
+Improved Abjuration 
+Improved Combat Superiority 
+Improved Critical 
+Improved Divine Smite 
+Improved Duplicity 
+Improved Flare 
+Improved Minor Illusion 
+Improved War Magic 
+improvised weapons
+incapacitated 
+Indomitable 
+Indomitable Might 
+Infernal 
+Infernal Legacy 
+Infiltration Expertise 
+initiative
+Inner Planes 
+Insight 
+inspiration
+instantaneous 
+Instinctive Charm 
+intelligence
+Intimidating Presence 
+Intimidation 
+Inured to Undeath 
+Investigation 
+invisible 
+Invoke Duplicity 
+Jack of All Trades 
+jumping 
+Keen Senses 
+Ki 
+Ki-Empowered Strikes 
+ki points
+knight 
+knocking a creature out
+Know Your Enemy 
+Knowledge domain 
+Knowledge of the Ages 
+land's stride
+language
+Large 
+lawful evil 
+lawful good 
+lawful neutral 
+Lay on Hands 
+learning spells. 
+lethal damage
+level
+Life domain 
+Lifedrinker 
+lifestyle 
+lifting and carrying
+light
+light 
+light armor 
+light domain 
+lightly obscured
+lightning damage 
+Limbo 
+line 
+line of sight 
+lion 
+listening 
+loading 
+lock, opening or picking 
+lodging 
+lolth
+long rest 
+Lower Planes 
+low-light vision 
+Lucky 
+Lunging Attack maneuver 
+Mage Hand Legerdemain 
+Magical Ambush 
+Magical Secrets 
+magic
+magic item 
+magic-user 
+Malleable Illusions 
+maneuver 
+Maneuvering Attack maneuver 
+maneuvers
+mapping 
+marching order 
+Martial Archetype 
+martial archetypes
+Martial Arts 
+martial weapon 
+Mask of Many Faces 
+Mask of the Wild 
+Master of Myriad Forms 
+Master of Nature 
+Master Transmuter 
+mastiff 
+material spell component
+Material Plane 
+Mechanus 
+Medicine 
+Medium 
+medium armor 
+melee attack
+melee weapon
+Menacing 
+Menacing Attack maneuver 
+Metamagic 
+Military Rank 
+Mindless Rage 
+Minions of Chaos 
+Minor Alchemy 
+Minor Conjuration 
+Mire the Mind 
+Mist Stance 
+Misty Escape 
+Misty Visions 
+modifier
+monastic orders
+Monastic Tradition 
+monastic traditions
+monk
+monk weapons
+moon elf 
+mount 
+mountain dwarf 
+Mount Celestia 
+mounted combat
+mounts and vehicles
+move action
+movement
+moving a grappled creature
+Mulan 
+mule 
+Multiattack 
+Multiattack Defense 
+multiclassing
+multiverse
+Mystic Arcanum 
+name 
+Natural Explorer 
+Natural Illusionist 
+Naturally Stealthy 
+Natural Recovery 
+Nature 
+Nature domain 
+Nature's Sanctuary 
+Nature's Ward 
+Nature's Wrath 
+navigating 
+necromancer
+necromancy
+Necromancy Savant 
+necrotic damage 
+Negative Plane 
+neutral 
+neutral evil 
+neutral good 
+Nine Hells, the 
+noble 
+noble knight 
+nonplayer character 
+nonlethal damage
+NPC 
+Oath of Devotion 
+Oath of the Ancients 
+Oath of Vengeance 
+oath spells 
+objects
+One with Shadows 
+Open Hand Technique 
+open locks 
+Opportunist 
+opportunity attack
+orc
+orison 
+Otherworldly Leap 
+Otherworldly Patron 
+otherworldly patrons
+Outer Planes 
+outlander 
+Outlands, the 
+Overchannel 
+owl 
+Pact Boon 
+Pact Magic 
+pact weapon 
+paladin
+Pandemonium 
+panther 
+paralyzed 
+Parry maneuver 
+party 
+passive check 
+Path of the Berserker 
+Path of the Totem Warrior 
+Patient Defense 
+Peerless Skill 
+penalty
+percentile 
+Perception 
+Perfect Self 
+Performance 
+Persistent Rage 
+personality 
+Persuasion 
+petrified 
+pick locks 
+pick pockets 
+piercing damage 
+pirate 
+planar travel
+Plane of Air 
+Plane of Earth 
+Plane of Faerie 
+plane of Fire 
+Plane of Shadow 
+Plane of Water 
+planes of existence
+platinum piece (pp) 
+player character
+point of origin 
+poison damage 
+poisoned 
+Position of Privilege 
+Positive Plane 
+Portent 
+Potent Cantrip 
+Potent Spellcasting 
+Precision Attack maneuver 
+preparing spells. See Spellcasting: 
+Preserve life 
+Primal Champion 
+Primal Path 
+primal paths
+Primal Strike 
+Primeval Awareness 
+Primordial 
+profession 
+proficiencies
+proficiency bonus
+Projected Ward 
+projectile weapon 
+prone
+Protection 
+pseudodragon 
+psychic damage 
+punching 
+Purity of Body 
+Purity of Spirit 
+Pushing Attack maneuver 
+quasit 
+quick build
+Quickened Spell 
+Quivering Palm 
+race
+racial ability score increase 
+racial traits
+Radiance of the Dawn 
+radiant damage 
+Rage 
+Rally maneuver 
+range
+range 
+ranged attack
+ranged weapon
+ranger
+Ranger Archetype 
+ranger archetypes
+Ranger's Companion 
+Rashemi 
+rat 
+raven 
+reach 
+reaction
+Read Thoughts 
+ready action
+Reckless Attack 
+recovering ammunition 
+recuperating 
+refitting plate armor 
+Relentless 
+Relentless Avenger 
+Relentless Endurance 
+Relentless Rage 
+Reliable Talent 
+religion
+Religion 
+reloading 
+Remarkable Athlete 
+Repelling Blast 
+research 
+Researcher 
+resistance 
+resting
+restrained 
+result 
+Retainers 
+Retaliation 
+Ride the Wind 
+Riposte maneuver 
+Ritual Casting. See Spellcasting: bard (52-53); cleric (58); druid (66); wizard 
+rituals
+River of Hungry Flame 
+rock gnome 
+rogue
+Roguish Archetype 
+roguish archetypes
+roleplaying
+roll
+round 
+rounding numbers
+rowed vessel
+rules
+run 
+Rush of the Gale Spirits 
+Rustic Hospitality 
+Sacred Oath 
+sacred oaths
+sacred plants and wood 
+Sacred Weapon 
+sage 
+sailor 
+Savage Attacks 
+saving throw 
+saving throw modifier
+School of Abjuration 
+School of Conjuration 
+School of Divination 
+School of Enchantment 
+School of Evocation 
+School of Illusion 
+School of Necromancy 
+School of Transmutation 
+schools of magic 
+Sculptor of Flesh 
+Sculpt Spells 
+Second-Story Work 
+Second Wind 
+search action
+self
+selling treasure 
+services
+sex 
+Shadow Arts 
+Shadowfell, the 
+Shadow Step 
+Shapechanger 
+Shape the Flowing River 
+Share Spells 
+shark, reef 
+Shelter of the Faithful 
+shield 
+shield dwarf 
+Ship's Passage 
+short rest 
+Shou 
+shoving
+Sigil 
+Signature Spells 
+Sign of Ill Omen 
+silvered weapon 
+silver piece (sp) 
+simple weapon 
+size
+size category
+skeleton 
+skill check 
+Skill Versatility 
+skills with different abilities 
+slashing damage 
+Sleight of Hand 
+Slippery Mind 
+Slow Fall 
+Small 
+snake, constrictor 
+snake, poisonous 
+Sneak Attack 
+social interaction
+soldier 
+somatic spell component
+Song of Rest 
+sorcerer
+sorcerous origin
+sorcerous origins
+sorcerous restoration
+Sorcery Pointer 
+Soul of Vengeance 
+space 
+Speak with Small Beasts 
+special 
+speed 
+spell
+spell attack modifier. 
+spell attack roll
+Spell Bombardment 
+Spellbook 
+spellcaster
+spellcasting
+spellcasting ability
+spellcasting focus. 
+spell components 
+spell descriptions
+spell level
+spell list
+Spell Mastery 
+spell preparation. See Spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard 
+Spell Resistance 
+spell save dc
+spell saving throws
+spells known
+spell slots
+Spell Thief 
+sphere 
+spider, giant 
+Spirit Seeker 
+Spirit Walker 
+Split Enchantment 
+sprite 
+spy 
+squeezing 
+stabilizing a creature
+stable
+stacking 
+standard action
+standard language 
+Stand Against the Tide 
+starting wealth
+starvation 
+Stealth 
+Steel Will 
+Step of the Wind 
+Stillness of Mind 
+Stonecunning 
+Stormborn 
+Stout Resilience 
+strength
+Stroke of luck 
+strongheart halfling 
+Student of War 
+stunned 
+Stunning Strike 
+subrace
+Subtle Spell 
+suffocating
+sun elf 
+Sunlight Sensitivity 
+Superior Critical 
+Superior Darkvision 
+Superior Hunter's Defense 
+Superior Inspiration 
+superiority dice 
+Supreme Healing 
+Supreme Sneak 
+surprise
+Survival 
+Survivor 
+svirfneblin (deep gnome) 
+Sweeping Attack maneuver 
+Sweeping Cinder Strike 
+Sylvan 
+targeting a spell 
+target number
+Tempest domain 
+temporary hit points
+Tenets of Devotion 
+Tenets of the Ancients 
+Tenets of Vengeance 
+Terran 
+Tethyrian 
+THAC0 
+Thief 
+Thief of Five Fates 
+Thief's Reflexes 
+thieves' cant 
+thieves' tools
+Third Eye, The 
+Thirsting Blade 
+Thought Shield 
+Thousand Forms 
+three-quarters cover
+thrown 
+Thunderbolt Strike 
+thunder damage 
+Tides of Chaos 
+tiefling
+tiefling names
+tiefling traits
+tiers of play
+tiger 
+time
+timeless body
+Tinker 
+Tiny 
+Tongue of the Sun and Moon 
+tools
+total
+total cover
+Totemic Attunement 
+Totem Spirit 
+tracking 
+trade goods
+training 
+traits 
+Trance 
+Transitive Planes 
+Tranquility 
+transmutation
+Transmutation Savant 
+transmuter
+Transmuter's Stone 
+traps, finding
+traps, removing or disabling 
+travel
+Trickery domain 
+trinkets
+Trip Attack maneuver 
+truesight
+Turami 
+turn 
+turn, taking yours
+Turn the Faithless 
+Turn the Unholy 
+Turn Undead 
+Twinned Spell 
+two-handed 
+two-weapon fighting
+Two-Weapon Fighting 
+unarmed 
+unarmored defense
+Unarmored Movement 
+uncanny dodge
+Undead Thralls 
+underdark
+Undying Sentinel 
+uncommon races
+unconscious
+Undercommon 
+underwater combat
+unseen attackers and targets
+Upper Planes 
+urchin 
+use an object action
+Use Magic Device 
+using this book
+Vanish 
+vehicle 
+verbal spell component
+versatile 
+Versatile Trickster 
+vision
+Visions of Distant Realms 
+Visions of the Past 
+Voice of the Chain Master 
+Volley 
+Vow of Enmity 
+vulnerability 
+Wanderer 
+Warding Flare 
+War domain 
+War God's Blessing 
+warhorse 
+War Magic 
+War Priest 
+Water Whip 
+warlock
+Wave of Rolling Earth 
+wealth
+weapon
+Weapon Bond 
+weapon categories
+weapon proficiency
+weapon properties
+weave, the
+Whirlwind Attack 
+Whispers of the Grave 
+Wholeness of Body 
+wild elf 
+Wild Magic 
+Wild Magic Surge 
+Wild Shape 
+wisdom
+Witch Sight 
+wizard
+wolf, dire 
+wolf 
+wood elf 
+world
+Wraith of the Storm 
+XP 
+Ysgard 
+zombie 
