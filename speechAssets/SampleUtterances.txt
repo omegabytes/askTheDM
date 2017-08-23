@@ -498,32 +498,18 @@ FeatsIntent what is the {FeatsAttr} of {Feats}
 FeatsIntent for {Feats}
 FeatsIntent for {FeatsAttr} of {Feats}
 DiceIntent roll {Quantity} d. {Sides}
-DiceIntent roll a {Quantity} d. {Sides}
-DiceIntent can you roll a {Quantity} d. {Sides}
 DiceIntent can you roll {Quantity} d. {Sides}
 DiceIntent to roll {Quantity} d. {Sides}
-DiceIntent to roll a {Quantity} d. {Sides}
 DiceIntent roll {Quantity} d. {Sides} plus {Modifier}
-DiceIntent roll a {Quantity} d. {Sides} plus {Modifier}
-DiceIntent can you roll a {Quantity} d. {Sides} plus {Modifier}
 DiceIntent can you roll {Quantity} d. {Sides} plus {Modifier}
 DiceIntent to roll {Quantity} d. {Sides} plus {Modifier}
-DiceIntent to roll a {Quantity} d. {Sides} plus {Modifier}
 DiceIntent roll {Quantity} d. {Sides} with {Status}
-DiceIntent roll a {Quantity} d. {Sides} with {Status}
-DiceIntent can you roll a {Quantity} d. {Sides} with {Status}
 DiceIntent can you roll {Quantity} d. {Sides} with {Status}
 DiceIntent to roll {Quantity} d. {Sides} with {Status}
-DiceIntent to roll a {Quantity} d. {Sides} with {Status}
 DiceIntent roll {Quantity} d. {Sides} with {Status} plus {Modifier}
-DiceIntent roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
-DiceIntent can you roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
 DiceIntent can you roll {Quantity} d. {Sides} with {Status} plus {Modifier}
 DiceIntent to roll {Quantity} d. {Sides} with {Status} plus {Modifier}
-DiceIntent to roll a {Quantity} d. {Sides} with {Status} plus {Modifier}
 DiceIntent roll {Quantity} d. {Sides} plus {Modifier} with {Status}
-DiceIntent roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
-DiceIntent can you roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
 DiceIntent can you roll {Quantity} d. {Sides} plus {Modifier} with {Status}
 DiceIntent to roll {Quantity} d. {Sides} plus {Modifier} with {Status}
 DiceIntent to roll a {Quantity} d. {Sides} plus {Modifier} with {Status}
@@ -541,7 +527,9 @@ DiceIntent please roll a d. {Sides} plus {Modifier}
 DiceIntent please roll a d. {Sides} plus {Modifier} with {Status}
 DiceIntent roll {Quantity} d. {Sides}
 DiceIntent roll a {Sides} sided die
+DiceIntent roll a {Sides} sided die with {Status}
 DiceIntent roll a {Sides} sided dice
+DiceIntent roll a {Sides} sided dice with {Status}
 DiceIntent roll {Quantity} {Sides} sided die
 DiceIntent roll {Quantity} {Sides} sided dice
 Unhandled to
