@@ -1,15 +1,14 @@
 'use strict';
 
-var Alexa = require('alexa-sdk');
-var APP_ID = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
+var Alexa           = require('alexa-sdk');
+var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var languageStrings = require('./languageStrings');
-var alexaLib = require('./functions.js');
-var langEN = languageStrings.en.translation;
+var alexaLib        = require('./functions.js');
+var langEN          = languageStrings.en.translation;
 
 exports.handler = function(event, context, callback) {
-    var alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
-    // To enable string internationalization (i18n) features, set a resources object.
+    var alexa       = Alexa.handler(event, context);
+    alexa.APP_ID    = APP_ID;
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
@@ -21,38 +20,28 @@ var handlers = {
     'LaunchRequest': function () {
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
-        this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (lang.WELCOME_MESSAGE);
-        this.attributes['repromptSpeech'] = langEN.WELCOME_REPROMPT;
+        this.attributes['continue']         = true;
+        this.attributes['speechOutput']     = (lang.WELCOME_MESSAGE);
+        this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'Unhandled': function (){
-        this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = langEN.UNHANDLED;
-        this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
+        this.attributes['continue']         = true;
+        this.attributes['speechOutput']     = langEN.UNHANDLED;
+        this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'SpellsIntent': function () {
-        var spellSlot = this.event.request.intent.slots.Spell;
-        var attributeSlot = this.event.request.intent.slots.Attribute;
-        var spellName;
-        var attributeName;
+        var spellSlot       = this.event.request.intent.slots.Spell;
+        var attributeSlot   = this.event.request.intent.slots.Attribute;
+        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
+        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
+        var spells          = langEN.SPELLS;
+        var spellAttributes = langEN.ATTRIBUTES;
+        var spell           = spells[spellName];
+        var spellAttribute  = spellAttributes[attributeName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if (spellSlot && spellSlot.value) {
-            spellName = spellSlot.value.toLowerCase();
-        }
-
-        if (attributeSlot && attributeSlot.value) {
-            attributeName = attributeSlot.value.toLowerCase();
-        }
-
-        var spells = langEN.SPELLS;
-        var spell = spells[spellName];
-
-        var spellAttributes = langEN.ATTRIBUTES;
-        var spellAttribute = spellAttributes[attributeName];
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
@@ -89,15 +78,11 @@ var handlers = {
     },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
-        var conditionName;
+        var conditionName = alexaLib.validateAndSetSlot(conditionSlot);
+        var conditions    = langEN.CONDITIONS;
+        var condition     = conditions[conditionName];
+
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if (conditionSlot && conditionSlot.value) {
-            conditionName = conditionSlot.value.toLowerCase();
-        }
-
-        var conditions = langEN.CONDITIONS;
-        var condition  = conditions[conditionName];
 
         //user requests information on condition
         if (condition) {
@@ -128,17 +113,12 @@ var handlers = {
         }
     },
     'ExhaustionLevelIntent': function () {
-        var exhaustionSlot = this.event.request.intent.slots.Level;
-        var exhaustionLevel;
+        var exhaustionSlot       = this.event.request.intent.slots.Level;
+        var exhaustionLevel      = alexaLib.validateAndSetSlot(exhaustionSlot);
+        var exhaustionLevelList  = langEN.EXHAUSTION_LEVEL; 
+        var thisExhaustionLevel  = exhaustionLevelList[exhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if (exhaustionSlot && exhaustionSlot.value) {
-            exhaustionLevel = exhaustionSlot.value.toLowerCase();
-        }
-
-        var exhaustionLevelList = langEN.EXHAUSTION_LEVEL; 
-        var thisExhaustionLevel  = exhaustionLevelList[exhaustionLevel];
 
         //user requests information on exhaustion levels
         if (thisExhaustionLevel) {
@@ -169,26 +149,16 @@ var handlers = {
         }
     },    
     'FeatsIntent': function() {
-        var featSlot = this.event.request.intent.slots.Feats;
+        var featSlot          = this.event.request.intent.slots.Feats;
         var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
-        var featAttrName;
-        var featsName;
+        var featAttrName      = alexaLib.validateAndSetSlot(featAttributeSlot);
+        var featName          = alexaLib.validateAndSetSlot(featSlot):
+        var featsList         = langEN.FEATS; 
+        var featsAttrList     = langEN.FEAT_ATTRIBUTES;
+        var thisFeat          = featsList[featName];
+        var thisFeatAttr      = featsAttrList[featAttrName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if (featSlot && featSlot.value) {
-            featsName = featSlot.value.toLowerCase();
-        }
-
-        if(featAttributeSlot && featAttributeSlot.value) {
-            featAttrName = featAttributeSlot.value.toLowerCase();
-        }
-
-        var featsList = langEN.FEATS; 
-        var thisFeat  = featsList[featsName];
-
-        var featsAttrList = langEN.FEAT_ATTRIBUTES;
-        var thisFeatAttr = featsAttrList[featAttrName];
 
         //user requests information on feats
         if (thisFeat && thisFeatAttr) {
@@ -261,24 +231,14 @@ var handlers = {
         }
     },
     'ItemsIntent': function () {
-        var itemSlot = this.event.request.intent.slots.Item;
-        var itemAttributeSlot = this.event.request.intent.slots.ItemAttribute;
-        var itemName;
-        var itemAttributeName;
-
-        if(itemSlot && itemSlot.value){
-            itemName = itemSlot.value.toLowerCase();
-        }
-
-        if(itemAttributeSlot && itemAttributeSlot.value){
-            itemAttributeName = itemAttributeSlot.value.toLowerCase();
-        }
-
-        var itemList = langEN.ITEMS;
-        var itemAttributeList= langEN.ITEM_ATTRIBUTES;
-
-        var item = itemList[itemName];
-        var itemAttribute  = itemAttributeList[itemAttributeName];
+        var itemSlot            = this.event.request.intent.slots.Item;
+        var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
+        var itemName            = alexaLib.validateAndSetSlot(itemSlot);
+        var itemAttributeName   = alexaLib.validateAndSetSlot(itemAttributeSlot);
+        var itemList            = langEN.ITEMS;
+        var itemAttributeList   = langEN.ITEM_ATTRIBUTES;
+        var item                = itemList[itemName];
+        var itemAttribute       = itemAttributeList[itemAttributeName];
 
         if(item && itemAttribute){
             if(!item[itemAttribute]){

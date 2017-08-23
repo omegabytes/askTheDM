@@ -1,25 +1,26 @@
 var languageStrings = require('./languageStrings');
+var langEN = languageStrings.en.translation;
 
 // validates the slot matches the value, and sets it
-exports.validateAndSet = function(slot) {
+exports.validateAndSetSlot = function(slot) {
 	if (slot && slot.value) {
 		return slot.value.toLowerCase();
 	}
 }
 // not found message handler
 exports.notFoundMessage = function(objectName) {
-	var speechOutput = languageStrings.en.translation.NOT_FOUND_MESSAGE;
+	var speechOutput = langEN.NOT_FOUND_MESSAGE;
     
     if (objectName) {
-        speechOutput += (languageStrings.en.translation.NOT_FOUND_WITH_NAME, objectName);
+        speechOutput += (langEN.NOT_FOUND_WITH_NAME, objectName);
     } else {
-        speechOutput += languageStrings.en.translation.NOT_FOUND_WITHOUT_NAME;
+        speechOutput += langEN.NOT_FOUND_WITHOUT_NAME;
     }
     return speechOutput;
 }
 
 // roll dice function
-function rollDice(quantity,sides) {
+exports.rollDice = function(quantity,sides) {
     var facevalue;
     var output = 0;
 
@@ -34,7 +35,7 @@ function rollDice(quantity,sides) {
 // output conditionally
 // if continue == true, emit with ask and keep session open
 // else emit with tell and close session
-function speak(sessionStatus,speech,reprompt) {
+exports.speak = function(sessionStatus,speech,reprompt) {
 	// not sure how to do this one
 	if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
