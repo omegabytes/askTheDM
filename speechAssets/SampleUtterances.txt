@@ -539,6 +539,11 @@ DiceIntent please roll a d. {Sides}
 DiceIntent please roll a d. {Sides} with {Status}
 DiceIntent please roll a d. {Sides} plus {Modifier}
 DiceIntent please roll a d. {Sides} plus {Modifier} with {Status}
+DiceIntent roll {Quantity} d. {Sides}
+DiceIntent roll a {Sides} sided die
+DiceIntent roll a {Sides} sided dice
+DiceIntent roll {Quantity} {Sides} sided die
+DiceIntent roll {Quantity} {Sides} sided dice
 Unhandled to
 Unhandled to get
 Unhandled and
