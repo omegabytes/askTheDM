@@ -54,7 +54,7 @@ module.exports = {
         115
       ]
     },
-    "abyss, the": {
+    "the abyss": {
       "pages": [
         302
       ]
@@ -243,7 +243,7 @@ module.exports = {
         91
       ]
     },
-    "archfey, the": {
+    "the archfey": {
       "pages": [
         "108-109"
       ]
@@ -467,17 +467,17 @@ module.exports = {
         73
       ]
     },
-    "bear, black": {
+    "black bear": {
       "pages": [
         304
       ]
     },
-    "bear, brown": {
+    " brown bear": {
       "pages": [
         304
       ]
     },
-    "beastlands, the": {
+    "the beastlands": {
       "pages": [
         302
       ]
@@ -913,7 +913,7 @@ module.exports = {
         119
       ]
     },
-    "component, spell": {
+    "spell component": {
       "pages": [
         203
       ]
@@ -1601,7 +1601,7 @@ module.exports = {
         20
       ]
     },
-    "eagle, giant": {
+    "giant eagle": {
       "pages": [
         306
       ]
@@ -1983,7 +1983,7 @@ module.exports = {
         108
       ]
     },
-    "feywild, the": {
+    "the feywild": {
       "pages": [
         300
       ]
@@ -1998,7 +1998,7 @@ module.exports = {
         111
       ]
     },
-    "fiend, the": {
+    "the fiend": {
       "pages": [
         109
       ]
@@ -2159,7 +2159,7 @@ module.exports = {
         191
       ]
     },
-    "gaze of two minds": {
+    "gaze of 2 minds": {
       "pages": [
         111
       ]
@@ -2260,7 +2260,7 @@ module.exports = {
         117
       ]
     },
-    "great old one, the": {
+    "the great old one": {
       "pages": [
         "109-110"
       ]
@@ -2271,7 +2271,7 @@ module.exports = {
         84
       ]
     },
-    "great wheel, the": {
+    "the great wheel": {
       "pages": [
         302
       ]
@@ -2522,7 +2522,7 @@ module.exports = {
         93
       ]
     },
-    "horse, riding": {
+    "riding horse": {
       "pages": [
         310
       ]
@@ -2964,7 +2964,12 @@ module.exports = {
         147
       ]
     },
-    "lock, opening or picking": {
+    "lock opening or picking": {
+      "pages": [
+        154
+      ]
+    },
+    "lock picking": {
       "pages": [
         154
       ]
@@ -3435,7 +3440,7 @@ module.exports = {
         122
       ]
     },
-    "nine hells, the": {
+    "the nine hells": {
       "pages": [
         302
       ]
@@ -3559,7 +3564,7 @@ module.exports = {
         "136-137"
       ]
     },
-    "outlands, the": {
+    "the outlands": {
       "pages": [
         302
       ]
@@ -4411,7 +4416,7 @@ module.exports = {
         80
       ]
     },
-    "shadowfell, the": {
+    "the shadowfell": {
       "pages": [
         300
       ]
@@ -4436,7 +4441,7 @@ module.exports = {
         93
       ]
     },
-    "shark, reef": {
+    "reef shark": {
       "pages": [
         309
       ]
@@ -4562,12 +4567,12 @@ module.exports = {
         191
       ]
     },
-    "snake, constrictor": {
+    "constrictor snake": {
       "pages": [
         305
       ]
     },
-    "snake, poisonous": {
+    "poisonous snake": {
       "pages": [
         308
       ]
@@ -4770,7 +4775,7 @@ module.exports = {
         205
       ]
     },
-    "spider, giant": {
+    "giant spider": {
       "pages": [
         306
       ]
@@ -5085,7 +5090,7 @@ module.exports = {
         154
       ]
     },
-    "third eye, the": {
+    "the third eye": {
       "pages": [
         "116-117"
       ]
@@ -5263,13 +5268,18 @@ module.exports = {
         119
       ]
     },
-    "traps, finding": {
+    "finding traps": {
       "pages": [
         178,
         178
       ]
     },
-    "traps, removing or disabling": {
+    "removing traps": {
+      "pages": [
+        154
+      ]
+    },
+    "disabling traps": {
       "pages": [
         154
       ]
@@ -5309,7 +5319,7 @@ module.exports = {
         189
       ]
     },
-    "turn, taking yours": {
+    "taking your turn": {
       "pages": [
         "189-190"
       ]
@@ -5583,7 +5593,7 @@ module.exports = {
         "146-147"
       ]
     },
-    "weave, the": {
+    "the weave": {
       "pages": [
         205
       ]
@@ -5640,7 +5650,7 @@ module.exports = {
         "112-119"
       ]
     },
-    "wolf, dire": {
+    "dire wolf": {
       "pages": [
         305
       ]
