@@ -14,9 +14,9 @@ exports.notFoundMessage = function(objectName) {
 	var speechOutput = langEN.NOT_FOUND_MESSAGE;
     
     if(objectName) {
-    	speechOutput += langEN.NOT_FOUND_WITHOUT_NAME;
+    	speechOutput += (langEN.NOT_FOUND_WITH_OBJECT_NAME, objectName);
     }else {
-    	speechOutput += (langEN.NOT_FOUND_WITH_NAME, objectName);
+    	speechOutput += langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
     }
     return speechOutput;
 }

@@ -52,8 +52,9 @@ var handlers = {
             }
         }else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellName);
+        }else if (spellName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name);
+
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
