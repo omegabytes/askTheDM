@@ -3440,7 +3440,7 @@ module.exports = {
         122
       ]
     },
-    "the nine hells": {
+    "the 92 hells": {
       "pages": [
         302
       ]
