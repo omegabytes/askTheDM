@@ -431,7 +431,7 @@ module.exports = {
     "weight"        : "2 lb.",
     "category"      : "Adventure Gear"
   },
-  "acid (vial)": {
+  "acid": {
     "cost"          : "25 Gold Piece",
     "weight"        : "1 lb.",
     "category"      : "Adventure Gear"
