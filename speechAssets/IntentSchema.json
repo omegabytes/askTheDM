@@ -3,46 +3,11 @@
     {
       "slots": [
         {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        },
-        {
-          "name": "Attribute",
-          "type": "LIST_OF_ATTRIBUTES"
-        }
-      ],
-      "intent": "SpellsIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Item",
-          "type": "LIST_OF_ITEMS"
-        },
-        {
-          "name": "ItemAttribute",
-          "type": "LIST_OF_ITEM_ATTRIBUTES"
-        }
-      ],
-      "intent": "ItemsIntent"
-    },
-    {
-      "slots": [
-        {
           "name": "Condition",
           "type": "LIST_OF_CONDITIONS"
         }
       ],
       "intent": "ConditionsIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        }
-      ],
-      "intent": "SpellCastIntent"
     },
     {
       "slots": [
@@ -61,12 +26,47 @@
         },
         {
           "name": "FeatsAttr",
-          "type": "LIST_OF_FEATS_ATTRIBUTES"
+          "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],
       "intent": "FeatsIntent"
     },
+    {
+      "slots": [
         {
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
+        },
+        {
+          "name": "ItemAttribute",
+          "type": "LIST_OF_ITEM_ATTRIBUTES"
+        }
+      ],
+      "intent": "ItemsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        }
+      ],
+      "intent": "SpellCastIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "Attribute",
+          "type": "LIST_OF_ATTRIBUTES"
+        }
+      ],
+      "intent": "SpellsIntent"
+    },
+    {
       "intent": "Unhandled"
     },
     {
