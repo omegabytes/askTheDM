@@ -3,7 +3,6 @@ var conditions = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
 var items = require('./items');
 var feats = require('./feats');
-var index = require('./indexInfo');
 
 module.exports = {
     "en": {
@@ -15,8 +14,7 @@ module.exports = {
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
             "FEATS" :                                       feats.FEATS,
-            "FEATS_ATTRIBUTES" :                            feats.FEATS_ATTRIBUTES,
-            "INDEX":                                        index.INDEX,
+            "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
             "SKILL_NAME":                                   "Ask the DM",
             "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with?",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me.",
@@ -31,7 +29,6 @@ module.exports = {
             "SPELL_NOT_FOUND_WITHOUT_SPELL_NAME":           "that spell. ",
             "CONDITION_NOT_FOUND_WITH_CONDITION_NAME" :     "the condition info for %s. ",
             "CONDITION_NOT_FOUND_WITHOUT_CONDITION_NAME" :  "that condition. ",
-            "INDEX_NOT_FOUND":                              "that index entry",
             "UNHANDLED" :                                    "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'"
         }
     }
