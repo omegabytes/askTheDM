@@ -1,5 +1,5 @@
 module.exports = {     
- "ATTRIBUTES" : {    
+ "ATTRIBUTES_EN_US" : {    
    "casting time"      : "castingTime",
    "cast"              : "castingTime",     
    "duration"          : "duration",     
@@ -11,7 +11,7 @@ module.exports = {
    "url"               :  "url",
    "damage"            : "damage" 
  },    
- "SPELLS" : {
+ "SPELLS_EN_US" : {
   "move earth": {
     "castingTime": "1 Action",
     "duration": "Concentration, up to 2 hours",
