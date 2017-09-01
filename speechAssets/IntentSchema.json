@@ -1,6 +1,5 @@
 {
   "intents": [
-    //ConditionsIntent
     {
       "slots": [
         {
@@ -10,7 +9,6 @@
       ],
       "intent": "ConditionsIntent"
     },
-    //ExhaustionIntent
     {
       "slots": [
         {
@@ -20,7 +18,6 @@
       ],
       "intent": "ExhaustionLevelIntent"
     },
-    //FeatsIntent
     {
       "slots": [
         {
@@ -34,7 +31,6 @@
       ],
       "intent": "FeatsIntent"
     },
-    //ItemsIntent
     {
       "slots": [
         {
@@ -48,7 +44,6 @@
       ],
       "intent": "ItemsIntent"
     },
-    //SpellCastIntent
     {
       "slots": [
         {
@@ -58,7 +53,6 @@
       ],
       "intent": "SpellCastIntent"
     },
-    //SpellsIntent
     {
       "slots": [
         {
@@ -72,11 +66,9 @@
       ],
       "intent": "SpellsIntent"
     },
-    //Unhandled
     {
       "intent": "Unhandled"
     },
-    //Required Amazon intents
     {
       "intent": "AMAZON.RepeatIntent"
     },
