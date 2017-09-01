@@ -4523,4 +4523,3 @@ module.exports = {
     "damage"            : null
   }
 }
-}
