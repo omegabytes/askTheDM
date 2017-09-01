@@ -2,15 +2,31 @@ Some knowledge of Dungeons and Dragons is required for testing. Refer to the 5th
 
 You can invoke the app by saying "Alexa, ask the DM" followed by a question, or by saying "Alexa, open DM".
 
-You can ask questions about spells like "What is the range of fireball?"
-
-You can ask about the following attributes for spells: range, duration, casting time, short description, long description, components, and spells type. 
-
-You can ask questions about items like "How much does a sword cost?"
-
-You can ask about the following attributes for items: 
+There are six custom intents in this version: ConditionsIntent, ExhaustionLevelIntent, FeatsIntent, ItemsIntent, SpellCastIntent, and SpellsIntent.
 
 
+Testing ConditionsIntent:
+You can simply ask about the condition to get a description. Conditions include: blinded, charmed, deafened, exhaustion, frightened, grappled, incapacitated, invisible, paralyzed, petrified, poisoned, prone, restrained, stunned, and unconscious. 
+You can ask questions like "Tell me about charmed", "I forgot how being grappled affects me", or "What are the effects of being blinded".
+
+
+Testing ExhaustionLevelIntent:
+Exhaustion levels range from 1 to 6. Simply askinga about exhaustion without providing any level is handled in ConditionsIntent.
+You can ask questions like "What is level three of exhaustion?", "What does having level one exhaustion mean?", or "get information on level two exhaustion"
+
+
+Testing FeatsIntent:
+There are 42 feats. Some examples include crossbow expert, durable, keen mind, observant, and sharpshooter. Each feat has three attributes: benefits, description, prerequisite. 
+You can ask questions like "What does athlete do?", "Lookup benefits of ritual caster", or "Get info on the tough feat".
+
+Testing ItemsIntent:
+You can ask about the following attributes for items: armor class, capacity, carry capacity, category, cost, damage, item type, properties, speed, strength, and weight.
+
+You can ask questions about items like "How much does a sword cost?", "What is the armor class of a breastplate?", or "Tell me what a sling does".
+
+Testing SpellCastIntent and SpellsIntent:
 There are over 400 spells. A short list of spells you can ask about include: fireball, cure wounds, sleep, move earth, prismatic spray, and control weather. 
 
-You can simply ask about the condition to get a description. Conditions include: blinded, charmed, deafened, exhaustion, frightened, grappled, incapacitated, invisible, paralyzed, petrified, poisoned, prone, restrained, stunned, and unconscious.
+You can ask about the following attributes for spells: range, duration, casting time, short description, long description, components, and spelltype. 
+
+You can ask questions about spells like "What is the range of fireball?", "How do I cast beacon of hope?", and "what's the duration of frostbite?"
