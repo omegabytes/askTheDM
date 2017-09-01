@@ -10,11 +10,11 @@ exports.validateAndSetSlot = function(slot) {
 	}
 }
 // not found message handler
-exports.notFoundMessage = function(objectName) {
+exports.notFoundMessage = function(slotName, userInput) {
 	var speechOutput = langEN.NOT_FOUND_MESSAGE;
     
-    if(objectName) {
-    	speechOutput += (langEN.NOT_FOUND_WITH_OBJECT_NAME, objectName);
+    if(userInput) {
+    	speechOutput += "the " + slotName + " info for " + userInput;
     }else {
     	speechOutput += langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
     }

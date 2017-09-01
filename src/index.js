@@ -53,7 +53,7 @@ var handlers = {
         }else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
         }else if (spellName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
 
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
@@ -82,8 +82,8 @@ var handlers = {
                                             + spell.shortDescription;
 
         //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-        }else if (spellName && !spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellName)
+        }else if (!spell) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName)
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         } 
@@ -106,7 +106,7 @@ var handlers = {
         if (condition) {
             this.attributes['speechOutput'] = condition;
         }else if (conditionName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(conditionName);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(conditionSlot.name, conditionName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -130,8 +130,8 @@ var handlers = {
             this.attributes['speechOutput'] = exhaustionLevel;
 
         //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-        }else if (exhaustionLevel) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(exhaustionLevelInput);
+        }else if (exhaustionLevelInput) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(exhaustionSlot.name, exhaustionLevelInput) + " exhaustion";
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -162,8 +162,8 @@ var handlers = {
             this.attributes['speechOutput'] = thisFeat.description;
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
-        }else if (thisFeat) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(featName);
+        }else if (featName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(featSlot.name, featName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -199,8 +199,8 @@ var handlers = {
                 this.attributes['speechOutput'] = "It is a "+item.category;
             }
             this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        }else if (item) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(itemName);
+        }else if (itemName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(itemSlot.name,itemName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
