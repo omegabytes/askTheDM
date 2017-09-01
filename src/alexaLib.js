@@ -1,14 +1,6 @@
 var languageStrings = require('./languageStrings');
 var langEN = languageStrings.en.translation;
 
-// validates the slot, matches the value, and sets it
-exports.validateAndSetSlot = function(slot) {
-	if (slot && slot.value) {
-		return slot.value.toLowerCase();
-	}else {
-		return null;
-	}
-}
 // not found message handler
 exports.notFoundMessage = function(slotName, userInput) {
 	var speechOutput = langEN.NOT_FOUND_MESSAGE;
@@ -31,18 +23,13 @@ exports.rollDice = function(quantity,sides) {
         output += facevalue;
     }
     return output;
-};
+}
 
-// todo: speak function encapsulation
-// output conditionally
-// if continue == true, emit with ask and keep session open
-// else emit with tell and close session
-exports.speak = function(sessionStatus,speech,reprompt) {
-	// not sure how to do this one
-	if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
-        }
-        else{
-            this.emit(':tell', this.attributes['speechOutput']);
-        }
+// validates the slot, matches the value, and sets it
+exports.validateAndSetSlot = function(slot) {
+	if (slot && slot.value) {
+		return slot.value.toLowerCase();
+	}else {
+		return null;
+	}
 }

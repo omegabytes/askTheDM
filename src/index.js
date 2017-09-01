@@ -15,85 +15,6 @@ exports.handler = function(event, context, callback) {
 };
 
 var handlers = {
-    //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
-    // Alexa, ask [my-skill-invocation-name] to (do something)...
-    'LaunchRequest': function () {
-        // If the user either does not reply to the welcome message or says something that is not
-        // understood, they will be prompted again with this text.
-        this.attributes['continue']         = true;
-        this.attributes['speechOutput']     = langEN.WELCOME_MESSAGE;
-        this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-    },
-    'Unhandled': function (){
-        this.attributes['continue']         = true;
-        this.attributes['speechOutput']     = langEN.UNHANDLED;
-        this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-    },
-    'SpellsIntent': function () {
-        var spellSlot       = this.event.request.intent.slots.Spell;
-        var attributeSlot   = this.event.request.intent.slots.Attribute;
-        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells          = langEN.SPELLS;
-        var spellAttributes = langEN.ATTRIBUTES;
-        var spell           = spells[spellName];
-        var spellAttribute  = spellAttributes[attributeName];
-
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        //if the user asks for the attribute of a spell
-        if (spell && spellAttribute) {
-            if(spellAttribute=="damage" && spell[spellAttribute]==null){
-                this.attributes['speechOutput'] = spellName + ' does not have damage'
-            }else{
-                this.attributes['speechOutput'] = spell[spellAttribute];
-            }
-        }else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (spellName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
-
-        }else {
-            this.attributes['speechOutput'] = langEN.UNHANDLED;
-        }
-
-        if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
-        }else{
-            this.emit(':tell', this.attributes['speechOutput']);
-        }
-    },
-    'SpellCastIntent': function () {
-        var spellSlot = this.event.request.intent.slots.Spell;
-        var spellName = alexaLib.validateAndSetSlot(spellSlot);
-        var spells = langEN.SPELLS;
-        var spell  = spells[spellName];
-
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        //user requests information on casting spell
-        if (spell) {
-            this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.spellType + ". To cast, you need the following: " 
-                                            + spell.components + ". The spell duration is " 
-                                            + spell.duration + ". " 
-                                            + spell.shortDescription;
-
-        //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-        }else if (!spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName)
-        }else {
-            this.attributes['speechOutput'] = langEN.UNHANDLED;
-        } 
-
-        if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
-        }else{
-            this.emit(':tell', this.attributes['speechOutput']);
-        }
-    },
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
         var conditionName = alexaLib.validateAndSetSlot(conditionSlot);
@@ -142,7 +63,7 @@ var handlers = {
         else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
-    },    
+    },
     'FeatsIntent': function() {
         var featSlot          = this.event.request.intent.slots.Feats;
         var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
@@ -211,6 +132,85 @@ var handlers = {
         else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
+    },
+    'SpellCastIntent': function () {
+        var spellSlot = this.event.request.intent.slots.Spell;
+        var spellName = alexaLib.validateAndSetSlot(spellSlot);
+        var spells = langEN.SPELLS;
+        var spell  = spells[spellName];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        //user requests information on casting spell
+        if (spell) {
+            this.attributes['speechOutput'] = spellName + " is a " 
+                                            + spell.spellType + ". To cast, you need the following: " 
+                                            + spell.components + ". The spell duration is " 
+                                            + spell.duration + ". " 
+                                            + spell.shortDescription;
+
+        //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+        }else if (!spell) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName)
+        }else {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
+        } 
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
+    'SpellsIntent': function () {
+        var spellSlot       = this.event.request.intent.slots.Spell;
+        var attributeSlot   = this.event.request.intent.slots.Attribute;
+        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
+        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
+        var spells          = langEN.SPELLS;
+        var spellAttributes = langEN.ATTRIBUTES;
+        var spell           = spells[spellName];
+        var spellAttribute  = spellAttributes[attributeName];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        //if the user asks for the attribute of a spell
+        if (spell && spellAttribute) {
+            if(spellAttribute=="damage" && spell[spellAttribute]==null){
+                this.attributes['speechOutput'] = spellName + ' does not have damage'
+            }else{
+                this.attributes['speechOutput'] = spell[spellAttribute];
+            }
+        }else if (spell && !spellAttribute) {
+            this.attributes['speechOutput'] = spell.shortDescription;
+        }else if (spellName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
+
+        }else {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
+    'Unhandled': function (){
+        this.attributes['continue']         = true;
+        this.attributes['speechOutput']     = langEN.UNHANDLED;
+        this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+    },
+    // Required Amazon Intents 
+    'LaunchRequest': function () {
+        // Alexa, ask [my-skill-invocation-name] to (do something)...
+        // If the user either does not reply to the welcome message or says something that is not
+        // understood, they will be prompted again with this text.
+        this.attributes['continue']         = true;
+        this.attributes['speechOutput']     = langEN.WELCOME_MESSAGE;
+        this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
