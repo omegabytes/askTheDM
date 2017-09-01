@@ -1,31 +1,6 @@
 {
   "intents": [
-    {
-      "slots": [
-        {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        },
-        {
-          "name": "Attribute",
-          "type": "LIST_OF_ATTRIBUTES"
-        }
-      ],
-      "intent": "SpellsIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Item",
-          "type": "LIST_OF_ITEMS"
-        },
-        {
-          "name": "ItemAttribute",
-          "type": "LIST_OF_ITEM_ATTRIBUTES"
-        }
-      ],
-      "intent": "ItemsIntent"
-    },
+    //ConditionsIntent
     {
       "slots": [
         {
@@ -35,15 +10,7 @@
       ],
       "intent": "ConditionsIntent"
     },
-    {
-      "slots": [
-        {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        }
-      ],
-      "intent": "SpellCastIntent"
-    },
+    //ExhaustionIntent
     {
       "slots": [
         {
@@ -53,6 +20,7 @@
       ],
       "intent": "ExhaustionLevelIntent"
     },
+    //FeatsIntent
     {
       "slots": [
         {
@@ -66,9 +34,49 @@
       ],
       "intent": "FeatsIntent"
     },
+    //ItemsIntent
+    {
+      "slots": [
         {
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
+        },
+        {
+          "name": "ItemAttribute",
+          "type": "LIST_OF_ITEM_ATTRIBUTES"
+        }
+      ],
+      "intent": "ItemsIntent"
+    },
+    //SpellCastIntent
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        }
+      ],
+      "intent": "SpellCastIntent"
+    },
+    //SpellsIntent
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "Attribute",
+          "type": "LIST_OF_ATTRIBUTES"
+        }
+      ],
+      "intent": "SpellsIntent"
+    },
+    //Unhandled
+    {
       "intent": "Unhandled"
     },
+    //Required Amazon intents
     {
       "intent": "AMAZON.RepeatIntent"
     },
