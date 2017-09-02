@@ -129,38 +129,7 @@
     "shortDescription": "Affects creatures in 60ft cone on a failed Dexterity save, with half damage on a winning save.  Emits eight multicolored rays of light, each with a different damage determined by d8.  1 is Red or 10d6 fire, 2 is Orange or 10d6 acid, 3 is Yellow or 10d6 lightning, 4 is Green or 10d6 poison, 5 is Blue or 10d6 cold.  6 is Indigo to restrain target.  Needs a Constitution save after each of the target's turns.  3 wins ends spell, 3 fails petrifies target.  7 is Violet, which blinds target.  Spell ends with a successful Wisdom safe at start of caster's next turn.  Otherwise, target is sent to a plane of existence of D. M.'s choosing.  8 is Special.  Roll twice more, re-rolling any 8.",
     "longDescription": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it. 1. Red. The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one. 2. Orange. The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one. 3. Yellow. The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. 4. Green. The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one. 5. Blue. The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one. 6. Indigo. On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don\u2019t need to be consecutive; keep track of both until the target collects three of a kind. 7. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the D. M.\u2019s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn\u2019t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) 8. Special. The target is struck by two rays. Roll twice more, rerolling any 8.",
     "url": "https://www.dnd-spells.com/spell/prismatic-spray",
-    "damage": [
-      [
-        "10d6 fire damage",
-        "d",
-        "e",
-        "damage"
-      ],
-      [
-        "10d6 acid damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "10d6 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "10d6 poison damage",
-        "d",
-        "n",
-        "damage"
-      ],
-      [
-        "10d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "10d6 elemental damage base on dice roll, please ask for short description if you need more information"
   },
   "frostbite": {
     "castingTime": "1 Action",
@@ -336,38 +305,7 @@
     "shortDescription": "You create a 90 foot long, 30 foot high, and 1 inch thick-centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point. The wall sheds bright light out to a range of 100 feet, and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves within 20 feet or starts its turn there, the creature makes a Constitution save or becomes blinded for 1 minute. The wall consists of 7 layers, each with a different color. When a creature attempts to reach into or pass through the wall it does so one layer at a time. As it passes or reaches through each layer, the creature must make a Dexterity save or be affected by that layer's properties as described. Red: The creature takes 10d6 fire damage on a failed save, or half as much on success. Orange: The creature takes 10d6 acid damage on a failed save, or half as much on success. Yellow: The creature takes 10d6 lightning damage on a failed save, or half as much on success. Green: The creature takes 10d6 poison damage on a failed save, or half as much on success. Blue: The creature takes 10d6 cold damage on a failed save, or half as much on success. Indigo: On a failed save, the creature is restrained, it must make a Constitution save at the end of each of its turns. Violet: On a failed save the creature is blinded. It must make a Wisdom save at the start of your next turn.",
     "longDescription": "A shimmering, multicolored plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted. The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become blinded for 1 minute. The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall\u2019s layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer\u2019s properties as described below. The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. A rod ofcancellation destroys a prismatic wall, but an antimagic field has no effect on it. 1) Red. The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can\u2019t pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it. 2) Orange. The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can\u2019t pass through the wall. The layer is destroyed by a strong wind. 3) Yellow. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it. 4) Green. The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer. 5) Blue. The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it. 6) Indigo. On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don\u2019t need to be consecutive: keep track of both until the creature collects three of a kind. While this layer is in place, spells can\u2019t be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level. 7) Violet. On a failed save, the creature is blinded. It must then make a wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the D. M.\u2019s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn\u2019t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.",
     "url": "https://www.dnd-spells.com/spell/prismatic-wall",
-    "damage": [
-      [
-        "10d6 fire damage",
-        "d",
-        "e",
-        "damage"
-      ],
-      [
-        "10d6 acid damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "10d6 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "10d6 poison damage",
-        "d",
-        "n",
-        "damage"
-      ],
-      [
-        "10d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "10d6 elemental damage based on wall level, please ask for the short or long description for more information"
   },
   "shapechange": {
     "castingTime": "1 Action",
@@ -675,20 +613,7 @@
     "shortDescription": "Conjure a firey shield that sheds bright light in a 10 foot radius, and dim in an additional 10 feet. The shield provides cold damage resistance, whenever you are hit by a melee attack within 5 feet, the attacker takes 2d8 fire damage. This can also be flavored to be a cold shield, respectively.",
     "longDescription": "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it. The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.",
     "url": "https://www.dnd-spells.com/spell/fire-shield",
-    "damage": [
-      [
-        "2d8 fire damage",
-        "d",
-        "e",
-        "damage"
-      ],
-      [
-        "2d8 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "2d8 fire or cold damage depending on elemental type of shield."
   },
   "darkness": {
     "castingTime": "1 Action",
@@ -985,20 +910,7 @@
     "shortDescription": "Needs concentration. Call forth spirits to protect you, they float a distance of 15 feet around you. They are flavored to your alignment, and you can designate any number of creature to be unaffected by the guardians. An affected creature's speed is halved while in the area, when a creature enters the area for the first time or starts its turn there, it must make a Wisdom save or take 3d8 radiant damage or 3d8 necrotic depending on your alignment. When cast using a spell slot of 4th or higher the damage increases by 1d8 for each level above 3rd.",
     "longDescription": "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature\u2019s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage. At higher levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
     "url": "https://www.dnd-spells.com/spell/spirit-guardians",
-    "damage": [
-      [
-        "3d8 radiant damage",
-        "d",
-        "t",
-        "damage"
-      ],
-      [
-        "3d8 necrotic damage",
-        "d",
-        "c",
-        "damage"
-      ]
-    ]
+    "damage": "3d8 radiant or necrotic damage based on your alignment"
   },
   "reincarnate": {
     "castingTime": "1 Hour",
@@ -1130,20 +1042,7 @@
     "shortDescription": "Needs concentration. Flames surround you, shedding bright light in a 30 foot radius and dim for an additional 30 feet. Gain the following benefits: Immune to fire damage, and have resistance to cold damage. Any creature that moves within 5 feet of you for the first time or ends its turn there takes 1d10 fire damage. Use your action to create a line of fire 15 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Dexterity save or take 4d8 fire damage, or half on a success.",
     "longDescription": "Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell\u2019s duration. The flames don\u2019t harm you. Until the spell ends, you gain the following benefits: \u2022 You are immune to fire damage and have resistance to cold damage. \u2022 Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage. \u2022 You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.",
     "url": "https://www.dnd-spells.com/spell/investiture-of-flame",
-    "damage": [
-      [
-        "1d10 fire damage",
-        "d",
-        "e",
-        "damage"
-      ],
-      [
-        "4d8 fire damage",
-        "d",
-        "e",
-        "damage"
-      ]
-    ]
+    "damage": "1d10 fire damage for creature proximinty and 4d8 fire damage for wall effect. Ask for short or long description for more information"
   },
   "magic mouth": {
     "castingTime": "1 Minute",
@@ -1473,20 +1372,7 @@
     "shortDescription": "Needs concentration. Create a wall of tough, tangled brush bristling with needle-sharp thorns on a surface within range. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20 foot diameter, up to 20 feet high and 5 feet thick. The wall blocks line of sight, each creature within its area must make a Dexterity save or take 7d8 piercing damage or half on a success. The first time a creature enters the wall on a turn or ends its there, it must make a Dexterity save or take 7d8 slashing damage or half on a success. When cast using a spell slot of7th level or higher both types of damage increases by 1d8 for each slot above 6th.",
     "longDescription": "You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight. When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save. A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.",
     "url": "https://www.dnd-spells.com/spell/wall-of-thorns",
-    "damage": [
-      [
-        "7d8 piercing damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "7d8 slashing damage",
-        "d",
-        "g",
-        "damage"
-      ]
-    ]
+    "damage": "7d8 peircing damage creatures caught in the area when cast. 7d8 slashing if the creature enters the wall area"
   },
   "wall of force": {
     "castingTime": "1 Action",
@@ -1849,20 +1735,7 @@
     "shortDescription": "Make a ranged spell attack against a target, on a hit the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the target takes half as much initial damage, and no after effect damage. When cast at a 3rd level or higher, increase both damages by 1d4 for each slot above 2nd.",
     "longDescription": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
     "url": "https://www.dnd-spells.com/spell/melfs-acid-arrow",
-    "damage": [
-      [
-        "4d4 acid damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "2d4 acid damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "4d4 acid damage immediately and 2d4 acid damage at the end of next turn"
   },
   "feather fall": {
     "castingTime": "Special",
@@ -2423,20 +2296,7 @@
     "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weaps do an extra 1d4 damage. Reduce has the opposite effect.",
     "longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The target\u2019s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category\u2014from Medium to Large, for example. If there isn\u2019t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target\u2019s weapons also grow to match its new size. While these weapons are enlarged, the target\u2019s attacks with them deal 1d4 extra damage. Reduce. The target\u2019s size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category\u2014from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target\u2019s weapons also shrink to match its new size. While these weapons are reduced, the target\u2019s attacks with them deal 1d4 less damage (this can\u2019t reduce the damage below 1).",
     "url": "https://www.dnd-spells.com/spell/enlargereduce",
-    "damage": [
-      [
-        "1d4 extra damage",
-        "d",
-        "a",
-        "damage"
-      ],
-      [
-        "1d4 less damage",
-        "d",
-        "s",
-        "damage"
-      ]
-    ]
+    "damage": "1d4 extra damage if enlarged and 1d4 less damage is reduced"
   },
   "rope trick": {
     "castingTime": "1 Action",
@@ -2755,20 +2615,7 @@
     "shortDescription": "Requires concentration. Create a wall of water up to 300 feet long, 300 feet high, and 50 feet thick. Creatures in the wave take 6d10 bludgeoning damage on a failed strength save, half as much on a success. Each turn, the wall moves 50 feet away from you, taking huge or smaller creatures with it. Creatures subsequently struck by the wave take 5d10 damage, or half as much on a strength save. The wall's hieght reduces by 50 feet each turn, and damage is reduced by 1d10.",
     "longDescription": "A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much damage on a successful save. At the start of each of your turns after the wall appears, the wall, along with any creatures in it, moves 50 feet away from you. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take 5d10 bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the wall\u2019s height is reduced by 50 feet, and the damage creatures take from the spell on subsequent rounds is reduced by 1d10. When the wall reaches 0 feet in height, the spell ends. A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength (Athletics) check against your spell save DC in order to move at all. If it fails the check, it can\u2019t move. A creature that moves out of the area falls to the ground.",
     "url": "https://www.dnd-spells.com/spell/tsunami",
-    "damage": [
-      [
-        "6d10 bludgeoning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "5d10 bludgeoning damage",
-        "d",
-        "g",
-        "damage"
-      ]
-    ]
+    "damage": "6d10 bludgeoning when the wave first hits and 1d10 less per turn"
   },
   "incendiary cloud": {
     "castingTime": "1 Action",
@@ -2812,20 +2659,7 @@
     "shortDescription": "Requires concentration. Create a 20 foot radius sphere of whirling air that is difficult terrain. Each creature in the sphere on creation or ending its turn there must make a strength save or take 2d6 bludgeoning damage. You can use a bonus action to make a ranged spell attack on a creature within 60 feet of the sphere with a bolt of lightning dealing 4d6 lightning damage.",
     "longDescription": "A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell\u2019s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere\u2019s space is difficult terrain. Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage. Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen. At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th.",
     "url": "https://www.dnd-spells.com/spell/storm-sphere",
-    "damage": [
-      [
-        "2d6 bludgeoning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "4d6 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ]
-    ]
+    "damage": "2d6 bludgeoning damage when the spell is cast and for creatures in the area affect. And once per turn cast 4d6 lightning damage on one creature in area affect"
   },
   "hunter's mark": {
     "castingTime": "1 Bonus Action",
@@ -3155,20 +2989,7 @@
     "shortDescription": "Create a shard and make a ranged spell attack against a target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.",
     "longDescription": "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.",
     "url": "https://www.dnd-spells.com/spell/ice-knife",
-    "damage": [
-      [
-        "1d10 piercing damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "2d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "1d10 piercing damage on taarget and 2d6 cold damage for creatures within five feet of target"
   },
   "revivify": {
     "castingTime": "1 Action",
@@ -3597,20 +3418,7 @@
     "shortDescription": "A target takes 7d6 fire damage on a failed Dexterity save, half as much on a success. Also on a fail, the target burns and sheds bright light. While burning, the target takes 3d6 fire damage on a failed Dexterity saves. Flames cannot be extinguished nonmagically.",
     "longDescription": "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell\u2019s duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can\u2019t be extinguished through nonmagical means. If damage from this spell reduces a target to 0 hit points, the target is turned to ash.",
     "url": "https://www.dnd-spells.com/spell/immolation",
-    "damage": [
-      [
-        "7d6 fire damage",
-        "d",
-        "e",
-        "damage"
-      ],
-      [
-        "3d6 fire damage",
-        "d",
-        "e",
-        "damage"
-      ]
-    ]
+    "damage": "7d6 fire damage when first cast and 3d6 fire damage on subsequent turns"
   },
   "sequester": {
     "castingTime": "1 Action",
@@ -3786,20 +3594,7 @@
     "shortDescription": "Requires concentration. Create a wall of ice on a solid surface within 120 feet. It can be a flat wall, a dome, or a sphere, and is one foot thick. Creatures in the same space as where the wall was created are pushed aside, and take 10d6 cold damage on a failed Dexterity save, or half as much on a success. The wall has AC 12 and 30 health per 10 foot section, and is vulnerable to fire. When a section is destroyed it leaves behind a veil of air that creatures enterng for the first time must make a Constitution save or take 5d6 cold damage, half as much on a success.",
     "longDescription": "You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration. If the wall cuts through a creature\u2019s space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save. The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one. AtHigherLevels. When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th.",
     "url": "https://www.dnd-spells.com/spell/wall-of-ice",
-    "damage": [
-      [
-        "10d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "5d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "10d6 cold damage for creatures caught in the wall when cast then 5d6 cold damage when wall is desroyed and creatures pass through the icy veil left behind"
   },
   "animal messenger ": {
     "castingTime": "1 Action",
@@ -3909,20 +3704,7 @@
     "shortDescription": "Your ammo or thrown weapon turn into a bolt of lightning. The target takes 4d8 lightning on a hit, half damage on a miss. Each creature within 10ft of the target takes 2d8 lightning on a failed Dexterity save, half as much on a success.",
     "longDescription": "The next time you make a ranged weapon attack during the spell\u2019s duration, the weapon\u2019s ammunition, or the weapon itself if it\u2019s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon\u2019s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.",
     "url": "https://www.dnd-spells.com/spell/lightning-arrow",
-    "damage": [
-      [
-        "4d8 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "2d8 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ]
-    ]
+    "damage": "4d8 lightning damage on taget and 2d8 lightning damage for creatures in a 10 foot radius"
   },
   "magic stone": {
     "castingTime": "1 Bonus Action",
@@ -4461,20 +4243,7 @@
     "shortDescription": "A 20ft radius sphere blinds creatures inside of it. The area inside is difficult terrain, and any creature that starts its turn inside takes 2d6 cold damage, and must succeed a Dexterity save at the end of their turn or take 2d6 acid damage.",
     "longDescription": "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded. The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it.",
     "url": "https://www.dnd-spells.com/spell/hunger-of-hadar",
-    "damage": [
-      [
-        "2d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "2d6 acid damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "2d6 cold damage if creature starts their turn in area and 2d6 acid damage at the end of their turn on a failed Dexterity save"
   },
   "elemental bane": {
     "castingTime": "1 Action",
@@ -4705,38 +4474,7 @@
     "shortDescription": "Effects increase by round. Round 1: Each creature less then 5000ft under the storm cloud must make a Constitution save or take 2d6 thunder damage and is deafened for 5 minutes. Round 2: Each creature takes 1d6 acid damage from rain. Round 3: Call six bolts of lightning. Up to six creatures take 10d6 lightning damage on a dex fail, half as much on a save. Round 4: Each creature takes 2d6 bludgeoning damage from hail. Rounds 5 through 10: The area becomes difficult terrain. Each creature takes 1d6 cold damage. Ranged weapon attacks are impossible. Concentraion is broken. Fog and mists are dispersed.",
     "longDescription": "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes. Each round you maintain concentration on this spell, the storm produces additional effects on your turn. Round 2. Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage. Round 3. You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can\u2019t be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. Round 4. Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage. Round 5-10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.",
     "url": "https://www.dnd-spells.com/spell/storm-of-vengeance",
-    "damage": [
-      [
-        "2d6 thunder damage",
-        "d",
-        "r",
-        "damage"
-      ],
-      [
-        "1d6 acid damage",
-        "d",
-        "d",
-        "damage"
-      ],
-      [
-        "10d6 lightning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "2d6 bludgeoning damage",
-        "d",
-        "g",
-        "damage"
-      ],
-      [
-        "1d6 cold damage",
-        "d",
-        "d",
-        "damage"
-      ]
-    ]
+    "damage": "complex damage type listen to short or long description"
   },
   "find traps": {
     "castingTime": "1 Action",
