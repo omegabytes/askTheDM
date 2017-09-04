@@ -6,18 +6,11 @@ A quick-reference for Dungeons and Dragons 5e.
 Full skill description:
 Ask the DM is a quick reference tool for use with Dungeons and Dragons 5th edition. Designed for use around the table during sessions, Ask the DM aims to reduce the amount of time spent looking up information.
 
-This version includes spells from the 5th edition player's handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide. You can also ask for information on conditions like blinded or grappled.
+This version includes spells from the 5th edition player's handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide. You can also ask for information on conditions, feats, and items. 
 
-You can ask things like "what is fireball" to get a summary description (Warning! Some descriptions are LONG"). For specific information, please say "what is the range of aid" or "what are the components for shapechange".
+You can ask things like "what is fireball" to get a summary description (Warning! Some descriptions are LONG").
 
-The following spell attributes are available at this time:
-- casting time
-- duration
-- range
-- components
-- spell type
-- short description
-- long description
+To speed things up, you can ask things like "how much does a backpack cost?" or "what is level 3 of exhaustion?" and get a quick answer. To get quick answers for specific information, include the name of the spell, item, feat, or condition; as well as an attribute such as range, spell type, description, level, prerequisite, etc. For an exhaustive list of what you can ask about, please say "help". 
 
 Please note that we are team of student developers, and are making this application out of the love for the game, as well as to gain programming experience. D&D and its associated content is not owned by us, and we make no money off of this project. 
 

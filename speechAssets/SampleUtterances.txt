@@ -35,6 +35,7 @@ ConditionsIntent get the effects of the {Condition} condition
 ConditionsIntent about {Condition}
 ConditionsIntent about the {Condition} condition
 ConditionsIntent about being {Condition}
+ConditionsIntent what are the effects of being {Condition}
 ConditionsIntent how does {Condition} work
 ConditionsIntent how does {Condition} affect me
 ConditionsIntent how does {Condition} affect a player
@@ -127,6 +128,12 @@ ExhaustionLevelIntent what does {Level} exhaustion do to me
 ExhaustionLevelIntent what does {Level} exhaustion do to a player
 ExhaustionLevelIntent what does {Level} exhaustion do to a creature
 ExhaustionLevelIntent what does {Level} exhaustion do to a character
+ExhaustionLevelIntent what does {Level} of exhaustion mean
+ExhaustionLevelIntent what does {Level} of exhaustion do
+ExhaustionLevelIntent what does {Level} of exhaustion do to me
+ExhaustionLevelIntent what does {Level} of exhaustion do to a player
+ExhaustionLevelIntent what does {Level} of exhaustion do to a creature
+ExhaustionLevelIntent what does {Level} of exhaustion do to a character
 ExhaustionLevelIntent about {Level} exhaustion
 ExhaustionLevelIntent how does {Level} exhaustion work
 ExhaustionLevelIntent what does having {Level} exhaustion mean
@@ -201,6 +208,7 @@ FeatsIntent get the {Feats} feat
 FeatsIntent get the {FeatsAttr} of {Feats}
 FeatsIntent to get info on {Feats}
 FeatsIntent to get info on {Feats} feat
+FeatsIntent to get info on the {Feats} feat
 FeatsIntent to get info on {FeatsAttr} of {Feats}
 FeatsIntent to get information on {Feats}
 FeatsIntent to get information on {Feats} feat
@@ -335,54 +343,58 @@ ItemsIntent how does the {Item} work
 ItemsIntent how does the {Item} do
 ItemsIntent how does {Item} work
 ItemsIntent how does {Item} do
-ItemsIntent Tell me what the {Item} works
-ItemsIntent Tell me what the {Item} does
-ItemsIntent Tell me what the {Item}
-ItemsIntent Tell me what a {Item} works
-ItemsIntent Tell me what a {Item} does
-ItemsIntent Tell me what a {Item}
-ItemsIntent Tell me what an {Item} works
-ItemsIntent Tell me what an {Item} does
-ItemsIntent Tell me what an {Item}
-ItemsIntent Tell me what {Item} works
-ItemsIntent Tell me what {Item} does
-ItemsIntent Tell me what {Item}
-ItemsIntent Tell me how the {Item} works
-ItemsIntent Tell me how the {Item} does
-ItemsIntent Tell me how the {Item}
-ItemsIntent Tell me how a {Item} works
-ItemsIntent Tell me how a {Item} does
-ItemsIntent Tell me how a {Item}
-ItemsIntent Tell me how an {Item} works
-ItemsIntent Tell me how an {Item} does
-ItemsIntent Tell me how an {Item}
-ItemsIntent Tell me how {Item} works
-ItemsIntent Tell me how {Item} does
-ItemsIntent Tell me how {Item}
-ItemsIntent Tell us what the {Item} works
-ItemsIntent Tell us what the {Item} does
-ItemsIntent Tell us what the {Item}
-ItemsIntent Tell us what a {Item} works
-ItemsIntent Tell us what a {Item} does
-ItemsIntent Tell us what a {Item}
-ItemsIntent Tell us what an {Item} works
-ItemsIntent Tell us what an {Item} does
-ItemsIntent Tell us what an {Item}
-ItemsIntent Tell us what {Item} works
-ItemsIntent Tell us what {Item} does
-ItemsIntent Tell us what {Item}
-ItemsIntent Tell us how the {Item} works
-ItemsIntent Tell us how the {Item} does
-ItemsIntent Tell us how the {Item}
-ItemsIntent Tell us how a {Item} works
-ItemsIntent Tell us how a {Item} does
-ItemsIntent Tell us how a {Item}
-ItemsIntent Tell us how an {Item} works
-ItemsIntent Tell us how an {Item} does
-ItemsIntent Tell us how an {Item}
-ItemsIntent Tell us how {Item} works
-ItemsIntent Tell us how {Item} does
-ItemsIntent Tell us how {Item}
+ItemsIntent how much does {Item} {ItemAttribute}
+ItemsIntent how much does a {Item} {ItemAttribute}
+ItemsIntent how much does an {Item} {ItemAttribute}
+ItemsIntent how much do {Item} {ItemAttribute}
+ItemsIntent tell me what the {Item} works
+ItemsIntent tell me what the {Item} does
+ItemsIntent tell me what the {Item}
+ItemsIntent tell me what a {Item} works
+ItemsIntent tell me what a {Item} does
+ItemsIntent tell me what a {Item}
+ItemsIntent tell me what an {Item} works
+ItemsIntent tell me what an {Item} does
+ItemsIntent tell me what an {Item}
+ItemsIntent tell me what {Item} works
+ItemsIntent tell me what {Item} does
+ItemsIntent tell me what {Item}
+ItemsIntent tell me how the {Item} works
+ItemsIntent tell me how the {Item} does
+ItemsIntent tell me how the {Item}
+ItemsIntent tell me how a {Item} works
+ItemsIntent tell me how a {Item} does
+ItemsIntent tell me how a {Item}
+ItemsIntent tell me how an {Item} works
+ItemsIntent tell me how an {Item} does
+ItemsIntent tell me how an {Item}
+ItemsIntent tell me how {Item} works
+ItemsIntent tell me how {Item} does
+ItemsIntent tell me how {Item}
+ItemsIntent tell us what the {Item} works
+ItemsIntent tell us what the {Item} does
+ItemsIntent tell us what the {Item}
+ItemsIntent tell us what a {Item} works
+ItemsIntent tell us what a {Item} does
+ItemsIntent tell us what a {Item}
+ItemsIntent tell us what an {Item} works
+ItemsIntent tell us what an {Item} does
+ItemsIntent tell us what an {Item}
+ItemsIntent tell us what {Item} works
+ItemsIntent tell us what {Item} does
+ItemsIntent tell us what {Item}
+ItemsIntent tell us how the {Item} works
+ItemsIntent tell us how the {Item} does
+ItemsIntent tell us how the {Item}
+ItemsIntent tell us how a {Item} works
+ItemsIntent tell us how a {Item} does
+ItemsIntent tell us how a {Item}
+ItemsIntent tell us how an {Item} works
+ItemsIntent tell us how an {Item} does
+ItemsIntent tell us how an {Item}
+ItemsIntent tell us how {Item} works
+ItemsIntent tell us how {Item} does
+ItemsIntent tell us how {Item}
 ItemsIntent get the information on a {Item}
 ItemsIntent get the information on an {Item}
 ItemsIntent get the information about a {Item}
