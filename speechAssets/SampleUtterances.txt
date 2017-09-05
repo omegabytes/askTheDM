@@ -77,6 +77,48 @@ ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
 
+DiceIntent roll {Quantity} d {Sides}
+DiceIntent roll a {Quantity} d {Sides}
+DiceIntent can you roll a {Quantity} d {Sides}
+DiceIntent can you roll {Quantity} d {Sides}
+DiceIntent to roll {Quantity} d {Sides}
+DiceIntent to roll a {Quantity} d {Sides}
+DiceIntent roll {Quantity} d {Sides} plus {Modifier}
+DiceIntent roll a {Quantity} d {Sides} plus {Modifier}
+DiceIntent can you roll a {Quantity} d {Sides} plus {Modifier}
+DiceIntent can you roll {Quantity} d {Sides} plus {Modifier}
+DiceIntent to roll {Quantity} d {Sides} plus {Modifier}
+DiceIntent to roll a {Quantity} d {Sides} plus {Modifier}
+DiceIntent roll {Quantity} d {Sides} with {Status}
+DiceIntent roll a {Quantity} d {Sides} with {Status}
+DiceIntent can you roll a {Quantity} d {Sides} with {Status}
+DiceIntent can you roll {Quantity} d {Sides} with {Status}
+DiceIntent to roll {Quantity} d {Sides} with {Status}
+DiceIntent to roll a {Quantity} d {Sides} with {Status}
+DiceIntent roll {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent roll a {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll a {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent to roll {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent to roll a {Quantity} d {Sides} with {Status} plus {Modifier}
+DiceIntent roll {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent roll a {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll a {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent to roll {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent to roll a {Quantity} d {Sides} plus {Modifier} with {Status}
+DiceIntent roll a d {Sides}
+DiceIntent roll a d {Sides} with {Status}
+DiceIntent roll a d {Sides} plus {Modifier}
+DiceIntent roll a d {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll a d {Sides}
+DiceIntent can you roll a d {Sides} with {Status}
+DiceIntent can you roll a d {Sides} plus {Modifier}
+DiceIntent can you roll a d {Sides} plus {Modifier} with {Status}
+DiceIntent please roll a d {Sides}
+DiceIntent please roll a d {Sides} with {Status}
+DiceIntent please roll a d {Sides} plus {Modifier}
+DiceIntent please roll a d {Sides} plus {Modifier} with {Status}
 DiceIntent roll {Quantity} d. {Sides}
 DiceIntent roll a {Quantity} d. {Sides}
 DiceIntent can you roll a {Quantity} d. {Sides}
@@ -119,6 +161,7 @@ DiceIntent please roll a d. {Sides}
 DiceIntent please roll a d. {Sides} with {Status}
 DiceIntent please roll a d. {Sides} plus {Modifier}
 DiceIntent please roll a d. {Sides} plus {Modifier} with {Status}
+
 
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
@@ -168,11 +211,11 @@ FeatsIntent what does {FeatsAttr} mean
 FeatsIntent what does {FeatsAttr} mean {Feats}
 FeatsIntent what is {Feats}
 FeatsIntent what is {FeatsAttr} of {Feats}
-FeatsIntent what's {Feats} do
-FeatsIntent what's {Feats} affect
-FeatsIntent what's {Feats} mean
-FeatsIntent what's {FeatsAttr} mean
-FeatsIntent what's {Feats} feat
+FeatsIntent whats {Feats} do
+FeatsIntent whats {Feats} affect
+FeatsIntent whats {Feats} mean
+FeatsIntent whats {FeatsAttr} mean
+FeatsIntent whats {Feats} feat
 FeatsIntent what does the {Feats} do
 FeatsIntent what does the {Feats} affect
 FeatsIntent what does the {Feats} mean
@@ -259,60 +302,31 @@ FeatsIntent for {Feats}
 FeatsIntent for {FeatsAttr} of {Feats}
 
 ItemsIntent lookup {Item}
-ItemsIntent What a {Item}
-ItemsIntent What an {Item}
-ItemsIntent What   {Item}
-ItemsIntent What's a {Item}
-ItemsIntent What's an {Item}
-ItemsIntent What's   {Item}
-ItemsIntent What is a {Item}
-ItemsIntent What is an {Item}
-ItemsIntent What is   {Item}
-ItemsIntent What the {ItemAttribute} of a {Item}
-ItemsIntent What the {ItemAttribute} of an {Item}
-ItemsIntent What the {ItemAttribute} of {Item}
-ItemsIntent What the {ItemAttribute} a {Item}
-ItemsIntent What the {ItemAttribute} an {Item}
-ItemsIntent What an {ItemAttribute} of a {Item}
-ItemsIntent What an {ItemAttribute} of an {Item}
-ItemsIntent What an {ItemAttribute} of {Item}
-ItemsIntent What an {ItemAttribute} a {Item}
-ItemsIntent What an {ItemAttribute} an {Item}
-ItemsIntent What a {ItemAttribute} of a {Item}
-ItemsIntent What a {ItemAttribute} of an {Item}
-ItemsIntent What a {ItemAttribute} of {Item}
-ItemsIntent What a {ItemAttribute} a {Item}
-ItemsIntent What a {ItemAttribute} an {Item}
-ItemsIntent What's the {ItemAttribute} of a {Item}
-ItemsIntent What's the {ItemAttribute} of an {Item}
-ItemsIntent What's the {ItemAttribute} of {Item}
-ItemsIntent What's the {ItemAttribute} a {Item}
-ItemsIntent What's the {ItemAttribute} an {Item}
-ItemsIntent What's an {ItemAttribute} of a {Item}
-ItemsIntent What's an {ItemAttribute} of an {Item}
-ItemsIntent What's an {ItemAttribute} of {Item}
-ItemsIntent What's an {ItemAttribute} a {Item}
-ItemsIntent What's an {ItemAttribute} an {Item}
-ItemsIntent What's a {ItemAttribute} of a {Item}
-ItemsIntent What's a {ItemAttribute} of an {Item}
-ItemsIntent What's a {ItemAttribute} of {Item}
-ItemsIntent What's a {ItemAttribute} a {Item}
-ItemsIntent What's a {ItemAttribute} an {Item}
-ItemsIntent What is the {ItemAttribute} of a {Item}
-ItemsIntent What is the {ItemAttribute} of an {Item}
-ItemsIntent What is the {ItemAttribute} of {Item}
-ItemsIntent What is the {ItemAttribute} a {Item}
-ItemsIntent What is the {ItemAttribute} an {Item}
-ItemsIntent What is an {ItemAttribute} of a {Item}
-ItemsIntent What is an {ItemAttribute} of an {Item}
-ItemsIntent What is an {ItemAttribute} of {Item}
-ItemsIntent What is an {ItemAttribute} a {Item}
-ItemsIntent What is an {ItemAttribute} an {Item}
-ItemsIntent What is a {ItemAttribute} of a {Item}
-ItemsIntent What is a {ItemAttribute} of an {Item}
-ItemsIntent What is a {ItemAttribute} of {Item}
-ItemsIntent What is a {ItemAttribute} a {Item}
-ItemsIntent What is a {ItemAttribute} an {Item}
+ItemsIntent whats a {Item}
+ItemsIntent whats an {Item}
+ItemsIntent whats {Item}
+ItemsIntent what is a {Item}
+ItemsIntent what is an {Item}
+ItemsIntent what is {Item}
+ItemsIntent what the {ItemAttribute} of an {Item}
+ItemsIntent whats the {ItemAttribute} of a {Item}
+ItemsIntent whats the {ItemAttribute} of an {Item}
+ItemsIntent whats the {ItemAttribute} of {Item}
+ItemsIntent whats an {ItemAttribute} of a {Item}
+ItemsIntent whats an {ItemAttribute} of an {Item}
+ItemsIntent whats an {ItemAttribute} of {Item}
+ItemsIntent whats a {ItemAttribute} of a {Item}
+ItemsIntent whats a {ItemAttribute} of an {Item}
+ItemsIntent whats a {ItemAttribute} of {Item}
+ItemsIntent what is the {ItemAttribute} of a {Item}
+ItemsIntent what is the {ItemAttribute} of an {Item}
+ItemsIntent what is the {ItemAttribute} of {Item}
+ItemsIntent what is an {ItemAttribute} of a {Item}
+ItemsIntent what is an {ItemAttribute} of an {Item}
+ItemsIntent what is an {ItemAttribute} of {Item}
+ItemsIntent what is a {ItemAttribute} of a {Item}
+ItemsIntent what is a {ItemAttribute} of an {Item}
+ItemsIntent what is a {ItemAttribute} of {Item}
 ItemsIntent what does a {Item} do
 ItemsIntent what does an {Item} do
 ItemsIntent tell me about {Item}
@@ -327,74 +341,34 @@ ItemsIntent to get info on {Item}
 ItemsIntent get information on {Item}
 ItemsIntent get info on {Item}
 ItemsIntent about {Item}
-ItemsIntent what does a {Item} work
 ItemsIntent what does a {Item} do
-ItemsIntent what does an {Item} work
 ItemsIntent what does an {Item} do
-ItemsIntent what does the {Item} work
 ItemsIntent what does the {Item} do
-ItemsIntent what does {Item} work
 ItemsIntent what does {Item} do
 ItemsIntent how does a {Item} work
-ItemsIntent how does a {Item} do
 ItemsIntent how does an {Item} work
-ItemsIntent how does an {Item} do
 ItemsIntent how does the {Item} work
-ItemsIntent how does the {Item} do
 ItemsIntent how does {Item} work
-ItemsIntent how does {Item} do
 ItemsIntent how much does {Item} {ItemAttribute}
 ItemsIntent how much does a {Item} {ItemAttribute}
 ItemsIntent how much does an {Item} {ItemAttribute}
 ItemsIntent how much do {Item} {ItemAttribute}
-ItemsIntent tell me what the {Item} works
 ItemsIntent tell me what the {Item} does
-ItemsIntent tell me what the {Item}
-ItemsIntent tell me what a {Item} works
 ItemsIntent tell me what a {Item} does
-ItemsIntent tell me what a {Item}
-ItemsIntent tell me what an {Item} works
 ItemsIntent tell me what an {Item} does
-ItemsIntent tell me what an {Item}
-ItemsIntent tell me what {Item} works
 ItemsIntent tell me what {Item} does
-ItemsIntent tell me what {Item}
 ItemsIntent tell me how the {Item} works
-ItemsIntent tell me how the {Item} does
-ItemsIntent tell me how the {Item}
 ItemsIntent tell me how a {Item} works
-ItemsIntent tell me how a {Item} does
-ItemsIntent tell me how a {Item}
 ItemsIntent tell me how an {Item} works
-ItemsIntent tell me how an {Item} does
-ItemsIntent tell me how an {Item}
 ItemsIntent tell me how {Item} works
-ItemsIntent tell me how {Item} does
-ItemsIntent tell me how {Item}
-ItemsIntent tell us what the {Item} works
 ItemsIntent tell us what the {Item} does
-ItemsIntent tell us what the {Item}
-ItemsIntent tell us what a {Item} works
 ItemsIntent tell us what a {Item} does
-ItemsIntent tell us what a {Item}
-ItemsIntent tell us what an {Item} works
 ItemsIntent tell us what an {Item} does
-ItemsIntent tell us what an {Item}
-ItemsIntent tell us what {Item} works
 ItemsIntent tell us what {Item} does
-ItemsIntent tell us what {Item}
 ItemsIntent tell us how the {Item} works
-ItemsIntent tell us how the {Item} does
-ItemsIntent tell us how the {Item}
 ItemsIntent tell us how a {Item} works
-ItemsIntent tell us how a {Item} does
-ItemsIntent tell us how a {Item}
 ItemsIntent tell us how an {Item} works
-ItemsIntent tell us how an {Item} does
-ItemsIntent tell us how an {Item}
 ItemsIntent tell us how {Item} works
-ItemsIntent tell us how {Item} does
-ItemsIntent tell us how {Item}
 ItemsIntent get the information on a {Item}
 ItemsIntent get the information on an {Item}
 ItemsIntent get the information about a {Item}
@@ -433,10 +407,10 @@ SpellsIntent what is {Spell}
 SpellsIntent what is {Spell} spell
 SpellsIntent what is {Attribute} do {Spell}
 SpellsIntent what is {Attribute} of {Spell}
-SpellsIntent what's {Spell} do
-SpellsIntent what's {Spell} affect
-SpellsIntent what's {Spell} mean
-SpellsIntent what's {Attribute} of {Spell}
+SpellsIntent whats {Spell} do
+SpellsIntent whats {Spell} affect
+SpellsIntent whats {Spell} mean
+SpellsIntent whats {Attribute} of {Spell}
 SpellsIntent what does the {Spell} do
 SpellsIntent what does the {Spell} mean
 SpellsIntent what does the {Attribute} of {Spell} do
@@ -646,10 +620,10 @@ Unhandled how does the
 Unhandled how does
 Unhandled I forgot what a
 Unhandled I forgot what an
-Unhandled what's a
-Unhandled what's an
+Unhandled whats a
+Unhandled whats an
 Unhandled what the
-Unhandled what's the
+Unhandled whats the
 Unhandled what is
 Unhandled what is a
 Unhandled what is an
