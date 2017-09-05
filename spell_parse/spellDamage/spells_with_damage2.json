@@ -719,7 +719,7 @@
     "damage": [
       {
         "initial": "1d12 lightning damage",
-        "increaseBy": null,
+        "increaseBy": "1d12",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -966,7 +966,7 @@
     "damage": [
       {
         "initial": "4d10 psychic damage",
-        "increaseBy": null,
+        "increaseBy": "1d10",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -2706,7 +2706,7 @@
     "damage": [
       {
         "initial": "3d10 lightning damage",
-        "increaseBy": null,
+        "increaseBy": "1d10",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -4433,7 +4433,7 @@
     "damage": [
       {
         "initial": null,
-        "increaseBy": null,
+        "increaseBy": "1d10",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -5378,7 +5378,7 @@
     "damage": [
       {
         "initial": "4d10 piercing damage",
-        "increaseBy": null,
+        "increaseBy": "1d10",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -6983,7 +6983,7 @@
     "damage": [
       {
         "initial": "3d10 necrotic damage",
-        "increaseBy": null,
+        "increaseBy": "1d10",
         "level1": "",
         "level2": "",
         "level3": "",
@@ -10275,7 +10275,7 @@
     "damage": [
       {
         "initial": "3d12 bludgeoning damage",
-        "increaseBy": null,
+        "increaseBy": "1d12",
         "level1": "",
         "level2": "",
         "level3": "",
