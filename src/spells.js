@@ -118,7 +118,7 @@ module.exports = {
     "components"        : "Verbal, Somatic",
     "spellType"         : "level 1 Evocation",
     "shortDescription"  : "Deals 2d10 fire damage on a failed Dexterity save or half as much damage on a successful save to a creature that damaged you.  Increase damage by 1d10 for each spell slot after 1st.",
-    "longDescription"   : "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1dlO for each slot level above 1st.",
+    "longDescription"   : "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
     "url"               : "https://www.dnd-spells.com/spell/hellish-rebuke",
     "damage"            : "2d10 fire damage"
   },
@@ -1768,7 +1768,7 @@ module.exports = {
     "components"        : "Verbal",
     "spellType"         : "level 1 Conjuration",
     "shortDescription"  : "Needs concentration. The next time you hit a creature with a ranged weapon, create a rain of thorns that sprout from your ammo. The target and each creature within 5ft of it must make a Dexterity save or take 1d10 piercing damage, or half on a success. When cast at a spell slot of 2nd or higher, increase the damage by 1d10 for each slot above 1st to a maximum of 6d10.",
-    "longDescription"   : "The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1dlO piercing damage on a failed save, or half as much damage on a successful one. At Higher Levels: If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st (to a maximum of 6d10).",
+    "longDescription"   : "The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1d10 piercing damage on a failed save, or half as much damage on a successful one. At Higher Levels: If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st (to a maximum of 6d10).",
     "url"               : "https://www.dnd-spells.com/spell/hail-of-thorns",
     "damage"            : null
   },
@@ -4000,8 +4000,8 @@ module.exports = {
     "range"             : "120 feet",
     "components"        : "Verbal, Somatic",
     "spellType"         : "Evocation cantrip",
-    "shortDescription"  : "Make a ranged spell attack against the target. On a hit, the target takes 1dlO force damage.",
-    "longDescription"   : "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1dlO force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+    "shortDescription"  : "Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.",
+    "longDescription"   : "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "url"               : "https://www.dnd-spells.com/spell/eldritch-blast",
     "damage"            : null
   },

@@ -4,7 +4,8 @@ import re
 damageRE = re.compile('(\d+(d)\d+\s(\w)+\s(damage)+)')
 doubleDamageRE = re.compile('((\d+(d)\d+\s(\w)+\s(damage)+)\s(and)\s(\d+(d)\d+\s(\w)+\s(damage)+))')
 schoolTypeRE = re.compile('(([Aa]bjuration|[Cc]onjuration|[Dd]ivination|[Ee]nchantment|[Ee]vocation|[Ii]llusion|[Nn]ecromancy|[Tt]ransmutation))')
-increaseByEvoRE = re.compile('((damage|healing)+\s+increases+\s+by+\s+(\d+d+\d)+\s+for+\s+each+\s+slot+\s+level+\s+above+\s+(\d+(st|nd|rd|th)))')
+increaseByEvoRE = re.compile('((damage|healing)+\s+increases+\s+by+\s+(\d+d+\d{1,2})+\s+for+\s+each+\s+slot+\s+level+\s+above+\s+(\d+(st|nd|rd|th)))')
+cantripIncByRE = re.compile('')
 requiredSlotRE = re.compile('(([Ll]evel)+\s+\d)')
 higherLevelsRE = re.compile('([Aa]t+\s+[Hh]igher+\s+[Ll]evels+\:+\s+.*)')
 damageNumRE = re.compile('(\d+d+\d)')
@@ -38,9 +39,19 @@ for spell in spelljs:
 		#for spell in spellsjs:
 		
 
+	'''#testing fix to pull all evo spells, then do incByEvo regex
+	if schoolTypeRE.findall(temp["spellType"]):
+		school = schoolTypeRE.findall(temp["spellType"])[0][0]
+		if(school == "Evocation"):
+			print("this is an evo spell")
+			print(spell)
+	'''
+
+
 	if increaseByEvoRE.findall(temp["longDescription"]): #this does not grab every evo spell for some reason (ie: 'hellish rebuke')
 		#print(increaseByEvoRE.findall(temp["longDescription"])) prints regex from desc
 		higherSlots = increaseByEvoRE.findall(temp["longDescription"])
+		print(higherSlots)
 		#print(higherSlots[0][2]) prints dmg roll
 		#print(higherSlots[0][3]) prints slot level
 		incBy = higherSlots[0][2]
