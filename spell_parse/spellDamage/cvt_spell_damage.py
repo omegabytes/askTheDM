@@ -8,7 +8,7 @@ increaseByEvoRE = re.compile('((damage|healing)+\s+increases+\s+by+\s+(\d+d+\d{1
 cantripIncByRE = re.compile('')
 requiredSlotRE = re.compile('(([Ll]evel)+\s+\d)')
 higherLevelsRE = re.compile('([Aa]t+\s+[Hh]igher+\s+[Ll]evels+\:+\s+.*)')
-damageNumRE = re.compile('(\d+d+\d)')
+damageNumRE = re.compile('(\d+d+\d{1,2})')
 
 
 with open('spells.json', encoding="utf8") as f:
@@ -37,39 +37,45 @@ for spell in spelljs:
 		if len(school)==1:
 			school = school[0]
 		#for spell in spellsjs:
-		
-
-	'''#testing fix to pull all evo spells, then do incByEvo regex
-	if schoolTypeRE.findall(temp["spellType"]):
-		school = schoolTypeRE.findall(temp["spellType"])[0][0]
-		if(school == "Evocation"):
-			print("this is an evo spell")
-			print(spell)
-	'''
 
 
-	if increaseByEvoRE.findall(temp["longDescription"]): #this does not grab every evo spell for some reason (ie: 'hellish rebuke')
+	if increaseByEvoRE.findall(temp["longDescription"]): #works now, after fixing pdf to text typo
 		#print(increaseByEvoRE.findall(temp["longDescription"])) prints regex from desc
 		higherSlots = increaseByEvoRE.findall(temp["longDescription"])
-		print(higherSlots)
+
+		#take a look at prismatic spray
+
+		#print(higherSlots)
 		#print(higherSlots[0][2]) prints dmg roll
 		#print(higherSlots[0][3]) prints slot level
 		incBy = higherSlots[0][2]
 		incAt = higherSlots[0][3]
-		print("====spell name: "+spell+"====")
-		print("incAt: "+incAt)
-		print("incBy: "+incBy)
+		print("====spell name:"+spell+"====")
+		print("incAt:"+incAt)
+		print("incBy:"+incBy)
 		
 		if damageNumRE.findall(temp["longDescription"]): #if damage is not empty do below
 			damageNum = damageNumRE.findall(temp["longDescription"])
+			print("raw dmgnum:")
 			print(damageNum) #need to work more on spells that have two damage effects(ie: 'ice storm')
-			print("initial: "+damageNum[0])
-			print("increase by: "+damageNum[1])
+			initialDmg = damageNum[0]
+			print("initial:"+initialDmg)
+			print("increase by:"+damageNum[1])
+
+			if len(damageNum) >= 3:
+				print("this has 3 damage nums")
+				
+
+
+
+
+
 		#if increaseByEvoRE.findall(temp["longDescription"]):
 		
 
 	else:
 		incBy = None
+		initialDmg = None
 
 
 		''' regex testing logic
@@ -109,7 +115,7 @@ for spell in spelljs:
 	            'url' : temp["url"],
 	            'damage': [
 	            		{
-	            			'initial' : damage, #not sure if we want to just list the damage dice number or what we have now (ie: '8d6 fire damage')
+	            			'initial' : initialDmg, #not sure if we want to just list the damage dice number or what we have now (ie: '8d6 fire damage')
 	            			'increaseBy' : incBy, #atHigherLevels
 	            			'level1' : "",
 	            			'level2' : "",
