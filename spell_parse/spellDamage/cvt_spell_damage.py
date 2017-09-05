@@ -38,21 +38,24 @@ for spell in spelljs:
 		#for spell in spellsjs:
 		
 
-	if increaseByEvoRE.findall(temp["longDescription"]):
+	if increaseByEvoRE.findall(temp["longDescription"]): #this does not grab every evo spell for some reason (ie: 'hellish rebuke')
 		#print(increaseByEvoRE.findall(temp["longDescription"])) prints regex from desc
 		higherSlots = increaseByEvoRE.findall(temp["longDescription"])
 		#print(higherSlots[0][2]) prints dmg roll
 		#print(higherSlots[0][3]) prints slot level
 		incBy = higherSlots[0][2]
 		incAt = higherSlots[0][3]
-		print("incAt:"+incAt)
-		print("incBy:"+incBy)
-		print("spell name:"+spell)
-		if not damage:
-			#damageNum =          //needs to be logically fleshed out, will search in damages using the regex above('findall-damages') -Josh
-			print("damage:"+damageNum)
-
+		print("====spell name: "+spell+"====")
+		print("incAt: "+incAt)
+		print("incBy: "+incBy)
+		
+		if damageNumRE.findall(temp["longDescription"]): #if damage is not empty do below
+			damageNum = damageNumRE.findall(temp["longDescription"])
+			print(damageNum) #need to work more on spells that have two damage effects(ie: 'ice storm')
+			print("initial: "+damageNum[0])
+			print("increase by: "+damageNum[1])
 		#if increaseByEvoRE.findall(temp["longDescription"]):
+		
 
 	else:
 		incBy = None
@@ -95,8 +98,8 @@ for spell in spelljs:
 	            'url' : temp["url"],
 	            'damage': [
 	            		{
-	            			'initial' : damage,
-	            			'increaseBy' : incBy, #atHigherLevels, #not defined
+	            			'initial' : damage, #not sure if we want to just list the damage dice number or what we have now (ie: '8d6 fire damage')
+	            			'increaseBy' : incBy, #atHigherLevels
 	            			'level1' : "",
 	            			'level2' : "",
 	            			'level3' : "",
