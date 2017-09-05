@@ -42,6 +42,9 @@ for spell in spelljs:
 	if increaseByEvoRE.findall(temp["longDescription"]): #works now, after fixing pdf to text typo
 		#print(increaseByEvoRE.findall(temp["longDescription"])) prints regex from desc
 		higherSlots = increaseByEvoRE.findall(temp["longDescription"])
+
+		#take a look at prismatic spray
+
 		#print(higherSlots)
 		#print(higherSlots[0][2]) prints dmg roll
 		#print(higherSlots[0][3]) prints slot level
