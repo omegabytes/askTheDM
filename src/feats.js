@@ -6,15 +6,15 @@ module.exports = {
 	},
 	"FEATS" : {
 		"alert": {
-			"description"	: "Always on the lookout for danger.",
+			"description"	: "Always on the lookout for danger. You aren't surprised by other creatures, and they are not able to take the upper hand by being hidden.",
 			"benefits"		: "You gain +5 to initiative, can no longer be surprised while conscious, and other creatures don't gain advantage on attack rolls against you as a result of being hidden from you." 
 		},
 		"athlete": {
-			"description" 	: "You have undergone extensive physical training to push your body further.", 
+			"description" 	: "You have undergone extensive physical training to push your body further. You are able to stand up from prone in half the effort, you are also able to climb with ease. You become able to jump the distance and height using half the movement necessary.", 
 			"benefits" 		: "Increase your Strength or Dexterity score by 1 to a maximum of 20, while you are prone standing up uses only 5ft instead, climbing doesn't halve your speed, and you can make a running long jump or a running high jump after moving only 5ft on foot rather than 10ft." 
 		},
 		"actor": {
-			"description"	: "You become skilled at mimicry and dramatics.",
+			"description"	: "You become skilled at mimicry and dramatics. Due to your natural thespian ability you can easily deceive and perform for any creature by mimicking the speech, composure, or sounds made by other creatures that you've heard for at least a minute.",
 			"benefits"	  	: "Increase your Charisma score by 1 to a maximum of 20. Gain advantage on Charisma(Deception) and Charisma(Performance) checks when trying to pass yourself off as a different person. You can also mimic the speech of another person or the sounds made by other creatures, you must have heard the person or creature for at least 1 minute."
 		},
 		"charger": {
@@ -27,6 +27,7 @@ module.exports = {
 		},	
 		"defensive duelist": {
 			"description"	: "When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, as a reaction you can add your proficiency bonus to your A. C. for that attack, potentially causing the attack to miss.",
+			"benefits"		: "As a reaction you can add your proficiency bonus to your A. C. on your deflection roll.",
 			"prereq"		: "Dexterity 13 or higher."
 		},
 		"dual wielder": {
@@ -38,7 +39,7 @@ module.exports = {
 			"benefits"		: "Gain advantage on Wis(Perception) and Int(Investigation) checks made to detect the presence of secret doors. You gain advantage on saving throws made to avoid or resist traps, as well as resistance to the damage dealt by traps. You can now search for traps at a normal pace instead of a slow pace."
 		},
 		"durable": {
-			"description"	: "You become hardy and resilient.",
+			"description"	: "You become hardy and resilient, with the ability to heal more substantially when you rest.",
 			"benefits"		: "Increase your Con score by 1 to a maximum of 20. When you roll a Hit Die to regain hit points, the minimum number of hit points equals twice your Con mod (minimum of 2)."
 		},
 		"elemental adept": {
@@ -83,7 +84,7 @@ module.exports = {
 			"benefits"		: "Increase your Strength or Dexterity score by 1 to a maximum of 20, and gain proficiency with light armor."
 		},
 		"linguist": {
-			"description"	: "You have studied languages and codes throughly.",
+			"description"	: "You have studied languages and codes throughly. Becoming able to decipher three languages that you have studied, and can create written ciphers based on them.",
 			"benefits"		: "Increase you Intelligence score by 1 to a maximum of 20. You also learn 3 languages of your choice, and can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check(DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
 		},
 		"lucky": {
@@ -91,7 +92,7 @@ module.exports = {
 			"benefits"		: "You have 3 luck points. Whenever you make an attack roll, ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You can then choose which of the d20s is used instead. You can also spend one luck point when an attack roll is made against you, roll a d20 and choose whether the attack's roll or yours is used. You regain your expended luck points at the end of a long rest."
 		},
 		"mage slayer": {
-			"description"	: "You have practiced techniques useful in melee combat against spellcasters.",
+			"description"	: "You have practiced techniques useful in melee combat against spellcasters. This knowledge allows you to distract a caster making it harder for them to maintain certain spells, and you can see the signs of a spell about to be cast, gaining the upper hand on the caster.",
 			"benefits"		: "When a creature within 5 ft of you casts a spell, you can use your reaction to make a melee weapon attack against that creature. When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw to maintain concentration. You also gain advantage on saving throws against spells cast by creatures within 5ft of you."
 		},
 		"magic initiate": {
@@ -99,7 +100,7 @@ module.exports = {
 			"benefits"		: "You learn two cantrips of your choice from those classes's spell list. In addition, choose one 1st level spell from that same list. You learn that spell but can only cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again."
 		},
 		"martial adept": {
-			"description"	: "You have martial training that allows you to perform special combat maneuvers.",
+			"description"	: "You have martial training from a Battle Master, that allows you to perform special combat maneuvers.",
 			"benefits"		: "You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effect, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity mod. If you already have superiority dice, you gain one more; otherwise you have one superiority die which is a d6. This die is used to fuel your maneuvers and is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
 		},
 		"medium armor master": {
@@ -108,7 +109,7 @@ module.exports = {
 			"prereq"		: "Proficiency with medium armor."
 		},
 		"mobile": {
-			"description"	: "You are exceptionally speedy and agile.",
+			"description"	: "You are exceptionally speedy and agile. Able to traverse the most difficult of terrain with ease, you now know how to slip past an enemy when they are about to strike you.",
 			"benefits"		: "Your speed increases by 10ft, and when you use the Dash action, difficult terrain doesn't cost you extra movement that turn. When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
 		},
 		"moderately armored": {
@@ -117,19 +118,19 @@ module.exports = {
 			"prereq"		: "Proficiency with light armor."
 		},
 		"mounted combatant": {
-			"description"	: "You are a dangerous foe to face while mounted.",
+			"description"	: "You are a dangerous foe to face while mounted. You are the calvary force, allowing you take command of the field on your stead.",
 			"benefits"		: "You gain advantage on melee attack rolls against any unmounted creature that is smaller than your mount. You can also force an attack targeted towards your mount to you instead. Additionally, if your mount is subject to an effect that allows it to make a Dexterity saving throw to take only half damage, it takes no damage instead if it succeeds the save and only half if it fails."
 		},
 		"observant": {
-			"description"	: "You are quick to notice details of your environment.",
+			"description"	: "You are quick to notice details of your environment. If you can see a creature speaking you can read its lips to determine what is being discussed.",
 			"benefits"		: "Increase your Intelligence or Wisdom score by 1 to a maximum of 20. If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips. Additionally, you have +5 bonus to your passive Wisdom(Perception) and passive Intelligence(Investigation) scores."
 		},
 		"polearm master": {
-			"description"	: "You are a master at keeping your enemies at bay using reach weapons.",
+			"description"	: "You are a master at keeping your enemies at bay using reach weapons. If a creature gets too close to you, you can have the opportunity to strike first.",
 			"benefits"		: "When you take the Attack action and attack with only a glaive, halberd, or quarterstaff you can use your bonus action to make a melee attack with the opposite end of the weapon. The damage die for this attack is a d4 dealing bludgeoning damage. Additionally, while you are wielding a glaive, halberd, pike, or quarterstaff other creatures provoke an opportunity attack from you when they enter your reach."
 		},
 		"resilient": {
-			"description"	: "You become more honed at a certain ability.",
+			"description"	: "You become more honed at a certain ability of your choice.",
 			"benefits"		: "Increase one ability score by 1 to a maximum of 20. You also gain proficiency in saving throws using the chosen ability."
 		},
 		"ritual caster": {
@@ -150,7 +151,7 @@ module.exports = {
 			"benefits"		: "Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls. You ranged weapon attacks also ignore half cover and three-quarters cover. Additionally, before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll, if the attack hits add +10 to the attack's damage."
 		},
 		"shield master": {
-			"description"	: "Your combat prowess with shields has taught you to not only use them for protection but also for offense.",
+			"description"	: "Your combat prowess with shields has taught you to not only use them for protection but also for offense. Think of it, two shields, just double striking with shields.",
 			"benefits"		: "If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5ft of you with your shield. If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, using your reaction you can interpose your shield between you and the source to take no damage on a successful save. Additionally, if you aren't incapacitated, you can add your shield's A. C. bonus to any Dexterity saving throw you make against a spell or other harmful effect that effects you."
 		},
 		"skilled": {
@@ -158,21 +159,21 @@ module.exports = {
 			"benefits"		: "You gain proficiency in any combination of three skills or tools of your choice."
 		},
 		"skulker": {
-			"description"	: "You are an expert at slinking through the shadows.",
+			"description"	: "You are an expert at slinking through even the lightest of shadows. When you miss an enemy from the shadows they still are unaware of your presence.",
 			"benefits"		: "You can try to hide when you are lightly obscured from a creature that you are hiding from. When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position. Additionally, dim light doesn't impose disadvantage on your Wisdom(Perception) checks relying on sight.",
 			"prereq"		: "Dexterity 13 or higher."
 		},
 		"spell sniper":{
-			"description"	: "You have learned techniques to enhance your spells to reach new heights.",
+			"description"	: "You have learned techniques to enhance your spells to better suit your needs. You can also aim your spells with better percision, completely ignoring half and three-quarters cover.",
 			"benefits"		: "When you cast a spell that requires you to make an attack roll, the spell's range is doubled. Your ranged spell attacks ignore half cover and three-quarters cover. Additionally, you learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid, and Intelligence for wizard.",
 			"prereq"		: "The ability to cast at lease one spell."
 		},
 		"tavern brawler":{
-			"description"	: "You are accustomed to the no holds barred way to fighting after a drunken night, using any weapon that happens to be at hand.",
+			"description"	: "You are accustomed to the no holds barred way of fighting after a drunken night, using any weapon that happens to be at hand.",
 			"benefits"		: "Increase your Strength or Constitution score by 1 to a maximum of 20, and are proficient with improvised weapons and unarmed strikes, which uses a d4 for damage. When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus acion to attempt to grapple the target."
 		},
 		"tough":{
-			"description"	: "You have built up your resolve over your time adventuring.",
+			"description"	: "You have built up your resolve over your time adventuring. When you have conquered new heights in yourself, you know how to steel your resolve even further.",
 			"benefits"		: "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
 		},
 		"war caster":{
@@ -181,7 +182,7 @@ module.exports = {
 			"prereq"		: "The ability to cast at least one spell."
 		},
 		"weapon master":{
-			"description"	: "You have practiced extensively with aa variety of weapons, mastering their weight and length as you fight.",
+			"description"	: "You have practiced extensively with a variety of weapons, mastering their weight and length as you fight.",
 			"benefits"		: "Increase your Strength or Dexterity score by 1 to a maximum of 20, and gain proficiency with four weapons of your choice."
 		}
 	}	
