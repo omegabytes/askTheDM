@@ -107,7 +107,8 @@ var handlers = {
 
         if(item && itemAttribute){
             if(!item[itemAttribute]){
-                this.attributes['speechOutput'] = langEN.ATTRIBUTE_DOES_NOT_EXSIST;
+                // todo: fix this
+                this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
                 this.attributes['repromptSpeech'] = langEN.REPROMPT;
             } else {
                 this.attributes['speechOutput']  = item[itemAttribute];
@@ -115,9 +116,9 @@ var handlers = {
             }
         }else if(item && !itemAttribute){
             if(item.itemType){
-                this.attributes['speechOutput'] = "It is a "+item.itemType;
+                this.attributes['speechOutput'] = "It is a " + item.itemType;
             } else {
-                this.attributes['speechOutput'] = "It is a "+item.category;
+                this.attributes['speechOutput'] = "It is a " + item.category;
             }
             this.attributes['repromptSpeech'] = langEN.REPROMPT;
         }else if (itemName) {
@@ -151,7 +152,7 @@ var handlers = {
 
         //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
         }else if (!spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName)
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         } 
@@ -177,7 +178,7 @@ var handlers = {
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
             if(spellAttribute=="damage" && spell[spellAttribute]==null){
-                this.attributes['speechOutput'] = spellName + ' does not have damage'
+                this.attributes['speechOutput'] = spellName + ' does not have damage';
             }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
@@ -196,13 +197,13 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    'Unhandled': function (){
+    'Unhandled': function () {
         this.attributes['continue']         = true;
         this.attributes['speechOutput']     = langEN.UNHANDLED;
         this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
-    // Required Amazon Intents 
+    Required Amazon Intents 
     'LaunchRequest': function () {
         // Alexa, ask [my-skill-invocation-name] to (do something)...
         // If the user either does not reply to the welcome message or says something that is not
