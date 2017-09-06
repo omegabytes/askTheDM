@@ -93,18 +93,47 @@ for spell in spelljs:
 	
 	#work on how to access 'damage': , specifically "levels"
 	#todo: needs more work
-	print(temp['damage'][0]['level1']) #the 0 is the 0th element in the damage list
-	if spellSlot == 'Level 1' and not initialDmg:
+	#print(temp['damage'][0]['level1']) #the 0 is the 0th element in the damage list
+	if spellSlot == 'level 1' and not initialDmg:
 		level1 = temp['damage'][0]['level1']
+		print(level1)
 		level1 = initialDmg
-	elif spellSlot == 'Level 2' and not initialDmg:
+	elif spellSlot == 'level 2' and not initialDmg:
 		level2 = temp['damage'][0]['level2']
 		level2 = initialDmg
-	#elif spellSlot == 'Level 3' and not initialDmg:
-
+	elif spellSlot == 'level 3' and not initialDmg:
+		level3 = temp['damage'][0]['level3']
+		level3 = initialDmg
+	elif spellSlot == 'level 4' and not initialDmg:
+		level4 = temp['damage'][0]['level4']
+		level4 = initialDmg
+	elif spellSlot == 'level 5' and not initialDmg:
+		level5 = temp['damage'][0]['level5']
+		level5 = initialDmg
+	elif spellSlot == 'level 6' and not initialDmg:
+		level6 = temp['damage'][0]['level6']
+		print(level6)
+		level6 = initialDmg
+	elif spellSlot == 'level 7' and not initialDmg:
+		level7 = temp['damage'][0]['level7']
+		level7 = initialDmg
+	elif spellSlot == 'level 8' and not initialDmg:
+		level8 = temp['damage'][0]['level8']
+		level8 = initialDmg
+	elif spellSlot == 'level 9' and not initialDmg:
+		level9 = temp['damage'][0]['level9']
+		level9 = initialDmg
 	else:
 		level1 = "You cannot cast this spell using that level spell slot."
-	print("test:"+level1)
+		level2 = "You cannot cast this spell using that level spell slot."
+		level3 = "You cannot cast this spell using that level spell slot."
+		level4 = "You cannot cast this spell using that level spell slot."
+		level5 = "You cannot cast this spell using that level spell slot."
+		level6 = "You cannot cast this spell using that level spell slot."
+		level7 = "You cannot cast this spell using that level spell slot."
+		level8 = "You cannot cast this spell using that level spell slot."
+		level9 = "You cannot cast this spell using that level spell slot."
+	#print("test:"+level1)
 
 
 
@@ -126,14 +155,14 @@ for spell in spelljs:
 	            			'initial' : initialDmg, #not sure if we want to just list the damage dice number or what we have now (ie: '8d6 fire damage')
 	            			'increaseBy' : incBy, #atHigherLevels
 	            			'level1' : level1,
-	            			'level2' : "",
-	            			'level3' : "",
-	            			'level4' : "",
-	            			'level5' : "",
-	            			'level6' : "",
-	            			'level7' : "",
-	            			'level8' : "",
-	            			'level9' : ""	            			
+	            			'level2' : level2,
+	            			'level3' : level3,
+	            			'level4' : level4,
+	            			'level5' : level5,
+	            			'level6' : level6,
+	            			'level7' : level7,
+	            			'level8' : level8,
+	            			'level9' : level9	            			
 	            		}
 	            	]
 	            }
