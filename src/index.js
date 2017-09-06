@@ -203,7 +203,7 @@ var handlers = {
         this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
-    Required Amazon Intents 
+    //Required Amazon Intents 
     'LaunchRequest': function () {
         // Alexa, ask [my-skill-invocation-name] to (do something)...
         // If the user either does not reply to the welcome message or says something that is not
