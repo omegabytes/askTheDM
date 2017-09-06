@@ -95,6 +95,28 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'IndexIntent' : function(){
+        var indexSlot = this.event.request.intent.slots.Index;
+        var indexName = alexaLib.validateAndSetSlot(indexSlot);
+        var indexList = langEN.INDEX;
+        var index     = indexList[indexName];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        if(index){
+            this.attributes['speechOutput'] = alexaLib.pageFind(index, indexName);
+        }else if (indexName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(indexSlot.name, indexName);
+        }else {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'ItemsIntent': function () {
         var itemSlot            = this.event.request.intent.slots.Item;
         var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
@@ -129,8 +151,7 @@ var handlers = {
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
-        }
-        else{
+        }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
