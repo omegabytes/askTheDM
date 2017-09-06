@@ -3,32 +3,6 @@
     {
       "slots": [
         {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        },
-        {
-          "name": "Attribute",
-          "type": "LIST_OF_ATTRIBUTES"
-        }
-      ],
-      "intent": "SpellsIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Item",
-          "type": "LIST_OF_ITEMS"
-        },
-        {
-          "name": "ItemAttribute",
-          "type": "LIST_OF_ITEM_ATTRIBUTES"
-        }
-      ],
-      "intent": "ItemsIntent"
-    },
-    {
-      "slots": [
-        {
           "name": "Condition",
           "type": "LIST_OF_CONDITIONS"
         }
@@ -38,29 +12,11 @@
     {
       "slots": [
         {
-          "name": "Spell",
-          "type": "LIST_OF_SPELLS"
-        }
-      ],
-      "intent": "SpellCastIntent"
-    },
-    {
-      "slots": [
-        {
           "name": "Level",
           "type": "LIST_OF_EXHAUSTION_LEVELS"
         }
       ],
       "intent": "ExhaustionLevelIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Index",
-          "type": "LIST_OF_INDEX"
-        }
-      ],
-      "intent": "IndexIntent"
     },
     {
       "slots": [
@@ -78,23 +34,37 @@
     {
       "slots": [
         {
-          "name": "Quantity",
-          "type": "AMAZON.NUMBER"
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
         },
         {
-          "name": "Sides",
-          "type": "AMAZON.NUMBER"
-        },
-        {
-          "name": "Modifier",
-          "type": "AMAZON.NUMBER"
-        },
-        {
-          "name": "Status",
-          "type": "LIST_OF_STATUS"
+          "name": "ItemAttribute",
+          "type": "LIST_OF_ITEM_ATTRIBUTES"
         }
       ],
-      "intent": "DiceIntent"
+      "intent": "ItemsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        }
+      ],
+      "intent": "SpellCastIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "Attribute",
+          "type": "LIST_OF_ATTRIBUTES"
+        }
+      ],
+      "intent": "SpellsIntent"
     },
     {
       "intent": "Unhandled"
