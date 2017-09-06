@@ -15,80 +15,6 @@ exports.handler = function(event, context, callback) {
 };
 
 var handlers = {
-<<<<<<< HEAD
-    //Use LaunchRequest, instead of NewSession if you want to use the one-shot model
-    // Alexa, ask [my-skill-invocation-name] to (do something)...
-    'LaunchRequest': function () {
-        // If the user either does not reply to the welcome message or says something that is not
-        // understood, they will be prompted again with this text.
-        this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = (langEN.WELCOME_MESSAGE);
-        this.attributes['repromptSpeech'] = langEN.WELCOME_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-    },
-    'Unhandled': function (){
-        this.attributes['continue'] = true;
-        this.attributes['speechOutput'] = langEN.UNHANDLED;
-        this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-    },
-    'SpellsIntent': function () {
-        var spellSlot = this.event.request.intent.slots.Spell;
-        var attributeSlot = this.event.request.intent.slots.Attribute;
-        var spellName;
-        var attributeName;
-
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if (spellSlot && spellSlot.value) {
-            spellName = spellSlot.value.toLowerCase();
-        }
-
-        if (attributeSlot && attributeSlot.value) {
-            attributeName = attributeSlot.value.toLowerCase();
-        }
-
-        var spells = langEN.SPELLS;
-        var spell = spells[spellName];
-
-        var spellAttributes = langEN.ATTRIBUTES;
-        var spellAttribute = spellAttributes[attributeName];
-
-        //if the user asks for the attribute of a spell
-        if (spell && spellAttribute) {
-            if(spellAttribute=="damage" && spell[spellAttribute]==null){
-                this.attributes['speechOutput'] = spellName + ' does not have damage'
-            }else{
-                this.attributes['speechOutput'] = spell[spellAttribute];
-            }
-        }
-
-        //if the user asks only about the spell
-        else if (spell && !spellAttribute) {
-            this.attributes['speechOutput'] = spell.shortDescription;
-        } else {
-            var speechOutput = langEN.NOT_FOUND_MESSAGE;
-            
-            if (spellName) {
-                speechOutput += (langEN.SPELL_NOT_FOUND_WITH_SPELL_NAME, spellName);
-            } else {
-                speechOutput += langEN.SPELL_NOT_FOUND_WITHOUT_SPELL_NAME;
-            }
-            this.attributes['speechOutput'] = speechOutput;
-        }
-
-        //if we are a one shot question the answer will be provided 
-        //as a statement. if not the session will remain open and
-        //alexa provide our reprompt speech
-        if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
-        }
-        else{
-            this.emit(':tell', this.attributes['speechOutput']);
-        }
-    },
-=======
->>>>>>> origin/master
     'ConditionsIntent': function () {
         var conditionSlot = this.event.request.intent.slots.Condition;
         var conditionName = alexaLib.validateAndSetSlot(conditionSlot);
@@ -169,26 +95,29 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'IndexIntent' : function(){
+        var indexSlot = this.event.request.intent.slots.Index;
+        var indexName = alexaLib.validateAndSetSlot(indexSlot);
+        var indexList = langEN.INDEX;
+        var index     = indexList[indexName];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        if(index){
+            this.attributes['speechOutput'] = alexaLib.pageFind(index, indexName);
+        }else if (indexName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(indexSlot.name, indexName);
+        }else {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'ItemsIntent': function () {
-<<<<<<< HEAD
-        var itemSlot = this.event.request.intent.slots.Item;
-        var itemAttributeSlot = this.event.request.intent.slots.ItemAttribute;
-        var itemName;
-        var itemAttributeName;
-
-        if(itemSlot && itemSlot.value){
-            itemName = itemSlot.value.toLowerCase();
-        }
-        if(itemAttributeSlot && itemAttributeSlot.value){
-            itemAttributeName = itemAttributeSlot.value.toLowerCase();
-        }
-
-        var itemList = langEN.ITEMS;
-        var itemAttributeList= langEN.ITEM_ATTRIBUTES;
-
-        var item = itemList[itemName];
-        var itemAttribute  = itemAttributeList[itemAttributeName];
-=======
         var itemSlot            = this.event.request.intent.slots.Item;
         var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
         var itemName            = alexaLib.validateAndSetSlot(itemSlot);
@@ -197,33 +126,18 @@ var handlers = {
         var itemAttributeList   = langEN.ITEM_ATTRIBUTES;
         var item                = itemList[itemName];
         var itemAttribute       = itemAttributeList[itemAttributeName];
->>>>>>> origin/master
 
         if(item && itemAttribute){
             if(!item[itemAttribute]){
                 // todo: fix this
                 this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
                 this.attributes['repromptSpeech'] = langEN.REPROMPT;
-<<<<<<< HEAD
-            }else{
-                this.attributes['speechOutput'] = item[itemAttribute];
-=======
             } else {
                 this.attributes['speechOutput']  = item[itemAttribute];
->>>>>>> origin/master
                 this.attributes['repromptSpeech'] = langEN.REPROMPT;
             }
         }else if(item && !itemAttribute){
             if(item.itemType){
-<<<<<<< HEAD
-                this.attributes['speechOutput'] = "It is a "+item.itemType;
-            }else{
-                this.attributes['speechOutput'] = "It is a "+item.category;
-            }
-            this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        }else {
-            this.attributes['speechOutput'] = "I'm sorry I don't know " + itemName;
-=======
                 this.attributes['speechOutput'] = "It is a " + item.itemType;
             } else {
                 this.attributes['speechOutput'] = "It is a " + item.category;
@@ -233,7 +147,6 @@ var handlers = {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(itemSlot.name,itemName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
->>>>>>> origin/master
         }
 
         if(this.attributes['continue']){ 
@@ -242,41 +155,11 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-<<<<<<< HEAD
-    'DiceIntent' : function () {
-        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
-        var diceSidesSlot = this.event.request.intent.slots.Sides;
-        var modifierSlot = this.event.request.intent.slots.Modifier;
-        var numberOfDice;
-        var diceSides;
-        var modifier;
-        var result;
-
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        // get the number of dice, dice sides, and any modifiers from the user
-
-        if (numberOfDiceSlot && numberOfDiceSlot.value) {
-            // get the number of dice to roll
-            numberOfDice = numberOfDiceSlot.value;
-        }
-
-        if (diceSidesSlot && diceSidesSlot.value) {
-            // get the kind of dice to roll (faces, like six-sided or 20-sided)
-            diceSides = diceSidesSlot.value;
-        }
-
-        if (modifierSlot && modifierSlot.value) {
-            // get the modifier to add at the end of the roll calculation
-            modifier = modifierSlot.value;
-        }
-=======
     'SpellCastIntent': function () {
         var spellSlot = this.event.request.intent.slots.Spell;
         var spellName = alexaLib.validateAndSetSlot(spellSlot);
         var spells = langEN.SPELLS;
         var spell  = spells[spellName];
->>>>>>> origin/master
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -301,19 +184,6 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-<<<<<<< HEAD
-    'IndexIntent' : function(){
-        var indexSlot = this.event.request.intent.slots.Index;
-        var indexName;
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        if(indexSlot && indexSlot.value){
-            indexName = indexSlot.value.toLowerCase();
-        }
-
-        var indexList = langEN.INDEX;
-        var index = indexList[indexName];
-=======
     'SpellsIntent': function () {
         var spellSlot       = this.event.request.intent.slots.Spell;
         var attributeSlot   = this.event.request.intent.slots.Attribute;
@@ -325,7 +195,6 @@ var handlers = {
         var spellAttribute  = spellAttributes[attributeName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
->>>>>>> origin/master
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
@@ -334,12 +203,6 @@ var handlers = {
             }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
-<<<<<<< HEAD
-            this.attributes['speechOutput'] = indexName + " can be found on " + pageString;
-        }
-        else{
-            this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.INDEX_NOT_FOUND;
-=======
         }else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
         }else if (spellName) {
@@ -347,7 +210,6 @@ var handlers = {
 
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
->>>>>>> origin/master
         }
 
         if(this.attributes['continue']){ 
@@ -362,7 +224,7 @@ var handlers = {
         this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
-    Required Amazon Intents 
+    //Required Amazon Intents 
     'LaunchRequest': function () {
         // Alexa, ask [my-skill-invocation-name] to (do something)...
         // If the user either does not reply to the welcome message or says something that is not
