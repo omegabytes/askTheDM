@@ -1,7 +1,8 @@
 var conditions      = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
-var feats           = require('./feats');
+var indexInfo       = require('./indexInfo')
 var items           = require('./items');
+var feats           = require('./feats');
 var spells          = require('./spells');
 
 module.exports = {
@@ -13,6 +14,7 @@ module.exports = {
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEATS" :                                       feats.FEATS,
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
+            "INDEX" :                                       indexInfo.INDEX,
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
             "SPELLS":                                       spells.SPELLS,
