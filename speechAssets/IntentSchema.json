@@ -74,7 +74,7 @@
        },
        {
          "name": "Sides",
-         "type": "AMAZON.NUMBER"
+         "type": "LIST_OF_DICE_SIDES"
        },
        {
          "name": "Modifier",

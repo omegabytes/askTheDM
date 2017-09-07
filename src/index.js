@@ -40,40 +40,21 @@ var handlers = {
     },
     'DiceIntent' : function () {
         var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
-        var diceSidesSlot = this.event.request.intent.slots.Sides;
-        var modifierSlot = this.event.request.intent.slots.Modifier;
-        var statusSlot = this.event.request.intent.slots.Status;
-        var numberOfDice = 1;
-        var diceSides = null;
-        var status = null;
-        var modifier = 0;
+        var diceSidesSlot    = this.event.request.intent.slots.Sides;
+        var modifierSlot     = this.event.request.intent.slots.Modifier;
+        var statusSlot       = this.event.request.intent.slots.Status;
+        var numberOfDice     = alexaLib.validateAndSetSlot(numberOfDiceSlot);
+        var diceSides        = alexaLib.validateAndSetSlot(diceSidesSlot);
+        var status           = alexaLib.validateAndSetSlot(statusSlot);
+        var modifier         = alexaLib.validateAndSetSlot(modifierSlot);
         var firstRoll;
         var secondRoll;
         var result;
 
-        this.attributes['repromptSpeech'] = this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        // this.attributes['repromptSpeech'] = "failed to update speech";
+        if(numberOfDice==null) numberOfDice = 1
+        if(modifier==null) modifier = 0
 
-        // get the number of dice, dice sides, and any modifiers from the user
-        if (numberOfDiceSlot && numberOfDiceSlot.value) {
-            // get the number of dice to roll
-            numberOfDice = numberOfDiceSlot.value;
-        }
-
-        if (diceSidesSlot && diceSidesSlot.value) {
-            // get the kind of dice to roll (faces, like six-sided or 20-sided)
-            diceSides = diceSidesSlot.value;
-        }
-
-        if (statusSlot && statusSlot.value) {
-            // rolling with advantage or disadvantage
-            status = statusSlot.value.toLowerCase();
-        }
-
-        if (modifierSlot && modifierSlot.value) {
-            // get the modifier to add at the end of the roll calculation
-            modifier = modifierSlot.value;
-        }
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
             this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
