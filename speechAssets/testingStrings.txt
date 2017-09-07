@@ -17,6 +17,8 @@ what is lucky
 what are the benefits of lucky
 what are the benefits
 
+// IncompleteIntent
+
 // ItemsIntent
 how does a breastplate work
 how does a smurf work

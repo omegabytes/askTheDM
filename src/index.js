@@ -95,6 +95,11 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'IncompleteIntent' : function () {
+        this.attributes['continue']     = true;
+        this.attributes['speechOutput'] = langEN.INCOMPLETE_REQUEST;
+        this.emit(':ask', this.attributes['speechOutput']);
+    },
     'ItemsIntent': function () {
         var itemSlot            = this.event.request.intent.slots.Item;
         var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
@@ -115,9 +120,9 @@ var handlers = {
             }
         }else if(item && !itemAttribute){
             if(item.itemType){
-                this.attributes['speechOutput'] = "It is a "+item.itemType;
+                this.attributes['speechOutput'] = "It is a " + item.itemType;
             } else {
-                this.attributes['speechOutput'] = "It is a "+item.category;
+                this.attributes['speechOutput'] = "It is a " + item.category;
             }
             this.attributes['repromptSpeech'] = langEN.REPROMPT;
         }else if (itemName) {
