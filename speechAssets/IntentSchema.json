@@ -37,6 +37,15 @@
     {
       "slots": [
         {
+          "name": "Index",
+          "type": "LIST_OF_INDEX"
+        }
+      ],
+      "intent": "IndexIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Item",
           "type": "LIST_OF_ITEMS"
         },

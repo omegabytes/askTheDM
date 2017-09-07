@@ -298,6 +298,8 @@ IncompleteIntent whats a
 IncompleteIntent whats an
 IncompleteIntent whats the
 
+IndexIntent where can I find {Index}
+
 ItemsIntent lookup {Item}
 ItemsIntent whats a {Item}
 ItemsIntent whats an {Item}
