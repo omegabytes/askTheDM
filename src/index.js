@@ -144,7 +144,7 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.spellType + ". To cast, you need the following: " 
+                                            + spell.school + " spell. To cast, you need the following: " 
                                             + spell.components + ". The spell duration is " 
                                             + spell.duration + ". " 
                                             + spell.shortDescription;
@@ -162,24 +162,79 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'SpellDamageIntent': function(){
+        var requestedLevelSlot      = this.event.request.intent.slots.Level;
+        var spellSlot               = this.event.request.intent.slots.Spell;
+        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
+        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
+        var spellLevelNormalized    = alexaLib.levelMap(spellLevel);
+        var spells                  = langEN.SPELLS;
+        var spell                   = spells[spellName];
+        var level                   = spells[spellLevelNormalized]; //returns string 'one'
+        
+        //if the requested spell is a cantrip
+        if(spell && spell['slotLevel'] == 'cantrip'){
+            var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
+            var dmgType = spell.damage.type;
+            this.attributes['speechOutput'] = "At player level " + level + 
+                                               " the cantrip " + 
+                                               spellName + " does " + 
+                                               dmg + " " + dmgType + ".";
+        }
+        //if the requested spell is a normal spell
+        else{
+            var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+            var dmgType = spell.damage.type;
+            this.attributes['speechOutput'] = "A level " + level + " " + 
+                                               spellName + " does " + 
+                                               dmg + " " + dmgType + ".";
+        }
+
+
+    },
     'SpellsIntent': function () {
-        var spellSlot       = this.event.request.intent.slots.Spell;
-        var attributeSlot   = this.event.request.intent.slots.Attribute;
-        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells          = langEN.SPELLS;
-        var spellAttributes = langEN.ATTRIBUTES;
-        var spell           = spells[spellName];
-        var spellAttribute  = spellAttributes[attributeName];
+        var spellSlot           = this.event.request.intent.slots.Spell;
+        var attributeSlot       = this.event.request.intent.slots.Attribute;
+        var spellName           = alexaLib.validateAndSetSlot(spellSlot);
+        var attributeName       = alexaLib.validateAndSetSlot(attributeSlot);
+        var spells              = langEN.SPELLS;
+        var spellAttributes     = langEN.ATTRIBUTES;
+        var spell               = spells[spellName];
+        var spellAttribute      = spellAttributes[attributeName];
+        var spellLevel          = alexaLib.levelMap(spellAttribute);
+
+        //todo: do we need to handle false damage requests for healing spells? 
+              //if the requested spell does not have damage but has healing
+
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
+            //if the attribute is damage and the requested spell does not have damage
             if(spellAttribute=="damage" && spell[spellAttribute]==null){
-                this.attributes['speechOutput'] = spellName + ' does not have damage'
-            }else{
+                this.attributes['speechOutput'] = spellName + ' does not have damage.';
+
+            }else //if the requested spell has damage
+            {
+                //if the spell has damage and is a cantrip
+                if(spellLevel.get(0) == 'cantrip'){ //checks if spell is a cantrip
+                    var cantripDamageAtPlayerLevel = spell['damage'][]
+                    //The cantrip <SPELL> cast at player level <LEVEL> does <DAMAGE>
+                    this.attributes['speechOutput'] = "A " + 
+                                                       spellLevel + " " + 
+                                                       spellName + " does " + 
+                                                       cantripDamageAtPlayerLevel + " damage."; 
+                }
+
+                //if the spell has damage and is a normal spell
                 this.attributes['speechOutput'] = spell[spellAttribute];
+                //IN: At level <LEVEL>, how much damage does <SPELL> do?
+                //OUT: A level <LEVEL> <SPELL> does <DAMAGE> damage.
+
+                //todo: remember that we need to check if the spell exists and has a level attribute, with damage
+
+                
             }
         }else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
