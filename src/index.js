@@ -95,6 +95,11 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'IncompleteIntent' : function () {
+        this.attributes['continue']     = true;
+        this.attributes['speechOutput'] = langEN.INCOMPLETE_REQUEST;
+        this.emit(':ask', this.attributes['speechOutput']);
+    },
     'ItemsIntent': function () {
         var itemSlot            = this.event.request.intent.slots.Item;
         var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
