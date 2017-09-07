@@ -191,7 +191,25 @@ var handlers = {
         }
 
 
-    },
+    },/*
+    'SpellHealIntent': function(){
+        var requestedLevelSlot      = this.event.request.intent.slots.Level;
+        var spellSlot               = this.event.request.intent.slots.Spell;
+        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
+        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
+        var spellLevelNormalized    = alexaLib.levelMap(spellLevel);
+        var spells                  = langEN.SPELLS;
+        var spell                   = spells[spellName];
+        var level                   = spells[spellLevelNormalized]; //returns string 'one'
+
+        //if the requested spell is healing spell
+        if (spell && level){
+            var heal = spell.healing.levels[level];
+            this.attributes['speechOutput'] = "At level " + level + " " + 
+                                               spellName + " heals " + 
+                                               heal + " plus your spellcasting ability modifier.";
+        }
+    },*/
     'SpellsIntent': function () {
         var spellSlot           = this.event.request.intent.slots.Spell;
         var attributeSlot       = this.event.request.intent.slots.Attribute;
