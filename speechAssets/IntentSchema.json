@@ -67,6 +67,19 @@
       "intent": "SpellsIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
+        }
+      ],
+      "intent": "SpellDamageIntent"
+    },
+    {
       "intent": "Unhandled"
     },
     {

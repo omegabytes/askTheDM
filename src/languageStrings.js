@@ -15,6 +15,7 @@ module.exports = {
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
+            "SLOT_LEVEL" :                                  spells.SLOT_LEVEL,
             "SPELLS":                                       spells.SPELLS,
             //output strings
             "DISPLAY_CARD_TITLE":                           "%s  - Info for %s.",

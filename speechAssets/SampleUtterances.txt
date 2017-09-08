@@ -557,7 +557,8 @@ SpellsIntent what are the {Attribute} to cast {Spell}
 SpellsIntent what are the {Attribute} needed to cast {Spell}
 SpellsIntent what is the {Attribute} of {Spell}
 SpellsIntent whats the {Attribute} of {Spell}
-SpellsIntent at {Attribute}, how much damage does {Spell} do
+
+SpellDamageIntent at {SlotLevel}, how much damage does {Spell} do
 
 Unhandled to
 Unhandled to get

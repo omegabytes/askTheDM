@@ -25,6 +25,9 @@ how does a smurf work
 how do I cast druidcraft
 how do I cast shade
 
+// SpellDamageIntent
+at level one how much damage does hellish rebuke do
+
 // SpellsIntent
 what is fireball
 what is the range of fireball
