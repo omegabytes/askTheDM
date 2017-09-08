@@ -168,15 +168,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": "2d10",
-        "two": "3d10",
-        "three": "4d10",
-        "four": "5d10",
-        "five": "6d10",
-        "six": "7d10",
-        "seven": "8d10",
-        "eight": "9d10",
-        "nine": "10d10"
+        1: "2d10",
+        2: "3d10",
+        3: "4d10",
+        4: "5d10",
+        5: "6d10",
+        6: "7d10",
+        7: "8d10",
+        8: "9d10",
+        9: "10d10"
       }
     }
   },
@@ -216,15 +216,15 @@
     "damage": {
       "type": "cold damage",
       "playerLevel": {
-        "one": "1d6",
-        "two": "1d6",
-        "three": "1d6",
-        "four": "1d6",
-        "five": "2d6",
-        "six": "2d6",
-        "seven": "2d6",
-        "eight": "2d6",
-        "nine": "2d6",
+        1: "1d6",
+        2: "1d6",
+        3: "1d6",
+        4: "1d6",
+        5: "2d6",
+        6: "2d6",
+        7: "2d6",
+        8: "2d6",
+        9: "2d6",
         "ten": "2d6",
         "eleven": "3d6",
         "twelve": "3d6",
@@ -263,15 +263,15 @@
     "damage": {
       "type": "lightning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "8d6",
-        "four": "9d6",
-        "five": "10d6",
-        "six": "11d6",
-        "seven": "12d6",
-        "eight": "13d6",
-        "nine": "14d6"
+        1: 0,
+        2: 0,
+        3: "8d6",
+        4: "9d6",
+        5: "10d6",
+        6: "11d6",
+        7: "12d6",
+        8: "13d6",
+        9: "14d6"
       }
     }
   },
@@ -355,15 +355,15 @@
     "damage": {
       "type": "piercing damage",
       "levels": {
-        "one": 0,
-        "two": "1d6",
-        "three": "2d6",
-        "four": "3d6",
-        "five": "4d6",
-        "six": "5d6",
-        "seven": "6d6",
-        "eight": "7d6",
-        "nine": "8d6"
+        1: 0,
+        2: "1d6",
+        3: "2d6",
+        4: "3d6",
+        5: "4d6",
+        6: "5d6",
+        7: "6d6",
+        8: "7d6",
+        9: "8d6"
       }
     }
   },
@@ -413,15 +413,15 @@
     "damage": {
       "type": "lightning damage",
       "levels": {
-        "one": "1d12",
-        "two": "2d12",
-        "three": "3d12",
-        "four": "4d12",
-        "five": "5d12",
-        "six": "6d12",
-        "seven": "7d12",
-        "eight": "8d12",
-        "nine": "9d12"
+        1: "1d12",
+        2: "2d12",
+        3: "3d12",
+        4: "4d12",
+        5: "5d12",
+        6: "6d12",
+        7: "7d12",
+        8: "8d12",
+        9: "9d12"
       }
     }
   },
@@ -495,15 +495,15 @@
     "damage": {
       "type": "bludgeoning damage and cold damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "2d8 and 4d6",
-        "five": "3d8 and 4d6",
-        "six": "4d8 and 4d6",
-        "seven": "5d8 and 4d6",
-        "eight": "6d8 and 4d6",
-        "nine": "7d8 and 4d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "2d8 and 4d6",
+        5: "3d8 and 4d6",
+        6: "4d8 and 4d6",
+        7: "5d8 and 4d6",
+        8: "6d8 and 4d6",
+        9: "7d8 and 4d6"
       }
     }
   },
@@ -520,15 +520,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "1d6",
-        "four": "2d6",
-        "five": "3d6",
-        "six": "4d6",
-        "seven": "5d6",
-        "eight": "6d6",
-        "nine": "7d6"
+        1: 0,
+        2: 0,
+        3: "1d6",
+        4: "2d6",
+        5: "3d6",
+        6: "4d6",
+        7: "5d6",
+        8: "6d6",
+        9: "7d6"
       }
     }
   },
@@ -545,15 +545,15 @@
     "damage": {
       "type": "psychic damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "4d10",
-        "five": "5d10",
-        "six": "6d10",
-        "seven": "7d10",
-        "eight": "8d10",
-        "nine": "9d10"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "4d10",
+        5: "5d10",
+        6: "6d10",
+        7: "7d10",
+        8: "8d10",
+        9: "9d10"
       }
     }
   },
@@ -692,15 +692,15 @@
     "damage": {
       "type": "psychic damage",
       "playerLevel": {
-        "one": "1d4",
-        "two": "1d4",
-        "three": "1d4",
-        "four": "1d4",
-        "five": "2d4",
-        "six": "2d4",
-        "seven": "2d4",
-        "eight": "2d4",
-        "nine": "2d4",
+        1: "1d4",
+        2: "1d4",
+        3: "1d4",
+        4: "1d4",
+        5: "2d4",
+        6: "2d4",
+        7: "2d4",
+        8: "2d4",
+        9: "2d4",
         "ten": "2d4",
         "eleven": "3d4",
         "twelve": "3d4",
@@ -863,15 +863,15 @@
     "damage": {
       "type": "force damage",
       "playerLevel": {
-        "one": "1d6",
-        "two": "1d6",
-        "three": "1d6",
-        "four": "1d6",
-        "five": "2d6",
-        "six": "2d6",
-        "seven": "2d6",
-        "eight": "2d6",
-        "nine": "2d6",
+        1: "1d6",
+        2: "1d6",
+        3: "1d6",
+        4: "1d6",
+        5: "2d6",
+        6: "2d6",
+        7: "2d6",
+        8: "2d6",
+        9: "2d6",
         "ten": "2d6",
         "eleven": "3d6",
         "twelve": "3d6",
@@ -910,15 +910,15 @@
     "damage": {
       "type": "thunder damage",
       "levels": {
-        "one": "2d8",
-        "two": "3d8",
-        "three": "4d8",
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: "2d8",
+        2: "3d8",
+        3: "4d8",
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -1171,15 +1171,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "3d8",
-        "four": "4d8",
-        "five": "5d8",
-        "six": "6d8",
-        "seven": "7d8",
-        "eight": "8d8",
-        "nine": "9d8"
+        1: 0,
+        2: 0,
+        3: "3d8",
+        4: "4d8",
+        5: "5d8",
+        6: "6d8",
+        7: "7d8",
+        8: "8d8",
+        9: "9d8"
       }
     }
   },
@@ -1341,15 +1341,15 @@
     "damage": {
       "type": "lightning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "3d10",
-        "four": "4d10",
-        "five": "5d10",
-        "six": "6d10",
-        "seven": "7d10",
-        "eight": "8d10",
-        "nine": "9d10"
+        1: 0,
+        2: 0,
+        3: "3d10",
+        4: "4d10",
+        5: "5d10",
+        6: "6d10",
+        7: "7d10",
+        8: "8d10",
+        9: "9d10"
       }
     }
   },
@@ -1388,15 +1388,15 @@
     "damage": {
       "type": "cold damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "10d6",
-        "seven": "11d6",
-        "eight": "12d6",
-        "nine": "13d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "10d6",
+        7: "11d6",
+        8: "12d6",
+        9: "13d6"
       }
     }
   },
@@ -1491,15 +1491,15 @@
     "damage": {
       "type": "cold damage",
       "levels": {
-        "one": 0,
-        "two": "3d6",
-        "three": "4d6",
-        "four": "5d6",
-        "five": "6d6",
-        "six": "7d6",
-        "seven": "8d6",
-        "eight": "9d6",
-        "nine": "10d6"
+        1: 0,
+        2: "3d6",
+        3: "4d6",
+        4: "5d6",
+        5: "6d6",
+        6: "7d6",
+        7: "8d6",
+        8: "9d6",
+        9: "10d6"
       }
     }
   },
@@ -1604,15 +1604,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: 0,
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -1707,15 +1707,15 @@
     "damage": {
       "type": "peircing damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -1754,15 +1754,15 @@
     "damage": {
       "type": "cold damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "8d8",
-        "six": "9d8",
-        "seven": "10d8",
-        "eight": "11d8",
-        "nine": "12d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "8d8",
+        6: "9d8",
+        7: "10d8",
+        8: "11d8",
+        9: "12d8"
       }
     }
   },
@@ -1900,15 +1900,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "2d6",
-        "four": "3d6",
-        "five": "4d6",
-        "six": "5d6",
-        "seven": "6d6",
-        "eight": "7d6",
-        "nine": "8d6"
+        1: 0,
+        2: 0,
+        3: "2d6",
+        4: "3d6",
+        5: "4d6",
+        6: "5d6",
+        7: "6d6",
+        8: "7d6",
+        9: "8d6"
       }
     }
   },
@@ -1947,15 +1947,15 @@
     "damage": {
       "type": "force damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "4d8",
-        "six": "5d8",
-        "seven": "6d8",
-        "eight": "7d8",
-        "nine": "8d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "4d8",
+        6: "5d8",
+        7: "6d8",
+        8: "7d8",
+        9: "8d8"
       }
     }
   },
@@ -2039,15 +2039,15 @@
     "damage": {
       "type": "bludgeoning damage",
       "levels": {
-        "one": 0,
-        "two": "1d8",
-        "three": "2d8",
-        "four": "3d8",
-        "five": "4d8",
-        "six": "5d8",
-        "seven": "6d8",
-        "eight": "7d8",
-        "nine": "8d8"
+        1: 0,
+        2: "1d8",
+        3: "2d8",
+        4: "3d8",
+        5: "4d8",
+        6: "5d8",
+        7: "6d8",
+        8: "7d8",
+        9: "8d8"
       }
     }
   },
@@ -2086,15 +2086,15 @@
     "damage": {
       "type": "fire damage",
       "playerLevel": {
-        "one": "1d10",
-        "two": "1d10",
-        "three": "1d10",
-        "four": "1d10",
-        "five": "2d10",
-        "six": "2d10",
-        "seven": "2d10",
-        "eight": "2d10",
-        "nine": "2d10",
+        1: "1d10",
+        2: "1d10",
+        3: "1d10",
+        4: "1d10",
+        5: "2d10",
+        6: "2d10",
+        7: "2d10",
+        8: "2d10",
+        9: "2d10",
         "ten": "2d10",
         "eleven": "3d10",
         "twelve": "3d10",
@@ -2122,15 +2122,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: 0,
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -2147,15 +2147,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "8d8",
-        "five": "9d8",
-        "six": "10d8",
-        "seven": "11d8",
-        "eight": "12d8",
-        "nine": "13d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "8d8",
+        5: "9d8",
+        6: "10d8",
+        7: "11d8",
+        8: "12d8",
+        9: "13d8"
       }
     }
   },
@@ -2195,15 +2195,15 @@
     "damage": {
       "type": "acid damage",
       "levels": {
-        "one": 0,
-        "two": "4d4",
-        "three": "5d4",
-        "four": "6d4",
-        "five": "7d4",
-        "six": "8d4",
-        "seven": "9d4",
-        "eight": "10d4",
-        "nine": "11d4"
+        1: 0,
+        2: "4d4",
+        3: "5d4",
+        4: "6d4",
+        5: "7d4",
+        6: "8d4",
+        7: "9d4",
+        8: "10d4",
+        9: "11d4"
       }
     }
   },
@@ -2265,15 +2265,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": "2d6",
-        "two": "3d6",
-        "three": "4d6",
-        "four": "5d6",
-        "five": "6d6",
-        "six": "7d6",
-        "seven": "8d6",
-        "eight": "9d6",
-        "nine": "10d6"
+        1: "2d6",
+        2: "3d6",
+        3: "4d6",
+        4: "5d6",
+        5: "6d6",
+        6: "7d6",
+        7: "8d6",
+        8: "9d6",
+        9: "10d6"
       }
     }
   },
@@ -2445,15 +2445,15 @@
     "damage": {
       "type": "fire damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -2481,15 +2481,15 @@
     "damage": {
       "type": "acid damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "10d4",
-        "five": "11d4",
-        "six": "12d4",
-        "seven": "13d4",
-        "eight": "14d4",
-        "nine": "15d4"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "10d4",
+        5: "11d4",
+        6: "12d4",
+        7: "13d4",
+        8: "14d4",
+        9: "15d4"
       }
     }
   },
@@ -2550,15 +2550,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "8d6",
-        "four": "9d6",
-        "five": "10d6",
-        "six": "11d6",
-        "seven": "12d6",
-        "eight": "13d6",
-        "nine": "14d6"
+        1: 0,
+        2: 0,
+        3: "8d6",
+        4: "9d6",
+        5: "10d6",
+        6: "11d6",
+        7: "12d6",
+        8: "13d6",
+        9: "14d6"
       }
     }
   },
@@ -2654,15 +2654,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -2678,15 +2678,15 @@
     "url": "https://www.dnd-spells.com/spell/healing-word",
     "healing": {
       "levels": {
-        "one": "1d4",
-        "two": "2d4",
-        "three": "3d4",
-        "four": "4d4",
-        "five": "5d4",
-        "six": "6d4",
-        "seven": "7d4",
-        "eight": "8d4",
-        "nine": "9d4"
+        1: "1d4",
+        2: "2d4",
+        3: "3d4",
+        4: "4d4",
+        5: "5d4",
+        6: "6d4",
+        7: "7d4",
+        8: "8d4",
+        9: "9d4"
       }
     }
   },
@@ -2714,15 +2714,15 @@
     "damage": {
       "type": "piercing damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "4d10",
-        "six": "5d10",
-        "seven": "6d10",
-        "eight": "7d10",
-        "nine": "8d10"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "4d10",
+        6: "5d10",
+        7: "6d10",
+        8: "7d10",
+        9: "8d10"
       }
     }
   },
@@ -2795,15 +2795,15 @@
     "damage": {
       "type": "psychic damage",
       "levels": {
-        "one": "3d6",
-        "two": "4d6",
-        "three": "5d6",
-        "four": "6d6",
-        "five": "7d6",
-        "six": "8d6",
-        "seven": "9d6",
-        "eight": "10d6",
-        "nine": "11d6"
+        1: "3d6",
+        2: "4d6",
+        3: "5d6",
+        4: "6d6",
+        5: "7d6",
+        6: "8d6",
+        7: "9d6",
+        8: "10d6",
+        9: "11d6"
       }
     }
   },
@@ -2853,15 +2853,15 @@
     "damage": {
       "type": "radiant damage",
       "levels": {
-        "one": 0,
-        "two": "2d10",
-        "three": "3d10",
-        "four": "4d10",
-        "five": "5d10",
-        "six": "6d10",
-        "seven": "7d10",
-        "eight": "8d10",
-        "nine": "9d10"
+        1: 0,
+        2: "2d10",
+        3: "3d10",
+        4: "4d10",
+        5: "5d10",
+        6: "6d10",
+        7: "7d10",
+        8: "8d10",
+        9: "9d10"
       }
     }
   },
@@ -2934,15 +2934,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": "3d6",
-        "two": "4d6",
-        "three": "5d6",
-        "four": "6d6",
-        "five": "7d6",
-        "six": "8d6",
-        "seven": "9d6",
-        "eight": "10d6",
-        "nine": "11d6"
+        1: "3d6",
+        2: "4d6",
+        3: "5d6",
+        4: "6d6",
+        5: "7d6",
+        6: "8d6",
+        7: "9d6",
+        8: "10d6",
+        9: "11d6"
       }
     }
   },
@@ -3048,15 +3048,15 @@
     "damage": {
       "type": "thunder damage",
       "levels": {
-        "one": 0,
-        "two": "3d8",
-        "three": "4d8",
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: 0,
+        2: "3d8",
+        3: "4d8",
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -3106,15 +3106,15 @@
     "damage": {
       "type": "necrotic damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -3153,15 +3153,15 @@
     "damage": {
       "type": "piercing damage",
       "playerLevel": {
-        "one": "1d6",
-        "two": "1d6",
-        "three": "1d6",
-        "four": "1d6",
-        "five": "2d6",
-        "six": "2d6",
-        "seven": "2d6",
-        "eight": "2d6",
-        "nine": "2d6",
+        1: "1d6",
+        2: "1d6",
+        3: "1d6",
+        4: "1d6",
+        5: "2d6",
+        6: "2d6",
+        7: "2d6",
+        8: "2d6",
+        9: "2d6",
         "ten": "2d6",
         "eleven": "3d6",
         "twelve": "3d6",
@@ -3212,15 +3212,15 @@
     "damage": {
       "type": "radiant damage",
       "levels": {
-        "one": "4d6",
-        "two": "5d6",
-        "three": "6d6",
-        "four": "7d6",
-        "five": "8d6",
-        "six": "9d6",
-        "seven": "10d6",
-        "eight": "11d6",
-        "nine": "12d6"
+        1: "4d6",
+        2: "5d6",
+        3: "6d6",
+        4: "7d6",
+        5: "8d6",
+        6: "9d6",
+        7: "10d6",
+        8: "11d6",
+        9: "12d6"
       }
     }
   },
@@ -3270,15 +3270,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "8d6",
-        "seven": "9d6",
-        "eight": "10d6",
-        "nine": "11d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "8d6",
+        7: "9d6",
+        8: "10d6",
+        9: "11d6"
       }
     }
   },
@@ -3386,15 +3386,15 @@
     "damage": {
       "type": "bludgeoning damage and lightning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": "2d6 and 4d6",
-        "five": "3d6 and 5d6",
-        "six": "4d6 and 6d6",
-        "seven": "5d6 and 7d6",
-        "eight": "6d6 and 8d6",
-        "nine": "7d6 and 9d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: "2d6 and 4d6",
+        5: "3d6 and 5d6",
+        6: "4d6 and 6d6",
+        7: "5d6 and 7d6",
+        8: "6d6 and 8d6",
+        9: "7d6 and 9d6"
       }
     }
   },
@@ -3422,15 +3422,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": "1d6",
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: "1d6",
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -3481,15 +3481,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: 0,
+        2: 0,
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     },
     "healing": "You restore half the amount of damage you deal."
@@ -3518,15 +3518,15 @@
     "damage": {
       "type": "radiant damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -3554,15 +3554,15 @@
     "damage": {
       "type": "poison damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "5d8",
-        "six": "6d8",
-        "seven": "7d8",
-        "eight": "8d8",
-        "nine": "9d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "5d8",
+        6: "6d8",
+        7: "7d8",
+        8: "8d8",
+        9: "9d8"
       }
     }
   },
@@ -3590,15 +3590,15 @@
     "damage": {
       "type": "necrotic damage",
       "levels": {
-        "one": "3d10",
-        "two": "4d10",
-        "three": "5d10",
-        "four": "6d10",
-        "five": "7d10",
-        "six": "8d10",
-        "seven": "9d10",
-        "eight": "10d10",
-        "nine": "11d10"
+        1: "3d10",
+        2: "4d10",
+        3: "5d10",
+        4: "6d10",
+        5: "7d10",
+        6: "8d10",
+        7: "9d10",
+        8: "10d10",
+        9: "11d10"
       }
     }
   },
@@ -3660,15 +3660,15 @@
     "damage": {
       "type": "poison damage",
       "playerLevel": {
-        "one": "1d12",
-        "two": "1d12",
-        "three": "1d12",
-        "four": "1d12",
-        "five": "2d12",
-        "six": "2d12",
-        "seven": "2d12",
-        "eight": "2d12",
-        "nine": "2d12",
+        1: "1d12",
+        2: "1d12",
+        3: "1d12",
+        4: "1d12",
+        5: "2d12",
+        6: "2d12",
+        7: "2d12",
+        8: "2d12",
+        9: "2d12",
         "ten": "2d12",
         "eleven": "3d12",
         "twelve": "3d12",
@@ -3730,15 +3730,15 @@
     "damage": {
       "type": "lightning damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -3788,15 +3788,15 @@
     "url": "https://www.dnd-spells.com/spell/mass-cure-wounds",
     "healing": {
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "3d8",
-        "six": "4d8",
-        "seven": "5d8",
-        "eight": "6d8",
-        "nine": "7d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "3d8",
+        6: "4d8",
+        7: "5d8",
+        8: "6d8",
+        9: "7d8"
       }
     }
   },
@@ -3824,15 +3824,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": "2d8",
-        "three": "3d8",
-        "four": "4d8",
-        "five": "5d8",
-        "six": "6d8",
-        "seven": "7d8",
-        "eight": "8d8",
-        "nine": "9d8"
+        1: 0,
+        2: "2d8",
+        3: "3d8",
+        4: "4d8",
+        5: "5d8",
+        6: "6d8",
+        7: "7d8",
+        8: "8d8",
+        9: "9d8"
       }
     }
   },
@@ -3893,15 +3893,15 @@
     "damage": {
       "type": "piercing damage and cold damage",
       "levels": {
-        "one": "1d10 and 2d6",
-        "two": "1d10 and 3d6",
-        "three": "1d10 and 4d6",
-        "four": "1d10 and 5d6",
-        "five": "1d10 and 6d6",
-        "six": "1d10 and 7d6",
-        "seven": "1d10 and 8d6",
-        "eight": "1d10 and 9d6",
-        "nine": "1d10 and 10d6"
+        1: "1d10 and 2d6",
+        2: "1d10 and 3d6",
+        3: "1d10 and 4d6",
+        4: "1d10 and 5d6",
+        5: "1d10 and 6d6",
+        6: "1d10 and 7d6",
+        7: "1d10 and 8d6",
+        8: "1d10 and 9d6",
+        9: "1d10 and 10d6"
       }
     }
   },
@@ -3940,15 +3940,15 @@
     "damage": {
       "type": "lightning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "10d8",
-        "seven": "11d8",
-        "eight": "12d8",
-        "nine": "13d8"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "10d8",
+        7: "11d8",
+        8: "12d8",
+        9: "13d8"
       }
     }
   },
@@ -4064,15 +4064,15 @@
     "url": "https://www.dnd-spells.com/spell/mass-healing-word",
     "healing": {
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "1d4",
-        "four": "2d4",
-        "five": "3d4",
-        "six": "4d4",
-        "seven": "5d4",
-        "eight": "6d4",
-        "nine": "7d4"
+        1: 0,
+        2: 0,
+        3: "1d4",
+        4: "2d4",
+        5: "3d4",
+        6: "4d4",
+        7: "5d4",
+        8: "6d4",
+        9: "7d4"
       }
     }
   },
@@ -4111,15 +4111,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": "3d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "4d6",
-        "six": "5d6",
-        "seven": "5d6",
-        "eight": "6d6",
-        "nine": "6d6"
+        1: 0,
+        2: "3d6",
+        3: "3d6",
+        4: "4d6",
+        5: "4d6",
+        6: "5d6",
+        7: "5d6",
+        8: "6d6",
+        9: "6d6"
       }
     }
   },
@@ -4339,15 +4339,15 @@
     "url": "https://www.dnd-spells.com/spell/prayer-of-healing",
     "healing": {
       "levels": {
-        "one": 0,
-        "two": "2d8",
-        "three": "3d8",
-        "four": "4d8",
-        "five": "5d8",
-        "six": "6d8",
-        "seven": "7d8",
-        "eight": "8d8",
-        "nine": "9d8"
+        1: 0,
+        2: "2d8",
+        3: "3d8",
+        4: "4d8",
+        5: "5d8",
+        6: "6d8",
+        7: "7d8",
+        8: "8d8",
+        9: "9d8"
       }
     }
   },
@@ -4421,15 +4421,15 @@
     "damage": {
       "type": "bludgeoning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -4534,15 +4534,15 @@
     "damage": {
       "type": "bludgeoning damage",
       "levels": {
-        "one": "1d6",
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: "1d6",
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -4603,15 +4603,15 @@
     "damage": {
       "type": "cold damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": 0,
-        "six": "10d6",
-        "seven": "11d6",
-        "eight": "12d6",
-        "nine": "13d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "10d6",
+        7: "11d6",
+        8: "12d6",
+        9: "13d6"
       }
     }
   },
@@ -4650,15 +4650,15 @@
     "damage": {
       "type": "poison damage",
       "levels": {
-        "one": "2d8",
-        "two": "3d8",
-        "three": "4d8",
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: "2d8",
+        2: "3d8",
+        3: "4d8",
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -4675,15 +4675,15 @@
     "damage": {
       "type": "acid damage",
       "playerLevel": {
-        "one": "1d6",
-        "two": "1d6",
-        "three": "1d6",
-        "four": "1d6",
-        "five": "2d6",
-        "six": "2d6",
-        "seven": "2d6",
-        "eight": "2d6",
-        "nine": "2d6",
+        1: "1d6",
+        2: "1d6",
+        3: "1d6",
+        4: "1d6",
+        5: "2d6",
+        6: "2d6",
+        7: "2d6",
+        8: "2d6",
+        9: "2d6",
         "ten": "2d6",
         "eleven": "3d6",
         "twelve": "3d6",
@@ -4733,15 +4733,15 @@
     "damage": {
       "type": "bludgeoning damage",
       "levels": {
-        "one": "3d8",
-        "two": "4d8",
-        "three": "5d8",
-        "four": "6d8",
-        "five": "7d8",
-        "six": "8d8",
-        "seven": "9d8",
-        "eight": "10d8",
-        "nine": "11d8"
+        1: "3d8",
+        2: "4d8",
+        3: "5d8",
+        4: "6d8",
+        5: "7d8",
+        6: "8d8",
+        7: "9d8",
+        8: "10d8",
+        9: "11d8"
       }
     }
   },
@@ -4781,15 +4781,15 @@
     "damage": {
       "type": "lightning damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": "4d8",
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: 0,
+        2: 0,
+        3: "4d8",
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -4850,15 +4850,15 @@
     "damage": {
       "type": "fire damage",
       "levels": {
-        "one": 0,
-        "two": "3d8",
-        "three": "4d8",
-        "four": "5d8",
-        "five": "6d8",
-        "six": "7d8",
-        "seven": "8d8",
-        "eight": "9d8",
-        "nine": "10d8"
+        1: 0,
+        2: "3d8",
+        3: "4d8",
+        4: "5d8",
+        5: "6d8",
+        6: "7d8",
+        7: "8d8",
+        8: "9d8",
+        9: "10d8"
       }
     }
   },
@@ -4919,15 +4919,15 @@
     "damage": {
       "type": "lightning damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -5067,15 +5067,15 @@
     "url": "https://www.dnd-spells.com/spell/cure-wounds",
     "healing": {
       "levels": {
-        "one": "1d8",
-        "two": "2d8",
-        "three": "3d8",
-        "four": "4d8",
-        "five": "5d8",
-        "six": "6d8",
-        "seven": "7d8",
-        "eight": "8d8",
-        "nine": "9d8"
+        1: "1d8",
+        2: "2d8",
+        3: "3d8",
+        4: "4d8",
+        5: "5d8",
+        6: "6d8",
+        7: "7d8",
+        8: "8d8",
+        9: "9d8"
       }
     }
   },
@@ -5148,15 +5148,15 @@
     "damage": {
       "type": "cold damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -5273,15 +5273,15 @@
     "damage": {
       "type": "bludgeoning damage",
       "levels": {
-        "one": 0,
-        "two": "3d12",
-        "three": "4d12",
-        "four": "5d12",
-        "five": "6d12",
-        "six": "7d12",
-        "seven": "8d12",
-        "eight": "9d12",
-        "nine": "10d12"
+        1: 0,
+        2: "3d12",
+        3: "4d12",
+        4: "5d12",
+        5: "6d12",
+        6: "7d12",
+        7: "8d12",
+        8: "9d12",
+        9: "10d12"
       }
     }
   },
@@ -5364,15 +5364,15 @@
     "damage": {
       "type": "piercing damage",
       "levels": {
-        "one": "1d6",
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: "1d6",
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -5434,15 +5434,15 @@
     "damage": {
       "type": "radiant damage",
       "levels": {
-        "one": 0,
-        "two": "2d6",
-        "three": "3d6",
-        "four": "4d6",
-        "five": "5d6",
-        "six": "6d6",
-        "seven": "7d6",
-        "eight": "8d6",
-        "nine": "9d6"
+        1: 0,
+        2: "2d6",
+        3: "3d6",
+        4: "4d6",
+        5: "5d6",
+        6: "6d6",
+        7: "7d6",
+        8: "8d6",
+        9: "9d6"
       }
     }
   },
@@ -5516,15 +5516,15 @@
     "damage": {
       "type": "thunder damage",
       "playerLevel": {
-        "one": "1d6",
-        "two": "1d6",
-        "three": "1d6",
-        "four": "1d6",
-        "five": "2d6",
-        "six": "2d6",
-        "seven": "2d6",
-        "eight": "2d6",
-        "nine": "2d6",
+        1: "1d6",
+        2: "1d6",
+        3: "1d6",
+        4: "1d6",
+        5: "2d6",
+        6: "2d6",
+        7: "2d6",
+        8: "2d6",
+        9: "2d6",
         "ten": "2d6",
         "eleven": "3d6",
         "twelve": "3d6",
@@ -5640,15 +5640,15 @@
     "damage": {
       "type": "fire damage",
       "playerLevel": {
-        "one": "1d8",
-        "two": "1d8",
-        "three": "1d8",
-        "four": "1d8",
-        "five": "2d8",
-        "six": "2d8",
-        "seven": "2d8",
-        "eight": "2d8",
-        "nine": "2d8",
+        1: "1d8",
+        2: "1d8",
+        3: "1d8",
+        4: "1d8",
+        5: "2d8",
+        6: "2d8",
+        7: "2d8",
+        8: "2d8",
+        9: "2d8",
         "ten": "2d8",
         "eleven": "3d8",
         "twelve": "3d8",
@@ -5676,15 +5676,15 @@
     "damage": {
       "type": "fire damage and radiant damage",
       "levels": {
-        "one": 0,
-        "two": 0,
-        "three": 0,
-        "four": 0,
-        "five": "4d6 and 4d6",
-        "six": "5d6 and 4d6",
-        "seven": "6d6 and 4d6",
-        "eight": "7d6 and 4d6",
-        "nine": "8d6 and 4d6"
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: "4d6 and 4d6",
+        6: "5d6 and 4d6",
+        7: "6d6 and 4d6",
+        8: "7d6 and 4d6",
+        9: "8d6 and 4d6"
       }
     }
   },
@@ -5701,15 +5701,15 @@
     "damage": {
       "type": "slashing damage",
       "levels": {
-        "one": 0,
-        "two": "4d4",
-        "three": "5d4",
-        "four": "6d4",
-        "five": "7d4",
-        "six": "8d4",
-        "seven": "9d4",
-        "eight": "10d4",
-        "nine": "11d4"
+        1: 0,
+        2: "4d4",
+        3: "5d4",
+        4: "6d4",
+        5: "7d4",
+        6: "8d4",
+        7: "9d4",
+        8: "10d4",
+        9: "11d4"
       }
     }
   },

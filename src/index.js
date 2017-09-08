@@ -174,6 +174,10 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
+        //add conditional to check if the damage is a string or array using typeof()
+        //if string add to speech output, if array execute rest of code
+
+
         //if the requested spell is a cantrip
         if(spell && spell['slotLevel'] == 'cantrip'){
             var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
@@ -182,8 +186,7 @@ var handlers = {
                                                " the cantrip " + 
                                                spellName + " does " + 
                                                dmg + " " + dmgType + ".";
-        }
-        else if(spell && level > 9){
+        }else if(spell && level > 9){
             this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
         }
         //if the requested spell is a normal spell
@@ -218,14 +221,18 @@ var handlers = {
 
         //if the requested spell is healing spell
         if (spell.healing != null){
-            //alex created a spell slot limit (ie: user cant ask to cast spells above 9th level)
-            //*add conditonal statement to limit the use of spells above 9th level spell slot (ie: at 12th level how much health does 'cure wounds' heal)
             var heal = spell.healing.levels[level];
-            this.attributes['speechOutput'] = "At level " + level + 
+            
+            if(spell && level > 9){
+                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+            }else{
+                this.attributes['speechOutput'] = "At level " + level + 
                                                " " + spellName + 
                                                " heals " + heal + 
                                                " plus your spellcasting ability modifier.";
-        }else if(spell.healing == null && spell.damage) {
+            }
+
+        }else{
             this.attributes['speechOutput'] = "That spell does not restore health.";
         }
 
