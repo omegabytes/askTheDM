@@ -245,6 +245,7 @@ ConditionsIntent what does the {Condition} condition do to something
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}
 
+DiceIntent roll {Quantity}  {Sides}
 DiceIntent roll {Quantity} d {Sides}
 DiceIntent roll a {Quantity} d {Sides}
 DiceIntent can you roll a {Quantity} d {Sides}
