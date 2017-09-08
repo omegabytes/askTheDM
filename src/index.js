@@ -61,6 +61,8 @@ var handlers = {
             this.emit(':ask', this.attributes['speechOutput']);
         }
 
+        diceSides = diceSides.match(/\d+/).join("");
+
         if (status == null) {
             // calculate the result of a normal roll
             result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);
