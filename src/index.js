@@ -214,11 +214,16 @@ var handlers = {
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //if the requested spell is healing spell
-        if (spell && level){
+        if (spell.healing != null){
+            //alex created a spell slot limit (ie: user cant ask to cast spells above 9th level)
+            //*add conditonal statement to limit the use of spells above 9th level spell slot (ie: at 12th level how much health does 'cure wounds' heal)
             var heal = spell.healing.levels[level];
-            this.attributes['speechOutput'] = "At level " + level + " " + 
-                                               spellName + " heals " + 
-                                               heal + " plus your spellcasting ability modifier.";
+            this.attributes['speechOutput'] = "At level " + level + 
+                                               " " + spellName + 
+                                               " heals " + heal + 
+                                               " plus your spellcasting ability modifier.";
+        }else if(spell.healing == null && spell.damage) {
+            this.attributes['speechOutput'] = "That spell does not restore health.";
         }
 
         if(this.attributes['continue']){ 

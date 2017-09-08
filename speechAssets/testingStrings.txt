@@ -30,6 +30,11 @@ at level 1 how much damage does hellish rebuke do
 how much damage does frostbite do at level 9
 how much damage does a 12th level vicious mockery do
 
+//SpellHealIntent
+at level 5 how much healing does the spell cure wounds do
+how much health does prayer of healing do at level 7
+how much h. p. does healing word restore at 3rd level
+
 // SpellsIntent
 what is fireball
 what is the range of fireball

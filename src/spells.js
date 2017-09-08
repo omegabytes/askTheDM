@@ -10,7 +10,8 @@
      "short description" : "shortDescription",   
      "long description"  : "longDescription",    
      "url"               : "url",
-     "damage"            : "damage" 
+     "damage"            : "damage",
+     "healing"           : "healing" 
    },
    "SLOT_LEVEL": {
      "1st level"        : "one",
@@ -2674,7 +2675,20 @@
     "school": "Evocation",
     "shortDescription": "A creature of your choice within 60 feet gains health equal to 1d4 + your spellcasting ability modifier. No effect on undead or constructs.",
     "longDescription": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Level:. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
-    "url": "https://www.dnd-spells.com/spell/healing-word"
+    "url": "https://www.dnd-spells.com/spell/healing-word",
+    "healing": {
+      "levels": {
+        "one": "1d4",
+        "two": "2d4",
+        "three": "3d4",
+        "four": "4d4",
+        "five": "5d4",
+        "six": "6d4",
+        "seven": "7d4",
+        "eight": "8d4",
+        "nine": "9d4"
+      }
+    }
   },
   "project image": {
     "castingTime": "1 Action",
@@ -3477,7 +3491,8 @@
         "eight": "8d6",
         "nine": "9d6"
       }
-    }
+    },
+    "healing": "You restore half the amount of damage you deal."
   },
   "magic weapon": {
     "castingTime": "1 Bonus Action",
@@ -3770,7 +3785,20 @@
     "school": "Evocation",
     "shortDescription": "Up to 6 creatures within 30ft of a point regain 3d8 + spell modifier health",
     "longDescription": "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels:  When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.",
-    "url": "https://www.dnd-spells.com/spell/mass-cure-wounds"
+    "url": "https://www.dnd-spells.com/spell/mass-cure-wounds",
+    "healing": {
+      "levels": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": "3d8",
+        "six": "4d8",
+        "seven": "5d8",
+        "eight": "6d8",
+        "nine": "7d8"
+      }
+    }
   },
   "compulsion": {
     "castingTime": "1 Action",
@@ -3884,7 +3912,7 @@
     "components": "Verbal, Somatic, Material (diamonds worth 300 gold pieces, which the spell consumes)",
     "slotLevel": "3",
     "school": "Necromancy",
-    "shortDescription": "A creature dead for less than 1 minute returns to life with 1 health",
+    "shortDescription": "A creature dead for less than 1 minute returns to life with 1 hit point.",
     "longDescription": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
     "url": "https://www.dnd-spells.com/spell/revivify"
   },
@@ -4031,9 +4059,22 @@
     "components": "Verbal",
     "slotLevel": "3",
     "school": "Evocation",
-    "shortDescription": "Up to 6 creatures regain health equal to 1d4 + your spell modifier",
+    "shortDescription": "Up to 6 creatures regain hit points equal to 1d4 + your spell modifier",
     "longDescription": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
-    "url": "https://www.dnd-spells.com/spell/mass-healing-word"
+    "url": "https://www.dnd-spells.com/spell/mass-healing-word",
+    "healing": {
+      "levels": {
+        "one": 0,
+        "two": 0,
+        "three": "1d4",
+        "four": "2d4",
+        "five": "3d4",
+        "six": "4d4",
+        "seven": "5d4",
+        "eight": "6d4",
+        "nine": "7d4"
+      }
+    }
   },
   "contagion": {
     "castingTime": "1 Action",
@@ -4295,7 +4336,20 @@
     "school": "Evocation",
     "shortDescription": "Up to six creatures gain health equal to 2d8 + your spellcasting modifier",
     "longDescription": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.",
-    "url": "https://www.dnd-spells.com/spell/prayer-of-healing"
+    "url": "https://www.dnd-spells.com/spell/prayer-of-healing",
+    "healing": {
+      "levels": {
+        "one": 0,
+        "two": "2d8",
+        "three": "3d8",
+        "four": "4d8",
+        "five": "5d8",
+        "six": "6d8",
+        "seven": "7d8",
+        "eight": "8d8",
+        "nine": "9d8"
+      }
+    }
   },
   "deafness": {
     "castingTime": "1 Action",
@@ -5010,7 +5064,20 @@
     "school": "Evocation",
     "shortDescription": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "longDescription": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
-    "url": "https://www.dnd-spells.com/spell/cure-wounds"
+    "url": "https://www.dnd-spells.com/spell/cure-wounds",
+    "healing": {
+      "levels": {
+        "one": "1d8",
+        "two": "2d8",
+        "three": "3d8",
+        "four": "4d8",
+        "five": "5d8",
+        "six": "6d8",
+        "seven": "7d8",
+        "eight": "8d8",
+        "nine": "9d8"
+      }
+    }
   },
   "disguise self": {
     "castingTime": "1 Action",
@@ -5144,7 +5211,7 @@
     "components": "Verbal",
     "slotLevel": "4",
     "school": "Abjuration",
-    "shortDescription": "Each nonhostile creature within 30ft of you (including you) have resistence to necrotic damage, its health maximum can't be reduced, and rgains 1 health at the start of each turn.",
+    "shortDescription": "Each nonhostile creature within 30ft of you (including you) have resistence to necrotic damage, its health maximum can't be reduced, and regains 1 health at the start of each turn.",
     "longDescription": "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points.",
     "url": "https://www.dnd-spells.com/spell/aura-of-life"
   },
