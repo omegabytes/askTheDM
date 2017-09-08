@@ -26,7 +26,9 @@ how do I cast druidcraft
 how do I cast shade
 
 // SpellDamageIntent
-at level one how much damage does hellish rebuke do
+at level 1 how much damage does hellish rebuke do
+how much damage does frostbite do at level 9
+how much damage does a 12th level vicious mockery do
 
 // SpellsIntent
 what is fireball

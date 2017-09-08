@@ -60,11 +60,11 @@
           "type": "LIST_OF_SPELLS"
         },
         {
-          "name": "Attribute",
-          "type": "LIST_OF_ATTRIBUTES"
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
         }
       ],
-      "intent": "SpellsIntent"
+      "intent": "SpellDamageIntent"
     },
     {
       "slots": [
@@ -77,7 +77,20 @@
           "type": "LIST_OF_SLOT_LEVELS"
         }
       ],
-      "intent": "SpellDamageIntent"
+      "intent": "SpellHealIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "Attribute",
+          "type": "LIST_OF_ATTRIBUTES"
+        }
+      ],
+      "intent": "SpellsIntent"
     },
     {
       "intent": "Unhandled"

@@ -1,4 +1,17 @@
   module.exports = {  
+   "ATTRIBUTES" : {    
+     "casting time"      : "castingTime",
+     "cast"              : "castingTime",     
+     "duration"          : "duration",     
+     "range"             : "range",    
+     "components"        : "components",
+     "slot level"        : "slotLevel",   
+     "school type"       : "school",    
+     "short description" : "shortDescription",   
+     "long description"  : "longDescription",    
+     "url"               : "url",
+     "damage"            : "damage" 
+   },
    "SLOT_LEVEL": {
      "1st level"        : "one",
      "level 1"          : "one",
@@ -40,19 +53,6 @@
      "level 19"         : "nineteen",
      "20th level"       : "twenty",
      "level 20"         : "twenty"   
-   },
-   "ATTRIBUTES" : {    
-     "casting time"      : "castingTime",
-     "cast"              : "castingTime",     
-     "duration"          : "duration",     
-     "range"             : "range",    
-     "components"        : "components",
-     "slot level"        : "slotLevel",   
-     "school type"       : "school",    
-     "short description" : "shortDescription",   
-     "long description"  : "longDescription",    
-     "url"               : "url",
-     "damage"            : "damage" 
    },    
    "SPELLS" : {
   "move earth": {

@@ -167,11 +167,12 @@ var handlers = {
         var spellSlot               = this.event.request.intent.slots.Spell;
         var spellName               = alexaLib.validateAndSetSlot(spellSlot);
         var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
-        //var spellLevelNormalized    = alexaLib.levelMap(spellLevel);
         var spells                  = langEN.SPELLS;
-        var spell                   = spells[spellName];
         var levels                  = langEN.SLOT_LEVEL;
-        var level                   = levels[spellLevel]; //returns string 'one'
+        var spell                   = spells[spellName];
+        var level                   = levels[spellLevel];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
         //if the requested spell is a cantrip
         if(spell && spell['slotLevel'] == 'cantrip'){
@@ -193,22 +194,24 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " 
                 + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
 
-    },/*
+    },
     'SpellHealIntent': function(){
-        var requestedLevelSlot      = this.event.request.intent.slots.Level;
+        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
         var spellSlot               = this.event.request.intent.slots.Spell;
         var spellName               = alexaLib.validateAndSetSlot(spellSlot);
         var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
-        var spellLevelNormalized    = alexaLib.levelMap(spellLevel);
+        var levels                  = langEN.SLOT_LEVEL;
         var spells                  = langEN.SPELLS;
         var spell                   = spells[spellName];
-        var level                   = spells[spellLevelNormalized]; //returns string 'one'
+        var level                   = levels[spellLevel];
+        
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //if the requested spell is healing spell
         if (spell && level){
@@ -217,7 +220,14 @@ var handlers = {
                                                spellName + " heals " + 
                                                heal + " plus your spellcasting ability modifier.";
         }
-    },*/
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+                + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'SpellsIntent': function () {
         var spellSlot           = this.event.request.intent.slots.Spell;
         var attributeSlot       = this.event.request.intent.slots.Attribute;
@@ -227,10 +237,6 @@ var handlers = {
         var spellAttributes     = langEN.ATTRIBUTES;
         var spell               = spells[spellName];
         var spellAttribute      = spellAttributes[attributeName];
-
-        //todo: do we need to handle false damage requests for healing spells? 
-              //if the requested spell does not have damage but has healing
-
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
