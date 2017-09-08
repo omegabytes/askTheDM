@@ -183,6 +183,9 @@ var handlers = {
                                                spellName + " does " + 
                                                dmg + " " + dmgType + ".";
         }
+        else if(spell && level > 9){
+            this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+        }
         //if the requested spell is a normal spell
         else{
             var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
