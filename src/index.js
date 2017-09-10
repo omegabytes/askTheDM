@@ -261,29 +261,36 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-        //add conditional to check if the damage is a string or array using typeof()
-        //if string add to speech output, if array execute rest of code
+        // var dmgStr = spell.damage;
+        // var dmgStrCheck = Object.prototype.toString.call(dmgStr) == '[object String]';
 
-
-        //if the requested spell is a cantrip
-        if(spell && spell['slotLevel'] == 'cantrip'){
-            var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
-            var dmgType = spell.damage.type;
-            this.attributes['speechOutput'] = "At player level " + level + 
-                                               " the cantrip " + 
-                                               spellName + " does " + 
-                                               dmg + " " + dmgType + ".";
-        }else if(spell && level > 9){
-            this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+        if(spell && typeof spell.damage === 'string')
+        { //add conditional to check if the damage is a string or array using typeof()
+            this.attributes['speechOutput'] = spell.damage;
         }
-        //if the requested spell is a normal spell
-        else{
-            var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
-            var dmgType = spell.damage.type;
-            this.attributes['speechOutput'] = "A level " + level + " " + 
-                                                spellName + " does " + 
-                                                dmg + " " + dmgType + ".";
-            //add conditional to tell user spells can't be cast higher than level 9
+        else if(spell && (typeof spell.damage === 'object'))
+        { //if string add to speech output, if array execute rest of code
+            if(spell && spell['slotLevel'] == 'cantrip')
+            { //if the requested spell is a cantrip
+                var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
+                var dmgType = spell.damage.type;
+                this.attributes['speechOutput'] = "At player level " + level + 
+                                                   " the cantrip " + 
+                                                   spellName + " does " + 
+                                                   dmg + " " + dmgType + ".";
+            }
+            else if(spell && level > 9)
+            {
+                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+            }
+            else
+            { //if the requested spell is a normal spell
+                var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+                var dmgType = spell.damage.type;
+                this.attributes['speechOutput'] = "A level " + level + " " + 
+                                                    spellName + " does " + 
+                                                    dmg + " " + dmgType + ".";
+            }
         }
 
         if(this.attributes['continue']){ 
@@ -306,21 +313,36 @@ var handlers = {
         
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        //if the requested spell is healing spell
-        if (spell.healing != null){
-            var heal = spell.healing.levels[level];
-            
-            if(spell && level > 9){
-                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
-            }else{
-                this.attributes['speechOutput'] = "At level " + level + 
-                                               " " + spellName + 
-                                               " heals " + heal + 
-                                               " plus your spellcasting ability modifier.";
+        if(spell && typeof spell.healing === 'string')
+        { //add conditional to check if the healing is a string or array using typeof()
+            this.attributes['speechOutput'] = spell.healing;
+        }
+        else if(spell && (typeof spell.healing === 'object'))
+        { //if string add to speech output, if array execute rest of code
+            if (spell.healing != null)
+            { //if the requested spell is healing spell
+                var heal = spell.healing.levels[level];
+                
+                if(spell && level > 9)
+                {
+                    this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+                }
+                else
+                {
+                    this.attributes['speechOutput'] = "At level " + level + 
+                                                   " " + spellName + 
+                                                   " heals " + heal + 
+                                                   " plus your spellcasting ability modifier.";
+                }
             }
-
-        }else{
-            this.attributes['speechOutput'] = "That spell does not restore health.";
+            else
+            {
+                this.attributes['speechOutput'] = "That spell does not restore health.";
+            }
+        }
+        else
+        {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
