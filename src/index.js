@@ -249,6 +249,87 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'SpellDamageIntent': function(){
+        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
+        var spellSlot               = this.event.request.intent.slots.Spell;
+        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
+        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
+        var spells                  = langEN.SPELLS;
+        var levels                  = langEN.SLOT_LEVEL;
+        var spell                   = spells[spellName];
+        var level                   = levels[spellLevel];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+        
+        //add conditional to check if the damage is a string or array using typeof()
+        //if string add to speech output, if array execute rest of code
+
+
+        //if the requested spell is a cantrip
+        if(spell && spell['slotLevel'] == 'cantrip'){
+            var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
+            var dmgType = spell.damage.type;
+            this.attributes['speechOutput'] = "At player level " + level + 
+                                               " the cantrip " + 
+                                               spellName + " does " + 
+                                               dmg + " " + dmgType + ".";
+        }else if(spell && level > 9){
+            this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+        }
+        //if the requested spell is a normal spell
+        else{
+            var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+            var dmgType = spell.damage.type;
+            this.attributes['speechOutput'] = "A level " + level + " " + 
+                                                spellName + " does " + 
+                                                dmg + " " + dmgType + ".";
+            //add conditional to tell user spells can't be cast higher than level 9
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+                + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+
+    },
+    'SpellHealIntent': function(){
+        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
+        var spellSlot               = this.event.request.intent.slots.Spell;
+        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
+        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
+        var levels                  = langEN.SLOT_LEVEL;
+        var spells                  = langEN.SPELLS;
+        var spell                   = spells[spellName];
+        var level                   = levels[spellLevel];
+        
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        //if the requested spell is healing spell
+        if (spell.healing != null){
+            var heal = spell.healing.levels[level];
+            
+            if(spell && level > 9){
+                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+            }else{
+                this.attributes['speechOutput'] = "At level " + level + 
+                                               " " + spellName + 
+                                               " heals " + heal + 
+                                               " plus your spellcasting ability modifier.";
+            }
+
+        }else{
+            this.attributes['speechOutput'] = "That spell does not restore health.";
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+                + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'SpellsIntent': function () {
         var spellSlot       = this.event.request.intent.slots.Spell;
         var attributeSlot   = this.event.request.intent.slots.Attribute;

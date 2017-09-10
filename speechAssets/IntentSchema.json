@@ -32,18 +32,6 @@
       "intent": "FeatsIntent"
     },
     {
-      "intent": "IncompleteIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Index",
-          "type": "LIST_OF_INDEX"
-        }
-      ],
-      "intent": "IndexIntent"
-    },
-    {
       "slots": [
         {
           "name": "Item",
@@ -64,6 +52,32 @@
         }
       ],
       "intent": "SpellCastIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
+        }
+      ],
+      "intent": "SpellDamageIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
+        }
+      ],
+      "intent": "SpellHealIntent"
     },
     {
       "slots": [
