@@ -19,7 +19,7 @@ exports.rollDice = function(quantity,sides) {
     var output = 0;
 
     for (var i=0;i<quantity;i++) {
-        facevalue = Math.floor(Math.random()*sides);
+        facevalue = Math.floor(Math.random()*sides) + 1;
         output += facevalue;
     }
     return output;

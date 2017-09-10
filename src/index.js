@@ -38,6 +38,67 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    'DiceIntent' : function () {
+        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
+        var diceSidesSlot    = this.event.request.intent.slots.Sides;
+        var modifierSlot     = this.event.request.intent.slots.Modifier;
+        var statusSlot       = this.event.request.intent.slots.Status;
+        var numberOfDice     = alexaLib.validateAndSetSlot(numberOfDiceSlot);
+        var diceSides        = alexaLib.validateAndSetSlot(diceSidesSlot);
+        var status           = alexaLib.validateAndSetSlot(statusSlot);
+        var modifier         = alexaLib.validateAndSetSlot(modifierSlot);
+        var firstRoll;
+        var secondRoll;
+        var result;
+
+        if(numberOfDice==null) numberOfDice = 1
+        if(modifier==null) modifier = 0
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
+            this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
+            this.emit(':ask', this.attributes['speechOutput']);
+        }
+
+        diceSides = diceSides.match(/\d+/).join("");
+
+        if (status == null) {
+            // calculate the result of a normal roll
+            result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);
+            this.attributes['speechOutput'] = "The result of the roll is " + result;
+        }else if(diceSides==20){
+            // calculate the result of a roll with advantage/disadvantage
+            firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);
+            secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
+
+            if (status == "advantage") {
+                result = Math.max(firstRoll,secondRoll) + Number(modifier);
+            }
+
+            if (status == "disadvantage") {
+                result = Math.min(firstRoll,secondRoll) + Number(modifier);
+            }
+
+            this.attributes['speechOutput'] = "You roll with "
+                                            + status 
+                                            + ". Your first roll is " 
+                                            + firstRoll
+                                            + ", and your second roll is "
+                                            + secondRoll
+                                            + ". The result of the roll with modifiers is "
+                                            + result;
+        }else{
+            this.attributes['speechOutput'] = "You can only have advantage or disadvantage on d 20 rolls"
+        }
+
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }
+        else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'ExhaustionLevelIntent': function () {
         var exhaustionSlot       = this.event.request.intent.slots.Level;
         var exhaustionLevelInput = alexaLib.validateAndSetSlot(exhaustionSlot);
