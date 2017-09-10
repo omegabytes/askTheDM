@@ -1,8 +1,9 @@
-var spells          = require('./spells');
 var conditions      = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
+var indexInfo       = require('./indexInfo')
 var items           = require('./items');
 var feats           = require('./feats');
+var spells          = require('./spells');
 
 module.exports = {
     "en": {
@@ -13,6 +14,7 @@ module.exports = {
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEATS" :                                       feats.FEATS,
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
+            "INDEX" :                                       indexInfo.INDEX,
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
             "SPELLS":                                       spells.SPELLS,
@@ -27,7 +29,7 @@ module.exports = {
             "REPROMPT":                                     "What else can I help with? ",
             "SKILL_NAME":                                   "Ask the DM",            
             "STOP_MESSAGE":                                 "Goodbye!",            
-            "UNHANDLED" :                                    "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'",
+            "UNHANDLED" :                                   "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'",
             "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with?",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me."     
         }
