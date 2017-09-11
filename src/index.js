@@ -231,7 +231,7 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.school + " spell. To cast, you need the following: " 
+                                            + spell.spellType + ". To cast, you need the following: " 
                                             + spell.components + ". The spell duration is " 
                                             + spell.duration + ". " 
                                             + spell.shortDescription;
@@ -261,31 +261,6 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-<<<<<<< HEAD
-        //add conditional to check if the damage is a string or array using typeof()
-        //if string add to speech output, if array execute rest of code
-
-
-        //if the requested spell is a cantrip
-        if(spell && spell['slotLevel'] == 'cantrip'){
-            var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
-            var dmgType = spell.damage.type;
-            this.attributes['speechOutput'] = "At player level " + level + 
-                                               " the cantrip " + 
-                                               spellName + " does " + 
-                                               dmg + " " + dmgType + ".";
-        }else if(spell && level > 9){
-            this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
-        }
-        //if the requested spell is a normal spell
-        else{
-            var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
-            var dmgType = spell.damage.type;
-            this.attributes['speechOutput'] = "A level " + level + " " + 
-                                                spellName + " does " + 
-                                                dmg + " " + dmgType + ".";
-            //add conditional to tell user spells can't be cast higher than level 9
-=======
         // var dmgStr = spell.damage;
         // var dmgStrCheck = Object.prototype.toString.call(dmgStr) == '[object String]';
 
@@ -316,7 +291,6 @@ var handlers = {
                                                     spellName + " does " + 
                                                     dmg + " " + dmgType + ".";
             }
->>>>>>> spell_healing
         }
 
         if(this.attributes['continue']){ 
@@ -339,23 +313,6 @@ var handlers = {
         
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-<<<<<<< HEAD
-        //if the requested spell is healing spell
-        if (spell.healing != null){
-            var heal = spell.healing.levels[level];
-            
-            if(spell && level > 9){
-                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
-            }else{
-                this.attributes['speechOutput'] = "At level " + level + 
-                                               " " + spellName + 
-                                               " heals " + heal + 
-                                               " plus your spellcasting ability modifier.";
-            }
-
-        }else{
-            this.attributes['speechOutput'] = "That spell does not restore health.";
-=======
         if(spell && typeof spell.healing === 'string')
         { //add conditional to check if the healing is a string or array using typeof()
             this.attributes['speechOutput'] = spell.healing;
@@ -386,7 +343,6 @@ var handlers = {
         else
         {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
->>>>>>> spell_healing
         }
 
         if(this.attributes['continue']){ 
@@ -397,27 +353,21 @@ var handlers = {
         }
     },
     'SpellsIntent': function () {
-        var spellSlot           = this.event.request.intent.slots.Spell;
-        var attributeSlot       = this.event.request.intent.slots.Attribute;
-        var spellName           = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName       = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells              = langEN.SPELLS;
-        var spellAttributes     = langEN.ATTRIBUTES;
-        var spell               = spells[spellName];
-        var spellAttribute      = spellAttributes[attributeName];
+        var spellSlot       = this.event.request.intent.slots.Spell;
+        var attributeSlot   = this.event.request.intent.slots.Attribute;
+        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
+        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
+        var spells          = langEN.SPELLS;
+        var spellAttributes = langEN.ATTRIBUTES;
+        var spell           = spells[spellName];
+        var spellAttribute  = spellAttributes[attributeName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
-<<<<<<< HEAD
-            //if the attribute is damage and the requested spell does not have damage
-            if(spellAttribute=="damage" && spell[spellAttribute]==null) {
-                this.attributes['speechOutput'] = spellName + ' does not have damage.';
-=======
             if(spellAttribute=="damage" && spell[spellAttribute]==null){
                 this.attributes['speechOutput'] = spellName + ' does not have damage';
->>>>>>> spell_healing
             }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
