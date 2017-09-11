@@ -19,7 +19,7 @@ exports.rollDice = function(quantity,sides) {
     var output = 0;
 
     for (var i=0;i<quantity;i++) {
-        facevalue = Math.floor(Math.random()*sides);
+        facevalue = Math.floor(Math.random()*sides) + 1;
         output += facevalue;
     }
     return output;
@@ -32,4 +32,28 @@ exports.validateAndSetSlot = function(slot) {
 	}else {
 		return null;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+
+exports.pageFind = function(index, indexName) {
+    var pageString = ""
+    if(typeof index.pages === 'string'){
+        pageString = index.pages
+    }
+    else{
+        if(index.pages.length>1){
+            pageString += "pages "
+            for(var i = 0; i <= index.pages.length-2; i++){
+                pageString += index.pages[i] + ", "
+            }
+            pageString += "and " + index.pages[index.pages.length-1]
+        }
+        else{
+            pageString = "page " + index.pages 
+        }
+    }
+    return indexName + " can be found on " + pageString;
+}
+>>>>>>> spell_healing

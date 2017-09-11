@@ -431,7 +431,7 @@ module.exports = {
     "weight"        : "2 lb.",
     "category"      : "Adventure Gear"
   },
-  "acid (vial)": {
+  "acid": {
     "cost"          : "25 Gold Piece",
     "weight"        : "1 lb.",
     "category"      : "Adventure Gear"
@@ -1225,7 +1225,7 @@ module.exports = {
     "category"      : "Vehicle",
     "itemType"      : "Mount"
   },
-  "warhorse": {
+  "war horse": {
     "cost"          : "400 Gold Piece",
     "speed"         : "60 ft.",
     "carryCapacity" : "540 lb.",

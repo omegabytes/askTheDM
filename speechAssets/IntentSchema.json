@@ -93,6 +93,27 @@
       "intent": "SpellsIntent"
     },
     {
+    	"slots": [
+       {
+         "name": "Quantity",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Sides",
+         "type": "LIST_OF_DICE_SIDES"
+       },
+       {
+         "name": "Modifier",
+         "type": "AMAZON.NUMBER"
+       },
+       {
+         "name": "Status",
+         "type": "LIST_OF_STATUS"
+       }
+     ],
+    	"intent": "DiceIntent"
+    },
+    {
       "intent": "Unhandled"
     },
     {
