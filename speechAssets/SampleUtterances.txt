@@ -72,12 +72,15 @@ ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
 
+<<<<<<< HEAD
+=======
 DiceIntent roll {Quantity}  {Sides}
 DiceIntent roll {Quantity}  {Sides} with {Status}
 DiceIntent roll {Quantity}  {Sides} plus {Modifier}
 DiceIntent roll {Quantity}  {Sides} with {Status} plus {Modifier}
 DiceIntent roll {Quantity}  {Sides} plus {Modifier} with {Status}
 
+>>>>>>> spell_healing
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
 ExhaustionLevelIntent what does {Level} exhaustion mean
