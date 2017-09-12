@@ -27,7 +27,7 @@ module.exports = {
             "NOT_FOUND_WITH_OBJECT_NAME":                   "the info for %s",
             "NOT_FOUND_WITHOUT_OBJECT_NAME":                "the info for that.",
             "REPEAT_MESSAGE":                               "Try saying repeat.",            
-            "REPROMPT":                                     "What else can I help with? ",
+            "REPROMPT":                                     "What else can I help with?",
             "SKILL_NAME":                                   "Ask the DM",            
             "STOP_MESSAGE":                                 "Goodbye!",            
             "UNHANDLED" :                                   "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'",
