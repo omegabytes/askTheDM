@@ -11,7 +11,8 @@ module.exports = {
        "long description"  : "longDescription",    
        "url"               : "url",
        "damage"            : "damage",
-       "healing"           : "healing" 
+       "healing"           : "healing",
+       "class"             : "class" 
   },
   "SLOT_LEVEL": {
        "1st level"        : 1,
@@ -686,6 +687,7 @@ module.exports = {
       "components": "Verbal",
       "slotLevel": "cantrip",
       "school": "Enchantment",
+      "class": "Bard, ",
       "shortDescription": "Target a creature that can hear you within range, on a failed Wisdom save the creature takes 1d4 psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn, and is visually emotionally hurt. Damage is increased by 1d4 at 5th level, 2d4 at level 11, and 3d4 at level 17 and your insults are saltier.",
       "longDescription": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
       "url": "https://www.dnd-spells.com/spell/vicious-mockery",
@@ -1576,6 +1578,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "cantrip",
       "school": "Transmutation cantrip",
+      "class": "Bard, Sorcerer, Wizard",
       "shortDescription": "You create one of the following magical effects within range. You create an instantaneous, harmless sensory effect, such as a shower of sparks, or an odd odor like the faint smell of pickles. You instantaneously light or snuff out a candle, a torch, or a small campfire. You instantaneously clean or soil an object no larger than 1 cubic foot. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. You make a color, a small mark, or a symbol appear on an object or surface for 1 hour. You create a nonmagical trinket or an illusory image that can fit in your hand and lasts until the end of your next turn.",
       "longDescription": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:  You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.  You instantaneously light or snuff out a candle, a torch, or a small campfire.  You instantaneously clean or soil an object no larger than 1 cubic foot.  You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.  You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.  You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
       "url": "https://www.dnd-spells.com/spell/prestidigitation"
@@ -2340,6 +2343,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material (A drop of blood)",
       "slotLevel": "1",
       "school": "Enchantment",
+      "class": "Bard, ",
       "shortDescription": "Needs concentration. Choose 3 creatures within range, they must make a Charism save. If they fail, any attack roll or saving throw they must roll a d4 and subtract the number from their attack or saving throw. When cast using a spell slot of 2nd level or higher target one additional creature for each slot above 1st.",
       "longDescription": "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
       "url": "https://www.dnd-spells.com/spell/bane"
@@ -2362,6 +2366,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material  (a pinch of soot and salt)",
       "slotLevel": "1",
       "school": "Divination Ritual",
+      "class": "Bard, ",
       "shortDescription": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.",
       "longDescription": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.",
       "url": "https://www.dnd-spells.com/spell/comprehend-languages-ritual"
@@ -2637,6 +2642,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material (two lodestones)",
       "slotLevel": "cantrip",
       "school": "Transmutation cantrip",
+      "class": "Bard, ",
       "shortDescription": "Mend any break or teat in an object that is less than 1 foot in any dimension.",
       "longDescription": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
       "url": "https://www.dnd-spells.com/spell/mending"
@@ -2744,6 +2750,7 @@ module.exports = {
       "components": "Somatic, Material (a bit of fleece)",
       "slotLevel": "cantrip",
       "school": "Illusion cantrip",
+      "class": "Bard, ",
       "shortDescription": "Create a sound or image of your choosing that lasts for a minute. Physical interaction with the illusion reveals it to be a fake, as well as a successful investigation check.",
       "longDescription": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends. If you create an image of an object, such as a chair, muddy footprints, or a small chest, it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it. If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
       "url": "https://www.dnd-spells.com/spell/minor-illusion"
@@ -3242,6 +3249,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "cantrip",
       "school": "Conjuration cantrip",
+      "class": "Bard, ",
       "shortDescription": "Create a floating hand that you can control with your action. It must stay within 30 feet of you. It can't attack, activate magic items, or carry more than 10 lbs.",
       "longDescription": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever m ore than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.",
       "url": "https://www.dnd-spells.com/spell/mage-hand"
@@ -3312,6 +3320,7 @@ module.exports = {
       "components": "Somatic",
       "slotLevel": "cantrip",
       "school": "Divination cantrip",
+      "class": "Bard, ",
       "shortDescription": "Requires concentration. On your next turn, you gain advantage on your first attack roll against the target.",
       "longDescription": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
       "url": "https://www.dnd-spells.com/spell/true-strike"
@@ -3464,6 +3473,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "1",
       "school": "Divination Ritual",
+      "class": "Bard, ",
       "shortDescription": "Requires concentration. You sense the presence of magic within 30 feet of you.",
       "longDescription": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
       "url": "https://www.dnd-spells.com/spell/detect-magic-ritual"
@@ -4094,6 +4104,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "1",
       "school": "Enchantment",
+      "class": "Bard, ",
       "shortDescription": "You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it.",
       "longDescription": "You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
       "url": "https://www.dnd-spells.com/spell/charm-person"
@@ -4440,6 +4451,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material (a morsel of food) ",
       "slotLevel": "1",
       "school": "Enchantment",
+      "class": "Bard, ",
       "shortDescription": "You convince a beast with less than 4 intelligence that you mean it no harm",
       "longDescription": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.",
       "url": "https://www.dnd-spells.com/spell/animal-friendship"
@@ -4462,6 +4474,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material (a short piece of copper wire)",
       "slotLevel": "cantrip",
       "school": "Transmutation cantrip",
+      "class": "Bard, ",
       "shortDescription": "A target hears a message and can reply, only the two of you can hear the exchange.",
       "longDescription": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence. 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.",
       "url": "https://www.dnd-spells.com/spell/message"
@@ -4813,7 +4826,19 @@ module.exports = {
       "school": "Evocation",
       "shortDescription": "Ends blindness, deafness, and any diseases affecting the target, end restores 70 health.",
       "longDescription": "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.",
-      "url": "https://www.dnd-spells.com/spell/heal"
+      "url": "https://www.dnd-spells.com/spell/heal",
+      "healing": {
+        "levels": {
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: "70",
+        7: "80",
+        8: "90",
+        9: "100"
+      }
     },
     "compelled duel": {
       "castingTime": "1 Bonus Action",
@@ -5062,6 +5087,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "1",
       "school": "Evocation",
+      "class": "Bard, ",
       "shortDescription": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
       "longDescription": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
       "url": "https://www.dnd-spells.com/spell/cure-wounds",
@@ -5097,6 +5123,7 @@ module.exports = {
       "components": "Verbal, Material (a firefly or phosphorescent moss)",
       "slotLevel": "cantrip",
       "school": "Evocation cantrip",
+      "class": "Bard, ",
       "shortDescription": "Any 10ft or smaller object you touch sheds bright light in a 20ft radius. Objects held by creatures are resisted with a Dexterity save",
       "longDescription": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action. If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
       "url": "https://www.dnd-spells.com/spell/light"
@@ -5108,6 +5135,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material  (a bit of phosphorus or wychwood, or a glowworm)",
       "slotLevel": "cantrip",
       "school": "Evocation cantrip",
+      "class": "Bard, Sorcerer, Wizard",
       "shortDescription": "Create up to four torch-sized lights that hover in the air and must remain within 10ft of each other. You can also combine the lights into a vaguely humanoid form. Each light sheds dim light within 10ft. Move the lights as a bonus action.",
       "longDescription": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.",
       "url": "https://www.dnd-spells.com/spell/dancing-lights"
