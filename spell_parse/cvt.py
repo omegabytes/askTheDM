@@ -66,4 +66,3 @@ with open('correction.json', 'w') as f:
 spellfile = open('spellnames.txt','w')
 for spell in spell_names:
     spellfile.write("%s\n" % spell)
-
