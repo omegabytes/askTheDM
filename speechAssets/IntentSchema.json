@@ -32,18 +32,6 @@
       "intent": "FeatsIntent"
     },
     {
-      "intent": "IncompleteIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Index",
-          "type": "LIST_OF_INDEX"
-        }
-      ],
-      "intent": "IndexIntent"
-    },
-    {
       "slots": [
         {
           "name": "Item",
