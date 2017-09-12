@@ -11,11 +11,6 @@ ConditionsIntent I forget what the conditions of {Condition} are
 ConditionsIntent I forget what the conditions of being {Condition} are
 ConditionsIntent I forget what the conditions of the {Condition} condition are
 ConditionsIntent I forget what the conditions of having the {Condition} condition are
-ConditionsIntent I forget how {Condition} affects me
-ConditionsIntent I forget how {Condition} affects a player
-ConditionsIntent I forget how {Condition} affects a creature
-ConditionsIntent I forget how {Condition} affects a character
-ConditionsIntent I forget how {Condition} affects someone
 ConditionsIntent to get information on {Condition}
 ConditionsIntent to get information about {Condition}
 ConditionsIntent to get info on {Condition}
@@ -76,6 +71,12 @@ ConditionsIntent what does the {Condition} condition do to a creature
 ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
+
+DiceIntent roll {Quantity}  {Sides}
+DiceIntent roll {Quantity}  {Sides} with {Status}
+DiceIntent roll {Quantity}  {Sides} plus {Modifier}
+DiceIntent roll {Quantity}  {Sides} with {Status} plus {Modifier}
+DiceIntent roll {Quantity}  {Sides} plus {Modifier} with {Status}
 
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion

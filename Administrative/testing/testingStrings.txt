@@ -1,0 +1,74 @@
+TESTING DOCUMENT
+These strings will test most of the functionality of the application
+{
+	"ConditionIntent":{
+		"success":[
+			"what is grappled",
+			"I forget how grappled affects me"
+		],
+		"handled_exceptions":[
+			"I forget how snapple affects me"
+		]
+	},
+	"DiceIntent":{
+		"success":[
+			"roll 1 d. 6",
+			"roll 1 d. 6 plus 2",
+			"roll 1 d. 20 with advantage",
+			"roll 1 d. 20 plus 5 with advantage"
+		],
+		"handled_exceptions":[
+			"roll 1 d. 6 with advantage"
+		]
+	},
+	"ExhaustionLevelIntent":{
+		"success":[
+			"what is level 3 of exhaustion"
+		],
+		"handle_exceptions":[
+			"what is level 14 of exhaustion"
+		]
+	},
+	"FeatsIntent":{
+		"success":[
+			"what is the alert feat",
+			"what is lucky",
+			"what are the benefits of lucky"
+		],
+		"handle_exceptions":[
+			"what is the flossing feat",
+			"what are the benefits"
+		]
+	},
+	"IncompleteIntent":{
+		"success":[
+		],
+		"handle_exceptions":[
+		]
+	},
+	"ItemsIntent":{
+		"success":[
+			"how does a breastplate work"
+		],
+		"handle_exceptions":[
+			"how does a smurf work"
+		]
+	},	
+	"SpellCastIntent":{
+		"success":[
+			"how do I cast druidcraft"
+		],
+		"handle_exceptions":[
+			"how do I cast shade"
+		]
+	},
+	"SpellsIntent":{
+		"success":[
+			"what is fireball",
+			"what is the range of fireball"
+		],
+		"handle_exceptions":[
+			"what is the range of glasses"
+		]
+	}
+}
