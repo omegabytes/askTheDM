@@ -93,7 +93,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -151,7 +151,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -178,7 +178,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -215,7 +215,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -244,7 +244,7 @@ var handlers = {
         } 
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -261,9 +261,6 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-        // var dmgStr = spell.damage;
-        // var dmgStrCheck = Object.prototype.toString.call(dmgStr) == '[object String]';
-
         if(spell && typeof spell.damage === 'string')
         { //add conditional to check if the damage is a string or array using typeof()
             this.attributes['speechOutput'] = spell.damage;
@@ -274,27 +271,27 @@ var handlers = {
             { //if the requested spell is a cantrip
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "At player level " + level + 
-                                                   " the cantrip " + 
-                                                   spellName + " does " + 
-                                                   dmg + " " + dmgType + ".";
+                this.attributes['speechOutput'] = "At player level " + level
+                                                + " the cantrip " + spellName
+                                                + " does " + dmg + " " + dmgType + ".";
             }
             else if(spell && level > 9)
             {
-                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
+                                                + spellName + " is a spell, and is cast using spell slots.";
             }
             else
             { //if the requested spell is a normal spell
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "A level " + level + " " + 
-                                                    spellName + " does " + 
-                                                    dmg + " " + dmgType + ".";
+                this.attributes['speechOutput'] = "A level " + level + " "
+                                                + spellName + " does "
+                                                + dmg + " " + dmgType + ".";
             }
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+            this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -325,14 +322,15 @@ var handlers = {
                 
                 if(spell && level > 9)
                 {
-                    this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+                    this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
+                                                    + spellName + " is a spell, and is cast using spell slots.";
                 }
                 else
                 {
-                    this.attributes['speechOutput'] = "At level " + level + 
-                                                   " " + spellName + 
-                                                   " heals " + heal + 
-                                                   " plus your spellcasting ability modifier.";
+                    this.attributes['speechOutput'] = "At level " + level
+                                                    + " " + spellName
+                                                    + " heals " + heal
+                                                    + " plus your spellcasting ability modifier.";
                 }
             }
             else
@@ -346,7 +344,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+            this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
