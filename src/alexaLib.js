@@ -32,9 +32,6 @@ exports.validateAndSetSlot = function(slot) {
 	}else {
 		return null;
 	}
-<<<<<<< HEAD
-}
-=======
 }
 
 exports.pageFind = function(index, indexName) {
@@ -56,4 +53,3 @@ exports.pageFind = function(index, indexName) {
     }
     return indexName + " can be found on " + pageString;
 }
->>>>>>> spell_healing

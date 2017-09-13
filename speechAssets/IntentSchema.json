@@ -12,6 +12,27 @@
     {
       "slots": [
         {
+          "name": "Quantity",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Sides",
+          "type": "LIST_OF_DICE_SIDES"
+        },
+        {
+          "name": "Modifier",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Status",
+          "type": "LIST_OF_STATUS"
+        }
+      ],
+      "intent": "DiceIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Level",
           "type": "LIST_OF_EXHAUSTION_LEVELS"
         }
@@ -30,6 +51,18 @@
         }
       ],
       "intent": "FeatsIntent"
+    },
+    {
+      "intent": "IncompleteIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Index",
+          "type": "LIST_OF_INDEX"
+        }
+      ],
+      "intent": "IndexIntent"
     },
     {
       "slots": [
@@ -91,27 +124,6 @@
         }
       ],
       "intent": "SpellsIntent"
-    },
-    {
-    	"slots": [
-       {
-         "name": "Quantity",
-         "type": "AMAZON.NUMBER"
-       },
-       {
-         "name": "Sides",
-         "type": "LIST_OF_DICE_SIDES"
-       },
-       {
-         "name": "Modifier",
-         "type": "AMAZON.NUMBER"
-       },
-       {
-         "name": "Status",
-         "type": "LIST_OF_STATUS"
-       }
-     ],
-    	"intent": "DiceIntent"
     },
     {
       "intent": "Unhandled"

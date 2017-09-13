@@ -11,8 +11,7 @@ module.exports = {
        "long description"  : "longDescription",    
        "url"               : "url",
        "damage"            : "damage",
-       "healing"           : "healing",
-       "class"             : "class" 
+       "healing"           : "healing"
   },
   "SLOT_LEVEL": {
        "1st level"        : 1,

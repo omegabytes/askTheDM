@@ -93,7 +93,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -151,7 +151,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -178,7 +178,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -215,7 +215,7 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -231,7 +231,7 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.school + " spell. To cast, you need the following: " 
+                                            + spell.spellType + ". To cast, you need the following: " 
                                             + spell.components + ". The spell duration is " 
                                             + spell.duration + ". " 
                                             + spell.shortDescription;
@@ -244,7 +244,7 @@ var handlers = {
         } 
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -260,7 +260,6 @@ var handlers = {
         var level                   = levels[spellLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
         
         if(spell && typeof spell.damage === 'string')
         {
@@ -272,27 +271,27 @@ var handlers = {
             { //if the requested spell is a cantrip
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "At player level " + level + 
-                                                   " the cantrip " + 
-                                                   spellName + " does " + 
-                                                   dmg + " " + dmgType + ".";
+                this.attributes['speechOutput'] = "At player level " + level
+                                                + " the cantrip " + spellName
+                                                + " does " + dmg + " " + dmgType + ".";
             }
             else if(spell && level > 9)
             {
-                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
+                                                + spellName + " is a spell, and is cast using spell slots.";
             }
             else
             { //if the requested spell is a normal spell
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "A level " + level + " " + 
-                                                    spellName + " does " + 
-                                                    dmg + " " + dmgType + ".";
+                this.attributes['speechOutput'] = "A level " + level + " "
+                                                + spellName + " does "
+                                                + dmg + " " + dmgType + ".";
             }
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+            this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -310,6 +309,7 @@ var handlers = {
         var level                   = levels[spellLevel];
         
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
         if(spell && typeof spell.healing === 'string')
         { //add conditional to check if the healing is a string or array using typeof()
             this.attributes['speechOutput'] = spell.healing;
@@ -326,10 +326,10 @@ var handlers = {
                 }
                 else
                 {
-                    this.attributes['speechOutput'] = "At level " + level + 
-                                                   " " + spellName + 
-                                                   " heals " + heal + 
-                                                   " plus your spellcasting ability modifier.";
+                    this.attributes['speechOutput'] = "At level " + level
+                                                    + " " + spellName
+                                                    + " heals " + heal
+                                                    + " plus your spellcasting ability modifier.";
                 }
             }
             else
@@ -337,23 +337,26 @@ var handlers = {
                 this.attributes['speechOutput'] = "That spell does not restore health.";
             }
         }
-
+        else
+        {
+            this.attributes['speechOutput'] = langEN.UNHANDLED;
+        }
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + ". " 
+            this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'SpellsIntent': function () {
-        var spellSlot           = this.event.request.intent.slots.Spell;
-        var attributeSlot       = this.event.request.intent.slots.Attribute;
-        var spellName           = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName       = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells              = langEN.SPELLS;
-        var spellAttributes     = langEN.ATTRIBUTES;
-        var spell               = spells[spellName];
-        var spellAttribute      = spellAttributes[attributeName];
+        var spellSlot       = this.event.request.intent.slots.Spell;
+        var attributeSlot   = this.event.request.intent.slots.Attribute;
+        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
+        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
+        var spells          = langEN.SPELLS;
+        var spellAttributes = langEN.ATTRIBUTES;
+        var spell           = spells[spellName];
+        var spellAttribute  = spellAttributes[attributeName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -362,8 +365,6 @@ var handlers = {
             //if the attribute is damage and the requested spell does not have damage
             if(spellAttribute=="damage" && spell[spellAttribute]==null) {
                 this.attributes['speechOutput'] = spellName + ' does not have damage.';
-            if(spellAttribute=="damage" && spell[spellAttribute]==null){
-                this.attributes['speechOutput'] = spellName + ' does not have damage';
             }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
