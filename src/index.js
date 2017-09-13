@@ -337,10 +337,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "That spell does not restore health.";
             }
         }
-        else
-        {
-            this.attributes['speechOutput'] = langEN.UNHANDLED;
-        }
+        
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
