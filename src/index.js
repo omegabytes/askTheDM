@@ -51,8 +51,8 @@ var handlers = {
         var secondRoll;
         var result;
 
-        if(numberOfDice==null) numberOfDice = 1
-        if(modifier==null) modifier = 0
+        if(numberOfDice==null) numberOfDice = 1;
+        if(modifier==null) modifier = 0;
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -260,12 +260,14 @@ var handlers = {
         var level                   = levels[spellLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        
         if(spell && typeof spell.damage === 'string')
-        { //add conditional to check if the damage is a string or array using typeof()
+        {
             this.attributes['speechOutput'] = spell.damage;
         }
-        else if(spell && (typeof spell.damage === 'object'))
-        { //if string add to speech output, if array execute rest of code
+        else
+        {
             if(spell && spell['slotLevel'] == 'cantrip')
             { //if the requested spell is a cantrip
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
@@ -312,15 +314,15 @@ var handlers = {
         { //add conditional to check if the healing is a string or array using typeof()
             this.attributes['speechOutput'] = spell.healing;
         }
-        else if(spell && (typeof spell.healing === 'object'))
-        { //if string add to speech output, if array execute rest of code
+        else
+        {
             if (spell.healing != null)
             { //if the requested spell is healing spell
                 var heal = spell.healing.levels[level];
                 
                 if(spell && level > 9)
                 {
-                    this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips." + spellName + " is a spell, and is cast using spell slots.";
+                    this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
                 }
                 else
                 {
@@ -334,10 +336,6 @@ var handlers = {
             {
                 this.attributes['speechOutput'] = "That spell does not restore health.";
             }
-        }
-        else
-        {
-            this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
