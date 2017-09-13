@@ -4838,6 +4838,7 @@ module.exports = {
         7: "80",
         8: "90",
         9: "100"
+        }
       }
     },
     "compelled duel": {
