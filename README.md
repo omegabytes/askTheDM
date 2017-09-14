@@ -1,99 +1,22 @@
 # Ask The DM
 ### D&D Alexa Skill
-#### Version 1.0
+#### Version 2.0
 
 #### Alex Gaesser 2017
 #### Brought to you proudly by the [Arena Hounds](https://github.com/omegabytes/askTheDM/blob/master/AUTHORS)
 
 Ask the DM is a quick-reference tool designed for use during Dungeons and Dragons play sessions. The skill provides spell descriptions to players through a voice-command interface.
 
-The core skill is a simple question-and-answer session. Users can get full spell descriptions, short descriptions, or single spell attributes such as casting time or range.
+The core skill is a simple question-and-answer session. Users can get full spell descriptions, short descriptions, or single spell attributes such as casting time or range. Users can ask questions about items, feats, and conditions, as well as find the pages this information is found on. Users may also roll game dice, and roll 20-sided die with advantage or disadvantage. An itemized list of features is found in the [changelog.](CHANGELOG.md)
 
 If you'd like to get involved, please go through Amazon's [how-to template skill.](https://github.com/alexa/skill-sample-nodejs-howto) tutorial. You don't need an Echo or Dot to develop or teset this application. Next, check out the [issues and milestones.](https://github.com/omegabytes/askTheDM/issues)
 
 You don't need an echo to develop or test this application. Services like https://echosim.io/ have you covered.
 
-Icon is used with explicit permission from Jason Newman (gojirra@gmail.com). For any related inquiries please contact him directly. The icon is intended for use with this application only and may not be used in part or full without permission.
+Check out what's new with Ask the DM [here.](https://github.com/omegabytes/askTheDM/blob/master/CHANGELOG.md)
 
-##### Version 2.0 adds:
-- Information:
-	- Items
-		- Armor
-			- description
-			- name
-			- cost
-			- AC
-			- strength
-			- type
-			- weight
-		- Weapons
-			- name
-			- cost
-			- weight
-			- damage
-			- properties
-			- description
-		- Tools
-			- name
-			- cost
-			- weight
-			- description
-		- Gear
-			- name
-			- cost
-			- weight
-			- description
-			- capacity
-		- Mounts/vehicles
-			- name
-			- cost
-			- weight
-			- description
-			- carrying capacity
-			- speed
-		- Trade Goods
-			- name
-			- cost
-		- Services
-			- name
-			- cost
-		- Food, Drink, and Lodging
-			- name
-			- cost
-			- quality
-		- Trinkets
-			- dice roll
-			- name
-			- description
-		- Packs
-			- name
-			- cost
-			- description
-	- Feats
-		- description
-		- benefits
-		- prerequisites
-- Dice rolls:
-	- modifiers (eg. 1d8+6)
-	- advantage and disadvantage on d20 rolls
+- All the ways you can ask questions an be found in the ever-examping [sample utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances_en_US.txt) file.
 
+## License
 
-##### Version 1.0 features:
-- Editions:
-	- 5e
-- Information:
-	- Spells
-		- range
-		- duration
-		- casting time
-		- components
-		- short description 
-		- long description 
-		- spell type and level
-		- what's needed to cast a spell
-	- Conditions
-		- description
-		- exhaustion by level
-
-
-- [Sample Utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances_en_US.txt)
+The content of this project itself is licensed under the [DMs Guild License](https://support.dmsguild.com/hc/en-us/articles/217028818-Content-Guidelines), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
