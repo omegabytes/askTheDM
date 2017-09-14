@@ -28,7 +28,3 @@ Version 2.0:
 - Conditions
     - descriptions
     - exhaustion by level
-
-
-
-

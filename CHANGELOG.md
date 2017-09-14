@@ -72,11 +72,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
     - UK English support
 
 ### Changed
-	- Exhaustion
-	    - now searchable by level
-	- Spells
-	    - you can now get the damage/healing amounts for spells and cantrips
-	- some functions refactored into alexLib.js
+- Exhaustion
+    - now searchable by level
+- Spells
+    - you can now get the damage/healing amounts for spells and cantrips
+- some functions refactored into alexLib.js
+
+## [Released]
 
 ## [1.0] 08/14/2017
 ### Added
