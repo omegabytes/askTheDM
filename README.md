@@ -1,7 +1,8 @@
 # Ask The DM <img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/5423475/30412600-78bf1798-98cd-11e7-9fc3-1622dd4cdbc6.png"> 
 ### Dungeons and Dragons Alexa Skill 
-#### Version 2.0
-#### Alex Gaesser 2017 <img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/5423475/30412603-7c8eb180-98cd-11e7-88b5-67b74cd3258e.png">
+#### Version 2.0 <img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/5423475/30412603-7c8eb180-98cd-11e7-88b5-67b74cd3258e.png">
+#### Alex Gaesser 2017 
+
 Brought to you proudly by the [Arena Hounds](https://github.com/omegabytes/askTheDM/blob/master/AUTHORS.md)
 
 Ask the DM is a quick-reference tool designed for use during Dungeons and Dragons play sessions. The skill provides spell descriptions to players through a voice-command interface.
