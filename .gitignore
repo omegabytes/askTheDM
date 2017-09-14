@@ -1,4 +1,6 @@
 *.zip
 *.pyc
 *.png
-./icons
+.idea/
+icons/
+node_modules/
