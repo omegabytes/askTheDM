@@ -362,17 +362,21 @@ var handlers = {
 
         //if the user asks for the attribute of a spell
         if (spell && spellAttribute) {
+            var dmgType = spell.damage.type;
             //if the attribute is damage and the requested spell does not have damage
             if(spellAttribute=="damage" && spell[spellAttribute]==null) {
                 this.attributes['speechOutput'] = spellName + ' does not have damage.';
-            }else{
+            }else if(spellAttribute=="damage"){
+                this.attributes['speechOutput'] = spellName + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
+                //this.attributes['repromptSpeech'] = langEN.REPROMPT; doesnt work, need to work on it further
+            }
+            else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
         }else if (spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
         }else if (spellName) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
-
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
