@@ -114,6 +114,9 @@ var handlers = {
         //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
         }else if (exhaustionLevelInput) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(exhaustionSlot.name, exhaustionLevelInput) + " exhaustion";
+        
+        // }else if (exhaustionLevelInput > 6){ //todo: refactor exhaustion levels, similar to how slotLevels work
+        //     this.attributes['speechOutput'] = "At " + exhaustionLevel + " your character is beyond dead. Anything beyond level 6 exhaustion is really exhausting.";
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -231,7 +234,7 @@ var handlers = {
         //user requests information on casting spell
         if (spell) {
             this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.spellType + ". To cast, you need the following: " 
+                                            + spell.school + " spell. To cast, you need the following: " 
                                             + spell.components + ". The spell duration is " 
                                             + spell.duration + ". " 
                                             + spell.shortDescription;
@@ -284,7 +287,7 @@ var handlers = {
             { //if the requested spell is a normal spell
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "A level " + level + " "
+                this.attributes['speechOutput'] = "A level " + level + ", "
                                                 + spellName + " does "
                                                 + dmg + " " + dmgType + ".";
             }
@@ -337,7 +340,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "That spell does not restore health.";
             }
         }
-        
+
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + " "
                 + this.attributes['repromptSpeech']);
