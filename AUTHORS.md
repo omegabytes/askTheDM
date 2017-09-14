@@ -8,4 +8,4 @@ Josh Nagel <nageljp27@gmail.com> [Linkedin](https://www.linkedin.com/in/joshnage
 ## Testing, Design, and Support:
 KadynCBR <kadyn_martinez@hotmail.com> [Linkedin](https://www.linkedin.com/in/kadynmartinez/) [Github](https://github.com/KadynCBR)
 Jason Newman <gojirra@gmail.com> [Linkedin](https://www.linkedin.com/in/jasonnewman/) [Github](https://github.com/gojirra55) [Website](http://jnewmandesign.com)
-terra1ncogn1ta <dany.arias@gmail.com>
+terra1ncogn1ta <dany.arias@gmail.com>    
