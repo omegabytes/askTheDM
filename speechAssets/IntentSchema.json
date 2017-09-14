@@ -12,6 +12,27 @@
     {
       "slots": [
         {
+          "name": "Quantity",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Sides",
+          "type": "LIST_OF_DICE_SIDES"
+        },
+        {
+          "name": "Modifier",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Status",
+          "type": "LIST_OF_STATUS"
+        }
+      ],
+      "intent": "DiceIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Level",
           "type": "LIST_OF_EXHAUSTION_LEVELS"
         }
@@ -72,32 +93,37 @@
           "type": "LIST_OF_SPELLS"
         },
         {
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
+        }
+      ],
+      "intent": "SpellDamageIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
+          "name": "SlotLevel",
+          "type": "LIST_OF_SLOT_LEVELS"
+        }
+      ],
+      "intent": "SpellHealIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
           "name": "Attribute",
           "type": "LIST_OF_ATTRIBUTES"
         }
       ],
       "intent": "SpellsIntent"
-    },
-    {
-    	"slots": [
-       {
-         "name": "Quantity",
-         "type": "AMAZON.NUMBER"
-       },
-       {
-         "name": "Sides",
-         "type": "LIST_OF_DICE_SIDES"
-       },
-       {
-         "name": "Modifier",
-         "type": "AMAZON.NUMBER"
-       },
-       {
-         "name": "Status",
-         "type": "LIST_OF_STATUS"
-       }
-     ],
-    	"intent": "DiceIntent"
     },
     {
       "intent": "Unhandled"
