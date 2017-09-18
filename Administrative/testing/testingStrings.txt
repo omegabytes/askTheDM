@@ -10,6 +10,7 @@ I forget how snapple affects me
 roll 2 d. 6
 roll 3 d. 12 plus 8
 roll a d. 20 with advantage
+roll a d. 20 with advantage plus 10
 
 // ExhaustionLevelIntent
 what is level 3 of exhaustion
