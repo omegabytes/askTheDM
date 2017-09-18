@@ -72,11 +72,36 @@ ConditionsIntent what does the {Condition} condition do to a character
 ConditionsIntent what does the {Condition} condition do to someone
 ConditionsIntent what does the {Condition} condition do to something
 
-DiceIntent roll {Quantity}  {Sides}
-DiceIntent roll {Quantity}  {Sides} with {Status}
-DiceIntent roll {Quantity}  {Sides} plus {Modifier}
-DiceIntent roll {Quantity}  {Sides} with {Status} plus {Modifier}
-DiceIntent roll {Quantity}  {Sides} plus {Modifier} with {Status}
+DiceIntent roll a {Sides}
+DiceIntent roll a {Sides} plus {Modifier} with {Status}
+DiceIntent roll a {Sides} with {Status} plus {Modifier}
+DiceIntent roll a {Sides} with {Status}
+DiceIntent roll a {Sides} plus {Modifier}
+DiceIntent can you roll a {Sides}
+DiceIntent can you roll a {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll a {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll a {Sides} with {Status}
+DiceIntent can you roll a {Sides} plus {Modifier}
+DiceIntent to roll a {Sides}
+DiceIntent to roll a {Sides} plus {Modifier} with {Status}
+DiceIntent to roll a {Sides} with {Status} plus {Modifier}
+DiceIntent to roll a {Sides} with {Status}
+DiceIntent to roll a {Sides} plus {Modifier}
+DiceIntent roll {Quantity} {Sides}
+DiceIntent roll {Quantity} {Sides} plus {Modifier} with {Status}
+DiceIntent roll {Quantity} {Sides} with {Status} plus {Modifier}
+DiceIntent roll {Quantity} {Sides} with {Status}
+DiceIntent roll {Quantity} {Sides} plus {Modifier}
+DiceIntent can you roll {Quantity} {Sides}
+DiceIntent can you roll {Quantity} {Sides} plus {Modifier} with {Status}
+DiceIntent can you roll {Quantity} {Sides} with {Status} plus {Modifier}
+DiceIntent can you roll {Quantity} {Sides} with {Status}
+DiceIntent can you roll {Quantity} {Sides} plus {Modifier}
+DiceIntent to roll {Quantity} {Sides}
+DiceIntent to roll {Quantity} {Sides} plus {Modifier} with {Status}
+DiceIntent to roll {Quantity} {Sides} with {Status} plus {Modifier}
+DiceIntent to roll {Quantity} {Sides} with {Status}
+DiceIntent to roll {Quantity} {Sides} plus {Modifier}
 
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
@@ -431,6 +456,8 @@ IndexIntent on which page can we look up more info on {Index}
 IndexIntent on which page can we look up more info about {Index}
 IndexIntent on which page can we look up more information on {Index}
 IndexIntent on which page can we look up more information about {Index}
+IndexIntent whats the page for {Index}
+IndexIntent what is the page for {Index}
 IndexIntent what page is {Index} on
 IndexIntent what page is {Index} on in the handbook
 IndexIntent what page is {Index} on in the players handbook
