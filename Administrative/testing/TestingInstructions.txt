@@ -26,7 +26,8 @@ You can ask questions like "What does athlete do?", "Lookup benefits of ritual c
 
 
 Testing IncompleteIntent:
-This intent is for determining when Alexa doesn't hear the entirety of a phrase, as distinct from UnhandledIntent.
+This intent is for determining when Alexa doesn't hear the entirety of a phrase, as distinct from UnhandledIntent. It handles questions like "get the info about a", "how does having",
+and "tell us what".
 
 
 Testing IndexIntent:
