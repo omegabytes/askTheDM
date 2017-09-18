@@ -4,10 +4,11 @@ ability modifier
 ability score
 ability score improvement
 abjuration
-Abjuration Savant 
-Abjure Enemy 
+abjuration savant
+abjure enemy
 abjurer
 the abyss
+<<<<<<< HEAD
 Abyssal 
 AC 
 Archeron 
@@ -15,275 +16,284 @@ acid damage
 acolyte 
 Acolyte of Nature
 Acrobatics 
+=======
+abyssal
+ac
+archeron
+acid damage
+acolyte
+acolyte of nature
+acrobatics
+>>>>>>> fc968a0fd8dcbfa8ab4f88925aa2979dcd55eb7a
 action
-Action Surge 
-advancement 
+action surge
+advancement
 advantage
 adventure
-adventurer 
+adventurer
 adventuring
 adventuring gear
-age 
-Agonizing Blast 
+age
+agonizing blast
 alignment
-Alter Memories 
-ammunition 
-Animal Handling 
-Aquan 
-Arborea 
-Arcadia 
-Arcana 
-Arcane Charge 
+alter memories
+ammunition
+animal handling
+aquan
+arborea
+arcadia
+arcana
+arcane charge
 arcane focus
 arcane magic
-Arcane Recovery 
-Arcane Tradition 
+arcane recovery
+arcane tradition
 arcane traditions
-Arcane Trickster 
-Arcane Ward 
-Archdruid 
-Archery 
-the Archfey
+arcane trickster
+arcane ward
+archdruid
+archery
+the archfey
 area of effect
 armor and shields
-Armor Class 
-Armor of Shadows 
+armor class
+armor of shadows
 armor proficiency
-Artificer's Lore 
-Ascendant Step 
-Aspect of the Beast 
-Assassin 
-Assassinate 
-Astral Plane 
-Athletics 
+artificer's lore
+ascendant step
+aspect of the beast
+assassin
+assassinate
+astral plane
+athletics
 attack of opportunity
 attack
 attack action
 attack modifier
 attack roll
-Auran 
-Aura of Courage 
-Aura of Devotion 
-Aura of Protection 
-Aura of Warding 
-automatic hit 
-automatic miss 
-Avatar of Battle 
-Avenging Angel 
-Awakened Mind 
+auran
+aura of courage
+aura of devotion
+aura of protection
+aura of warding
+automatic hit
+automatic miss
+avatar of battle
+avenging angel
+awakened mind
 background
-Bad Reputation 
+bad reputation
 barbarian
 bard
-Bard College 
+bard college
 bard colleges
-Bardic Inspiration 
+bardic inspiration
 barding
-base attack bonus 
-base save bonus 
-bat 
-Battle Magic 
-Battle Master 
-black bear 
-brown bear 
-the Beastlands
-Beast Master 
-Beast Speech 
-Beast Spells 
-Beguiling Defenses 
-Beguiling Influence 
-Bend Luck 
-Benign Transposition 
-Bestial Fury 
-Bewitching Whispers 
-Blessed Healer 
-Blessings of Knowledge 
-Blessing of the Trickster 
-blinded 
-Blindsense 
+base attack bonus
+base save bonus
+bat
+battle magic
+battle master
+black bear
+brown bear
+the beastlands
+beast master
+beast speech
+beast spells
+beguiling defenses
+beguiling influence
+bend luck
+benign transposition
+bestial fury
+bewitching whispers
+blessed healer
+blessings of knowledge
+blessing of the trickster
+blinded
+blindsense
 blindsight
-bludgeoning damage 
-boar 
-bonds 
+bludgeoning damage
+boar
+bonds
 bonus
 bonus action
-Book of Ancient Secrets 
-Book of Shadows 
-Border Ethereal 
-Brave 
+book of ancient secrets
+book of shadows
+border ethereal
+brave
 breaking concentration
-Breath of Winter 
-Breath Weapon 
+breath of winter
+breath weapon
 bright light
 bringing back the dead
-Brutal Critical 
-bull rush 
-By Popular Demand 
-Bytopia 
-Calishite 
+brutal critical
+bull rush
+by popular demand
+bytopia
+calishite
 campaign
 cantrips
-Carceri 
-Careful Spell 
-carrying capacity 
+carceri
+careful spell
+carrying capacity
 casting a spell
 casting time
-cat 
-Celestial 
-Chains of Carceri 
-Champion 
+cat
+celestial
+chains of carceri
+champion
 channel divinity, cleric
 channel divinity, paladin
-chaotic evil 
-chaotic good 
-chaotic neutral 
+chaotic evil
+chaotic good
+chaotic neutral
 character
 character sheet
 charisma
-charlatan 
-Charm Animals and plants 
-charmed 
-check 
-Chondathan 
-Circle Forms 
-Circle of the Land 
-Circle of the Moon 
-Circle Spells 
-City Secrets 
-Cleansing Touch 
+charlatan
+charm animals and plants
+charmed
+check
+chondathan
+circle forms
+circle of the land
+circle of the moon
+circle spells
+city secrets
+cleansing touch
 cloak of shadows
 class
-clear path to the target 
-Clench of the North Wind 
+clear path to the target
+clench of the north wind
 cleric
-climbing 
+climbing
 coinage
-cold damage 
-College of Lore 
-College of Valor 
-Colossus Slayer 
+cold damage
+college of lore
+college of valor
+colossus slayer
 combat
-Combat Inspiration 
-combat round 
-Combat Superiority 
-Combat Wild Shape 
-combining spell effects 
-Commander's Strike maneuver 
-Common 
+combat inspiration
+combat round
+combat superiority
+combat wild shape
+combining spell effects
+commander's strike maneuver
+common
 common races
-Command Undead 
-spell component 
+command undead
+spell component
 concentration
 conditions
-cone 
+cone
 conjuration
-Conjuration Savant 
+conjuration savant
 conjurer
 constitution
 container capacity
-contest 
-Controlled Chaos 
-Converting a spell slot to sorcery points 
-copper piece (cp) 
-Corona of Light 
-Countercharm 
+contest
+controlled chaos
+converting a spell slot to sorcery points
+copper piece (cp)
+corona of light
+countercharm
 cover
-crafting 
-crawling 
-Create Thrall 
+crafting
+crawling
+create thrall
 creating a character
-creating spell slots 
+creating spell slots
 creature statistics
-criminal 
-Criminal Contact 
+criminal
+criminal contact
 critical hit
-crocodile 
-cube 
-Cunning Action 
-current hit points 
-Cutting Words 
-cylinder 
+crocodile
+cube
+cunning action
+current hit points
+cutting words
+cylinder
 damage
 damage resistance
-Damage Resistance 
+damage resistance
 damage roll
 damage types
 damage vulnerability
-Damaran 
-Dampen Elements 
-Danger Sense 
-Dark Delirium 
+damaran
+dampen elements
+danger sense
+dark delirium
 dark elf
 darkness
-Dark One's Blessing 
-Dark One's Own Luck 
+dark one's blessing
+dark one's own luck
 darkvision
 dash action
-DC 
+dc
 dead
-deafened 
+deafened
 death
 death domain
 death saving throw
-Death Strike 
-Deception 
+death strike
+deception
 deep gnome
-Deep Speech 
-Defense 
-Defensive Tactics 
-Deflect Missiles 
-dehydration 
+deep speech
+defense
+defensive tactics
+deflect missiles
+dehydration
 deities
-demiplanes 
-Destroy Undead 
-Destructive Wrath 
-Devil's Sight 
+demiplanes
+destroy undead
+destructive wrath
+devil's sight
 dexterity
-Diamond Soul 
-d 
+diamond soul
+d
 dice
-difficult terrain 
-Difficulty Class 
+difficult terrain
+difficulty class
 dim light
 disadvantage
-Disarming Attack maneuver 
-Disciple of Life 
-Disciple of the Elements 
-Discovery 
+disarming attack maneuver
+disciple of life
+disciple of the elements
+discovery
 disengage action
-Distant Spell 
-Distracting Strike maneuver 
+distant spell
+distracting strike maneuver
 divination
-Divination Savant 
-Divine Domain 
+divination savant
+divine domain
 divine domains
-Divine Health 
-Divine Intervention 
+divine health
+divine intervention
 divine magic
 diviner
-Divine Sense 
-Divine Smite 
-Divine Strike 
-DM 
+divine sense
+divine smite
+divine strike
+dm
 dodge action
-domain spells 
-donning and doffing armor 
+domain spells
+donning and doffing armor
 downtime activities
 draconians
 draconic
-Draconic Ancestry 
-Draconic Presence 
-Draconic Resilience 
-Dragon Ancestor 
+draconic ancestry
+draconic presence
+draconic resilience
+dragon ancestor
 dragonborn
 dragonborn names
 dragonborn traits
-Dragon Wings 
-draw or sheathe a weapon 
-Dreadful Word 
-drink 
-drop an object 
-drow 
+dragon wings
+draw or sheathe a weapon
+dreadful word
+drink
+drop an object
+drow
 drow magic
 druid
 druid circle
@@ -291,807 +301,807 @@ druid circles
 druidic
 druidic focus
 druids and the gods
-Dueling 
-duergar (gray dwarf) 
-Dungeon Master 
-Durable Summons 
-duration 
+dueling
+duergar (gray dwarf)
+dungeon master
+durable summons
+duration
 dwarf
 dwarf names
 dwarf traits
-Dwarven Armor Training 
+dwarven armor training
 dwarven combat training
 dwarven resilience
-Dwarven Toughness 
+dwarven toughness
 dwarvish
-giant eagle 
+giant eagle
 effect
-Elder Champion 
-Eldritch Invocations 
+elder champion
 eldritch invocations
-Eldritch Knight 
-Eldritch Master 
-Eldritch Sight 
-Eldritch Spear 
-Eldritch Strike 
-electrum piece (ep) 
-Elemental Affinity 
-Elemental Attunement 
-Elemental Chaos 
-Elemental Disciplines 
-Elemental Planes 
-Elemental Wild Shape 
+eldritch invocations
+eldritch knight
+eldritch master
+eldritch sight
+eldritch spear
+eldritch strike
+electrum piece (ep)
+elemental affinity
+elemental attunement
+elemental chaos
+elemental disciplines
+elemental planes
+elemental wild shape
 elf
 elf names
 elf traits
 elf weapon training
-Elusive 
+elusive
 elvish
-Elysium 
-Empowered Evocation 
-Empowered Spell 
-Empty Body 
+elysium
+empowered evocation
+empowered spell
+empty body
 enchantment
-Enchantment Savant 
+enchantment savant
 enchanter
-encounters 
-encumbrance 
-entertainer 
-Entropic Ward 
+encounters
+encumbrance
+entertainer
+entropic ward
 environment
 equipment
 equipment packs
-Escape the Horde 
+escape the horde
 escaping a grapple
-Eternal Mountain Defense 
-Ethereal Plane 
+eternal mountain defense
+ethereal plane
 evasion
-Evasive Footwork maneuver 
+evasive footwork maneuver
 evocation
-Evocation Savant 
+evocation savant
 evoker
-Exceptional Training 
+exceptional training
 exception-based rules
 exhaustion
-exotic language 
+exotic language
 expenses
-experience points 
-Expert Divination 
+experience points
+expert divination
 expertise
 exploration
-Extended Spell 
+extended spell
 extra attack
-Eyes of the Rune Keeper 
-Faerie 
+eyes of the rune keeper
+faerie
 falling
-False Identity 
-familiar 
-Fangs of the Fire Snake 
-Far Realm 
-Fast Hands 
-Fast Movement 
-Favored Enemy 
+false identity
+familiar
+fangs of the fire snake
+far realm
+fast hands
+fast movement
+favored enemy
 feats
-Feinting Attack maneuver 
-Feral Instinct 
-Feral Senses 
+feinting attack maneuver
+feral instinct
+feral senses
 fey ancestry
-Fey Presence 
-the Feywild
-Fiendish Resilience 
-Fiendish Vigor 
-the Fiend
+fey presence
+the feywild
+fiendish resilience
+fiendish vigor
+the fiend
 fighter
 fighting style
 fighting styles
 finding a hidden creature
 finding a hidden object
-finesse 
-fire damage 
-Fist of Four Thunders 
-Fist of Unbroken Air 
-Flames of the phoenix 
-flaws 
-Fleet of Foot 
-Flexible Casting 
-Flurry of Blows 
-flying 
-Focused Conjuration 
-Foe Slayer 
-folk hero 
-Font of Inspiration 
-Font of Magic 
+finesse
+fire damage
+fist of four thunders
+fist of unbroken air
+flames of the phoenix
+flaws
+fleet of foot
+flexible casting
+flurry of blows
+flying
+focused conjuration
+foe slayer
+folk hero
+font of inspiration
+font of magic
 food and drink
-foraging 
-force damage 
-forced march 
-forest gnome 
-Frenzy 
-frightened 
-frog 
+foraging
+force damage
+forced march
+forest gnome
+frenzy
+frightened
+frog
 gaining a level
-Gargantuan 
-Gaze of Two Minds 
-Gehenna 
-gender 
-getting into and out of armor 
-Giant 
-Giant Killer 
-gladiator 
+gargantuan
+gaze of two minds
+gehenna
+gender
+getting into and out of armor
+giant
+giant killer
+gladiator
 gnome
-Gnome Cunning 
+gnome cunning
 gnome names
 gnome traits
-Gnomish 
-Goading Attack maneuver 
-gold dwarf 
-gold piece 
-Gong of the Summit 
-grappled 
+gnomish
+goading attack maneuver
+gold dwarf
+gold piece
+gong of the summit
+grappled
 grappling
-gray dwarf (duergar) 
-Greater Portent 
-the Great Old One 
-Great Weapon Fighting 
-the Great Wheel 
-grid 
-Grim Harvest 
-group checks 
-Guided Strike 
-guild artisan 
-Guild Membership 
-guild merchant 
-Hades 
-half cover 
+gray dwarf (duergar)
+greater portent
+the great old one
+great weapon fighting
+the great wheel
+grid
+grim harvest
+group checks
+guided strike
+guild artisan
+guild membership
+guild merchant
+hades
+half cover
 half-elf
 half-elf names
 half-elf traits
 halfling
-Hallfing 
+hallfing
 halfling names
 halfling nimbleness
 halfling traits
 half-orc
 half-orc names
 half-orc traits
-hawk (falcon) 
+hawk (falcon)
 healing
-hearing 
+hearing
 heavily obscured
-heavy 
-heavy armor 
+heavy
+heavy armor
 heavy weapons and small creatures
-height and weight 
-Heightened Spell 
-Hellish Resistance 
+height and weight
+heightened spell
+hellish resistance
 help action
-hermit 
+hermit
 hidden
 hide action
-Hide in Plain Sight 
+hide in plain sight
 hiding
-high elf 
-hill dwarf 
+high elf
+hill dwarf
 hirelings
-History 
+history
 hit dice
 hit point maximum
 hit points
 holding breath
-Holy Nimbus 
+holy nimbus
 holy symbol
-Horde Breaker 
+horde breaker
 riding horse
-how to play 
-Huge 
+how to play
+huge
 human
 human ethnicities
 human names
 human traits
-Hunter 
-Hunter's Prey 
-Hurl Through Hell 
-hustle 
-Hypnotic Gaze 
-ideals 
-Ignan 
+hunter
+hunter's prey
+hurl through hell
+hustle
+hypnotic gaze
+ideals
+ignan
 illusion
 illusionist
-Illusion Savant 
-Illuskan 
-Illusory Reality 
-Illusory Self 
-imp 
-Impostor 
-Improved Abjuration 
-Improved Combat Superiority 
-Improved Critical 
-Improved Divine Smite 
-Improved Duplicity 
-Improved Flare 
-Improved Minor Illusion 
-Improved War Magic 
+illusion savant
+illuskan
+illusory reality
+illusory self
+imp
+impostor
+improved abjuration
+improved combat superiority
+improved critical
+improved divine smite
+improved duplicity
+improved flare
+improved minor illusion
+improved war magic
 improvised weapons
-incapacitated 
-Indomitable 
-Indomitable Might 
-Infernal 
-Infernal Legacy 
-Infiltration Expertise 
+incapacitated
+indomitable
+indomitable might
+infernal
+infernal legacy
+infiltration expertise
 initiative
-Inner Planes 
-Insight 
+inner planes
+insight
 inspiration
-instantaneous 
-Instinctive Charm 
+instantaneous
+instinctive charm
 intelligence
-Intimidating Presence 
-Intimidation 
-Inured to Undeath 
-Investigation 
-invisible 
-Invoke Duplicity 
-Jack of All Trades 
-jumping 
-Keen Senses 
-Ki 
-Ki-Empowered Strikes 
+intimidating presence
+intimidation
+inured to undeath
+investigation
+invisible
+invoke duplicity
+jack of all trades
+jumping
+keen senses
+ki
+ki-empowered strikes
 ki points
-knight 
+knight
 knocking a creature out
-Know Your Enemy 
-Knowledge domain 
-Knowledge of the Ages 
+know your enemy
+knowledge domain
+knowledge of the ages
 land's stride
 language
-Large 
-lawful evil 
-lawful good 
-lawful neutral 
-Lay on Hands 
-learning spells. 
+large
+lawful evil
+lawful good
+lawful neutral
+lay on hands
+learning spells.
 lethal damage
 level
-Life domain 
-Lifedrinker 
-lifestyle 
+life domain
+lifedrinker
+lifestyle
 lifting and carrying
 light
-light 
-light armor 
-light domain 
+light
+light armor
+light domain
 lightly obscured
-lightning damage 
-Limbo 
-line 
-line of sight 
-lion 
-listening 
-loading 
-lock opening 
-lock picking 
-lodging 
+lightning damage
+limbo
+line
+line of sight
+lion
+listening
+loading
+lock opening
+lock picking
+lodging
 lolth
-long rest 
-Lower Planes 
-low-light vision 
-Lucky 
-Lunging Attack maneuver 
-Mage Hand Legerdemain 
-Magical Ambush 
-Magical Secrets 
+long rest
+lower planes
+low-light vision
+lucky
+lunging attack maneuver
+mage hand legerdemain
+magical ambush
+magical secrets
 magic
-magic item 
-magic-user 
-Malleable Illusions 
-maneuver 
-Maneuvering Attack maneuver 
+magic item
+magic-user
+malleable illusions
+maneuver
+maneuvering attack maneuver
 maneuvers
-mapping 
-marching order 
-Martial Archetype 
+mapping
+marching order
+martial archetype
 martial archetypes
-Martial Arts 
-martial weapon 
-Mask of Many Faces 
-Mask of the Wild 
-Master of Myriad Forms 
-Master of Nature 
-Master Transmuter 
-mastiff 
+martial arts
+martial weapon
+mask of many faces
+mask of the wild
+master of myriad forms
+master of nature
+master transmuter
+mastiff
 material spell component
-Material Plane 
-Mechanus 
-Medicine 
-Medium 
-medium armor 
+material plane
+mechanus
+medicine
+medium
+medium armor
 melee attack
 melee weapon
-Menacing 
-Menacing Attack maneuver 
-Metamagic 
-Military Rank 
-Mindless Rage 
-Minions of Chaos 
-Minor Alchemy 
-Minor Conjuration 
-Mire the Mind 
-Mist Stance 
-Misty Escape 
-Misty Visions 
+menacing
+menacing attack maneuver
+metamagic
+military rank
+mindless rage
+minions of chaos
+minor alchemy
+minor conjuration
+mire the mind
+mist stance
+misty escape
+misty visions
 modifier
 monastic orders
-Monastic Tradition 
+monastic tradition
 monastic traditions
 monk
 monk weapons
-moon elf 
-mount 
-mountain dwarf 
-Mount Celestia 
+moon elf
+mount
+mountain dwarf
+mount celestia
 mounted combat
 mounts and vehicles
 move action
 movement
 moving a grappled creature
-Mulan 
-mule 
-Multiattack 
-Multiattack Defense 
+mulan
+mule
+multiattack
+multiattack defense
 multiclassing
 multiverse
-Mystic Arcanum 
-name 
-Natural Explorer 
-Natural Illusionist 
-Naturally Stealthy 
-Natural Recovery 
-Nature 
-Nature domain 
-Nature's Sanctuary 
-Nature's Ward 
-Nature's Wrath 
-navigating 
+mystic arcanum
+name
+natural explorer
+natural illusionist
+naturally stealthy
+natural recovery
+nature
+nature domain
+nature's sanctuary
+nature's ward
+nature's wrath
+navigating
 necromancer
 necromancy
-Necromancy Savant 
-necrotic damage 
-Negative Plane 
-neutral 
-neutral evil 
-neutral good 
-the Nine Hells 
-noble 
-noble knight 
-nonplayer character 
+necromancy savant
+necrotic damage
+negative plane
+neutral
+neutral evil
+neutral good
+the nine hells
+noble
+noble knight
+nonplayer character
 nonlethal damage
-NPC 
-Oath of Devotion 
-Oath of the Ancients 
-Oath of Vengeance 
-oath spells 
+npc
+oath of devotion
+oath of the ancients
+oath of vengeance
+oath spells
 objects
-One with Shadows 
-Open Hand Technique 
-open locks 
-Opportunist 
+one with shadows
+open hand technique
+open locks
+opportunist
 opportunity attack
 orc
-orison 
-Otherworldly Leap 
-Otherworldly Patron 
+orison
+otherworldly leap
+otherworldly patron
 otherworldly patrons
-Outer Planes 
-outlander 
-the Outlands
-Overchannel 
-owl 
-Pact Boon 
-Pact Magic 
-pact weapon 
+outer planes
+outlander
+the outlands
+overchannel
+owl
+pact boon
+pact magic
+pact weapon
 paladin
-Pandemonium 
-panther 
-paralyzed 
-Parry maneuver 
-party 
-passive check 
-Path of the Berserker 
-Path of the Totem Warrior 
-Patient Defense 
-Peerless Skill 
+pandemonium
+panther
+paralyzed
+parry maneuver
+party
+passive check
+path of the berserker
+path of the totem warrior
+patient defense
+peerless skill
 penalty
-percentile 
-Perception 
-Perfect Self 
-Performance 
-Persistent Rage 
-personality 
-Persuasion 
-petrified 
-pick locks 
-pick pockets 
-piercing damage 
-pirate 
+percentile
+perception
+perfect self
+performance
+persistent rage
+personality
+persuasion
+petrified
+pick locks
+pick pockets
+piercing damage
+pirate
 planar travel
-Plane of Air 
-Plane of Earth 
-Plane of Faerie 
-plane of Fire 
-Plane of Shadow 
-Plane of Water 
+plane of air
+plane of earth
+plane of faerie
+plane of fire
+plane of shadow
+plane of water
 planes of existence
-platinum piece (pp) 
+platinum piece (pp)
 player character
-point of origin 
-poison damage 
-poisoned 
-Position of Privilege 
-Positive Plane 
-Portent 
-Potent Cantrip 
-Potent Spellcasting 
-Precision Attack maneuver 
-preparing spells 
-Preserve life 
-Primal Champion 
-Primal Path 
+point of origin
+poison damage
+poisoned
+position of privilege
+positive plane
+portent
+potent cantrip
+potent spellcasting
+precision attack maneuver
+preparing spells
+preserve life
+primal champion
+primal path
 primal paths
-Primal Strike 
-Primeval Awareness 
-Primordial 
-profession 
+primal strike
+primeval awareness
+primordial
+profession
 proficiencies
 proficiency bonus
-Projected Ward 
-projectile weapon 
+projected ward
+projectile weapon
 prone
-Protection 
-pseudodragon 
-psychic damage 
-punching 
-Purity of Body 
-Purity of Spirit 
-Pushing Attack maneuver 
-quasit 
+protection
+pseudodragon
+psychic damage
+punching
+purity of body
+purity of spirit
+pushing attack maneuver
+quasit
 quick build
-Quickened Spell 
-Quivering Palm 
+quickened spell
+quivering palm
 race
-racial ability score increase 
+racial ability score increase
 racial traits
-Radiance of the Dawn 
-radiant damage 
-Rage 
-Rally maneuver 
+radiance of the dawn
+radiant damage
+rage
+rally maneuver
 range
-range 
+range
 ranged attack
 ranged weapon
 ranger
-Ranger Archetype 
+ranger archetype
 ranger archetypes
-Ranger's Companion 
-Rashemi 
-rat 
-raven  
-reach 
+ranger's companion
+rashemi
+rat
+raven
+reach
 reaction
-Read Thoughts 
+read thoughts
 ready action
-Reckless Attack 
-recovering ammunition 
-recuperating 
-refitting plate armor 
-Relentless 
-Relentless Avenger 
-Relentless Endurance 
-Relentless Rage 
-Reliable Talent 
+reckless attack
+recovering ammunition
+recuperating
+refitting plate armor
+relentless
+relentless avenger
+relentless endurance
+relentless rage
+reliable talent
 religion
-Religion 
-reloading 
-Remarkable Athlete 
-Repelling Blast 
-research 
-Researcher 
-resistance 
+religion
+reloading
+remarkable athlete
+repelling blast
+research
+researcher
+resistance
 resting
-restrained 
-result 
-Retainers 
-Retaliation 
-Ride the Wind 
-Riposte maneuver 
-Ritual Casting
+restrained
+result
+retainers
+retaliation
+ride the wind
+riposte maneuver
+ritual casting
 rituals
-River of Hungry Flame 
-rock gnome 
+river of hungry flame
+rock gnome
 rogue
-Roguish Archetype 
+roguish archetype
 roguish archetypes
 roleplaying
 roll
-round 
+round
 rounding numbers
 rowed vessel
 rules
-run 
-Rush of the Gale Spirits 
-Rustic Hospitality 
-Sacred Oath 
+run
+rush of the gale spirits
+rustic hospitality
+sacred oath
 sacred oaths
-sacred plants and wood 
-Sacred Weapon 
-sage 
-sailor 
-Savage Attacks 
-saving throw 
+sacred plants and wood
+sacred weapon
+sage
+sailor
+savage attacks
+saving throw
 saving throw modifier
-School of Abjuration 
-School of Conjuration 
-School of Divination 
-School of Enchantment 
-School of Evocation 
-School of Illusion 
-School of Necromancy 
-School of Transmutation 
-schools of magic 
-Sculptor of Flesh 
-Sculpt Spells 
-Second-Story Work 
-Second Wind 
+school of abjuration
+school of conjuration
+school of divination
+school of enchantment
+school of evocation
+school of illusion
+school of necromancy
+school of transmutation
+schools of magic
+sculptor of flesh
+sculpt spells
+second-story work
+second wind
 search action
 self
-selling treasure 
+selling treasure
 services
-sex 
-Shadow Arts 
-the Shadowfell 
-Shadow Step 
-Shapechanger 
-Shape the Flowing River 
-Share Spells 
+sex
+shadow arts
+the shadowfell
+shadow step
+shapechanger
+shape the flowing river
+share spells
 reef shark
-Shelter of the Faithful 
-shield 
-shield dwarf 
-Ship's Passage 
-short rest 
-Shou 
+shelter of the faithful
+shield
+shield dwarf
+ship's passage
+short rest
+shou
 shoving
-Sigil 
-Signature Spells 
-Sign of Ill Omen 
-silvered weapon 
-silver piece (sp) 
-simple weapon 
+sigil
+signature spells
+sign of ill omen
+silvered weapon
+silver piece (sp)
+simple weapon
 size
 size category
-skeleton 
-skill check 
-Skill Versatility 
-skills with different abilities 
-slashing damage 
-Sleight of Hand 
-Slippery Mind 
-Slow Fall 
-Small 
-constrictor snake 
+skeleton
+skill check
+skill versatility
+skills with different abilities
+slashing damage
+sleight of hand
+slippery mind
+slow fall
+small
+constrictor snake
 poisonous snake
-Sneak Attack 
+sneak attack
 social interaction
-soldier 
+soldier
 somatic spell component
-Song of Rest 
+song of rest
 sorcerer
 sorcerous origin
 sorcerous origins
 sorcerous restoration
-Sorcery Pointer 
-Soul of Vengeance 
-space 
-Speak with Small Beasts 
-special 
-speed 
+sorcery pointer
+soul of vengeance
+space
+speak with small beasts
+special
+speed
 spell
-spell attack modifier. 
+spell attack modifier.
 spell attack roll
-Spell Bombardment 
-Spellbook 
+spell bombardment
+spellbook
 spellcaster
 spellcasting
 spellcasting ability
-spellcasting focus. 
-spell components 
+spellcasting focus.
+spell components
 spell descriptions
 spell level
 spell list
-Spell Mastery 
+spell mastery
 spell preparation
-Spell Resistance 
+spell resistance
 spell save dc
 spell saving throws
 spells known
 spell slots
-Spell Thief 
-sphere 
-giant spider 
-Spirit Seeker 
-Spirit Walker 
-Split Enchantment 
-sprite 
-spy 
-squeezing 
+spell thief
+sphere
+giant spider
+spirit seeker
+spirit walker
+split enchantment
+sprite
+spy
+squeezing
 stabilizing a creature
 stable
-stacking 
+stacking
 standard action
-standard language 
-Stand Against the Tide 
+standard language
+stand against the tide
 starting wealth
-starvation 
-Stealth 
-Steel Will 
-Step of the Wind 
-Stillness of Mind 
-Stonecunning 
-Stormborn 
-Stout Resilience 
+starvation
+stealth
+steel will
+step of the wind
+stillness of mind
+stonecunning
+stormborn
+stout resilience
 strength
-Stroke of luck 
-strongheart halfling 
-Student of War 
-stunned 
-Stunning Strike 
+stroke of luck
+strongheart halfling
+student of war
+stunned
+stunning strike
 subrace
-Subtle Spell 
+subtle spell
 suffocating
-sun elf 
-Sunlight Sensitivity 
-Superior Critical 
-Superior Darkvision 
-Superior Hunter's Defense 
-Superior Inspiration 
-superiority dice 
-Supreme Healing 
-Supreme Sneak 
+sun elf
+sunlight sensitivity
+superior critical
+superior darkvision
+superior hunter's defense
+superior inspiration
+superiority dice
+supreme healing
+supreme sneak
 surprise
-Survival 
-Survivor 
-svirfneblin (deep gnome) 
-Sweeping Attack maneuver 
-Sweeping Cinder Strike 
-Sylvan 
-targeting a spell 
+survival
+survivor
+svirfneblin (deep gnome)
+sweeping attack maneuver
+sweeping cinder strike
+sylvan
+targeting a spell
 target number
-Tempest domain 
+tempest domain
 temporary hit points
-Tenets of Devotion 
-Tenets of the Ancients 
-Tenets of Vengeance 
-Terran 
-Tethyrian 
-THAC0 
-Thief 
-Thief of Five Fates 
-Thief's Reflexes 
-thieves' cant 
+tenets of devotion
+tenets of the ancients
+tenets of vengeance
+terran
+tethyrian
+thac0
+thief
+thief of five fates
+thief's reflexes
+thieves' cant
 thieves' tools
-the Third Eye 
-Thirsting Blade 
-Thought Shield 
-Thousand Forms 
+the third eye
+thirsting blade
+thought shield
+thousand forms
 three-quarters cover
-thrown 
-Thunderbolt Strike 
-thunder damage 
-Tides of Chaos 
+thrown
+thunderbolt strike
+thunder damage
+tides of chaos
 tiefling
 tiefling names
 tiefling traits
 tiers of play
-tiger 
+tiger
 time
 timeless body
-Tinker 
-Tiny 
-Tongue of the Sun and Moon 
+tinker
+tiny
+tongue of the sun and moon
 tools
 total
 total cover
-Totemic Attunement 
-Totem Spirit 
-tracking 
+totemic attunement
+totem spirit
+tracking
 trade goods
-training 
-traits 
-Trance 
-Transitive Planes 
-Tranquility 
+training
+traits
+trance
+transitive planes
+tranquility
 transmutation
-Transmutation Savant 
+transmutation savant
 transmuter
-Transmuter's Stone 
+transmuter's stone
 finding traps
 removing traps
 disabling traps
 travel
-Trickery domain 
+trickery domain
 trinkets
-Trip Attack maneuver 
+trip attack maneuver
 truesight
-Turami 
-turn 
+turami
+turn
 taking your turn
-Turn the Faithless 
-Turn the Unholy 
-Turn Undead 
-Twinned Spell 
-two-handed 
+turn the faithless
+turn the unholy
+turn undead
+twinned spell
+two-handed
 two-weapon fighting
-Two-Weapon Fighting 
-unarmed 
+two-weapon fighting
+unarmed
 unarmored defense
-Unarmored Movement 
+unarmored movement
 uncanny dodge
-Undead Thralls 
+undead thralls
 underdark
-Undying Sentinel 
+undying sentinel
 uncommon races
 unconscious
-Undercommon 
+undercommon
 underwater combat
 unseen attackers and targets
-Upper Planes 
-urchin 
+upper planes
+urchin
 use an object action
-Use Magic Device 
+use magic device
 using this book
-Vanish 
-vehicle 
+vanish
+vehicle
 verbal spell component
-versatile 
-Versatile Trickster 
+versatile
+versatile trickster
 vision
-Visions of Distant Realms 
-Visions of the Past 
-Voice of the Chain Master 
-Volley 
-Vow of Enmity 
-vulnerability 
-Wanderer 
-Warding Flare 
-War domain 
-War God's Blessing 
-warhorse 
-War Magic 
-War Priest 
-Water Whip 
+visions of distant realms
+visions of the past
+voice of the chain master
+volley
+vow of enmity
+vulnerability
+wanderer
+warding flare
+war domain
+war god's blessing
+warhorse
+war magic
+war priest
+water whip
 warlock
-Wave of Rolling Earth 
+wave of rolling earth
 wealth
 weapon
-Weapon Bond 
+weapon bond
 weapon categories
 weapon proficiency
 weapon properties
 the weave
-Whirlwind Attack 
-Whispers of the Grave 
-Wholeness of Body 
-wild elf 
-Wild Magic 
-Wild Magic Surge 
-Wild Shape 
+whirlwind attack
+whispers of the grave
+wholeness of body
+wild elf
+wild magic
+wild magic surge
+wild shape
 wisdom
-Witch Sight 
+witch sight
 wizard
-dire wolf 
-wolf 
-wood elf 
+dire wolf
+wolf
+wood elf
 world
-Wraith of the Storm 
-XP 
-Ysgard 
+wraith of the storm
+xp
+ysgard
 zombie 

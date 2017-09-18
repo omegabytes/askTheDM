@@ -26,12 +26,13 @@ You can ask questions like "What does athlete do?", "Lookup benefits of ritual c
 
 
 Testing IncompleteIntent:
-This intent is for determining when Alexa doesn't hear the entirety of a phrase, as distinct from UnhandledIntent.
+This intent is for determining when Alexa doesn't hear the entirety of a phrase, as distinct from UnhandledIntent. It handles questions like "get the info about a", "how does having",
+and "tell us what".
 
 
 Testing IndexIntent:
 This mirrors a user looking up information in the index at the back of the book. This covers almost every subject in the 5th edition Player's Handbook. You can ask things like:
-
+"where can I find fireball", "what page is aspect of the beast on?" and "where can I find more information on conjuration"
 
 Testing ItemsIntent:
 You can ask about the following attributes for items: armor class, capacity, carry capacity, category, cost, damage, item type, properties, speed, strength, and weight.
