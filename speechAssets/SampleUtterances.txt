@@ -556,6 +556,17 @@ ItemsIntent get the {ItemAttribute} of {Item}
 
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}
+SpellCastIntent what do I need to cast {Spell}
+SpellCastIntent how can I cast {Spell}
+SpellCastIntent what is needed to cast {Spell}
+SpellCastIntent what are the requirements to cast {Spell}
+SpellCastIntent whats needed to cast {Spell}
+SpellCastIntent in order to cast {Spell} what do I need
+SpellCastIntent what do I need for {Spell}
+SpellCastIntent whats needed for {Spell}
+SpellCastIntent how do I use {Spell}
+SpellCastIntent {Spell} requires what
+SpellCastIntent to use {Spell} what do I need
 
 SpellDamageIntent at {SlotLevel} how much damage does the spell {Spell} do
 SpellDamageIntent at {SlotLevel} how much damage does {Spell} do
