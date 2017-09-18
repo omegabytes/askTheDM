@@ -3501,7 +3501,7 @@ module.exports = {
           9: "9d6"
         }
       },
-      "healing": "You restore half the amount of damage you deal."
+      "healing": "You restore half the amount of damage you deal, regardless of level cast at."
     },
     "magic weapon": {
       "castingTime": "1 Bonus Action",

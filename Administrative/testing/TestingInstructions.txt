@@ -43,11 +43,11 @@ You can ask questions about items like "How much does a sword cost?", "What is t
 Testing SpellCastIntent and SpellsIntent:
 There are over 400 spells. A short list of spells you can ask about include: fireball, cure wounds, sleep, move earth, prismatic spray, and control weather. 
 
-You can ask about the following attributes for spells: range, duration, casting time, short description, long description, components, and spelltype. 
+You can ask about the following attributes for spells: range, duration, casting time, short description, long description, components, spell slot(needed to cast requested spell) and school(of magic). 
 
 You can ask questions about spells like "What is the range of fireball?", "How do I cast beacon of hope?", and "what's the duration of frostbite?"
 
 
 Testing SpellDamageIntent and SpellHealIntent:
 Healing and Damage are similar in form and function. Each spell has a level and a name. You can ask
-questions like: "at level 1 how much damage does hellish rebuke do", "how much damage does a 12th level vicious mockery do", "how much damage does frostbite do at level 9", "at level 2 how much h. p. does cure wounds restore", "at level 2 how much healing does vampiric touch do"
+questions like: "at level 1 how much damage does hellish rebuke do?", "how much damage does a 12th level vicious mockery do?", "how much damage does frostbite do at level 9?", "at level 2 how much h. p. does cure wounds restore?", "at level 2 how much healing does vampiric touch do?"

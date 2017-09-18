@@ -43,7 +43,7 @@ how much damage does frostbite do at level 9
 how much damage does a 12th level vicious mockery do
 at level 12 how much damage does inflict wounds do
 
-//S SpellHealIntent
+// SpellHealIntent
 at level 6 how much healing does heal restore
 at level 2 how much h. p. does cure wounds restore
 at level 2 how much healing does vampiric touch do
