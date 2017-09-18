@@ -482,6 +482,7 @@ ItemsIntent what the {ItemAttribute} of an {Item}
 ItemsIntent whats the {ItemAttribute} of a {Item}
 ItemsIntent whats the {ItemAttribute} of an {Item}
 ItemsIntent whats the {ItemAttribute} of {Item}
+ItemsIntent whats the {ItemAttribute} of {Item} armor
 ItemsIntent whats an {ItemAttribute} of a {Item}
 ItemsIntent whats an {ItemAttribute} of an {Item}
 ItemsIntent whats an {ItemAttribute} of {Item}
@@ -491,6 +492,7 @@ ItemsIntent whats a {ItemAttribute} of {Item}
 ItemsIntent what is the {ItemAttribute} of a {Item}
 ItemsIntent what is the {ItemAttribute} of an {Item}
 ItemsIntent what is the {ItemAttribute} of {Item}
+ItemsIntent what is the {ItemAttribute} of {Item} armor
 ItemsIntent what is an {ItemAttribute} of a {Item}
 ItemsIntent what is an {ItemAttribute} of an {Item}
 ItemsIntent what is an {ItemAttribute} of {Item}
@@ -552,7 +554,9 @@ ItemsIntent get information about an {Item}
 ItemsIntent get information for a {Item}
 ItemsIntent get information for an {Item}
 ItemsIntent to get the {ItemAttribute} of {Item}
+ItemsIntent to get the {ItemAttribute} of {Item} armor
 ItemsIntent get the {ItemAttribute} of {Item}
+ItemsIntent get the {ItemAttribute} of {Item} armor
 
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}

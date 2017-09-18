@@ -233,11 +233,20 @@ var handlers = {
 
         //user requests information on casting spell
         if (spell) {
-            this.attributes['speechOutput'] = spellName + " is a " 
-                                            + spell.school + " spell. To cast, you need the following: " 
-                                            + spell.components + ". The spell duration is " 
-                                            + spell.duration + ". " 
-                                            + spell.shortDescription;
+            if(spell.slotLevel === "cantrip") {
+                this.attributes['speechOutput'] = spellName + " is a "
+                    + spell.school + " cantrip. To cast, you need the following: "
+                    + spell.components + ". The spell duration is "
+                    + spell.duration + " and has a range of "
+                    + spell.range;
+            } else {
+                this.attributes['speechOutput'] = spellName + " is a level "
+                    + spell.slotLevel + " "
+                    + spell.school + " spell. To cast, you need the following: "
+                    + spell.components + ". The spell duration is "
+                    + spell.duration + " and has a range of "
+                    + spell.range;
+            }
 
         //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
         }else if (!spell) {

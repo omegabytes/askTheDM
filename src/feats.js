@@ -105,7 +105,7 @@ module.exports = {
 		},
 		"medium armor master": {
 			"description"	: "You have trained to become a master of fighting in medium armor.",
-			"benefits"		: "Wearing medium armor doesn't impose disadvantage on your Dexterity(Stealth) checks. Additional, when you wear medium armor, add 3 instead of 2 to your A. C.. Only if your Dexterity is 16 or higher.",
+			"benefits"		: "Wearing medium armor doesn't impose disadvantage on your Dexterity(Stealth) checks. Additional, when you wear medium armor, add 3 instead of 2 to your A. C. Only if your Dexterity is 16 or higher.",
 			"prereq"		: "Proficiency with medium armor."
 		},
 		"mobile": {
