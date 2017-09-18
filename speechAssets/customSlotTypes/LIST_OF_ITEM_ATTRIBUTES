@@ -1,3 +1,5 @@
+a. c.
+AC
 armor class
 capacity
 carry capacity
@@ -5,7 +7,10 @@ category
 cost
 damage
 item type
+price
 properties
 speed
 strength
-weight 
+value
+weight
+worth
