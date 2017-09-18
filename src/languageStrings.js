@@ -1,6 +1,6 @@
 var conditions      = require('./conditions');
 var exhaustionLevel = require('./exhaustionLevel');
-var indexInfo       = require('./indexInfo')
+var indexInfo       = require('./indexInfo');
 var items           = require('./items');
 var feats           = require('./feats');
 var spells          = require('./spells');

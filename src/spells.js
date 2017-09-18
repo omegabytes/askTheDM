@@ -5833,4 +5833,4 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/detect-poison-and-disease"
     }
   }
-}
+};

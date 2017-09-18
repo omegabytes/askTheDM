@@ -6,6 +6,11 @@ what is grappled
 I forget how grappled affects me
 I forget how snapple affects me
 
+// DiceIntent
+roll 2 d. 6
+roll 3 d. 12 plus 8
+roll a d. 20 with advantage
+
 // ExhaustionLevelIntent
 what is level 3 of exhaustion
 what is level 14 of exhaustion
@@ -16,6 +21,14 @@ what is the flossing feat
 what is lucky
 what are the benefits of lucky
 what are the benefits
+
+// IncompleteIntent
+get the effects of
+how does having
+I forgot how
+
+// IndexIntent
+
 
 // ItemsIntent
 how does a breastplate work
@@ -30,7 +43,6 @@ at level 1 how much damage does hellish rebuke do
 how much damage does frostbite do at level 9
 how much damage does a 12th level vicious mockery do
 at level 12 how much damage does inflict wounds do
-
 
 //S SpellHealIntent
 at level 6 how much healing does heal restore

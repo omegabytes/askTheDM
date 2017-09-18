@@ -1275,4 +1275,4 @@ module.exports = {
     "itemType"      : "Waterborne Vehicle"
   }
 }
-}
+};

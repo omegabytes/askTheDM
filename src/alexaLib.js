@@ -11,7 +11,7 @@ exports.notFoundMessage = function(slotName, userInput) {
     	speechOutput += langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
     }
     return speechOutput;
-}
+};
 
 // roll dice function
 exports.rollDice = function(quantity,sides) {
@@ -23,7 +23,7 @@ exports.rollDice = function(quantity,sides) {
         output += facevalue;
     }
     return output;
-}
+};
 
 // validates the slot, matches the value, and sets it
 exports.validateAndSetSlot = function(slot) {
@@ -32,16 +32,16 @@ exports.validateAndSetSlot = function(slot) {
 	}else {
 		return null;
 	}
-}
+};
 
 exports.pageFind = function(index, indexName) {
-    var pageString = ""
+    var pageString = "";
     if(typeof index.pages === 'string'){
         pageString = index.pages
     }
     else{
         if(index.pages.length>1){
-            pageString += "pages "
+            pageString += "pages ";
             for(var i = 0; i <= index.pages.length-2; i++){
                 pageString += index.pages[i] + ", "
             }
@@ -52,4 +52,4 @@ exports.pageFind = function(index, indexName) {
         }
     }
     return indexName + " can be found on " + pageString;
-}
+};

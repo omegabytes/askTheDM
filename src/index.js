@@ -96,7 +96,7 @@ var handlers = {
             this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }
         else{
-            this.emit(':tell', this.attributes['speechOutput']);
+            this.emit(':tell', "this is a test");
         }
     },
     'ExhaustionLevelIntent': function () {
