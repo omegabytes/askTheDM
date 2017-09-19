@@ -120,7 +120,7 @@
         },
         {
           "name": "Attribute",
-          "type": "LIST_OF_ATTRIBUTES"
+          "type": "LIST_OF_SPELL_ATTRIBUTES"
         }
       ],
       "intent": "SpellsIntent"
