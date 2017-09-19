@@ -330,7 +330,7 @@ var handlers = {
         {
             if (spell.healing != null)
             { //if the requested spell is healing spell
-                var heal = spell.healing.levels[level];
+                var heals = spell.healing.levels[level];
                 
                 if(spell && level > 9)
                 {
@@ -340,7 +340,7 @@ var handlers = {
                 {
                     this.attributes['speechOutput'] = "At level " + level
                                                     + " " + spellName
-                                                    + " heals " + heal
+                                                    + " heals " + heals
                                                     + " plus your spellcasting ability modifier.";
                 }
             }
