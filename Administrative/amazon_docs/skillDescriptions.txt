@@ -11,7 +11,7 @@ You can ask things like "what is fireball" to get a summary description (Warning
 To speed things up, you can ask things like "how much does a backpack cost?" or "what is level 3 of exhaustion?" and get a quick answer. To get quick answers for specific information, include the name of the spell, item, feat, or condition; as well as an attribute such as range, spell type, description, level, prerequisite, etc. For an exhaustive list of what you can ask about, please say "help".
 
 Version 2.0:
-- UK English now supported
+- UK English now supported (Metric units coming in 2.1)
 - Spells
     - 5e Player's Handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide
     - You can now ask for the damage/healing of a spell or cantrip at a certain spell slot or player level

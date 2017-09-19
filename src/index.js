@@ -363,7 +363,7 @@ var handlers = {
         var spellName       = alexaLib.validateAndSetSlot(spellSlot);
         var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
         var spells          = langEN.SPELLS;
-        var spellAttributes = langEN.ATTRIBUTES;
+        var spellAttributes = langEN.SPELL_ATTRIBUTES;
         var spell           = spells[spellName];
         var spellAttribute  = spellAttributes[attributeName];
 

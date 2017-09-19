@@ -4,7 +4,7 @@ These strings will test most of the functionality of the application
 // ConditionsIntent
 what is grappled
 I forget how grappled affects me
-I forget how snapple affects me
+I forget how snapple affects me -> goes to Spell AEG 9/18
 
 // DiceIntent
 roll 2 d. 6
@@ -21,7 +21,6 @@ what is the alert feat
 what is the flossing feat
 what is lucky
 what are the benefits of lucky
-what are the benefits
 
 // IncompleteIntent
 get the effects of
@@ -29,9 +28,13 @@ how does having
 I forgot how
 
 // IndexIntent
+where can I find more info about archery
+on what page can I look up information about common races
+which page is great weapon fighting on
 
 // ItemsIntent
 how does a breastplate work
+how much is a silk rope worth
 how does a smurf work
 
 // SpellCastIntent

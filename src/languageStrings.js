@@ -9,7 +9,7 @@ module.exports = {
     "en": {
         "translation": {
             //json resources
-            "ATTRIBUTES" :                                  spells.ATTRIBUTES,
+            "SPELL_ATTRIBUTES" :                            spells.SPELL_ATTRIBUTES,
             "CONDITIONS" :                                  conditions.CONDITIONS,
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEATS" :                                       feats.FEATS,
