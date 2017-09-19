@@ -72,11 +72,11 @@ var handlers = {
             firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);
             secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
 
-            if (status == "advantage") {
+            if (status === "advantage") {
                 result = Math.max(firstRoll,secondRoll) + Number(modifier);
             }
 
-            if (status == "disadvantage") {
+            if (status === "disadvantage") {
                 result = Math.min(firstRoll,secondRoll) + Number(modifier);
             }
 

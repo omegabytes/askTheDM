@@ -51,6 +51,7 @@ at level 12 how much damage does inflict wounds do
 at level 6 how much healing does heal restore
 at level 2 how much h. p. does cure wounds restore
 at level 2 how much healing does vampiric touch do
+at level 6 how much healing does fireball restore
 
 // SpellsIntent
 what is fireball
