@@ -295,7 +295,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
                                                 + spellName + " is a spell, and is cast using spell slots.";
             }else if (spell && !spellLevel){
-                this.attributes['speechOutput'] = spellName + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
+                this.attributes['speechOutput'] =  "For damage amount, please include the slot or player level you wish to cast it at.";
             }else if (!spell || !spellLevel) {
                 this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
             }else
