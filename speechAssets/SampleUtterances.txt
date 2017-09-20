@@ -475,6 +475,9 @@ IndexIntent where in the handbook is {Index}
 IndexIntent where in the handbook is {Index} on
 IndexIntent where in the handbook is {Index} located
 
+ItemsIntent how {ItemAttribute} is a {Item}
+ItemsIntent how {ItemAttribute} is an {Item}
+ItemsIntent how {ItemAttribute} is the {Item}
 ItemsIntent lookup {Item}
 ItemsIntent whats a {Item}
 ItemsIntent whats an {Item}

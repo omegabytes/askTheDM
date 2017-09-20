@@ -8,6 +8,7 @@ module.exports = {
      "category"       : "category",
      "cost"           : "cost",
      "damage"         : "damage",
+     "fast"           : "speed",
      "item type"      : "itemType",
      "price"          : "cost",
      "properties"     : "properties",
