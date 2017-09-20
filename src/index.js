@@ -6,6 +6,7 @@ var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
 var langEN          = languageStrings.en.translation;
 
+// noinspection JSUnusedLocalSymbols
 exports.handler = function(event, context, callback) {
     var alexa       = Alexa.handler(event, context);
     alexa.APP_ID    = APP_ID;
