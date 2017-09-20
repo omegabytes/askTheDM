@@ -103,6 +103,10 @@ DiceIntent to roll {Quantity} {Sides} with {Status} plus {Modifier}
 DiceIntent to roll {Quantity} {Sides} with {Status}
 DiceIntent to roll {Quantity} {Sides} plus {Modifier}
 
+ExhaustionLevelIntent what is exhaustion
+ExhaustionLevelIntent what does exhaustion do
+ExhaustionLevelIntent how does exhaustion effect me
+ExhaustionLevelIntent how does exhaustion affect me
 ExhaustionLevelIntent what is {Level} of exhaustion
 ExhaustionLevelIntent whats {Level} exhaustion
 ExhaustionLevelIntent what does {Level} exhaustion mean

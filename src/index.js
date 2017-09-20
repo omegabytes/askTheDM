@@ -117,7 +117,10 @@ var handlers = {
         
         // }else if (exhaustionLevelInput > 6){ //todo: refactor exhaustion levels, similar to how slotLevels work
         //     this.attributes['speechOutput'] = "At " + exhaustionLevel + " your character is beyond dead. Anything beyond level 6 exhaustion is really exhausting.";
-        }else {
+        }else if (!exhaustionLevelInput) {
+            this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
+        }
+        else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
