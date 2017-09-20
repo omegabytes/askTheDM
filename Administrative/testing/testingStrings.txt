@@ -4,17 +4,26 @@ These strings will test most of the functionality of the application
 // ConditionsIntent
 what is grappled
 I forget how grappled affects me
-I forget how snapple affects me -> goes to Spell AEG 9/18
+I forget how snapple affects me -> goes to Spell AEG 9/18 //works for me - Josh
+what does the blinded condition do
+how does being bald affect me
+about poisoned
+
 
 // DiceIntent
 roll 2 d. 6
 roll 3 d. 12 plus 8
 roll a d. 20 with advantage
 roll a d. 20 with advantage plus 10
+roll 9 d. 10 with advantage
+roll 9 d. 10
 
 // ExhaustionLevelIntent
 what is level 3 of exhaustion
+how does level 2 exhaustion work
+lookup level 6 exhaustion
 what is level 14 of exhaustion
+what does level 4 exhaustion mean
 
 // FeatsIntent
 what is the alert feat
@@ -31,15 +40,21 @@ I forgot how
 where can I find more info about archery
 on what page can I look up information about common races
 which page is great weapon fighting on
+what is the page for abjuration
+where in the handbook can I find information on dragonkin
+where in the handbook can I find information on dragonborn
 
 // ItemsIntent
 how does a breastplate work
 how much is a silk rope worth
 how does a smurf work
+how fast is a camel
 
 // SpellCastIntent
 how do I cast druidcraft
 how do I cast shade
+what do I need in order to cast rain
+what do I need in order to cast tidal wave
 
 // SpellDamageIntent
 at level 1 how much damage does hellish rebuke do
@@ -57,3 +72,4 @@ at level 6 how much healing does fireball restore
 what is fireball
 what is the range of fireball
 what is the range of glasses
+what are the effects of druidcraft
