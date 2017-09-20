@@ -56,7 +56,7 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
+        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") || (modifier == "?")){
             this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
             this.emit(':ask', this.attributes['speechOutput']);
         }
@@ -199,13 +199,13 @@ var handlers = {
         var item                = itemList[itemName];
         var itemAttribute       = itemAttributeList[itemAttributeName];
 
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
         if(item && itemAttribute){
             if(!item[itemAttribute]){
                 this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
-                this.attributes['repromptSpeech'] = langEN.REPROMPT;
             } else {
                 this.attributes['speechOutput']  = item[itemAttribute];
-                this.attributes['repromptSpeech'] = langEN.REPROMPT;
             }
         }else if(item && !itemAttribute){
             if(item.itemType){
@@ -213,7 +213,6 @@ var handlers = {
             } else {
                 this.attributes['speechOutput'] = "It is a " + item.category;
             }
-            this.attributes['repromptSpeech'] = langEN.REPROMPT;
         }else if (itemName) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(itemSlot.name,itemName);
         }else {
@@ -289,14 +288,12 @@ var handlers = {
                 this.attributes['speechOutput'] = "At player level " + level
                                                 + " the cantrip " + spellName
                                                 + " does " + dmg + " " + dmgType + ".";
-            }
-            else if(spell && level > 9)
-            {
+            }else if(spell && level > 9){
                 this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
                                                 + spellName + " is a spell, and is cast using spell slots.";
-            }else if (spell && !spellLevel){
+            }else if (spell && !level){
                 this.attributes['speechOutput'] =  "For damage amount, please include the slot or player level you wish to cast it at.";
-            }else if (!spell || !spellLevel) {
+            }else if (!spell || !level) {
                 this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
             }else
             { //if the requested spell is a normal spell
@@ -379,11 +376,10 @@ var handlers = {
         if (spell && spellAttribute) {
             var dmgType = spell.damage.type;
             //if the attribute is damage and the requested spell does not have damage
-            if(spellAttribute=="damage" && spell[spellAttribute]==null) {
+            if(spellAttribute==="damage" && spell[spellAttribute]===null) {
                 this.attributes['speechOutput'] = spellName + ' does not have damage.';
-            }else if(spellAttribute=="damage"){
+            }else if(spellAttribute==="damage"){
                 this.attributes['speechOutput'] = spellName + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
-                //this.attributes['repromptSpeech'] = langEN.REPROMPT; doesnt work, need to work on it further
             }
             else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
