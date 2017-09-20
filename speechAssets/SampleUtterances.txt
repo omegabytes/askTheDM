@@ -583,6 +583,7 @@ SpellDamageIntent at {SlotLevel} how much damage does the spell {Spell} do
 SpellDamageIntent at {SlotLevel} how much damage does {Spell} do
 SpellDamageIntent at {SlotLevel} how much damage does the cantrip {Spell} do
 SpellDamageIntent how much damage does a {SlotLevel} {Spell} spell do
+SpellDamageIntent how much damage does a {SlotLevel} {Spell} do
 SpellDamageIntent how much damage does a {SlotLevel} {Spell} cantrip do
 SpellDamageIntent how much damage does an {SlotLevel} {Spell} spell do
 SpellDamageIntent how much damage does an {SlotLevel} {Spell} cantrip do
