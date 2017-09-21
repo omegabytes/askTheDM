@@ -329,6 +329,8 @@ var handlers = {
         if(spell && typeof spell.healing === 'string')
         { //add conditional to check if the healing is a string or array using typeof()
             this.attributes['speechOutput'] = spell.healing;
+        }else if(!spell) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
         }
         else
         {
@@ -348,7 +350,7 @@ var handlers = {
                 {
                     this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
                 }
-                else if(!spell && level) //if the level is provided but not the spell
+                else if(level && !spell) //if the level is provided but not the spell
                 {
                     this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
                 }

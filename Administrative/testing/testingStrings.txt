@@ -51,6 +51,8 @@ at level 6 how much damage does haircut do
 
 // SpellHealIntent
 at level 6 how much healing does heal restore
+at biscuit how much h. p. does cure wounds restore
+at level 2 how much h. p. does donny darko restore
 at level 2 how much h. p. does cure wounds restore
 at level 2 how much healing does vampiric touch do
 at level 6 how much healing does fireball restore
