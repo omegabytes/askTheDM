@@ -336,17 +336,21 @@ var handlers = {
             { //if the requested spell is healing spell
                 var heals = spell.healing.levels[level];
                 
-                if(spell && level > 9)
+                if(spell && level > 9) //if the requested spell is cast using a slot above 9th
                 {
                     this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
                 }
-                else if (spell && !level)
+                else if (spell && !level) //if the requested spell is provided but not the level
                 {
                     this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
                 }
-                else if (!spell || !level)
+                else if (!spell || !level) //if neither the spell or level are provided
                 {
                     this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
+                }
+                else if(!spell && level) //if the level is provided but not the spell
+                {
+                    this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
                 }
                 else
                 {
