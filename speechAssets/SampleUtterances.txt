@@ -652,12 +652,24 @@ SpellHealIntent how much healing does an {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much healing does an {SlotLevel} {Spell} do
 SpellHealIntent how much healing does an {SlotLevel} {Spell} restore
 SpellHealIntent how much healing does an {SlotLevel} {Spell} replenish
+SpellHealIntent how much healing does {Spell} spell do at {SlotLevel}
+SpellHealIntent how much healing does {Spell} spell restore at {SlotLevel}
+SpellHealIntent how much healing does {Spell} spell replenish at {SlotLevel}
+SpellHealIntent how much healing does {Spell} do at {SlotLevel}
+SpellHealIntent how much healing does {Spell} restore at {SlotLevel}
+SpellHealIntent how much healing does {Spell} replenish at {SlotLevel}
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell do
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell restore
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much health does {SlotLevel} {Spell} spell do
 SpellHealIntent how much health does {SlotLevel} {Spell} spell restore
 SpellHealIntent how much health does {SlotLevel} {Spell} spell replenish
+SpellHealIntent how much health does {Spell} spell do at {SlotLevel}
+SpellHealIntent how much health does {Spell} spell restore at {SlotLevel}
+SpellHealIntent how much health does {Spell} spell replenish at {SlotLevel}
+SpellHealIntent how much health does {Spell} do at {SlotLevel}
+SpellHealIntent how much health does {Spell} restore at {SlotLevel}
+SpellHealIntent how much health does {Spell} replenish at {SlotLevel}
 SpellHealIntent how much health does a {SlotLevel} {Spell} do
 SpellHealIntent how much health does a {SlotLevel} {Spell} restore
 SpellHealIntent how much health does a {SlotLevel} {Spell} replenish
@@ -682,12 +694,21 @@ SpellHealIntent how much h. p. does an {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much h. p. does an {SlotLevel} {Spell} do
 SpellHealIntent how much h. p. does an {SlotLevel} {Spell} restore
 SpellHealIntent how much h. p. does an {SlotLevel} {Spell} replenish
+SpellHealIntent how much h. p. does {Spell} spell do at {SlotLevel} 
+SpellHealIntent how much h. p. does {Spell} spell restore at {SlotLevel}
+SpellHealIntent how much h. p. does {Spell} spell replenish at {SlotLevel}
+SpellHealIntent how much h. p. does {Spell} do at {SlotLevel} 
+SpellHealIntent how much h. p. does {Spell} restore at {SlotLevel}
+SpellHealIntent how much h. p. does {Spell} replenish at {SlotLevel}
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell do
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell restore
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much hit points does {SlotLevel} {Spell} spell do
 SpellHealIntent how much hit points does {SlotLevel} {Spell} spell restore
 SpellHealIntent how much hit points does {SlotLevel} {Spell} spell replenish
+SpellHealIntent how much hit points does {Spell} spell do at {SlotLevel} 
+SpellHealIntent how much hit points does {Spell} spell restore at {SlotLevel}
+SpellHealIntent how much hit points does {Spell} spell replenish at {SlotLevel}
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} do
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} restore
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} replenish
