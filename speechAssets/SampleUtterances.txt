@@ -583,6 +583,7 @@ SpellDamageIntent at {SlotLevel} how much damage does the spell {Spell} do
 SpellDamageIntent at {SlotLevel} how much damage does {Spell} do
 SpellDamageIntent at {SlotLevel} how much damage does the cantrip {Spell} do
 SpellDamageIntent how much damage does a {SlotLevel} {Spell} spell do
+SpellDamageIntent how much damage does the {SlotLevel} {Spell} spell do
 SpellDamageIntent how much damage does a {SlotLevel} {Spell} cantrip do
 SpellDamageIntent how much damage does an {SlotLevel} {Spell} spell do
 SpellDamageIntent how much damage does {SlotLevel} {Spell} do
@@ -593,6 +594,35 @@ SpellDamageIntent how much damage does the cantrip {Spell} do at player {SlotLev
 SpellDamageIntent how much damage does {Spell} do at player {SlotLevel}
 SpellDamageIntent what damage does a {SlotLevel} {Spell} do
 SpellDamageIntent what damage does an {SlotLevel} {Spell} do
+SpellDamageIntent how much damage is dealt by {Spell} to a player at {SlotLevel}
+SpellDamageIntent how much damage does {Spell} do at {SlotLevel}
+SpellDamageIntent how much damage does {Spell} cause at {SlotLevel}
+SpellDamageIntent how much damage does {Spell} cause to a player at {SlotLevel}
+SpellDamageIntent how much damage does {Spell} hit for at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} do at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} do to a player at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} cause at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} cause a player at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} hit for at {SlotLevel}
+SpellDamageIntent how much damage does a {Spell} hit for a player at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} do at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} do to a player at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} cause at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} cause a player at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} hit for at {SlotLevel}
+SpellDamageIntent how much damage does an {Spell} hit for a player at {SlotLevel}
+SpellDamageIntent at {SlotLevel} how much damage is dealt by {Spell} to a player
+SpellDamageIntent at {SlotLevel} how much damage does {Spell} do to a player
+SpellDamageIntent at {SlotLevel} how much damage does {Spell} cause
+SpellDamageIntent at {SlotLevel} how much damage does {Spell} cause a player
+SpellDamageIntent at {SlotLevel} how much damage does {Spell} hit for
+SpellDamageIntent at {SlotLevel} how much damage does a {Spell} do to a player
+SpellDamageIntent at {SlotLevel} how much damage does a {Spell} cause
+SpellDamageIntent at {SlotLevel} how much damage does a {Spell} cause a player
+SpellDamageIntent at {SlotLevel} how much damage does a {Spell} hit for
+SpellDamageIntent at {SlotLevel} how much damage does a {Spell} hit for a player
+SpellDamageIntent at {SlotLevel} what is the damage is dealt by {Spell}
+SpellDamageIntent at {SlotLevel} what is the damage is dealt by {Spell} to a player
 
 SpellHealIntent at {SlotLevel} how much healing does the spell {Spell} do
 SpellHealIntent at {SlotLevel} how much healing does the spell {Spell} restore
