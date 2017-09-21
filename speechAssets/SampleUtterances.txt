@@ -655,6 +655,9 @@ SpellHealIntent how much healing does an {SlotLevel} {Spell} replenish
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell do
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell restore
 SpellHealIntent how much health does a {SlotLevel} {Spell} spell replenish
+SpellHealIntent how much health does {SlotLevel} {Spell} spell do
+SpellHealIntent how much health does {SlotLevel} {Spell} spell restore
+SpellHealIntent how much health does {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much health does a {SlotLevel} {Spell} do
 SpellHealIntent how much health does a {SlotLevel} {Spell} restore
 SpellHealIntent how much health does a {SlotLevel} {Spell} replenish
@@ -667,6 +670,9 @@ SpellHealIntent how much health does an {SlotLevel} {Spell} replenish
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} spell do
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} spell restore
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} spell replenish
+SpellHealIntent how much h. p. does {SlotLevel} {Spell} spell do
+SpellHealIntent how much h. p. does {SlotLevel} {Spell} spell restore
+SpellHealIntent how much h. p. does {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} do
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} restore
 SpellHealIntent how much h. p. does a {SlotLevel} {Spell} replenish
@@ -679,6 +685,9 @@ SpellHealIntent how much h. p. does an {SlotLevel} {Spell} replenish
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell do
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell restore
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} spell replenish
+SpellHealIntent how much hit points does {SlotLevel} {Spell} spell do
+SpellHealIntent how much hit points does {SlotLevel} {Spell} spell restore
+SpellHealIntent how much hit points does {SlotLevel} {Spell} spell replenish
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} do
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} restore
 SpellHealIntent how much hit points does a {SlotLevel} {Spell} replenish
