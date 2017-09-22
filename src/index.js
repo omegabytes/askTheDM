@@ -265,18 +265,16 @@ var handlers = {
         }
     },
     'SpellDamageIntent': function(){
-        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
-        var spellSlot               = this.event.request.intent.slots.Spell;
-        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
-        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
-        var spells                  = langEN.SPELLS;
-        var levels                  = langEN.SLOT_LEVEL;
-        var spell                   = spells[spellName];
-        var level                   = levels[spellLevel];
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        var spell                   = langEN.SPELLS[requestedSpell];
+        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-        if(spell && typeof spell.damage === 'string')
+        if(spell && spell.damage===undefined){
+            this.attributes['speechOutput'] = "That spell does not do damage."
+        }else if(spell && typeof spell.damage === 'string')
         {
             this.attributes['speechOutput'] = spell.damage;
         }
@@ -287,11 +285,11 @@ var handlers = {
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = "At player level " + level
-                                                + " the cantrip " + spellName
+                                                + " the cantrip " + requestedSpell
                                                 + " does " + dmg + " " + dmgType + ".";
             }else if(spell && level > 9){
                 this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
-                                                + spellName + " is a spell, and is cast using spell slots.";
+                                                + requestedSpell + " is a spell, and is cast using spell slots.";
             }else if (spell && !level){
                 this.attributes['speechOutput'] =  "For damage amount, please include the slot or player level you wish to cast it at.";
             }else if (!spell || !level) {
@@ -301,7 +299,7 @@ var handlers = {
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = "A level " + level + ", "
-                                                + spellName + " does "
+                                                + requestedSpell + " does "
                                                 + dmg + " " + dmgType + ".";
             }
         }
@@ -369,38 +367,37 @@ var handlers = {
         }
     },
     'SpellsIntent': function () {
-        var spellSlot       = this.event.request.intent.slots.Spell;
-        var attributeSlot   = this.event.request.intent.slots.Attribute;
-        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells          = langEN.SPELLS;
-        var spellAttributes = langEN.SPELL_ATTRIBUTES;
-        var spell           = spells[spellName];
-        var spellAttribute  = spellAttributes[attributeName];
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
+        var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
+        var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        //if the user asks for the attribute of a spell
-        if (spell && spellAttribute) {
-            var dmgType = spell.damage.type;
+        this.attributes['speechOutput'] = requestedSpellAttribute;
+
+        // //if the user asks for the attribute of a spell
+        if (spell && requestedSpellAttribute) {
             //if the attribute is damage and the requested spell does not have damage
-            if(spellAttribute==="damage" && spell[spellAttribute]===null) {
-                this.attributes['speechOutput'] = spellName + ' does not have damage.';
-            }else if(spellAttribute==="damage"){
-                this.attributes['speechOutput'] = spellName + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
-            }
-            else{
+            if(requestedSpellAttribute==="damage" && spell[spellAttribute]===undefined) {
+                this.attributes['speechOutput'] = requestedSpell + ' does not have damage.';
+            }else if(requestedSpellAttribute==="damage" && typeof spellAttribute === String) {
+                this.attributes['speechOutput'] = spell[spellAttribute];
+            }else if(requestedSpellAttribute==="damage"){
+                var dmgType = spell.damage.type;
+                this.attributes['speechOutput'] = requestedSpell + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
+            }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
-        }else if (spell && !spellAttribute) {
+        }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (spellName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
+        }else if (requestedSpell) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
