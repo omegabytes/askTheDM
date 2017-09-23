@@ -296,8 +296,11 @@ var handlers = {
         
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        if(spell && typeof spell.healing === 'string')
-        { //add conditional to check if the healing is a string or array using typeof()
+        if(spell && spell.healing === undefined)
+        {
+            this.attributes['speechOutput'] = "That spell does not restore health.";
+        }else if(spell && typeof spell.healing === 'string') //add conditional to check if the healing is a string or array using typeof()
+        { 
             this.attributes['speechOutput'] = spell.healing;
         }else if (spell && !level) //if the requested spell is provided but not the level
         {
@@ -309,8 +312,8 @@ var handlers = {
         }
         else
         {
-            if (spell.healing != null)
-            { //if the requested spell is healing spell
+            // if (spell.healing != null)
+            // { //if the requested spell is healing spell
                 var heals = spell.healing.levels[level];
                 
                 if(spell && level > 9) //if the requested spell is cast using a slot above 9th
@@ -324,11 +327,7 @@ var handlers = {
                                                     + " heals " + heals
                                                     + " plus your spellcasting ability modifier.";
                 }
-            }
-            else
-            {
-                this.attributes['speechOutput'] = "That spell does not restore health.";
-            }
+            //}
         }
 
         if(this.attributes['continue']){ 
@@ -351,13 +350,15 @@ var handlers = {
         // //if the user asks for the attribute of a spell
         if (spell && requestedSpellAttribute) {
             //if the attribute is damage and the requested spell does not have damage
-            if(requestedSpellAttribute==="damage" && spell[spellAttribute]===undefined) {
-                this.attributes['speechOutput'] = requestedSpell + ' does not have damage.';
-            }else if(requestedSpellAttribute==="damage" && typeof spellAttribute === String) {
+            if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") && spell[spellAttribute]===undefined) {
+                this.attributes['speechOutput'] = requestedSpell + ' does not have '+requestedSpellAttribute+'.';
+            }else if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") && typeof spellAttribute === String) {
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }else if(requestedSpellAttribute==="damage"){
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = requestedSpell + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
+            }else if(requestedSpellAttribute==="healing"){ //i think we need this, but im not 100% sure
+                this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
             }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
