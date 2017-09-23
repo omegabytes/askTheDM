@@ -25,7 +25,7 @@ var handlers = {
         if (condition) {
             this.attributes['speechOutput'] = condition;
         }else if (requestedConditionName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(validateAndSetSlot(this.event.request.intent.slots.Condition.name, requestedConditionName);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
