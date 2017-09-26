@@ -341,7 +341,20 @@ module.exports = {
       "shortDescription": "Create a storm of roaring flame within range, consisting of ten 10-foot cubes, which you arrange. Each cube must be adjacent to another face of the cube. On a failed Dexterity save, each creature in the area takes 7d10 fire damage, or half damage on a success.",
       "longDescription": "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one. The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.",
       "url": "https://www.dnd-spells.com/spell/fire-storm",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: "7d10",
+          8: "7d10",
+          9: "7d10"
+        }
+      }
     },
     "cordon of arrows": {
       "castingTime": "1 Action",
@@ -642,10 +655,34 @@ module.exports = {
       "components": "Verbal, Material (a weapon) ",
       "slotLevel": "cantrip",
       "school": "Evocation cantrip",
-      "shortDescription": "Make a melee attack with a weapon against one creature within the spell's range, otherwise it fails. On a hit, the target suffers the attack's normal effects and green fire leaps from the target to a different creature of your choice within 5 feet. The second creature takes fire damage equal to your spellcasting mod. When cast at 5th level, melee attack deals an extra 1d8 fire damage, to the second creature an extra 1d8 fire damage plus your spellcast mod. Both damage rolls increase by 1d8 at 11th and 17th.",
+      "shortDescription": "Make a melee attack with a weapon against one creature within the spell's range, otherwise it fails. On a hit, the target suffers the attack's normal effects and green fire leaps from the target to a different creature of your choice within 5 feet. The second creature takes fire damage equal to your spellcasting mod. When cast at level 5, melee attack deals an extra 1d8 fire damage, to the second creature an extra 1d8 fire damage plus your spellcasting mod. Both damage rolls increase by 1d8 at level 11 and 17th.",
       "longDescription": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier. This spell's damage increases when you reach higher levels. At higher levels: At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level.",
       "url": "https://www.dnd-spells.com/spell/green-flame-blade",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire damage",
+        "playerLevel": {
+          1: "1d8",
+          2: "1d8",
+          3: "1d8",
+          4: "1d8",
+          5: "2d8",
+          6: "2d8",
+          7: "2d8",
+          8: "2d8",
+          9: "2d8",
+          10: "2d8",
+          11: "3d8",
+          12: "3d8",
+          13: "3d8",
+          14: "3d8",
+          15: "3d8",
+          16: "3d8",
+          17: "4d8",
+          18: "4d8",
+          19: "4d8",
+          20: "4d8"
+        }
+      }
     },
     "gust": {
       "castingTime": "1 Action",
@@ -738,7 +775,20 @@ module.exports = {
       "shortDescription": "Needs concentration. Emboldened by holy power in a 30 foot radius, this aura moves and is centered on you. Deal 1d4 radiant damage when each nonhostile creature hits with a weapon attack.",
       "longDescription": "Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack.",
       "url": "https://www.dnd-spells.com/spell/crusaders-mantle",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: "1d4",
+          4: "1d4",
+          5: "1d4",
+          6: "1d4",
+          7: "1d4",
+          8: "1d4",
+          9: "1d4"
+        }
+      }
     },
     "purify food and drink ": {
       "castingTime": "1 Action",
@@ -827,7 +877,20 @@ module.exports = {
       "shortDescription": "Conjure a firey shield that sheds bright light in a 10 foot radius, and dim in an additional 10 feet. The shield provides cold damage resistance, whenever you are hit by a melee attack within 5 feet, the attacker takes 2d8 fire damage. This can also be flavored to be a cold shield, respectively.",
       "longDescription": "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it. The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.",
       "url": "https://www.dnd-spells.com/spell/fire-shield",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire or cold damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "2d8",
+          5: "2d8",
+          6: "2d8",
+          7: "2d8",
+          8: "2d8",
+          9: "2d8"
+        }
+      }
     },
     "darkness": {
       "castingTime": "1 Action",
@@ -933,7 +996,20 @@ module.exports = {
       "shortDescription": "Needs concentration. The next time you hit a creature with a weapon attack deal an extra 5d10 force damage to the target. If this attack reduces the target to 50 hit points or fewer, banish it. If the creature is native to the plane you're on, vanishing to a harmless demiplane, and is incapacitated until the spell ends.",
       "longDescription": "The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
       "url": "https://www.dnd-spells.com/spell/banishing-smite",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "force damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "5d10",
+          6: "5d10",
+          7: "5d10",
+          8: "5d10",
+          9: "5d10"
+        }
+      }
     },
     "tasha's hideous laughter": {
       "castingTime": "1 Action",
@@ -1067,7 +1143,20 @@ module.exports = {
       "shortDescription": "Conjure a wall of strong wind up to 50 feet long, 15 feet high, and 1 foot thick. When the wall appears, each creature within its area must make a Strength save or take 3d8 bludgeoning damage, or half as much on a success.",
       "longDescription": "A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one. The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.",
       "url": "https://www.dnd-spells.com/spell/wind-wall",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: "3d8",
+          4: "3d8",
+          5: "3d8",
+          6: "3d8",
+          7: "3d8",
+          8: "3d8",
+          9: "3d8"
+        }
+      }
     },
     "stone shape": {
       "castingTime": "1 Action",
@@ -1101,7 +1190,20 @@ module.exports = {
       "shortDescription": "Your first attack deals an extra 2d6 thunder damage, and a creature is pushed 10 ft away and knocked prone on a strength fail",
       "longDescription": "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.",
       "url": "https://www.dnd-spells.com/spell/thunderous-smite",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "thunder damage",
+        "levels": {
+          1: "2d6",
+          2: "2d6",
+          3: "2d6",
+          4: "2d6",
+          5: "2d6",
+          6: "2d6",
+          7: "2d6",
+          8: "2d6",
+          9: "2d6"
+        }
+      }
     },
     "sending": {
       "castingTime": "1 Action",
@@ -1129,13 +1231,26 @@ module.exports = {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "30 feet",
-      "components": "Verbal,Somatic,Material (a miniature hand sculpted from clay)",
+      "components": "Verbal, Somatic, Material (a miniature hand sculpted from clay)",
       "slotLevel": "2",
       "school": "Transmutation",
       "shortDescription": "Needs concentration. Choose a 5 foot square of unoccupied space on the ground, a medium hand made of compact soil rises and reaches for one creature within 5 feet of it. The target must make a Strength save or take 2d6 bludgeoning damage and is restrained for the duration. As an action, you can cause the hand to crush the restrained target, who must make a Strength save or take 2d6 bludgeoning, or half as much on a success. To break free, the target must make a Strength check against your spell save DC.",
       "longDescription": "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spell's duration. As an action, you can cause the hand to crush the restrained target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one. To break out, the restrained target can make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand. As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either.",
       "url": "https://www.dnd-spells.com/spell/maximilians-earthen-grasp",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: "2d6",
+          3: "2d6",
+          4: "2d6",
+          5: "2d6",
+          6: "2d6",
+          7: "2d6",
+          8: "2d6",
+          9: "3d8"
+        }
+      }
     },
     "find the path": {
       "castingTime": "1 Minute",
@@ -1216,7 +1331,20 @@ module.exports = {
       "shortDescription": "Each creature in a 30 foot radius centered on a point must make a Wisdom save or become frightened. At the start of each frightened creature's turn, it makes another Wisdom save or take 4d10 psychic damage.",
       "longDescription": "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature's deepest fears, manifesting its worst nightmares as an implacable threat. At the start of each of the frightened creature's turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.",
       "url": "https://www.dnd-spells.com/spell/weird",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: 0,
+          9: "4d10"
+        }
+      }
     },
     "protection from poison": {
       "castingTime": "1 Action",
@@ -2181,7 +2309,20 @@ module.exports = {
       "shortDescription": "Needs concentration. Conjure a sword of force, when it appears make a melee spell attack against a target of your choice within 5ft of the sword. On a hit the target takes 3d10 force damage. As a bonus action you can move the sword up to 20ft you can see.",
       "longDescription": "You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one",
       "url": "https://www.dnd-spells.com/spell/mordenkainens-sword",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "force damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: "3d10",
+          8: "3d10",
+          9: "3d10"
+        }
+      }
     },
     "melf's acid arrow": {
       "castingTime": "1 Action",
@@ -2585,7 +2726,20 @@ module.exports = {
       "shortDescription": "Requires concentration. Create a 100 feet by 20 feet by 5 feet wall of blades. Creatures starting in or entering the wall take 6d10 slashing damage on a failed Dexterity save, or half as much on a success. The area is difficult terrain and provides three quarter coverage. ",
       "longDescription": "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain. When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.",
       "url": "https://www.dnd-spells.com/spell/blade-barrier",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "slashing damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "6d10",
+          7: "6d10",
+          8: "6d10",
+          9: "6d10"
+        }
+      }
     },
     "sleet storm": {
       "castingTime": "1 Action",
@@ -2781,7 +2935,20 @@ module.exports = {
       "shortDescription": "A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one. Doesnt effect constructs or undead, and plants and water elementals have disadvantage.",
       "longDescription": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
       "url": "https://www.dnd-spells.com/spell/abi-dalzims-horrid-wilting",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "necrotic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "10d8",
+          9: "10d8"
+        }
+      }
     },
     "dissonant whispers": {
       "castingTime": "1 Action",
@@ -2906,7 +3073,7 @@ module.exports = {
       "components": "Verbal, Somatic, Material (a pinch of powdered iron)",
       "slotLevel": "2",
       "school": "Transmutation",
-      "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weaps do an extra 1d4 damage. Reduce has the opposite effect.",
+      "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weapons do an extra 1d4 damage. Reduce has the opposite effect.",
       "longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category, from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage. Reduce. The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category, from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).",
       "url": "https://www.dnd-spells.com/spell/enlargereduce",
       "damage": "Complex Damage Progression. Please consult short or long descriptions"
@@ -3034,7 +3201,20 @@ module.exports = {
       "shortDescription": "Each creature of your choosing within 30 feet must make a Constitution save or takes 5d6 thunder damage, as well as as 5d6 radiant or necrotic damage, and is knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.",
       "longDescription": "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.",
       "url": "https://www.dnd-spells.com/spell/destructive-wave",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant or necrotic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "5d6",
+          6: "5d6",
+          7: "5d6",
+          8: "5d6",
+          9: "5d6"
+        }
+      }
     },
     "shatter": {
       "castingTime": "1 Action",
@@ -3198,7 +3378,20 @@ module.exports = {
       "shortDescription": "Requires concentration. The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
       "longDescription": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
       "url": "https://www.dnd-spells.com/spell/blinding-smite",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: "3d8",
+          4: "3d8",
+          5: "3d8",
+          6: "3d8",
+          7: "3d8",
+          8: "3d8",
+          9: "3d8"
+        }
+      }
     },
     "guiding bolt": {
       "castingTime": "1 Action",
@@ -3301,10 +3494,23 @@ module.exports = {
       "components": "Verbal, Somatic, Material (a tiny silver whistle, a piece of bone, and a thread)",
       "slotLevel": "4",
       "school": "Conjuration",
-      "shortDescription": "A watchdog alerts you of any creatures, invisible, on this plane, or otherwise obscured by illusions, that doesn't speak a password when they come within 50 feet of it. At the start of each turn, the hound bites a one target within 5ft with attack bonus equal to your spellcasting modifier + your proficiency bonus, and does 4d8 piercing damage.",
+      "shortDescription": "A watchdog alerts you of any creatures, invisible, on this plane, or otherwise obscured by illusions, that doesn't speak a password when they come within 50 feet of it. At the start of each turn, the hound bites one target within 5ft with attack bonus equal to your spellcasting modifier + your proficiency bonus, and does 4d8 piercing damage.",
       "longDescription": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature com es within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions. At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.",
       "url": "https://www.dnd-spells.com/spell/mordenkainens-faithful-hound",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "piercing damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "4d8",
+          5: "4d8",
+          6: "4d8",
+          7: "4d8",
+          8: "4d8",
+          9: "4d8"
+        }
+      }
     },
     "true strike": {
       "castingTime": "1 Action",
@@ -3335,7 +3541,7 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "8",
       "school": "Conjuration",
-      "shortDescription": "Requires concentration. Create a wall of water up to 300 feet long, 300 feet high, and 50 feet thick. Creatures in the wave take 6d10 bludgeoning damage on a failed strength save, half as much on a success. Each turn, the wall moves 50 feet away from you, taking huge or smaller creatures with it. Creatures subsequently struck by the wave take 5d10 damage, or half as much on a strength save. The wall's hieght reduces by 50 feet each turn, and damage is reduced by 1d10.",
+      "shortDescription": "Requires concentration. Create a wall of water up to 300 feet long, 300 feet high, and 50 feet thick. Creatures in the wave take 6d10 bludgeoning damage on a failed strength save, half as much on a success. Each turn, the wall moves 50 feet away from you, taking huge or smaller creatures with it. Creatures subsequently struck by the wave take 5d10 bludgeoning damage, or half as much on a strength save. The wall's hieght reduces by 50 feet each turn, and damage is reduced by 1d10.",
       "longDescription": "A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much damage on a successful save. At the start of each of your turns after the wall appears, the wall, along with any creatures in it, moves 50 feet away from you. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take 5d10 bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the wall's height is reduced by 50 feet, and the damage creatures take from the spell on subsequent rounds is reduced by 1d10. When the wall reaches 0 feet in height, the spell ends. A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength (Athletics) check against your spell save DC in order to move at all. If it fails the check, it can't move. A creature that moves out of the area falls to the ground.",
       "url": "https://www.dnd-spells.com/spell/tsunami",
       "damage": "Complex Damage Progression. Please consult short or long descriptions"
@@ -3350,7 +3556,20 @@ module.exports = {
       "shortDescription": "Requies concentration. Create a 20 foot radius sphere smokey cloud of burning embers. Creatures in the cloud must make a dex save or take 10d8 fire damage, half as much on a success.",
       "longDescription": "A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there. The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns.",
       "url": "https://www.dnd-spells.com/spell/incendiary-cloud",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "10d8",
+          9: "10d8"
+        }
+      }
     },
     "locate object": {
       "castingTime": "1 Action",
@@ -3453,10 +3672,23 @@ module.exports = {
       "components": "Verbal, Somatic, Material (a handful of clay, crystal, glass, or mineral spheres)",
       "slotLevel": "8",
       "school": "Enchantment",
-      "shortDescription": "Blast the mind of a creature in range. The target takes 4d6 psychic damage and must make an intelligence save. On a fail, the craetures intelligence and charisma scores drop to 1, it can't cast spells, understand language, or active magic items. It can follow and protect its friends, and can reroll the save every 30 days.",
+      "shortDescription": "Blast the mind of a creature in range. The target takes 4d6 psychic damage and must make an intelligence save. On a fail, the creatures intelligence and charisma scores drop to 1, it can't cast spells, understand language, or active magic items. It can follow and protect its friends, and can reroll the save every 30 days.",
       "longDescription": "You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw. On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends. The spell can also be ended by greater restoration, heal, or wish.",
       "url": "https://www.dnd-spells.com/spell/feeblemind",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "4d6",
+          9: "4d6"
+        }
+      }
     },
     "detect magic ": {
       "castingTime": "1 Action",
@@ -3646,7 +3878,20 @@ module.exports = {
       "shortDescription": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a wisdom saving throw or be frightened of you. The creature can make a wisdom check against your spell save DC to end this spell.",
       "longDescription": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a wisdom check against your spell save DC to steel its resolve and end this spell.",
       "url": "https://www.dnd-spells.com/spell/wrathful-smite",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: "1d6",
+          2: "1d6",
+          3: "1d6",
+          4: "1d6",
+          5: "1d6",
+          6: "1d6",
+          7: "1d6",
+          8: "1d6",
+          9: "1d6"
+        }
+      }
     },
     "poison spray": {
       "castingTime": "1 Action",
@@ -3705,7 +3950,20 @@ module.exports = {
       "shortDescription": "Requires concentration. Tentacles fill a 20-foot square on ground, turning the area into difficult terrain.  When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature can escape with a successful strength or dex check against your spell save DC.",
       "longDescription": "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain. When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage. A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.",
       "url": "https://www.dnd-spells.com/spell/evards-black-tentacles",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "3d6",
+          5: "3d6",
+          6: "3d6",
+          7: "3d6",
+          8: "3d6",
+          9: "3d6"
+        }
+      }
     },
     "hypnotic pattern": {
       "castingTime": "1 Action",
@@ -3775,7 +4033,20 @@ module.exports = {
       "shortDescription": "Requires concentration. Control a 100 foot cube of freestanding water in a few ways. You can raise the water level up to 20ft, or make a trench that slowly fills in over the next, redirect the flow, or create a whirlpool that restrains creatures on a failed Athletics check. Creatures in the whrlpool take 2d8 bludgeoning damage for each round on the fail, and half as much on a save.",
       "longDescription": "Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one. Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing. The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts. Part Water. You cause water in the area to move apart and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored. Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect. Whirlpool. This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC. When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so. The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.",
       "url": "https://www.dnd-spells.com/spell/control-water",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "2d8",
+          5: "2d8",
+          6: "2d8",
+          7: "2d8",
+          8: "2d8",
+          9: "2d8"
+        }
+      }
     },
     "mass cure wounds": {
       "castingTime": "1 Action",
@@ -4003,11 +4274,35 @@ module.exports = {
       "range": "5 feet",
       "components": "Verbal, Material (a weapon) ",
       "slotLevel": "cantrip",
-      "school": "Evocation cantrip",
+      "school": "Evocation",
       "shortDescription": "Make a melee attack with a weapon against one creature. On a hit, the target suffers the weapon's normal effects and is surrounded by booming energy. If it moves before your next turn, it takes 1d8 thunder damage.",
       "longDescription": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends. This spell's damage increases when you reach higher levels. At higher levels: At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.",
       "url": "https://www.dnd-spells.com/spell/booming-blade",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "thunder damage",
+        "playerLevel": {
+          1: "1d8",
+          2: "1d8",
+          3: "1d8",
+          4: "1d8",
+          5: "2d8",
+          6: "2d8",
+          7: "2d8",
+          8: "2d8",
+          9: "2d8",
+          10: "2d8",
+          11: "3d8",
+          12: "3d8",
+          13: "3d8",
+          14: "3d8",
+          15: "3d8",
+          16: "3d8",
+          17: "4d8",
+          18: "4d8",
+          19: "4d8",
+          20: "4d8"
+        }
+      }
     },
     "glibness": {
       "castingTime": "1 Action",
@@ -4178,7 +4473,20 @@ module.exports = {
       "shortDescription": "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once. The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.",
       "longDescription": "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once. The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.",
       "url": "https://www.dnd-spells.com/spell/meteor-swarm",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire and bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: 0,
+          9: "20d6 and 20d6"
+        }
+      }
     },
     "gentle repose ": {
       "castingTime": "1 Action",
@@ -4245,7 +4553,20 @@ module.exports = {
       "shortDescription": "A 10 foot by 30 foot whirlwind appears at a point, and can be moved 30 feet by you using your action. The whilrwind sucks up medium or smaller objects and creatures that fail a Dexterity save. The creature takes 10d6 bludgeoning damage on a fail, half as much on a success. Additionally, large or smaller creatures that fail the save must make a strength save or become restrained. Creatures restrained move 5 feet into the whirlwind at the start of each turn and move with the whirlwind.",
       "longDescription": "A whirlwind howls down to a point on the ground you specify. The whirlwind is a 10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone. A creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the whirlwind until the spell ends. When a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft. A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 10 feet away from it in a random direction.",
       "url": "https://www.dnd-spells.com/spell/whirlwind",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: "10d6",
+          8: "10d6",
+          9: "10d6"
+        }
+      }
     },
     "grasping vine": {
       "castingTime": "1 Bonus Action",
@@ -4268,7 +4589,20 @@ module.exports = {
       "shortDescription": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural.",
       "longDescription": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.",
       "url": "https://www.dnd-spells.com/spell/spike-growth",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "piercing damage",
+        "levels": {
+          1: 0,
+          2: "2d4",
+          3: "2d4",
+          4: "2d4",
+          5: "2d4",
+          6: "2d4",
+          7: "2d4",
+          8: "2d4",
+          9: "2d4"
+        }
+      }
     },
     "maelstrom": {
       "castingTime": "1 Action",
@@ -4280,7 +4614,20 @@ module.exports = {
       "shortDescription": "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center.",
       "longDescription": "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center.",
       "url": "https://www.dnd-spells.com/spell/maelstrom",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "6d6",
+          6: "6d6",
+          7: "6d6",
+          8: "6d6",
+          9: "6d6"
+        }
+      }
     },
     "seeming": {
       "castingTime": "1 Action",
@@ -4300,10 +4647,23 @@ module.exports = {
       "components": "Verbal, Somatic",
       "slotLevel": "6",
       "school": "Transmutation",
-      "shortDescription": "You are immune to cold damage and have resistance to fire damage. You can move across difficult terrain created by ice or snow without spending extra movement. The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.  You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. 0A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
+      "shortDescription": "You are immune to cold damage and have resistance to fire damage. You can move across difficult terrain created by ice or snow without spending extra movement. The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.  You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
       "longDescription": "Until the spell ends, ice rimes your body, and you gain the following benefits: You are immune to cold damage and have resistance to fire damage. You can move across difficult terrain created by ice or snow without spending extra movement. The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you. You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
       "url": "https://www.dnd-spells.com/spell/investiture-of-ice",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "4d6",
+          7: "4d6",
+          8: "4d6",
+          9: "4d6"
+        }
+      }
     },
     "hallucinatory terrain": {
       "castingTime": "10 Minutes",
@@ -4324,9 +4684,22 @@ module.exports = {
       "slotLevel": "1",
       "school": "Enchantment",
       "shortDescription": "You deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.",
-      "longDescription": "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature. A remove curse cast on the target ends this spell early. At Higher Levels: When you cast this spell using aspellslotof3rdor4thlevel,youcanmaintainyour concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.",
+      "longDescription": "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature. A remove curse cast on the target ends this spell early. At Higher Levels: When you cast this spell using a spell slot of 3rd or 4th level,you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.",
       "url": "https://www.dnd-spells.com/spell/hex",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "necrotic damage",
+        "levels": {
+          1: "1d6",
+          2: "1d6",
+          3: "1d6",
+          4: "1d6",
+          5: "1d6",
+          6: "1d6",
+          7: "1d6",
+          8: "1d6",
+          9: "1d6"
+        }
+      }
     },
     "prayer of healing": {
       "castingTime": "10 Minutes",
@@ -4384,7 +4757,20 @@ module.exports = {
       "shortDescription": "A target takes 14d6 necrotic damage on a failed Constitution save, half as much on a success. Cannot reduce health below one. Health max is also reduced to the damage taken on a fail.",
       "longDescription": "You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can't reduce the target's hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.",
       "url": "https://www.dnd-spells.com/spell/harm",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "necrotic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "14d6",
+          7: "14d6",
+          8: "14d6",
+          9: "14d6"
+        }
+      }
     },
     "immolation": {
       "castingTime": "1 Action",
@@ -4396,7 +4782,20 @@ module.exports = {
       "shortDescription": "A target takes 7d6 fire damage on a failed Dexterity save, half as much on a success. Also on a fail, the target burns and sheds bright light. While burning, the target takes 3d6 fire damage on a failed Dexterity saves. Flames cannot be extinguished nonmagically.",
       "longDescription": "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can't be extinguished through nonmagical means. If damage from this spell reduces a target to 0 hit points, the target is turned to ash.",
       "url": "https://www.dnd-spells.com/spell/immolation",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "fire damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "7d6 and 3d6",
+          6: "7d6 and 3d6",
+          7: "7d6 and 3d6",
+          8: "7d6 and 3d6",
+          9: "7d6 and 3d6"
+        }
+      }
     },
     "sequester": {
       "castingTime": "1 Action",
@@ -4764,10 +5163,23 @@ module.exports = {
       "components": "Verbal",
       "slotLevel": "5",
       "school": "Enchantment",
-      "shortDescription": "Force a creature in within 60ft to take carry out or refrain from doing an activity of your choice except actions that would result in death. if the creature understands you, it must make a wisdom save or becomes charmed. While the creture is charmed, it takes 510d psychic damage once a day if it doesn't do what you want",
-      "longDescription": "You place a magical command on a creature that you can see within range, forcing it to carry out some service  or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell. You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends. You can end the spell early by using an action to dismiss it. A remove curse, greaterrestoration, or wish spell also ends it. At Higher Levels: When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "shortDescription": "Force a creature in within 60ft to take carry out or refrain from doing an activity of your choice except actions that would result in death. if the creature understands you, it must make a wisdom save or becomes charmed. While the creature is charmed, it takes 5d10 psychic damage once a day if it doesn't do what you want",
+      "longDescription": "You place a magical command on a creature that you can see within range, forcing it to carry out some service  or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell. You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends. You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it. At Higher Levels: When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
       "url": "https://www.dnd-spells.com/spell/geas",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "5d10",
+          6: "5d10",
+          7: "5d10",
+          8: "5d10",
+          9: "5d10"
+        }
+      }
     },
     "lightning arrow": {
       "castingTime": "1 Bonus Action",
@@ -4999,7 +5411,20 @@ module.exports = {
       "shortDescription": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. On a failed Constitution save, a creature in range takes 12d6 radiant damage and is blinded for 1 minute. On a save, it takes half as much and isn't blinded. The creature makes a Constitution save at the end of each turn to end blindness.",
       "longDescription": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded. This spell dispels any darkness in its area that was created by a spell.",
       "url": "https://www.dnd-spells.com/spell/sunburst",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "12d6",
+          9: "12d6"
+        }
+      }
     },
     "dimension door": {
       "castingTime": "1 Action",
@@ -5067,7 +5492,20 @@ module.exports = {
       "shortDescription": "Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
       "longDescription": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
       "url": "https://www.dnd-spells.com/spell/divine-favor",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: "1d4",
+          2: "1d4",
+          3: "1d4",
+          4: "1d4",
+          5: "1d4",
+          6: "1d4",
+          7: "1d4",
+          8: "1d4",
+          9: "1d4"
+        }
+      }
     },
     "cure wounds": {
       "castingTime": "1 Action",
@@ -5136,7 +5574,20 @@ module.exports = {
       "shortDescription": "Requres concentration. Ranged attacks have disadvantage against you and you gain a flying speed of 60 ft. You can also use your action to create a 15 ft cube with 60 ft. Creatures inside take 2d10 bludgeoning damage on a failed Constitution save, half as much on a success, and large or smaller creatures are pushed 10 ft away from the center of the cube.",
       "longDescription": "Until the spell ends, wind whirls around you, and you gain the following benefits: Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it. You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.",
       "url": "https://www.dnd-spells.com/spell/investiture-of-wind",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "2d10",
+          7: "2d10",
+          8: "2d10",
+          9: "2d10"
+        }
+      }
     },
     "eldritch blast": {
       "castingTime": "1 Action",
@@ -5261,7 +5712,20 @@ module.exports = {
       "shortDescription": "You conjure up a wave of water that crashes down on an area within range up to 30 feet long, 10 feet wide, and 10 feet tall. On a failed Dexterity save, creatures are knocked prone and take 4d8 bludgeoning damage. On a success, the creature takes half as much damage and isn't knocked prone. The water extinguishes flames winthin 30ft.",
       "longDescription": "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it.",
       "url": "https://www.dnd-spells.com/spell/tidal-wave",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: "4d8",
+          4: "4d8",
+          5: "4d8",
+          6: "4d8",
+          7: "4d8",
+          8: "4d8",
+          9: "4d8"
+        }
+      }
     },
     "magic circle": {
       "castingTime": "1 Minute",
@@ -5748,7 +6212,20 @@ module.exports = {
       "shortDescription": "Your next attack deals 4d6 psychic damage. On a failed wisdom save the target has disadvantage on attack rolls and ability checks, and can't take reactions until the end of its next turn.",
       "longDescription": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn.",
       "url": "https://www.dnd-spells.com/spell/staggering-smite",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "4d6",
+          5: "4d6",
+          6: "4d6",
+          7: "4d6",
+          8: "4d6",
+          9: "4d6"
+        }
+      }
     },
     "conjure minor elementals": {
       "castingTime": "1 Minute",
@@ -5805,7 +6282,20 @@ module.exports = {
       "shortDescription": "A 5ft by 60ft beam of light flashes from your hand. On a failed Constitution save, each creature is blinded until your next turn and takes 6d8 radiant damage. The targets aren't blinded and take half damage on a successful save. Undead and oozes have disadvantage",
       "longDescription": "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw. You can create a new line of radiance as your action on any turn until the spell ends. For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.",
       "url": "https://www.dnd-spells.com/spell/sunbeam",
-      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "6d8",
+          7: "6d8",
+          8: "6d8",
+          9: "6d8"
+        }
+      }
     },
     "detect poison and disease": {
       "castingTime": "1 Action",
