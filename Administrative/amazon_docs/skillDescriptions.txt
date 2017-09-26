@@ -13,9 +13,8 @@ To speed things up, you can ask things like "how much does a backpack cost?" or 
 
 Version 2.0:
 **Localization**
-    - Global use for UK, US English-enabled devices
-    - UK now supported
-    - Metric units! Let us know how we did. If it sounds off, let these yankee devs know how we can do it better.
+    - Global use for UK/US English-enabled devices
+    - Metric units! If it sounds off, please let these yankee devs know how we can do it better.
 
 **Spells**
     - 5e Player's Handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide
