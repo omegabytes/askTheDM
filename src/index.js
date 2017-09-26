@@ -261,7 +261,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
                                                 + requestedSpell + " is a spell, and is cast using spell slots.";
             }else if (spell && !level){
-                this.attributes['speechOutput'] =  "For damage amount, please include the slot or player level you wish to cast it at.";
+                this.attributes['speechOutput'] = "For damage amount, please include the slot or player level you wish to cast it at.";
             }else if (!spell || !level) {
                 this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
             }else
@@ -306,22 +306,19 @@ var handlers = {
         }
         else
         {
-            // if (spell.healing != null)
-            // { //if the requested spell is healing spell
-                var heals = spell.healing.levels[level];
-                
-                if(spell && level > 9) //if the requested spell is cast using a slot above 9th
-                {
-                    this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
-                }
-                else
-                {
-                    this.attributes['speechOutput'] = "At level " + level
-                                                    + " " + requestedSpell
-                                                    + " heals " + heals
-                                                    + " plus your spellcasting ability modifier.";
-                }
-            //}
+            var heals = spell.healing.levels[level];
+            
+            if(spell && level > 9) //if the requested spell is cast using a slot above 9th
+            {
+                this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
+            }
+            else
+            {
+                this.attributes['speechOutput'] = "At level " + level
+                                                + " " + requestedSpell
+                                                + " heals " + heals
+                                                + " plus your spellcasting ability modifier.";
+            }
         }
 
         if(this.attributes['continue']){ 
