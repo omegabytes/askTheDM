@@ -661,7 +661,6 @@ SpellDamageIntent at {SlotLevel} level how much damage does a {Spell} hit for
 SpellDamageIntent at {SlotLevel} level how much damage does a {Spell} hit for a player
 SpellDamageIntent at {SlotLevel} level what is the damage is dealt by {Spell}
 SpellDamageIntent at {SlotLevel} level what is the damage is dealt by {Spell} to a player
-
 SpellDamageIntent at level {SlotLevel} how much damage does the spell {Spell} do
 SpellDamageIntent at level {SlotLevel} how much damage does {Spell} do
 SpellDamageIntent at level {SlotLevel} how much damage does the cantrip {Spell} do
@@ -862,7 +861,6 @@ SpellHealIntent what hit points does a {SlotLevel} level {Spell} healing
 SpellHealIntent what hit points does a {SlotLevel} level {Spell} health
 SpellHealIntent what hit points does an {SlotLevel} level {Spell} healing
 SpellHealIntent what hit points does an {SlotLevel} level {Spell} health
-
 SpellHealIntent at level {SlotLevel} how much healing does the spell {Spell} do
 SpellHealIntent at level {SlotLevel} how much healing does the spell {Spell} restore
 SpellHealIntent at level {SlotLevel} how much healing does {Spell} do
