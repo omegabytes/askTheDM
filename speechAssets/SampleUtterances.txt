@@ -107,44 +107,82 @@ ExhaustionLevelIntent what is exhaustion
 ExhaustionLevelIntent what does exhaustion do
 ExhaustionLevelIntent how does exhaustion effect me
 ExhaustionLevelIntent how does exhaustion affect me
-ExhaustionLevelIntent what is {Level} of exhaustion
-ExhaustionLevelIntent whats {Level} exhaustion
-ExhaustionLevelIntent what does {Level} exhaustion mean
-ExhaustionLevelIntent what does {Level} exhaustion do
-ExhaustionLevelIntent what does {Level} exhaustion do to me
-ExhaustionLevelIntent what does {Level} exhaustion do to a player
-ExhaustionLevelIntent what does {Level} exhaustion do to a creature
-ExhaustionLevelIntent what does {Level} exhaustion do to a character
-ExhaustionLevelIntent what does {Level} of exhaustion mean
-ExhaustionLevelIntent what does {Level} of exhaustion do
-ExhaustionLevelIntent what does {Level} of exhaustion do to me
-ExhaustionLevelIntent what does {Level} of exhaustion do to a player
-ExhaustionLevelIntent what does {Level} of exhaustion do to a creature
-ExhaustionLevelIntent what does {Level} of exhaustion do to a character
-ExhaustionLevelIntent about {Level} exhaustion
-ExhaustionLevelIntent how does {Level} exhaustion work
-ExhaustionLevelIntent what does having {Level} exhaustion mean
-ExhaustionLevelIntent get information on {Level} exhaustion
-ExhaustionLevelIntent tell me about {Level} exhaustion
-ExhaustionLevelIntent what are the effects of {Level} exhaustion
-ExhaustionLevelIntent lookup {Level} exhaustion
-ExhaustionLevelIntent how does having {Level} exhaustion affect me
-ExhaustionLevelIntent how does having {Level} exhaustion affect a creature
-ExhaustionLevelIntent how does having {Level} exhaustion affect a player
-ExhaustionLevelIntent how does having {Level} exhaustion affect a character
-ExhaustionLevelIntent how does having {Level} exhaustion affect someone
-ExhaustionLevelIntent how does {Level} exhaustion affect me
-ExhaustionLevelIntent how does {Level} exhaustion affect a creature
-ExhaustionLevelIntent how does {Level} exhaustion affect a player
-ExhaustionLevelIntent how does {Level} exhaustion affect a character
-ExhaustionLevelIntent how does {Level} exhaustion affect someone
-ExhaustionLevelIntent I forgot what {Level} exhaustion does
-ExhaustionLevelIntent I forgot what {Level} exhaustion is
-ExhaustionLevelIntent I forgot how {Level} exhaustion affects me
-ExhaustionLevelIntent I forgot how {Level} exhaustion affects a player
-ExhaustionLevelIntent I forgot how {Level} exhaustion affects a creature
-ExhaustionLevelIntent I forgot how {Level} exhaustion affects a character
-ExhaustionLevelIntent I forgot how {Level} exhaustion affects someone
+ExhaustionLevelIntent what is level {Level} of exhaustion
+ExhaustionLevelIntent whats level {Level} exhaustion
+ExhaustionLevelIntent what does level {Level} exhaustion mean
+ExhaustionLevelIntent what does level {Level} exhaustion do
+ExhaustionLevelIntent what does level {Level} exhaustion do to me
+ExhaustionLevelIntent what does level {Level} exhaustion do to a player
+ExhaustionLevelIntent what does level {Level} exhaustion do to a creature
+ExhaustionLevelIntent what does level {Level} exhaustion do to a character
+ExhaustionLevelIntent what does level {Level} of exhaustion mean
+ExhaustionLevelIntent what does level {Level} of exhaustion do
+ExhaustionLevelIntent what does level {Level} of exhaustion do to me
+ExhaustionLevelIntent what does level {Level} of exhaustion do to a player
+ExhaustionLevelIntent what does level {Level} of exhaustion do to a creature
+ExhaustionLevelIntent what does level {Level} of exhaustion do to a character
+ExhaustionLevelIntent about level {Level} exhaustion
+ExhaustionLevelIntent how does level {Level} exhaustion work
+ExhaustionLevelIntent what does having level {Level} exhaustion mean
+ExhaustionLevelIntent get information on level {Level} exhaustion
+ExhaustionLevelIntent tell me about level {Level} exhaustion
+ExhaustionLevelIntent what are the effects of level {Level} exhaustion
+ExhaustionLevelIntent lookup level {Level} exhaustion
+ExhaustionLevelIntent how does having level {Level} exhaustion affect me
+ExhaustionLevelIntent how does having level {Level} exhaustion affect a creature
+ExhaustionLevelIntent how does having level {Level} exhaustion affect a player
+ExhaustionLevelIntent how does having level {Level} exhaustion affect a character
+ExhaustionLevelIntent how does having level {Level} exhaustion affect someone
+ExhaustionLevelIntent how does level {Level} exhaustion affect me
+ExhaustionLevelIntent how does level {Level} exhaustion affect a creature
+ExhaustionLevelIntent how does level {Level} exhaustion affect a player
+ExhaustionLevelIntent how does level {Level} exhaustion affect a character
+ExhaustionLevelIntent how does level {Level} exhaustion affect someone
+ExhaustionLevelIntent I forgot what level {Level} exhaustion does
+ExhaustionLevelIntent I forgot what level {Level} exhaustion is
+ExhaustionLevelIntent I forgot how level {Level} exhaustion affects me
+ExhaustionLevelIntent I forgot how level {Level} exhaustion affects a player
+ExhaustionLevelIntent I forgot how level {Level} exhaustion affects a creature
+ExhaustionLevelIntent I forgot how level {Level} exhaustion affects a character
+ExhaustionLevelIntent I forgot how level {Level} exhaustion affects someone
+ExhaustionLevelIntent what is {Level} level of exhaustion
+ExhaustionLevelIntent whats {Level} level exhaustion
+ExhaustionLevelIntent what does {Level} level exhaustion mean
+ExhaustionLevelIntent what does {Level} level exhaustion do
+ExhaustionLevelIntent what does {Level} level exhaustion do to me
+ExhaustionLevelIntent what does {Level} level exhaustion do to a player
+ExhaustionLevelIntent what does {Level} level exhaustion do to a creature
+ExhaustionLevelIntent what does {Level} level exhaustion do to a character
+ExhaustionLevelIntent what does {Level} level of exhaustion mean
+ExhaustionLevelIntent what does {Level} level of exhaustion do
+ExhaustionLevelIntent what does {Level} level of exhaustion do to me
+ExhaustionLevelIntent what does {Level} level of exhaustion do to a player
+ExhaustionLevelIntent what does {Level} level of exhaustion do to a creature
+ExhaustionLevelIntent what does {Level} level of exhaustion do to a character
+ExhaustionLevelIntent about {Level} level exhaustion
+ExhaustionLevelIntent how does {Level} level exhaustion work
+ExhaustionLevelIntent what does having {Level} level exhaustion mean
+ExhaustionLevelIntent get information on {Level} level exhaustion
+ExhaustionLevelIntent tell me about {Level} level exhaustion
+ExhaustionLevelIntent what are the effects of {Level} level exhaustion
+ExhaustionLevelIntent lookup {Level} level exhaustion
+ExhaustionLevelIntent how does having {Level} level exhaustion affect me
+ExhaustionLevelIntent how does having {Level} level exhaustion affect a creature
+ExhaustionLevelIntent how does having {Level} level exhaustion affect a player
+ExhaustionLevelIntent how does having {Level} level exhaustion affect a character
+ExhaustionLevelIntent how does having {Level} level exhaustion affect someone
+ExhaustionLevelIntent how does {Level} level exhaustion affect me
+ExhaustionLevelIntent how does {Level} level exhaustion affect a creature
+ExhaustionLevelIntent how does {Level} level exhaustion affect a player
+ExhaustionLevelIntent how does {Level} level exhaustion affect a character
+ExhaustionLevelIntent how does {Level} level exhaustion affect someone
+ExhaustionLevelIntent I forgot what {Level} level exhaustion does
+ExhaustionLevelIntent I forgot what {Level} level exhaustion is
+ExhaustionLevelIntent I forgot how {Level} level exhaustion affects me
+ExhaustionLevelIntent I forgot how {Level} level exhaustion affects a player
+ExhaustionLevelIntent I forgot how {Level} level exhaustion affects a creature
+ExhaustionLevelIntent I forgot how {Level} level exhaustion affects a character
+ExhaustionLevelIntent I forgot how {Level} level exhaustion affects someone
 
 FeatsIntent what does {Feats} do
 FeatsIntent what does {Feats} affect

@@ -92,20 +92,14 @@ var handlers = {
     },
     'ExhaustionLevelIntent': function () {
         var requestedExhaustionLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Level);
-        var exhaustionLevel      = langEN.EXHAUSTION_LEVELS.exhaustionLevelInput;
+        var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        //user requests information on exhaustion levels
-        if (exhaustionLevel) {
+        if(exhaustionLevel){ //user requests information on exhaustion levels
             this.attributes['speechOutput'] = exhaustionLevel;
-
-        //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-        }else if (requestedExhaustionLevel) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion";
-        
-        // }else if (exhaustionLevelInput > 6){ //todo: refactor exhaustion levels, similar to how slotLevels work
-        //     this.attributes['speechOutput'] = "At " + exhaustionLevel + " your character is beyond dead. Anything beyond level 6 exhaustion is really exhausting.";
+        }else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
         }else if (!requestedExhaustionLevel) {
             this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
         }
