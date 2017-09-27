@@ -8,9 +8,9 @@ var alexa = null;
 // //creates a local lambda server and initializes the emulator
 beforeEach(function (done) {
     server = new bst.LambdaServer('../src/index.js', 10000,false);
-    alexa = new bst.BSTAlexa('http://localhost:10000',
+    alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         '../speechAssets/IntentSchema.json',
-        '../speechAssets/SampleUtterances.txt');
+        '../speechAssets/SampleUtterances.txt','amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690');
 
     server.start(function () {
         alexa.start(function (error) {
@@ -69,14 +69,28 @@ afterEach(function (done) {
  });
 
  // what is the range of fireball
- // it('what is fireball', function (done) {
- //     alexa.launched(function (error, response) {
- //         // Emulate the user asking what fireball is
- //         alexa.spoken('what is the {range} of {fireball}', function (error,response) {
- //             alexa.intended('SpellsIntent', {"Spell":"fireball", ""}, function (error, response) {
- //                 assert.equal(response.response.outputSpeech.ssml, '<speak> Each creature in a 20 foot radius sphere takes 8d6 fire damage on a failed Dexterity save, or half as much on a success. What else can I help with? </speak>');
- //                 done();
- //             });
- //         });
- //     });
- // });
+ it('range of fireball', function (done) {
+     alexa.launched(function (error, response) {
+         // Emulate the user asking what the range of fireball
+         alexa.spoken('what is the {range} of {fireball}', function (error,response) {
+             alexa.intended('SpellsIntent', {"Attribute":"range", "Spell":"fireball"}, function (error, response) {
+                 assert.equal(response.response.outputSpeech.ssml,'<speak> 150 feet What else can I help with? </speak>');
+                 done();
+             });
+         });
+     });
+ });
+
+ // what is the damage of level 3 fireball
+ it('damage of level 3 fireball', function (done) {
+     alexa.launched(function (error, response) {
+         // Emulate the user asking what fireball is
+         alexa.spoken('how much damage does {fireball} do at level {3}', function (error,response) {
+             alexa.intended('SpellDamageIntent', {"SlotLevel":"3", "Spell":"fireball"}, function (error, response) {
+                 assert.equal(response.response.outputSpeech.ssml,'<speak> A level 3, fireball does 8d6 fire damage. What else can I help with? </speak>');
+                 done();
+             });
+         });
+     });
+ });
+
