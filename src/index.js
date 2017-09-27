@@ -18,7 +18,7 @@ exports.handler = function(event, context, callback) {
 var handlers = {
     'ConditionsIntent': function () {
         var requestedConditionName        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
-        var condition                     = langEN.CONDITIONS.requestedConditionName;
+        var condition                     = langEN.CONDITIONS[requestedConditionName];
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //user requests information on condition

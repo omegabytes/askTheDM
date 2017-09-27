@@ -4,7 +4,8 @@
   "description": "Get basic info about DND spells, items, and rules",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha test/*.js",
+    "cover": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "",
   "devDependencies": {
     "bespoken-tools": "^1.1.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.5.3"
   },
   "dependencies": {
