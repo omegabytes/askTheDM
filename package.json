@@ -1,10 +1,10 @@
 {
   "name": "skill-ask-the-dm",
-  "version": "2.0",
+  "version": "2.0.0",
   "description": "Get basic info about DND spells, items, and rules",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "Dungeon Master"
   ],
   "author": "Alex Gaesser",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/omegabytes/askTheDM.git/issues"
   },

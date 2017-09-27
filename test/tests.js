@@ -7,10 +7,10 @@ var alexa = null;
 
 // //creates a local lambda server and initializes the emulator
 beforeEach(function (done) {
-    server = new bst.LambdaServer('../src/index.js', 10000,false);
+    server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
-        '../speechAssets/IntentSchema.json',
-        '../speechAssets/SampleUtterances.txt','amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690');
+        './speechAssets/IntentSchema.json',
+        './speechAssets/SampleUtterances.txt','amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690');
 
     server.start(function () {
         alexa.start(function (error) {
