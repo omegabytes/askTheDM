@@ -60,18 +60,16 @@ describe('General tests', function (done) {
 });
 
 // ConditionsIntent
-// describe('ConditionsIntent', function (done) {
-//     it('description: blind', function (done) {
-//         alexa.launched(function (error,response) {
-//             alexa.spoken('what is {blind}',function (error,response) {
-//                 alexa.intended('ConditionsIntent', {"Condition":"blind"}, function (error,response) {
-//                     assert.equal(response.response.outputSpeech.ssml, '<speak> A blinded creature can’t see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage. What else can I help with? </speak>');
-//                     done();
-//                 });
-//             });
-//         });
-//     });
-// });
+describe('ConditionsIntent', function (done) {
+    it('description: blind', function (done) {
+        alexa.launched(function (error,response) {
+            alexa.spoken('what is {blind}',function (error,response) {
+                assert.equal(response.response.outputSpeech.ssml, '<speak> A blinded creature can’t see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+});
 
 //todo: add DiceIntent
 //todo: add ExhaustionLevelIntent
