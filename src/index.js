@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa           = require('alexa-sdk');
-var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
+var APP_ID          = "amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee";
 var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
 var langEN          = languageStrings.en.translation;

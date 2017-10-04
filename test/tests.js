@@ -10,7 +10,7 @@ beforeEach(function (done) {
     server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         './speechAssets/IntentSchema.json',
-        './speechAssets/SampleUtterances.txt','amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690');
+        './speechAssets/SampleUtterances.txt','amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee');
 
     server.start(function () {
         alexa.start(function (error) {
@@ -73,11 +73,17 @@ describe('ConditionsIntent', function (done) {
 });
 
 //todo: add DiceIntent
+
 //todo: add ExhaustionLevelIntent
+
 //todo: add FeatsIntent
+
 //todo: add IncompleteIntent
+
 //todo: add IndexIntent
+
 //todo: add ItemsIntent
+
 //todo: add SpellCastIntent
 
 // SpellDamageIntent
