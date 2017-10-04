@@ -1,6 +1,8 @@
 var bst     = require('bespoken-tools');
 var assert  = require('assert');
 var listOfSpells  = require('../src/spells.js');
+var alex_ID = 'amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690';
+var josh_Id ='';  //there's a way around this, I'll look it up later
 
 var server  = null;
 var alexa   = null;
@@ -10,7 +12,8 @@ beforeEach(function (done) {
     server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         './speechAssets/IntentSchema.json',
-        './speechAssets/SampleUtterances.txt','amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee');
+        './speechAssets/SampleUtterances.txt',
+        alex_ID);
 
     server.start(function () {
         alexa.start(function (error) {
@@ -169,7 +172,8 @@ describe('SpellsIntent', function (done) {
     it('casting time: fireball', function (done) {
         alexa.launched(function (error, response) {
             alexa.intended('SpellsIntent', {"Attribute":"casting time", "Spell":"fireball"}, function (error,response) {
-                assert.equal(response.response.outputSpeech.ssml, '<speak> 1 Action. What else can I help with? </speak>');
+                // assert.equal(response.response.outputSpeech.ssml, '<speak> 1 Action. What else can I help with? </speak>');
+                assert.equal(response.response.outputSpeech.ssml, '<speak> '+ listOfSpells.SPELLS['fireball']['castingTime'] + '. What else can I help with? </speak>');
                 done();
                 });
         });
@@ -279,37 +283,30 @@ describe('One-shot mode', function (done) {
         //
         //     for (var spell in listOfSpells.SPELLS) {
         //         if(listOfSpells.SPELLS.hasOwnProperty(spell)){
-        //             spells.push(spell.replace(/\\/g,''));
+        //             spells.push(spell);
         //         }
         //     }
         //
-        //     for (var spellAttribute in listOfSpells.SPELL_ATTRIBUTES){
-        //         if(listOfSpells.SPELL_ATTRIBUTES.hasOwnProperty(spellAttribute)){
-        //             spellAttributes.push(spellAttribute);
-        //         }
-        //     }
+        //     // for (var spellAttribute in listOfSpells.SPELL_ATTRIBUTES){
+        //     //     if(listOfSpells.SPELL_ATTRIBUTES.hasOwnProperty(spellAttribute)){
+        //     //         spellAttributes.push(Object.values(spellAttribute));
+        //     //     }
+        //     // }
+        //     spellAttributes.push(Object.values(listOfSpells.SPELL_ATTRIBUTES));
+        //
         //     console.log(spellAttributes);
         //
-        //     for (var attrib in spellAttributes) {
-        //         var attribToTest = attrib;
-        //         alexa.intended('SpellsIntent', {"Attribute":attribToTest, "Spell":"fireball"}, function (error, response) {
-        //             assert.equal(response.response.outputSpeech.ssml,'<speak> ' + spells.SPELLS['fireball'][attribToTest] + ' </speak>');
-        //
-        //         });
+        //     for (i=0;i<spellAttributes[0].length-3;i++) {
+        //         (function(attribute) {
+        //             if(attribute != "url" && attribute != "damage" && attribute != "healing"){
+        //                 console.log(listOfSpells.SPELLS['fireball'][attribute]);
+        //                 // alexa.intended('SpellsIntent', {"Attribute":attribute, "Spell":"fireball"}, function (error, response) {
+        //                 //     assert.equal(response.response.outputSpeech.ssml,'<speak> ' + listOfSpells.SPELLS['fireball'][attribute] + ' </speak>');
+        //                 // });
+        //             }
+        //         })(spellAttributes[0][i]);
         //     }
         //     done();
-        //
-        //
-        //     // for (var spell in listOfSpells.SPELLS){
-        //     //     if(listOfSpells.SPELLS.hasOwnProperty(spell)){
-        //     //         console.log(Object.keys(listOfSpells.SPELLS));
-        //     //     }
-        //         // alexa.intended('SpellsIntent', {"Attribute":"range", "Spell" : Object.keysIn(spells.SPELLS)}, function (error, response) {
-        //         //     assert.equal(response.response.outputSpeech.ssml,'<speak> ' + spells.SPELLS['fireball']['range'] + ' </speak>');
-        //         //     done();
-        //         // });
-        //
-        //     // done();
         // });
 
         // school

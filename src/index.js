@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa           = require('alexa-sdk');
-var APP_ID          = "amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee";
+var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
 var langEN          = languageStrings.en.translation;
@@ -117,8 +117,8 @@ var handlers = {
     'FeatsIntent': function() {
         var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
         var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
-        var thisFeat          = langEN.FEATS[requestedFeat];
-        var thisFeatAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
+        var thisFeat          = langEN.FEAT[requestedFeat];
+        var thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
