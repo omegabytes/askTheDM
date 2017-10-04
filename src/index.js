@@ -118,7 +118,7 @@ var handlers = {
         var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
         var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
         var thisFeat          = langEN.FEATS[requestedFeat];
-        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
+        var thisFeatAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
