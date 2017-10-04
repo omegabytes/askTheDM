@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa           = require('alexa-sdk');
-var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
+var APP_ID          = "amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee";
 var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
 var langEN          = languageStrings.en.translation;
@@ -115,22 +115,22 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttr = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);
-        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feats);
-        var thisFeat          = langEN.FEATS[requestedFeat];
-        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttr];
+        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
+        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
+        var thisFeat          = langEN.FEAT[requestedFeat];
+        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //user requests information on feats
-        if (thisFeat && thisFeatAttr) {
-            this.attributes['speechOutput'] = thisFeat[thisFeatAttr]; 
-        }else if(thisFeat && !thisFeatAttr){
+        if (thisFeat && thisFeatAttribute) {
+            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
+        }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feats.name, requestedFeat);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
