@@ -6,9 +6,10 @@ var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
 var langEN          = languageStrings.en.translation;
 
+// noinspection JSUnusedLocalSymbols
 exports.handler = function(event, context, callback) {
     var alexa       = Alexa.handler(event, context);
-    alexa.APP_ID    = APP_ID;
+    alexa.appId     = APP_ID;
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
@@ -16,47 +17,37 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'ConditionsIntent': function () {
-        var conditionSlot = this.event.request.intent.slots.Condition;
-        var conditionName = alexaLib.validateAndSetSlot(conditionSlot);
-        var conditions    = langEN.CONDITIONS;
-        var condition     = conditions[conditionName];
-
+        var requestedConditionName        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+        var condition                     = langEN.CONDITIONS[requestedConditionName];
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //user requests information on condition
         if (condition) {
             this.attributes['speechOutput'] = condition;
-        }else if (conditionName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(conditionSlot.name, conditionName);
+        }else if (requestedConditionName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'DiceIntent' : function () {
-        var numberOfDiceSlot = this.event.request.intent.slots.Quantity;
-        var diceSidesSlot    = this.event.request.intent.slots.Sides;
-        var modifierSlot     = this.event.request.intent.slots.Modifier;
-        var statusSlot       = this.event.request.intent.slots.Status;
-        var numberOfDice     = alexaLib.validateAndSetSlot(numberOfDiceSlot);
-        var diceSides        = alexaLib.validateAndSetSlot(diceSidesSlot);
-        var status           = alexaLib.validateAndSetSlot(statusSlot);
-        var modifier         = alexaLib.validateAndSetSlot(modifierSlot);
+        var numberOfDice     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
+        var modifier         = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
+        var diceSides        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
+        var status           = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Status);
         var firstRoll;
         var secondRoll;
         var result;
 
-        if(numberOfDice==null) numberOfDice = 1;
-        if(modifier==null) modifier = 0;
-
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        if((diceSides == null) || (numberOfDice == null) || (diceSides == "?") || (numberOfDice == "?") ||(modifier == "?")){
+        if((diceSides == null) || (diceSides == "?") || (numberOfDice == "?")){
             this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";
             this.emit(':ask', this.attributes['speechOutput']);
         }
@@ -93,31 +84,23 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'ExhaustionLevelIntent': function () {
-        var exhaustionSlot       = this.event.request.intent.slots.Level;
-        var exhaustionLevelInput = alexaLib.validateAndSetSlot(exhaustionSlot);
-        var exhaustionLevelList  = langEN.EXHAUSTION_LEVELS; 
-        var exhaustionLevel      = exhaustionLevelList[exhaustionLevelInput];
+        var requestedExhaustionLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Level);
+        var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        //user requests information on exhaustion levels
-        if (exhaustionLevel) {
+        if(exhaustionLevel){ //user requests information on exhaustion levels
             this.attributes['speechOutput'] = exhaustionLevel;
-
-        //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-        }else if (exhaustionLevelInput) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(exhaustionSlot.name, exhaustionLevelInput) + " exhaustion";
-        
-        // }else if (exhaustionLevelInput > 6){ //todo: refactor exhaustion levels, similar to how slotLevels work
-        //     this.attributes['speechOutput'] = "At " + exhaustionLevel + " your character is beyond dead. Anything beyond level 6 exhaustion is really exhausting.";
-        }else if (!exhaustionLevelInput) {
+        }else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
+        }else if (!requestedExhaustionLevel) {
             this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
         }
         else {
@@ -125,21 +108,17 @@ var handlers = {
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }
         else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'FeatsIntent': function() {
-        var featSlot          = this.event.request.intent.slots.Feats;
-        var featAttributeSlot = this.event.request.intent.slots.FeatsAttr;
-        var featAttrName      = alexaLib.validateAndSetSlot(featAttributeSlot);
-        var featName          = alexaLib.validateAndSetSlot(featSlot);
-        var featsList         = langEN.FEATS; 
-        var featsAttrList     = langEN.FEAT_ATTRIBUTES;
-        var thisFeat          = featsList[featName];
-        var thisFeatAttr      = featsAttrList[featAttrName];
+        var requestedFeatAttr = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);
+        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feats);
+        var thisFeat          = langEN.FEATS[requestedFeat];
+        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttr];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -150,14 +129,14 @@ var handlers = {
             this.attributes['speechOutput'] = thisFeat.description;
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
-        }else if (featName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(featSlot.name, featName);
+        }else if (requestedFeat) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feats.name, requestedFeat);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
@@ -168,44 +147,38 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput']);
     },
     'IndexIntent' : function(){
-        var indexSlot = this.event.request.intent.slots.Index;
-        var indexName = alexaLib.validateAndSetSlot(indexSlot);
-        var indexList = langEN.INDEX;
-        var index     = indexList[indexName];
+        var requestedIndexName  = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Index);
+        var index               = langEN.INDEX[requestedIndexName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if(index){
-            this.attributes['speechOutput'] = alexaLib.pageFind(index, indexName);
-        }else if (indexName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(indexSlot.name, indexName);
+            this.attributes['speechOutput'] = alexaLib.pageFind(index, requestedIndexName);
+        }else if (requestedIndexName) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Index.name, requestedIndexName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'ItemsIntent': function () {
-        var itemSlot            = this.event.request.intent.slots.Item;
-        var itemAttributeSlot   = this.event.request.intent.slots.ItemAttribute;
-        var itemName            = alexaLib.validateAndSetSlot(itemSlot);
-        var itemAttributeName   = alexaLib.validateAndSetSlot(itemAttributeSlot);
-        var itemList            = langEN.ITEMS;
-        var itemAttributeList   = langEN.ITEM_ATTRIBUTES;
-        var item                = itemList[itemName];
-        var itemAttribute       = itemAttributeList[itemAttributeName];
+        var requestedItem            = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Item);
+        var requestedItemAttribute   = alexaLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
+        var item                     = langEN.ITEMS[requestedItem];
+        var itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if(item && itemAttribute){
             if(!item[itemAttribute]){
                 this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
-                this.attributes['repromptSpeech'] = langEN.REPROMPT;
             } else {
                 this.attributes['speechOutput']  = item[itemAttribute];
-                this.attributes['repromptSpeech'] = langEN.REPROMPT;
             }
         }else if(item && !itemAttribute){
             if(item.itemType){
@@ -213,24 +186,21 @@ var handlers = {
             } else {
                 this.attributes['speechOutput'] = "It is a " + item.category;
             }
-            this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        }else if (itemName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(itemSlot.name,itemName);
+        }else if (requestedItem) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Item.name,requestedItem);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'SpellCastIntent': function () {
-        var spellSlot = this.event.request.intent.slots.Spell;
-        var spellName = alexaLib.validateAndSetSlot(spellSlot);
-        var spells = langEN.SPELLS;
-        var spell  = spells[spellName];
+        var spellName = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var spell  = langEN.SPELLS[spellName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -253,7 +223,7 @@ var handlers = {
 
         //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
         }else if (!spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         } 
@@ -265,136 +235,132 @@ var handlers = {
         }
     },
     'SpellDamageIntent': function(){
-        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
-        var spellSlot               = this.event.request.intent.slots.Spell;
-        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
-        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
-        var spells                  = langEN.SPELLS;
-        var levels                  = langEN.SLOT_LEVEL;
-        var spell                   = spells[spellName];
-        var level                   = levels[spellLevel];
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        var spell                   = langEN.SPELLS[requestedSpell];
+        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-        if(spell && typeof spell.damage === 'string')
+        if(spell && spell.damage===undefined){
+            this.attributes['speechOutput'] = "That spell does not do damage."
+        }else if(spell && typeof spell.damage === 'string')
         {
             this.attributes['speechOutput'] = spell.damage;
         }
         else
         {
-            if(spell && spell['slotLevel'] == 'cantrip')
+            if(spell && spell['slotLevel'] === 'cantrip')
             { //if the requested spell is a cantrip
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = "At player level " + level
-                                                + " the cantrip " + spellName
+                                                + " the cantrip " + requestedSpell
                                                 + " does " + dmg + " " + dmgType + ".";
-            }
-            else if(spell && level > 9)
-            {
+            }else if(spell && level > 9){
                 this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
-                                                + spellName + " is a spell, and is cast using spell slots.";
-            }
-            else
+                                                + requestedSpell + " is a spell, and is cast using spell slots.";
+            }else if (spell && !level){
+                this.attributes['speechOutput'] = "For damage amount, please include the slot or player level you wish to cast it at.";
+            }else if (!spell || !level) {
+                this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
+            }else
             { //if the requested spell is a normal spell
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = "A level " + level + ", "
-                                                + spellName + " does "
+                                                + requestedSpell + " does "
                                                 + dmg + " " + dmgType + ".";
             }
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " "
-                + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
 
     },
     'SpellHealIntent': function(){
-        var requestedLevelSlot      = this.event.request.intent.slots.SlotLevel;
-        var spellSlot               = this.event.request.intent.slots.Spell;
-        var spellName               = alexaLib.validateAndSetSlot(spellSlot);
-        var spellLevel              = alexaLib.validateAndSetSlot(requestedLevelSlot);
-        var levels                  = langEN.SLOT_LEVEL;
-        var spells                  = langEN.SPELLS;
-        var spell                   = spells[spellName];
-        var level                   = levels[spellLevel];
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        var spell                   = langEN.SPELLS[requestedSpell];
+        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
         
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        if(spell && typeof spell.healing === 'string')
-        { //add conditional to check if the healing is a string or array using typeof()
+        if(spell && spell.healing === undefined)
+        {
+            this.attributes['speechOutput'] = "That spell does not restore health.";
+        }else if(spell && typeof spell.healing === 'string') //add conditional to check if the healing is a string or array using typeof()
+        { 
             this.attributes['speechOutput'] = spell.healing;
+        }else if (spell && !level) //if the requested spell is provided but not the level
+        {
+            this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
+        }
+        else if(level && !spell) //if the level is provided but not the spell
+        {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }
         else
         {
-            if (spell.healing != null)
-            { //if the requested spell is healing spell
-                var heals = spell.healing.levels[level];
-                
-                if(spell && level > 9)
-                {
-                    this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
-                }
-                else
-                {
-                    this.attributes['speechOutput'] = "At level " + level
-                                                    + " " + spellName
-                                                    + " heals " + heals
-                                                    + " plus your spellcasting ability modifier.";
-                }
+            var heals = spell.healing.levels[level];
+            
+            if(spell && level > 9) //if the requested spell is cast using a slot above 9th
+            {
+                this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
             }
             else
             {
-                this.attributes['speechOutput'] = "That spell does not restore health.";
+                this.attributes['speechOutput'] = "At level " + level
+                                                + " " + requestedSpell
+                                                + " heals " + heals
+                                                + " plus your spellcasting ability modifier.";
             }
         }
 
         if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " "
-                + this.attributes['repromptSpeech']);
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
     'SpellsIntent': function () {
-        var spellSlot       = this.event.request.intent.slots.Spell;
-        var attributeSlot   = this.event.request.intent.slots.Attribute;
-        var spellName       = alexaLib.validateAndSetSlot(spellSlot);
-        var attributeName   = alexaLib.validateAndSetSlot(attributeSlot);
-        var spells          = langEN.SPELLS;
-        var spellAttributes = langEN.SPELL_ATTRIBUTES;
-        var spell           = spells[spellName];
-        var spellAttribute  = spellAttributes[attributeName];
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
+        var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
+        var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
-        //if the user asks for the attribute of a spell
-        if (spell && spellAttribute) {
-            var dmgType = spell.damage.type;
+        this.attributes['speechOutput'] = requestedSpellAttribute;
+
+        // //if the user asks for the attribute of a spell
+        if (spell && requestedSpellAttribute) {
             //if the attribute is damage and the requested spell does not have damage
-            if(spellAttribute=="damage" && spell[spellAttribute]==null) {
-                this.attributes['speechOutput'] = spellName + ' does not have damage.';
-            }else if(spellAttribute=="damage"){
-                this.attributes['speechOutput'] = spellName + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
-                //this.attributes['repromptSpeech'] = langEN.REPROMPT; doesnt work, need to work on it further
-            }
-            else{
+            if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") && spell[spellAttribute]===undefined) {
+                this.attributes['speechOutput'] = requestedSpell + ' does not have '+requestedSpellAttribute+'.';
+            }else if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") && typeof spellAttribute === String) {
+                this.attributes['speechOutput'] = spell[spellAttribute];
+            }else if(requestedSpellAttribute==="damage"){
+                var dmgType = spell.damage.type;
+                this.attributes['speechOutput'] = requestedSpell + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';
+            }else if(requestedSpellAttribute==="healing"){ //i think we need this, but im not 100% sure
+                this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";
+            }else{
                 this.attributes['speechOutput'] = spell[spellAttribute];
             }
-        }else if (spell && !spellAttribute) {
+        }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (spellName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(spellSlot.name, spellName);
+        }else if (requestedSpell) {
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+        if(this.attributes['continue']){
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }

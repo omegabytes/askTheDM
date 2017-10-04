@@ -454,7 +454,7 @@
   "antitoxin": {
     "cost": "50 Gold Piece",
     "weight": "None",
-    "category": "Adventure Gear",
+    "category": "Adventure Gear"
   },
   "crystal": {
     "cost": "10 Gold Piece",

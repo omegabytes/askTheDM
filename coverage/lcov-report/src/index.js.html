@@ -1,0 +1,1268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.75% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>58/209</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.83% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>37/149</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">31.58% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.75% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>58/209</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+var Alexa           = require('alexa-sdk');
+var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
+var languageStrings = require('./languageStrings');
+var alexaLib        = require('./alexaLib.js');
+var langEN          = languageStrings.en.translation;
+&nbsp;
+// noinspection JSUnusedLocalSymbols
+exports.handler = function(event, context, callback) {
+    var alexa       = Alexa.handler(event, context);
+    alexa.appId     = APP_ID;
+    alexa.resources = languageStrings;
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
+&nbsp;
+var handlers = {
+    'ConditionsIntent': function () {
+        var requestedConditionName        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+        var condition                     = langEN.CONDITIONS[requestedConditionName];
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+&nbsp;
+        //user requests information on condition
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (condition) {
+            this.attributes['speechOutput'] = condition;
+        }else <span class="cstat-no" title="statement not covered" >if (requestedConditionName) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'DiceIntent' : <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var numberOfDice     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; </span>//get the number of dice from the user, default 1 when not provided
+<span class="cstat-no" title="statement not covered" >        var modifier         = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; </span>//get the number to add to the roll from the user, default 0 when not provided
+<span class="cstat-no" title="statement not covered" >        var diceSides        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Sides);</span>
+<span class="cstat-no" title="statement not covered" >        var status           = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Status);</span>
+<span class="cstat-no" title="statement not covered" >        var firstRoll;</span>
+<span class="cstat-no" title="statement not covered" >        var secondRoll;</span>
+<span class="cstat-no" title="statement not covered" >        var result;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if((diceSides == null) || (diceSides == "?") || (numberOfDice == "?")){</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "I'm sorry I didn't quite catch that, please ask again";</span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput']);</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        diceSides = diceSides.match(/\d+/).join("");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (status == null) {</span>
+            // calculate the result of a normal roll
+<span class="cstat-no" title="statement not covered" >            result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "The result of the roll is " + result;</span>
+        }else <span class="cstat-no" title="statement not covered" >if(diceSides==20){</span>
+            // calculate the result of a roll with advantage/disadvantage
+<span class="cstat-no" title="statement not covered" >            firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);</span>
+<span class="cstat-no" title="statement not covered" >            secondRoll = alexaLib.rollDice(numberOfDice,diceSides);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (status === "advantage") {</span>
+<span class="cstat-no" title="statement not covered" >                result = Math.max(firstRoll,secondRoll) + Number(modifier);</span>
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (status === "disadvantage") {</span>
+<span class="cstat-no" title="statement not covered" >                result = Math.min(firstRoll,secondRoll) + Number(modifier);</span>
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "You roll with "</span>
+                                            + status 
+                                            + ". Your first roll is " 
+                                            + firstRoll
+                                            + ", and your second roll is "
+                                            + secondRoll
+                                            + ". The result of the roll with modifiers is "
+                                            + result;
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "You can only have advantage or disadvantage on d 20 rolls"</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }
+        else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'ExhaustionLevelIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var requestedExhaustionLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Level);</span>
+<span class="cstat-no" title="statement not covered" >        var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(exhaustionLevel){ //user requests information on exhaustion levels</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = exhaustionLevel;</span>
+        }else <span class="cstat-no" title="statement not covered" >if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";</span>
+        }else <span class="cstat-no" title="statement not covered" >if (!requestedExhaustionLevel) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }
+        else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'FeatsIntent': <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        var requestedFeatAttr = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);</span>
+<span class="cstat-no" title="statement not covered" >        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feats);</span>
+<span class="cstat-no" title="statement not covered" >        var thisFeat          = langEN.FEATS[requestedFeat];</span>
+<span class="cstat-no" title="statement not covered" >        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttr];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+        //user requests information on feats
+<span class="cstat-no" title="statement not covered" >        if (thisFeat &amp;&amp; thisFeatAttr) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = thisFeat[thisFeatAttr]; </span>
+        }else <span class="cstat-no" title="statement not covered" >if(thisFeat &amp;&amp; !thisFeatAttr){</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = thisFeat.description;</span>
+&nbsp;
+        //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
+        }else <span class="cstat-no" title="statement not covered" >if (requestedFeat) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feats.name, requestedFeat);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'IncompleteIntent' : <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.attributes['continue']     = true;</span>
+<span class="cstat-no" title="statement not covered" >        this.attributes['speechOutput'] = langEN.INCOMPLETE_REQUEST;</span>
+<span class="cstat-no" title="statement not covered" >        this.emit(':ask', this.attributes['speechOutput']);</span>
+    },
+    'IndexIntent' : <span class="fstat-no" title="function not covered" >function(){</span>
+<span class="cstat-no" title="statement not covered" >        var requestedIndexName  = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Index);</span>
+<span class="cstat-no" title="statement not covered" >        var index               = langEN.INDEX[requestedIndexName];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(index){</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.pageFind(index, requestedIndexName);</span>
+        }else <span class="cstat-no" title="statement not covered" >if (requestedIndexName) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Index.name, requestedIndexName);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'ItemsIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var requestedItem            = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Item);</span>
+<span class="cstat-no" title="statement not covered" >        var requestedItemAttribute   = alexaLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);</span>
+<span class="cstat-no" title="statement not covered" >        var item                     = langEN.ITEMS[requestedItem];</span>
+<span class="cstat-no" title="statement not covered" >        var itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(item &amp;&amp; itemAttribute){</span>
+<span class="cstat-no" title="statement not covered" >            if(!item[itemAttribute]){</span>
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput']  = item[itemAttribute];</span>
+            }
+        }else <span class="cstat-no" title="statement not covered" >if(item &amp;&amp; !itemAttribute){</span>
+<span class="cstat-no" title="statement not covered" >            if(item.itemType){</span>
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "It is a " + item.itemType;</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "It is a " + item.category;</span>
+            }
+        }else <span class="cstat-no" title="statement not covered" >if (requestedItem) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Item.name,requestedItem);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'SpellCastIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var spellName = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);</span>
+<span class="cstat-no" title="statement not covered" >        var spell  = langEN.SPELLS[spellName];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+        //user requests information on casting spell
+<span class="cstat-no" title="statement not covered" >        if (spell) {</span>
+<span class="cstat-no" title="statement not covered" >            if(spell.slotLevel === "cantrip") {</span>
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = spellName + " is a "</span>
+                    + spell.school + " cantrip. To cast, you need the following: "
+                    + spell.components + ". The spell duration is "
+                    + spell.duration + " and has a range of "
+                    + spell.range;
+            } else {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = spellName + " is a level "</span>
+                    + spell.slotLevel + " "
+                    + spell.school + " spell. To cast, you need the following: "
+                    + spell.components + ". The spell duration is "
+                    + spell.duration + " and has a range of "
+                    + spell.range;
+            }
+&nbsp;
+        //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+        }else <span class="cstat-no" title="statement not covered" >if (!spell) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        } 
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'SpellDamageIntent': function(){
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        var spell                   = langEN.SPELLS[requestedSpell];
+        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+&nbsp;
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+        
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(spell &amp;&amp; spell.damage===undefined){
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "That spell does not do damage."</span>
+        }else <span class="missing-if-branch" title="if path not taken" >I</span>if(spell &amp;&amp; typeof spell.damage === 'string')
+        {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = spell.damage;</span>
+        }
+        else
+        {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if(spell &amp;&amp; spell['slotLevel'] === 'cantrip')
+            { //if the requested spell is a cantrip
+<span class="cstat-no" title="statement not covered" >                var dmg = spell.damage.playerLevel[level]; </span>//stores the the damage of the spell at requested level
+<span class="cstat-no" title="statement not covered" >                var dmgType = spell.damage.type;</span>
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "At player level " + level</span>
+                                                + " the cantrip " + requestedSpell
+                                                + " does " + dmg + " " + dmgType + ".";
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if(spell &amp;&amp; level &gt; 9){
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "</span>
+                                                + requestedSpell + " is a spell, and is cast using spell slots.";
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if (spell &amp;&amp; !level){
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "For damage amount, please include the slot or player level you wish to cast it at.";</span>
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if (!spell || !level) {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";</span>
+            }else
+            { //if the requested spell is a normal spell
+                var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+                var dmgType = spell.damage.type;
+                this.attributes['speechOutput'] = "A level " + level + ", "
+                                                + requestedSpell + " does "
+                                                + dmg + " " + dmgType + ".";
+            }
+        }
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+&nbsp;
+    },
+    'SpellHealIntent': <span class="fstat-no" title="function not covered" >function(){</span>
+<span class="cstat-no" title="statement not covered" >        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);</span>
+<span class="cstat-no" title="statement not covered" >        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);</span>
+<span class="cstat-no" title="statement not covered" >        var spell                   = langEN.SPELLS[requestedSpell];</span>
+<span class="cstat-no" title="statement not covered" >        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];</span>
+        
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech'] = langEN.REPROMPT;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(spell &amp;&amp; spell.healing === undefined)</span>
+        {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = "That spell does not restore health.";</span>
+        }else <span class="cstat-no" title="statement not covered" >if(spell &amp;&amp; typeof spell.healing === 'string') //add conditional to check if the healing is a string or array using typeof()</span>
+        { 
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = spell.healing;</span>
+        }else <span class="cstat-no" title="statement not covered" >if (spell &amp;&amp; !level) //if the requested spell is provided but not the level</span>
+        {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";</span>
+        }
+        else <span class="cstat-no" title="statement not covered" >if(level &amp;&amp; !spell) //if the level is provided but not the spell</span>
+        {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);</span>
+        }
+        else
+        {
+<span class="cstat-no" title="statement not covered" >            var heals = spell.healing.levels[level];</span>
+            
+<span class="cstat-no" title="statement not covered" >            if(spell &amp;&amp; level &gt; 9) //if the requested spell is cast using a slot above 9th</span>
+            {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";</span>
+            }
+            else
+            {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = "At level " + level</span>
+                                                + " " + requestedSpell
+                                                + " heals " + heals
+                                                + " plus your spellcasting ability modifier.";
+            }
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.attributes['continue']){ </span>
+<span class="cstat-no" title="statement not covered" >            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'SpellsIntent': function () {
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
+        var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
+        var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
+&nbsp;
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+&nbsp;
+        this.attributes['speechOutput'] = requestedSpellAttribute;
+&nbsp;
+        // //if the user asks for the attribute of a spell
+        if (spell &amp;&amp; requestedSpellAttribute) {
+            //if the attribute is damage and the requested spell does not have damage
+            <span class="missing-if-branch" title="if path not taken" >I</span>if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >spell[spellAttribute]===undefined)</span> {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = requestedSpell + ' does not have '+requestedSpellAttribute+'.';</span>
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if((requestedSpellAttribute==="damage" || requestedSpellAttribute==="healing") &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >typeof spellAttribute === String)</span> {
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = spell[spellAttribute];</span>
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if(requestedSpellAttribute==="damage"){
+<span class="cstat-no" title="statement not covered" >                var dmgType = spell.damage.type;</span>
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] = requestedSpell + ' does ' + dmgType + ' . For damage amount, please include the slot or player level you wish to cast it at.';</span>
+            }else <span class="missing-if-branch" title="if path not taken" >I</span>if(requestedSpellAttribute==="healing"){ //i think we need this, but im not 100% sure
+<span class="cstat-no" title="statement not covered" >                this.attributes['speechOutput'] =  "For healing amount, please include the spell slot level you wish to cast it at.";</span>
+            }else{
+                this.attributes['speechOutput'] = spell[spellAttribute];
+            }
+        }else <span class="missing-if-branch" title="else path not taken" >E</span>if(spell &amp;&amp; !spellAttribute) {
+            this.attributes['speechOutput'] = spell.shortDescription;
+        }else <span class="cstat-no" title="statement not covered" >if (requestedSpell) {</span>
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >            this.attributes['speechOutput'] = langEN.UNHANDLED;</span>
+        }
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(this.attributes['continue']){
+            this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+        }else{
+<span class="cstat-no" title="statement not covered" >            this.emit(':tell', this.attributes['speechOutput']);</span>
+        }
+    },
+    'Unhandled': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.attributes['continue']         = true;</span>
+<span class="cstat-no" title="statement not covered" >        this.attributes['speechOutput']     = langEN.UNHANDLED;</span>
+<span class="cstat-no" title="statement not covered" >        this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;</span>
+<span class="cstat-no" title="statement not covered" >        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);</span>
+    },
+    //Required Amazon Intents 
+    'LaunchRequest': function () {
+        // Alexa, ask [my-skill-invocation-name] to (do something)...
+        // If the user either does not reply to the welcome message or says something that is not
+        // understood, they will be prompted again with this text.
+        this.attributes['continue']         = true;
+        this.attributes['speechOutput']     = langEN.WELCOME_MESSAGE;
+        this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+    },
+    'AMAZON.HelpIntent': function () {
+        this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
+        this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+    },
+    'AMAZON.RepeatIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);</span>
+    },
+    'AMAZON.StopIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.emit('SessionEndedRequest');</span>
+    },
+    'AMAZON.CancelIntent': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.emit('SessionEndedRequest');</span>
+    },
+    'SessionEndedRequest':<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.emit(':tell', langEN.STOP_MESSAGE);</span>
+    }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Oct 03 2017 13:41:29 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "skill-ask-the-dm",
+  "version": "2.0.0",
+  "description": "Get basic info about DND spells, items, and rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "cover": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omegabytes/askTheDM.git"
+  },
+  "keywords": [
+    "Alexa",
+    "skill",
+    "DND",
+    "D&D",
+    "Dungeons and Dragons",
+    "Dungeon Master"
+  ],
+  "author": "Alex Gaesser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omegabytes/askTheDM.git/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "bespoken-tools": "^1.1.0",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.8"
+  }
+}

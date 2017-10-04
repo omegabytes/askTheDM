@@ -474,7 +474,7 @@ module.exports = {
   "antitoxin": {
     "cost"          : "50 gold",
     "weight"        : "None",
-    "category"      : "Adventure Gear",
+    "category"      : "Adventure Gear"
   },
   "crystal": {
     "cost"          : "10 gold",
