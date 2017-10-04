@@ -1,10 +1,10 @@
 module.exports = {
-	"FEAT_ATTRIBUTES"	:{
+	"FEAT_ATTRIBUTE"	:{
 		"description"	: "description",
 		"benefits"		: "benefits",
 		"prerequisite"	: "prereq"
 	},
-	"FEATS" : {
+	"FEAT" : {
 		"alert": {
 			"description"	: "Always on the lookout for danger. You aren't surprised by other creatures, and they are not able to take the upper hand by being hidden.",
 			"benefits"		: "You gain +5 to initiative, can no longer be surprised while conscious, and other creatures don't gain advantage on attack rolls against you as a result of being hidden from you." 

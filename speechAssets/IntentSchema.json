@@ -42,11 +42,11 @@
     {
       "slots": [
         {
-          "name": "Feats",
+          "name": "Feat",
           "type": "LIST_OF_FEATS"
         },
         {
-          "name": "FeatsAttr",
+          "name": "FeatAttribute",
           "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],

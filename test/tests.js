@@ -74,9 +74,35 @@ describe('ConditionsIntent', function (done) {
 
 //todo: add DiceIntent
 
-//todo: add ExhaustionLevelIntent
+// ExhaustionLevelIntent
+describe('ExhaustionLevelIntent', function(done){
+    it('level 3 exhaustion', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('ExhaustionLevelIntent', {"Level":"3"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> Creature has disadvantage on attack rolls and saving throws.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+});
 
-//todo: add FeatsIntent
+// FeatIntent
+describe('FeatIntent', function(done){
+    //description of feat
+    it('description of charger', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+    //benefit of feat
+    it('benefits of inspiring leader', function(done){
+        alexa.launched(function(error,response))
+    }
+    //prerequesite of feat
+})
 
 //todo: add IncompleteIntent
 

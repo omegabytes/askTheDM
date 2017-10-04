@@ -115,17 +115,17 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttr = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);
+        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);
         var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feats);
         var thisFeat          = langEN.FEATS[requestedFeat];
-        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttr];
+        var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //user requests information on feats
-        if (thisFeat && thisFeatAttr) {
-            this.attributes['speechOutput'] = thisFeat[thisFeatAttr]; 
-        }else if(thisFeat && !thisFeatAttr){
+        if (thisFeat && thisFeatAttribute) {
+            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
+        }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
