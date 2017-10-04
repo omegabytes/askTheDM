@@ -115,8 +115,8 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttr);
-        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feats);
+        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
+        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
         var thisFeat          = langEN.FEATS[requestedFeat];
         var thisFeatAttr      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
@@ -130,7 +130,7 @@ var handlers = {
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feats.name, requestedFeat);
+            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }

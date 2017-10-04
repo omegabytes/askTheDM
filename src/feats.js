@@ -1,5 +1,5 @@
 module.exports = {
-	"FEAT_ATTRIBUTE"	:{
+	"FEAT_ATTRIBUTES"	:{
 		"description"	: "description",
 		"benefits"		: "benefits",
 		"prerequisite"	: "prereq"
