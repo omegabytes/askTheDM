@@ -1,6 +1,8 @@
 var bst     = require('bespoken-tools');
 var assert  = require('assert');
 var listOfSpells  = require('../src/spells.js');
+var alex_ID = 'amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690';
+var josh_Id ='';  //there's a way around this, I'll look it up later
 
 var server  = null;
 var alexa   = null;
@@ -10,7 +12,8 @@ beforeEach(function (done) {
     server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         './speechAssets/IntentSchema.json',
-        './speechAssets/SampleUtterances.txt','amzn1.ask.skill.811db653-f5bc-4802-b918-7d28808f1cee');
+        './speechAssets/SampleUtterances.txt',
+        alex_ID);
 
     server.start(function () {
         alexa.start(function (error) {
@@ -87,22 +90,22 @@ describe('ExhaustionLevelIntent', function(done){
 });
 
 // FeatIntent
-describe('FeatIntent', function(done){
-    //description of feat
-    it('description of charger', function(done){
-        alexa.launched(function(error,response){
-            alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
-                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
-                done();
-            });
-        });
-    });
-    //benefit of feat
-    it('benefits of inspiring leader', function(done){
-        alexa.launched(function(error,response))
-    }
-    //prerequesite of feat
-})
+// describe('FeatIntent', function(done){
+//     //description of feat
+//     it('description of charger', function(done){
+//         alexa.launched(function(error,response){
+//             alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
+//                 assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+//                 done();
+//             });
+//         });
+//     });
+//     //benefit of feat
+//     // it('benefits of inspiring leader', function(done){
+//     //     alexa.launched(function(error,response))
+//     // }
+//     //prerequesite of feat
+// })
 
 //todo: add IncompleteIntent
 
@@ -261,37 +264,37 @@ describe('One-shot mode', function (done) {
         // long description
 
         // range
-        it('range: fireball', function (done) {
-            var spells = [];
-            var spellAttributes = [];
-
-            for (var spell in listOfSpells.SPELLS) {
-                if(listOfSpells.SPELLS.hasOwnProperty(spell)){
-                    spells.push(spell);
-                }
-            }
-
-            // for (var spellAttribute in listOfSpells.SPELL_ATTRIBUTES){
-            //     if(listOfSpells.SPELL_ATTRIBUTES.hasOwnProperty(spellAttribute)){
-            //         spellAttributes.push(Object.values(spellAttribute));
-            //     }
-            // }
-            spellAttributes.push(Object.values(listOfSpells.SPELL_ATTRIBUTES));
-
-            console.log(spellAttributes);
-
-            for (i=0;i<spellAttributes[0].length-3;i++) {
-                (function(attribute) {
-                    if(attribute != "url" && attribute != "damage" && attribute != "healing"){
-                        console.log(listOfSpells.SPELLS['fireball'][attribute]);
-                        // alexa.intended('SpellsIntent', {"Attribute":attribute, "Spell":"fireball"}, function (error, response) {
-                        //     assert.equal(response.response.outputSpeech.ssml,'<speak> ' + listOfSpells.SPELLS['fireball'][attribute] + ' </speak>');
-                        // });
-                    }
-                })(spellAttributes[0][i]);
-            }
-            done();
-        });
+        // it('range: fireball', function (done) {
+        //     var spells = [];
+        //     var spellAttributes = [];
+        //
+        //     for (var spell in listOfSpells.SPELLS) {
+        //         if(listOfSpells.SPELLS.hasOwnProperty(spell)){
+        //             spells.push(spell);
+        //         }
+        //     }
+        //
+        //     // for (var spellAttribute in listOfSpells.SPELL_ATTRIBUTES){
+        //     //     if(listOfSpells.SPELL_ATTRIBUTES.hasOwnProperty(spellAttribute)){
+        //     //         spellAttributes.push(Object.values(spellAttribute));
+        //     //     }
+        //     // }
+        //     spellAttributes.push(Object.values(listOfSpells.SPELL_ATTRIBUTES));
+        //
+        //     console.log(spellAttributes);
+        //
+        //     for (i=0;i<spellAttributes[0].length-3;i++) {
+        //         (function(attribute) {
+        //             if(attribute != "url" && attribute != "damage" && attribute != "healing"){
+        //                 console.log(listOfSpells.SPELLS['fireball'][attribute]);
+        //                 // alexa.intended('SpellsIntent', {"Attribute":attribute, "Spell":"fireball"}, function (error, response) {
+        //                 //     assert.equal(response.response.outputSpeech.ssml,'<speak> ' + listOfSpells.SPELLS['fireball'][attribute] + ' </speak>');
+        //                 // });
+        //             }
+        //         })(spellAttributes[0][i]);
+        //     }
+        //     done();
+        // });
 
         // school
 
