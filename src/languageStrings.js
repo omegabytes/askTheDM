@@ -13,7 +13,7 @@ module.exports = {
             "CONDITIONS" :                                  conditions.CONDITIONS,
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEAT" :                                        feats.FEAT,
-            "FEAT_ATTRIBUTES" :                              feats.FEAT_ATTRIBUTES,
+            "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
             "INDEX" :                                       indexInfo.INDEX,
             "ITEMS" :                                       items.ITEMS,
             "ITEM_ATTRIBUTES" :                             items.ITEM_ATTRIBUTES,
