@@ -184,104 +184,104 @@ ExhaustionLevelIntent I forgot how {Level} level exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {Level} level exhaustion affects a character
 ExhaustionLevelIntent I forgot how {Level} level exhaustion affects someone
 
-FeatsIntent what does {Feats} do
-FeatsIntent what does {Feats} affect
-FeatsIntent what does {Feats} mean
-FeatsIntent what does {FeatsAttr} do
-FeatsIntent what does {FeatsAttr} affect
-FeatsIntent what does {FeatsAttr} mean
-FeatsIntent what does {FeatsAttr} mean {Feats}
-FeatsIntent what is {Feats}
-FeatsIntent what is {FeatsAttr} of {Feats}
-FeatsIntent whats {Feats} do
-FeatsIntent whats {Feats} affect
-FeatsIntent whats {Feats} mean
-FeatsIntent whats {FeatsAttr} mean
-FeatsIntent whats {Feats} feat
-FeatsIntent what does the {Feats} do
-FeatsIntent what does the {Feats} affect
-FeatsIntent what does the {Feats} mean
-FeatsIntent what does the {FeatsAttr} affect
-FeatsIntent what does the {FeatsAttr} mean
-FeatsIntent what does the {FeatsAttr} mean {Feats}
-FeatsIntent what does the {FeatsAttr} of {Feats}
-FeatsIntent lookup {Feats} feat
-FeatsIntent lookup {FeatsAttr} of {Feats}
-FeatsIntent tell me about {Feats}
-FeatsIntent tell me about {FeatsAttr} of {Feats}
-FeatsIntent I forgot what {Feats} does
-FeatsIntent I forgot what {Feats} does to me
-FeatsIntent I forgot what {Feats} does to us
-FeatsIntent I forgot what {Feats} does to someone
-FeatsIntent I forgot what {Feats} does to a player
-FeatsIntent I forgot what {Feats} means
-FeatsIntent I forgot what {FeatsAttr} of {Feats} does
-FeatsIntent get information on {Feats}
-FeatsIntent get information on {FeatsAttr} of {Feats}
-FeatsIntent how does {Feats} work
-FeatsIntent how does {Feats} affect me
-FeatsIntent how does {Feats} affect us
-FeatsIntent how does {Feats} affect someone
-FeatsIntent how does {Feats} affect a player
-FeatsIntent how does {FeatsAttr} of {Feats} work
-FeatsIntent get info on {Feats}
-FeatsIntent get info on {FeatsAttr} of {Feats}
-FeatsIntent about {Feats}
-FeatsIntent about {FeatsAttr} of {Feats}
-FeatsIntent about {FeatsAttr} of {FeatsAttr}
-FeatsIntent get the {Feats} feat
-FeatsIntent get the {FeatsAttr} of {Feats}
-FeatsIntent to get info on {Feats}
-FeatsIntent to get info on {Feats} feat
-FeatsIntent to get info on the {Feats} feat
-FeatsIntent to get info on {FeatsAttr} of {Feats}
-FeatsIntent to get information on {Feats}
-FeatsIntent to get information on {Feats} feat
-FeatsIntent to get information on {FeatsAttr} of {Feats}
-FeatsIntent tell me what {Feats} does
-FeatsIntent tell me what {Feats} does to me
-FeatsIntent tell me what {Feats} does to us
-FeatsIntent tell me what {Feats} does to someone
-FeatsIntent tell me what {Feats} does to a player
-FeatsIntent tell me what {Feats} affects
-FeatsIntent tell me what {Feats} means
-FeatsIntent tell me what {Feats} is
-FeatsIntent tell me what the {Feats} does
-FeatsIntent tell me what the {Feats} does to me
-FeatsIntent tell me what the {Feats} does to us
-FeatsIntent tell me what the {Feats} does to someone
-FeatsIntent tell me what the {Feats} does to a player
-FeatsIntent tell me what the {Feats} means
-FeatsIntent tell me what the {FeatsAttr} of {Feats} does
-FeatsIntent tell me how {Feats} works
-FeatsIntent tell me how {Feats} affect me
-FeatsIntent tell me how {Feats} affect us
-FeatsIntent tell me how {Feats} affect someone
-FeatsIntent tell me how {Feats} affect a player
-FeatsIntent tell us whats {Feats}
-FeatsIntent tell us whats {Feats} do
-FeatsIntent tell us whats {Feats} mean
-FeatsIntent tell us whats {Feats} feat
-FeatsIntent tell us whats {FeatsAttr} of {Feats}
-FeatsIntent tell us what is {Feats}
-FeatsIntent tell us what the {Feats} feat
-FeatsIntent tell us what the {FeatsAttr} of {Feats}
-FeatsIntent tell us how {Feats} works
-FeatsIntent tell us how {Feats} affect me
-FeatsIntent tell us how {Feats} affect us
-FeatsIntent tell us how {Feats} affect someone
-FeatsIntent tell us how {Feats} affect a player
-FeatsIntent I forgot what the {Feats} feat does
-FeatsIntent I forgot what the {Feats} feat does to me
-FeatsIntent I forgot what the {Feats} feat does to us
-FeatsIntent I forgot what the {Feats} feat does to someone
-FeatsIntent I forgot what the {Feats} feat does to a player
-FeatsIntent I forgot what the {Feats} feat is
-FeatsIntent I forgot what the {FeatsAttr} of {Feats} is
-FeatsIntent what is the {Feats} feat
-FeatsIntent what is the {FeatsAttr} of {Feats}
-FeatsIntent for {Feats}
-FeatsIntent for {FeatsAttr} of {Feats}
+FeatsIntent what does {Feat} do
+FeatsIntent what does {Feat} affect
+FeatsIntent what does {Feat} mean
+FeatsIntent what does {FeatsAttribute} do
+FeatsIntent what does {FeatsAttribute} affect
+FeatsIntent what does {FeatsAttribute} mean
+FeatsIntent what does {FeatsAttribute} mean {Feat}
+FeatsIntent what is {Feat}
+FeatsIntent what is {FeatsAttribute} of {Feat}
+FeatsIntent whats {Feat} do
+FeatsIntent whats {Feat} affect
+FeatsIntent whats {Feat} mean
+FeatsIntent whats {FeatsAttribute} mean
+FeatsIntent whats {Feat} feat
+FeatsIntent what does the {Feat} do
+FeatsIntent what does the {Feat} affect
+FeatsIntent what does the {Feat} mean
+FeatsIntent what does the {FeatsAttribute} affect
+FeatsIntent what does the {FeatsAttribute} mean
+FeatsIntent what does the {FeatsAttribute} mean {Feat}
+FeatsIntent what does the {FeatsAttribute} of {Feat}
+FeatsIntent lookup {Feat} feat
+FeatsIntent lookup {FeatsAttribute} of {Feat}
+FeatsIntent tell me about {Feat}
+FeatsIntent tell me about {FeatsAttribute} of {Feat}
+FeatsIntent I forgot what {Feat} does
+FeatsIntent I forgot what {Feat} does to me
+FeatsIntent I forgot what {Feat} does to us
+FeatsIntent I forgot what {Feat} does to someone
+FeatsIntent I forgot what {Feat} does to a player
+FeatsIntent I forgot what {Feat} means
+FeatsIntent I forgot what {FeatsAttribute} of {Feat} does
+FeatsIntent get information on {Feat}
+FeatsIntent get information on {FeatsAttribute} of {Feat}
+FeatsIntent how does {Feat} work
+FeatsIntent how does {Feat} affect me
+FeatsIntent how does {Feat} affect us
+FeatsIntent how does {Feat} affect someone
+FeatsIntent how does {Feat} affect a player
+FeatsIntent how does {FeatsAttribute} of {Feat} work
+FeatsIntent get info on {Feat}
+FeatsIntent get info on {FeatsAttribute} of {Feat}
+FeatsIntent about {Feat}
+FeatsIntent about {FeatsAttribute} of {Feat}
+FeatsIntent about {FeatsAttribute} of {FeatsAttribute}
+FeatsIntent get the {Feat} feat
+FeatsIntent get the {FeatsAttribute} of {Feat}
+FeatsIntent to get info on {Feat}
+FeatsIntent to get info on {Feat} feat
+FeatsIntent to get info on the {Feat} feat
+FeatsIntent to get info on {FeatsAttribute} of {Feat}
+FeatsIntent to get information on {Feat}
+FeatsIntent to get information on {Feat} feat
+FeatsIntent to get information on {FeatsAttribute} of {Feat}
+FeatsIntent tell me what {Feat} does
+FeatsIntent tell me what {Feat} does to me
+FeatsIntent tell me what {Feat} does to us
+FeatsIntent tell me what {Feat} does to someone
+FeatsIntent tell me what {Feat} does to a player
+FeatsIntent tell me what {Feat} affects
+FeatsIntent tell me what {Feat} means
+FeatsIntent tell me what {Feat} is
+FeatsIntent tell me what the {Feat} does
+FeatsIntent tell me what the {Feat} does to me
+FeatsIntent tell me what the {Feat} does to us
+FeatsIntent tell me what the {Feat} does to someone
+FeatsIntent tell me what the {Feat} does to a player
+FeatsIntent tell me what the {Feat} means
+FeatsIntent tell me what the {FeatsAttribute} of {Feat} does
+FeatsIntent tell me how {Feat} works
+FeatsIntent tell me how {Feat} affect me
+FeatsIntent tell me how {Feat} affect us
+FeatsIntent tell me how {Feat} affect someone
+FeatsIntent tell me how {Feat} affect a player
+FeatsIntent tell us whats {Feat}
+FeatsIntent tell us whats {Feat} do
+FeatsIntent tell us whats {Feat} mean
+FeatsIntent tell us whats {Feat} feat
+FeatsIntent tell us whats {FeatsAttribute} of {Feat}
+FeatsIntent tell us what is {Feat}
+FeatsIntent tell us what the {Feat} feat
+FeatsIntent tell us what the {FeatsAttribute} of {Feat}
+FeatsIntent tell us how {Feat} works
+FeatsIntent tell us how {Feat} affect me
+FeatsIntent tell us how {Feat} affect us
+FeatsIntent tell us how {Feat} affect someone
+FeatsIntent tell us how {Feat} affect a player
+FeatsIntent I forgot what the {Feat} feat does
+FeatsIntent I forgot what the {Feat} feat does to me
+FeatsIntent I forgot what the {Feat} feat does to us
+FeatsIntent I forgot what the {Feat} feat does to someone
+FeatsIntent I forgot what the {Feat} feat does to a player
+FeatsIntent I forgot what the {Feat} feat is
+FeatsIntent I forgot what the {FeatsAttribute} of {Feat} is
+FeatsIntent what is the {Feat} feat
+FeatsIntent what is the {FeatsAttribute} of {Feat}
+FeatsIntent for {Feat}
+FeatsIntent for {FeatsAttribute} of {Feat}
 
 IncompleteIntent about
 IncompleteIntent about being
