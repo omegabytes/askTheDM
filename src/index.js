@@ -115,9 +115,9 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatsAttribute);
-        var requestedFeat     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
-        var thisFeat          = langEN.FEATS[requestedFeat];
+        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
+        var requestedFeat          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
+        var thisFeat               = langEN.FEAT[requestedFeat];
         var thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;

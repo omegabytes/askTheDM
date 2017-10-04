@@ -46,7 +46,7 @@
           "type": "LIST_OF_FEATS"
         },
         {
-          "name": "FeatsAttribute",
+          "name": "FeatAttribute",
           "type": "LIST_OF_FEAT_ATTRIBUTES"
         }
       ],
