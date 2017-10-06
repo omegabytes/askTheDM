@@ -90,22 +90,22 @@ describe('ExhaustionLevelIntent', function(done){
 });
 
 // FeatIntent
-// describe('FeatIntent', function(done){
-//     //description of feat
-//     it('description of charger', function(done){
-//         alexa.launched(function(error,response){
-//             alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
-//                 assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
-//                 done();
-//             });
-//         });
-//     });
-//     //benefit of feat
-//     // it('benefits of inspiring leader', function(done){
-//     //     alexa.launched(function(error,response))
-//     // }
-//     //prerequesite of feat
-// })
+describe('FeatIntent', function(done){
+    //description of feat
+    it('description of charger', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent', {"FeatAttribute":"description", "Feat":"charger"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+    //benefit of feat
+    // it('benefits of inspiring leader', function(done){
+    //     alexa.launched(function(error,response))
+    // }
+    //prerequesite of feat
+});
 
 //todo: add IncompleteIntent
 
