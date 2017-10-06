@@ -3,6 +3,8 @@ node_js:
 - "stable"
 notifications:
   email: "false"
+  slack: pioneerproject:95s8vJKzVazf21It71AljFiV
+    on_failure: always
 branches:
   only:
     - "master"
