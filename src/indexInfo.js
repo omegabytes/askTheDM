@@ -1,3 +1,5 @@
+//gently modified from https://github.com/copperdogma/dnd-phb-5e-index for use with Alexa
+
 module.exports = {
   "INDEX" :{
     "0 hit points": {
