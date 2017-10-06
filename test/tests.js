@@ -101,10 +101,23 @@ describe('FeatIntent', function(done){
         });
     });
     //benefit of feat
-    // it('benefits of inspiring leader', function(done){
-    //     alexa.launched(function(error,response))
-    // }
-    //prerequesite of feat
+    it('benefits of actor', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent', {"FeatAttribute":"benefits", "Feat":"actor"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> Increase your Charisma score by 1 to a maximum of 20. Gain advantage on Charisma(Deception) and Charisma(Performance) checks when trying to pass yourself off as a different person. You can also mimic the speech of another person or the sounds made by other creatures, you must have heard the person or creature for at least 1 minute.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+    //prerequisite of feat
+    it('prerequisite of inspiring leader', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent',{"FeatAttribute":"prerequisite","Feat":"inspiring leader"}, function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> Charisma 13 or higher.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
 });
 
 //todo: add IncompleteIntent

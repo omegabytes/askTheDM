@@ -12,7 +12,7 @@ module.exports = {
             "SPELL_ATTRIBUTES" :                            spells.SPELL_ATTRIBUTES,
             "CONDITIONS" :                                  conditions.CONDITIONS,
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
-            "FEAT" :                                        feats.FEAT,
+            "FEATS" :                                       feats.FEATS,
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
             "INDEX" :                                       indexInfo.INDEX,
             "ITEMS" :                                       items.ITEMS,
