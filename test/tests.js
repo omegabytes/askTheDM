@@ -95,7 +95,7 @@ describe('FeatsIntent', function(done){
     it('description of charger', function(done){
         alexa.launched(function(error,response){
             alexa.intended('FeatsIntent', {"FeatAttribute":"description", "Feat":"charger"},function(error,response){
-                assert.equal(response.response.outputSpeech.ssml, '<speak> hen you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
                 done();
             });
         });
