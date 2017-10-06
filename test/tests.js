@@ -90,35 +90,22 @@ describe('ExhaustionLevelIntent', function(done){
 });
 
 // FeatIntent
-describe('FeatIntent', function(done){
-    //description of feat
-    it('description of charger', function(done){
-        alexa.launched(function(error,response){
-            alexa.intended('FeatsIntent', {"FeatAttribute":"description", "Feat":"charger"},function(error,response){
-                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
-                done();
-            });
-        });
-    });
-    //benefit of feat
-    it('benefits of actor', function(done){
-        alexa.launched(function(error,response){
-            alexa.intended('FeatsIntent', {"FeatAttribute":"benefits", "Feat":"actor"},function(error,response){
-                assert.equal(response.response.outputSpeech.ssml, '<speak> Increase your Charisma score by 1 to a maximum of 20. Gain advantage on Charisma(Deception) and Charisma(Performance) checks when trying to pass yourself off as a different person. You can also mimic the speech of another person or the sounds made by other creatures, you must have heard the person or creature for at least 1 minute.. What else can I help with? </speak>');
-                done();
-            });
-        });
-    });
-    //prerequisite of feat
-    it('prerequisite of inspiring leader', function(done){
-        alexa.launched(function(error,response){
-            alexa.intended('FeatsIntent',{"FeatAttribute":"prerequisite","Feat":"inspiring leader"}, function(error,response){
-                assert.equal(response.response.outputSpeech.ssml, '<speak> Charisma 13 or higher.. What else can I help with? </speak>');
-                done();
-            });
-        });
-    });
-});
+// describe('FeatIntent', function(done){
+//     //description of feat
+//     it('description of charger', function(done){
+//         alexa.launched(function(error,response){
+//             alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
+//                 assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+//                 done();
+//             });
+//         });
+//     });
+//     //benefit of feat
+//     // it('benefits of inspiring leader', function(done){
+//     //     alexa.launched(function(error,response))
+//     // }
+//     //prerequesite of feat
+// })
 
 //todo: add IncompleteIntent
 
