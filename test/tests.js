@@ -1,8 +1,8 @@
 var bst     = require('bespoken-tools');
 var assert  = require('assert');
+var id      = require('../src/appId');
 var listOfSpells  = require('../src/spells.js');
-var alex_ID = 'amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690';
-var josh_Id ='';  //there's a way around this, I'll look it up later
+var appId = id.APP_ID;
 
 var server  = null;
 var alexa   = null;
@@ -12,8 +12,7 @@ beforeEach(function (done) {
     server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         './speechAssets/IntentSchema.json',
-        './speechAssets/SampleUtterances.txt',
-        alex_ID);
+        './speechAssets/SampleUtterances.txt', appId);
 
     server.start(function () {
         alexa.start(function (error) {
