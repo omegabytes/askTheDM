@@ -3,6 +3,8 @@
 #### Version 2.0 [![Build Status](https://travis-ci.org/omegabytes/askTheDM.svg?branch=master)](https://travis-ci.org/omegabytes/askTheDM)
 #### Alex Gaesser 2017 
 
+[Link to Amazon Skill Store page](https://www.amazon.com/Alex-Gaesser-Ask-the-DM/dp/B0734HSQP2/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1507155010&sr=1-1&keywords=ask+the+dm)
+
 Brought to you proudly by the [Arena Hounds](https://github.com/omegabytes/askTheDM/blob/master/AUTHORS.md)
 
 Ask the DM is a quick-reference tool designed for use during Dungeons and Dragons play sessions. The skill provides spell descriptions to players through a voice-command interface.
