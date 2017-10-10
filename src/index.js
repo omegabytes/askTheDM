@@ -235,6 +235,8 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
+    //SpellClassIntent 
+    //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
     'SpellDamageIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
