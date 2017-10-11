@@ -240,6 +240,16 @@ describe('SpellsIntent', function (done) {
             });
         });
     });
+
+    // spell class
+    it('class: detect magic', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('SpellsIntent', {"Attribute":"class","Spell":"detect magic"}, function(error, response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> bard,cleric,druid,paladin,ranger,sorcerer,wizard. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
 });
 
 
