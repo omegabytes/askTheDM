@@ -260,7 +260,7 @@ var handlers = {
                     + spellClass;
             }
         }
-    }
+    },
 
     'SpellDamageIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
