@@ -93,6 +93,19 @@
           "type": "LIST_OF_SPELLS"
         },
         {
+          "name": "Class",
+          "type": "LIST_OF_CLASSES"
+        }
+      ],
+      "intent": "SpellClassIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Spell",
+          "type": "LIST_OF_SPELLS"
+        },
+        {
           "name": "SlotLevel",
           "type": "LIST_OF_SLOT_LEVELS"
         }

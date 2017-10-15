@@ -11,6 +11,7 @@ module.exports = {
             //json resources
             "SPELL_ATTRIBUTES" :                            spells.SPELL_ATTRIBUTES,
             "CONDITIONS" :                                  conditions.CONDITIONS,
+            "CLASSES" :                                     spells.CLASSES,
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEATS" :                                       feats.FEATS,
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,

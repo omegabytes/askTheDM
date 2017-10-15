@@ -237,6 +237,31 @@ var handlers = {
     },
     //SpellClassIntent 
     //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
+    'SpellClassIntent': function(){
+        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedClass          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Class);
+        var spell                   = langEN.SPELLS[requestedSpell];
+        var classes                 = langEN.CLASSES[requestedClass];
+
+        //var spellClasses = list of classes in spellClass attribute in spells
+        var spellClasses = spell.spellClass;
+
+        for(var i in spellClasses){
+            
+        }
+
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+        //be careful 'class' is a special keyword
+
+        if(spell){
+            if(classes){
+                this.attributes['speechOutput'] = spellName + " can be cast by the following classes. "
+                    + spellClass;
+            }
+        }
+    }
+
     'SpellDamageIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
