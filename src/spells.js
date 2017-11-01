@@ -123,6 +123,17 @@ module.exports = {
       "longDescription": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target cant be targeted by any divination magic or perceived through magical scrying sensors.",
       "url": "https://www.dnd-spells.com/spell/nondetection"
     },
+      "non detection": {
+      "castingTime": "1 Action",
+      "duration": "8 hours",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (a pinch of diamond dust worth 25 gold pieces sprinkled over the target, which the spell consumes)",
+      "slotLevel": "3",
+      "school": "Abjuration",
+      "shortDescription": "A creature, place, or object smaller than 10ft cant be targeted by divination magic, or detected by magical scrying sensors",
+      "longDescription": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target cant be targeted by any divination magic or perceived through magical scrying sensors.",
+      "url": "https://www.dnd-spells.com/spell/nondetection"
+    },
     "beacon of hope": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -240,6 +251,42 @@ module.exports = {
         }
       }
     },
+      "frost bite": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": "Verbal, Somatic",
+      "slotLevel": "cantrip",
+      "school": "Evocation",
+      "shortDescription": "Deals 1d6 cold damage and to a target seen within 60ft range after a failed Constitution save. Also gives disadvantage to next weapon attack roll. Damage increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.",
+      "longDescription": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn. The spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+      "url": "https://www.dnd-spells.com/spell/frostbite",
+      "damage": {
+        "type": "cold damage",
+        "playerLevel": {
+          1: "1d6",
+          2: "1d6",
+          3: "1d6",
+          4: "1d6",
+          5: "2d6",
+          6: "2d6",
+          7: "2d6",
+          8: "2d6",
+          9: "2d6",
+          10: "2d6",
+          11: "3d6",
+          12: "3d6",
+          13: "3d6",
+          14: "3d6",
+          15: "3d6",
+          16: "3d6",
+          17: "4d6",
+          18: "4d6",
+          19: "4d6",
+          20: "4d6"
+        }
+      }
+    },
     "fear": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -288,6 +335,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/slow"
     },
     "druidcraft": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "30 feet",
+      "components": "Verbal, Somatic",
+      "slotLevel": "cantrip",
+      "school": "Transmutation",
+      "shortDescription": "Choose one of the follow four: Create a tiny, harmless sensory effect to predict the weather for the next 24 hours at your location, this effect last 1 round. Instantly make a flower bloom, seed pod open, or leaf bud bloom. In a 5-foot cube create a harmless sensory effect, such as the sound of a small animal. Instantly light or snuff out a candle, torch, or a small campfire.",
+      "longDescription": "Whispering to the spirits of nature, you create one of the four following effects within range: 1) You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. 2) You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. 3) You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube. 4) You instantly light or snuff out a candle, a torch, or a small campfire.",
+      "url": "https://www.dnd-spells.com/spell/druidcraft"
+    },
+      "druid craft": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "30 feet",
@@ -463,6 +521,17 @@ module.exports = {
       "damage": "Complex Damage Progression. Please consult short or long descriptions"
     },
     "shapechange": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 hour",
+      "range": "Self",
+      "components": "Verbal, Somatic, Material (a jade circlet worth at least 1,500 gold pieces, which you must place on your head before you cast the spell)",
+      "slotLevel": "9",
+      "school": "Transmutation",
+      "shortDescription": "Needs concentration. You assume the form of a different creature for the duration. The new form can be any creature with a challenge rating equal to your level or lower. The creature cant be a construct or undead, you also must have seen the creature at least once. You assume the hit points and Hit Dice of the new form, when you revert to your normal form, you return to the number of hit points you had before the transformation. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. During the spells duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points that your current one, your hit points remain at their current value.",
+      "longDescription": "You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature cant be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait. Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the creatures bonus in place of yours. You cant use any legendary actions or lair actions of the new form. You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesnt reduce your normal form to 0 hit points, you arent knocked unconscious. You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You cant use any special senses you have (for example, darkvision) unless your new form also has that sense. You can only speak if the creature can normally speak. When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The D. M. determines whether it is practical for the new form to wear a piece of equipment, based on the creatures shape and size. Your equipment doesnt change shape or size to match the new form, and any equipment that the new form cant wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state. During this spells duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value.",
+      "url": "https://www.dnd-spells.com/spell/shapechange"
+    },
+      "shape change": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 hour",
       "range": "Self",
@@ -683,6 +752,41 @@ module.exports = {
           20: "4d8"
         }
       }
+    },"green flame blade": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "5 feet",
+      "components": "Verbal, Material (a weapon) ",
+      "slotLevel": "cantrip",
+      "school": "Evocation",
+      "shortDescription": "Make a melee attack with a weapon against one creature within the spells range, otherwise it fails. On a hit, the target suffers the attacks normal effects and green fire leaps from the target to a different creature of your choice within 5 feet. The second creature takes fire damage equal to your spellcasting mod. When cast at level 5, melee attack deals an extra 1d8 fire damage, to the second creature an extra 1d8 fire damage plus your spellcasting mod. Both damage rolls increase by 1d8 at level 11 and 17th.",
+      "longDescription": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spells range, otherwise the spell fails. On a hit, the target suffers the attacks normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier. This spells damage increases when you reach higher levels. At higher levels: At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level.",
+      "url": "https://www.dnd-spells.com/spell/green-flame-blade",
+      "damage": {
+        "type": "fire damage",
+        "playerLevel": {
+          1: "1d8",
+          2: "1d8",
+          3: "1d8",
+          4: "1d8",
+          5: "2d8",
+          6: "2d8",
+          7: "2d8",
+          8: "2d8",
+          9: "2d8",
+          10: "2d8",
+          11: "3d8",
+          12: "3d8",
+          13: "3d8",
+          14: "3d8",
+          15: "3d8",
+          16: "3d8",
+          17: "4d8",
+          18: "4d8",
+          19: "4d8",
+          20: "4d8"
+        }
+      }
     },
     "gust": {
       "castingTime": "1 Action",
@@ -696,6 +800,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/gust"
     },
     "skywrite": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 day",
+      "range": "Sight",
+      "components": "Verbal, Somatic",
+      "slotLevel": "2",
+      "school": "Transmutation Ritual",
+      "shortDescription": "Needs concentration. You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spells duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
+      "longDescription": "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spells duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
+      "url": "https://www.dnd-spells.com/spell/skywrite-ritual"
+    },
+      "sky write": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 day",
       "range": "Sight",
@@ -962,6 +1077,31 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/dominate-monster"
     },
     "thunderwave": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Self (15-foot cube)",
+      "components": "Verbal, Somatic",
+      "slotLevel": "1",
+      "school": "Evocation",
+      "shortDescription": "Each creature in a 15 foot cube from you must make a Constitution save, on a failed save a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a success, the creature takes half as much, and isnt pushed. When cast using a spell slot of 2nd level or higher the damage increases 1d8 per level above 1st.",
+      "longDescription": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isnt pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spells effect, and the spell emits a thunderous boom audible out to 300 feet. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+      "url": "https://www.dnd-spells.com/spell/thunderwave",
+      "damage": {
+        "type": "thunder damage",
+        "levels": {
+          1: "2d8",
+          2: "3d8",
+          3: "4d8",
+          4: "5d8",
+          5: "6d8",
+          6: "7d8",
+          7: "8d8",
+          8: "9d8",
+          9: "10d8"
+        }
+      }
+    },
+      "thunder wave": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "Self (15-foot cube)",
@@ -1401,6 +1541,17 @@ module.exports = {
       "longDescription": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
       "url": "https://www.dnd-spells.com/spell/goodberry"
     },
+      "good berry": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (a sprig of mistletoe)",
+      "slotLevel": "1",
+      "school": "Transmutation",
+      "shortDescription": "Ten berries appear in your hand, a creature can use its action to eat a berry, which restores 1 hit point.",
+      "longDescription": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
+      "url": "https://www.dnd-spells.com/spell/goodberry"
+    },
     "modify memory": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -1574,6 +1725,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/protection-from-energy"
     },
     "darkvision": {
+      "castingTime": "1 Action",
+      "duration": "8 hours",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (either a pinch of dried carrot or an agate)",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "A willing creature has darkvision to a range of 60 feet.",
+      "longDescription": "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.",
+      "url": "https://www.dnd-spells.com/spell/darkvision"
+    },
+      "dark vision": {
       "castingTime": "1 Action",
       "duration": "8 hours",
       "range": "Touch",
@@ -2552,6 +2714,17 @@ module.exports = {
       "longDescription": "You touch a willing creature. Until the spell ends, the targets skin has a rough, bark-like appearance, and the targets AC cant be less than 16, regardless of what kind of armor it is wearing.",
       "url": "https://www.dnd-spells.com/spell/barkskin"
     },
+      "bark skin": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 hour",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (A handful of oak bark)",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "Needs concentration. Touch a willing creature, their AC cant be less than 16.",
+      "longDescription": "You touch a willing creature. Until the spell ends, the targets skin has a rough, bark-like appearance, and the targets AC cant be less than 16, regardless of what kind of armor it is wearing.",
+      "url": "https://www.dnd-spells.com/spell/barkskin"
+    },
     "wall of water": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 10 minutes",
@@ -2949,6 +3122,30 @@ module.exports = {
           9: "10d8"
         }
       }
+    },"abi dalzims horrid wilting": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "150 feet",
+      "components": "Verbal, Somatic, Material (a bit of sponge)",
+      "slotLevel": "8",
+      "school": "Necromancy",
+      "shortDescription": "A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one. Doesnt effect constructs or undead, and plants and water elementals have disadvantage.",
+      "longDescription": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead arent affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+      "url": "https://www.dnd-spells.com/spell/abi-dalzims-horrid-wilting",
+      "damage": {
+        "type": "necrotic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "10d8",
+          9: "10d8"
+        }
+      }
     },
     "dissonant whispers": {
       "castingTime": "1 Action",
@@ -3033,6 +3230,31 @@ module.exports = {
         }
       }
     },
+      "moon beam": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "120 feet",
+      "components": "Verbal, Somatic, Material (several seeds of any moonseed plant and a piece of opalescent feldspar)",
+      "slotLevel": "2",
+      "school": "Evocation",
+      "shortDescription": "Requires concentration. A 5 by 40 foot cylinder of light shines down. Creatures entering or starting thier turn in the cylinder take 2d10 radiant damage on a failed Constitution save, or half as much on a success. Shape changers have disadvantage and revert to thier original form on a fail. You can move the beam 60 feet as an action.",
+      "longDescription": "A silvery beam of pale light shines down in a 5-foot- radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spells area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shape changer makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and cant assume a different form until it leaves the spells light. On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction. At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1dlO for each slot level above 2nd.",
+      "url": "https://www.dnd-spells.com/spell/moonbeam",
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: "2d10",
+          3: "3d10",
+          4: "4d10",
+          5: "5d10",
+          6: "6d10",
+          7: "7d10",
+          8: "8d10",
+          9: "9d10"
+        }
+      }
+    },
     "divination": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
@@ -3066,7 +3288,31 @@ module.exports = {
       "longDescription": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and cant be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
       "url": "https://www.dnd-spells.com/spell/pass-without-trace"
     },
-    "enlarge/reduce": {
+    "enlarge reduce": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a pinch of powdered iron)",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weapons do an extra 1d4 damage. Reduce has the opposite effect.",
+      "longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The targets size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category, from Medium to Large, for example. If there isnt enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The targets weapons also grow to match its new size. While these weapons are enlarged, the targets attacks with them deal 1d4 extra damage. Reduce. The targets size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category, from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The targets weapons also shrink to match its new size. While these weapons are reduced, the targets attacks with them deal 1d4 less damage (this cant reduce the damage below 1).",
+      "url": "https://www.dnd-spells.com/spell/enlargereduce",
+      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+    },
+      "reduce": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a pinch of powdered iron)",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weapons do an extra 1d4 damage. Reduce has the opposite effect.",
+      "longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The targets size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category, from Medium to Large, for example. If there isnt enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The targets weapons also grow to match its new size. While these weapons are enlarged, the targets attacks with them deal 1d4 extra damage. Reduce. The targets size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category, from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The targets weapons also shrink to match its new size. While these weapons are reduced, the targets attacks with them deal 1d4 less damage (this cant reduce the damage below 1).",
+      "url": "https://www.dnd-spells.com/spell/enlargereduce",
+      "damage": "Complex Damage Progression. Please consult short or long descriptions"
+    },
+      "enlarge": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "30 feet",
@@ -3136,6 +3382,17 @@ module.exports = {
       "longDescription": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spells duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.",
       "url": "https://www.dnd-spells.com/spell/earthbind"
     },
+      "earth bind": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "300 feet",
+      "components": "Verbal",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "Requires concentration. One target must succeed on a strength save or its flying speed is reduced to 0, falling at 60 feet per round",
+      "longDescription": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spells duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.",
+      "url": "https://www.dnd-spells.com/spell/earthbind"
+    },
     "aura of vitality": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -3148,6 +3405,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/aura-of-vitality"
     },
     "passwall": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a pinch of sesame seeds)",
+      "slotLevel": "5",
+      "school": "Transmutation",
+      "shortDescription": "A passage appears in a wall or floor, up to 20 ft deep.",
+      "longDescription": "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the openings dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it. When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell.",
+      "url": "https://www.dnd-spells.com/spell/passwall"
+    },
+      "pass wall": {
       "castingTime": "1 Action",
       "duration": "1 hour",
       "range": "30 feet",
@@ -3690,6 +3958,31 @@ module.exports = {
         }
       }
     },
+      "feeble mind": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "150 feet",
+      "components": "Verbal, Somatic, Material (a handful of clay, crystal, glass, or mineral spheres)",
+      "slotLevel": "8",
+      "school": "Enchantment",
+      "shortDescription": "Blast the mind of a creature in range. The target takes 4d6 psychic damage and must make an intelligence save. On a fail, the creatures intelligence and charisma scores drop to 1, it cant cast spells, understand language, or active magic items. It can follow and protect its friends, and can reroll the save every 30 days.",
+      "longDescription": "You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw. On a failed save, the creatures Intelligence and Charisma scores become 1. The creature cant cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends. The spell can also be ended by greater restoration, heal, or wish.",
+      "url": "https://www.dnd-spells.com/spell/feeblemind",
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "4d6",
+          9: "4d6"
+        }
+      }
+    },
     "detect magic": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 10 minutes",
@@ -3799,6 +4092,31 @@ module.exports = {
         }
       }
     },
+      "cloud kill": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 10 minutes",
+      "range": "120 feet",
+      "components": "Verbal, Somatic",
+      "slotLevel": "5",
+      "school": "Conjuration",
+      "shortDescription": "Requires concentration. Create a 20-foot-radius sphere of poisonous fog within 120 feet. Creatures entering the fog for the first time or beginning a turn there take 5d8 posion damage on a failed Constitution save, and half as much on a success. Holding your breath wont help.",
+      "longDescription": "You create a 20-foot-radius sphere of poisonous, yellow- green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured. When a creature enters the spells area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or dont need to breathe. The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "url": "https://www.dnd-spells.com/spell/cloudkill",
+      "damage": {
+        "type": "poison damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "5d8",
+          6: "6d8",
+          7: "7d8",
+          8: "8d8",
+          9: "9d8"
+        }
+      }
+    },
     "dominate person": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -3836,6 +4154,17 @@ module.exports = {
       }
     },
     "daylight": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "60 feet",
+      "components": "Verbal, Somatic",
+      "slotLevel": "3",
+      "school": "Evocation",
+      "shortDescription": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. You an cast it on an object. Displess darkness created by 3rd level or lower spells.",
+      "longDescription": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isnt being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spells area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.",
+      "url": "https://www.dnd-spells.com/spell/daylight"
+    },
+      "day light": {
       "castingTime": "1 Action",
       "duration": "1 hour",
       "range": "60 feet",
@@ -5109,6 +5438,17 @@ module.exports = {
       "longDescription": "You touch a creature. The targets speed increases by 10 feet until the spell ends. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
       "url": "https://www.dnd-spells.com/spell/longstrider"
     },
+      "long strider": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (a pinch of dirt)",
+      "slotLevel": "1",
+      "school": "Transmutation",
+      "shortDescription": "targets speed increases by 10 feet",
+      "longDescription": "You touch a creature. The targets speed increases by 10 feet until the spell ends. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "url": "https://www.dnd-spells.com/spell/longstrider"
+    },
     "invisibility": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 hour",
@@ -5426,6 +5766,31 @@ module.exports = {
         }
       }
     },
+      "sun burst": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "150 feet",
+      "components": "Verbal, Somatic, Material (fire and a piece of sunstone)",
+      "slotLevel": "8",
+      "school": "Evocation",
+      "shortDescription": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. On a failed Constitution save, a creature in range takes 12d6 radiant damage and is blinded for 1 minute. On a save, it takes half as much and isnt blinded. The creature makes a Constitution save at the end of each turn to end blindness.",
+      "longDescription": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isnt blinded by this spell. Undead and oozes have disadvantage on this saving throw. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded. This spell dispels any darkness in its area that was created by a spell.",
+      "url": "https://www.dnd-spells.com/spell/sunburst",
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "12d6",
+          9: "12d6"
+        }
+      }
+    },
     "dimension door": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
@@ -5691,6 +6056,17 @@ module.exports = {
       "longDescription": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spells level. On a success, the creatures spell fails and has no effect. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
       "url": "https://www.dnd-spells.com/spell/counterspell"
     },
+      "counter spell": {
+      "castingTime": "Special",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": "Somatic",
+      "slotLevel": "3",
+      "school": "Abjuration",
+      "shortDescription": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. Otherwise, make a spellcasting ability check. The DC equals 10 + the spells level. The creatures spell fails on a success.",
+      "longDescription": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spells level. On a success, the creatures spell fails and has no effect. At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+      "url": "https://www.dnd-spells.com/spell/counterspell"
+    },
     "power word kill": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
@@ -5865,6 +6241,17 @@ module.exports = {
       "longDescription": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
       "url": "https://www.dnd-spells.com/spell/detect-evil-and-good"
     },
+      "detect good and evil": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 10 minutes",
+      "range": "Self",
+      "components": "Verbal, Somatic",
+      "slotLevel": "1",
+      "school": "Divination",
+      "shortDescription": "You know if and where there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, or if a place has been consecrated or desecrated within 30 ft.",
+      "longDescription": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "url": "https://www.dnd-spells.com/spell/detect-evil-and-good"
+    },
     "command": {
       "castingTime": "1 Action",
       "duration": "1 round",
@@ -5982,6 +6369,42 @@ module.exports = {
       "damage": "Complex Damage Progression. Please consult short or long descriptions"
     },
     "thunderclap": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Self (5-foot radius)",
+      "components": "Somatic",
+      "slotLevel": "cantrip",
+      "school": "Evocation",
+      "shortDescription": "On a failed Constitution save, each creature within 5 ft of you takes 1d6 thunder damage.",
+      "longDescription": "You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage. The spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+      "url": "https://www.dnd-spells.com/spell/thunderclap",
+      "damage": {
+        "type": "thunder damage",
+        "playerLevel": {
+          1: "1d6",
+          2: "1d6",
+          3: "1d6",
+          4: "1d6",
+          5: "2d6",
+          6: "2d6",
+          7: "2d6",
+          8: "2d6",
+          9: "2d6",
+          10: "2d6",
+          11: "3d6",
+          12: "3d6",
+          13: "3d6",
+          14: "3d6",
+          15: "3d6",
+          16: "3d6",
+          17: "4d6",
+          18: "4d6",
+          19: "4d6",
+          20: "4d6"
+        }
+      }
+    },
+      "thunder clap": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "Self (5-foot radius)",
@@ -6273,6 +6696,31 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/find-traps"
     },
     "sunbeam": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "Self (60-foot line)",
+      "components": "Verbal, Somatic, Material (a magnifying glass)",
+      "slotLevel": "6",
+      "school": "Evocation",
+      "shortDescription": "A 5ft by 60ft beam of light flashes from your hand. On a failed Constitution save, each creature is blinded until your next turn and takes 6d8 radiant damage. The targets arent blinded and take half damage on a successful save. Undead and oozes have disadvantage",
+      "longDescription": "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isnt blinded by this spell. Undead and oozes have disadvantage on this saving throw. You can create a new line of radiance as your action on any turn until the spell ends. For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.",
+      "url": "https://www.dnd-spells.com/spell/sunbeam",
+      "damage": {
+        "type": "radiant damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "6d8",
+          7: "6d8",
+          8: "6d8",
+          9: "6d8"
+        }
+      }
+    },
+      "sun beam": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "Self (60-foot line)",

@@ -142,11 +142,6 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    'IncompleteIntent' : function () {
-        this.attributes['continue']     = true;
-        this.attributes['speechOutput'] = langEN.INCOMPLETE_REQUEST;
-        this.emit(':ask', this.attributes['speechOutput']);
-    },
     'IndexIntent' : function(){
         var requestedIndexName  = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Index);
         var index               = langEN.INDEX[requestedIndexName];
@@ -354,7 +349,7 @@ var handlers = {
             }
         }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (requestedSpell) {
+        }else if (requestedSpell) { //todo: debug here
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
