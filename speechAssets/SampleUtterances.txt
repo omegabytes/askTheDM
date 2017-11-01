@@ -519,6 +519,12 @@ ItemsIntent to get the {ItemAttribute} of {Item}
 ItemsIntent to get the {ItemAttribute} of {Item} armor
 ItemsIntent get the {ItemAttribute} of {Item}
 ItemsIntent get the {ItemAttribute} of {Item} armor
+ItemsIntent how much {ItemAttribute} does a {Item} do
+ItemsIntent how much {ItemAttribute} does a {Item} cause
+ItemsIntent how much {ItemAttribute} does a {Item} inflict
+ItemsIntent what {ItemAttribute} does a {Item} do
+ItemsIntent what {ItemAttribute} does a {Item} cause
+ItemsIntent what {ItemAttribute} does a {Item} inflict
 
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}

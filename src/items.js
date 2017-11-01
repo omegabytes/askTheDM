@@ -12,6 +12,7 @@ module.exports = {
         "item type"      : "itemType",
         "price"          : "cost",
         "properties"     : "properties",
+        "range"          : "range",
         "strength"       : "strength",
         "speed"          : "speed",
         "value"          : "cost",
@@ -149,6 +150,10 @@ module.exports = {
             "damage"        : "1d4 piercing",
             "weight"        : "1 lb",
             "properties"    : "Finesse, light, thrown (range 20/60)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -173,6 +178,10 @@ module.exports = {
             "damage"        : "1d6 slashing",
             "weight"        : "2 lb",
             "properties"    : "Light, thrown (range 20/60)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -181,6 +190,10 @@ module.exports = {
             "damage"        : "1d6 slashing",
             "weight"        : "2 lb",
             "properties"    : "Light, thrown (range 20/60)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -189,6 +202,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "2 lb",
             "properties"    : "Thrown (range 30/120)",
+            "range"         : {
+                                "normal": "30 ft",
+                                "long": "120 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -197,6 +214,10 @@ module.exports = {
             "damage"        : "1d4 bludgeoning",
             "weight"        : "2 lb",
             "properties"    : "Light, thrown (range 20/60)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -236,6 +257,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "3 lb",
             "properties"    : "Thrown (range 20/60), versatile (1d8)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Melee Weapon"
         },
@@ -244,6 +269,10 @@ module.exports = {
             "damage"        : "1d8 piercing",
             "weight"        : "5 lb",
             "properties"    : "Ammunition (range 80/320), loading, two-handed",
+            "range"         : {
+                                "normal": "80 ft",
+                                "long": "320 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Ranged Weapon"
         },
@@ -252,6 +281,10 @@ module.exports = {
             "damage"        : "1d4 piercing",
             "weight"        : "1/4 lb",
             "properties"    : "Finesse, thrown (range 20/60)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Ranged Weapon"
         },
@@ -260,6 +293,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "2 lb",
             "properties"    : "Ammunition (range 80/320), two-handed",
+            "range"         : {
+                                "normal": "80 ft",
+                                "long": "320 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Ranged Weapon"
         },"short bow": {
@@ -267,6 +304,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "2 lb",
             "properties"    : "Ammunition (range 80/320), two-handed",
+            "range"         : {
+                                "normal": "80 ft",
+                                "long": "320 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Ranged Weapon"
         },
@@ -275,6 +316,10 @@ module.exports = {
             "damage"        : "1d4 bludgeoning",
             "weight"        : "None",
             "properties"    : "Ammunition (range 30/120)",
+            "range"         : {
+                                "normal": "30 ft",
+                                "long": "120 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Simple Ranged Weapon"
         },
@@ -443,6 +488,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "4 lb",
             "properties"    : "Thrown (range 20/60), versatile (1d8)",
+            "range"         : {
+                                "normal": "20 ft",
+                                "long": "60 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Melee Weapon"
         },
@@ -483,6 +532,10 @@ module.exports = {
             "damage"        : "1 piercing",
             "weight"        : "1 lb",
             "properties"    : "Ammunition (range 25/100), loading",
+            "range"         : {
+                                "normal": "25 ft",
+                                "long": "100 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -491,6 +544,10 @@ module.exports = {
             "damage"        : "1 piercing",
             "weight"        : "1 lb",
             "properties"    : "Ammunition (range 25/100), loading",
+            "range"         : {
+                                "normal": "25 ft",
+                                "long": "100 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -499,6 +556,10 @@ module.exports = {
             "damage"        : "1d6 piercing",
             "weight"        : "3 lb",
             "properties"    : "Ammunition (range 30/120), light, loading",
+            "range"         : {
+                                "normal": "30 ft",
+                                "long": "120 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -507,6 +568,10 @@ module.exports = {
             "damage"        : "1d10 piercing",
             "weight"        : "18 lb",
             "properties"    : "Ammunition (range 100/400), heavy, loading, two-handed",
+            "range"         : {
+                                "normal": "100 ft",
+                                "long": "400 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -515,6 +580,10 @@ module.exports = {
             "damage"        : "1d8 piercing",
             "weight"        : "2 lb",
             "properties"    : "Ammunition (range 150/600), heavy, two-handed",
+            "range"         : {
+                                "normal": "150 ft",
+                                "long": "600 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -523,6 +592,10 @@ module.exports = {
             "damage"        : "1d8 piercing",
             "weight"        : "2 lb",
             "properties"    : "Ammunition (range 150/600), heavy, two-handed",
+            "range"         : {
+                                "normal": "150 ft",
+                                "long": "600 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
@@ -531,6 +604,10 @@ module.exports = {
             "damage"        : "None",
             "weight"        : "3 lb",
             "properties"    : "Special, thrown (range 5/15)",
+            "range"         : {
+                                "normal": "5 ft",
+                                "long": "15 ft",
+                              },
             "category"      : "Weapon",
             "itemType"      : "Martial Ranged Weapon"
         },
