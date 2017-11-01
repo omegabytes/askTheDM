@@ -624,6 +624,9 @@ SpellDamageIntent at level {SlotLevel} what is the damage is dealt by {Spell}
 SpellDamageIntent at level {SlotLevel} what is the damage is dealt by {Spell} to a player
 
 SpellHealIntent at {SlotLevel} level how much healing does the spell {Spell} do
+SpellHealIntent how much can I heal with {Spell}
+SpellHealIntent how much can I heal with a {SlotLevel} {Spell}
+SpellHealIntent how much can I heal with {Spell} at {SlotLevel}
 SpellHealIntent at {SlotLevel} level how much healing does the spell {Spell} restore
 SpellHealIntent at {SlotLevel} level how much healing does {Spell} do
 SpellHealIntent at {SlotLevel} level how much healing does {Spell} restore
