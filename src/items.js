@@ -1594,7 +1594,7 @@ module.exports = {
             "carryCapacity" : "None",
             "category"      : "Vehicle",
             "itemType"      : "Waterborne Vehicle"
-        }
+        },
         "war ship": {
             "cost"          : "25,000 gold",
             "speed"         : "2 and a half mph",
