@@ -1,7 +1,8 @@
 module.exports = {  
   "SPELL_ATTRIBUTES" : {
        "casting time"      : "castingTime",
-       "cast"              : "castingTime",     
+       "cast"              : "castingTime",
+       "action"            : "castingTime",     
        "duration"          : "duration",     
        "range"             : "range",    
        "components"        : "components",

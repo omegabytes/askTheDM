@@ -128,7 +128,7 @@ var handlers = {
             this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
         }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
-
+        //add prompt for if feat doesnt have prereq
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
