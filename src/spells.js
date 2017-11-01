@@ -1681,6 +1681,56 @@ module.exports = {
         }
       }
     },
+      "otto lukes freezing sphere": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "300 feet",
+      "components": "Verbal, Somatic, Material (a small crystal sphere)",
+      "slotLevel": "6",
+      "school": "Evocation",
+      "shortDescription": "A frigid globe of cold energy moves towards a point of your choice within range, and explodes in a 60 foot radius sphere. Each creature within the area must make a Constitution save or take 10d6 cold damage, or half on a success. If the globe strikes a body of water it freezes the liquid to a depth of 6 inches over an area of 30 square feet and lasts for 1 minute. Creatures that were swimming on the surface are trapped in the ice, a trapped creature can use its action to make a Strength check against your spell DC to break free. You can refrain from firing the globe, in which case a small globe the size of a sling stone appears, at any time you or a creature you give the globe to can throw, or hurl the globe. It shatters on impact, with the same effect as the normal spell. When cast using a spell slot of 7th level or higher, increase the damage by 1d6 for each slot above 6th.",
+      "longDescription": "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes 10d6 cold damage. On a successful save, it takes half as much damage. If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free. You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the slings normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasnt already shattered, it explodes. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-freezing-sphere",
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "10d6",
+          7: "11d6",
+          8: "12d6",
+          9: "13d6"
+        }
+      }
+    },
+      "otto lukes freezing": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "300 feet",
+      "components": "Verbal, Somatic, Material (a small crystal sphere)",
+      "slotLevel": "6",
+      "school": "Evocation",
+      "shortDescription": "A frigid globe of cold energy moves towards a point of your choice within range, and explodes in a 60 foot radius sphere. Each creature within the area must make a Constitution save or take 10d6 cold damage, or half on a success. If the globe strikes a body of water it freezes the liquid to a depth of 6 inches over an area of 30 square feet and lasts for 1 minute. Creatures that were swimming on the surface are trapped in the ice, a trapped creature can use its action to make a Strength check against your spell DC to break free. You can refrain from firing the globe, in which case a small globe the size of a sling stone appears, at any time you or a creature you give the globe to can throw, or hurl the globe. It shatters on impact, with the same effect as the normal spell. When cast using a spell slot of 7th level or higher, increase the damage by 1d6 for each slot above 6th.",
+      "longDescription": "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes 10d6 cold damage. On a successful save, it takes half as much damage. If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free. You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the slings normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasnt already shattered, it explodes. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-freezing-sphere",
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "10d6",
+          7: "11d6",
+          8: "12d6",
+          9: "13d6"
+        }
+      }
+    },
     "swift quiver": {
       "castingTime": "1 Bonus Action",
       "duration": "Concentration, up to 1 minute",
@@ -1771,6 +1821,56 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/eyebite"
     },
     "snillocs snowball swarm": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "90 feet",
+      "components": "Verbal, Somatic, Material(a piece of ice or a small white rock chip)",
+      "slotLevel": "2",
+      "school": "Evocation",
+      "shortDescription": "Each creature in a 5ft radius sphere centered on a point you choose, must make a Dexterity save or take 3d6 cold damage, or half on a success. When cast using a spell slot of 3rd level or higher, increase the damage by 1d6 for each slot above 2nd.",
+      "longDescription": "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd",
+      "url": "https://www.dnd-spells.com/spell/snillocs-snowball-swarm",
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: "3d6",
+          3: "4d6",
+          4: "5d6",
+          5: "6d6",
+          6: "7d6",
+          7: "8d6",
+          8: "9d6",
+          9: "10d6"
+        }
+      }
+    },
+      "snowball swarm": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "90 feet",
+      "components": "Verbal, Somatic, Material(a piece of ice or a small white rock chip)",
+      "slotLevel": "2",
+      "school": "Evocation",
+      "shortDescription": "Each creature in a 5ft radius sphere centered on a point you choose, must make a Dexterity save or take 3d6 cold damage, or half on a success. When cast using a spell slot of 3rd level or higher, increase the damage by 1d6 for each slot above 2nd.",
+      "longDescription": "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd",
+      "url": "https://www.dnd-spells.com/spell/snillocs-snowball-swarm",
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: "3d6",
+          3: "4d6",
+          4: "5d6",
+          5: "6d6",
+          6: "7d6",
+          7: "8d6",
+          8: "9d6",
+          9: "10d6"
+        }
+      }
+    },
+      "snill ox snowball swarm": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "90 feet",
@@ -1964,6 +2064,17 @@ module.exports = {
       "longDescription": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object cant benefit from being invisible.",
       "url": "https://www.dnd-spells.com/spell/faerie-fire"
     },
+      "fairy fire": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "60 feet",
+      "components": "Verbal",
+      "slotLevel": "1",
+      "school": "Evocation",
+      "shortDescription": "Needs concentration. Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object cant benefit from being invisible.",
+      "longDescription": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object cant benefit from being invisible.",
+      "url": "https://www.dnd-spells.com/spell/faerie-fire"
+    },
     "arcane lock": {
       "castingTime": "1 Action",
       "duration": "Until dispelled",
@@ -2023,6 +2134,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/wall-of-force"
     },
     "mordenkainens private sanctum": {
+      "castingTime": "10 Minutes",
+      "duration": "24 hours",
+      "range": "120 feet",
+      "components": "Verbal, Somatic, Material (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)",
+      "slotLevel": "4",
+      "school": "Abjuration",
+      "shortDescription": "Make an area within range magically secure, the area is a cube that can be as small as 5 feet or as large as 100 feet on each side. Choose any or all of the following security features: Sound cant pass through the barrier at the edge of the warded area. The barrier of the warded area appears dark and foggy, preventing vision through it. Sensors created by divination spells cant appear inside the protected area or pass through the barrier as its perimeter. Creatures in the area cant be targeted by divination spells. Nothing can teleport into or out of the warded area. Planar travel is blocked within the warded area. Casting this spell on the same spot every day for a year makes it permanent. When cast using a spell slot of 5th level or higher, increase the size of the cube by 100 feet for each slot above 4th.",
+      "longDescription": "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it. When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties. Sound cant pass through the barrier at the edge of the warded area. The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it. Sensors created by divination spells cant appear inside the protected area or pass through the barrier at its perimeter. Creatures in the area cant be targeted by divination spells. Nothing can teleport into or out of the warded area. Planar travel is blocked within the warded area. Casting this spell on the same spot every day for a year makes this effect permanent. At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level.",
+      "url": "https://www.dnd-spells.com/spell/mordenkainens-private-sanctum"
+    },
+      "private sanctum": {
       "castingTime": "10 Minutes",
       "duration": "24 hours",
       "range": "120 feet",
@@ -2125,6 +2247,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/crown-of-madness"
     },
     "forcecage": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "100 feet",
+      "components": "Verbal, Somatic, Material (ruby dust worth 1,500 gold pieces)",
+      "slotLevel": "7",
+      "school": "Evocation",
+      "shortDescription": "An immobile, invisible, cube-shaped prison composed of magical force appears around an area you choose within range. A prison in the shape of a cage can be up to 20 feet on a side, is made of 1/2 inch diameter bars spaced 1/2 inch apart. A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area. Any creature that is completely inside the cages area is trapped, and cant leave by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. The cage also extends into the Ethereal Plane, blocking ethereal travel.",
+      "longDescription": "An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose. A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart. A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area. When you cast the spell, any creature that is completely inside the cages area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area. A creature inside the cage cant leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature cant exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel. This spell cant be dispelled by dispel magic.",
+      "url": "https://www.dnd-spells.com/spell/forcecage"
+    },
+      "force cage": {
       "castingTime": "1 Action",
       "duration": "1 hour",
       "range": "100 feet",
@@ -2593,6 +2726,17 @@ module.exports = {
       "longDescription": "You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet). While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica. After 60 days, there is a cumulative 5 percent chance per day that the spells effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.",
       "url": "https://www.dnd-spells.com/spell/leomunds-secret-chest"
     },
+      "secret chest": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gold pieces, and a Tiny replica made from the same materials worth at least 50 gold pieces)",
+      "slotLevel": "4",
+      "school": "Conjuration",
+      "shortDescription": "Touch a chest and a miniature replica as a material component for the spell. You hide a chest that contains up to 12 cubic ft of nonliving material in the Ethereal plane. You can use your action to touch the replica and recall the chest, and use another action to send the chest back. After 60 days there is a cumulative 5% chance per day that the spell ends.",
+      "longDescription": "You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet). While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica. After 60 days, there is a cumulative 5 percent chance per day that the spells effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.",
+      "url": "https://www.dnd-spells.com/spell/leomunds-secret-chest"
+    },
     "conjure fey": {
       "castingTime": "1 Minute",
       "duration": "Concentration, up to 1 hour",
@@ -2650,6 +2794,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/bane"
     },
     "rarys telepathic bond": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (pieces of eggshell from two different kinds of creatures)",
+      "slotLevel": "5",
+      "school": "Divination Ritual",
+      "shortDescription": "Forge a telepathic bond with up to 8 creatures of your choice, the targets can communicate through the bond whether or not they have a common language shared. Communication is possible over any distance, though not to other planes of existence.",
+      "longDescription": "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less arent affected by this spell. Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it cant extend to other planes of existence.",
+      "url": "https://www.dnd-spells.com/spell/rarys-telepathic-bond-ritual"
+    },
+      "telepathic bond": {
       "castingTime": "1 Action",
       "duration": "1 hour",
       "range": "30 feet",
@@ -3099,6 +3254,28 @@ module.exports = {
       "longDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
       "url": "https://www.dnd-spells.com/spell/locate-animals-or-plants-ritual"
     },
+      "locate plants": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": "Verbal, Somatic, Material (a bit of fur from a bloodhound)",
+      "slotLevel": "2",
+      "school": "Divination Ritual",
+      "shortDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+      "longDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+      "url": "https://www.dnd-spells.com/spell/locate-animals-or-plants-ritual"
+    },
+      "locate animals": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": "Verbal, Somatic, Material (a bit of fur from a bloodhound)",
+      "slotLevel": "2",
+      "school": "Divination Ritual",
+      "shortDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+      "longDescription": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+      "url": "https://www.dnd-spells.com/spell/locate-animals-or-plants-ritual"
+    },
     "abi-dalzims horrid wilting": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
@@ -3123,7 +3300,33 @@ module.exports = {
           9: "10d8"
         }
       }
-    },"abi dalzims horrid wilting": {
+    },
+      "abi dalzims horrid wilting": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "150 feet",
+      "components": "Verbal, Somatic, Material (a bit of sponge)",
+      "slotLevel": "8",
+      "school": "Necromancy",
+      "shortDescription": "A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one. Doesnt effect constructs or undead, and plants and water elementals have disadvantage.",
+      "longDescription": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead arent affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+      "url": "https://www.dnd-spells.com/spell/abi-dalzims-horrid-wilting",
+      "damage": {
+        "type": "necrotic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: 0,
+          7: 0,
+          8: "10d8",
+          9: "10d8"
+        }
+      }
+    },
+      "horrid wilting": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "150 feet",
@@ -3185,6 +3388,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/awaken"
     },
     "armor of agathys": {
+      "castingTime": "1 Action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": "Verbal, Somatic, Material (a cup of water)",
+      "slotLevel": "1",
+      "school": "Abjuration",
+      "shortDescription": "Gain 5 temporary health. Creatures that hit you take 5 cold damage.",
+      "longDescription": "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st.",
+      "url": "https://www.dnd-spells.com/spell/armor-of-agathys"
+    },
+      "armor of ag a thys": {
       "castingTime": "1 Action",
       "duration": "1 hour",
       "range": "Self",
@@ -3781,6 +3995,31 @@ module.exports = {
         }
       }
     },
+      "faithful hound": {
+      "castingTime": "1 Action",
+      "duration": "8 hours",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a tiny silver whistle, a piece of bone, and a thread)",
+      "slotLevel": "4",
+      "school": "Conjuration",
+      "shortDescription": "A watchdog alerts you of any creatures, invisible, on this plane, or otherwise obscured by illusions, that doesnt speak a password when they come within 50 feet of it. At the start of each turn, the hound bites one target within 5ft with attack bonus equal to your spellcasting modifier + your proficiency bonus, and does 4d8 piercing damage.",
+      "longDescription": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you and cant be harmed. When a Small or larger creature com es within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions. At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hounds attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.",
+      "url": "https://www.dnd-spells.com/spell/mordenkainens-faithful-hound",
+      "damage": {
+        "type": "piercing damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "4d8",
+          5: "4d8",
+          6: "4d8",
+          7: "4d8",
+          8: "4d8",
+          9: "4d8"
+        }
+      }
+    },
     "true strike": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 round",
@@ -4187,6 +4426,17 @@ module.exports = {
       "longDescription": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects cant extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.",
       "url": "https://www.dnd-spells.com/spell/leomunds-tiny-hut-ritual"
     },
+      "tiny hut": {
+      "castingTime": "1 Minute",
+      "duration": "8 hours",
+      "range": "Self (10-foot-radius hemisphere)",
+      "components": "Verbal, Somatic, Material (a small crystal bead)",
+      "slotLevel": "3",
+      "school": "Evocation Ritual",
+      "shortDescription": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for 8 hours. Fits 10 medium creatures including you. Creatures outside of the dome are barred from passage. It is comfortable and dry.",
+      "longDescription": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects cant extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.",
+      "url": "https://www.dnd-spells.com/spell/leomunds-tiny-hut-ritual"
+    },
     "greater invisibility": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
@@ -4271,6 +4521,31 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/beast-bond"
     },
     "evards black tentacles": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "90 feet",
+      "components": "Verbal, Somatic, Material (a piece of tentacle from a giant octopus or a giant squid)",
+      "slotLevel": "4",
+      "school": "Conjuration",
+      "shortDescription": "Requires concentration. Tentacles fill a 20-foot square on ground, turning the area into difficult terrain. When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature can escape with a successful strength or dex check against your spell save DC.",
+      "longDescription": "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain. When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage. A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.",
+      "url": "https://www.dnd-spells.com/spell/evards-black-tentacles",
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: "3d6",
+          5: "3d6",
+          6: "3d6",
+          7: "3d6",
+          8: "3d6",
+          9: "3d6"
+        }
+      }
+    },
+      "black tentacles": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "90 feet",
@@ -4461,6 +4736,28 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/mind-blank"
     },
     "nystuls magic aura": {
+      "castingTime": "1 Action",
+      "duration": "24 hours",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (a small square of silk)",
+      "slotLevel": "2",
+      "school": "Illusion",
+      "shortDescription": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isnt being carried or worn by another creature",
+      "longDescription": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isnt being carried or worn by another creature. When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled. False Aura. You change the way the target appears to spells and magical effects, such as detect magic, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the objects magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item. Mask. You change the way the target appears to spells and magical effects that detect creature types, such as a paladins Divine Sense or the trigger of a symbol spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment.",
+      "url": "https://www.dnd-spells.com/spell/nystuls-magic-aura"
+    },
+      "nice tills magic aura": {
+      "castingTime": "1 Action",
+      "duration": "24 hours",
+      "range": "Touch",
+      "components": "Verbal, Somatic, Material (a small square of silk)",
+      "slotLevel": "2",
+      "school": "Illusion",
+      "shortDescription": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isnt being carried or worn by another creature",
+      "longDescription": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isnt being carried or worn by another creature. When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled. False Aura. You change the way the target appears to spells and magical effects, such as detect magic, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the objects magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item. Mask. You change the way the target appears to spells and magical effects that detect creature types, such as a paladins Divine Sense or the trigger of a symbol spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment.",
+      "url": "https://www.dnd-spells.com/spell/nystuls-magic-aura"
+    },
+      "magic aura": {
       "castingTime": "1 Action",
       "duration": "24 hours",
       "range": "Touch",
@@ -5522,6 +5819,31 @@ module.exports = {
         }
       }
     },
+      "gesh": {
+      "castingTime": "1 Minute",
+      "duration": "30 days",
+      "range": "60 feet",
+      "components": "Verbal",
+      "slotLevel": "5",
+      "school": "Enchantment",
+      "shortDescription": "Force a creature in within 60ft to take carry out or refrain from doing an activity of your choice except actions that would result in death. if the creature understands you, it must make a wisdom save or becomes charmed. While the creature is charmed, it takes 5d10 psychic damage once a day if it doesnt do what you want",
+      "longDescription": "You place a magical command on a creature that you can see within range, forcing it to carry out some service  or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that cant understand you is unaffected by the spell. You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends. You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it. At Higher Levels: When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "url": "https://www.dnd-spells.com/spell/geas",
+      "damage": {
+        "type": "psychic damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: "5d10",
+          6: "5d10",
+          7: "5d10",
+          8: "5d10",
+          9: "5d10"
+        }
+      }
+    },
     "lightning arrow": {
       "castingTime": "1 Bonus Action",
       "duration": "Concentration, up to 1 minute",
@@ -5605,6 +5927,56 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/death-ward"
     },
     "aganazzars scorcher": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a red dragons scale)",
+      "slotLevel": "2",
+      "school": "Evocation",
+      "shortDescription": "A line of flame 30 ft long and 5ft wide emanates from you. Each creature in the line must make a Dexterity save, taking 3d8 fire damage on a fail and half as much on a success.",
+      "longDescription": "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one. At higher levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+      "url": "https://www.dnd-spells.com/spell/aganazzars-scorcher",
+      "damage": {
+        "type": "fire damage",
+        "levels": {
+          1: 0,
+          2: "3d8",
+          3: "4d8",
+          4: "5d8",
+          5: "6d8",
+          6: "7d8",
+          7: "8d8",
+          8: "9d8",
+          9: "10d8"
+        }
+      }
+    },
+      "agonized scorcher": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a red dragons scale)",
+      "slotLevel": "2",
+      "school": "Evocation",
+      "shortDescription": "A line of flame 30 ft long and 5ft wide emanates from you. Each creature in the line must make a Dexterity save, taking 3d8 fire damage on a fail and half as much on a success.",
+      "longDescription": "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one. At higher levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+      "url": "https://www.dnd-spells.com/spell/aganazzars-scorcher",
+      "damage": {
+        "type": "fire damage",
+        "levels": {
+          1: 0,
+          2: "3d8",
+          3: "4d8",
+          4: "5d8",
+          5: "6d8",
+          6: "7d8",
+          7: "8d8",
+          8: "9d8",
+          9: "10d8"
+        }
+      }
+    },
+      "scorcher": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "30 feet",
@@ -6141,6 +6513,39 @@ module.exports = {
       }
     },
     "otilukes resilient sphere": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)",
+      "slotLevel": "4",
+      "school": "Evocation",
+      "shortDescription": "On a failed Dexterity save, a large or smaller creature is enclosed in a shimmering sphere of force. Nothing-not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The creature can roll around at half movement speed. A disintegrate spell destroys the sphere.",
+      "longDescription": "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration. Nothing, not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside cant be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the spheres walls and thus roll the sphere at up to half the creatures speed. Similarly, the globe can be picked up and moved by other creatures. A disintegrate spell targeting the globe destroys it without harming anything inside it.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-resilient-sphere"
+    },
+      "otti lucks resilient sphere": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)",
+      "slotLevel": "4",
+      "school": "Evocation",
+      "shortDescription": "On a failed Dexterity save, a large or smaller creature is enclosed in a shimmering sphere of force. Nothing-not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The creature can roll around at half movement speed. A disintegrate spell destroys the sphere.",
+      "longDescription": "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration. Nothing, not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside cant be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the spheres walls and thus roll the sphere at up to half the creatures speed. Similarly, the globe can be picked up and moved by other creatures. A disintegrate spell targeting the globe destroys it without harming anything inside it.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-resilient-sphere"
+    },
+      "otto lucks resilient sphere": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)",
+      "slotLevel": "4",
+      "school": "Evocation",
+      "shortDescription": "On a failed Dexterity save, a large or smaller creature is enclosed in a shimmering sphere of force. Nothing-not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The creature can roll around at half movement speed. A disintegrate spell destroys the sphere.",
+      "longDescription": "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration. Nothing, not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside cant be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the spheres walls and thus roll the sphere at up to half the creatures speed. Similarly, the globe can be picked up and moved by other creatures. A disintegrate spell targeting the globe destroys it without harming anything inside it.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-resilient-sphere"
+    },
+      "resilient sphere": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "30 feet",
