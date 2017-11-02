@@ -1,4 +1,4 @@
-module.exports = {  
+module.exports = {
   "SPELL_ATTRIBUTES" : {
        "casting time"      : "castingTime",
        "cast"              : "castingTime",
@@ -753,7 +753,8 @@ module.exports = {
           20: "4d8"
         }
       }
-    },"green flame blade": {
+    },
+      "green flame blade": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "5 feet",
@@ -1321,6 +1322,17 @@ module.exports = {
       "longDescription": "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space cant exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine- course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they cant attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but cant leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.",
       "url": "https://www.dnd-spells.com/spell/mordenkainens-magnificent-mansion"
     },
+    "magnificent mansion": {
+      "castingTime": "1 Minute",
+      "duration": "24 hours",
+      "range": "300 feet",
+      "components": "Verbal, Somatic, Material (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gold pieces)",
+      "slotLevel": "7",
+      "school": "Conjuration",
+      "shortDescription": "Conjure a extradimensional dwelling, choose where its entrance is located, which shimmers faintly and is 5 feet wide, 10 feet tall. You and any creature you designate can enter as long as the portal remains open. You can create any floor plan as you like, but the space cant exceed 50 cubes, each cube being 10 feet on each side. The mansion is fully furnished, and decorated as you like, it contains food to serve a nine-course banquet for up to 100 people. Includes a staff of 100 near-transparent servants, their visual appearance and attire is chosen by you, they can not attack or take action that would directly harm another creature.",
+      "longDescription": "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space cant exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine- course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they cant attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but cant leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.",
+      "url": "https://www.dnd-spells.com/spell/mordenkainens-magnificent-mansion"
+    },
     "thunderous smite": {
       "castingTime": "1 Bonus Action",
       "duration": "Concentration, up to 1 minute",
@@ -1393,6 +1405,31 @@ module.exports = {
         }
       }
     },
+      "earthen grasp": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal, Somatic, Material (a miniature hand sculpted from clay)",
+      "slotLevel": "2",
+      "school": "Transmutation",
+      "shortDescription": "Needs concentration. Choose a 5 foot square of unoccupied space on the ground, a medium hand made of compact soil rises and reaches for one creature within 5 feet of it. The target must make a Strength save or take 2d6 bludgeoning damage and is restrained for the duration. As an action, you can cause the hand to crush the restrained target, who must make a Strength save or take 2d6 bludgeoning, or half as much on a success. To break free, the target must make a Strength check against your spell save DC.",
+      "longDescription": "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spells duration. As an action, you can cause the hand to crush the restrained target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one. To break out, the restrained target can make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand. As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either.",
+      "url": "https://www.dnd-spells.com/spell/maximilians-earthen-grasp",
+      "damage": {
+        "type": "bludgeoning damage",
+        "levels": {
+          1: 0,
+          2: "2d6",
+          3: "2d6",
+          4: "2d6",
+          5: "2d6",
+          6: "2d6",
+          7: "2d6",
+          8: "2d6",
+          9: "3d8"
+        }
+      }
+    },
     "find the path": {
       "castingTime": "1 Minute",
       "duration": "Concentration, up to 1 day",
@@ -1405,6 +1442,17 @@ module.exports = {
       "url": "https://www.dnd-spells.com/spell/find-the-path"
     },
     "ottos irresistible dance": {
+      "castingTime": "1 Action",
+      "duration": "Concentration, up to 1 minute",
+      "range": "30 feet",
+      "components": "Verbal",
+      "slotLevel": "6",
+      "school": "Enchantment",
+      "shortDescription": "Needs concentration. Choose one creature within range. The target begins a comical dance in place for the duration. A dancing creature must use all its movement to dance without leaving its space, and has disadvantage on Dexterity save and attack rolls. While affected, other creatures have advantage on attack rolls against it. As an action an affected creature can make a Wisdom save to regain control.",
+      "longDescription": "Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that cant be charmed are immune to this spell. A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends.",
+      "url": "https://www.dnd-spells.com/spell/ottos-irresistible-dance"
+    },
+    "irresistible dance": {
       "castingTime": "1 Action",
       "duration": "Concentration, up to 1 minute",
       "range": "30 feet",
@@ -1707,6 +1755,31 @@ module.exports = {
       }
     },
       "otto lukes freezing": {
+      "castingTime": "1 Action",
+      "duration": "Instantaneous",
+      "range": "300 feet",
+      "components": "Verbal, Somatic, Material (a small crystal sphere)",
+      "slotLevel": "6",
+      "school": "Evocation",
+      "shortDescription": "A frigid globe of cold energy moves towards a point of your choice within range, and explodes in a 60 foot radius sphere. Each creature within the area must make a Constitution save or take 10d6 cold damage, or half on a success. If the globe strikes a body of water it freezes the liquid to a depth of 6 inches over an area of 30 square feet and lasts for 1 minute. Creatures that were swimming on the surface are trapped in the ice, a trapped creature can use its action to make a Strength check against your spell DC to break free. You can refrain from firing the globe, in which case a small globe the size of a sling stone appears, at any time you or a creature you give the globe to can throw, or hurl the globe. It shatters on impact, with the same effect as the normal spell. When cast using a spell slot of 7th level or higher, increase the damage by 1d6 for each slot above 6th.",
+      "longDescription": "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes 10d6 cold damage. On a successful save, it takes half as much damage. If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free. You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the slings normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasnt already shattered, it explodes. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.",
+      "url": "https://www.dnd-spells.com/spell/otilukes-freezing-sphere",
+      "damage": {
+        "type": "cold damage",
+        "levels": {
+          1: 0,
+          2: 0,
+          3: 0,
+          4: 0,
+          5: 0,
+          6: "10d6",
+          7: "11d6",
+          8: "12d6",
+          9: "13d6"
+        }
+      }
+    },
+      "freezing sphere": {
       "castingTime": "1 Action",
       "duration": "Instantaneous",
       "range": "300 feet",

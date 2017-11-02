@@ -729,6 +729,11 @@ module.exports = {
             "weight"        : "12 lb",
             "category"      : "Adventure Gear"
         },
+        "climbers kit": {
+            "cost"          : "25 gold",
+            "weight"        : "12 lb",
+            "category"      : "Adventure Gear"
+        },
         "common clothes": {
             "cost"          : "5 silver",
             "weight"        : "3 lb",
@@ -1561,6 +1566,13 @@ module.exports = {
             "itemType"      : "Waterborne Vehicle"
         },
         "longship": {
+            "cost"          : "10,000 gold",
+            "speed"         : "3 mph",
+            "carryCapacity" : "None",
+            "category"      : "Vehicle",
+            "itemType"      : "Waterborne Vehicle"
+        },
+        "long ship": {
             "cost"          : "10,000 gold",
             "speed"         : "3 mph",
             "carryCapacity" : "None",
