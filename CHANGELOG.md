@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - Added some utterances, removed others
 - Fixed a nasty bug in spell healing and damage intents that was causing the program to exit unexpectedly
 - Added welcome and help cards
+- Cleaned up itemsIntent - removed punctuation, separated combined names
 
 ## [2.1] - 09/13/2017
 ### Added
