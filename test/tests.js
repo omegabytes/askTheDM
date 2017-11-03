@@ -128,17 +128,17 @@ describe('FeatsIntent', function(done){
 //todo: add SpellCastIntent
 
 // SpellDamageIntent
-// describe('SpellDamageIntent', function (done) {
-//     // what is the damage of level 3 fireball
-//     it('damage of level 3 fireball', function (done) {
-//         alexa.launched(function (error, response) {
-//             alexa.intended('SpellDamageIntent', {"SlotLevel":"3", "Spell":"fireball"}, function (error, response) {
-//                 assert.equal(response.response.outputSpeech.ssml,'<speak> A level 3, fireball does 8d6 fire damage.. What else can I help with? </speak>');
-//                 done();
-//             });
-//         });
-//     });
-// });
+describe('SpellDamageIntent', function (done) {
+    // what is the damage of level 3 fireball
+    it('damage of level 3 fireball', function (done) {
+        alexa.launched(function (error, response) {
+            alexa.intended('SpellDamageIntent', {"SlotLevel":"3", "Spell":"fireball"}, function (error, response) {
+                assert.equal(response.response.outputSpeech.ssml,'<speak> A level 3, fireball does 8d6 fire damage.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+});
 
 // SpellHealIntent
 describe('SpellHealIntent', function (done) {

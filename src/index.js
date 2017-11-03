@@ -325,7 +325,7 @@ var handlers = {
                     if(typeof spell.healing === 'string') {
                         this.attributes['speechOutput'] = spell.healing;
                     } else {
-                        
+
                         //level provided was over 9 (all spells have max level of 9)
                         if(level > 9) {
                             this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
