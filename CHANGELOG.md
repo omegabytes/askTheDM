@@ -5,7 +5,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-## [2.0] - 09/13/2017
+## [Released]
+
+## [2.2] - 11/3/2017
+- Added expected "mispronunciations" of spell and item names
+- Added some utterances, removed others
+- Fixed a nasty bug in spell healing and damage intents that was causing the program to exit unexpectedly
+- Added welcome and help cards
+- Cleaned up itemsIntent - removed punctuation, separated combined names
+
+## [2.1] - 09/13/2017
 ### Added
 - Information:
 	- Items
@@ -77,8 +86,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - Spells
     - you can now get the damage/healing amounts for spells and cantrips
 - some functions refactored into alexLib.js
-
-## [Released]
 
 ## [1.0] 08/14/2017
 ### Added

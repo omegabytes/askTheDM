@@ -1,7 +1,9 @@
 # Ask The DM <img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/5423475/30412603-7c8eb180-98cd-11e7-88b5-67b74cd3258e.png"><img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/5423475/30412600-78bf1798-98cd-11e7-9fc3-1622dd4cdbc6.png">
 ### Dungeons and Dragons Alexa Skill 
-#### Version 2.0 [![Build Status](https://travis-ci.org/omegabytes/askTheDM.svg?branch=master)](https://travis-ci.org/omegabytes/askTheDM)
+#### Version 2.1 [![Build Status](https://travis-ci.org/omegabytes/askTheDM.svg?branch=master)](https://travis-ci.org/omegabytes/askTheDM)
 #### Alex Gaesser 2017 
+
+[Link to Amazon Skill Store page](https://www.amazon.com/Alex-Gaesser-Ask-the-DM/dp/B0734HSQP2/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1507155010&sr=1-1&keywords=ask+the+dm)
 
 Brought to you proudly by the [Arena Hounds](https://github.com/omegabytes/askTheDM/blob/master/AUTHORS.md)
 

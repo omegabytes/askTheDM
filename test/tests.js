@@ -1,9 +1,10 @@
-var bst     = require('bespoken-tools');
-var assert  = require('assert');
-var listOfSpells  = require('../src/spells.js');
-var alex_ID = 'amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690';
-var josh_Id ='';  //there's a way around this, I'll look it up later
+var bst              = require('bespoken-tools');
+var assert           = require('assert');
+var languageStrings  = require('../src/languageStrings');
+var listOfSpells     = require('../src/spells.js');
+var langEN           = languageStrings.en.translation;
 
+var appId   = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var server  = null;
 var alexa   = null;
 
@@ -12,8 +13,7 @@ beforeEach(function (done) {
     server = new bst.LambdaServer('./src/index.js', 10000,false);
     alexa = new bst.BSTAlexa('http://localhost:10000?disableSignatureCheck=true',
         './speechAssets/IntentSchema.json',
-        './speechAssets/SampleUtterances.txt',
-        alex_ID);
+        './speechAssets/SampleUtterances.txt', appId);
 
     server.start(function () {
         alexa.start(function (error) {
@@ -44,7 +44,7 @@ describe('General tests', function (done) {
         // Launch the skill via sending it a LaunchRequest
         alexa.launched(function (error, payload) {
             // Check that the welcome message is played
-            assert.equal(payload.response.outputSpeech.ssml, '<speak> Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with? </speak>');
+            assert.equal(payload.response.outputSpeech.ssml, '<speak> ' + langEN.WELCOME_MESSAGE + ' </speak>');
             done();
         });
     });
@@ -55,7 +55,7 @@ describe('General tests', function (done) {
             // Emulate the user saying 'help
             // alexa.spoken('help', function (error,response) {
                 alexa.intended('AMAZON.HelpIntent', null, function (error, response) {
-                    assert.equal(response.response.outputSpeech.ssml, '<speak> Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask the DM, and follow with your question. For example say: Alexa ask the DM what is the range of fireball. As of version 2.0, you can roll multiple dice, and roll dee twenties with advantage and disadvantage. I have a working index, and can tell you what page in the players handbook you can find more information on many subjects. Also, you can get information about conditions, spells, feats, and items. For spells, you can get the following information: casting time, duration, range, components, spell type, damage and healing by level, short description and long description. For conditions and feats, simply include their name when asking for information. Items includes an exhaustive list of attributes like cost, type, or armor class.  If you are in interactive mode, say exit to quit. Now, what was your question? </speak>');
+                    assert.equal(response.response.outputSpeech.ssml, '<speak> ' + langEN.HELP_MESSAGE + ' </speak>');
                     done();
                 });
             });
@@ -90,22 +90,35 @@ describe('ExhaustionLevelIntent', function(done){
 });
 
 // FeatIntent
-// describe('FeatIntent', function(done){
-//     //description of feat
-//     it('description of charger', function(done){
-//         alexa.launched(function(error,response){
-//             alexa.intended('FeatIntent', {"FeatAttr":"description", "Feat":"charger"},function(error,response){
-//                 assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
-//                 done();
-//             });
-//         });
-//     });
-//     //benefit of feat
-//     // it('benefits of inspiring leader', function(done){
-//     //     alexa.launched(function(error,response))
-//     // }
-//     //prerequesite of feat
-// })
+describe('FeatsIntent', function(done){
+    //description of feat
+    it('description of charger', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent', {"FeatAttribute":"description", "Feat":"charger"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> When you use your action to Dash, you can use a bonus action to make 1 melee weapon attack, or shove a creature.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+    //benefit of feat
+    it('benefits of actor', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent', {"FeatAttribute":"benefits", "Feat":"actor"},function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> Increase your Charisma score by 1 to a maximum of 20. Gain advantage on Charisma(Deception) and Charisma(Performance) checks when trying to pass yourself off as a different person. You can also mimic the speech of another person or the sounds made by other creatures, you must have heard the person or creature for at least 1 minute.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+    //prerequisite of feat
+    it('prerequisite of inspiring leader', function(done){
+        alexa.launched(function(error,response){
+            alexa.intended('FeatsIntent',{"FeatAttribute":"prerequisite","Feat":"inspiring leader"}, function(error,response){
+                assert.equal(response.response.outputSpeech.ssml, '<speak> Charisma 13 or higher.. What else can I help with? </speak>');
+                done();
+            });
+        });
+    });
+});
 
 //todo: add IncompleteIntent
 
@@ -120,7 +133,6 @@ describe('SpellDamageIntent', function (done) {
     // what is the damage of level 3 fireball
     it('damage of level 3 fireball', function (done) {
         alexa.launched(function (error, response) {
-            // Emulate the user asking what fireball is
             alexa.intended('SpellDamageIntent', {"SlotLevel":"3", "Spell":"fireball"}, function (error, response) {
                 assert.equal(response.response.outputSpeech.ssml,'<speak> A level 3, fireball does 8d6 fire damage.. What else can I help with? </speak>');
                 done();
@@ -131,7 +143,7 @@ describe('SpellDamageIntent', function (done) {
 
 // SpellHealIntent
 describe('SpellHealIntent', function (done) {
-    it('health of level 5 cure wounds', function (done) {
+    it('healing of level 5 cure wounds', function (done) {
         alexa.launched(function (error, response) {
             alexa.intended('SpellHealIntent', {"SlotLevel":"5", "Spell":"cure wounds"}, function (error, response) {
                 assert.equal(response.response.outputSpeech.ssml,'<speak> At level 5 cure wounds heals 5d8 plus your spellcasting ability modifier.. What else can I help with? </speak>');

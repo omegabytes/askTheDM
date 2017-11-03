@@ -2,9 +2,10 @@ module.exports = {
 	"FEAT_ATTRIBUTES"	:{
 		"description"	: "description",
 		"benefits"		: "benefits",
-		"prerequisite"	: "prereq"
+		"prerequisite"	: "prereq",
+        "prerequisites"	: "prereq"
 	},
-	"FEAT" : {
+	"FEATS" : {
 		"alert": {
 			"description"	: "Always on the lookout for danger. You aren't surprised by other creatures, and they are not able to take the upper hand by being hidden.",
 			"benefits"		: "You gain +5 to initiative, can no longer be surprised while conscious, and other creatures don't gain advantage on attack rolls against you as a result of being hidden from you." 
@@ -27,7 +28,7 @@ module.exports = {
 		},	
 		"defensive duelist": {
 			"description"	: "When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, as a reaction you can add your proficiency bonus to your A. C. for that attack, potentially causing the attack to miss.",
-			"benefits"		: "As a reaction you can add your proficiency bonus to your A. C. on your deflection roll.",
+			"benefits"		: "As a reaction you can add your proficiency bonus to your AC on your deflection roll.",
 			"prereq"		: "Dexterity 13 or higher."
 		},
 		"dual wielder": {

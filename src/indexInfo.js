@@ -278,7 +278,7 @@ module.exports = {
         144
       ]
     },
-    "artificer's lores": {
+    "artificers lores": {
       "pages": [
         37
       ]
@@ -895,7 +895,7 @@ module.exports = {
         205
       ]
     },
-    "commander's strike maneuvers": {
+    "commanders strike maneuvers": {
       "pages": [
         74
       ]
@@ -1137,12 +1137,12 @@ module.exports = {
         183
       ]
     },
-    "dark one's blessings": {
+    "dark ones blessings": {
       "pages": [
         109
       ]
     },
-    "dark one's own lucks": {
+    "dark ones own lucks": {
       "pages": [
         109
       ]
@@ -1251,7 +1251,7 @@ module.exports = {
         62
       ]
     },
-    "devil's sights": {
+    "devils sights": {
       "pages": [
         110
       ]
@@ -1543,7 +1543,17 @@ module.exports = {
         91
       ]
     },
-    "duergar (gray dwarf)s": {
+    "duergar": {
+      "pages": [
+        20
+      ]
+    },
+      "gray dwarf": {
+      "pages": [
+        20
+      ]
+    },
+      "gray dwarves": {
       "pages": [
         20
       ]
@@ -2379,7 +2389,12 @@ module.exports = {
         41
       ]
     },
-    "hawk (falcon)s": {
+    "hawk": {
+      "pages": [
+        306
+      ]
+    },
+      "falcons": {
       "pages": [
         306
       ]
@@ -2565,7 +2580,7 @@ module.exports = {
         93
       ]
     },
-    "hunter's preys": {
+    "hunters preys": {
       "pages": [
         93
       ]
@@ -2834,7 +2849,7 @@ module.exports = {
         59
       ]
     },
-    "land's strides": {
+    "lands strides": {
       "pages": [
         69,
         92
@@ -3381,17 +3396,17 @@ module.exports = {
         "61-62"
       ]
     },
-    "nature's sanctuarys": {
+    "natures sanctuarys": {
       "pages": [
         69
       ]
     },
-    "nature's wards": {
+    "natures wards": {
       "pages": [
         69
       ]
     },
-    "nature's wraths": {
+    "natures wraths": {
       "pages": [
         87
       ]
@@ -4028,7 +4043,7 @@ module.exports = {
         93
       ]
     },
-    "ranger's companions": {
+    "rangers companions": {
       "pages": [
         93
       ]
@@ -4463,7 +4478,7 @@ module.exports = {
         20
       ]
     },
-    "ship's passages": {
+    "ships passages": {
       "pages": [
         139
       ]
@@ -4953,7 +4968,7 @@ module.exports = {
         24
       ]
     },
-    "superior hunter's defenses": {
+    "superior hunters defenses": {
       "pages": [
         93
       ]
@@ -5077,17 +5092,17 @@ module.exports = {
         111
       ]
     },
-    "thief's reflexes": {
+    "thiefs reflexes": {
       "pages": [
         97
       ]
     },
-    "thieves' cants": {
+    "thieves cants": {
       "pages": [
         96
       ]
     },
-    "thieves' tools": {
+    "thieves tools": {
       "pages": [
         154
       ]
@@ -5265,7 +5280,7 @@ module.exports = {
         119
       ]
     },
-    "transmuter's stones": {
+    "transmuters stones": {
       "pages": [
         119
       ]
@@ -5526,7 +5541,7 @@ module.exports = {
         63
       ]
     },
-    "war god's blessings": {
+    "war gods blessings": {
       "pages": [
         63
       ]
@@ -5969,7 +5984,7 @@ module.exports = {
         144
       ]
     },
-    "artificer's lore": {
+    "artificers lore": {
       "pages": [
         37
       ]
@@ -6586,7 +6601,7 @@ module.exports = {
         205
       ]
     },
-    "commander's strike maneuver": {
+    "commanders strike maneuver": {
       "pages": [
         74
       ]
@@ -6828,12 +6843,12 @@ module.exports = {
         183
       ]
     },
-    "dark one's blessing": {
+    "dark ones blessing": {
       "pages": [
         109
       ]
     },
-    "dark one's own luck": {
+    "dark ones own luck": {
       "pages": [
         109
       ]
@@ -6942,7 +6957,7 @@ module.exports = {
         62
       ]
     },
-    "devil's sight": {
+    "devils sight": {
       "pages": [
         110
       ]
@@ -8256,7 +8271,7 @@ module.exports = {
         93
       ]
     },
-    "hunter's prey": {
+    "hunters prey": {
       "pages": [
         93
       ]
@@ -8525,7 +8540,7 @@ module.exports = {
         59
       ]
     },
-    "land's stride": {
+    "lands stride": {
       "pages": [
         69,
         92
@@ -9072,17 +9087,17 @@ module.exports = {
         "61-62"
       ]
     },
-    "nature's sanctuary": {
+    "natures sanctuary": {
       "pages": [
         69
       ]
     },
-    "nature's ward": {
+    "natures ward": {
       "pages": [
         69
       ]
     },
-    "nature's wrath": {
+    "natures wrath": {
       "pages": [
         87
       ]
@@ -9719,7 +9734,7 @@ module.exports = {
         93
       ]
     },
-    "ranger's companion": {
+    "rangers companion": {
       "pages": [
         93
       ]
@@ -10154,7 +10169,7 @@ module.exports = {
         20
       ]
     },
-    "ship's passage": {
+    "ships passage": {
       "pages": [
         139
       ]
@@ -10644,7 +10659,7 @@ module.exports = {
         24
       ]
     },
-    "superior hunter's defense": {
+    "superior hunters defense": {
       "pages": [
         93
       ]
@@ -10768,17 +10783,17 @@ module.exports = {
         111
       ]
     },
-    "thief's reflexes": {
+    "thiefs reflexes": {
       "pages": [
         97
       ]
     },
-    "thieves' cant": {
+    "thieves cant": {
       "pages": [
         96
       ]
     },
-    "thieves' tools": {
+    "thieves tools": {
       "pages": [
         154
       ]
@@ -10956,7 +10971,7 @@ module.exports = {
         119
       ]
     },
-    "transmuter's stone": {
+    "transmuters stone": {
       "pages": [
         119
       ]
@@ -11217,7 +11232,7 @@ module.exports = {
         63
       ]
     },
-    "war god's blessing": {
+    "war gods blessing": {
       "pages": [
         63
       ]
