@@ -2,7 +2,8 @@ module.exports = {
 	"FEAT_ATTRIBUTES"	:{
 		"description"	: "description",
 		"benefits"		: "benefits",
-		"prerequisite"	: "prereq"
+		"prerequisite"	: "prereq",
+        "prerequisites"	: "prereq"
 	},
 	"FEATS" : {
 		"alert": {
@@ -27,7 +28,7 @@ module.exports = {
 		},	
 		"defensive duelist": {
 			"description"	: "When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, as a reaction you can add your proficiency bonus to your A. C. for that attack, potentially causing the attack to miss.",
-			"benefits"		: "As a reaction you can add your proficiency bonus to your A. C. on your deflection roll.",
+			"benefits"		: "As a reaction you can add your proficiency bonus to your AC on your deflection roll.",
 			"prereq"		: "Dexterity 13 or higher."
 		},
 		"dual wielder": {

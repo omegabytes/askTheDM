@@ -5,6 +5,7 @@ command
 commune with nature 
 color spray
 cloudkill
+cloud kill
 clone
 cloud of daggers
 commune 
@@ -16,6 +17,7 @@ calm emotions
 chain lightning
 sword burst
 green-flame blade
+green flame blade
 lightning lure
 wall of sand
 booming blade
@@ -25,9 +27,14 @@ vitriolic sphere
 melfs minute meteors 
 storm sphere
 snillocs snowball swarm
+snill ox snowball swarm
+snowball swarm
 maximilians earthen grasp
+earthen grasp
 catapult
 aganazzars scorcher
+agonized scorcher
+scorcher
 whirlwind
 investiture of wind
 primordial ward
@@ -45,6 +52,7 @@ tidal wave
 flame arrows
 erupting earth
 earthbind
+earth bind
 dust devil
 beast bond
 ice knife
@@ -54,13 +62,16 @@ mold earth
 gust
 magic stone
 frostbite
+frost bite
 control flames
 create bonfire
 warding wind
 skywrite 
+sky write
 pyrotechnics
 earth tremor 
 thunderclap
+thunder clap
 trap the soul
 vicious mockery
 power word heal
@@ -93,6 +104,7 @@ transport via plants
 tongues
 time stop
 thunderwave
+thunder wave
 thunderous smite
 thaumaturgy
 thorn whip
@@ -104,8 +116,10 @@ telekinesis
 tashas hideous laughter
 swift quiver
 sunburst
+sun burst
 symbol
 sunbeam
+sun beam
 suggestion
 storm of vengeance
 stoneskin
@@ -132,6 +146,7 @@ shield of faith
 shield
 shatter
 shapechange
+shape change
 sequester
 see invisibility
 seeming
@@ -151,7 +166,8 @@ ray of sickness
 reincarnate
 regenerate
 ray of frost
-rarys telepathic bond 
+rarys telepathic bond
+telepathic bond
 ray of enfeeblement
 raise dead
 purify food and drink 
@@ -177,18 +193,33 @@ phantom steed
 phantasmal killer
 phantasmal force
 passwall
+pass wall
 ottos irresistible dance
+irresistible dance
 pass without trace
-otilukes resilient sphere
+ottilukes resilient sphere
+otti lucks resilient sphere
+otto lucks resilient sphere
+resilient sphere
 otilukes freezing sphere
+otto lukes freezing sphere
+otto lukes freezing
+freezing sphere
 nondetection
+non detection
 nystuls magic aura
+nice tills magic aura
+magic aura
 move earth
 mordenkainens sword
 mordenkainens private sanctum
+private sanctum
 mordenkainens magnificent mansion
+magnificent mansion
 mordenkainens faithful hound
+faithful hound
 moonbeam
+moon beam
 modify memory
 mislead
 misty step
@@ -217,14 +248,19 @@ mage armor
 locate object
 locate creature
 longstrider
-locate animals or plants 
+long strider
+locate animals or plants
+locate plants
+locate animals
 lightning bolt
 lightning arrow
 light
 levitate
 lesser restoration
 leomunds tiny hut 
+tiny hut
 leomunds secret chest
+secret chest
 knock
 legend lore
 jump
@@ -264,12 +300,14 @@ greater invisibility
 grease
 grasping vine
 goodberry
+good berry
 glyph of warding
 globe of invulnerability
 glibness
 giant insect
 gentle repose 
 geas
+gesh
 gate
 friends
 gaseous form
@@ -277,6 +315,7 @@ foresight
 forbiddance 
 freedom of movement
 forcecage
+force cage
 fog cloud
 fly
 flesh to stone
@@ -294,24 +333,30 @@ find the path
 find familiar 
 feign death 
 feeblemind
+feeble mind
 feather fall
 fear
 false life
 faerie fire
+fairy fire
 fabricate
 eyebite
 expeditious retreat
 evards black tentacles
+black tentacles
 etherealness
 enthrall
 entangle
 ensnaring strike
-enlarge/reduce
+enlarge reduce
+reduce
+enlarge
 elemental weapon
 enhance ability
 eldritch blast
 earthquake
 druidcraft
+druid craft
 dream
 drawmijs instant summons 
 dominate person
@@ -330,12 +375,15 @@ detect thoughts
 detect poison and disease
 detect magic 
 detect evil and good
+detect good and evil
 destructive wave
 demiplane
 death ward
 daylight
+day light
 delayed blast fireball
 darkvision
+dark vision
 darkness
 dancing lights
 crusaders mantle
@@ -346,6 +394,7 @@ create undead
 create or destroy water
 create food and water
 counterspell
+counter spell
 cordon of arrows
 control weather
 control water
@@ -382,6 +431,7 @@ bestow curse
 beast sense 
 beacon of hope
 barkskin
+bark skin
 banishment
 banishing smite
 bane
