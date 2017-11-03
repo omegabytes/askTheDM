@@ -6,34 +6,53 @@ A quick-reference for Dungeons and Dragons 5e.
 Full skill description:
 Ask the DM is a quick reference tool for use with Dungeons and Dragons 5th edition. Designed for use around the table during sessions, Ask the DM aims to reduce the amount of time spent looking up information.
 
-You can ask things like "what is fireball" to get a summary description (Warning! Some descriptions are LONG").
+There's two ways you can use this skill:
+1) Fast mode answers a single question. Example: 'Alexa, Ask the DM what is the range of fireball?'
+2) Interactive mode starts a session where you can ask as many questions as you like (say quit to exit). Example: 'Alexa, open Ask the DM,' listen to the prompt, then 'What is fireball?'
 
-To speed things up, you can ask things like "how much does a backpack cost?" or "what is level 3 of exhaustion?" and get a quick answer. To get quick answers for specific information, include the name of the spell, item, feat, or condition; as well as an attribute such as range, spell type, description, level, prerequisite, etc. For an exhaustive list of what you can ask about, please say "help".
+You can ask things like 'what is fireball' to get a summary description (Warning! Some descriptions are LONG).
 
+To speed things up, you can ask things like 'how much does a backpack cost?' or 'what is level 3 of exhaustion?' and get a quick answer. To get answers for specific information, include the name of the spell, item, feat, or condition; as well as an attribute such as range, spell type, description, level, prerequisite, etc. For an exhaustive list of what you can ask about, please see the features list below or say 'help'.
 
-Version 2.0:
-**Localization**
-    - Global use for UK/US English-enabled devices
-    - Metric units! If it sounds off, please let these yankee devs know how we can do it better.
+Quick note on functionality - Alexa understands you better in interactive mode. This is due to how Amazon figures out what you're saying. If you're having trouble getting info on a spell or item, try interactive mode first!
 
-**Spells**
-    - 5e Player's Handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide
-    - You can now ask for the damage/healing of a spell or cantrip at a certain spell slot or player level
-    - casting time, duration, range, components, slot level, school type, short and long descriptions, damage/healing amounts
+For requests or feedback, please leave a review or hit me up on Twitter at @AsktheDMskill
 
-**Items**
-    - category, cost, weight, properties, damage, strength, armor class, item type, speed, capacity
+Feature List:
+- Available on all US and UK English-enabled devices
+-- Metric units
 
-**Dice roller**
-    - 2,4,6,8,10,12,20, and 100 sided dice
-    - 20-sided die can be rolled with advantage or disadvantage
+- Spells
+-- 5e Player's Handbook, the Elemental Evil handbook, and Sword Coast Adventurer's guide
+-- casting time, duration, range, components, slot level, school type, short and long descriptions, damage/healing amounts by level
+-- say: 'what is the range of fireball,' 'how do I cast locate creature,' 'how much damage does thunderwave do at level 7'
 
-**Index**
-    - quickly get the page number in the 5e Player's Handbook of nearly every subject
+- Items
+-- category, cost, weight, properties, damage, strength, armor class, item type, speed, capacity
+-- say: 'how much does a book cost,' 'what's the armor class of studded leather armor,' 'how much does a maul weigh'
 
-**Feats**
-    - description, benefits, and prerequisites
+- Page lookup
+-- quickly get the page number in the 5e Player's Handbook of nearly every subject
+-- say: 'where in the handbook are giant eagles,' 'where can I find more info on dwarf names,' 'whats the page for dragonborns'
 
-**Conditions**
-    - descriptions
-    - exhaustion by level
+- Dice Roller
+-- 2,4,6,8,10,12,20, and 100 sided dice
+-- 20-sided die can be rolled with advantage or disadvantage
+-- say: 'roll a d20 with advantage,' 'roll two d6 plus 8'
+
+- Feats
+-- description, benefits, and prerequisites
+-- note: the description is flavor text, the benefits describe the mechanics
+-- say: 'what are the benefits of actor,' 'what does blinded affect,' 'how does healer work'
+
+- Conditions
+-- descriptions
+-- exhaustion by level
+-- say: 'tell me about charm,' 'get the effects of poison,' 'lookup level 3 exhaustion'
+
+Version 2.2 changes:
+- Added expected mispronunciations of spell and item names
+- Reconfigured utterances for items and spells
+- Fixed a nasty bug in spell healing and damage intents that was causing the program to exit unexpectedly
+- Added welcome and help cards
+- Cleaned up items - removed punctuation, separated combined names

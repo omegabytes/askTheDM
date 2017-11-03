@@ -419,8 +419,8 @@ IndexIntent which page is {Index} on in the handbook
 IndexIntent which page is {Index} on in the players handbook
 IndexIntent which page is {Index} on in the p. h. b.
 IndexIntent where in the handbook is {Index}
+IndexIntent where in the handbook are {Index}
 IndexIntent where in the handbook is {Index}
-IndexIntent where in the handbook is {Index} on
 IndexIntent where in the handbook is {Index} located
 
 ItemsIntent how {ItemAttribute} is a {Item}
