@@ -379,7 +379,7 @@ var handlers = {
             }
         }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (requestedSpell) { //todo: debug here
+        }else if (requestedSpell) { //FIXME: debug misheard spells
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
@@ -406,8 +406,8 @@ var handlers = {
         // Alexa, ask [my-skill-invocation-name] to (do something)...
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
-        const cardTitle = langEN.WELCOME_CARD_TITLE;
-        const cardContents = langEN.WELCOME_MESSAGE;
+        const cardTitle                     = langEN.WELCOME_CARD_TITLE;
+        const cardContents                  = langEN.WELCOME_MESSAGE;
         this.attributes['continue']         = true;
         this.attributes['speechOutput']     = langEN.WELCOME_MESSAGE;
         this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
@@ -415,13 +415,14 @@ var handlers = {
         this.emit(':askWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
     },
     'AMAZON.HelpIntent': function () {
-        const cardTitle = langEN.HELP_CARD_TITLE;
-        const cardContents = langEN.HELP_MESSAGE;
-        this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
+        const cardTitle                   = langEN.HELP_CARD_TITLE;
+        const cardContents                = langEN.HELP_MESSAGE;
+        const continuePrompt              = langEN.CONTINUE_PROMPT;
+        this.attributes['speechOutput']   = langEN.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
 
         if(this.attributes['continue']) {
-            this.emit(':askWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
+            this.emit(':askWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents + continuePrompt);
         } else {
             this.emit(':tellWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
         }
