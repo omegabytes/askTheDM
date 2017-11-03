@@ -15,7 +15,7 @@ If you'd like to get involved, please check out [our contributing document.](htt
 
 Check out what's new with Ask the DM [here.](https://github.com/omegabytes/askTheDM/blob/master/CHANGELOG.md)
 
-All the ways you can ask questions can be found in the ever-examping [sample utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances_en_US.txt) file.
+All the ways you can ask questions can be found in the ever-examping [sample utterances](https://github.com/omegabytes/askTheDM/blob/master/speechAssets/SampleUtterances.txt) file.
 
 ## License
 
