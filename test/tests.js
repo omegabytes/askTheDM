@@ -54,7 +54,7 @@ describe('General tests', function (done) {
             // Emulate the user saying 'help
             // alexa.spoken('help', function (error,response) {
                 alexa.intended('AMAZON.HelpIntent', null, function (error, response) {
-                    assert.equal(response.response.outputSpeech.ssml, '<speak> Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask the DM, and follow with your question. For example say: Alexa ask the DM what is the range of fireball. As of version 2.0, you can roll multiple dice, and roll dee twenties with advantage and disadvantage. I have a working index, and can tell you what page in the players handbook you can find more information on many subjects. Also, you can get information about conditions, spells, feats, and items. For spells, you can get the following information: casting time, duration, range, components, spell type, damage and healing by level, short description and long description. For conditions and feats, simply include their name when asking for information. Items includes an exhaustive list of attributes like cost, type, or armor class.  If you are in interactive mode, say exit to quit. Now, what was your question? </speak>');
+                    assert.equal(response.response.outputSpeech.ssml, '<speak> Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask the DM, and follow with your question. For example say: Alexa: ask the DM what is the range of fireball. As of version 2.0, you can roll multiple dice, and roll dee twenties with advantage and disadvantage. I have a working index, and can tell you what page in the players handbook you can find more information on many subjects. Also, you can get information about conditions, spells, feats, and items. For spells, you can get the following information: casting time, duration, range, components, spell type, damage and healing by level, short description and long description. For conditions and feats, simply include their name when asking for information. Items includes an exhaustive list of attributes like cost, type, or armor class.  If you are in interactive mode, say exit to quit. Now, what was your question? </speak>');
                     done();
                 });
             });
@@ -132,7 +132,6 @@ describe('SpellDamageIntent', function (done) {
     // what is the damage of level 3 fireball
     it('damage of level 3 fireball', function (done) {
         alexa.launched(function (error, response) {
-            // Emulate the user asking what fireball is
             alexa.intended('SpellDamageIntent', {"SlotLevel":"3", "Spell":"fireball"}, function (error, response) {
                 assert.equal(response.response.outputSpeech.ssml,'<speak> A level 3, fireball does 8d6 fire damage.. What else can I help with? </speak>');
                 done();
@@ -143,7 +142,7 @@ describe('SpellDamageIntent', function (done) {
 
 // SpellHealIntent
 describe('SpellHealIntent', function (done) {
-    it('health of level 5 cure wounds', function (done) {
+    it('healing of level 5 cure wounds', function (done) {
         alexa.launched(function (error, response) {
             alexa.intended('SpellHealIntent', {"SlotLevel":"5", "Spell":"cure wounds"}, function (error, response) {
                 assert.equal(response.response.outputSpeech.ssml,'<speak> At level 5 cure wounds heals 5d8 plus your spellcasting ability modifier.. What else can I help with? </speak>');
