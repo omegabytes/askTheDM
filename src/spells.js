@@ -415,6 +415,31 @@ module.exports = {
                 }
             }
         },
+        "firestorm": {
+            "castingTime": "1 Action",
+            "duration": "Instantaneous",
+            "range": "150 feet",
+            "components": "Verbal, Somatic",
+            "slotLevel": "7",
+            "school": "Evocation",
+            "shortDescription": "Create a storm of roaring flame within range, consisting of ten 10-foot cubes, which you arrange. Each cube must be adjacent to another face of the cube. On a failed Dexterity save, each creature in the area takes 7d10 fire damage, or half damage on a success.",
+            "longDescription": "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one. The fire damages objects in the area and ignites flammable objects that arent being worn or carried. If you choose, plant life in the area is unaffected by this spell.",
+            "url": "https://www.dnd-spells.com/spell/fire-storm",
+            "damage": {
+                "type": "fire damage",
+                "levels": {
+                    1: 0,
+                    2: 0,
+                    3: 0,
+                    4: 0,
+                    5: 0,
+                    6: 0,
+                    7: "7d10",
+                    8: "7d10",
+                    9: "7d10"
+                }
+            }
+        },
         "cordon of arrows": {
             "castingTime": "1 Action",
             "duration": "8 hours",

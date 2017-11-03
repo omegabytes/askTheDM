@@ -48,7 +48,7 @@ armor and shields
 armor class
 armor of shadows
 armor proficiency
-artificer's lore
+artificers lore
 ascendant step
 aspect of the beast
 assassin
@@ -164,7 +164,7 @@ combat round
 combat superiority
 combat wild shape
 combining spell effects
-commander's strike maneuver
+commanders strike maneuver
 common
 common races
 command undead
@@ -208,8 +208,8 @@ dampen element
 danger sense
 dark delirium
 dark elf
-dark one's blessing
-dark one's own luck
+dark ones blessing
+dark ones own luck
 darkvision
 dash action
 dc
@@ -230,7 +230,7 @@ deity
 demiplane
 destroy undead
 destructive wrath
-devil's sight
+devils sight
 dexterity
 diamond soul
 d
@@ -282,7 +282,7 @@ druidic
 druidic focuses
 druids and the god
 dueling
-duergar (gray dwarf)
+duergar
 dungeon master
 durable summon
 duration
@@ -415,7 +415,8 @@ gold piece
 gong of the summit
 grappled
 grappling
-gray dwarf (duergar)
+gray dwarf
+gray dwarves
 greater portent
 the great old one
 great weapon fighting
@@ -438,7 +439,8 @@ halfling trait
 half-orc
 half-orc name
 half-orc trait
-hawk (falcon)
+hawk
+falcon
 healing
 hearing
 heavily obscured
@@ -472,7 +474,7 @@ human ethnicity
 human name
 human trait
 hunter
-hunter's prey
+hunters prey
 hurl through hell
 hustle
 hypnotic gaze
@@ -523,7 +525,7 @@ knight
 knocking a creature out
 know your enemy
 knowledge domain
-land's stride
+lands stride
 language
 large
 lawful evil
@@ -623,9 +625,9 @@ naturally stealthy
 natural recovery
 nature
 nature domain
-nature's sanctuary
-nature's ward
-nature's wrath
+natures sanctuary
+natures ward
+natures wrath
 navigating
 necromancer
 necromancy
@@ -742,7 +744,7 @@ ranged attack
 ranged weapon
 ranger
 ranger archetype
-ranger's companion
+rangers companion
 rashemi
 rat
 raven
@@ -823,7 +825,7 @@ reef shark
 shelter of the faithful
 shield
 shield dwarf
-ship's passage
+ships passage
 short rest
 shou
 shoving
@@ -915,7 +917,7 @@ sun elf
 sunlight sensitivity
 superior critical
 superior darkvision
-superior hunter's defense
+superior hunters defense
 superior inspiration
 superiority dice
 supreme healing
@@ -938,9 +940,9 @@ terran
 tethyrian
 thaco
 thief
-thief's reflex
-thieves' cant
-thieves' tool
+thiefs reflex
+thieves cant
+thieves tool
 the third eye
 thirsting blade
 thought shield
@@ -974,7 +976,7 @@ tranquility
 transmutation
 transmutation savant
 transmuter
-transmuter's stone
+transmuters stone
 finding trap
 removing trap
 disabling trap
@@ -1022,7 +1024,7 @@ vulnerability
 wanderer
 warding flare
 war domain
-war god's blessing
+war gods blessing
 warhorse
 war magic
 war priest
@@ -1101,7 +1103,7 @@ area of effects
 armor and shield
 armor classes
 armor proficiencys 
-artificer's lores 
+artificers lores
 ascendant steps 
 aspect of the beasts 
 assassins 
@@ -1209,7 +1211,7 @@ combat rounds
 combat superioritys 
 combat wild shapes 
 combining spell effect
-commander's strike maneuvers 
+commanders strike maneuvers
 commons 
 common race
 command undeads 
@@ -1255,8 +1257,8 @@ danger senses
 dark deliriums 
 dark elfs 
 darkness
-dark one's blessings 
-dark one's own lucks 
+dark ones blessings
+dark ones own lucks
 darkvisions 
 dash actions 
 dcs 
@@ -1277,7 +1279,7 @@ deities
 demiplanes
 destroy undeads 
 destructive wraths 
-devil's sights 
+devils sights
 dexteritys 
 diamond souls 
 ds 
@@ -1330,11 +1332,12 @@ druidics
 druidic focus
 druids and the gods
 duelings 
-duergar (gray dwarf)s 
+duergar
 dungeon masters 
 durable summons
 durations 
-dwarfs 
+dwarfs
+dwarves
 dwarf names
 dwarf traits
 dwarven armor trainings 
@@ -1525,7 +1528,7 @@ human ethnicities
 human names
 human traits
 hunters 
-hunter's preys 
+hunters preys
 hurl through hells 
 hustles 
 hypnotic gazes 
@@ -1578,7 +1581,7 @@ knocking a creature outs
 know your enemys 
 knowledge domains 
 knowledge of the ages
-land's strides 
+lands strides
 languages 
 larges 
 lawful evils 
@@ -1680,9 +1683,9 @@ naturally stealthys
 natural recoverys 
 natures 
 nature domains 
-nature's sanctuarys 
-nature's wards 
-nature's wraths 
+natures sanctuarys
+natures wards
+natures wraths
 navigatings 
 necromancers 
 necromancys 
@@ -1798,7 +1801,7 @@ ranged attacks
 ranged weapons 
 rangers 
 ranger archetypes 
-ranger's companions 
+rangers companions
 rashemis 
 rats 
 ravens 
@@ -1880,7 +1883,7 @@ reef sharks
 shelter of the faithfuls 
 shields 
 shield dwarfs 
-ship's passages 
+ships passages
 short rests 
 shous 
 shovings 
@@ -1974,7 +1977,7 @@ sun elfs
 sunlight sensitivitys 
 superior criticals 
 superior darkvisions 
-superior hunter's defenses 
+superior hunters defenses
 superior inspirations 
 superiority dices 
 supreme healings 
@@ -1998,9 +2001,9 @@ tethyrians
 thac0s 
 thiefs 
 thief of five fates
-thief's reflexes
-thieves' cants 
-thieves' tools
+thiefs reflexes
+thieves cants
+thieves tools
 the third eyes 
 thirsting blades 
 thought shields 
@@ -2035,7 +2038,7 @@ tranquilitys
 transmutations 
 transmutation savants 
 transmuters 
-transmuter's stones 
+transmuters stones
 finding traps
 removing traps
 disabling traps
@@ -2085,7 +2088,7 @@ vulnerabilitys
 wanderers 
 warding flares 
 war domains 
-war god's blessings 
+war gods blessings
 warhorses 
 war magics 
 war priests 
