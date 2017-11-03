@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-## [2,2] - 11/3/2017
+## [2.2] - 11/3/2017
 - Added expected "mispronunciations" of spell and item names
 - Added some utterances, removed others
 - Fixed a nasty bug in spell healing and damage intents that was causing the program to exit unexpectedly
