@@ -1,9 +1,10 @@
-var bst     = require('bespoken-tools');
-var assert  = require('assert');
-var id      = require('../src/appId');
-var listOfSpells  = require('../src/spells.js');
-var appId = id.APP_ID;
+var bst              = require('bespoken-tools');
+var assert           = require('assert');
+var languageStrings  = require('../src/languageStrings');
+var listOfSpells     = require('../src/spells.js');
+var langEN           = languageStrings.en.translation;
 
+var appId   = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var server  = null;
 var alexa   = null;
 
@@ -43,7 +44,7 @@ describe('General tests', function (done) {
         // Launch the skill via sending it a LaunchRequest
         alexa.launched(function (error, payload) {
             // Check that the welcome message is played
-            assert.equal(payload.response.outputSpeech.ssml, '<speak> Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with? </speak>');
+            assert.equal(payload.response.outputSpeech.ssml, '<speak> ' + langEN.WELCOME_MESSAGE + ' </speak>');
             done();
         });
     });
@@ -54,7 +55,7 @@ describe('General tests', function (done) {
             // Emulate the user saying 'help
             // alexa.spoken('help', function (error,response) {
                 alexa.intended('AMAZON.HelpIntent', null, function (error, response) {
-                    assert.equal(response.response.outputSpeech.ssml, '<speak> Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask the DM, and follow with your question. For example say: Alexa ask the DM what is the range of fireball. As of version 2.0, you can roll multiple dice, and roll dee twenties with advantage and disadvantage. I have a working index, and can tell you what page in the players handbook you can find more information on many subjects. Also, you can get information about conditions, spells, feats, and items. For spells, you can get the following information: casting time, duration, range, components, spell type, damage and healing by level, short description and long description. For conditions and feats, simply include their name when asking for information. Items includes an exhaustive list of attributes like cost, type, or armor class.  If you are in interactive mode, say exit to quit. Now, what was your question? </speak>');
+                    assert.equal(response.response.outputSpeech.ssml, '<speak> ' + langEN.HELP_MESSAGE + ' </speak>');
                     done();
                 });
             });

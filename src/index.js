@@ -1,10 +1,9 @@
 'use strict';
 
 var Alexa           = require('alexa-sdk');
-var id              = require('./appId.js');
 var languageStrings = require('./languageStrings');
 var alexaLib        = require('./alexaLib.js');
-var APP_ID          = id.APP_ID;
+var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var langEN          = languageStrings.en.translation;
 
 // noinspection JSUnusedLocalSymbols
@@ -17,6 +16,11 @@ exports.handler = function(event, context, callback) {
 };
 
 var handlers = {
+
+    /***************************
+     *     Custom Intents      *
+     ***************************/
+
     'ConditionsIntent': function () {
         var requestedConditionName        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
         var condition                     = langEN.CONDITIONS[requestedConditionName];
@@ -372,20 +376,34 @@ var handlers = {
         this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
-    //Required Amazon Intents 
+
+    /***************************
+     * Required Amazon Intents *
+     ***************************/
+
     'LaunchRequest': function () {
         // Alexa, ask [my-skill-invocation-name] to (do something)...
         // If the user either does not reply to the welcome message or says something that is not
         // understood, they will be prompted again with this text.
+        const cardTitle = langEN.WELCOME_CARD_TITLE;
+        const cardContents = langEN.WELCOME_MESSAGE;
         this.attributes['continue']         = true;
         this.attributes['speechOutput']     = langEN.WELCOME_MESSAGE;
         this.attributes['repromptSpeech']   = langEN.WELCOME_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+
+        this.emit(':askWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
     },
     'AMAZON.HelpIntent': function () {
+        const cardTitle = langEN.HELP_CARD_TITLE;
+        const cardContents = langEN.HELP_MESSAGE;
         this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
         this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
+
+        if(this.attributes['continue']) {
+            this.emit(':askWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
+        } else {
+            this.emit(':tellWithCard', this.attributes['speechOutput'], this.attributes['repromptSpeech'],cardTitle,cardContents);
+        }
     },
     'AMAZON.RepeatIntent': function () {
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
