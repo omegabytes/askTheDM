@@ -128,7 +128,7 @@ var handlers = {
             this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
         }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
-
+        //add prompt for if feat doesnt have prereq
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
@@ -141,11 +141,6 @@ var handlers = {
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
-    },
-    'IncompleteIntent' : function () {
-        this.attributes['continue']     = true;
-        this.attributes['speechOutput'] = langEN.INCOMPLETE_REQUEST;
-        this.emit(':ask', this.attributes['speechOutput']);
     },
     'IndexIntent' : function(){
         var requestedIndexName  = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Index);
@@ -354,7 +349,7 @@ var handlers = {
             }
         }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
-        }else if (requestedSpell) {
+        }else if (requestedSpell) { //todo: debug here
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;

@@ -5,5 +5,4 @@
 icons/
 node_modules/
 delzip.py
-/coverage/
-appId.js
+/src/appId.js
