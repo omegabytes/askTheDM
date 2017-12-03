@@ -258,8 +258,10 @@ var handlers = {
             }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
                 if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
 	                this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-                }else if(classes && spell){ //can a {class} cast {spell} at level {level}
-                	this.emit('spellDamageIntent'); //doesnt fire
+                }else{ //can a {class} cast {spell} at level {level}
+	                this.attributes['spell'] = requestedSpell;
+	                this.attributes['level'] = requestedSpellLevel;
+                	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
                 }
             }
         }
