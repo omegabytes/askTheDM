@@ -237,31 +237,39 @@ var handlers = {
     },
     //SpellClassIntent 
     //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
+
     'SpellClassIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedClass          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Class);
+        var requestedClass          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
+	    var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
         var spell                   = langEN.SPELLS[requestedSpell];
         var classes                 = langEN.CLASSES[requestedClass];
-
-        //var spellClasses = list of classes in spellClass attribute in spells
-        var spellClasses = spell.spellClass;
-
-        for(var i in spellClasses){
-            
-        }
+	    var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //be careful 'class' is a special keyword
 
-        if(spell){
-            if(classes){
-                this.attributes['speechOutput'] = spellName + " can be cast by the following classes. "
-                    + spellClass;
+        if(spell){ //if the requested spell exists
+            var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
+
+            if(spellClasses.indexOf(requestedClass) === -1){ //if the requested class exists in the array of spell classes
+                this.attributes['speechOutput'] = requestedClass + "'s can't cast " + requestedSpell + ".";
+            }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
+                if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
+	                this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
+                }else if(classes && spell){ //can a {class} cast {spell} at level {level}
+                	this.emit('spellDamageIntent'); //doesnt fire
+                }
             }
         }
-    },
 
+        if(this.attributes['continue']){ 
+            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+        }else{
+            this.emit(':tell', this.attributes['speechOutput']);
+        }
+    },
     'SpellDamageIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
@@ -270,14 +278,11 @@ var handlers = {
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         
-        if(spell && spell.damage===undefined){
+        if(spell && spell.damage === undefined){
             this.attributes['speechOutput'] = "That spell does not do damage."
-        }else if(spell && typeof spell.damage === 'string')
-        {
+        }else if(spell && typeof spell.damage === 'string'){
             this.attributes['speechOutput'] = spell.damage;
-        }
-        else
-        {
+        }else{
             if(spell && spell['slotLevel'] === 'cantrip')
             { //if the requested spell is a cantrip
                 var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
@@ -292,8 +297,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "For damage amount, please include the slot or player level you wish to cast it at.";
             }else if (!spell || !level) {
                 this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
-            }else
-            { //if the requested spell is a normal spell
+            }else { //if the requested spell is a normal spell
                 var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
                 var dmgType = spell.damage.type;
                 this.attributes['speechOutput'] = "A level " + level + ", "

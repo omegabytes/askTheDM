@@ -4,6 +4,7 @@ var indexInfo       = require('./indexInfo');
 var items           = require('./items');
 var feats           = require('./feats');
 var spells          = require('./spells');
+var classes         = require('./classes');
 
 module.exports = {
     "en": {
@@ -11,7 +12,7 @@ module.exports = {
             //json resources
             "SPELL_ATTRIBUTES" :                            spells.SPELL_ATTRIBUTES,
             "CONDITIONS" :                                  conditions.CONDITIONS,
-            "CLASSES" :                                     spells.CLASSES,
+            "CLASSES" :                                     classes.CLASSES,
             "EXHAUSTION_LEVELS" :                           exhaustionLevel.EXHAUSTION_LEVELS,
             "FEATS" :                                       feats.FEATS,
             "FEAT_ATTRIBUTES" :                             feats.FEAT_ATTRIBUTES,
