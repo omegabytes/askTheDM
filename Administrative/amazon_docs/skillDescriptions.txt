@@ -1,9 +1,11 @@
 Short skill description: 
-A quick-reference for Dungeons and Dragons 5e.
+Get info on spells, items, feats, and conditions. Roll dice and look up page numbers for Dungeons and Dragons 5e.
 
 -------------------------------------------------
 
 Full skill description:
+Quickly get info on items, spells, feats, and conditions! Roll game dice with advantage! Find a page in the handbook using your voice!
+
 Ask the DM is a quick reference tool for use with Dungeons and Dragons 5th edition. Designed for use around the table during sessions, Ask the DM aims to reduce the amount of time spent looking up information.
 
 There's two ways you can use this skill:

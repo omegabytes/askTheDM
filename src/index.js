@@ -97,7 +97,7 @@ var handlers = {
     },
     'ExhaustionLevelIntent': function () {
         var requestedExhaustionLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Level);
-        var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
+        var exhaustionLevel          = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -132,7 +132,7 @@ var handlers = {
             this.attributes['speechOutput'] = thisFeat[thisFeatAttribute];
         }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
-            //add prompt for if feat doesnt have prereq
+            //add prompt for if feat doesn't have a prereq
             //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
             this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
@@ -341,7 +341,6 @@ var handlers = {
                                 + " plus your spellcasting ability modifier.";
                         }
                     }
-
                 }
             }
         }
