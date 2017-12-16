@@ -7,5 +7,8 @@
 
 ## Testing, Design, and Support:
 - Kadyn Martinez <kadyn_martinez@hotmail.com>  |  [Linkedin](https://www.linkedin.com/in/kadynmartinez/)  |  [Github](https://github.com/KadynCBR)
-- Jason Newman <gojirra@gmail.com>  |  [Linkedin](https://www.linkedin.com/in/jasonnewman/)  |  [Github](https://github.com/gojirra55) [Website](http://jnewmandesign.com)
+- Jason Newman <gojirra@gmail.com>  |  [Linkedin](https://www.linkedin.com/in/jasonnewman/)  |  [Github](https://github.com/gojirra55) | [Website](http://jnewmandesign.com)
 - Daniela Arias <dany.arias@gmail.com>
+- Robert Shortt
+- Taylor Nagel
+- Mia Newman and her wonderful students
