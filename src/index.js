@@ -256,10 +256,11 @@ var handlers = {
             if(spellClasses.indexOf(requestedClass) === -1){ //if the requested class exists in the array of spell classes
                 this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
             }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
-	            if(level) {
+	            if(level && spellClasses.indexOf(requestedClass) != -1){
 		            this.attributes['spell'] = requestedSpell;
 		            this.attributes['level'] = requestedSpellLevel;
-		            this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
+		            this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //will need states to make this work properly
+		            //the above .emit works in a sense, that it falls to the intent, but does not call it. With States, this should fix the issue
 	            }else{
 		            this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
 	            }
