@@ -254,7 +254,7 @@ var handlers = {
             var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
 
             if(spellClasses.indexOf(requestedClass) === -1){ //if the requested class exists in the array of spell classes
-                this.attributes['speechOutput'] = requestedClass + "'s can't cast " + requestedSpell + ".";
+                this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
             }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
                 if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
 	                this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
