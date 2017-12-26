@@ -256,13 +256,20 @@ var handlers = {
             if(spellClasses.indexOf(requestedClass) === -1){ //if the requested class exists in the array of spell classes
                 this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
             }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
-                if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
-	                this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-                }else{ //can a {class} cast {spell} at level {level}
-	                this.attributes['spell'] = requestedSpell;
-	                this.attributes['level'] = requestedSpellLevel;
-                	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
-                }
+	            if(level) {
+		            this.attributes['spell'] = requestedSpell;
+		            this.attributes['level'] = requestedSpellLevel;
+		            this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
+	            }else{
+		            this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
+	            }
+                // if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
+	             //    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
+                // }else if((spellClasses.indexOf(requestedClass) != -1)&&(level)){ //can a {class} cast {spell} at level {level}
+	             //    this.attributes['spell'] = requestedSpell;
+	             //    this.attributes['level'] = requestedSpellLevel;
+                // 	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
+                // }
             }
         }
 

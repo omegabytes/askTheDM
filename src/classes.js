@@ -28,7 +28,7 @@ module.exports = {
 // 		"skills":[],
 // 		"equipment":{},
 // 	},
-// 	"spells":{}, //doesnt need double work, already exists in spells.js **what can be placed in here is spell slots per level, # of cantrips, spells/cantrips known**
+// 	"spells":{}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 // 	"spellcasting_ability":{
 // 		"spell_save_dc":{},
 // 		"spell_attack_mod":{}
