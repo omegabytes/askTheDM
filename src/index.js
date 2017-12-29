@@ -260,7 +260,7 @@ var handlers = {
 		            this.attributes['spell'] = requestedSpell;
 		            this.attributes['level'] = requestedSpellLevel;
 		            this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //will need states to make this work properly
-		            //the above .emit works in a sense, that it falls to the intent, but does not call it. With States, this should fix the issue
+		            //this.emitWithStates('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //need to add state handler
 	            }else{
 		            this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
 	            }
