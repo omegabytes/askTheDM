@@ -48,7 +48,7 @@ module.exports = {
 			"superior inspiration":""
 		},
 		"bard" : {
-			"description": {
+			"class_description": {
 				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations",
 				"longDesc": "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus."
 			},
@@ -466,51 +466,76 @@ module.exports = {
 }; //end of module
 
 //FIXME: classes prototype template *WORK IN PROGRESS*
-//class:{
-// "description": {
-// 		"shortDesc": "",
-// 		"longDesc": ""
-//  },
-// "hit_point":{
-// 	    "hit_dice": "",
-// 		"1st_level": "",
-// 		"higher_levels":""
-// },
-// "primary_ability":{},
-// "proficiencies":{
-//      "armor_prof":[],
-// 		"weapon_prof":[],
-// 		"tools":[],
-// 		"saving_throw_prof": [],
-// 		"skills":[],
-// 		"equipment":{},
-// },
-// "spells":{}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
-// "spellcasting_ability":{
-// 	    "spell_save_dc":{},
-// 	    "spell_attack_mod":{}
-// },
-// "class_features":{
-//      "bardic inspiration": "",
-//      "jack of all trades": "",
-// 		"song of rest": "",
-// 		"subclass": { //turns in subclasses, will be worked on later
-// 		    "bard college": {
-// 	           "description": "",
-// 	               "college of lore": {
-// 	                   "description":"",
-// 		                "bonus proficiencies":"",
-// 			            "cutting words":"",
-// 				        "additional magical secrets":"",
-// 					    "peerless skill":""
-// 	                },
-// 	                "college of valor": {}
-// 			}
-//		}
-// 	},
-// 	"expertise":"",
-// 		"ability score improvement": {},
-// 	"font of inspiration":"",
-// 		"countercharm":"",
-// 		"magical secrets":"",
-// 		"superior inspiration":""
+// module.exports = {
+// 	"PROTOTYPE": {
+// 		"class": {
+// 			"class_description": {
+// 				"shortDesc": "",
+// 				"longDesc": ""
+// 			},
+// 			"class_hit_point": {
+// 				"hit_dice": "",
+// 				"1st_level": "",
+// 				"higher_levels": ""
+// 			},
+// 			"class_primary_ability": { //'Quick Build' section from the PHB
+// 				"ability_scores": "",
+// 				"background": "",
+// 				"starting_spells": "" //not applicable to Barbarians
+// 			},
+// 			"class_proficiencies": {
+// 				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
+// 				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+// 				"tools": [""],
+// 				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+// 				"skills": [""],
+// 				"equipment": {
+// 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+// 					"starting_pack": "",
+// 					"weapons_1": "",
+// 					"weapons_2": "",
+// 					"weapons_3": "",
+// 					"equipment_pack_1": "",
+// 					"equipment_pack_2": "",
+// 					"options_1": "",
+// 					"options_2": ""
+// 				},
+// 			}, //end of proficiencies
+// 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+// 			"class_spellcasting_ability": {
+// 				"spell_save_dc": {},
+// 				"spell_attack_mod": {}
+// 			}, //end of spellcasting
+// 			"class_features": {
+// 				"class_feature_1": "",
+// 				"class_feature_2": "",
+// 				"class_feature_3": "",
+// 				"subclass": { //turns into subclasses, will be worked on in later build
+// 					"subclass_paths": {
+// 						"subclass_description": "",
+// 						"subclass_type_1": {
+// 							"subclass_1_description": "",
+// 							"subclass_benefit_1": "",
+// 							"subclass_benefit_2": "",
+// 							"subclass_benefit_3": "",
+// 							"subclass_benefit_4": ""
+// 						},
+// 						"subclass_type_2": {
+// 							"subclass_2_description": "",
+// 							"subclass_benefit_1": "",
+// 							"subclass_benefit_2": "",
+// 							"subclass_benefit_3": "",
+// 							"subclass_benefit_4": ""
+// 						}
+// 					}
+// 				}
+// 			},
+// 			"expertise": "",
+// 			"ability_score_improvement": {},
+// 			"class_specific_ability_1": "",
+// 			"class_specific_ability_2": "",
+// 			"class_specific_ability_3": "",
+// 			"class_specific_ability_4": ""
+// 		}
+// 	}
+// };
