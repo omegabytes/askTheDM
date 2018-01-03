@@ -75,14 +75,14 @@ module.exports = {
 				"longDesc": "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus."
 			},
 			"hit_point": {
-				"hit_dice": "1d8 per bard level",
+				"hit_dice": "1d8 per bard level", //FIXME: remove "per bard level so we can use this to do calculations
 				"1st_level": "8 plus your Constitution modifier",
 				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier, per bard level after 1st level."
 			},
 			"primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "Recommended to choose Charisma, followed by Dexterity as your highest ability scores.",
 				"background": "It is advised to take the entertainer background for your character.",
-				"starting_spells": "We recommend you choose vicious mockery and dancing lights as your first cantrips. Regarding 1st-level spells, we recommend taking the charm person, detect magic, healing word, and thunderwave as your first spells."
+				"starting_spells": "We recommend you choose vicious mockery and dancing lights as your first cantrips. Regarding 1st-level spells, we recommend taking the charm person, detect magic, healing word, and thunderwave as your first spells." //FIXME: there is no we, only Alexa :)
 			},
 			"proficiencies": {
 				"armor_prof": ["Light armor"],
@@ -90,7 +90,7 @@ module.exports = {
 				"tools": ["Three musical instruments of your choice."],
 				"saving_throw_prof": ["Dexterity", "Charisma"],
 				"skills": ["You may choose any three skills of your choice to be proficient in."],
-				"equipment": {
+				"equipment": { //TODO: this section is weird. We should talk about it before developming any further
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 					"starting_pack": "Leather armor and a dagger",
 					"weapons_1": "A rapier",
