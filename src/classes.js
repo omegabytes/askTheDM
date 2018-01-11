@@ -2,44 +2,57 @@ module.exports = {
 	"CLASSES" : {
 		"barbarian": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "The relentless combatant, fueled by fury or it's totem bonds with animals. In tune with the natural order.",
+				"longDesc": "The barbarian is a primal warrior who prefers to charge in to engage foes in melee. They can follow either the Path of the Berserker, focusing on dealing as much damage as possible in melee combat, or the Path of the Totem Warrior, accepting an animal as a spiritual guide for a more druid-like experience."
 			},
 			"class_hit_point": {
-				"hit_dice": "",
-				"1st_level": "",
-				"higher_levels": ""
+				"hit_dice": "1d12",
+				"1st_level": "12 plus your Constitution modifier.",
+				"higher_levels": "Based on average rolls, 7 plus your Constitution modifier, per barbarian level past 1st."
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
-				"ability_scores": "",
-				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"ability_scores": "Recommended to choose Strength, followed by Constitution as your highest ability scores.",
+				"background": "It is advised to take the outlander background for your character.",
+				"starting_spells": "Barbarians do not have the ability to cast spells."
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
-				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
-			}, //end of proficiencies
+				"armor_prof": [
+					"Light armor",
+					"medium armor",
+					"shields"
+				],
+				"weapon_prof": [
+					"Simple weapons",
+					"Martial weapons",
+				],
+				"tools": ["None"],
+				"saving_throw_prof": [
+					"Strength",
+					"Constitution"
+				],
+				"skills": ["Choose two from either Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival."]
+			}, //end of class_proficiencies
+			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "An explorer's pack and four javelins.",
+				"weapons_1": "A greataxe.",
+				"weapons_2": "Any martial melee weapon.",
+				"weapons_3": "Two handaxes.",
+				"weapons_4": "Any simple weapon.",
+				"equipment_pack_1": " Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+			}, //end of equipment
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
 			}, //end of spellcasting
 			"class_features": {
-				"class_feature_1": "",
+				"rage": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_2": "",
 				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
@@ -71,27 +84,28 @@ module.exports = {
 		},
 		"bard" : {
 			"class_description": {
-				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations",
+				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations.",
 				"longDesc": "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus."
 			},
-			"hit_point": {
-				"hit_dice": "1d8 per bard level", //FIXME: remove "per bard level so we can use this to do calculations
+			"class_hit_point": {
+				"hit_dice": "1d8",
 				"1st_level": "8 plus your Constitution modifier",
 				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier, per bard level after 1st level."
 			},
-			"primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "Recommended to choose Charisma, followed by Dexterity as your highest ability scores.",
 				"background": "It is advised to take the entertainer background for your character.",
-				"starting_spells": "We recommend you choose vicious mockery and dancing lights as your first cantrips. Regarding 1st-level spells, we recommend taking the charm person, detect magic, healing word, and thunderwave as your first spells." //FIXME: there is no we, only Alexa :)
+				"starting_spells": "Alexa recommends you choose vicious mockery and dancing lights as your first cantrips. Regarding 1st-level spells, we recommend taking the charm person, detect magic, healing word, and thunderwave as your first spells."
 			},
-			"proficiencies": {
+			"class_proficiencies": {
 				"armor_prof": ["Light armor"],
 				"weapon_prof": ["Simple weapon", "hand crossbows", "longswords", "rapiers", "shortswords"],
 				"tools": ["Three musical instruments of your choice."],
 				"saving_throw_prof": ["Dexterity", "Charisma"],
 				"skills": ["You may choose any three skills of your choice to be proficient in."]
 			},
-			"equipment": { //TODO: this section is weird. We should talk about it before developming any further
+			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
+				//TODO: this section is weird. We should talk about it before developming any further
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "Leather armor and a dagger",
 				"weapons_1": "A rapier",
@@ -100,13 +114,14 @@ module.exports = {
 				"equipment_pack_1": "A diplomat's pack which includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.",
 				"equipment_pack_2": "An entertainer's pack which includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit.",
 				"options_1": "A lute",
-				"options_2": "Any other musical instrument"
+				"options_2": "Any other musical instrument",
+				"skills": ["You may choose any three skills of your choice to be proficient in."]
 			},
-			"spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
-			"spellcasting_ability": {
+			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spellcasting_ability": {
 				"spell_save_dc": "8 plus your proficiency bonus plus your Charisma modifier.",
 				"spell_attack_mod": "Your proficiency bonus plus your Charisma modifier.",
-				"spell_focus": "Musical instrument"
+				"spell_focus": "Musical instrument."
 			},
 			"class_features": {
 				"bardic inspiration": {
@@ -159,10 +174,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -175,16 +201,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -194,17 +225,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -228,10 +259,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -244,16 +286,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -263,17 +310,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -297,10 +344,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -313,16 +371,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -332,17 +395,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -366,10 +429,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -382,16 +456,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -401,17 +480,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -435,10 +514,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -451,16 +541,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -470,17 +565,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -504,10 +599,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -520,16 +626,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -539,17 +650,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -573,10 +684,21 @@ module.exports = {
 				"starting_spells": "" //not applicable to Barbarians
 			},
 			"class_proficiencies": {
-				"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-				"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
 				"tools": [""],
-				"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
 				"skills": [""],
 				"equipment": {
 					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
@@ -589,16 +711,21 @@ module.exports = {
 					"options_1": "",
 					"options_2": ""
 				}
-			}, //end of proficiencies
+			}, //end of class_proficiencies
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
-				"spell_save_dc": {},
-				"spell_attack_mod": {}
-			}, //end of spellcasting
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			}, //end of class_spellcasting
 			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"class_feature_3": "",
 				"subclass": { //turns into subclasses, will be worked on in later build
 					"subclass_paths": {
 						"subclass_description": "",
@@ -608,17 +735,17 @@ module.exports = {
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},
+						},//end of subclass_1
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}
-					}
-				}
-			},
+						}//end of subclass_2
+					}//end of subclass_paths
+				}//end of subclass
+			}, //end of class_features
 			"expertise": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
@@ -630,72 +757,90 @@ module.exports = {
 }; //end of module
 
 //FIXME: classes prototype template *WORK IN PROGRESS*
-//"class": {
-// 	"class_description": {
-// 		"shortDesc": "",
-// 		"longDesc": ""
-// 	},
-// 	"class_hit_point": {
-// 		"hit_dice": "",
-// 		"1st_level": "",
-// 		"higher_levels": ""
-// 	},
-// 	"class_primary_ability": { //'Quick Build' section from the PHB
-// 		"ability_scores": "",
-// 		"background": "",
-// 		"starting_spells": "" //not applicable to Barbarians
-// 	},
-// 	"class_proficiencies": {
-// 		"armor_prof": ["armor_prof_1", "armor_prof_2", "armor_prof_3"],
-// 		"weapon_prof": ["wep_prof_1", "wep_prof_2", "wep_prof_3", "wep_prof_4", "wep_prof_5"],
-// 		"tools": [""],
-// 		"saving_throw_prof": ["ST_prof_1", "ST_prof_2"],
-// 		"skills": [""],
-// 		"equipment": {
-// 			"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-// 			"starting_pack": "",
-// 			"weapons_1": "",
-// 			"weapons_2": "",
-// 			"weapons_3": "",
-// 			"equipment_pack_1": "",
-// 			"equipment_pack_2": "",
-// 			"options_1": "",
-// 			"options_2": ""
-// 		}
-// 	}, //end of class_proficiencies
-// 	"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
-// 	"class_spellcasting_ability": {
-// 		"spell_save_dc": {},
-// 		"spell_attack_mod": {}
-// 	}, //end of class_spellcasting
-// 	"class_features": {
-// 		"class_feature_1": "",
-// 		"class_feature_2": "",
-// 		"class_feature_3": "",
-// 		"subclass": { //turns into subclasses, will be worked on in later build
-// 			"subclass_paths": {
-// 				"subclass_description": "",
-// 				"subclass_type_1": {
-// 					"subclass_1_description": "",
-// 					"subclass_benefit_1": "",
-// 					"subclass_benefit_2": "",
-// 					"subclass_benefit_3": "",
-// 					"subclass_benefit_4": ""
-// 				},//end of subclass_1
-// 				"subclass_type_2": {
-// 					"subclass_2_description": "",
-// 					"subclass_benefit_1": "",
-// 					"subclass_benefit_2": "",
-// 					"subclass_benefit_3": "",
-// 					"subclass_benefit_4": ""
-// 				}//end of subclass_2
-// 			}//end of subclass_paths
-// 		}//end of subclass
-// 	}, //end of class_features
-// 	"expertise": "",
-// 	"ability_score_improvement": {},
-// 	"class_specific_ability_1": "",
-// 	"class_specific_ability_2": "",
-// 	"class_specific_ability_3": "",
-// 	"class_specific_ability_4": ""
-//} //end of class prototype template
+// module.exports = {
+// 	"class": {
+// 		"class_description": {
+// 			"shortDesc": "",
+// 			"longDesc": ""
+// 		},
+// 		"class_hit_point": {
+// 			"hit_dice": "",
+// 			"1st_level": "",
+// 			"higher_levels": ""
+// 		},
+// 		"class_primary_ability": { //'Quick Build' section from the PHB
+// 			"ability_scores": "",
+// 			"background": "",
+// 			"starting_spells": "" //not applicable to Barbarians
+// 		},
+// 		"class_proficiencies": {
+// 			"armor_prof": [
+// 				"armor_prof_1",
+// 				"armor_prof_2",
+// 				"armor_prof_3"
+// 			],
+// 			"weapon_prof": [
+// 				"wep_prof_1",
+// 				"wep_prof_2",
+// 				"wep_prof_3",
+// 				"wep_prof_4",
+// 				"wep_prof_5"],
+// 			"tools": [""],
+// 			"saving_throw_prof": [
+// 				"ST_prof_1",
+// 				"ST_prof_2"],
+// 			"skills": [""],
+// 			"equipment": {
+// 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+// 				"starting_pack": "",
+// 				"weapons_1": "",
+// 				"weapons_2": "",
+// 				"weapons_3": "",
+// 				"equipment_pack_1": "",
+// 				"equipment_pack_2": "",
+// 				"options_1": "",
+// 				"options_2": ""
+// 			}
+// 		}, //end of class_proficiencies
+// 		"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+// 		"class_spellcasting_ability": {
+// 			"spell_save_dc": "",
+// 			"spell_attack_mod": "",
+// 			"spell_focus": ""
+// 		}, //end of class_spellcasting
+// 		"class_features": {
+// 			"main_class_feature": {
+// 				"description": "",
+// 				"benefits": "",
+// 				"replenish": ""
+// 			},
+// 			"class_feature_1": "",
+// 			"class_feature_2": "",
+// 			"subclass": { //turns into subclasses, will be worked on in later build
+// 				"subclass_paths": {
+// 					"subclass_description": "",
+// 					"subclass_type_1": {
+// 						"subclass_1_description": "",
+// 						"subclass_benefit_1": "",
+// 						"subclass_benefit_2": "",
+// 						"subclass_benefit_3": "",
+// 						"subclass_benefit_4": ""
+// 					},//end of subclass_1
+// 					"subclass_type_2": {
+// 						"subclass_2_description": "",
+// 						"subclass_benefit_1": "",
+// 						"subclass_benefit_2": "",
+// 						"subclass_benefit_3": "",
+// 						"subclass_benefit_4": ""
+// 					}//end of subclass_2
+// 				}//end of subclass_paths
+// 			}//end of subclass
+// 		}, //end of class_features
+// 		"expertise": "",
+// 		"ability_score_improvement": {},
+// 		"class_specific_ability_1": "",
+// 		"class_specific_ability_2": "",
+// 		"class_specific_ability_3": "",
+// 		"class_specific_ability_4": ""
+// 	} //end of class prototype template
+// };
