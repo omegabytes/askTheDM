@@ -3,7 +3,7 @@
 var Alexa           = require('alexa-sdk');
 var id              = require('./appId.js');
 var languageStrings = require('./languageStrings');
-var alexaLib        = require('./alexaLib.js');
+var dndLib        = require('./dndLib.js');
 var APP_ID          = id.APP_ID;
 var langEN          = languageStrings.en.translation;
 
@@ -18,7 +18,7 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'ConditionsIntent': function () {
-        var requestedConditionName        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+        var requestedConditionName        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
         var condition                     = langEN.CONDITIONS[requestedConditionName];
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
@@ -26,7 +26,7 @@ var handlers = {
         if (condition) {
             this.attributes['speechOutput'] = condition;
         }else if (requestedConditionName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -38,10 +38,10 @@ var handlers = {
         }
     },
     'DiceIntent' : function () {
-        var numberOfDice     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
-        var modifier         = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
-        var diceSides        = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
-        var status           = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Status);
+        var numberOfDice     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
+        var modifier         = dndLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
+        var diceSides        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
+        var status           = dndLib.validateAndSetSlot(this.event.request.intent.slots.Status);
         var firstRoll;
         var secondRoll;
         var result;
@@ -57,12 +57,12 @@ var handlers = {
 
         if (status == null) {
             // calculate the result of a normal roll
-            result = alexaLib.rollDice(numberOfDice,diceSides) + Number(modifier);
+            result = dndLib.rollDice(numberOfDice,diceSides) + Number(modifier);
             this.attributes['speechOutput'] = "The result of the roll is " + result;
         }else if(diceSides==20){
             // calculate the result of a roll with advantage/disadvantage
-            firstRoll  = alexaLib.rollDice(numberOfDice,diceSides);
-            secondRoll = alexaLib.rollDice(numberOfDice,diceSides);
+            firstRoll  = dndLib.rollDice(numberOfDice,diceSides);
+            secondRoll = dndLib.rollDice(numberOfDice,diceSides);
 
             if (status === "advantage") {
                 result = Math.max(firstRoll,secondRoll) + Number(modifier);
@@ -92,7 +92,7 @@ var handlers = {
         }
     },
     'ExhaustionLevelIntent': function () {
-        var requestedExhaustionLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Level);
+        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
         var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -100,7 +100,7 @@ var handlers = {
         if(exhaustionLevel){ //user requests information on exhaustion levels
             this.attributes['speechOutput'] = exhaustionLevel;
         }else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
         }else if (!requestedExhaustionLevel) {
             this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
         }
@@ -116,8 +116,8 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
-        var requestedFeat          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
+        var requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
+        var requestedFeat          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
         var thisFeat               = langEN.FEATS[requestedFeat];
         var thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
@@ -131,7 +131,7 @@ var handlers = {
 
         //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
         }else if (requestedFeat) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -148,15 +148,15 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput']);
     },
     'IndexIntent' : function(){
-        var requestedIndexName  = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Index);
+        var requestedIndexName  = dndLib.validateAndSetSlot(this.event.request.intent.slots.Index);
         var index               = langEN.INDEX[requestedIndexName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if(index){
-            this.attributes['speechOutput'] = alexaLib.pageFind(index, requestedIndexName);
+            this.attributes['speechOutput'] = dndLib.pageFind(index, requestedIndexName);
         }else if (requestedIndexName) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Index.name, requestedIndexName);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Index.name, requestedIndexName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -168,8 +168,8 @@ var handlers = {
         }
     },
     'ItemsIntent': function () {
-        var requestedItem            = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Item);
-        var requestedItemAttribute   = alexaLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
+        var requestedItem            = dndLib.validateAndSetSlot(this.event.request.intent.slots.Item);
+        var requestedItemAttribute   = dndLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
         var item                     = langEN.ITEMS[requestedItem];
         var itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
 
@@ -188,7 +188,7 @@ var handlers = {
                 this.attributes['speechOutput'] = "It is a " + item.category;
             }
         }else if (requestedItem) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Item.name,requestedItem);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Item.name,requestedItem);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
@@ -200,7 +200,7 @@ var handlers = {
         }
     },
     'SpellCastIntent': function () {
-        var spellName = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var spellName = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var spell  = langEN.SPELLS[spellName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -224,7 +224,7 @@ var handlers = {
 
         //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
         }else if (!spell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         } 
@@ -239,26 +239,28 @@ var handlers = {
     //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
 
     'SpellClassIntent': function() {
-	    var requestedSpell = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-	    var requestedClass = alexaLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
-	    var requestedSpellLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+	    var requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+	    var requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
+	    var requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 	    var spell = langEN.SPELLS[requestedSpell];
 	    var classes = langEN.CLASSES[requestedClass];
 	    var level = langEN.SLOT_LEVEL[requestedSpellLevel];
 	    //var spellClasses = list of classes in spellClass attribute in spells
-	    var spellClasses = spell.spellClass;
+	    var spellClasses = spell.spellClass; //try requestedSpell.spellClass;
+
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    //be careful 'class' is a special keyword
+
+	    //TODO: move this logic into a function in dndLib
 	    if (spell) { //if the requested spell exists
-		    var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
+		    //var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
 		    if (spellClasses.indexOf(requestedClass) === -1) { //if the requested class exists in the array of spell classes
 			    this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
 		    } else { //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
 			    if (level && spellClasses.indexOf(requestedClass) != -1) {
 				    this.attributes['spell'] = requestedSpell;
 				    this.attributes['level'] = requestedSpellLevel;
-				    this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //will need states to make this work properly
-				    //this.emitWithStates('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //need to add state handler
+				    this.attributes['speechOutput'] = dndLib.getSpellDamage(requestedSpell, requestedSpellLevel);
 			    } else {
 				    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
 			    }
@@ -269,9 +271,7 @@ var handlers = {
 			    //    this.attributes['level'] = requestedSpellLevel;
 			    // 	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
 			    // }
-		    }
-		    if (spell && spellClasses) {
-			    this.attributes['speechOutput'] = requestedClass;
+			    //TODO: use dndLib to use function to call spellDamageIntent(lines 294-320)
 		    }
 		    if (this.attributes['continue']) {
 			    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
@@ -281,40 +281,13 @@ var handlers = {
 	    }
     },
     'SpellDamageIntent': function(){
-        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
-        var spell                   = langEN.SPELLS[requestedSpell];
-        var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-        
-        if(spell && spell.damage === undefined){
-            this.attributes['speechOutput'] = "That spell does not do damage."
-        }else if(spell && typeof spell.damage === 'string'){
-            this.attributes['speechOutput'] = spell.damage;
-        }else{
-            if(spell && spell['slotLevel'] === 'cantrip')
-            { //if the requested spell is a cantrip
-                var dmg = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
-                var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "At player level " + level
-                                                + " the cantrip " + requestedSpell
-                                                + " does " + dmg + " " + dmgType + ".";
-            }else if(spell && level > 9){
-                this.attributes['speechOutput'] = "Player level only effects the damage done by cantrips. "
-                                                + requestedSpell + " is a spell, and is cast using spell slots.";
-            }else if (spell && !level){
-                this.attributes['speechOutput'] = "For damage amount, please include the slot or player level you wish to cast it at.";
-            }else if (!spell || !level) {
-                this.attributes['speechOutput'] = "I didn't hear the level or the spell name, please ask again.";
-            }else { //if the requested spell is a normal spell
-                var dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
-                var dmgType = spell.damage.type;
-                this.attributes['speechOutput'] = "A level " + level + ", "
-                                                + requestedSpell + " does "
-                                                + dmg + " " + dmgType + ".";
-            }
-        }
+
+        this.attributes['speechOutput'] = dndLib.getSpellDamage(requestedSpell, requestedSpellLevel);
+        //TODO: move function logic for other intents into separate function call in dndLib
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
@@ -324,8 +297,8 @@ var handlers = {
 
     },
     'SpellHealIntent': function(){
-        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
         var spell                   = langEN.SPELLS[requestedSpell];
         var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
         
@@ -335,7 +308,7 @@ var handlers = {
         {
             this.attributes['speechOutput'] = "That spell does not restore health.";
         }else if(spell && typeof spell.healing === 'string') //add conditional to check if the healing is a string or array using typeof()
-        { 
+        {
             this.attributes['speechOutput'] = spell.healing;
         }else if (spell && !level) //if the requested spell is provided but not the level
         {
@@ -343,12 +316,12 @@ var handlers = {
         }
         else if(level && !spell) //if the level is provided but not the spell
         {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }
         else
         {
             var heals = spell.healing.levels[level];
-            
+
             if(spell && level > 9) //if the requested spell is cast using a slot above 9th
             {
                 this.attributes['speechOutput'] = "Healing spells can not be cast using spell slots above level 9.";
@@ -369,8 +342,8 @@ var handlers = {
         }
     },
     'SpellsIntent': function () {
-        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellAttribute = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
+        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        var requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
         var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
         var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
 
@@ -396,7 +369,7 @@ var handlers = {
         }else if(spell && !spellAttribute) {
             this.attributes['speechOutput'] = spell.shortDescription;
         }else if (requestedSpell) {
-            this.attributes['speechOutput'] = alexaLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }

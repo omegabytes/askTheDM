@@ -23,7 +23,7 @@ module.exports = {
 				],
 				"weapon_prof": [
 					"Simple weapons",
-					"Martial weapons",
+					"Martial weapons"
 				],
 				"tools": ["None"],
 				"saving_throw_prof": [
@@ -189,19 +189,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -274,19 +274,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -359,19 +359,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -444,19 +444,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -529,19 +529,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -614,19 +614,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -699,19 +699,19 @@ module.exports = {
 				"saving_throw_prof": [
 					"ST_prof_1",
 					"ST_prof_2"],
-				"skills": [""],
-				"equipment": {
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "",
-					"weapons_1": "",
-					"weapons_2": "",
-					"weapons_3": "",
-					"equipment_pack_1": "",
-					"equipment_pack_2": "",
-					"options_1": "",
-					"options_2": ""
-				}
+				"skills": [""]
 			}, //end of class_proficiencies
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -764,7 +764,7 @@ module.exports = {
 // 			"longDesc": ""
 // 		},
 // 		"class_hit_point": {
-// 			"hit_dice": "",
+// 			"hit_dice": "", //TODO: leave as just the 1dX so we can do the calculations
 // 			"1st_level": "",
 // 			"higher_levels": ""
 // 		},
@@ -789,8 +789,9 @@ module.exports = {
 // 			"saving_throw_prof": [
 // 				"ST_prof_1",
 // 				"ST_prof_2"],
-// 			"skills": [""],
-// 			"equipment": {
+// 			"skills": [""]
+// 		}, //end of class_proficiencies
+//		"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
 // 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 // 				"starting_pack": "",
 // 				"weapons_1": "",
@@ -800,8 +801,7 @@ module.exports = {
 // 				"equipment_pack_2": "",
 // 				"options_1": "",
 // 				"options_2": ""
-// 			}
-// 		}, //end of class_proficiencies
+// 		},
 // 		"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 // 		"class_spellcasting_ability": {
 // 			"spell_save_dc": "",
