@@ -264,15 +264,10 @@ var handlers = {
 			    } else {
 				    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
 			    }
-			    // if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
-			    //    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-			    // }else if((spellClasses.indexOf(requestedClass) != -1)&&(level)){ //can a {class} cast {spell} at level {level}
-			    //    this.attributes['spell'] = requestedSpell;
-			    //    this.attributes['level'] = requestedSpellLevel;
-			    // 	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
-			    // }
-			    //TODO: use dndLib to use function to call spellDamageIntent(lines 294-320)
 		    }
+
+		    //TODO:
+
 		    if (this.attributes['continue']) {
 			    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
 		    } else {
