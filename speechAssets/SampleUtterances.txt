@@ -1138,4 +1138,3 @@ SpellsIntent get the {Attribute} of {Spell}
 SpellsIntent what {Attribute} do I need to cast {Spell}
 SpellsIntent what are the {Attribute} to cast {Spell}
 SpellsIntent what are the {Attribute} needed to cast {Spell}
-SpellsIntent whats the {Attribute} of {Spell}
