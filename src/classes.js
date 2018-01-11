@@ -803,13 +803,10 @@ module.exports = {
 				"options_2": ""
 		},
 		"class_spells": {
-			"playerLevels": { //REFERENCE: PHB 188
-				1: ["array of castable spells"],
-				2: []
-			},
-			"slotLevels": {
+			"slotLevels": { //TODO: format == {"spell_name": player_level}
+				//REFERENCE: PHB 188
 				1: ["array of available spell slots"],
-				2: []
+				2: [] //ie: PALADIN: {"Bless": 2}
 			}
 		},
 		"class_spellcasting_ability": {
