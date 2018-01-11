@@ -372,7 +372,21 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": {
+                "slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+                    //REFERENCE: PHB 188
+					0: [], // cantrips
+                    1: [2,"bless", "command", "compelled duel", "cure wounds", "detect evil and good", "detect magic", "detect magic", "detect poison and disease", "divine favor", "heroism", "protection from evil and good", "purify food and drink", "searing smite", "shield of faith", "thunderous smite", "wrathful smite"], // through plevel 4
+                    2: [5,"aid", "branding smite", "find steed", "lesser restoration", "locate object", "magic weapon", "protection from poison", "zone of truth"], // plevel 5-8
+					3: [9,"aura of vitality", "blinding smite", "create food and water", "crusaders mantle", "daylight", "dispel magic", "elemental weapon", "magic circle", "remove curse", "revivify"], // plevel 9-12
+					4: [13,"aura of life", "aura of purity", "banishment", "death ward", "locate creature", "staggering smite"], // plevel 13-16
+					5: [17,"banishing smite", "circle of power", "destructive smite", "dispel evil and good", "geas", "raise dead"], // plevel 17-20
+					6: [],
+					7: [],
+					8: [],
+					9: []
+                }
+			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
