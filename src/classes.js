@@ -89,18 +89,18 @@ module.exports = {
 				"weapon_prof": ["Simple weapon", "hand crossbows", "longswords", "rapiers", "shortswords"],
 				"tools": ["Three musical instruments of your choice."],
 				"saving_throw_prof": ["Dexterity", "Charisma"],
-				"skills": ["You may choose any three skills of your choice to be proficient in."],
-				"equipment": { //TODO: this section is weird. We should talk about it before developming any further
-					"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-					"starting_pack": "Leather armor and a dagger",
-					"weapons_1": "A rapier",
-					"weapons_2": "A longsword",
-					"weapons_3": "Any simple weapon",
-					"equipment_pack_1": "A diplomat's pack which includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.",
-					"equipment_pack_2": "An entertainer's pack which includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit.",
-					"options_1": "A lute",
-					"options_2": "Any other musical instrument"
-				}
+				"skills": ["You may choose any three skills of your choice to be proficient in."]
+			},
+			"equipment": { //TODO: this section is weird. We should talk about it before developming any further
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "Leather armor and a dagger",
+				"weapons_1": "A rapier",
+				"weapons_2": "A longsword",
+				"weapons_3": "Any simple weapon",
+				"equipment_pack_1": "A diplomat's pack which includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.",
+				"equipment_pack_2": "An entertainer's pack which includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit.",
+				"options_1": "A lute",
+				"options_2": "Any other musical instrument"
 			},
 			"spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"spellcasting_ability": {

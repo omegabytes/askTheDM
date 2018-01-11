@@ -238,47 +238,47 @@ var handlers = {
     //SpellClassIntent 
     //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
 
-    'SpellClassIntent': function(){
-        var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedClass          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
-	    var requestedSpellLevel     = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
-        var spell                   = langEN.SPELLS[requestedSpell];
-        var classes                 = langEN.CLASSES[requestedClass];
-	    var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
-
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        //be careful 'class' is a special keyword
-
-        if(spell){ //if the requested spell exists
-            var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
-
-            if(spellClasses.indexOf(requestedClass) === -1){ //if the requested class exists in the array of spell classes
-                this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
-            }else{ //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
-	            if(level && spellClasses.indexOf(requestedClass) != -1){
-		            this.attributes['spell'] = requestedSpell;
-		            this.attributes['level'] = requestedSpellLevel;
-		            this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //will need states to make this work properly
-		            //this.emitWithStates('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //need to add state handler
-	            }else{
-		            this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-	            }
-                // if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
-	             //    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-                // }else if((spellClasses.indexOf(requestedClass) != -1)&&(level)){ //can a {class} cast {spell} at level {level}
-	             //    this.attributes['spell'] = requestedSpell;
-	             //    this.attributes['level'] = requestedSpellLevel;
-                // 	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
-                // }
-            }
-        }
-
-        if(this.attributes['continue']){ 
-            this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
-        }else{
-            this.emit(':tell', this.attributes['speechOutput']);
-        }
+    'SpellClassIntent': function() {
+	    var requestedSpell = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+	    var requestedClass = alexaLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
+	    var requestedSpellLevel = alexaLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+	    var spell = langEN.SPELLS[requestedSpell];
+	    var classes = langEN.CLASSES[requestedClass];
+	    var level = langEN.SLOT_LEVEL[requestedSpellLevel];
+	    //var spellClasses = list of classes in spellClass attribute in spells
+	    var spellClasses = spell.spellClass;
+	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
+	    //be careful 'class' is a special keyword
+	    if (spell) { //if the requested spell exists
+		    var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
+		    if (spellClasses.indexOf(requestedClass) === -1) { //if the requested class exists in the array of spell classes
+			    this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
+		    } else { //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
+			    if (level && spellClasses.indexOf(requestedClass) != -1) {
+				    this.attributes['spell'] = requestedSpell;
+				    this.attributes['level'] = requestedSpellLevel;
+				    this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //will need states to make this work properly
+				    //this.emitWithStates('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //need to add state handler
+			    } else {
+				    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
+			    }
+			    // if(spellClasses.indexOf(requestedClass) != -1){ //can a {Class} cast {Spell}
+			    //    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
+			    // }else if((spellClasses.indexOf(requestedClass) != -1)&&(level)){ //can a {class} cast {spell} at level {level}
+			    //    this.attributes['spell'] = requestedSpell;
+			    //    this.attributes['level'] = requestedSpellLevel;
+			    // 	this.emit('spellDamageIntent', this.attributes['spell'], this.attributes['level']); //doesnt fire
+			    // }
+		    }
+		    if (spell && spellClasses) {
+			    this.attributes['speechOutput'] = requestedClass;
+		    }
+		    if (this.attributes['continue']) {
+			    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+		    } else {
+			    this.emit(':tell', this.attributes['speechOutput']);
+		    }
+	    }
     },
     'SpellDamageIntent': function(){
         var requestedSpell          = alexaLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
