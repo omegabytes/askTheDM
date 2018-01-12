@@ -251,7 +251,7 @@ var handlers = {
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    //be careful 'class' is a special keyword
 
-	    //TODO: move this logic into a function in dndLib
+	    //TODO: move this logic into a function in dndLib, do so for the rest of the intents
 	    if (spell) { //if the requested spell exists
 		    //var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
 		    if (spellClasses.indexOf(requestedClass) === -1) { //if the requested class exists in the array of spell classes
