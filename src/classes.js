@@ -41,7 +41,7 @@ module.exports = {
 				"weapons_4": "Any simple weapon.",
 				"equipment_pack_1": " Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
 			}, //end of equipment
-			"class_spells": {}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": {},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -130,7 +130,15 @@ module.exports = {
 					8: [15,"dominate monster", "feeblemind", "glibness", "mind blank", "power word stun"],
 					9: [17,"foresight", "power word heal", "power word kill", "true polymorph"]
 
-				}
+				},
+                "spells_known": { //TODO: format == {player_level: number}
+                    1: "",
+                    2: ""
+                },
+                "cantrips_known": { //TODO: format == {player_level: number}
+
+                },
+                "level_features":{}
 			}, //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 			"class_spellcasting_ability": {
 				"spell_save_dc": "8 plus your proficiency bonus plus your Charisma modifier.",
@@ -228,7 +236,15 @@ module.exports = {
                     7: [13,"conjure celestial", "divine word", "etherealness", "fire storm", "plane shift", "regenerate", "resurrection", "symbol"],
                     8: [15,"antimagic field", "control weather", "earthquake", "holy aura"],
                     9: [17,"astral projection", "gate", "mass heal", "true resurrection"]
-				}
+				},
+                "spells_known": { //TODO: format == {player_level: number}
+                    1: "",
+                    2: ""
+                },
+                "cantrips_known": { //TODO: format == {player_level: number}
+
+                },
+                "level_features":{}
 			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -314,20 +330,28 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {
-                "slot_levels" : {
-                    0: [0,],
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: []
-                }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					1: ["array of available spell slots"],
+					2: [], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
+					6: [],
+					7: [],
+					8: [],
+					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -412,6 +436,14 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					1: ["array of available spell slots"],
+					2: [], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
 			"class_spells": {
                 "slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
                     //REFERENCE: PHB 188
@@ -425,8 +457,18 @@ module.exports = {
 					7: [],
 					8: [],
 					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
                 }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -511,20 +553,28 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {
-                "slot_levels" : {
-                    0: [0,],
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: []
-                }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					1: ["array of available spell slots"],
+					2: [], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
+					6: [],
+					7: [],
+					8: [],
+					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -609,20 +659,28 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {
-                "slot_levels" : {
-                    0: [0,],
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: []
-                }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					1: ["array of available spell slots"],
+					2: [], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
+					6: [],
+					7: [],
+					8: [],
+					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -707,20 +765,28 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {
-                "slot_levels" : {
-                    0: [0,],
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: []
-                }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					1: ["array of available spell slots"],
+					2: [], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
+					6: [],
+					7: [],
+					8: [],
+					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -805,20 +871,29 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": {
-                "slot_levels" : {
-                    0: [0,],
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: []
-                }
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
+			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+				"slot_levels": { //TODO: format == {"spell_name": player_level}
+					//REFERENCE: PHB 188
+					0: ["blade ward", "dancing lights", "friends", "light","mage hand","mending","message","minor illusion","prestidigitation","true strike","vicious mockery"],
+					1: ["animal friendship","bane", "charm person", "comprehend languages","cure wounds","detect magic","disguise self","dissonant whispers","faerie fire","feather fall","healing word","heroism","identify","illusory script","longstrider","silent image","sleep","speak with animals","tashas hideous laughter","thunderwave","unseen servant"],
+					2: ["animal messenger","blindness/deafness","calm emotions","cloud of daggers","crown of madness","detect thoughts","enhance ability","enthrall","heat metal"], //ie: PALADIN: {"Bless": 2}
+					3: [],
+					4: [],
+					5: [],
+					6: [],
+					7: [],
+					8: [],
+					9: []
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
@@ -909,11 +984,26 @@ module.exports = {
 				"options_2": ""
 		},
 		"class_spells": {
-			"slotLevels": { //TODO: format == {"spell_name": player_level}
+			"slot_levels": { //TODO: format == {"spell_name": player_level}
 				//REFERENCE: PHB 188
 				1: ["array of available spell slots"],
-				2: [] //ie: PALADIN: {"Bless": 2}
-			}
+				2: [], //ie: PALADIN: {"Bless": 2}
+				3: [],
+				4: [],
+				5: [],
+				6: [],
+				7: [],
+				8: [],
+				9: []
+			},
+			"spells_known": { //TODO: format == {player_level: number}
+				1: "",
+				2: ""
+			},
+			"cantrips_known": { //TODO: format == {player_level: number}
+
+			},
+			"level_features":{}
 		},
 		"class_spellcasting_ability": {
 			"spell_save_dc": "",
