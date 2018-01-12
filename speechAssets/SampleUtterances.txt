@@ -618,7 +618,7 @@ SpellCastIntent {Spell} requires what
 SpellCastIntent to use {Spell} what do I need
 
 SpellClassIntent can a {PlayerClass} cast {Spell}
-SpellClassIntent can a {PlayerClass} cast {Spell} at level {SlotLevel}
+SpellClassIntent can a {PlayerClass} cast {Spell} at {PlayerOrSlot} level {Level}
 
 SpellDamageIntent at {SlotLevel} level how much damage does the spell {Spell} do
 SpellDamageIntent at {SlotLevel} level how much damage does {Spell} do

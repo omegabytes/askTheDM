@@ -97,8 +97,12 @@
           "type": "LIST_OF_CLASSES"
         },
         {
-          "name": "SlotLevel",
-          "type": "LIST_OF_SLOT_LEVELS"
+          "name": "Level",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PlayerOrSlot",
+          "type": "PLAYER_OR_SLOT"
         }
       ],
       "intent": "SpellClassIntent"
