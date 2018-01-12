@@ -607,6 +607,7 @@ module.exports = {
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
 		}, //end of above class object
+		//TODO: ADD ROGUE
 		"sorcerer": {
 			"class_description": {
 				"shortDesc": "",
@@ -652,8 +653,9 @@ module.exports = {
 				"options_2": ""
 			},
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == {"spell_name": player_level}
+				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					//REFERENCE: PHB 188
+					0: [0, ""],
 					1: [],
 					2: [],
 					3: [],
