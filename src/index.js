@@ -235,9 +235,6 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    //SpellClassIntent 
-    //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
-
     'SpellClassIntent': function() {
 	    var requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 	    var requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
