@@ -275,7 +275,8 @@ var handlers = {
 		       "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
 
 				if(!this.attributes['player_or_slot']){
-					this.emit(':elicitSlot', 'player_or_slot', this.attributes['speechOutput']);
+					this.attributes['speechOutput'] = "say stuff";
+					this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
 				}
 		     */
 
