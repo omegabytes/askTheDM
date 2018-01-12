@@ -333,15 +333,16 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					1: ["array of available spell slots"],
-					2: [], //ie: PALADIN: {"Bless": 2}
-					3: [],
-					4: [],
-					5: [],
-					6: [],
-					7: [],
-					8: [],
-					9: []
+					0: [1,"druidcraft", "guidance", "mending", "poison spray", "produce flame", "resistance", "shillelagh", "thorn whip"],
+					1: [1,"animal friendship", "charm person", "create or destroy water", "cure wounds", "detect magic", "detect poison and disease", "entangle", "faerie fire", "fog cloud", "goodberry", "healing word", "jump", "longstrider", "purify food and drink", "speak with animals", "thunderwave"],
+					2: [3,"animal messenger", "barkskin", "beast sense", "darkvision", "enhance ability", "find traps", "flame blade", "flaming sphere", "gust of wind", "heat metal", "hold person", "lesser restoration", "locate animals or plants", "locate object", "moonbean", "pass without trace", "protection from poison", "spike growth"],
+					3: [5,"call lightning", "conjure animals", "daylight", "dispel magic", "feign death", "meld into stone", "plant growth", "protection from energy", "sleet storm", "speak with plants", "water breathing", "water walk", "wind wall"],
+					4: [7,"blight", "confusion", "conjure minor elementals", "conjure woodland beings", "control water", "dominate beast", "freedom of movement", "giant insect", "grasping vine", "hallucinatory terrain", "ice storm", "locate creature", "polymorph", "stone shape", "stone skin", "wall of fire"],
+					5: [9,"antilife shell", "awaken", "commune with nature", "conjure elemental", "contagion", "geas", "greater restoration", "insect plague", "mass cure wounds", "planar binding", "reincarnate", "scrying", "tree stride", "wall of stone"],
+					6: [11,"conjure fey", "find the path", "heal", "heroes feast", "move earth", "sunbeam", "transport via plants", "wall of thorns", "wind walk"],
+					7: [13,"fire storm","mirage arcane", "plane shift","regenerate","reverse gravity"],
+					8: [15,"animal shapes","antipathy/sympathy", "sympathy", "antipathy", "control weather","earthquake","feeblemind","sunburst","tsunami"],
+					9: [17,"foresight","shapechange","storm of vengeance","true resurrection"]
 				},
 				"spells_known": { //TODO: format == {player_level: number}
 					1: "",
