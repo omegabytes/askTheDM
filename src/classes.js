@@ -797,7 +797,7 @@ module.exports = {
 						"description": "", //When you hit...
 						"prerequisite": "", //player level 12, default of player level 2
 						"pact_requirement": "" //pact of the blade
-					},
+					}
 				}, //end of invocations
 				"pact_boon": {
 					"pact of the chain":{
