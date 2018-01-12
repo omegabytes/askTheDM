@@ -865,16 +865,16 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					0: [],
-					1: [],
-					2: [],
-					3: [],
-					4: [],
-					5: [],
-					6: [],
-					7: [],
-					8: [],
-					9: []
+					0: [1,"acid splash", "blade ward", "chill touch", "dancing lights", "fire bolt", "friends", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "ray of frost", "shocking grasp", "true strike"],
+					1: [1,"alarm", "burning hands", "charm person", "chromatic orb", "color spray", "comprehend languages", "detect magic", "disguise self", "expeditious retreat", "false life", "feather fall", "find familiar", "fog cloud", "grease", "identify", "illusory script", "jump", "longstrider", "mage armor", "magic missile", "protection from evil and good", "ray of sickness", "shield", "silent image", "sleep", "tashas hideous laughter", "tensers floating disk", "thunderwave", "unseen servant", "witch bolt"],
+					2: [3,"alter self", "arcane lock", "blindness/deafness", "blur", "cloud of daggers", "continual flame", "crown of madness", "darkness", "darkvision", "detect thoughts", "enlarge/reduce", "flaming sphere", "gentle repose", "gust of wind", "gust of wind", "hold person", "invisibility", "knock", "levitate", "locate object", "magic mouth", "magic weapon", "melfs acid arrow", "mirror image", "misty step", "nystuls magic aura", "phantasmal force", "ray of enfeeblement", "rope trick", "scorching ray", "see invisibility", "shatter", "spider climb", "suggestion", "web"],
+					3: [5,"animate dead", "bestow curse", "blink", "clairvoyance", "counterspell", "dispel magic", "fear", "feign death", "fireball", "fly", "gaseous form", "glyph of warding", "haste", "hypnotic pattern", "leomunds tiny hut", "lightning bolt", "magic circle", "major image", "nondetection", "phantom steed", "protection from energy", "remove curse", "sending", "sleet storm", "slow", "stinking cloud", "tongues", "vampiric touch", "water breathing"],
+					4: [7,"arcane eye", "banishment", "blight", "confusion", "conjure minor elementals", "control water", "dimension door", "evards black tentacles", "fabricate", "fire shield", "greater invisibility", "hallucinatory terrain", "ice storm", "leomunds secret chest", "locate creature","mordenkainens faithful hound", "mordenkainens private sanctum","otilukes resilient sphere", "phantasmal killer", "polymorph", "stone shape", "stoneskin", "wall of fire"],
+					5: [9,"animate objects", "bigbys hand","cloudkill","cone of cold","conjure elemental","contact other plane","creation","dominate person","dream","geas","hold monster","legend lore","mislead","modify memory","passwall","planar binding","rarys telepathic bond","scrying","seeming","telekinesis","teleportation circle","wall of force","wall of stone"],
+					6: [11,"arcane gate","chain lightning","circle of death","contingency","create undead","disintegrate","drawmijs instant summons","eyebite","flesh to stone","globe of invulnerability","guards and wards","magic jar","mass suggesetion","move earth","otilukes freezing sphere","ottos irresistible dance","programmed illusion", "sunbeam", "true seeing", "wall of ice"],
+					7: [13,"delayed blast fireball","etherealness","finger of death","forcecage","mirage arcane","mordenkainens magnificent mansion","mordenkainens sword","plane shift","prismatic spray","project image","reverse gravity","sequester","simulacrum","symbol","teleport"],
+					8: [15,"antimagic field","antipathy/sympathy","clone","clone","contorl weather","demiplane","dominate monster","feeblemind","incendiary cloud","maze","mind blank","power word stun","sunburst","telepathy","trap the soul"],
+					9: [17,"astral projection","foresight","gate","imprisonment","meteor swarm","power word kill","prismatic wall","shapechange","time stop","true polymorph","weird","wish"]
 				},
 				"spells_known": { //TODO: format == {player_level: number}
 					1: "",
