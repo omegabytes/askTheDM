@@ -119,13 +119,13 @@ module.exports = {
 			},
 			"class_spells": {
 				"slot_levels" : {
-					0: [1,"blade ward", "dancing lights", "friends", "light", "mage hand", "mending", "message", "minor illusion", "prestidigitation", "true strike", "vicious mokcery"],
+					0: [1,"blade ward", "dancing lights", "friends", "light", "mage hand", "mending", "message", "minor illusion", "prestidigitation", "true strike", "vicious mockery"],
 					1: [1,"animal friendship", "bane", "charm person", "comprehend languages", "cure wounds", "detect magic", "disguise self", "dissonant whispers", "faerie fire", "feather fall", "healing word", "heroism", "identify", "illusory script", "longstrider", "silent image", "sleep", "speak with animals", "tashas hideous laughter", "thunderwave", "unseen servant"],
-					2: [3,"animal messanger", "blindness", "deafness", "blindness/deafness", "calm emotions", "cloud of daggers", "crown of madness", "detect thoughts", "enhance ability", "enthrall", "heat metal", "hold person", "invisibility", "knock", "lesser restoration", "locate animals", "locate plants", "locate object", "magic mouth", "phantasmal force", "see invisibility", "shatter", "silence", "suggestion", "zone of truth"],
+					2: [3,"animal messenger", "blindness", "deafness", "blindness/deafness", "calm emotions", "cloud of daggers", "crown of madness", "detect thoughts", "enhance ability", "enthrall", "heat metal", "hold person", "invisibility", "knock", "lesser restoration", "locate animals", "locate plants", "locate object", "magic mouth", "phantasmal force", "see invisibility", "shatter", "silence", "suggestion", "zone of truth"],
 					3: [5,"bestow curse", "clairvoyance", "dispel magic", "fear", "feign death", "glyph of warding", "hypnotic pattern", "leomunds tiny hut", "major image", "nondetection", "plant growth", "sending", "speak with dead", "speak with plants", "stinking cloud", "tongues"],
 					4: [7,"compulsion", "confusion", "dimension door", "freedom of movement", "greater invisibility", "hallucinatory terrain", "locate creature", "polymorph"],
 					5: [9,"animate objects", "awaken", "dominate person", "dream", "geas", "greater restoration", "hold monster", "legend lore", "mass cure wounds", "mislead", "modify memory", "planar binding", "raise dead", "scrying", "seeming", "teleportation circle"],
-					6: [11,"eyebrite", "find the path", "guards and wards", "mass suggestion", "ottos irresistible dance", "programmed illusion", "true seeing"],
+					6: [11,"eyebite", "find the path", "guards and wards", "mass suggestion", "ottos irresistible dance", "programmed illusion", "true seeing"],
 					7: [13,"etherealness", "forcecage", "mirage arcane", "mordenkainens magnificent mansion", "mordenkainens sword", "project image", "regenerate", "resurrection", "symbol", "teleport"],
 					8: [15,"dominate monster", "feeblemind", "glibness", "mind blank", "power word stun"],
 					9: [17,"foresight", "power word heal", "power word kill", "true polymorph"]
@@ -228,11 +228,11 @@ module.exports = {
 				"slot_levels" : {
 					0: [1,"guidance", "light", "mending", "resistance", "sacred flame", "spare the dying", "thaumaturgy"],
                     1: [1,"bane", "bless", "command", "create or destroy water", "cure wounds", "detect evil and good", "detect magic", "detect poison and disease", "guiding bolt", "healing word", "inflict wounds", "protection from evil and good", "purify food and drink", "sanctuary", "shield of faith" ],
-                    2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "praer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
-                    3: [5,"animate dead", "beacon of hope", "bestow curse", "clairvoyance", "create food and water", "dayligh", "dispel magic", "feign death", "glyph of warding", "magic circle", "mass healing word", "meld into stone", "protection from energy", "remove curse", "revivify", "sending", "speak with dead", "spirit guardians", "tongues", "water walk"],
+                    2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "prayer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
+                    3: [5,"animate dead", "beacon of hope", "bestow curse", "clairvoyance", "create food and water", "daylight", "dispel magic", "feign death", "glyph of warding", "magic circle", "mass healing word", "meld into stone", "protection from energy", "remove curse", "revivify", "sending", "speak with dead", "spirit guardians", "tongues", "water walk"],
                     4: [7,"banishment", "control water", "death ward", "divination", "freedom of movement", "guardian of faith", "locate creature", "stone shape"],
-                    5: [9,"commune", "contagion", "dispel evil and good", "flame strike", "geas", "greater restoration", "hallow", "insect plague", "legend lore", "madd cure wounds", "planar binding", "raise dead", "scrying"],
-                    6: [11,"blade barrier", "create undead", "find the path", "forbiddance", "harm", "heal", "heroes feast", "planary ally", "true seeing", "word of recall"],
+                    5: [9,"commune", "contagion", "dispel evil and good", "flame strike", "geas", "greater restoration", "hallow", "insect plague", "legend lore", "mass cure wounds", "planar binding", "raise dead", "scrying"],
+                    6: [11,"blade barrier", "create undead", "find the path", "forbiddance", "harm", "heal", "heroes feast", "planar ally", "true seeing", "word of recall"],
                     7: [13,"conjure celestial", "divine word", "etherealness", "fire storm", "plane shift", "regenerate", "resurrection", "symbol"],
                     8: [15,"antimagic field", "control weather", "earthquake", "holy aura"],
                     9: [17,"astral projection", "gate", "mass heal", "true resurrection"]
@@ -299,7 +299,7 @@ module.exports = {
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
