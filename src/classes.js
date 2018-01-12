@@ -655,16 +655,16 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					//REFERENCE: PHB 188
-					0: [0, ""],
-					1: [],
-					2: [],
-					3: [],
-					4: [],
-					5: [],
-					6: [],
-					7: [],
-					8: [],
-					9: []
+					0: [0, "acid splash","blade ward","chill touch","dancing lights","fire bolt","friends","light","mage hand","mending","message","minor illusion","poison spray","prestidigitation","ray of frost","shocking grasp","true strike"],
+					1: [1, "burning hands","charm person","chromatic orb","color spray","comprehend languages","detect magic","disguise self","expeditious retreat","false life","feather fall","fog cloud","jump","mage armor","magic missile","ray of sickness","shield","silent image","sleep","thunderwave","witch bolt"],
+					2: [3, "alter self","blindness/deafness","blur","cloud of daggers","crown of madness","darkness","darkvision","detect thoughts","enhance ability","enlarge/reduce","gust of wind","hold person","invisibility","knock","levitate","mirror image","misty step","phantasmal force","scorching ray","see invisibility","shatter","spider climb","suggestion","web"],
+					3: [5, "blink","clairvoyance","counterspell","daylight","dispel magic","fear","fireball","fly","gaseous form","haste","hypnotic pattern","lightning bolt","major image","protection from energy","sleet storm","slow","stinking cloud","tongues","water breathing","water walk"],
+					4: [7, "banishment","blight","confusion","dimension door","dominate beast","greater invisibility","ice storm","polymorph","stoneskin","wall of fire"],
+					5: [9, "animate object","cloudkill","cone of cold","creation","dominate person","hold monster","insect plague","seeming","telekinesis","teleportation circle","wall of stone"],
+					6: [11, "arcane gate","chain lightning","circle of death","disintegrate","eyebite","globe of invulnerability","mass suggestion","move earth","sunbeam","true seeing"],
+					7: [13, "delayed blast fireball","etherealness","finger of death","fire storm","plane shift","prismatic spray","reverse gravity","teleport"],
+					8: [15, "dominate monster","earthquake","incendiary cloud","power word stun","sunburst"],
+					9: [17, "gate","meteor swarm","power word kill","time stop","wish"]
 				},
 				"spells_known": { //TODO: format == {player_level: number}
 					1: "",
