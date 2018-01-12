@@ -266,6 +266,19 @@ var handlers = {
 			    }
 		    }
 
+		    //FIXME: change <SlotLevel> slot in utterances to just be <Level>
+		    /*
+		       "Can a -wizard- cast _fireball_ at level =3=?"
+		       "... at ~player~ level =3=?"
+		       "... at ~slot~ level =3=?"
+
+		       "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
+
+				if(!this.attributes['player_or_slot']){
+					this.emit(':elicitSlot', 'player_or_slot', this.attributes['speechOutput']);
+				}
+		     */
+
 		    //TODO: review this comment block for if session attribute doesn't exist.
 		    /*
 		    'MoreInfoIntent' : function () {
