@@ -437,14 +437,6 @@ module.exports = {
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == {"spell_name": player_level}
-					//REFERENCE: PHB 188
-					1: ["array of available spell slots"],
-					2: [], //ie: PALADIN: {"Bless": 2}
-					3: [],
-					4: [],
-					5: [],
 			"class_spells": {
                 "slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
                     //REFERENCE: PHB 188
@@ -467,8 +459,6 @@ module.exports = {
 
 				},
 				"level_features":{}
-			},
-                }
 			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -557,8 +547,8 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					1: ["array of available spell slots"],
-					2: [], //ie: PALADIN: {"Bless": 2}
+					1: [],
+					2: [],
 					3: [],
 					4: [],
 					5: [],
@@ -663,8 +653,8 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					1: ["array of available spell slots"],
-					2: [], //ie: PALADIN: {"Bless": 2}
+					1: [],
+					2: [],
 					3: [],
 					4: [],
 					5: [],
@@ -769,8 +759,8 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					1: ["array of available spell slots"],
-					2: [], //ie: PALADIN: {"Bless": 2}
+					1: [],
+					2: [],
 					3: [],
 					4: [],
 					5: [],
@@ -875,9 +865,9 @@ module.exports = {
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
 				"slot_levels": { //TODO: format == {"spell_name": player_level}
 					//REFERENCE: PHB 188
-					0: ["blade ward", "dancing lights", "friends", "light","mage hand","mending","message","minor illusion","prestidigitation","true strike","vicious mockery"],
-					1: ["animal friendship","bane", "charm person", "comprehend languages","cure wounds","detect magic","disguise self","dissonant whispers","faerie fire","feather fall","healing word","heroism","identify","illusory script","longstrider","silent image","sleep","speak with animals","tashas hideous laughter","thunderwave","unseen servant"],
-					2: ["animal messenger","blindness/deafness","calm emotions","cloud of daggers","crown of madness","detect thoughts","enhance ability","enthrall","heat metal"], //ie: PALADIN: {"Bless": 2}
+					0: [],
+					1: [],
+					2: [],
 					3: [],
 					4: [],
 					5: [],
