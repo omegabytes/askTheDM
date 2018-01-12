@@ -673,7 +673,7 @@ module.exports = {
 				"cantrips_known": { //TODO: format == {player_level: number}
 
 				},
-				"level_features":{}
+				"player_level_features":{}
 			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -780,7 +780,10 @@ module.exports = {
 				"cantrips_known": { //TODO: format == {player_level: number}
 
 				},
-				"level_features":{}
+				"invocations_known":{ //TODO: format == {player_level: number}
+
+				},
+				"player_level_features":{}
 			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
@@ -788,14 +791,34 @@ module.exports = {
 				"spell_focus": ""
 			}, //end of class_spellcasting
 			"class_features": {
-				"main_class_feature": {
-					"description": "",
-					"benefits": "",
-					"replenish": ""
-				},
-				"class_feature_1": "",
-				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"eldritch_invocations":{ //eldritch invocation
+					"invocation_name": { //ie: lifedrinker
+						"spell": "",
+						"description": "", //When you hit...
+						"prerequisite": "", //player level 12, default of player level 2
+						"pact_requirement": "" //pact of the blade
+					},
+				}, //end of invocations
+				"pact_boon": {
+					"pact of the chain":{
+						"spell":"find familiar",
+						"description":"",
+						"prerequisite": "player level 3"
+					},
+					"pact of the blade":{
+						"benefits":"",
+						"description":"",
+						"prerequisite":""
+					},
+					"pact of the tome":{
+						"description":"",
+						"benefits":""
+
+					}
+				}, //pact boon, ie:pact of the chain
+				"class_feature_2": "", //
+				"class_feature_3": "",
+				"subclass": { //otherworldly patrons
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
