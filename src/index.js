@@ -266,7 +266,14 @@ var handlers = {
 			    }
 		    }
 
-		    //TODO:
+		    //TODO: review this comment block for if session attribute doesn't exist.
+		    /*
+		    'MoreInfoIntent' : function () {
+		        if(!this.attributes['character']) {
+		            this.attributes['speechOutput'] = "Which character would you like more info about?";
+		            this.emit(':elicitSlot','MoreInfo',this.attributes['speechOutput']);
+		        }
+		     */
 
 		    if (this.attributes['continue']) {
 			    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
