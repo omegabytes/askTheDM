@@ -545,13 +545,14 @@ module.exports = {
 				"options_2": ""
 			},
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == {"spell_name": player_level}
+				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					//REFERENCE: PHB 188
-					1: [],
-					2: [],
-					3: [],
-					4: [],
-					5: [],
+					0: [],
+					1: [2, "alarm","animal friendship","cure wounds","detect magic","detect poison and disease","ensnaring strike","fog cloud","goodberry","hail of thorns","hunters mark","jump","longstrider","speak with animals"],
+					2: [5, "animal messenger","barkskin","beast sense","cordon of arrows","darkvision","find traps","lesser restoration","locate animals or plants","locate object","pass without trace","protection from poison","silence","spike growth"],
+					3: [9, "conjure animals","conjure barrage","daylight","lightning arrow","nondetection","plant growth","protection from energy","speak with plants","water breathing","water walk","wind wall"],
+					4: [13, "conjure woodland beings","freedom of movement","grasping vine","locate creature","stoneskin"],
+					5: [17, "commune with nature","conjure volley","swift quiver","tree stride"],
 					6: [],
 					7: [],
 					8: [],
