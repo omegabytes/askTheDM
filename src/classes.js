@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { //TODO:add fighter, monk, and rogue classes
 	"CLASSES" : {
 		"barbarian": {
 			"class_description": {
@@ -48,39 +48,86 @@ module.exports = {
 				"spell_focus": ""
 			}, //end of spellcasting
 			"class_features": {
-				"rage": {
-					"description": "",
-					"benefits": "",
-					"replenish": ""
-				},
-				"class_feature_2": "",
-				"class_feature_3": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
-					"subclass_paths": {
-						"subclass_description": "",
-						"subclass_type_1": {
-							"subclass_1_description": "",
-							"subclass_benefit_1": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
+				"rage": { //FIXME: how much info on rage should we give?
+					"description": "You fight with primal ferocity. On your turn, you can enter a rage as a bonus action. Your rage lasts for 1 minute.",
+					"more_info": "If you are able to cast spells, you can't cast or concentrate on them while raging. Your rage ends early if you are knocked unconscious or if your turn ends and you havent attacked a hostile creature since your last turn or havent taken damage since then.", //FIXME: this info might change or be removed, if deemed too much
+					"benefits": "You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases based on your barbarian level. You have resistance to bludgeoning, piercing, and slashing damage.",
+					"rages": { //TODO: format == minPlayerLvl : "number of rages",
+						1: "2",
+						3: "3",
+						6: "4",
+						12: "5",
+						17: "6",
+						20: "unlimited"
+					},
+					"rage_damage": { //TODO: format == minPlayerLvl : "rage damage",
+						1: "+2",
+						9: "+3",
+						16: "+4"
+					},
+					"replenish": "Once you have used all your rage, which is based on your player level. You must finish a long rest before you can rage again."
+				}, //end of rage attribute
+				"unarmored defense": "While you are not wearing any armor, your armor class equals 10 plus your Dexterity modifier plus your Constitution modifier. You can still use a shield and have this benefit.",
+				"reckless attack": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+				"danger sense":"At 2nd level, you gain an uncanny sense of when things nearby arent as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
+				}, //end of class_features
+			"subclass": { //turns into subclasses, will be worked on in later build
+				"primal path": {
+					"description": "At 3rd level, you choose a path that shapes the nature of your rage.",
+					"path of the berserker": {
+						"description": "For some barbarians, rage is a means to an end, that end being violence. The path of the berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
+						"frenzy": "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.",
+						"mindless rage": "Beginning at 6th level, you cant be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.",
+						"intimidating presence": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30ft of you. IF the creature can see or hear you, it must succeed on a Wisdom saving throw, the DC is equal to 8 plus your proficiency bonus plus your Charisma modifier, or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60ft away from you. If the creature succeeds on its saving throw, you cant use this feature on that creature again for 24 hours.", //FIXME: might break this out, this is a lot of info in one value
+						"retaliation": "Starting at 14th level, when you take damage from a creature that is within 5ft of you, you can use your reaction to make a melee weapon attack against that creature."
+					},
+					"path of the totem warrior": {
+						"description": "The path of the totem warrior is a spiritual journey as the barbarian accepts a spirit animal as a guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.",
+						"spirit seeker": "At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals.",
+						"totem spirit": {
+							"description": "At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object, an amulet or similar adornment, that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit.",
+							"animal_spirits": {
+								"bear": "The spirit of the bear makes you tough enough to stand up to any punishment. While raging, you have resistance to all damage except psychic damage.",
+								"eagle": "The spirit of the eagle makes you into a predator who can weave through the fray with ease. While youre raging and arent wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn.",
+								"wolf": "The spirit of the wolf makes you a leader of hunters. While youre raging your friends have advantage on melee attack rolls against any creature within 5ft of you that is hostile to you."
+							}
+						}, //end of totem spirit
+						"aspect of the beast": {
+							"description": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.",
+							"animal_spirits": {
+								"bear": "You gain the might of a bear. Your carrying capacity is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.",
+								"eagle": "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100ft away from you. Additionally, dim light doesnt impose disadvantage on your Wisdom(Perception) checks.",
+								"wolf": "You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+							}
 						},
-						"subclass_type_2": {
-							"subclass_2_description": "",
-							"subclass_benefit_1": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
+						"spirit walker": "At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a spirit version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.",
+						"totemic attunement": {
+							"description": "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.",
+							"animal_spirits": {
+								"bear": "While youre raging, any creature within 5ft of you thats hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it cant see or hear you or if it cant be frightened.",
+								"eagle": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts: you fall if you end your turn in the air and nothing else is holding you aloft.",
+								"wolf": "While youre raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with a melee weapon attack."
+							}
 						}
 					}
 				}
+			}, //end of subclasses
+			"extra attack": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
+			"ability_score_improvement": { //TODO: format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
-			"expertise": "",
-			"ability_score_improvement": {},
-			"class_specific_ability_1": "",
-			"class_specific_ability_2": "",
-			"class_specific_ability_3": "",
-			"class_specific_ability_4": ""
+			"fast movement": "Starting at 5th level, your speed increases by 10ft while you arent wearing heavy armor.",
+			"feral instinct": "By 7th level, your instincts are so honed that you have advantage on initiative rolls. Additionally, if you are surprised at the beginning of combat and arent incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.",
+			"brutal critical": "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level, and three additional dice at 17th level.",
+			"relentless rage": "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you are raging and dont die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.",
+			"persistent rage": "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.",
+			"indomitable might": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
+			"primal champion": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
 		},
 		"bard" : {
 			"class_description": {
@@ -225,7 +272,7 @@ module.exports = {
 				"options_2": ""
 			},
 			"class_spells": {
-				"slot_levels" : {
+				"slot_levels" : { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					0: [1,"guidance", "light", "mending", "resistance", "sacred flame", "spare the dying", "thaumaturgy"],
                     1: [1,"bane", "bless", "command", "create or destroy water", "cure wounds", "detect evil and good", "detect magic", "detect poison and disease", "guiding bolt", "healing word", "inflict wounds", "protection from evil and good", "purify food and drink", "sanctuary", "shield of faith" ],
                     2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "prayer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
@@ -331,7 +378,7 @@ module.exports = {
 				"options_2": ""
 			},
 			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == {"spell_name": player_level}
+				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					//REFERENCE: PHB 188
 					0: [1,"druidcraft", "guidance", "mending", "poison spray", "produce flame", "resistance", "shillelagh", "thorn whip"],
 					1: [1,"animal friendship", "charm person", "create or destroy water", "cure wounds", "detect magic", "detect poison and disease", "entangle", "faerie fire", "fog cloud", "goodberry", "healing word", "jump", "longstrider", "purify food and drink", "speak with animals", "thunderwave"],
