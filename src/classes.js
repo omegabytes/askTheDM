@@ -31,7 +31,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"Constitution"
 				],
 				"skills": ["Choose two from either Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival."]
-			}, //end of class_proficiencies
+			},
 			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "An explorer's pack and four javelins.",
@@ -40,13 +40,13 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"weapons_3": "Two handaxes.",
 				"weapons_4": "Any simple weapon.",
 				"equipment_pack_1": " Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
-			}, //end of equipment
+			},
 			"class_spells": {},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of spellcasting
+			},
 			"class_features": {
 				"rage": { //FIXME: how much info on rage should we give?
 					"description": "You fight with primal ferocity. On your turn, you can enter a rage as a bonus action. Your rage lasts for 1 minute.",
@@ -66,12 +66,12 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						16: "+4"
 					},
 					"replenish": "Once you have used all your rage, which is based on your player level. You must finish a long rest before you can rage again."
-				}, //end of rage attribute
+				},
 				"unarmored defense": "While you are not wearing any armor, your armor class equals 10 plus your Dexterity modifier plus your Constitution modifier. You can still use a shield and have this benefit.",
 				"reckless attack": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
 				"danger sense":"At 2nd level, you gain an uncanny sense of when things nearby arent as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
-				}, //end of class_features
-			"subclass": { //turns into subclasses, will be worked on in later build
+				},
+			"subclass": {
 				"primal path": {
 					"description": "At 3rd level, you choose a path that shapes the nature of your rage.",
 					"path of the berserker": {
@@ -91,7 +91,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 								"eagle": "The spirit of the eagle makes you into a predator who can weave through the fray with ease. While youre raging and arent wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn.",
 								"wolf": "The spirit of the wolf makes you a leader of hunters. While youre raging your friends have advantage on melee attack rolls against any creature within 5ft of you that is hostile to you."
 							}
-						}, //end of totem spirit
+						},
 						"aspect of the beast": {
 							"description": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.",
 							"animal_spirits": {
@@ -111,9 +111,9 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						}
 					}
 				}
-			}, //end of subclasses
+			},
 			"extra attack": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
-			"ability_score_improvement": { //TODO: format == player_level: options
+			"ability_score_improvement": { //format == player_level: options
 				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
 				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
 				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
@@ -128,7 +128,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"persistent rage": "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.",
 			"indomitable might": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
 			"primal champion": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
-		},
+		}, //end of barbarian class
 		"bard" : {
 			"class_description": {
 				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations.",
@@ -186,7 +186,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 
                 },
                 "level_features":{}
-			}, //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
+			},
 			"class_spellcasting_ability": {
 				"spell_save_dc": "8 plus your proficiency bonus plus your Charisma modifier.",
 				"spell_attack_mod": "Your proficiency bonus plus your Charisma modifier.",
@@ -200,7 +200,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"jack of all trades": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.",
 				"song of rest": "Starting at 2nd level, you can revitalize wounded allies during a short rest. Any friendly creature that spent Hit Dice to regain hit points, each creature regains an extra 1d6 hit points. This extra hit points increase when you reach certain levels: 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.",
-				"subclass": { //turns in subclasses, will be worked on later
+				"subclass": {
 					"bard college": {
 						"description": "At 3rd level, you delve into the advanced techniques of a bard college of your choice.",
 						"college of lore": {
@@ -219,7 +219,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						}
 					}
 				},
-				"expertise": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
+				"class_specific_condition": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
 				"ability score improvement": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. You cant increase an ability score above 20 using this feature.",
 				"font of inspiration": "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or Long Rest.",
 				"countercharm": "At 6th level, as an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being Frightened or Charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are Incapacitated or silenced or if you voluntarily end it (no action required).",
@@ -229,114 +229,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 		}, //end of above class object
 		"cleric": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
-			},
-			"class_hit_point": {
-				"hit_dice": "",
-				"1st_level": "",
-				"higher_levels": ""
-			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
-				"ability_scores": "",
-				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
-			},
-			"class_proficiencies": {
-				"armor_prof": [
-					"armor_prof_1",
-					"armor_prof_2",
-					"armor_prof_3"
-				],
-				"weapon_prof": [
-					"wep_prof_1",
-					"wep_prof_2",
-					"wep_prof_3",
-					"wep_prof_4",
-					"wep_prof_5"],
-				"tools": [""],
-				"saving_throw_prof": [
-					"ST_prof_1",
-					"ST_prof_2"],
-				"skills": [""]
-			}, //end of class_proficiencies
-			"equipment": {
-				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-				"starting_pack": "",
-				"weapons_1": "",
-				"weapons_2": "",
-				"weapons_3": "",
-				"equipment_pack_1": "",
-				"equipment_pack_2": "",
-				"options_1": "",
-				"options_2": ""
-			},
-			"class_spells": {
-				"slot_levels" : { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-					0: [1,"guidance", "light", "mending", "resistance", "sacred flame", "spare the dying", "thaumaturgy"],
-                    1: [1,"bane", "bless", "command", "create or destroy water", "cure wounds", "detect evil and good", "detect magic", "detect poison and disease", "guiding bolt", "healing word", "inflict wounds", "protection from evil and good", "purify food and drink", "sanctuary", "shield of faith" ],
-                    2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "prayer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
-                    3: [5,"animate dead", "beacon of hope", "bestow curse", "clairvoyance", "create food and water", "daylight", "dispel magic", "feign death", "glyph of warding", "magic circle", "mass healing word", "meld into stone", "protection from energy", "remove curse", "revivify", "sending", "speak with dead", "spirit guardians", "tongues", "water walk"],
-                    4: [7,"banishment", "control water", "death ward", "divination", "freedom of movement", "guardian of faith", "locate creature", "stone shape"],
-                    5: [9,"commune", "contagion", "dispel evil and good", "flame strike", "geas", "greater restoration", "hallow", "insect plague", "legend lore", "mass cure wounds", "planar binding", "raise dead", "scrying"],
-                    6: [11,"blade barrier", "create undead", "find the path", "forbiddance", "harm", "heal", "heroes feast", "planar ally", "true seeing", "word of recall"],
-                    7: [13,"conjure celestial", "divine word", "etherealness", "fire storm", "plane shift", "regenerate", "resurrection", "symbol"],
-                    8: [15,"antimagic field", "control weather", "earthquake", "holy aura"],
-                    9: [17,"astral projection", "gate", "mass heal", "true resurrection"]
-				},
-                "spells_known": { //TODO: format == {player_level: number}
-                    1: "",
-                    2: ""
-                },
-                "cantrips_known": { //TODO: format == {player_level: number}
-
-                },
-                "level_features":{}
-			}, //doesnt need double work, already exists in spells.js **what can be placed in here instead is spell slots per level, # of cantrips, spells/cantrips known**
-			"class_spellcasting_ability": {
-				"spell_save_dc": "",
-				"spell_attack_mod": "",
-				"spell_focus": ""
-			}, //end of class_spellcasting
-			"class_features": {
-				"main_class_feature": {
-					"description": "",
-					"benefits": "",
-					"replenish": ""
-				},
-				"class_feature_1": "",
-				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
-					"subclass_paths": {
-						"subclass_description": "",
-						"subclass_type_1": {
-							"subclass_1_description": "",
-							"subclass_benefit_1": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
-						},//end of subclass_1
-						"subclass_type_2": {
-							"subclass_2_description": "",
-							"subclass_benefit_1": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
-			"ability_score_improvement": {},
-			"class_specific_ability_1": "",
-			"class_specific_ability_2": "",
-			"class_specific_ability_3": "",
-			"class_specific_ability_4": ""
-		}, //end of above class object
-		"druid": {
-			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "A holy man devoted to a deity. capable of bolstering the party and heal their wounds, or laying low their enemies with divine wrath.",
+				"longDesc": "A priestly champion who wields divine magic in service of a higher power, d8, Wisdom & Charisma, light and medium armor, shields, simple weapons."
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -377,34 +271,33 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-					//REFERENCE: PHB 188
-					0: [1,"druidcraft", "guidance", "mending", "poison spray", "produce flame", "resistance", "shillelagh", "thorn whip"],
-					1: [1,"animal friendship", "charm person", "create or destroy water", "cure wounds", "detect magic", "detect poison and disease", "entangle", "faerie fire", "fog cloud", "goodberry", "healing word", "jump", "longstrider", "purify food and drink", "speak with animals", "thunderwave"],
-					2: [3,"animal messenger", "barkskin", "beast sense", "darkvision", "enhance ability", "find traps", "flame blade", "flaming sphere", "gust of wind", "heat metal", "hold person", "lesser restoration", "locate animals or plants", "locate object", "moonbean", "pass without trace", "protection from poison", "spike growth"],
-					3: [5,"call lightning", "conjure animals", "daylight", "dispel magic", "feign death", "meld into stone", "plant growth", "protection from energy", "sleet storm", "speak with plants", "water breathing", "water walk", "wind wall"],
-					4: [7,"blight", "confusion", "conjure minor elementals", "conjure woodland beings", "control water", "dominate beast", "freedom of movement", "giant insect", "grasping vine", "hallucinatory terrain", "ice storm", "locate creature", "polymorph", "stone shape", "stone skin", "wall of fire"],
-					5: [9,"antilife shell", "awaken", "commune with nature", "conjure elemental", "contagion", "geas", "greater restoration", "insect plague", "mass cure wounds", "planar binding", "reincarnate", "scrying", "tree stride", "wall of stone"],
-					6: [11,"conjure fey", "find the path", "heal", "heroes feast", "move earth", "sunbeam", "transport via plants", "wall of thorns", "wind walk"],
-					7: [13,"fire storm","mirage arcane", "plane shift","regenerate","reverse gravity"],
-					8: [15,"animal shapes","antipathy/sympathy", "sympathy", "antipathy", "control weather","earthquake","feeblemind","sunburst","tsunami"],
-					9: [17,"foresight","shapechange","storm of vengeance","true resurrection"]
+			"class_spells": {
+				"slot_levels" : { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+					0: [1,"guidance", "light", "mending", "resistance", "sacred flame", "spare the dying", "thaumaturgy"],
+                    1: [1,"bane", "bless", "command", "create or destroy water", "cure wounds", "detect evil and good", "detect magic", "detect poison and disease", "guiding bolt", "healing word", "inflict wounds", "protection from evil and good", "purify food and drink", "sanctuary", "shield of faith" ],
+                    2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "prayer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
+                    3: [5,"animate dead", "beacon of hope", "bestow curse", "clairvoyance", "create food and water", "daylight", "dispel magic", "feign death", "glyph of warding", "magic circle", "mass healing word", "meld into stone", "protection from energy", "remove curse", "revivify", "sending", "speak with dead", "spirit guardians", "tongues", "water walk"],
+                    4: [7,"banishment", "control water", "death ward", "divination", "freedom of movement", "guardian of faith", "locate creature", "stone shape"],
+                    5: [9,"commune", "contagion", "dispel evil and good", "flame strike", "geas", "greater restoration", "hallow", "insect plague", "legend lore", "mass cure wounds", "planar binding", "raise dead", "scrying"],
+                    6: [11,"blade barrier", "create undead", "find the path", "forbiddance", "harm", "heal", "heroes feast", "planar ally", "true seeing", "word of recall"],
+                    7: [13,"conjure celestial", "divine word", "etherealness", "fire storm", "plane shift", "regenerate", "resurrection", "symbol"],
+                    8: [15,"antimagic field", "control weather", "earthquake", "holy aura"],
+                    9: [17,"astral projection", "gate", "mass heal", "true resurrection"]
 				},
-				"spells_known": { //TODO: format == {player_level: number}
-					1: "",
-					2: ""
-				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+                "spells_known": { //TODO: format == {player_level: number}
+                    1: "",
+                    2: ""
+                },
+                "cantrips_known": { //TODO: format == {player_level: number}
 
-				},
-				"level_features":{}
-			},
+                },
+                "level_features":{}
+			}, 
 			"class_spellcasting_ability": {
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
 				"main_class_feature": {
 					"description": "",
@@ -413,7 +306,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -422,28 +315,28 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
 		}, //end of above class object
-		"paladin": {
+		"druid": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "a nomad devoted to the world and the powers of Nature. Capable of adopting the form of a beast for battle or utility. capable of bolstering the party and heal their wounds, or laying low their enemies with nature's wrath.",
+				"longDesc": "A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms, d8, Intelligence & Wisdom, light and medium armor(non-metal), shields(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears."
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -453,7 +346,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
@@ -484,9 +377,117 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
+				"class_spells": {
+					"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+						0: [1,"druidcraft", "guidance", "mending", "poison spray", "produce flame", "resistance", "shillelagh", "thorn whip"],
+						1: [1,"animal friendship", "charm person", "create or destroy water", "cure wounds", "detect magic", "detect poison and disease", "entangle", "faerie fire", "fog cloud", "goodberry", "healing word", "jump", "longstrider", "purify food and drink", "speak with animals", "thunderwave"],
+						2: [3,"animal messenger", "barkskin", "beast sense", "darkvision", "enhance ability", "find traps", "flame blade", "flaming sphere", "gust of wind", "heat metal", "hold person", "lesser restoration", "locate animals or plants", "locate object", "moonbeam", "pass without trace", "protection from poison", "spike growth"],
+						3: [5,"call lightning", "conjure animals", "daylight", "dispel magic", "feign death", "meld into stone", "plant growth", "protection from energy", "sleet storm", "speak with plants", "water breathing", "water walk", "wind wall"],
+						4: [7,"blight", "confusion", "conjure minor elementals", "conjure woodland beings", "control water", "dominate beast", "freedom of movement", "giant insect", "grasping vine", "hallucinatory terrain", "ice storm", "locate creature", "polymorph", "stone shape", "stone skin", "wall of fire"],
+						5: [9,"antilife shell", "awaken", "commune with nature", "conjure elemental", "contagion", "geas", "greater restoration", "insect plague", "mass cure wounds", "planar binding", "reincarnate", "scrying", "tree stride", "wall of stone"],
+						6: [11,"conjure fey", "find the path", "heal", "heroes feast", "move earth", "sunbeam", "transport via plants", "wall of thorns", "wind walk"],
+						7: [13,"fire storm","mirage arcane", "plane shift","regenerate","reverse gravity"],
+						8: [15,"animal shapes","antipathy/sympathy", "sympathy", "antipathy", "control weather","earthquake","feeblemind","sunburst","tsunami"],
+						9: [17,"foresight","shapechange","storm of vengeance","true resurrection"]
+				},
+				"spells_known": { //TODO: format == {player_level: number}
+					1: "",
+					2: ""
+				},
+				"cantrips_known": { //TODO: format == {player_level: number}
+
+				},
+				"level_features":{}
+			},
+			"class_spellcasting_ability": {
+				"spell_save_dc": "",
+				"spell_attack_mod": "",
+				"spell_focus": ""
+			},
+			"class_features": {
+				"main_class_feature": {
+					"description": "",
+					"benefits": "",
+					"replenish": ""
+				},
+				"class_feature_1": "",
+				"class_feature_2": "",
+				"subclass": {
+					"subclass_paths": {
+						"subclass_description": "",
+						"subclass_type_1": {
+							"subclass_1_description": "",
+							"subclass_benefit_1": "",
+							"subclass_benefit_2": "",
+							"subclass_benefit_3": "",
+							"subclass_benefit_4": ""
+						},
+						"subclass_type_2": {
+							"subclass_2_description": "",
+							"subclass_benefit_1": "",
+							"subclass_benefit_2": "",
+							"subclass_benefit_3": "",
+							"subclass_benefit_4": ""
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
+			"ability_score_improvement": {},
+			"class_specific_ability_1": "",
+			"class_specific_ability_2": "",
+			"class_specific_ability_3": "",
+			"class_specific_ability_4": ""
+		}, //end of above class object
+		//TODO: add fighter class prototype here
+
+		//TODO: add monk class prototype here
+		"paladin": {
+			"class_description": {
+				"shortDesc": "Nearly as skilled as the Fighter but bolsters his efforts with divine magic. through his devotion he gains special boons from his god.",
+				"longDesc": "A holy warrior bound to a sacred oath, d10, Strength, Wisdom & Charisma, all armor, shields, simple and martial weapons."
+			},
+			"class_hit_point": {
+				"hit_dice": "",
+				"1st_level": "",
+				"higher_levels": ""
+			},
+			"class_primary_ability": { //'Quick Build' section from the PHB
+				"ability_scores": "",
+				"background": "",
+				"starting_spells": ""
+			},
+			"class_proficiencies": {
+				"armor_prof": [
+					"armor_prof_1",
+					"armor_prof_2",
+					"armor_prof_3"
+				],
+				"weapon_prof": [
+					"wep_prof_1",
+					"wep_prof_2",
+					"wep_prof_3",
+					"wep_prof_4",
+					"wep_prof_5"],
+				"tools": [""],
+				"saving_throw_prof": [
+					"ST_prof_1",
+					"ST_prof_2"],
+				"skills": [""]
+			},
+			"equipment": {
+				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
+				"starting_pack": "",
+				"weapons_1": "",
+				"weapons_2": "",
+				"weapons_3": "",
+				"equipment_pack_1": "",
+				"equipment_pack_2": "",
+				"options_1": "",
+				"options_2": ""
+			},
 			"class_spells": {
-                "slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-                    //REFERENCE: PHB 188
+                "slot_levels": {
 					0: [], // cantrips
                     1: [2,"bless", "command", "compelled duel", "cure wounds", "detect evil and good", "detect magic", "detect magic", "detect poison and disease", "divine favor", "heroism", "protection from evil and good", "purify food and drink", "searing smite", "shield of faith", "thunderous smite", "wrathful smite"], // through plevel 4
                     2: [5,"aid", "branding smite", "find steed", "lesser restoration", "locate object", "magic weapon", "protection from poison", "zone of truth"], // plevel 5-8
@@ -511,7 +512,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
 				"main_class_feature": {
 					"description": "",
@@ -520,7 +521,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -529,18 +530,18 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
@@ -549,8 +550,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 		}, //end of above class object
 		"ranger": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "one who uses a unique blend of wilderness knowledge and martial ability to be a deadly hunter, with a bow, a pet or melee weapons.",
+				"longDesc": "A master of ranged combat, one with nature, d10, Dexterity & Strength, light and medium armor, shield, simple weapons, martial weapons."
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -560,7 +561,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
@@ -579,7 +580,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"ST_prof_1",
 					"ST_prof_2"],
 				"skills": [""]
-			}, //end of class_proficiencies
+			},
 			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
@@ -591,9 +592,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-					//REFERENCE: PHB 188
+			"class_spells": {
+				"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					0: [],
 					1: [2, "alarm","animal friendship","cure wounds","detect magic","detect poison and disease","ensnaring strike","fog cloud","goodberry","hail of thorns","hunters mark","jump","longstrider","speak with animals"],
 					2: [5, "animal messenger","barkskin","beast sense","cordon of arrows","darkvision","find traps","lesser restoration","locate animals or plants","locate object","pass without trace","protection from poison","silence","spike growth"],
@@ -618,7 +618,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
 				"main_class_feature": {
 					"description": "",
@@ -627,7 +627,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -636,29 +636,29 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
 		}, //end of above class object
-		//TODO: ADD ROGUE
+		//TODO: add rogue class prototype here
 		"sorcerer": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "a magic user who draws his power from within, summoning his innate magical power and bending it to his will.",
+				"longDesc": "A spellcaster who draws on inherent magic from a gift or bloodline, d6, Constitution & Charisma, daggers, darts, slings, quarterstaffs, light crossbows"
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -668,7 +668,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
@@ -687,7 +687,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"ST_prof_1",
 					"ST_prof_2"],
 				"skills": [""]
-			}, //end of class_proficiencies
+			},
 			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
@@ -699,9 +699,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-					//REFERENCE: PHB 188
+			"class_spells": {
+				"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 					0: [0, "acid splash","blade ward","chill touch","dancing lights","fire bolt","friends","light","mage hand","mending","message","minor illusion","poison spray","prestidigitation","ray of frost","shocking grasp","true strike"],
 					1: [1, "burning hands","charm person","chromatic orb","color spray","comprehend languages","detect magic","disguise self","expeditious retreat","false life","feather fall","fog cloud","jump","mage armor","magic missile","ray of sickness","shield","silent image","sleep","thunderwave","witch bolt"],
 					2: [3, "alter self","blindness/deafness","blur","cloud of daggers","crown of madness","darkness","darkvision","detect thoughts","enhance ability","enlarge/reduce","gust of wind","hold person","invisibility","knock","levitate","mirror image","misty step","phantasmal force","scorching ray","see invisibility","shatter","spider climb","suggestion","web"],
@@ -726,7 +725,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
 				"main_class_feature": {
 					"description": "",
@@ -735,7 +734,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -744,18 +743,18 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
@@ -764,8 +763,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 		}, //end of above class object
 		"warlock": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "A caster who has formed a pact with a powerful entity, the warlock trades favors for boons and spells.",
+				"longDesc": "A wielder of magic that is derived from a bargain with an extraplanar entity, d8, Wisdom & Charisma, light armor, simple weapons."
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -775,7 +774,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
@@ -794,7 +793,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"ST_prof_1",
 					"ST_prof_2"],
 				"skills": [""]
-			}, //end of class_proficiencies
+			},
 			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
@@ -885,7 +884,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					}//end of subclass_paths
 				}//end of subclass
 			}, //end of class_features
-			"expertise": "",
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
@@ -894,8 +893,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 		}, //end of above class object
 		"wizard": {
 			"class_description": {
-				"shortDesc": "",
-				"longDesc": ""
+				"shortDesc": "A keeper of arcane secrets and forgotten knowledge, the wizard manipulates magic and spells with cunning.",
+				"longDesc": "A scholarly magic-user capable of manipulating the structures of reality, d6, Intelligence & Wisdom, daggers, darts, slings, quarterstaffs, light crossbows."
 			},
 			"class_hit_point": {
 				"hit_dice": "",
@@ -905,7 +904,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "",
 				"background": "",
-				"starting_spells": "" //not applicable to Barbarians
+				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
@@ -924,7 +923,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"ST_prof_1",
 					"ST_prof_2"],
 				"skills": [""]
-			}, //end of class_proficiencies
+			},
 			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
@@ -936,16 +935,15 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == {"spell_name": player_level}
-					//REFERENCE: PHB 188
+			"class_spells": {
+				"slot_levels": { //format == {"spell_name": player_level}
 					0: [1,"acid splash", "blade ward", "chill touch", "dancing lights", "fire bolt", "friends", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "ray of frost", "shocking grasp", "true strike"],
 					1: [1,"alarm", "burning hands", "charm person", "chromatic orb", "color spray", "comprehend languages", "detect magic", "disguise self", "expeditious retreat", "false life", "feather fall", "find familiar", "fog cloud", "grease", "identify", "illusory script", "jump", "longstrider", "mage armor", "magic missile", "protection from evil and good", "ray of sickness", "shield", "silent image", "sleep", "tashas hideous laughter", "tensers floating disk", "thunderwave", "unseen servant", "witch bolt"],
 					2: [3,"alter self", "arcane lock", "blindness/deafness", "blur", "cloud of daggers", "continual flame", "crown of madness", "darkness", "darkvision", "detect thoughts", "enlarge/reduce", "flaming sphere", "gentle repose", "gust of wind", "gust of wind", "hold person", "invisibility", "knock", "levitate", "locate object", "magic mouth", "magic weapon", "melfs acid arrow", "mirror image", "misty step", "nystuls magic aura", "phantasmal force", "ray of enfeeblement", "rope trick", "scorching ray", "see invisibility", "shatter", "spider climb", "suggestion", "web"],
 					3: [5,"animate dead", "bestow curse", "blink", "clairvoyance", "counterspell", "dispel magic", "fear", "feign death", "fireball", "fly", "gaseous form", "glyph of warding", "haste", "hypnotic pattern", "leomunds tiny hut", "lightning bolt", "magic circle", "major image", "nondetection", "phantom steed", "protection from energy", "remove curse", "sending", "sleet storm", "slow", "stinking cloud", "tongues", "vampiric touch", "water breathing"],
 					4: [7,"arcane eye", "banishment", "blight", "confusion", "conjure minor elementals", "control water", "dimension door", "evards black tentacles", "fabricate", "fire shield", "greater invisibility", "hallucinatory terrain", "ice storm", "leomunds secret chest", "locate creature","mordenkainens faithful hound", "mordenkainens private sanctum","otilukes resilient sphere", "phantasmal killer", "polymorph", "stone shape", "stoneskin", "wall of fire"],
 					5: [9,"animate objects", "bigbys hand","cloudkill","cone of cold","conjure elemental","contact other plane","creation","dominate person","dream","geas","hold monster","legend lore","mislead","modify memory","passwall","planar binding","rarys telepathic bond","scrying","seeming","telekinesis","teleportation circle","wall of force","wall of stone"],
-					6: [11,"arcane gate","chain lightning","circle of death","contingency","create undead","disintegrate","drawmijs instant summons","eyebite","flesh to stone","globe of invulnerability","guards and wards","magic jar","mass suggesetion","move earth","otilukes freezing sphere","ottos irresistible dance","programmed illusion", "sunbeam", "true seeing", "wall of ice"],
+					6: [11,"arcane gate","chain lightning","circle of death","contingency","create undead","disintegrate","drawmijs instant summons","eyebite","flesh to stone","globe of invulnerability","guards and wards","magic jar","mass suggestion","move earth","otilukes freezing sphere","ottos irresistible dance","programmed illusion", "sunbeam", "true seeing", "wall of ice"],
 					7: [13,"delayed blast fireball","etherealness","finger of death","forcecage","mirage arcane","mordenkainens magnificent mansion","mordenkainens sword","plane shift","prismatic spray","project image","reverse gravity","sequester","simulacrum","symbol","teleport"],
 					8: [15,"antimagic field","antipathy/sympathy","clone","clone","contorl weather","demiplane","dominate monster","feeblemind","incendiary cloud","maze","mind blank","power word stun","sunburst","telepathy","trap the soul"],
 					9: [17,"astral projection","foresight","gate","imprisonment","meteor swarm","power word kill","prismatic wall","shapechange","time stop","true polymorph","weird","wish"]
@@ -963,7 +961,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
 				"main_class_feature": {
 					"description": "",
@@ -972,7 +970,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				},
 				"class_feature_1": "",
 				"class_feature_2": "",
-				"subclass": { //turns into subclasses, will be worked on in later build
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -981,18 +979,18 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
-			"expertise": "",
+						}
+					}
+				}
+			},
+			"class_specific_condition": "",
 			"ability_score_improvement": {},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
@@ -1103,7 +1101,7 @@ module.exports = {
 				}//end of subclass_paths
 			}//end of subclass
 		}, //end of class_features
-		"expertise": "",
+		"class_specific_condition": "",
 		"ability_score_improvement": {},
 		"class_specific_ability_1": "",
 		"class_specific_ability_2": "",
