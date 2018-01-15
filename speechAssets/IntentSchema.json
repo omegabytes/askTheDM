@@ -33,7 +33,7 @@
     {
       "slots": [
         {
-          "name": "Level",
+          "name": "ExLevel",
           "type": "LIST_OF_EXHAUSTION_LEVELS"
         }
       ],

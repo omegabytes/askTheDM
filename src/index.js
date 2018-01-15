@@ -92,7 +92,7 @@ var handlers = {
         }
     },
     'ExhaustionLevelIntent': function () {
-        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
+        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
         var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -100,7 +100,7 @@ var handlers = {
         if(exhaustionLevel){ //user requests information on exhaustion levels
             this.attributes['speechOutput'] = exhaustionLevel;
         }else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.ExLevel.name, requestedExhaustionLevel) + " exhaustion.";
         }else if (!requestedExhaustionLevel) {
             this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
         }
@@ -108,7 +108,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }
         else{
@@ -125,7 +125,7 @@ var handlers = {
 
         //user requests information on feats
         if (thisFeat && thisFeatAttribute) {
-            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
+            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute];
         }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
 
@@ -136,7 +136,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -161,7 +161,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -193,7 +193,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -227,9 +227,9 @@ var handlers = {
             this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
-        } 
+        }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
