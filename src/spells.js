@@ -148,7 +148,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
         "ranger",
         "wizard"
       ],
-      "shortDescription": "A creature, place, or object smaller than 10ft cant be targeted by divination magic, or detected by magical scrying sensors",
+      "shortDescription": "A creature, place, or object smaller than 10ft cant be targeted by divination magic, or detected by magical scrying sensors.",
       "longDescription": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target cant be targeted by any divination magic or perceived through magical scrying sensors.",
       "url": "https://www.dnd-spells.com/spell/nondetection"
     },
@@ -7834,7 +7834,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
         "warlock",
         "wizard"
       ],
-      "shortDescription": "Create an image no larger than a 20ft cube. It seems completely real to all senses except touch. You can move it around in a way that seems natural. A creature can determine its an illusion on an Intelligence check against your spell save",
+      "shortDescription": "Create an image no larger than a 20ft cube. It seems completely real to all senses except touch. You can move it around in a way that seems natural. A creature can determine its an illusion on an Intelligence check against your spell save.",
       "longDescription": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You cant create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodytes stench). As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example. Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.",
       "url": "https://www.dnd-spells.com/spell/major-image"
     },
@@ -7906,7 +7906,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
       "spellClass": [
         "cleric"
       ],
-      "shortDescription": "Each creature in the 10foot radius by 40 foot high takes 4d6 fire and 4d6 radiant damage on a failed Dexterity save, and half as much on a success",
+      "shortDescription": "Each creature in the 10foot radius by 40 foot high takes 4d6 fire and 4d6 radiant damage on a failed Dexterity save, and half as much on a success.",
       "longDescription": "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
       "url": "https://www.dnd-spells.com/spell/flame-strike",
       "damage": {
@@ -8029,7 +8029,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
         "druid",
         "ranger"
       ],
-      "shortDescription": "Summon up to 8 fey beasts sharing a total of 2 challenge levels. Roll initiative as a group. ",
+      "shortDescription": "Summon up to 8 fey beasts sharing a total of 2 challenge levels. Roll initiative as a group.",
       "longDescription": "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the four following options for what appears: 1) One beast of challenge rating 2 or lower. 2) Two beasts of challenge rating 1 or lower. 3) Four beasts of challenge rating 1/2 or lower. 4) Eight beasts of challenge rating 1/4 or lower. Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you dont issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The D. M. has the creatures statistics. At Higher Levels: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.",
       "url": "https://www.dnd-spells.com/spell/conjure-animals"
     },
@@ -8076,7 +8076,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
         "sorcerer",
         "wizard"
       ],
-      "shortDescription": "A 5ft by 60ft beam of light flashes from your hand. On a failed Constitution save, each creature is blinded until your next turn and takes 6d8 radiant damage. The targets arent blinded and take half damage on a successful save. Undead and oozes have disadvantage",
+      "shortDescription": "A 5ft by 60ft beam of light flashes from your hand. On a failed Constitution save, each creature is blinded until your next turn and takes 6d8 radiant damage. The targets arent blinded and take half damage on a successful save. Undead and oozes have disadvantage.",
       "longDescription": "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isnt blinded by this spell. Undead and oozes have disadvantage on this saving throw. You can create a new line of radiance as your action on any turn until the spell ends. For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.",
       "url": "https://www.dnd-spells.com/spell/sunbeam",
       "damage": {
