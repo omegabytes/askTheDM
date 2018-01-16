@@ -108,7 +108,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }
         else{
@@ -125,7 +125,7 @@ var handlers = {
 
         //user requests information on feats
         if (thisFeat && thisFeatAttribute) {
-            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute]; 
+            this.attributes['speechOutput'] = thisFeat[thisFeatAttribute];
         }else if(thisFeat && !thisFeatAttribute){
             this.attributes['speechOutput'] = thisFeat.description;
 
@@ -136,7 +136,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -161,7 +161,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -193,7 +193,7 @@ var handlers = {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
         }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
@@ -227,15 +227,15 @@ var handlers = {
             this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
         }else {
             this.attributes['speechOutput'] = langEN.UNHANDLED;
-        } 
+        }
 
-        if(this.attributes['continue']){ 
+        if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
         }else{
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    //SpellClassIntent 
+    //SpellClassIntent
     //--make sure to state that 'some spells are available to specific class archetypes' (ie: paladin oath of vengence get hunter's mark)
 
     'SpellClassIntent': function() {
@@ -244,7 +244,7 @@ var handlers = {
 	    var requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
 	    var playerOrSlot = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerOrSlot);
 	    var spell = langEN.SPELLS[requestedSpell];
-	    var classes = langEN.CLASSES[requestedClass];
+	    var classes = langEN.CLASSES[requestedClass]; //this will be used when we work with warlock
 	    var level = langEN.SLOT_LEVEL[requestedSpellLevel];
 	    var spellClasses = spell.spellClass; //try requestedSpell.spellClass;
 
