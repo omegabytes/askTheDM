@@ -1,6 +1,6 @@
 module.exports = { //TODO:add fighter, monk, and rogue classes
 	"CLASSES" : {
-		"barbarian": {
+		"barbarian": { //PHB pdf page 41
 			"class_description": {
 				"shortDesc": "The relentless combatant, fueled by fury or it's totem bonds with animals. In tune with the natural order.",
 				"longDesc": "The barbarian is a primal warrior who prefers to charge in to engage foes in melee. They can follow either the Path of the Berserker, focusing on dealing as much damage as possible in melee combat, or the Path of the Totem Warrior, accepting an animal as a spiritual guide for a more druid-like experience."
@@ -25,7 +25,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"Simple weapons",
 					"Martial weapons"
 				],
-				"tools": ["None"],
+				"tools": [""],
 				"saving_throw_prof": [
 					"Strength",
 					"Constitution"
@@ -129,7 +129,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"indomitable might": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
 			"primal champion": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
 		}, //end of barbarian class
-		"bard" : {
+		"bard" : { //PHB pdf page 46
 			"class_description": {
 				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations.",
 				"longDesc": "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus."
@@ -137,7 +137,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_hit_point": {
 				"hit_dice": "1d8",
 				"1st_level": "8 plus your Constitution modifier",
-				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier, per bard level after 1st level."
+				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier."
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "Recommended to choose Charisma, followed by Dexterity as your highest ability scores.",
@@ -152,7 +152,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"skills": ["You may choose any three skills of your choice to be proficient in."]
 			},
 			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
-				//TODO: this section is weird. We should talk about it before developming any further
+				//TODO: this section is weird. We should talk about it before developing any further
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "Leather armor and a dagger",
 				"weapons_1": "A rapier",
@@ -219,57 +219,61 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						}
 					}
 				},
-				"class_specific_condition": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
-				"ability score improvement": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. You cant increase an ability score above 20 using this feature.",
+				"expertise": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
+				"ability score improvement": { //format == player_level: options
+					//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+					4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+					8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+					12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+					16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+					19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+				},
 				"font of inspiration": "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or Long Rest.",
 				"countercharm": "At 6th level, as an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being Frightened or Charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are Incapacitated or silenced or if you voluntarily end it (no action required).",
 				"magical secrets": "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast or a cantrip. You learn two additional Spells from any class at 14th level and again at 18th level.",
 				"superior inspiration": "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
 			}
 		}, //end of above class object
-		"cleric": {
+		"cleric": { //PHB pdf page 51
 			"class_description": {
 				"shortDesc": "A holy man devoted to a deity. capable of bolstering the party and heal their wounds, or laying low their enemies with divine wrath.",
 				"longDesc": "A priestly champion who wields divine magic in service of a higher power, d8, Wisdom & Charisma, light and medium armor, shields, simple weapons."
 			},
 			"class_hit_point": {
-				"hit_dice": "",
-				"1st_level": "",
-				"higher_levels": ""
+				"hit_dice": "1d8",
+				"1st_level": "8 plus your Constitution modifier",
+				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier." //per class level after 1st
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
-				"ability_scores": "",
-				"background": "",
-				"starting_spells": ""
+				"ability_scores": "Recommended to choose Wisdom, followed by Strength or Constitution as your highest ability scores.",
+				"background": "It is advised to take the acolyte background for your character.",
+				"starting_spells": "It is recommended to choose Guidance, Sacred Flame and Thaumaturgy as your first cantrips. If you dont have darkvision you should choose Light in place of one of the other cantrips. Regarding 1st-level spells, it is recommended that you take Cure Wounds, and Command as your first spells."
 			},
 			"class_proficiencies": {
 				"armor_prof": [
-					"armor_prof_1",
-					"armor_prof_2",
-					"armor_prof_3"
+					"light armor",
+					"medium armor",
+					"shields"
 				],
 				"weapon_prof": [
-					"wep_prof_1",
-					"wep_prof_2",
-					"wep_prof_3",
-					"wep_prof_4",
-					"wep_prof_5"],
+					"All simple weapons"],
 				"tools": [""],
 				"saving_throw_prof": [
-					"ST_prof_1",
-					"ST_prof_2"],
-				"skills": [""]
+					"Wisdom",
+					"Charisma"],
+				"skills": ["Choose two from History, Insight, Medicine, Persuasion, or Religion."]
 			}, //end of class_proficiencies
-			"equipment": {
+			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
-				"weapons_1": "",
-				"weapons_2": "",
-				"weapons_3": "",
-				"equipment_pack_1": "",
-				"equipment_pack_2": "",
-				"options_1": "",
-				"options_2": ""
+				"weapons_1": "A mace",
+				"weapons_2": "A warhammer(if proficient)",
+				"weapons_3": "A light crossbow with 20 bolts",
+				"weapons_4": "Any simple weapon",
+				"equipment_pack_1": "A priests pack", //equipment_pack_1 OR equipment_pack_2
+				"equipment_pack_2": "An explorers pack",
+				"extra_1": "A shield and a holy symbol",
+				"extra_2": ""
 			},
 			"class_spells": {
 				"slot_levels" : { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
@@ -294,41 +298,174 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
                 "level_features":{}
 			}, 
 			"class_spellcasting_ability": {
-				"spell_save_dc": "",
-				"spell_attack_mod": "",
-				"spell_focus": ""
+				"spell_save_dc": "8 plus your proficiency bonus plus your Wisdom modifier.",
+				"spell_attack_mod": "Your proficiency bonus plus your Wisdom modifier.",
+				"spell_focus": "Holy symbol."
 			},
 			"class_features": {
-				"main_class_feature": {
-					"description": "",
-					"benefits": "",
-					"replenish": ""
-				},
-				"class_feature_1": "",
-				"class_feature_2": "",
-				"subclass": {
+				"subclass": { //domains in this case
 					"subclass_paths": {
-						"subclass_description": "",
-						"subclass_type_1": {
-							"subclass_1_description": "",
-							"subclass_benefit_1": "",
+						"subclass_description": "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Your choice could also simply be a matter of personal preference, the aspect of the deity that appeals to you most.",
+						"knowledge": {
+							"description": "Followers of this domain study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can.",
+							"spells":{ //format == cleric_level: ["spell1","spell2",...]
+								1: ["command","identify"],
+								3: ["augury","suggestion"],
+								5: ["nondetection","speak with dead"],
+								7: ["arcane eye","confusion"],
+								9: ["legend lore","scrying"]
+							},
+							"blessing of knowledge": "At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: arcana, history, nature, or religion. Your proficiency bonus is doubled for any ability check you make that uses either of those skills.",
+							"channel divinity: knowledge of the ages": "Starting at 2nd level, you can use your channel divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.",
+							"channel divinity: read thoughts": { //FIXME: this is a lot of info, might need to be reworked
+								"description": "At 6th level, you can use your channel divinity to read a creatures thoughts. You can then use your access to the creatures mind to command it.",
+								"more_info": "As an action, choose one creature that you can see within 60ft of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you cant use this feature on it again until you finish a long rest.",
+								"benefits": "If the creature fails its save, you can read its surface thoughts, when it is within 60ft of you. This effect lasts for 1 minute. During that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot, and the target automatically fails its saving throw against the spell."
+							},
+							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+							"visions of the past": {
+								"description": "Starting at 17th level, you can call up visions of the past that relate to an object you hold or you immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.",
+								"replenish": "Must finish a short or long rest.",
+								"object reading": "Holding an object as you meditate, you can see visions of the objects previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner.",
+								"area reading": "As you meditate, you see visions of recent events in your immediate vicinity, going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent."
+							}
+						},
+						"life": {
+							"description": "The followers of this domain focus on the vibrant positive energy, one of the fundamental forces of the universe, that sustains all life.",
+							"spells": {
+								1: ["bless","cure wounds"],
+								3: ["lesser restoration","spiritual weapon"],
+								5: ["beacon of hope","revivify"],
+								7: ["death ward","guardian of faith"],
+								9: ["mass cure wounds","raise dead"]
+							},
+							"bonus proficiency": "When you choose this domain at 1st level, you gain proficiency with heavy armor.",
+							"disciple of life": "Starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points, the creature regains additional hit points equal to 2 plus the spells level.",
+							"channel divinity: preserve life": "starting at 2nd level, you can use your channel divinity to heal the badly injured. As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30ft of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You cant use this feature on an undead or a construct.",
+							"blessed healer": "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 plus the spells level.",
+							"divine strike": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.",
+							"supreme healing": "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die."
+						},
+						"light": {
+							"description": "Followers of this domain are enlightened souls infused with radiance and the power of their gods discerning vision, charged with chasing away lies and burning away darkness.",
+							"spells": {
+								1: ["burning hands","faerie fire"],
+								3: ["flaming sphere","scorching ray"],
+								5: ["daylight","fireball"],
+								7: ["guardian of faith","wall of fire"],
+								9: ["flame strike","scrying"]
+							},
+							"bonus cantrip": "When you choose this domain at 1st level, you gain the light cantrip if you dont already know it.",
+							"warding flare": {
+								"description": "At 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30ft of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that cant be blinded is immune to this feature.",
+								"more_info": "You can use this feature a number of times equal to your Wisdom modifier. You regain all expended uses when you finish a long rest."
+							},
+							"channel divinity: radiance of the dawn": "Starting at 2nd level, you can use your channel divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes. As an action, you present your holy symbol, and any magical darkness within 30ft of you is dispelled. Additionally, each hostile creature within 30ft of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 plus your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.", //FIXME: ^this is a lot of info, might break it apart
+							"improved flare": "Starting at 6th level, you can also use your warding flare feature when a creature that you can see within 30ft of you attacks a creature other than you.",
+							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+							"corona of light": "Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60ft radius and dim light 30ft beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
+						},
+						"nature": {
+							"description": "Followers of this domain, hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.",
+							"spells": {
+								1: ["animal friendship","speak with animals"],
+								3: ["barkskin","spike growth"],
+								5: ["plant growth","wind wall"],
+								7: ["dominate beast","grasping vine"],
+								9: ["insect plague","tree stride"]
+							},
+							"acolyte of nature": "At 1st level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: animal handling, nature, or survival.",
+							"bonus proficiency": "At 1st level, you gain proficiency with heavy armor.",
+							"channel divinity: charm animals and plants": "Starting at 2nd level, you can use your channel divinity to charm animals and plants. As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30ft of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate.",
+							"dampen elements": "Starting at 6th level, when you or a creature within 30ft of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage.",
+							"divine strike": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage(your choice) to the target. When you reach 14th level, the extra damage to increases to 2d8.",
+							"master of nature": "At 17th level, you gain the ability to command animals and plant creatures. While creatures are charmed by your charm animals and plants feature, you can take a bonus action on your turn to verbally command what each of those creatures will do on its next turn."
+						},
+						"tempest": {
+							"description": "Followers of this domain are sent by their gods to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.",
+							"spells": {
+								1: ["fog cloud","thunderwave"],
+								3: ["gust of wind","shatter"],
+								5: ["call lightning","sleet storm"],
+								7: ["control water","ice storm"],
+								9: ["destructive wave","insect plague"]
+							},
+							"bonus proficiencies": "At 1st level, you gain proficiency with martial weapons and heavy armor.",
+							"wrath of the storm": {
+								"description": "At 1st level, you can thunderously rebuke attackers. When a creature within 5ft of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage on a failed saving throw, and half as much damage on a successful one.",
+								"more_info": "You can use this feature a number of times equal to your Wisdom modifier. You regain all expended uses when you finish a long rest."
+							},
+							"channel divinity: destructive wrath": "Starting at 2nd level, you can use your channel divinity to wield the power of the storm with unchecked ferocity. When you roll lightning or thunder damage, you can use your channel divinity to deal maximum damage, instead of rolling.",
+							"thunderbolt strike": "At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 10ft away from you.",
+							"divine strike": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.",
+							"stormborn": "At 17th level, you have a flying speed equal to your current walking speed whenever you are not underground or indoors."
+						},
+						"trickery": {
+							"description": "Followers of this domain are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.",
+							"spells": {
+								1: ["charm person","disguise self"],
+								3: ["mirror image","pass without trace"],
+								5: ["blink","dispel magic"],
+								7: ["dimension door","polymorph"],
+								9: ["dominate person","modify memory"]
+							},
+							"blessing of the trickster": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
 						},
-						"subclass_type_2": {
-							"subclass_2_description": "",
+						"subclass_type_7": {
+							"description": "",
+							"spells": {
+								1: [],
+								3: [],
+								5: [],
+								7: [],
+								9: []
+							},
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
 						}
 					}
+				},
+				"channel divinity": { //FIXME: this might need to be reworked
+					"description": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain.",
+					"benefits": {
+						"Turn Undead": {
+							"description": "As an action, you present your holy symbol and speak a prayer. Each undead that can see or hear you within 30ft of you must make a Wisdom saving throw. On a fail, it is turned for 1 minute or until it takes any damage",
+							"more_info": "A turned creature must spend its turns trying to move as far away from you as it can, and it cant willingly move to a space within 30ft of you. It also cant take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving."
+						}
+					},
+					"replenish": "A short or long rest. Beginning at 6th level you can use this twice, and beginning at 18th level you can use this three times between rests."
+				},
+				"class_feature_1": "",
+				"class_feature_2": ""
+			},
+			"destroy undead": {
+				"description": "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold. To learn more, ask about the destroy undead table.",
+				"table": { //format== player_level: CR of creature
+					5: "1/2 or lower",
+					8: "1 or lower",
+					11: "2 or lower",
+					14: "3 or lower",
+					17: "4 or lower"
 				}
 			},
-			"class_specific_condition": "",
-			"ability_score_improvement": {},
-			"class_specific_ability_1": "",
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
+			"divine intervention": {
+				"description": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deitys aid requires you to use your action, describe the assistance you seek and roll percentile dice.",
+				"more_info": "If you roll a number equal to or lower than your cleric level, your deity intervenes. Meaning if you are a level 10 cleric and roll between 1 and 10, this feature works. The D.M. chooses the nature of the intervention. At 20th level your call for intervention succeeds automatically, no roll required.",
+				"replenish": "If your deity intervenes, you cant use this feature again for 7 days. Otherwise, you must finish a long rest."
+			},
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
@@ -433,7 +570,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
@@ -542,7 +686,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
@@ -648,7 +799,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
@@ -755,7 +913,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
@@ -885,7 +1050,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}//end of subclass
 			}, //end of class_features
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
@@ -945,7 +1117,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					5: [9,"animate objects", "bigbys hand","cloudkill","cone of cold","conjure elemental","contact other plane","creation","dominate person","dream","geas","hold monster","legend lore","mislead","modify memory","passwall","planar binding","rarys telepathic bond","scrying","seeming","telekinesis","teleportation circle","wall of force","wall of stone"],
 					6: [11,"arcane gate","chain lightning","circle of death","contingency","create undead","disintegrate","drawmijs instant summons","eyebite","flesh to stone","globe of invulnerability","guards and wards","magic jar","mass suggestion","move earth","otilukes freezing sphere","ottos irresistible dance","programmed illusion", "sunbeam", "true seeing", "wall of ice"],
 					7: [13,"delayed blast fireball","etherealness","finger of death","forcecage","mirage arcane","mordenkainens magnificent mansion","mordenkainens sword","plane shift","prismatic spray","project image","reverse gravity","sequester","simulacrum","symbol","teleport"],
-					8: [15,"antimagic field","antipathy/sympathy","clone","clone","contorl weather","demiplane","dominate monster","feeblemind","incendiary cloud","maze","mind blank","power word stun","sunburst","telepathy","trap the soul"],
+					8: [15,"antimagic field","antipathy/sympathy","clone","clone","control weather","demiplane","dominate monster","feeblemind","incendiary cloud","maze","mind blank","power word stun","sunburst","telepathy","trap the soul"],
 					9: [17,"astral projection","foresight","gate","imprisonment","meteor swarm","power word kill","prismatic wall","shapechange","time stop","true polymorph","weird","wish"]
 				},
 				"spells_known": { //TODO: format == {player_level: number}
@@ -991,7 +1163,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": {},
+			"ability_score_improvement": { //format == player_level: options
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
+				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
