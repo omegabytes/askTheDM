@@ -1,10 +1,10 @@
 'use strict';
 
 var Alexa           = require('alexa-sdk');
-var id              = require('./appId.js');
+// var id              = require('./appId.js');
 var languageStrings = require('./languageStrings');
-var dndLib        = require('./dndLib.js');
-var APP_ID          = id.APP_ID;
+var dndLib          = require('./dndLib.js');
+var APP_ID          = "amzn1.ask.skill.30397146-5043-48df-a40f-144d37d39690";
 var langEN          = languageStrings.en.translation;
 
 // noinspection JSUnusedLocalSymbols
@@ -92,7 +92,7 @@ var handlers = {
         }
     },
     'ExhaustionLevelIntent': function () {
-        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
+        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
         var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -100,7 +100,7 @@ var handlers = {
         if(exhaustionLevel){ //user requests information on exhaustion levels
             this.attributes['speechOutput'] = exhaustionLevel;
         }else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Level.name, requestedExhaustionLevel) + " exhaustion.";
+            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.ExLevel.name, requestedExhaustionLevel) + " exhaustion.";
         }else if (!requestedExhaustionLevel) {
             this.attributes['speechOutput'] = langEN.CONDITIONS.exhaustion;
         }
@@ -245,15 +245,16 @@ var handlers = {
 	    var playerOrSlot = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerOrSlot);
 	    var spell = langEN.SPELLS[requestedSpell];
 	    var classes = langEN.CLASSES[requestedClass]; //this will be used when we work with warlock
+	    // var charClass = langEN.CLASSES[requestedClass];
 	    var level = langEN.SLOT_LEVEL[requestedSpellLevel];
 	    var spellClasses = spell.spellClass; //try requestedSpell.spellClass;
 
         //set session attributes in the event of a reprompt
-	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
-	    this.attributes['requestedSpell'] = requestedSpell;
-	    this.attributes['requestedSpellLevel'] = requestedSpellLevel;
-	    this.attributes['requestedClass'] = requestedClass;
-	    this.attributes['playerOrSlot'] = playerOrSlot;
+        this.attributes['repromptSpeech'] = langEN.REPROMPT;
+        this.attributes['requestedSpell'] = requestedSpell;
+        this.attributes['requestedSpellLevel'] = requestedSpellLevel;
+        this.attributes['requestedClass'] = requestedClass;
+        this.attributes['playerOrSlot'] = playerOrSlot;
 
 	    //TODO: move this logic into a function in dndLib, do so for the rest of the intents
 	    if (spell) { //if the requested spell exists
@@ -262,12 +263,11 @@ var handlers = {
 			    this.attributes['speechOutput'] = requestedClass + "\'s can't cast " + requestedSpell + ".";
 		    } else {
 		        // check to see if the player specified player or slot level
-                if (!this.attributes['playerOrSlot']) {
-                    this.attributes['speechOutput'] = "Do you mean player level, or spell slot level?";
-                    this.emit(':elicitSlot','PlayerOrSlot',this.attributes['speechOutput']);
-                }
+                // if (!this.attributes['playerOrSlot']) {
+                 //    this.attributes['speechOutput'] = "Do you mean player level, or spell slot level?";
+                 //    this.emit(':elicitSlot','PlayerOrSlot',this.attributes['speechOutput']);
+                // }
 
-                //if player level
                 // TODO: implement player level logic
                 // we need to access an array of spells implemented as such:
                 //
@@ -280,6 +280,19 @@ var handlers = {
                 // if the above check is passed with a value of true, then check the tail of the array, comparing requestedSpell to the values in the array
                 // continue to the next slot level up, retesting the value at index 0 against requested level until it fails or the spell is found
                 // return false if you reach the end of the final array (for spell slot 9) and have not matched the requested spell
+
+                // charClass.class_spells.slot_levels[i][0];
+
+                //if player level
+                // if (this.attributes['playerOrSlot'] == 'player') {
+                //
+                // } else if (this.attributes['playerOrSlot'] == 'slot') {
+                //
+                // } else {
+                //     // debugging, remove in production
+                //     this.attributes['speechOutput'] = "Something went wrong.";
+                // }
+
 
                 //if slot level
 			    if (level && spellClasses.indexOf(requestedClass) != -1) {
