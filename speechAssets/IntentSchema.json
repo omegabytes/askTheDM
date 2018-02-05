@@ -97,7 +97,7 @@
           "type": "LIST_OF_CLASSES"
         },
         {
-          "name": "SlotLevel",
+          "name": "Level",
           "type": "LIST_OF_SLOT_LEVELS"
         }
       ],
