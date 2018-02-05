@@ -3,7 +3,7 @@
 var Alexa           = require('alexa-sdk');
 var id              = require('./appId.js');
 var languageStrings = require('./languageStrings');
-var dndLib        = require('./dndLib.js');
+var dndLib          = require('./dndLib.js');
 var APP_ID          = id.APP_ID;
 var langEN          = languageStrings.en.translation;
 
@@ -19,7 +19,10 @@ exports.handler = function(event, context, callback) {
 var handlers = {
     'ConditionsIntent': function () {
         var requestedConditionName        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+
+	    //TODO: move this logic into dndLib
         var condition                     = langEN.CONDITIONS[requestedConditionName];
+
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         //user requests information on condition
@@ -42,6 +45,8 @@ var handlers = {
         var modifier         = dndLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
         var diceSides        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
         var status           = dndLib.validateAndSetSlot(this.event.request.intent.slots.Status);
+
+	    //TODO: move this logic into dndLib
         var firstRoll;
         var secondRoll;
         var result;
@@ -93,6 +98,8 @@ var handlers = {
     },
     'ExhaustionLevelIntent': function () {
         var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
+
+	    //TODO: move this logic into dndLib
         var exhaustionLevel      = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -118,6 +125,8 @@ var handlers = {
     'FeatsIntent': function() {
         var requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
         var requestedFeat          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
+
+	    //TODO: move this logic into dndLib
         var thisFeat               = langEN.FEATS[requestedFeat];
         var thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
@@ -149,6 +158,8 @@ var handlers = {
     },
     'IndexIntent' : function(){
         var requestedIndexName  = dndLib.validateAndSetSlot(this.event.request.intent.slots.Index);
+
+	    //TODO: move this logic into dndLib
         var index               = langEN.INDEX[requestedIndexName];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -170,18 +181,20 @@ var handlers = {
     'ItemsIntent': function () {
         var requestedItem            = dndLib.validateAndSetSlot(this.event.request.intent.slots.Item);
         var requestedItemAttribute   = dndLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
+
+	    //TODO: move this logic into dndLib
         var item                     = langEN.ITEMS[requestedItem];
         var itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         if(item && itemAttribute){
-            if(!item[itemAttribute]){
+            if(!item[itemAttribute]){ //if requested item attribute doesnt exist for requested item
                 this.attributes['speechOutput'] = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
             } else {
                 this.attributes['speechOutput']  = item[itemAttribute];
             }
-        }else if(item && !itemAttribute){
+        }else if(item && !itemAttribute){ //user provides the item but the attributes doesnt exist. ie: shield has attribute 'strength', while daggers do not
             if(item.itemType){
                 this.attributes['speechOutput'] = "It is a " + item.itemType;
             } else {
@@ -200,34 +213,10 @@ var handlers = {
         }
     },
     'SpellCastIntent': function () {
-        var spellName = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var spell  = langEN.SPELLS[spellName];
+        var requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 
-        this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
-        //user requests information on casting spell
-        if (spell) {
-            if(spell.slotLevel === "cantrip") {
-                this.attributes['speechOutput'] = spellName + " is a "
-                    + spell.school + " cantrip. To cast, you need the following: "
-                    + spell.components + ". The spell duration is "
-                    + spell.duration + " and has a range of "
-                    + spell.range;
-            } else {
-                this.attributes['speechOutput'] = spellName + " is a level "
-                    + spell.slotLevel + " "
-                    + spell.school + " spell. To cast, you need the following: "
-                    + spell.components + ". The spell duration is "
-                    + spell.duration + " and has a range of "
-                    + spell.range;
-            }
-
-        //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-        }else if (!spell) {
-            this.attributes['speechOutput'] = dndLib.notFoundMessage(this.event.request.intent.slots.Spell.name, spellName);
-        }else {
-            this.attributes['speechOutput'] = langEN.UNHANDLED;
-        }
+	    //TODO: move this logic into dndLib
+	    this.attributes['speechOutput'] = dndLib.getSpellCast(requestedSpell);
 
         if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
@@ -236,62 +225,19 @@ var handlers = {
         }
     },
     'SpellClassIntent': function() {
-	    var requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-	    var requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
-	    var requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
-	    var spell = langEN.SPELLS[requestedSpell];
-	    var classes = langEN.CLASSES[requestedClass];
-	    var level = langEN.SLOT_LEVEL[requestedSpellLevel];
-	    //var spellClasses = list of classes in spellClass attribute in spells
-	    var spellClasses = spell.spellClass; //try requestedSpell.spellClass;
+	    var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+	    var requestedClass          = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
+	    var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level); //TODO: double check that ...intent.slots.Level is the correct call
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    //be careful 'class' is a special keyword
+	    this.attributes['speechOutput'] = dndLib.getClassLevel(requestedSpell,requestedSpellLevel,requestedClass);
 
-	    //TODO: move this logic into a function in dndLib, do so for the rest of the intents
-	    if (spell) { //if the requested spell exists
-		    //var spellClasses = spell.spellClass; //similar to spell.damage as shown below in DamageIntent
-		    if (spellClasses.indexOf(requestedClass) === -1) { //if the requested class exists in the array of spell classes
-			    this.attributes['speechOutput'] = requestedClass + "s can't cast " + requestedSpell + ".";
-		    } else { //separate into "can x cast spell y" and "can a {class} cast {spell} at level x" **consider calling spellDamageIntent for this utterance logic
-			    if (level && spellClasses.indexOf(requestedClass) != -1) {
-				    this.attributes['spell'] = requestedSpell;
-				    this.attributes['level'] = requestedSpellLevel;
-				    this.attributes['speechOutput'] = dndLib.getSpellDamage(requestedSpell, requestedSpellLevel);
-			    } else {
-				    this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + spellClasses;
-			    }
-		    }
-
-		    //FIXME: change <SlotLevel> slot in utterances to just be <Level>
-		    /*
-		       "Can a -wizard- cast _fireball_ at level =3=?"
-		       "... at ~player~ level =3=?"
-		       "... at ~slot~ level =3=?"
-
-		       "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
-
-				if(!this.attributes['player_or_slot']){
-					this.attributes['speechOutput'] = "say stuff";
-					this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
-				}
-		     */
-
-		    //TODO: review this comment block for if session attribute doesn't exist.
-		    /*
-		    'MoreInfoIntent' : function () {
-		        if(!this.attributes['character']) {
-		            this.attributes['speechOutput'] = "Which character would you like more info about?";
-		            this.emit(':elicitSlot','MoreInfo',this.attributes['speechOutput']);
-		        }
-		     */
-
-		    if (this.attributes['continue']) {
-			    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
-		    } else {
-			    this.emit(':tell', this.attributes['speechOutput']);
-		    }
-	    }
+	    if (this.attributes['continue']) {
+		    this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);
+		}else{
+		    this.emit(':tell', this.attributes['speechOutput']);
+		}
     },
     'SpellDamageIntent': function(){
         var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
@@ -300,7 +246,6 @@ var handlers = {
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 
         this.attributes['speechOutput'] = dndLib.getSpellDamage(requestedSpell, requestedSpellLevel);
-        //TODO: move function logic for other intents into separate function call in dndLib
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
@@ -309,7 +254,7 @@ var handlers = {
         }
 
     },
-    'SpellHealIntent': function(){
+    'SpellHealIntent': function(){ //TODO: move this logic into dndLib
         var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
         var spell                   = langEN.SPELLS[requestedSpell];
@@ -354,7 +299,7 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    'SpellsIntent': function () {
+    'SpellsIntent': function () { //TODO: move this logic into dndLib
         var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
         var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
@@ -410,8 +355,8 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'AMAZON.HelpIntent': function () {
-        this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
-        this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
+        this.attributes['speechOutput']     = langEN.HELP_MESSAGE;
+        this.attributes['repromptSpeech']   = langEN.HELP_REPROMPT;
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
     },
     'AMAZON.RepeatIntent': function () {

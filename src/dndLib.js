@@ -60,7 +60,7 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 	var output                  = "";
-//TODO: create function that encapsulates spell damage processing
+
 	if(spell && spell.damage === undefined){
 		output = "That spell does not do damage."
 	}else if(spell && typeof spell.damage === 'string'){
@@ -88,5 +88,94 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 				+ dmg + " " + dmgType + ".";
 		}
 	}
+	return output;
+};
+
+exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedClass){
+//TODO: logic for SpellClassIntent to handle user requesting playerLevel and slotLevel
+	var spell                   = langEN.SPELLS[requestedSpell];
+	var classes                 = langEN.CLASSES[requestedClass];
+	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+	// var spellClasses         = spell.spellClass; //*obsolete* with addition of classes.js
+	var output                  = "";
+
+	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
+	/* --classes.js-- slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+	 * var ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
+     * var ClassPlayerLevel =
+	 */
+
+	if (spell) { //if the requested spell exists
+		if (classes.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
+			this.attributes['speechOutput']     = requestedClass + "s can't cast " + requestedSpell + ".";
+		} else {
+			if (level && classes.indexOf(requestedClass) != -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
+				this.attributes['spell']        = requestedSpell;
+				this.attributes['level']        = requestedSpellLevel;
+				this.attributes['speechOutput'] = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
+			}else if (classes.indexOf(requestedClass) != -1 && !level) {
+
+			} else {
+				this.attributes['speechOutput'] = "Yes. " + requestedSpell + " can be cast by the following classes. " + classes; //FIXME: change 'classes' to point to the list of classes
+
+			}
+		}
+	}
+
+		//FIXME: change <SlotLevel> slot in utterances to just be <Level>
+		/*
+		   "Can a -wizard- cast _fireball_ at level =3=?"
+		   "... at ~player~ level =3=?"
+		   "... at ~slot~ level =3=?"
+
+		   "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
+
+			if(!this.attributes['player_or_slot']){
+				this.attributes['speechOutput'] = "say stuff";
+				this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
+			}
+		 */
+
+		//TODO: review this comment block for if session attribute doesn't exist.
+		/*
+		'MoreInfoIntent' : function () {
+			if(!this.attributes['character']) {
+				this.attributes['speechOutput'] = "Which character would you like more info about?";
+				this.emit(':elicitSlot','MoreInfo',this.attributes['speechOutput']);
+			}
+		 */
+	return output;
+};
+
+exports.getSpellCast = function(requestedSpell){
+	var spell  = langEN.SPELLS[requestedSpell];
+	var output                  = "";
+
+	this.attributes['repromptSpeech'] = langEN.REPROMPT;
+
+	//user requests information on casting spell
+	if (spell) {
+		if(spell.slotLevel === "cantrip") {
+			this.attributes['speechOutput'] = requestedSpell + " is a "
+				+ spell.school + " cantrip. To cast, you need the following: "
+				+ spell.components + ". The spell duration is "
+				+ spell.duration + " and has a range of "
+				+ spell.range;
+		} else {
+			this.attributes['speechOutput'] = requestedSpell + " is a level "
+				+ spell.slotLevel + " "
+				+ spell.school + " spell. To cast, you need the following: "
+				+ spell.components + ". The spell duration is "
+				+ spell.duration + " and has a range of "
+				+ spell.range;
+		}
+
+		//otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+	}else if (!spell) {
+		this.attributes['speechOutput'] = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+	}else {
+		this.attributes['speechOutput'] = langEN.UNHANDLED;
+	}
+
 	return output;
 };
