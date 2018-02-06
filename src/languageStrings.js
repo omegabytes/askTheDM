@@ -34,7 +34,7 @@ module.exports = {
             "SKILL_NAME":                                   "Ask the DM",            
             "STOP_MESSAGE":                                 "Goodbye!",            
             "UNHANDLED" :                                   "I'm sorry, I didn't get that. You can try repeating that command. For help on what you can ask, say 'help'",
-            "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explaination of this application. Now... what can I help you with?",
+            "WELCOME_MESSAGE":                              "Welcome to Ask the DM. You can ask questions to get information about many of the mechanics in Dungeons and Dragons. For example, You can say things like, what\'s the range of fireball; or: how does blind affect me?... Please ask for help for a detailed explanation of this application. Now... what can I help you with?",
             "WELCOME_REPROMPT":                             "For instructions on what you can say, please say help me."     
         }
     }
