@@ -19,9 +19,14 @@ exports.handler = function(event, context, callback) {
 var handlers = {
     'ConditionsIntent': function () {
         var requestedConditionName        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+	    var requestedExhaustionLevel      = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
-	    this.attributes['speechOutput'] = dndLib.getConditions(requestedConditionName);
+	    if (requestedConditionName === "exhaustion" ||requestedConditionName === "exhausted"){ //if user asks about exhaustion, now points to ExhaustionIntent
+		    this.attributes['speechOutput'] = dndLib.getExhaustion(requestedExhaustionLevel);
+	    }else { //if the user asks for any other condition
+		    this.attributes['speechOutput'] = dndLib.getConditions(requestedConditionName);
+	    }
 
         if(this.attributes['continue']){ 
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
