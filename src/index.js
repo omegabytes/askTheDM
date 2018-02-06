@@ -155,12 +155,12 @@ var handlers = {
             this.emit(':tell', this.attributes['speechOutput']);
         }
     },
-    'SpellsIntent': function () { //TODO: move this logic into dndLib
+    'SpellsIntent': function () {
         var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
         var requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
-
+		this.attributes['speechOutput'] = dndLib.getSpells(requestedSpell,requestedSpellAttribute);
 
         if(this.attributes['continue']){
             this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
