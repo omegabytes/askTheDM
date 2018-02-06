@@ -765,6 +765,7 @@ SpellHealIntent how much health does {Spell} spell do at {SlotLevel} level
 SpellHealIntent how much health does {Spell} spell restore at {SlotLevel} level
 SpellHealIntent how much health does {Spell} spell replenish at {SlotLevel} level
 SpellHealIntent how much health does {Spell} do at {SlotLevel} level
+SpellHealIntent how much health does {Spell} do at level {SlotLevel}
 SpellHealIntent how much health does {Spell} restore at {SlotLevel} level
 SpellHealIntent how much health does {Spell} replenish at {SlotLevel} level
 SpellHealIntent how much health does an {SlotLevel} level {Spell} spell do
