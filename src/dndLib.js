@@ -67,7 +67,6 @@ exports.getConditions = function(requestedConditionName){
 	}else {
 		output = langEN.UNHANDLED;
 	}
-
 	return output;
 };
 
@@ -245,6 +244,7 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 				output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
 			}else if (classes.indexOf(requestedClass) != -1 && !level) {
 				//TODO: work on logic for this
+
 			} else {
 				output = "Yes. " + requestedSpell 
 					+ " can be cast by the following classes. " 
