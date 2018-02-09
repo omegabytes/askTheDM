@@ -128,7 +128,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"persistent rage": "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.",
 			"indomitable might": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
 			"primal champion": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
-		}, //end of barbarian class
+		}, //end of above class object
 		"bard" : { //PHB pdf page 46
 			"class_description": {
 				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations.",
@@ -304,7 +304,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"class_features": {
 				"subclass": { //domains in this case
-					"subclass_paths": {
+					"subclass_paths": { //FIXME: thinking about breaking out the word 'channel divinity', depends on required logic to invoke this class features
 						"subclass_description": "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Your choice could also simply be a matter of personal preference, the aspect of the deity that appeals to you most.",
 						"knowledge": {
 							"description": "Followers of this domain study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can.",
@@ -409,24 +409,34 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 								7: ["dimension door","polymorph"],
 								9: ["dominate person","modify memory"]
 							},
-							"blessing of the trickster": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
-						},
-						"subclass_type_7": {
-							"description": "",
-							"spells": {
-								1: [],
-								3: [],
-								5: [],
-								7: [],
-								9: []
+							"blessing of the trickster": "Starting at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour, or until you use this feature again.",
+							"channel divinity: invoke duplicity": {
+								"description": "Starting at 2nd level, you can use your channel divinity to create an illusory duplicate of yourself.",
+								"benefit": "As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose concentration. The illusion appears in an unoccupied space that you can see within 30ft of you. As a bonus action you can move the illusion up to 30ft to a space you can see, but it must remain within 120ft of you.",
+								"more_info": "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5ft of a creature that can see the illusion, you have advantage on attack rolls against that creature."
 							},
-							"subclass_benefit_1": "",
-							"subclass_benefit_2": "",
-							"subclass_benefit_3": "",
-							"subclass_benefit_4": ""
+							"channel divinity: cloak of shadows": "Starting at 6th level, you can use your channel divinity to vanish. As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell.",
+							"divine strike": "At 8th level, you gain the ability to infuse your weapon strikes with poison. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, increase the damage to 2d8.",
+							"improved duplicity": "At 17th level, you can create up to four duplicates of yourself, instead of one, when you use invoke duplicity. As a bonus action on your turn, you can move any number of them up to 30ft, to a maximum range of 120ft."
+						},
+						"war": {
+							"description": "Followers of this domain excel in battle, inspiring others to fight the good fight, or offer acts of violence as prayers.",
+							"spells": {
+								1: ["divine favor","shield of faith"],
+								3: ["magic weapon","spiritual weapon"],
+								5: ["crusaders mantle","spirit guardians"],
+								7: ["freedom of movement","stoneskin"],
+								9: ["flame strike","hold monster"]
+							},
+							"bonus proficiencies": "At 1st level, you gain proficiency with martial weapons and heavy armor.",
+							"war priest": {
+								"description": "Starting at 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action.",
+								"replenish": "You can use this feature a number of times equal to your wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+							},
+							"channel divinity: guided strike": "Starting at 2nd level, you can use your channel divinity to strike with supernatural accuracy. When you make an attack roll, you can use your channel divinity to gain +10 bonus to the roll. You make this choice after you see the roll, but before the DM says if it hits or misses.",
+							"channel divinity: war gods blessing": "At 6th level, when a creature within 30ft of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your channel divinity. You make this choice after you see the roll, but before the DM says if it hit or missed.",
+							"divine strike": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level increase the damage to 2d8.",
+							"avatar of battle": "At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
 						}
 					}
 				},
@@ -454,7 +464,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
+				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature."
+				// FIXME: might just leave this section as a string.
 				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
 				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
 				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
@@ -472,7 +483,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 		}, //end of above class object
 		"druid": {
 			"class_description": {
-				"shortDesc": "a nomad devoted to the world and the powers of Nature. Capable of adopting the form of a beast for battle or utility. capable of bolstering the party and heal their wounds, or laying low their enemies with nature's wrath.",
+				"shortDesc": "A nomad devoted to the world and the powers of Nature. Capable of adopting the form of a beast for battle or utility. capable of bolstering the party and heal their wounds, or laying low their enemies with nature's wrath.",
 				"longDesc": "A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms, d8, Intelligence & Wisdom, light and medium armor(non-metal), shields(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears."
 			},
 			"class_hit_point": {
