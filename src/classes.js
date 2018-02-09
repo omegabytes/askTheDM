@@ -8,7 +8,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_hit_point": {
 				"hit_dice": "1d12",
 				"1st_level": "12 plus your Constitution modifier.",
-				"higher_levels": "Based on average rolls, 7 plus your Constitution modifier, per barbarian level past 1st."
+				"higher_levels": "Based on average rolls, 7 plus your Constitution modifier."
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
 				"ability_scores": "Recommended to choose Strength, followed by Constitution as your highest ability scores.",
@@ -67,7 +67,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					},
 					"replenish": "Once you have used all your rage, which is based on your player level. You must finish a long rest before you can rage again."
 				},
-				"unarmored defense": "While you are not wearing any armor, your armor class equals 10 plus your Dexterity modifier plus your Constitution modifier. You can still use a shield and have this benefit.",
+				"unarmored defense": "While you are not wearing any armor, your armor class equals 10 plus your Dexterity modifier. plus your Constitution modifier. You can still use a shield and have this benefit.",
 				"reckless attack": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
 				"danger sense":"At 2nd level, you gain an uncanny sense of when things nearby arent as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
 				},
@@ -78,7 +78,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						"description": "For some barbarians, rage is a means to an end, that end being violence. The path of the berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
 						"frenzy": "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.",
 						"mindless rage": "Beginning at 6th level, you cant be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.",
-						"intimidating presence": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30ft of you. IF the creature can see or hear you, it must succeed on a Wisdom saving throw, the DC is equal to 8 plus your proficiency bonus plus your Charisma modifier, or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60ft away from you. If the creature succeeds on its saving throw, you cant use this feature on that creature again for 24 hours.", //FIXME: might break this out, this is a lot of info in one value
+						"intimidating presence": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30ft of you. IF the creature can see or hear you, it must succeed on a Wisdom saving throw, the DC is equal to 8 plus your proficiency bonus plus your Charisma modifier., or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60ft away from you. If the creature succeeds on its saving throw, you cant use this feature on that creature again for 24 hours.", //FIXME: might break this out, this is a lot of info in one value
 						"retaliation": "Starting at 14th level, when you take damage from a creature that is within 5ft of you, you can use your reaction to make a melee weapon attack against that creature."
 					},
 					"path of the totem warrior": {
@@ -136,7 +136,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"class_hit_point": {
 				"hit_dice": "1d8",
-				"1st_level": "8 plus your Constitution modifier",
+				"1st_level": "8 plus your Constitution modifier.",
 				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier."
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
@@ -196,7 +196,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"bardic inspiration": {
 					"description": "You can inspire others through stirring words or music. To do so, you use a Bonus Action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.",
 					"benefits": "Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.",
-					"replenish": "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a Long Rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+					"replenish": "You can use this feature a number of times equal to your Charisma modifier. (a minimum of once). You regain any expended uses when you finish a Long Rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
 				},
 				"jack of all trades": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.",
 				"song of rest": "Starting at 2nd level, you can revitalize wounded allies during a short rest. Any friendly creature that spent Hit Dice to regain hit points, each creature regains an extra 1d6 hit points. This extra hit points increase when you reach certain levels: 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.",
@@ -241,7 +241,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"class_hit_point": {
 				"hit_dice": "1d8",
-				"1st_level": "8 plus your Constitution modifier",
+				"1st_level": "8 plus your Constitution modifier.",
 				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier." //per class level after 1st
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
@@ -270,7 +270,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"weapons_2": "A warhammer(if proficient)",
 				"weapons_3": "A light crossbow with 20 bolts",
 				"weapons_4": "Any simple weapon",
-				"equipment_pack_1": "A priests pack", //equipment_pack_1 OR equipment_pack_2
+				"equipment_pack_1": "A priests pack", //TODO: break this up to describe what each pack contains (maybe just have it point to itemsIntent)
 				"equipment_pack_2": "An explorers pack",
 				"extra_1": "A shield and a holy symbol",
 				"extra_2": ""
@@ -322,7 +322,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 								"more_info": "As an action, choose one creature that you can see within 60ft of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you cant use this feature on it again until you finish a long rest.",
 								"benefits": "If the creature fails its save, you can read its surface thoughts, when it is within 60ft of you. This effect lasts for 1 minute. During that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot, and the target automatically fails its saving throw against the spell."
 							},
-							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier. to the damage you deal with any cleric cantrip.",
 							"visions of the past": {
 								"description": "Starting at 17th level, you can call up visions of the past that relate to an object you hold or you immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.",
 								"replenish": "Must finish a short or long rest.",
@@ -362,7 +362,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							},
 							"channel divinity: radiance of the dawn": "Starting at 2nd level, you can use your channel divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes. As an action, you present your holy symbol, and any magical darkness within 30ft of you is dispelled. Additionally, each hostile creature within 30ft of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 plus your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.", //FIXME: ^this is a lot of info, might break it apart
 							"improved flare": "Starting at 6th level, you can also use your warding flare feature when a creature that you can see within 30ft of you attacks a creature other than you.",
-							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier. to the damage you deal with any cleric cantrip.",
 							"corona of light": "Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60ft radius and dim light 30ft beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
 						},
 						"nature": {
@@ -431,7 +431,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"bonus proficiencies": "At 1st level, you gain proficiency with martial weapons and heavy armor.",
 							"war priest": {
 								"description": "Starting at 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action.",
-								"replenish": "You can use this feature a number of times equal to your wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+								"replenish": "You can use this feature a number of times equal to your wisdom modifier. (a minimum of once). You regain all expended uses when you finish a long rest."
 							},
 							"channel divinity: guided strike": "Starting at 2nd level, you can use your channel divinity to strike with supernatural accuracy. When you make an attack roll, you can use your channel divinity to gain +10 bonus to the roll. You make this choice after you see the roll, but before the DM says if it hits or misses.",
 							"channel divinity: war gods blessing": "At 6th level, when a creature within 30ft of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your channel divinity. You make this choice after you see the roll, but before the DM says if it hit or missed.",
@@ -455,7 +455,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"destroy undead": {
 				"description": "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold. To learn more, ask about the destroy undead table.",
-				"table": { //format== player_level: CR of creature
+				"table": { //format == player_level: CR of creature
 					5: "1/2 or lower",
 					8: "1 or lower",
 					11: "2 or lower",
@@ -487,43 +487,63 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"longDesc": "A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms, d8, Intelligence & Wisdom, light and medium armor(non-metal), shields(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears."
 			},
 			"class_hit_point": {
-				"hit_dice": "",
-				"1st_level": "",
-				"higher_levels": ""
+				"hit_dice": "1d8",
+				"1st_level": "8 plus your constitution modifier.",
+				"higher_levels": "Based on average rolls, 5 plus your constitution modifier."
 			},
 			"class_primary_ability": { //'Quick Build' section from the PHB
-				"ability_scores": "",
-				"background": "",
+				"ability_scores": "Recommended to choose wisdom as your highest ability score, followed by constitution.",
+				"background": "It is advised to pick the hermit background.",
 				"starting_spells": ""
 			},
 			"class_proficiencies": {
 				"armor_prof": [
-					"armor_prof_1",
-					"armor_prof_2",
-					"armor_prof_3"
+					"light armor",
+					"medium armor",
+					"shields"
 				],
 				"weapon_prof": [
-					"wep_prof_1",
-					"wep_prof_2",
-					"wep_prof_3",
-					"wep_prof_4",
-					"wep_prof_5"],
-				"tools": [""],
+					"Clubs",
+					"daggers",
+					"darts",
+					"javelins",
+					"maces",
+					"quarterstaffs",
+					"scimitars",
+					"sickles",
+					"slings",
+					"spears"
+				],
+				"tools": ["Herbalism kit"],
 				"saving_throw_prof": [
-					"ST_prof_1",
-					"ST_prof_2"],
-				"skills": [""]
+					"Intelligence",
+					"Wisdom"
+				],
+				"skills": { //TODO: I kind of like this way of breaking this attribute out, it allows for easier logic manipulation
+					"intro": "Choose two from ",
+					"list": [
+						"arcana",
+						"animal handling",
+						"insight",
+						"medicine",
+						"nature",
+						"perception",
+						"religion",
+						"survival"
+					]
+				}
 			}, //end of class_proficiencies
-			"equipment": {
+			"equipment": { //TODO: review how starting equipment works, ie: why is it labeled (a)... or (b)...
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
-				"weapons_1": "",
-				"weapons_2": "",
-				"weapons_3": "",
-				"equipment_pack_1": "",
+				"weapons_1": "A wooden shield",
+				"weapons_2": "Any simple weapon",
+				"weapons_3": "A scimitar",
+				"weapon_4": "Any simple melee weapon",
+				"equipment_pack_1": "Explorers pack",
 				"equipment_pack_2": "",
-				"options_1": "",
-				"options_2": ""
+				"options_1": "Leather armor",
+				"options_2": "druidic focus"
 			},
 				"class_spells": {
 					"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
@@ -548,9 +568,9 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"level_features":{}
 			},
 			"class_spellcasting_ability": {
-				"spell_save_dc": "",
-				"spell_attack_mod": "",
-				"spell_focus": ""
+				"spell_save_dc": "8 plus your proficiency bonus plus your wisdom modifier.",
+				"spell_attack_mod": "your proficiency bonus plus your wisdom modifier.",
+				"spell_focus": "druidic focus."
 			},
 			"class_features": {
 				"main_class_feature": {
@@ -580,7 +600,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					}
 				}
 			},
-			"class_specific_condition": "",
+			"Druidic": "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the messages presence with a successful DC 15 wisdom (perception) check but cant decipher it without magic.",
 			"ability_score_improvement": { //format == player_level: options
 				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
 				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
@@ -589,7 +609,23 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
 				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
-			"class_specific_ability_1": "",
+			"wild shape": {
+				"description": "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice and regain expended uses when you finish a short or long rest.",
+				"table": { //format == playerLevel: [ max_CR, limitations, example_beast]
+					2: ["1/4 or lower","No flying or swimming speed","wolf"],
+					4: ["1/2 or lower","No flying speed","crocodile"],
+					8: ["1 or lower","","giant eagle"]
+				},
+				"more_info": "You can stay in a beast shape for a number of hours equal to half your druid level(rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points or die.",
+				"rules": {
+					"intro": "While transformed, the following rules apply.",
+					"rule_1": "Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and intelligence, wisdom and charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creatures bonus instead of yours. If the creature has any legendary or lair actions, you can not use them.",
+					"rule_2": "When you transform, you assume the beasts hit points and hit dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesnt reduce your normal form to 0 hit points, you arent knocked unconscious.",
+					"rule_3": "You cant cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesnt break your concentration on a spell youve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that youve already cast.",
+					"rule_4": "You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you cant use any of your special senses, such as darkvision, unless your new form also has that sense.",
+					"rule_5": "You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creatures shape and size. Your equipment doesnt change size or shape to match the new form, and any equipment that the new form cant wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+				} //TODO: LEFT OFF HERE BEFORE DRUID CIRCLE PHB 61
+			},
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
