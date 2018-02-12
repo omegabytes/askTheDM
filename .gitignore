@@ -8,3 +8,4 @@ delzip.py
 /coverage/
 appId.js
 .idea
+/src/appId.js

@@ -187,22 +187,17 @@ ExhaustionLevelIntent I forgot how {ExLevel} level exhaustion affects someone
 FeatsIntent what does {Feat} do
 FeatsIntent what does {Feat} affect
 FeatsIntent what does {Feat} mean
-FeatsIntent what does {FeatAttribute} do
-FeatsIntent what does {FeatAttribute} affect
-FeatsIntent what does {FeatAttribute} mean
 FeatsIntent what does {FeatAttribute} mean {Feat}
 FeatsIntent what is {Feat}
 FeatsIntent what is {FeatAttribute} of {Feat}
+FeatsIntent what is the {FeatAttribute} of {Feat}
 FeatsIntent whats {Feat} do
 FeatsIntent whats {Feat} affect
 FeatsIntent whats {Feat} mean
-FeatsIntent whats {FeatAttribute} mean
 FeatsIntent whats {Feat} feat
 FeatsIntent what does the {Feat} do
 FeatsIntent what does the {Feat} affect
 FeatsIntent what does the {Feat} mean
-FeatsIntent what does the {FeatAttribute} affect
-FeatsIntent what does the {FeatAttribute} mean
 FeatsIntent what does the {FeatAttribute} mean {Feat}
 FeatsIntent what does the {FeatAttribute} of {Feat}
 FeatsIntent lookup {Feat} feat
@@ -223,12 +218,10 @@ FeatsIntent how does {Feat} affect me
 FeatsIntent how does {Feat} affect us
 FeatsIntent how does {Feat} affect someone
 FeatsIntent how does {Feat} affect a player
-FeatsIntent how does {FeatAttribute} of {Feat} work
 FeatsIntent get info on {Feat}
 FeatsIntent get info on {FeatAttribute} of {Feat}
 FeatsIntent about {Feat}
-FeatsIntent about {FeatAttribute} of {Feat}
-FeatsIntent about {FeatAttribute} of {FeatAttribute}
+FeatsIntent about the {FeatAttribute} of {Feat}
 FeatsIntent get the {Feat} feat
 FeatsIntent get the {FeatAttribute} of {Feat}
 FeatsIntent to get info on {Feat}
@@ -279,92 +272,9 @@ FeatsIntent I forgot what the {Feat} feat does to a player
 FeatsIntent I forgot what the {Feat} feat is
 FeatsIntent I forgot what the {FeatAttribute} of {Feat} is
 FeatsIntent what is the {Feat} feat
-FeatsIntent what is the {FeatAttribute} of {Feat}
 FeatsIntent for {Feat}
 FeatsIntent for {FeatAttribute} of {Feat}
-
-IncompleteIntent about
-IncompleteIntent about being
-IncompleteIntent and
-IncompleteIntent does
-IncompleteIntent do
-IncompleteIntent for
-IncompleteIntent get
-IncompleteIntent get effects of the
-IncompleteIntent get info
-IncompleteIntent get info on
-IncompleteIntent get information
-IncompleteIntent get information about
-IncompleteIntent get information on
-IncompleteIntent get the
-IncompleteIntent get the effects of
-IncompleteIntent get the info about a
-IncompleteIntent get the info about an
-IncompleteIntent get the info for a
-IncompleteIntent get the info for an
-IncompleteIntent get the info on a
-IncompleteIntent get the info on an
-IncompleteIntent get the information about
-IncompleteIntent get the information about a
-IncompleteIntent get the information about an
-IncompleteIntent get the information for a
-IncompleteIntent get the information for an
-IncompleteIntent get the information on
-IncompleteIntent get the information on a
-IncompleteIntent how
-IncompleteIntent how can
-IncompleteIntent how do
-IncompleteIntent how does
-IncompleteIntent how does a
-IncompleteIntent how does an
-IncompleteIntent how does having
-IncompleteIntent how does the
-IncompleteIntent how to
-IncompleteIntent I forgot
-IncompleteIntent I forgot how
-IncompleteIntent I forgot what a
-IncompleteIntent I forgot what an
-IncompleteIntent I forgot what the
-IncompleteIntent lookup
-IncompleteIntent lookup the information about
-IncompleteIntent lookup the information on
-IncompleteIntent tell me
-IncompleteIntent tell me about
-IncompleteIntent tell me how
-IncompleteIntent tell me how a
-IncompleteIntent tell me how the
-IncompleteIntent tell me what
-IncompleteIntent tell me whats
-IncompleteIntent tell me what a
-IncompleteIntent tell me what an
-IncompleteIntent tell us
-IncompleteIntent tell us how
-IncompleteIntent tell us how a
-IncompleteIntent tell us how the
-IncompleteIntent tell us what
-IncompleteIntent tell us whats
-IncompleteIntent tell us what a
-IncompleteIntent tell us what an
-IncompleteIntent to
-IncompleteIntent to get
-IncompleteIntent to get info on
-IncompleteIntent to get information on
-IncompleteIntent to get the
-IncompleteIntent what
-IncompleteIntent what are the effects of
-IncompleteIntent what does
-IncompleteIntent what does the
-IncompleteIntent what effect does
-IncompleteIntent what effect does being
-IncompleteIntent what is
-IncompleteIntent what is a
-IncompleteIntent what is an
-IncompleteIntent what is the
-IncompleteIntent what the
-IncompleteIntent whats
-IncompleteIntent whats a
-IncompleteIntent whats an
-IncompleteIntent whats the
+FeatsIntent what are the {FeatAttribute} for {Feat}
 
 IndexIntent where can I find more info on {Index}
 IndexIntent where can I find more info about {Index}
@@ -602,6 +512,13 @@ ItemsIntent to get the {ItemAttribute} of {Item}
 ItemsIntent to get the {ItemAttribute} of {Item} armor
 ItemsIntent get the {ItemAttribute} of {Item}
 ItemsIntent get the {ItemAttribute} of {Item} armor
+ItemsIntent how much {ItemAttribute} does a {Item} do
+ItemsIntent how much {ItemAttribute} does a {Item} cause
+ItemsIntent how much {ItemAttribute} does a {Item} inflict
+ItemsIntent what {ItemAttribute} does a {Item} do
+ItemsIntent what {ItemAttribute} does a {Item} cause
+ItemsIntent what {ItemAttribute} does a {Item} inflict
+ItemsIntent what are the {ItemAttribute} of a {Item}
 
 SpellCastIntent how do I cast {Spell}
 SpellCastIntent how to cast {Spell}
@@ -722,6 +639,9 @@ SpellDamageIntent at level {SlotLevel} what is the damage is dealt by {Spell}
 SpellDamageIntent at level {SlotLevel} what is the damage is dealt by {Spell} to a player
 
 SpellHealIntent at {SlotLevel} level how much healing does the spell {Spell} do
+SpellHealIntent how much can I heal with {Spell}
+SpellHealIntent how much can I heal with a {SlotLevel} {Spell}
+SpellHealIntent how much can I heal with {Spell} at {SlotLevel}
 SpellHealIntent at {SlotLevel} level how much healing does the spell {Spell} restore
 SpellHealIntent at {SlotLevel} level how much healing does {Spell} do
 SpellHealIntent at {SlotLevel} level how much healing does {Spell} restore

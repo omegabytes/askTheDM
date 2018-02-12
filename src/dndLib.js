@@ -242,7 +242,7 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 				this.attributes['spell']        = requestedSpell;
 				this.attributes['level']        = requestedSpellLevel;
 				output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
-			}else if (classes.indexOf(requestedClass) != -1 && !level) {
+			}else if (!level) { //removed (classes.indexOf(requestedClass) != -1) from conditional statement
 				//TODO: work on logic for this
 
 			} else {
@@ -253,8 +253,6 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 			}
 		}
 	}
-
-	//FIXME: change <SlotLevel> slot in utterances to just be <Level>
 	/*
 	   "Can a -wizard- cast _fireball_ at level =3=?"
 	   "... at ~player~ level =3=?"
