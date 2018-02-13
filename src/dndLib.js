@@ -239,13 +239,13 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 			output = requestedClass + "s can't cast "
 				+ requestedSpell + ".";
 		}else {
-			if (level && spellClasses.indexOf(requestedClass) > -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
+			if (level && spell.spellClass.indexOf(requestedClass) > -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
 				//set the following attribute states based on the user provided info
 				this.attributes['spell']        = requestedSpell;
 				this.attributes['level']        = requestedSpellLevel;
 				//call the spell dmg function and output the result
 				output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
-			}else if (!level && spellClasses.indexOf(requestedClass) > -1){
+			}else if (!level && spell.spellClass.indexOf(requestedClass) > -1){
 				//if the user does not provide a level
 				//TODO: work on logic for this
 				output = "No level provided";
@@ -280,7 +280,7 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 	return output;
 };
 
-exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){ //FIXME: might need to change the variable notation for dmg, meaning in spells.js the 'levels' and 'playerLevel' attribute found in dmg spells, will most likely need to be made one attribute name, not two as it is now.
+exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 	var output                  = "";
