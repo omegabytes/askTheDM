@@ -170,8 +170,17 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1dlO for each slot level above 1st.",
 			"url": "https://www.dnd-spells.com/spell/hellish-rebuke",
 			"damage": {
-				"type": "fire damage", "levels": {
-					1: "2d10", 2: "3d10", 3: "4d10", 4: "5d10", 5: "6d10", 6: "7d10", 7: "8d10", 8: "9d10", 9: "10d10"
+				"type": "fire damage",
+				"levels": {
+					1: "2d10",
+					2: "3d10",
+					3: "4d10",
+					4: "5d10",
+					5: "6d10",
+					6: "7d10",
+					7: "8d10",
+					8: "9d10",
+					9: "10d10"
 				}
 			}
 		}, "sleep": {
@@ -209,7 +218,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn. The spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/frostbite",
 			"damage": {
-				"type": "cold damage", "playerLevel": {
+				"type": "cold damage",
+				"levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -597,7 +607,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spells range, otherwise the spell fails. On a hit, the target suffers the attacks normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier. This spells damage increases when you reach higher levels. At higher levels: At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level.",
 			"url": "https://www.dnd-spells.com/spell/green-flame-blade",
 			"damage": {
-				"type": "fire damage", "playerLevel": {
+				"type": "fire damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -665,7 +675,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spells damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
 			"url": "https://www.dnd-spells.com/spell/vicious-mockery",
 			"damage": {
-				"type": "psychic damage", "playerLevel": {
+				"type": "psychic damage", "levels": {
 					1: "1d4",
 					2: "1d4",
 					3: "1d4",
@@ -843,7 +853,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a momentary circle of spectral blades that sweep around you. Each creature within range, other than you, must succeed on a Dexterity saving throw or take 1d6 force damage. At higher levels: This spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/sword-burst",
 			"damage": {
-				"type": "force damage", "playerLevel": {
+				"type": "force damage", "levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -1986,7 +1996,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isnt being worn or carried. This spells damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
 			"url": "https://www.dnd-spells.com/spell/fire-bolt",
 			"damage": {
-				"type": "fire damage", "playerLevel": {
+				"type": "fire damage", "levels": {
 					1: "1d10",
 					2: "1d10",
 					3: "1d10",
@@ -2312,7 +2322,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/produce-flame",
 			"damage": {
-				"type": "fire damage", "playerLevel": {
+				"type": "fire damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -2904,7 +2914,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it cant regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/chill-touch",
 			"damage": {
-				"type": "necrotic damage", "playerLevel": {
+				"type": "necrotic damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -2950,7 +2960,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you. This spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/thorn-whip",
 			"damage": {
-				"type": "piercing damage", "playerLevel": {
+				"type": "piercing damage", "levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -3293,7 +3303,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw. The spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/sacred-flame",
 			"damage": {
-				"type": "radiant damage", "playerLevel": {
+				"type": "radiant damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -3420,7 +3430,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage. This spells damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
 			"url": "https://www.dnd-spells.com/spell/poison-spray",
 			"damage": {
-				"type": "poison damage", "playerLevel": {
+				"type": "poison damage", "levels": {
 					1: "1d12",
 					2: "1d12",
 					3: "1d12",
@@ -3493,7 +3503,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it cant take reactions until the start of its next turn. The spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/shocking-grasp",
 			"damage": {
-				"type": "lightning damage", "playerLevel": {
+				"type": "lightning damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -3688,11 +3698,21 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts. A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th.",
 			"url": "https://www.dnd-spells.com/spell/chain-lightning",
 			"damage": {
-				"type": "lightning damage", "levels": {
-					1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: "10d8", 7: "11d8", 8: "12d8", 9: "13d8"
+				"type": "lightning damage",
+				"levels": {
+					1: 0,
+					2: 0,
+					3: 0,
+					4: 0,
+					5: 0,
+					6: "10d8",
+					7: "11d8",
+					8: "12d8",
+					9: "13d8"
 				}
 			}
-		}, "shillelagh": {
+		},
+		"shillelagh": {
 			"castingTime": "1 Bonus Action",
 			"duration": "1 minute",
 			"range": "Touch",
@@ -3703,7 +3723,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks, and the damage die becomes a d8",
 			"longDescription": "The wood of a club or quarterstaff you are holding is imbued with natures power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapons damage die becomes a d8. The weapon also becomes magical, if it isnt already. The spell ends if you cast it again or if you let go of the weapon.",
 			"url": "https://www.dnd-spells.com/spell/shillelagh"
-		}, "true polymorph": {
+		},
+		"true polymorph": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 hour",
 			"range": "30 feet",
@@ -3714,7 +3735,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. Transform a creature into a different creature, a creature into an object, or an object into a creature. If you concentrate on this spell for the full duration, the transformation becomes permanent. See long description.",
 			"longDescription": "Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent. Shapechangers arent affected by this spell. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isnt affected by this spell. Creature into Creature. If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the targets (or its level, if the target doesnt have a challenge rating). The targets game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality. The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesnt reduce the creatures normal form to 0 hit points, it isnt knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it cant speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions. The targets gear melds into the new form. The creature cant activate, use, wield, or otherwise benefit from any of its equipment. Object into Creature. You can turn an object into any kind of creature, as long as the creatures size is no larger than the objects size and the creatures challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The D. M. has the creatures statistics and resolves all of its actions and movement. If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it. Creature into Object. If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form. The creatures statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.",
 			"url": "https://www.dnd-spells.com/spell/true-polymorph"
-		}, "giant insect": {
+		},
+		"giant insect": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 10 minutes",
 			"range": "30 feet",
@@ -3725,7 +3747,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration, that obey your commands and acts on your turn. The D. M. resolves their actions and movement.",
 			"longDescription": "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion. Each creature obeys your verbal commands, and in combat, they act on your turn each round. The D. M. has the statistics for these creatures and resolves their actions and movement. A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it. The D. M. might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.",
 			"url": "https://www.dnd-spells.com/spell/giant-insect"
-		}, "dispel evil and good": {
+		},
+		"dispel evil and good": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
 			"range": "Self",
@@ -3748,7 +3771,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spells range, otherwise the spell fails. On a hit, the target suffers the attacks normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends. This spells damage increases when you reach higher levels. At higher levels: At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.",
 			"url": "https://www.dnd-spells.com/spell/booming-blade",
 			"damage": {
-				"type": "thunder damage", "playerLevel": {
+				"type": "thunder damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -4416,7 +4439,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage. This spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/acid-splash",
 			"damage": {
-				"type": "acid damage", "playerLevel": {
+				"type": "acid damage", "levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -4641,7 +4664,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you. At higher levels: This spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/lightning-lure",
 			"damage": {
-				"type": "lightning damage", "playerLevel": {
+				"type": "lightning damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -4873,7 +4896,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. The spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/ray-of-frost",
 			"damage": {
-				"type": "cold damage", "playerLevel": {
+				"type": "cold damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
@@ -5217,7 +5240,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage. The spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/thunderclap",
 			"damage": {
-				"type": "thunder damage", "playerLevel": {
+				"type": "thunder damage", "levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -5340,7 +5363,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a bonfire on ground that you can see within range. Until the spells ends, the bonfire fills a 5-foot cube. Any creature in the bonfires space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfires space for the first time on a turn or ends its turn there. The spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
 			"url": "https://www.dnd-spells.com/spell/create-bonfire",
 			"damage": {
-				"type": "fire damage", "playerLevel": {
+				"type": "fire damage", "levels": {
 					1: "1d8",
 					2: "1d8",
 					3: "1d8",
