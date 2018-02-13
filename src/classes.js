@@ -1,4 +1,5 @@
 module.exports = { //TODO:add fighter, monk, and rogue classes
+	"CLASSES_LIST": ["barbarian","bard","cleric","druid","fighter","monk","paladin","ranger","rogue","sorcerer","warlock","wizard"], //TODO: review this with alex, see if this is a good idea to replace the 'spellClasses' variable in getSpellClass function in dndLib
 	"CLASSES" : {
 		"barbarian": { //PHB pdf page 41
 			"class_description": {
