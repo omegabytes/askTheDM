@@ -222,9 +222,9 @@ exports.getSpellCast = function(requestedSpell){
 exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedClass){
 //TODO: logic for SpellClassIntent to handle user requesting playerLevel and slotLevel
 	var spell                   = langEN.SPELLS[requestedSpell];
-	var classes                 = langEN.CLASSES[requestedClass];
+	var classes                 = langEN.CLASSES[requestedClass]; //this points to classes.js file, and should be used to compare the slotLevel and playerLevel attributes, with the spells that each class can cast at requested level
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
-	// var spellClasses         = spell.spellClass; //*obsolete* with addition of classes.js
+	var spellClasses            = langEN.CLASSES_LIST[requestedClass]; //used to compare if the requested class by the user exists
 	var output                  = "";
 
 	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
@@ -232,22 +232,26 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 	 * var ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
      * var ClassPlayerLevel =
 	 */
+	//TODO: YOU LEFT OFF HERE TRYING TO FIGURE OUT WHY THIS FUNCTION NO LONGER WORKS
 
 	if (spell) { //if the requested spell exists
-		if (classes.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
+		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
 			output = requestedClass + "s can't cast "
 				+ requestedSpell + ".";
-		} else {
-			if (level && classes.indexOf(requestedClass) != -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
+		}else {
+			if (level && spellClasses.indexOf(requestedClass) > -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
+				//set the following attribute states based on the user provided info
 				this.attributes['spell']        = requestedSpell;
 				this.attributes['level']        = requestedSpellLevel;
+				//call the spell dmg function and output the result
 				output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
-			}else if (!level) { //removed (classes.indexOf(requestedClass) != -1) from conditional statement
+			}else if (!level && spellClasses.indexOf(requestedClass) > -1){
+				//if the user does not provide a level
 				//TODO: work on logic for this
-
+				output = "No level provided";
 			} else {
-				output = "Yes. " + requestedSpell 
-					+ " can be cast by the following classes. " 
+				output = "Yes. " + requestedSpell
+					+ " can be cast by the following classes. "
 					+ classes; //FIXME: make sure 'classes' points to the list of classes found in classes.js
 
 			}
@@ -276,11 +280,11 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 	return output;
 };
 
-exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
+exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){ //FIXME: might need to change the variable notation for dmg, meaning in spells.js the 'levels' and 'playerLevel' attribute found in dmg spells, will most likely need to be made one attribute name, not two as it is now.
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
 	var output                  = "";
-	var dmg                     = spell.damage.playerLevel[level]; //stores the the damage of the spell at requested level
+	var dmg                     = spell.damage.levels[level]; //stores the the damage of the spell at requested level
 	var dmgType                 = spell.damage.type;
 
 	if(spell && spell.damage === undefined){
@@ -290,8 +294,7 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 	}else{
 		if(spell && spell['slotLevel'] === 'cantrip')
 		{ //if the requested spell is a cantrip
-			dmg     = spell.damage.playerLevel[level];
-			dmgType = spell.damage.type;
+			//dmg     = spell.damage.playerLevel[level];
 			output  = "At player level " + level 
 				+ " the cantrip " + requestedSpell 
 				+ " does " + dmg 
@@ -305,8 +308,6 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 		}else if (!spell || !level) {
 			output = "I didn't hear the level or the spell name, please ask again.";
 		}else { //if the requested spell is a normal spell
-			dmg     = spell.damage.levels[level];
-			dmgType = spell.damage.type;
 			output  = "A level " + level 
 				+ ", " + requestedSpell 
 				+ " does " + dmg 
@@ -333,7 +334,7 @@ exports.getSpellHeal = function(requestedSpell,requestedSpellLevel){
 	}else if(level && !spell){ //if the level is provided but not the spell
 		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
 	}else{
-		heals = spell.healing.levels[level];
+		//heals = spell.healing.levels[level];
 
 		if(spell && level > 9){ //if the requested spell is cast using a slot above 9th
 			output = "Healing spells can not be cast using spell slots above level 9.";
@@ -352,7 +353,7 @@ exports.getSpells = function(requestedSpell,requestedSpellAttribute){
 	var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
 	var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
 
-	// //if the user asks for the attribute of a spell
+	//if the user asks for the attribute of a spell
 	if (spell && requestedSpellAttribute) {
 		//if the attribute is damage and the requested spell does not have damage
 		if((requestedSpellAttribute === "damage" || requestedSpellAttribute === "healing") && spell[spellAttribute] === undefined) {
