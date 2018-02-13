@@ -15,7 +15,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 		"url": "url",
 		"damage": "damage",
 		"healing": "healing"
-	}, "SLOT_LEVEL": {
+	},
+	"SLOT_LEVEL": {
 		"1st": 1,
 		"1": 1,
 		"2nd": 2,
@@ -56,7 +57,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 		"19": 19,
 		"20th": 20,
 		"20": 20
-	}, "SPELLS": {
+	},
+	"SPELLS": {
 		"move earth": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 2 hours",
