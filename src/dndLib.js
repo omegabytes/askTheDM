@@ -56,6 +56,7 @@ exports.validateAndSetSlot = function(slot) {
 	}
 };
 
+//returns the conditions that can affect a player
 exports.getConditions = function(requestedConditionName){
 	var condition               = langEN.CONDITIONS[requestedConditionName];
 	var output                  = "";
@@ -70,6 +71,7 @@ exports.getConditions = function(requestedConditionName){
 	return output;
 };
 
+//returns the rolled dice after user provided information
 exports.getDiceRoll = function(numberOfDice, modifier, diceSides, status){
 	var output      = "";
 	var firstRoll;
@@ -115,6 +117,7 @@ exports.getDiceRoll = function(numberOfDice, modifier, diceSides, status){
 	return output;
 };
 
+//returns the exhaustion effects at each exhaustion level
 exports.getExhaustion = function(requestedExhaustionLevel){
 	var output                  = "";
 	var exhaustionLevel         = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
@@ -133,6 +136,7 @@ exports.getExhaustion = function(requestedExhaustionLevel){
 	return output;
 };
 
+//returns the feats that each player can choose
 exports.getFeats = function(requestedFeat,requestedFeatAttribute){
 	var output                 = "";
 	var thisFeat               = langEN.FEATS[requestedFeat];
@@ -151,6 +155,7 @@ exports.getFeats = function(requestedFeat,requestedFeatAttribute){
 	return output;
 };
 
+//returns the index page logic after user provided information
 exports.getIndex = function(requestedIndexName){
 	var output              = "";
 	var index               = langEN.INDEX[requestedIndexName];
@@ -165,6 +170,7 @@ exports.getIndex = function(requestedIndexName){
 	return output;
 };
 
+//returns the items and their respective info requested from the user
 exports.getItems = function(requestedItem,requestedItemAttribute){
 	var output                   = "";
 	var item                     = langEN.ITEMS[requestedItem];
@@ -190,6 +196,7 @@ exports.getItems = function(requestedItem,requestedItemAttribute){
 	return output;
 };
 
+//returns the requested spell attributes from the user
 exports.getSpellCast = function(requestedSpell){
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var output                  = "";
@@ -219,6 +226,7 @@ exports.getSpellCast = function(requestedSpell){
 	return output;
 };
 
+//returns the requested class spell information from the user
 exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedClass){
 //TODO: logic for SpellClassIntent to handle user requesting playerLevel and slotLevel
 	var spell                   = langEN.SPELLS[requestedSpell];
@@ -280,6 +288,7 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 	return output;
 };
 
+//returns the requested spell damage from the user
 exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
@@ -318,6 +327,7 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 	return output;
 };
 
+//returns the requested spell healing information from the user
 exports.getSpellHeal = function(requestedSpell,requestedSpellLevel){
 	var spell                   = langEN.SPELLS[requestedSpell];
 	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
@@ -348,6 +358,7 @@ exports.getSpellHeal = function(requestedSpell,requestedSpellLevel){
 	return output;
 };
 
+//returns the requested spell and spell attribute from the user
 exports.getSpells = function(requestedSpell,requestedSpellAttribute){ 
 	var output                  = "";
 	var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
