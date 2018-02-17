@@ -115,7 +115,7 @@ var handlers = {
     },
     'SpellClassIntent': function() {
 	    var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-	    var requestedClass          = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
+	    var requestedClass          = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass); //fixme: .PlayerClass doesnt resolve because it is not being used in test.js
 	    var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level); //TODO: double check that ...intent.slots.Level is the correct call
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
