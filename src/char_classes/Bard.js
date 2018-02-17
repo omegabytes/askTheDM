@@ -24,15 +24,15 @@ function Bard(prof_bo, char_mod, con_mod) {
     this.rec_starting_spells = ["vicious mockery", "dancing lights", "charm person", "detect magic", "healing word", "thunderwave"];
 
     // proficiencies
-    this.armor_prof = ["light armor"]  // armor
-    this.weapon_prof = ["Simple weapon", "hand crossbows", "longswords", "rapiers", "shortswords"]; // weapon fixme: did we capture 'simple weapon' somehwere?
-    this.tool_prof = [];    // fixme: should we provide a list of all muscial instr? Recommendations? prompt user? etc?
+    this.armor_prof = ["light armor"];  // armor fixme:items.itemType['light armor']
+    this.weapon_prof = ["Simple weapon", "hand crossbows", "longswords", "rapiers", "shortswords"]; // weapon fixme: 'simple weapon' is item.itemType['simple melee weapon']
+    this.tool_prof = [];    // fixme: items.itemType['musical instrument'] for list of all musical instruments
     this.saving_throw_prof = ["Charisma", "Dexterity"]; // saving throw proficiency
     this.skill_prof = [];   // skills, fixme: prompt user to choose, any three
 
     // equipment
     this.starting_equipment = ["leather armor", "dagger"]; // starting pack
-    this.weapon_choices = ["rapier", "longsword", "any simple weapon"]; // weapon choices fixme: how to handle any simple weapon? list all of them is probably it
+    this.weapon_choices = ["rapier", "longsword", "any simple weapon"]; // weapon choices fixme: how to handle 'any simple weapon'? list all of them is probably it
     this.equip_pack_1 = { // fixme: split these into item name : quantity
         "name" : "diplomat\'s pack",
         "items" : ["chest", "case", "case", "fine clothes", "bottle of ink", "ink pen", "lamp", "flask of oil", "flask of oil", "sheet of paper", "sheet of paper", "sheet of paper", "sheet of paper", "sheet of paper", "vial of perfume", "sealing wax", "soap"]
@@ -43,7 +43,7 @@ function Bard(prof_bo, char_mod, con_mod) {
     };
     // other equipment
     // put recommended items first, followed by all possible items?
-    // fixme: add "musical instrument" to item attributes in items.js and access through a function
+    // fixme: items.itemType['musical instrument']
     this.musical_inst = ["lute", "bagpipes", "drums", "dulcimer", "flute", "lyre", "horn", "pan flute", "shawm", "viol"];
 
     // list of spells
