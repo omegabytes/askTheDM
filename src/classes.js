@@ -1,7 +1,7 @@
-module.exports = { //TODO:add fighter, monk, and rogue classes
-	"CLASSES_LIST": ["barbarian","bard","cleric","druid","fighter","monk","paladin","ranger","rogue","sorcerer","warlock","wizard"], //TODO: review this with alex, see if this is a good idea to replace the 'spellClasses' variable in getSpellClass function in dndLib
+module.exports = {
+	"CLASSES_LIST": ["barbarian","bard","cleric","druid","fighter","monk","paladin","ranger","rogue","sorcerer","warlock","wizard"],
 	"CLASSES" : {
-		"barbarian": { //PHB pdf page 41
+		"barbarian": {
 			"class_description": {
 				"shortDesc": "The relentless combatant, fueled by fury or it's totem bonds with animals. In tune with the natural order.",
 				"longDesc": "The barbarian is a primal warrior who prefers to charge in to engage foes in melee. They can follow either the Path of the Berserker, focusing on dealing as much damage as possible in melee combat, or the Path of the Totem Warrior, accepting an animal as a spiritual guide for a more druid-like experience."
@@ -11,7 +11,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "12 plus your Constitution modifier.",
 				"higher_levels": "Based on average rolls, 7 plus your Constitution modifier."
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "Recommended to choose Strength, followed by Constitution as your highest ability scores.",
 				"background": "It is advised to take the outlander background for your character.",
 				"starting_spells": "Barbarians do not have the ability to cast spells."
@@ -33,7 +33,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				],
 				"skills": ["Choose two from either Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival."]
 			},
-			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
+			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "An explorer's pack and four javelins.",
 				"weapons_1": "A greataxe.",
@@ -49,11 +49,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_focus": ""
 			},
 			"class_features": {
-				"rage": { //FIXME: how much info on rage should we give?
+				"rage": {
 					"description": "You fight with primal ferocity. On your turn, you can enter a rage as a bonus action. Your rage lasts for 1 minute.",
-					"more_info": "If you are able to cast spells, you can't cast or concentrate on them while raging. Your rage ends early if you are knocked unconscious or if your turn ends and you havent attacked a hostile creature since your last turn or havent taken damage since then.", //FIXME: this info might change or be removed, if deemed too much
+					"more_info": "If you are able to cast spells, you can't cast or concentrate on them while raging. Your rage ends early if you are knocked unconscious or if your turn ends and you havent attacked a hostile creature since your last turn or havent taken damage since then.",
 					"benefits": "You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases based on your barbarian level. You have resistance to bludgeoning, piercing, and slashing damage.",
-					"rages": { //TODO: format == minPlayerLvl : "number of rages",
+					"rages": {
 						1: "2",
 						3: "3",
 						6: "4",
@@ -61,7 +61,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						17: "6",
 						20: "unlimited"
 					},
-					"rage_damage": { //TODO: format == minPlayerLvl : "rage damage",
+					"rage_damage": {
 						1: "+2",
 						9: "+3",
 						16: "+4"
@@ -79,7 +79,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						"description": "For some barbarians, rage is a means to an end, that end being violence. The path of the berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
 						"frenzy": "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.",
 						"mindless rage": "Beginning at 6th level, you cant be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.",
-						"intimidating presence": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30ft of you. IF the creature can see or hear you, it must succeed on a Wisdom saving throw, the DC is equal to 8 plus your proficiency bonus plus your Charisma modifier., or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60ft away from you. If the creature succeeds on its saving throw, you cant use this feature on that creature again for 24 hours.", //FIXME: might break this out, this is a lot of info in one value
+						"intimidating presence": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30ft of you. IF the creature can see or hear you, it must succeed on a Wisdom saving throw, the DC is equal to 8 plus your proficiency bonus plus your Charisma modifier, or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60ft away from you. If the creature succeeds on its saving throw, you cant use this feature on that creature again for 24 hours.",
 						"retaliation": "Starting at 14th level, when you take damage from a creature that is within 5ft of you, you can use your reaction to make a melee weapon attack against that creature."
 					},
 					"path of the totem warrior": {
@@ -114,13 +114,9 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"extra attack": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"fast movement": "Starting at 5th level, your speed increases by 10ft while you arent wearing heavy armor.",
 			"feral instinct": "By 7th level, your instincts are so honed that you have advantage on initiative rolls. Additionally, if you are surprised at the beginning of combat and arent incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.",
@@ -129,8 +125,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"persistent rage": "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.",
 			"indomitable might": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
 			"primal champion": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
-		}, //end of above class object
-		"bard" : { //PHB pdf page 46
+		},
+		"bard" : {
 			"class_description": {
 				"shortDesc": "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations.",
 				"longDesc": "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus."
@@ -140,7 +136,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "8 plus your Constitution modifier.",
 				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier."
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "Recommended to choose Charisma, followed by Dexterity as your highest ability scores.",
 				"background": "It is advised to take the entertainer background for your character.",
 				"starting_spells": "Alexa recommends you choose vicious mockery and dancing lights as your first cantrips. Regarding 1st-level spells, we recommend taking the charm person, detect magic, healing word, and thunderwave as your first spells."
@@ -152,8 +148,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"saving_throw_prof": ["Dexterity", "Charisma"],
 				"skills": ["You may choose any three skills of your choice to be proficient in."]
 			},
-			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
-				//TODO: this section is weird. We should talk about it before developing any further
+			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "Leather armor and a dagger",
 				"weapons_1": "A rapier",
@@ -179,11 +174,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					9: [17,"foresight", "power word heal", "power word kill", "true polymorph"]
 
 				},
-                "spells_known": { //TODO: format == {player_level: number}
+                "spells_known": {
                     1: "",
                     2: ""
                 },
-                "cantrips_known": { //TODO: format == {player_level: number}
+                "cantrips_known": {
 
                 },
                 "level_features":{}
@@ -221,21 +216,17 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					}
 				},
 				"expertise": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
-				"ability score improvement": { //format == player_level: options
-					//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-					4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-					8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-					12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-					16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-					19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+				"ability score improvement": {
+					"levels": [4,8,12,16,19],
+					"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 				},
 				"font of inspiration": "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or Long Rest.",
 				"countercharm": "At 6th level, as an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being Frightened or Charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are Incapacitated or silenced or if you voluntarily end it (no action required).",
 				"magical secrets": "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast or a cantrip. You learn two additional Spells from any class at 14th level and again at 18th level.",
 				"superior inspiration": "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
 			}
-		}, //end of above class object
-		"cleric": { //PHB pdf page 51
+		},
+		"cleric": {
 			"class_description": {
 				"shortDesc": "A holy man devoted to a deity. capable of bolstering the party and heal their wounds, or laying low their enemies with divine wrath.",
 				"longDesc": "A priestly champion who wields divine magic in service of a higher power, d8, Wisdom & Charisma, light and medium armor, shields, simple weapons."
@@ -243,9 +234,9 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_hit_point": {
 				"hit_dice": "1d8",
 				"1st_level": "8 plus your Constitution modifier.",
-				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier." //per class level after 1st
+				"higher_levels": "Based on average rolls, 5 plus your Constitution modifier."
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "Recommended to choose Wisdom, followed by Strength or Constitution as your highest ability scores.",
 				"background": "It is advised to take the acolyte background for your character.",
 				"starting_spells": "It is recommended to choose Guidance, Sacred Flame and Thaumaturgy as your first cantrips. If you dont have darkvision you should choose Light in place of one of the other cantrips. Regarding 1st-level spells, it is recommended that you take Cure Wounds, and Command as your first spells."
@@ -263,21 +254,21 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"Wisdom",
 					"Charisma"],
 				"skills": ["Choose two from History, Insight, Medicine, Persuasion, or Religion."]
-			}, //end of class_proficiencies
-			"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
+			},
+			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
 				"weapons_1": "A mace",
 				"weapons_2": "A warhammer(if proficient)",
 				"weapons_3": "A light crossbow with 20 bolts",
 				"weapons_4": "Any simple weapon",
-				"equipment_pack_1": "A priests pack", //TODO: break this up to describe what each pack contains (maybe just have it point to itemsIntent)
+				"equipment_pack_1": "A priests pack",
 				"equipment_pack_2": "An explorers pack",
 				"extra_1": "A shield and a holy symbol",
 				"extra_2": ""
 			},
 			"class_spells": {
-				"slot_levels" : { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+				"slot_levels" : {
 					0: [1,"guidance", "light", "mending", "resistance", "sacred flame", "spare the dying", "thaumaturgy"],
                     1: [1,"bane", "bless", "command", "create or destroy water", "cure wounds", "detect evil and good", "detect magic", "detect poison and disease", "guiding bolt", "healing word", "inflict wounds", "protection from evil and good", "purify food and drink", "sanctuary", "shield of faith" ],
                     2: [3,"aid", "augury", "blindness/deafness", "blindness", "deafness", "calm emotions", "continual flame", "enhance ability", "find traps", "gentle repose", "hold person", "lesser restoration", "locate object", "prayer of healing", "protection from poison", "silence", "spiritual weapon", "warding bond", "zone of truth"],
@@ -289,11 +280,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
                     8: [15,"antimagic field", "control weather", "earthquake", "holy aura"],
                     9: [17,"astral projection", "gate", "mass heal", "true resurrection"]
 				},
-                "spells_known": { //TODO: format == {player_level: number}
+                "spells_known": {
                     1: "",
                     2: ""
                 },
-                "cantrips_known": { //TODO: format == {player_level: number}
+                "cantrips_known": {
 
                 },
                 "level_features":{}
@@ -304,12 +295,12 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_focus": "Holy symbol."
 			},
 			"class_features": {
-				"subclass": { //domains in this case
-					"subclass_paths": { //FIXME: thinking about breaking out the word 'channel divinity', depends on required logic to invoke this class features
+				"subclass": {
+					"subclass_paths": {
 						"subclass_description": "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Your choice could also simply be a matter of personal preference, the aspect of the deity that appeals to you most.",
 						"knowledge": {
 							"description": "Followers of this domain study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can.",
-							"spells":{ //format == cleric_level: ["spell1","spell2",...]
+							"spells":{
 								1: ["command","identify"],
 								3: ["augury","suggestion"],
 								5: ["nondetection","speak with dead"],
@@ -318,7 +309,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							},
 							"blessing of knowledge": "At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: arcana, history, nature, or religion. Your proficiency bonus is doubled for any ability check you make that uses either of those skills.",
 							"channel divinity: knowledge of the ages": "Starting at 2nd level, you can use your channel divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.",
-							"channel divinity: read thoughts": { //FIXME: this is a lot of info, might need to be reworked
+							"channel divinity: read thoughts": {
 								"description": "At 6th level, you can use your channel divinity to read a creatures thoughts. You can then use your access to the creatures mind to command it.",
 								"more_info": "As an action, choose one creature that you can see within 60ft of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you cant use this feature on it again until you finish a long rest.",
 								"benefits": "If the creature fails its save, you can read its surface thoughts, when it is within 60ft of you. This effect lasts for 1 minute. During that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot, and the target automatically fails its saving throw against the spell."
@@ -361,7 +352,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 								"description": "At 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30ft of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that cant be blinded is immune to this feature.",
 								"more_info": "You can use this feature a number of times equal to your Wisdom modifier. You regain all expended uses when you finish a long rest."
 							},
-							"channel divinity: radiance of the dawn": "Starting at 2nd level, you can use your channel divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes. As an action, you present your holy symbol, and any magical darkness within 30ft of you is dispelled. Additionally, each hostile creature within 30ft of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 plus your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.", //FIXME: ^this is a lot of info, might break it apart
+							"channel divinity: radiance of the dawn": "Starting at 2nd level, you can use your channel divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes. As an action, you present your holy symbol, and any magical darkness within 30ft of you is dispelled. Additionally, each hostile creature within 30ft of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 plus your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.",
 							"improved flare": "Starting at 6th level, you can also use your warding flare feature when a creature that you can see within 30ft of you attacks a creature other than you.",
 							"potent spellcasting": "Starting at 8th level, you add your Wisdom modifier. to the damage you deal with any cleric cantrip.",
 							"corona of light": "Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60ft radius and dim light 30ft beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
@@ -441,7 +432,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						}
 					}
 				},
-				"channel divinity": { //FIXME: this might need to be reworked
+				"channel divinity": {
 					"description": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain.",
 					"benefits": {
 						"Turn Undead": {
@@ -456,7 +447,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"destroy undead": {
 				"description": "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold. To learn more, ask about the destroy undead table.",
-				"table": { //format == player_level: CR of creature
+				"table": {
 					5: "1/2 or lower",
 					8: "1 or lower",
 					11: "2 or lower",
@@ -464,14 +455,9 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					17: "4 or lower"
 				}
 			},
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature."
-				// FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"divine intervention": {
 				"description": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deitys aid requires you to use your action, describe the assistance you seek and roll percentile dice.",
@@ -481,7 +467,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
+		},
 		"druid": {
 			"class_description": {
 				"shortDesc": "A nomad devoted to the world and the powers of Nature. Capable of adopting the form of a beast for battle or utility. capable of bolstering the party and heal their wounds, or laying low their enemies with nature's wrath.",
@@ -492,7 +478,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "8 plus your constitution modifier.",
 				"higher_levels": "Based on average rolls, 5 plus your constitution modifier."
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "Recommended to choose wisdom as your highest ability score, followed by constitution.",
 				"background": "It is advised to pick the hermit background.",
 				"starting_spells": ""
@@ -520,7 +506,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"Intelligence",
 					"Wisdom"
 				],
-				"skills": { //TODO: I kind of like this way of breaking this attribute out, it allows for easier logic manipulation
+				"skills": {
 					"intro": "Choose two from ",
 					"list": [
 						"arcana",
@@ -533,8 +519,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						"survival"
 					]
 				}
-			}, //end of class_proficiencies
-			"equipment": { //TODO: review how starting equipment works, ie: why is it labeled (a)... or (b)...
+			},
+			"equipment": {
 				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
 				"starting_pack": "",
 				"weapons_1": "A wooden shield",
@@ -547,7 +533,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_2": "druidic focus"
 			},
 				"class_spells": {
-					"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+					"slot_levels": {
 						0: [1,"druidcraft", "guidance", "mending", "poison spray", "produce flame", "resistance", "shillelagh", "thorn whip"],
 						1: [1,"animal friendship", "charm person", "create or destroy water", "cure wounds", "detect magic", "detect poison and disease", "entangle", "faerie fire", "fog cloud", "goodberry", "healing word", "jump", "longstrider", "purify food and drink", "speak with animals", "thunderwave"],
 						2: [3,"animal messenger", "barkskin", "beast sense", "darkvision", "enhance ability", "find traps", "flame blade", "flaming sphere", "gust of wind", "heat metal", "hold person", "lesser restoration", "locate animals or plants", "locate object", "moonbeam", "pass without trace", "protection from poison", "spike growth"],
@@ -559,11 +545,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						8: [15,"animal shapes","antipathy/sympathy", "sympathy", "antipathy", "control weather","earthquake","feeblemind","sunburst","tsunami"],
 						9: [17,"foresight","shapechange","storm of vengeance","true resurrection"]
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
 				"level_features":{}
@@ -602,17 +588,13 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"Druidic": "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the messages presence with a successful DC 15 wisdom (perception) check but cant decipher it without magic.",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"wild shape": {
 				"description": "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice and regain expended uses when you finish a short or long rest.",
-				"table": { //format == playerLevel: [ max_CR, limitations, example_beast]
+				"table": {
 					2: ["1/4 or lower","No flying or swimming speed","wolf"],
 					4: ["1/2 or lower","No flying speed","crocodile"],
 					8: ["1 or lower","","giant eagle"]
@@ -625,15 +607,12 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					"rule_3": "You cant cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesnt break your concentration on a spell youve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that youve already cast.",
 					"rule_4": "You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you cant use any of your special senses, such as darkvision, unless your new form also has that sense.",
 					"rule_5": "You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creatures shape and size. Your equipment doesnt change size or shape to match the new form, and any equipment that the new form cant wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
-				} //TODO: LEFT OFF HERE BEFORE DRUID CIRCLE PHB 61
+				}
 			},
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
-		//TODO: add fighter class prototype here
-
-		//TODO: add monk class prototype here
+		},
 		"paladin": {
 			"class_description": {
 				"shortDesc": "Nearly as skilled as the Fighter but bolsters his efforts with divine magic. through his devotion he gains special boons from his god.",
@@ -644,7 +623,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "",
 				"higher_levels": ""
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "",
 				"background": "",
 				"starting_spells": ""
@@ -680,22 +659,22 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 			},
 			"class_spells": {
                 "slot_levels": {
-					0: [], // cantrips
-                    1: [2,"bless", "command", "compelled duel", "cure wounds", "detect evil and good", "detect magic", "detect magic", "detect poison and disease", "divine favor", "heroism", "protection from evil and good", "purify food and drink", "searing smite", "shield of faith", "thunderous smite", "wrathful smite"], // through plevel 4
-                    2: [5,"aid", "branding smite", "find steed", "lesser restoration", "locate object", "magic weapon", "protection from poison", "zone of truth"], // plevel 5-8
-					3: [9,"aura of vitality", "blinding smite", "create food and water", "crusaders mantle", "daylight", "dispel magic", "elemental weapon", "magic circle", "remove curse", "revivify"], // plevel 9-12
-					4: [13,"aura of life", "aura of purity", "banishment", "death ward", "locate creature", "staggering smite"], // plevel 13-16
-					5: [17,"banishing smite", "circle of power", "destructive smite", "dispel evil and good", "geas", "raise dead"], // plevel 17-20
+					0: [],
+                    1: [2,"bless", "command", "compelled duel", "cure wounds", "detect evil and good", "detect magic", "detect magic", "detect poison and disease", "divine favor", "heroism", "protection from evil and good", "purify food and drink", "searing smite", "shield of faith", "thunderous smite", "wrathful smite"],
+                    2: [5,"aid", "branding smite", "find steed", "lesser restoration", "locate object", "magic weapon", "protection from poison", "zone of truth"],
+					3: [9,"aura of vitality", "blinding smite", "create food and water", "crusaders mantle", "daylight", "dispel magic", "elemental weapon", "magic circle", "remove curse", "revivify"],
+					4: [13,"aura of life", "aura of purity", "banishment", "death ward", "locate creature", "staggering smite"],
+					5: [17,"banishing smite", "circle of power", "destructive smite", "dispel evil and good", "geas", "raise dead"],
 					6: [],
 					7: [],
 					8: [],
 					9: []
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
 				"level_features":{}
@@ -734,19 +713,15 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
+		},
 		"ranger": {
 			"class_description": {
 				"shortDesc": "one who uses a unique blend of wilderness knowledge and martial ability to be a deadly hunter, with a bow, a pet or melee weapons.",
@@ -757,7 +732,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "",
 				"higher_levels": ""
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "",
 				"background": "",
 				"starting_spells": ""
@@ -792,7 +767,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_2": ""
 			},
 			"class_spells": {
-				"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+				"slot_levels": {
 					0: [],
 					1: [2, "alarm","animal friendship","cure wounds","detect magic","detect poison and disease","ensnaring strike","fog cloud","goodberry","hail of thorns","hunters mark","jump","longstrider","speak with animals"],
 					2: [5, "animal messenger","barkskin","beast sense","cordon of arrows","darkvision","find traps","lesser restoration","locate animals or plants","locate object","pass without trace","protection from poison","silence","spike growth"],
@@ -804,11 +779,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					8: [],
 					9: []
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
 				"level_features":{}
@@ -847,20 +822,15 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
-		//TODO: add rogue class prototype here
+		},
 		"sorcerer": {
 			"class_description": {
 				"shortDesc": "a magic user who draws his power from within, summoning his innate magical power and bending it to his will.",
@@ -871,7 +841,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "",
 				"higher_levels": ""
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "",
 				"background": "",
 				"starting_spells": ""
@@ -906,7 +876,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_2": ""
 			},
 			"class_spells": {
-				"slot_levels": { //format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
+				"slot_levels": {
 					0: [0, "acid splash","blade ward","chill touch","dancing lights","fire bolt","friends","light","mage hand","mending","message","minor illusion","poison spray","prestidigitation","ray of frost","shocking grasp","true strike"],
 					1: [1, "burning hands","charm person","chromatic orb","color spray","comprehend languages","detect magic","disguise self","expeditious retreat","false life","feather fall","fog cloud","jump","mage armor","magic missile","ray of sickness","shield","silent image","sleep","thunderwave","witch bolt"],
 					2: [3, "alter self","blindness/deafness","blur","cloud of daggers","crown of madness","darkness","darkvision","detect thoughts","enhance ability","enlarge/reduce","gust of wind","hold person","invisibility","knock","levitate","mirror image","misty step","phantasmal force","scorching ray","see invisibility","shatter","spider climb","suggestion","web"],
@@ -918,11 +888,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					8: [15, "dominate monster","earthquake","incendiary cloud","power word stun","sunburst"],
 					9: [17, "gate","meteor swarm","power word kill","time stop","wish"]
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
 				"player_level_features":{}
@@ -961,19 +931,15 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
+		},
 		"warlock": {
 			"class_description": {
 				"shortDesc": "A caster who has formed a pact with a powerful entity, the warlock trades favors for boons and spells.",
@@ -984,7 +950,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "",
 				"higher_levels": ""
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "",
 				"background": "",
 				"starting_spells": ""
@@ -1018,9 +984,8 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_1": "",
 				"options_2": ""
 			},
-			"class_spells": { //TODO: fill in with spell slots per spell level and when classes gain certain spell slots based on player level. ie: paladin can cast 2nd level spells starting at player level of 5. REFERENCE PBH page 77
-				"slot_levels": { //TODO: format == slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-					//REFERENCE: PHB 188
+			"class_spells": {
+				"slot_levels": {
 					0: [],
 					1: [],
 					2: [],
@@ -1032,14 +997,14 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					8: [],
 					9: []
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
-				"invocations_known":{ //TODO: format == {player_level: number}
+				"invocations_known":{
 
 				},
 				"player_level_features":{}
@@ -1048,16 +1013,16 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"spell_save_dc": "",
 				"spell_attack_mod": "",
 				"spell_focus": ""
-			}, //end of class_spellcasting
+			},
 			"class_features": {
-				"eldritch_invocations":{ //eldritch invocation
-					"invocation_name": { //ie: lifedrinker
+				"eldritch_invocations":{
+					"invocation_name": {
 						"spell": "",
-						"description": "", //When you hit...
-						"prerequisite": "", //player level 12, default of player level 2
-						"pact_requirement": "" //pact of the blade
+						"description": "",
+						"prerequisite": "",
+						"pact_requirement": ""
 					}
-				}, //end of invocations
+				},
 				"pact_boon": {
 					"pact of the chain":{
 						"spell":"find familiar",
@@ -1074,10 +1039,10 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 						"benefits":""
 
 					}
-				}, //pact boon, ie:pact of the chain
-				"class_feature_2": "", //
+				},
+				"class_feature_2": "",
 				"class_feature_3": "",
-				"subclass": { //otherworldly patrons
+				"subclass": {
 					"subclass_paths": {
 						"subclass_description": "",
 						"subclass_type_1": {
@@ -1086,31 +1051,27 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						},//end of subclass_1
+						},
 						"subclass_type_2": {
 							"subclass_2_description": "",
 							"subclass_benefit_1": "",
 							"subclass_benefit_2": "",
 							"subclass_benefit_3": "",
 							"subclass_benefit_4": ""
-						}//end of subclass_2
-					}//end of subclass_paths
-				}//end of subclass
-			}, //end of class_features
+						}
+					}
+				}
+			},
 			"class_specific_condition": "",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		}, //end of above class object
+		},
 		"wizard": {
 			"class_description": {
 				"shortDesc": "A keeper of arcane secrets and forgotten knowledge, the wizard manipulates magic and spells with cunning.",
@@ -1121,7 +1082,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"1st_level": "",
 				"higher_levels": ""
 			},
-			"class_primary_ability": { //'Quick Build' section from the PHB
+			"class_primary_ability": {
 				"ability_scores": "",
 				"background": "",
 				"starting_spells": ""
@@ -1156,7 +1117,7 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				"options_2": ""
 			},
 			"class_spells": {
-				"slot_levels": { //format == {"spell_name": player_level}
+				"slot_levels": {
 					0: [1,"acid splash", "blade ward", "chill touch", "dancing lights", "fire bolt", "friends", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "ray of frost", "shocking grasp", "true strike"],
 					1: [1,"alarm", "burning hands", "charm person", "chromatic orb", "color spray", "comprehend languages", "detect magic", "disguise self", "expeditious retreat", "false life", "feather fall", "find familiar", "fog cloud", "grease", "identify", "illusory script", "jump", "longstrider", "mage armor", "magic missile", "protection from evil and good", "ray of sickness", "shield", "silent image", "sleep", "tashas hideous laughter", "tensers floating disk", "thunderwave", "unseen servant", "witch bolt"],
 					2: [3,"alter self", "arcane lock", "blindness/deafness", "blur", "cloud of daggers", "continual flame", "crown of madness", "darkness", "darkvision", "detect thoughts", "enlarge/reduce", "flaming sphere", "gentle repose", "gust of wind", "gust of wind", "hold person", "invisibility", "knock", "levitate", "locate object", "magic mouth", "magic weapon", "melfs acid arrow", "mirror image", "misty step", "nystuls magic aura", "phantasmal force", "ray of enfeeblement", "rope trick", "scorching ray", "see invisibility", "shatter", "spider climb", "suggestion", "web"],
@@ -1168,11 +1129,11 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 					8: [15,"antimagic field","antipathy/sympathy","clone","clone","control weather","demiplane","dominate monster","feeblemind","incendiary cloud","maze","mind blank","power word stun","sunburst","telepathy","trap the soul"],
 					9: [17,"astral projection","foresight","gate","imprisonment","meteor swarm","power word kill","prismatic wall","shapechange","time stop","true polymorph","weird","wish"]
 				},
-				"spells_known": { //TODO: format == {player_level: number}
+				"spells_known": {
 					1: "",
 					2: ""
 				},
-				"cantrips_known": { //TODO: format == {player_level: number}
+				"cantrips_known": {
 
 				},
 				"level_features":{}
@@ -1211,128 +1172,15 @@ module.exports = { //TODO:add fighter, monk, and rogue classes
 				}
 			},
 			"class_specific_condition": "",
-			"ability_score_improvement": { //format == player_level: options
-				//"At 4th, 8th, 12th, 16th, and 19th level you can increase one ability score by 2, or increase 2 ability scores by 1. As normal, you cant increase an ability score above 20 using this feature." //FIXME: might just leave this section as a string.
-				4: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				8: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				12: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				16: "Increase one ability score by 2, or increase 2 ability scores by 1.",
-				19: "Increase one ability score by 2, or increase 2 ability scores by 1."
+			"ability_score_improvement": {
+				"levels": [4,8,12,16,19],
+				"description": "Increase one ability score by 2, or increase 2 ability scores by 1."
 			},
 			"class_specific_ability_1": "",
 			"class_specific_ability_2": "",
 			"class_specific_ability_3": "",
 			"class_specific_ability_4": ""
-		} //end of above class object
-	} //end of CLASSES object
-}; //end of module
+		}
+	}
 
-//FIXME: classes prototype template *WORK IN PROGRESS*
-module.exports = {
-	"class": {
-		"class_description": {
-			"shortDesc": "",
-			"longDesc": ""
-		},
-		"class_hit_point": {
-			"hit_dice": "", //TODO: leave as just the 1dX so we can do the calculations
-			"1st_level": "",
-			"higher_levels": ""
-		},
-		"class_primary_ability": { //'Quick Build' section from the PHB
-			"ability_scores": "",
-			"background": "",
-			"starting_spells": "" //not applicable to Barbarians
-		},
-		"class_proficiencies": {
-			"armor_prof": [
-				"armor_prof_1",
-				"armor_prof_2",
-				"armor_prof_3"
-			],
-			"weapon_prof": [
-				"wep_prof_1",
-				"wep_prof_2",
-				"wep_prof_3",
-				"wep_prof_4",
-				"wep_prof_5"],
-			"tools": [""],
-			"saving_throw_prof": [
-				"ST_prof_1",
-				"ST_prof_2"],
-			"skills": [""]
-		}, //end of class_proficiencies
-		"equipment": { //FIXME: will be reworked, possibly into an equipment_pack.js file
-				"welcome_msg": "Your character starts with the any of the following equipment, in addition to the equipment granted by your chosen background.",
-				"starting_pack": "",
-				"weapons_1": "",
-				"weapons_2": "",
-				"weapons_3": "",
-				"equipment_pack_1": "",
-				"equipment_pack_2": "",
-				"options_1": "",
-				"options_2": ""
-		},
-		"class_spells": {
-			"slot_levels": { //TODO: format == {"spell_name": player_level}
-				//REFERENCE: PHB 188
-				1: ["array of available spell slots"],
-				2: [], //ie: PALADIN: {"Bless": 2}
-				3: [],
-				4: [],
-				5: [],
-				6: [],
-				7: [],
-				8: [],
-				9: []
-			},
-			"spells_known": { //TODO: format == {player_level: number}
-				1: "",
-				2: ""
-			},
-			"cantrips_known": { //TODO: format == {player_level: number}
-
-			},
-			"level_features":{}
-		},
-		"class_spellcasting_ability": {
-			"spell_save_dc": "",
-			"spell_attack_mod": "",
-			"spell_focus": ""
-		}, //end of class_spellcasting
-		"class_features": {
-			"main_class_feature": {
-				"description": "",
-				"benefits": "",
-				"replenish": ""
-			},
-			"class_feature_1": "",
-			"class_feature_2": "",
-			"subclass": { //turns into subclasses, will be worked on in later build
-				"subclass_paths": {
-					"subclass_description": "",
-					"subclass_type_1": {
-						"subclass_1_description": "",
-						"subclass_benefit_1": "",
-						"subclass_benefit_2": "",
-						"subclass_benefit_3": "",
-						"subclass_benefit_4": ""
-					},//end of subclass_1
-					"subclass_type_2": {
-						"subclass_2_description": "",
-						"subclass_benefit_1": "",
-						"subclass_benefit_2": "",
-						"subclass_benefit_3": "",
-						"subclass_benefit_4": ""
-					}//end of subclass_2
-				}//end of subclass_paths
-			}//end of subclass
-		}, //end of class_features
-		"class_specific_condition": "",
-		"ability_score_improvement": {},
-		"class_specific_ability_1": "",
-		"class_specific_ability_2": "",
-		"class_specific_ability_3": "",
-		"class_specific_ability_4": ""
-	} //end of class prototype template
 };
