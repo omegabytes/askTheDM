@@ -1,10 +1,10 @@
-var conditions      = require('./conditions');
-var exhaustionLevel = require('./exhaustionLevel');
-var indexInfo       = require('./indexInfo');
-var items           = require('./items');
-var feats           = require('./feats');
-var spells          = require('./spells');
-var classes         = require('./classes');
+let conditions      = require('./conditions');
+let exhaustionLevel = require('./exhaustionLevel');
+let indexInfo       = require('./indexInfo');
+let items           = require('./items');
+let feats           = require('./feats');
+let spells          = require('./spells');
+let classes         = require('./classes');
 
 module.exports = {
     "en": {

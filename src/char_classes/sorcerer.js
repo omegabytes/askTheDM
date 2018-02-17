@@ -6,7 +6,7 @@ module.exports = {
     },
     "class_hit_point": {
       "hit_dice": "",
-      "1st_level": "",
+      "first_level": "",
       "higher_levels": ""
     },
     "class_primary_ability": {

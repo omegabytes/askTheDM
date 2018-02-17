@@ -1,25 +1,25 @@
 'use strict';
 
-var Alexa           = require('alexa-sdk');
-var id              = require('./appId.js');
-var languageStrings = require('./languageStrings');
-var dndLib          = require('./dndLib.js');
-var APP_ID          = id.APP_ID;
-var langEN          = languageStrings.en.translation;
+let Alexa           = require('alexa-sdk');
+let id              = require('./appId.js');
+let languageStrings = require('./languageStrings');
+let dndLib          = require('./dndLib.js');
+let APP_ID          = id.APP_ID;
+let langEN          = languageStrings.en.translation;
 
 // noinspection JSUnusedLocalSymbols
 exports.handler = function(event, context, callback) {
-    var alexa       = Alexa.handler(event, context);
+    let alexa       = Alexa.handler(event, context);
     alexa.appId     = APP_ID;
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
 
-var handlers = {
+let handlers = {
     'ConditionsIntent': function () {
-        var requestedConditionName        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
-	    var requestedExhaustionLevel      = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
+        let requestedConditionName        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Condition);
+	    let requestedExhaustionLevel      = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    if (requestedConditionName === "exhaustion" ||requestedConditionName === "exhausted"){ //if user asks about exhaustion, now points to ExhaustionIntent
@@ -35,10 +35,10 @@ var handlers = {
         }
     },
     'DiceIntent' : function () {
-        var numberOfDice     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
-        var modifier         = dndLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
-        var diceSides        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
-        var status           = dndLib.validateAndSetSlot(this.event.request.intent.slots.Status);
+        let numberOfDice     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
+        let modifier         = dndLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
+        let diceSides        = dndLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
+        let status           = dndLib.validateAndSetSlot(this.event.request.intent.slots.Status);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput'] = dndLib.getDiceRoll(numberOfDice, modifier, diceSides, status);
@@ -51,7 +51,7 @@ var handlers = {
         }
     },
     'ExhaustionLevelIntent': function () {
-        var requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
+        let requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput'] = dndLib.getExhaustion(requestedExhaustionLevel);
@@ -64,8 +64,8 @@ var handlers = {
         }
     },
     'FeatsIntent': function() {
-        var requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
-        var requestedFeat          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
+        let requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
+        let requestedFeat          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput'] = dndLib.getFeats(requestedFeat,requestedFeatAttribute);
@@ -77,7 +77,7 @@ var handlers = {
         }
     },
     'IndexIntent' : function(){
-        var requestedIndexName  = dndLib.validateAndSetSlot(this.event.request.intent.slots.Index);
+        let requestedIndexName  = dndLib.validateAndSetSlot(this.event.request.intent.slots.Index);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
         this.attributes['speechOutput']   = dndLib.getIndex(requestedIndexName);
@@ -89,8 +89,8 @@ var handlers = {
         }
     },
     'ItemsIntent': function () {
-        var requestedItem            = dndLib.validateAndSetSlot(this.event.request.intent.slots.Item);
-        var requestedItemAttribute   = dndLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
+        let requestedItem            = dndLib.validateAndSetSlot(this.event.request.intent.slots.Item);
+        let requestedItemAttribute   = dndLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput']   = dndLib.getItems(requestedItem, requestedItemAttribute);
@@ -102,7 +102,7 @@ var handlers = {
         }
     },
     'SpellCastIntent': function () {
-        var requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput'] = dndLib.getSpellCast(requestedSpell);
@@ -114,9 +114,9 @@ var handlers = {
         }
     },
     'SpellClassIntent': function() {
-	    var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-	    var requestedClass          = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass); //fixme: .PlayerClass doesnt resolve because it is not being used in test.js
-	    var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level); //TODO: double check that ...intent.slots.Level is the correct call
+	    let requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+	    let requestedClass          = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass); //fixme: .PlayerClass doesnt resolve because it is not being used in test.js
+	    let requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level); //TODO: double check that ...intent.slots.Level is the correct call
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    //be careful 'class' is a special keyword
@@ -129,8 +129,8 @@ var handlers = {
 		}
     },
     'SpellDamageIntent': function(){
-        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        let requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        let requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
         this.attributes['speechOutput'] = dndLib.getSpellDamage(requestedSpell, requestedSpellLevel);
@@ -143,8 +143,8 @@ var handlers = {
 
     },
     'SpellHealIntent': function(){
-        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
+        let requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        let requestedSpellLevel     = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 
 	    this.attributes['repromptSpeech'] = langEN.REPROMPT;
 	    this.attributes['speechOutput'] = dndLib.getSpellHeal(requestedSpell, requestedSpellLevel);
@@ -156,8 +156,8 @@ var handlers = {
         }
     },
     'SpellsIntent': function () {
-        var requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-        var requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
+        let requestedSpell          = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
+        let requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
 
         this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getSpells(requestedSpell,requestedSpellAttribute);

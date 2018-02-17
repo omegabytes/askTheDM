@@ -1,6 +1,6 @@
-var languageStrings = require('./languageStrings');
-var langEN          = languageStrings.en.translation;
-var char_classes    = langEN.CLASSES;
+let languageStrings = require('./languageStrings');
+let langEN          = languageStrings.en.translation;
+let char_classes    = langEN.CLASSES;
 
 // todo: add con mod param, prompt user for it
 function Bard(prof_bo, char_mod, con_mod) {

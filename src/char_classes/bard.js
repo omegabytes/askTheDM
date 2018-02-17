@@ -6,7 +6,7 @@ module.exports = {
     },
     "class_hit_point": {
       "hit_dice": "1d8",
-      "1st_level": "8 plus your Constitution modifier.",
+      "first_level": "8 plus your Constitution modifier.",
       "higher_levels": "Based on average rolls, 5 plus your Constitution modifier."
     },
     "class_primary_ability": {

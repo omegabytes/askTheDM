@@ -54,7 +54,7 @@ module.exports = {
         115
       ]
     },
-    "the abys": {
+    "the abyss": {
       "pages": [
         302
       ]

@@ -1,0 +1,1 @@
+let languageStrings = require('./languageStrings');

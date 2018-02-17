@@ -1,9 +1,9 @@
-var languageStrings = require('./languageStrings');
-var langEN = languageStrings.en.translation;
+let languageStrings = require('./languageStrings');
+let langEN = languageStrings.en.translation;
 
 // not found message handler
 exports.notFoundMessage = function(slotName, userInput) {
-	var speechOutput = langEN.NOT_FOUND_MESSAGE;
+	let speechOutput = langEN.NOT_FOUND_MESSAGE;
     
     if(userInput) {
     	speechOutput += "the " + slotName + " info for " + userInput + ".";
@@ -16,14 +16,14 @@ exports.notFoundMessage = function(slotName, userInput) {
 // returns the page(s) where a subject can be found
 // in the 5e player's handbook
 exports.pageFind = function(index, indexName) {
-    var pageString = "";
+    let pageString = "";
     if(typeof index.pages === 'string'){
         pageString = index.pages
     }
     else{
         if(index.pages.length>1){
             pageString += "pages ";
-            for(var i = 0; i <= index.pages.length-2; i++){
+            for(let i = 0; i <= index.pages.length-2; i++){
                 pageString += index.pages[i] + ", "
             }
             pageString += "and " + index.pages[index.pages.length-1]
@@ -37,10 +37,10 @@ exports.pageFind = function(index, indexName) {
 
 // roll dice function
 exports.rollDice = function(quantity,sides) {
-    var facevalue;
-    var output = 0;
+    let facevalue;
+    let output = 0;
 
-    for (var i=0;i<quantity;i++) {
+    for (let i=0;i<quantity;i++) {
         facevalue = Math.floor(Math.random()*sides) + 1;
         output += facevalue;
     }
@@ -58,8 +58,8 @@ exports.validateAndSetSlot = function(slot) {
 
 //returns the conditions that can affect a player
 exports.getConditions = function(requestedConditionName){
-	var condition               = langEN.CONDITIONS[requestedConditionName];
-	var output                  = "";
+	let condition               = langEN.CONDITIONS[requestedConditionName];
+	let output                  = "";
 
 	if (condition) { //user requests information on condition
 		output = condition;
@@ -73,10 +73,10 @@ exports.getConditions = function(requestedConditionName){
 
 //returns the rolled dice after user provided information
 exports.getDiceRoll = function(numberOfDice, modifier, diceSides, status){
-	var output      = "";
-	var firstRoll;
-	var secondRoll;
-	var result;
+	let output      = "";
+	let firstRoll;
+	let secondRoll;
+	let result;
 
 	if((diceSides == null) || (diceSides == "?") || (numberOfDice == "?")){
 		output = "I'm sorry I didn't quite catch that, please ask again";
@@ -119,8 +119,8 @@ exports.getDiceRoll = function(numberOfDice, modifier, diceSides, status){
 
 //returns the exhaustion effects at each exhaustion level
 exports.getExhaustion = function(requestedExhaustionLevel){
-	var output                  = "";
-	var exhaustionLevel         = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
+	let output                  = "";
+	let exhaustionLevel         = langEN.EXHAUSTION_LEVELS[requestedExhaustionLevel];
 
 	if(exhaustionLevel){ //user requests information on exhaustion levels
 		output = exhaustionLevel;
@@ -138,9 +138,9 @@ exports.getExhaustion = function(requestedExhaustionLevel){
 
 //returns the feats that each player can choose
 exports.getFeats = function(requestedFeat,requestedFeatAttribute){
-	var output                 = "";
-	var thisFeat               = langEN.FEATS[requestedFeat];
-	var thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
+	let output                 = "";
+	let thisFeat               = langEN.FEATS[requestedFeat];
+	let thisFeatAttribute      = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 
 	//user requests information on feats
 	if (thisFeat && thisFeatAttribute) {
@@ -157,8 +157,8 @@ exports.getFeats = function(requestedFeat,requestedFeatAttribute){
 
 //returns the index page logic after user provided information
 exports.getIndex = function(requestedIndexName){
-	var output              = "";
-	var index               = langEN.INDEX[requestedIndexName];
+	let output              = "";
+	let index               = langEN.INDEX[requestedIndexName];
 
 	if(index){
 		output = exports.pageFind(index, requestedIndexName);
@@ -172,9 +172,9 @@ exports.getIndex = function(requestedIndexName){
 
 //returns the items and their respective info requested from the user
 exports.getItems = function(requestedItem,requestedItemAttribute){
-	var output                   = "";
-	var item                     = langEN.ITEMS[requestedItem];
-	var itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
+	let output                   = "";
+	let item                     = langEN.ITEMS[requestedItem];
+	let itemAttribute            = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
 
 	if(item && itemAttribute){
 		if(!item[itemAttribute]){ //if requested item attribute doesnt exist for requested item
@@ -198,8 +198,8 @@ exports.getItems = function(requestedItem,requestedItemAttribute){
 
 //returns the requested spell attributes from the user
 exports.getSpellCast = function(requestedSpell){
-	var spell                   = langEN.SPELLS[requestedSpell];
-	var output                  = "";
+	let spell                   = langEN.SPELLS[requestedSpell];
+	let output                  = "";
 
 	//user requests information on casting spell
 	if (spell) {
@@ -229,16 +229,16 @@ exports.getSpellCast = function(requestedSpell){
 //returns the requested class spell information from the user
 exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedClass){
 //TODO: logic for SpellClassIntent to handle user requesting playerLevel and slotLevel
-	var spell                   = langEN.SPELLS[requestedSpell];
-	var classes                 = langEN.CLASSES[requestedClass]; //this points to classes.js file, and should be used to compare the slotLevel and playerLevel attributes, with the spells that each class can cast at requested level
-	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
-	var spellClasses            = langEN.CLASSES_LIST[requestedClass]; //used to compare if the requested class by the user exists
-	var output                  = "";
+	let spell                   = langEN.SPELLS[requestedSpell];
+	let classes                 = langEN.CLASSES[requestedClass]; //this points to classes.js file, and should be used to compare the slotLevel and playerLevel attributes, with the spells that each class can cast at requested level
+	let level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+	let spellClasses            = langEN.CLASSES_LIST[requestedClass]; //used to compare if the requested class by the user exists
+	let output                  = "";
 
 	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
 	/* --classes.js-- slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-	 * var ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
-     * var ClassPlayerLevel =
+	 * let ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
+     * let ClassPlayerLevel =
 	 */
 	//TODO: YOU LEFT OFF HERE TRYING TO FIGURE OUT WHY THIS FUNCTION NO LONGER WORKS
 
@@ -290,11 +290,11 @@ exports.getClassLevel = function(requestedSpell, requestedSpellLevel, requestedC
 
 //returns the requested spell damage from the user
 exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
-	var spell                   = langEN.SPELLS[requestedSpell];
-	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
-	var output                  = "";
-	var dmg                     = spell.damage.levels[level]; //stores the the damage of the spell at requested level
-	var dmgType                 = spell.damage.type;
+	let spell                   = langEN.SPELLS[requestedSpell];
+	let level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+	let output                  = "";
+	let dmg                     = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+	let dmgType                 = spell.damage.type;
 
 	if(spell && spell.damage === undefined){
 		output = "That spell does not do damage."
@@ -329,10 +329,10 @@ exports.getSpellDamage = function(requestedSpell, requestedSpellLevel){
 
 //returns the requested spell healing information from the user
 exports.getSpellHeal = function(requestedSpell,requestedSpellLevel){
-	var spell                   = langEN.SPELLS[requestedSpell];
-	var level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
-	var output                  = "";
-	var heals                   = spell.healing.levels[level];
+	let spell                   = langEN.SPELLS[requestedSpell];
+	let level                   = langEN.SLOT_LEVEL[requestedSpellLevel];
+	let output                  = "";
+	let heals                   = spell.healing.levels[level];
 
 	if(spell && spell.healing === undefined)
 	{
@@ -360,9 +360,9 @@ exports.getSpellHeal = function(requestedSpell,requestedSpellLevel){
 
 //returns the requested spell and spell attribute from the user
 exports.getSpells = function(requestedSpell,requestedSpellAttribute){ 
-	var output                  = "";
-	var spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
-	var spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
+	let output                  = "";
+	let spell                   = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
+	let spellAttribute          = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
 
 	//if the user asks for the attribute of a spell
 	if (spell && requestedSpellAttribute) {
@@ -373,7 +373,7 @@ exports.getSpells = function(requestedSpell,requestedSpellAttribute){
 		}else if((requestedSpellAttribute === "damage" || requestedSpellAttribute === "healing") && typeof spellAttribute === typeof String) {
 			output = spell[spellAttribute];
 		}else if(requestedSpellAttribute === "damage"){
-			var dmgType = spell.damage.type;
+			let dmgType = spell.damage.type;
 			output = requestedSpell + " does " 
 				+ dmgType + " . For damage amount, please include the slot or player level you wish to cast it at.";
 		}else if(requestedSpellAttribute === "healing"){ //i think we need this, but im not 100% sure
