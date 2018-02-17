@@ -1391,7 +1391,7 @@ module.exports = {
             "weight"        : "3 lb",
             "category"      : "Adventure Gear"
         },
-        "goldipes": {
+        "bagpipes": {
             "cost"          : "30 gold",
             "weight"        : "6 lb",
             "category"      : "Adventure Gear",
