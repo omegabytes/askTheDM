@@ -1,10 +1,10 @@
-let languageStrings = require('./languageStrings');
+let languageStrings = require('./languageStrings'); //possibly `import languageStrings from "./languageStrings";`
 let langEN          = languageStrings.en.translation;
 let char_classes    = langEN.CLASSES;
 
 // todo: add con mod param, prompt user for it
-function Bard(prof_bo, char_mod, con_mod) {
-    this.prof_bonus = prof_bo;
+function Bard(prof_bon, char_mod, con_mod) {
+    this.prof_bonus = prof_bon;
     this.cha_mod = char_mod;
     this.con_mod = con_mod;
 
@@ -33,13 +33,13 @@ function Bard(prof_bo, char_mod, con_mod) {
     // equipment
     this.starting_equipment = ["leather armor", "dagger"]; // starting pack
     this.weapon_choices = ["rapier", "longsword", "any simple weapon"]; // weapon choices fixme: how to handle 'any simple weapon'? list all of them is probably it
-    this.equip_pack_1 = { // fixme: split these into item name : quantity
+    this.equip_pack_1 = { // fixme: split these into {item name, quantity}
         "name" : "diplomat\'s pack",
-        "items" : ["chest", "case", "case", "fine clothes", "bottle of ink", "ink pen", "lamp", "flask of oil", "flask of oil", "sheet of paper", "sheet of paper", "sheet of paper", "sheet of paper", "sheet of paper", "vial of perfume", "sealing wax", "soap"]
+        "items" : [{"name":"chest","quantity":1}, {"name":"map or scroll cases","quantity":2},{"name":"set of fine clothes","quantity":1},{"name":"bottle of ink","quantity":1},{"name":"ink pen","quantity":1},{"name":"lamp","quantity":1},{"name":"flask of oil","quantity":2},{"name":"sheet of paper","quantity":5},{"name":"vial of perfume","quantity":1},{"name":"sealing wax","quantity":1},{"name":"soap","quantity":1},{"name":"gold pieces","quantity":39}]
     };
     this.equip_pack_2 = { // fixme: split these into item name : quantity
         "name" : "entertainer\'s pack",
-        "items" : ["backpack", "bedroll", "costume", "costume", "5 candles", "5 days of rations", "waterskin", "disguise kit"]
+        "items" : [{"name":"backpack","quantity":1},{"name":"bedroll","quantity":1},{"name":"costume","quantity":2},{"name":"candles","quantity":5},{"name":"rations","quantity":5},{"name":"waterskin","quantity":1},{"name":"disguise kit","quantity":1},{"name":"gold pieces","quantity":40}]
     };
     // other equipment
     // put recommended items first, followed by all possible items?
@@ -52,7 +52,7 @@ function Bard(prof_bo, char_mod, con_mod) {
         // iterate through the list of spells in spells.js, grabbing any spell where
         // [spell].spellClass.bard == true
         // this just compiles an array of spell objects, we will use other methods for user input/output
-    }
+    };
 
     // spellcasting ability
     this.spell_save_dc = 8 + this.prof_bonus + this.cha_mod;  // spell save dc
@@ -63,4 +63,3 @@ function Bard(prof_bo, char_mod, con_mod) {
     // class skills
     // subclasses
 }
-
