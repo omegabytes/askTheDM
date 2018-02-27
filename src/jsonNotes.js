@@ -38,7 +38,7 @@
 	};
 	this.equip_pack_2 = {
 		"name"  : "",
-		"items" : ["","",""]
+		"items" : [{"name":"","quantity":},{"name":"","quantity":},{"name":"","quantity":}]
 	};
 
 	//other equipment
