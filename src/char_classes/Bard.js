@@ -60,6 +60,8 @@ function Bard(prof_bon, char_mod, con_mod) {
     this.spell_focus = this.musical_inst;                     // spell focus
 
     // class features
+
     // class skills
+
     // subclasses
 }
