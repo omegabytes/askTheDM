@@ -12,69 +12,50 @@ let warlock         = require('./char_classes/warlock');
 let wizard          = require('./char_classes/wizard');
 
 class Char_Class {
-  constructor(charClass) {
-    this.charClass = charClass;
-    this.shortDescription = charClass.class_description.shortDescription;
-    this.longDescription = charClass.class_description.longDescription;
-  }
-  
-  // hp
-  health(modifer) {
-    let hitDice = charClass.class_hit_point.hit_dice;
-    let higherLevels = charClass.class_hit_point.higher_levels;
-    let firstLevel = charClass.class_hit_point.first_level;
-    firstLevel = firstLevel.base * firstLevel.mod;
-    return firstLevel;
-  }
-  
-  // primary abilities
-  abilities() {
-    // ability scores
-    // background
-    // recommended starting spells
-  }
-  
-  
-  
-    // proficiencies
-  proficiencies() {
-    // armor
-    // weapon
-    // tools
-    // saving throws
-    // skills
-  }
-  
-    // equipment
-  equipment() {
-    // starting pack
-    // weapon choices
-    // equipment pack choices
-    // other equipment
-  }
+	constructor(charClass) {
+		// general
+		this.charClass        = charClass;
+		this.shortDescription = charClass.class_description.shortDescription;
+		this.longDescription  = charClass.class_description.longDescription;
 
+		// health
+		let hitDice        = charClass.class_hit_point.hit_dice;
+		let higherLevels   = charClass.class_hit_point.higher_levels;
+		let startingHealth = charClass.class_hit_point.first_level;
 
-    // list of spells
-  spells() {
-  
-  }
-  
-  // spellcasting ability
-  spellcastingAbility() {
-    // spell save dc
-    // spell attack modifier
-    // spell focus
-  
-  }
-  
-  // class features
-  classFeatures() {
-    // class skills
-    // subclasses
-  }
+		// proficiencies
+		let armorProf       = [];
+		let weaponProf      = [];
+		let toolProf        = [];
+		let savingThrowProf = [];
+		let skillProf       = [];
+
+		// equipment
+		let startingEquipmentPack;
+		let startingWeapons;
+
+		let subclasses = [];
+
+		// class features
+		let classFeatures = charClass.class_features;
+
+	}
+
+	calcStartingHealth(modifer) {
+		//    startingHealth = firstLevel.base * firstLevel.mod;
+		//    return startingHealth;
+	}
+
+	setSkillProf() {
+		let selection = ""; // prompt user
+		// ask the user to chose two skills to be proficient in
+		for(let i = 0; i < charClass.class_proficiencies.skills.quantity; i++) {
+			this.skillProf += selection;
+		}
+	}
+
 }
 
 //export Char_Class;
-
 
 let myBard = new Char_Class("bard");
