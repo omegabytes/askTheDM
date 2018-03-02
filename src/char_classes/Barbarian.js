@@ -47,40 +47,41 @@ function Barbarian(prof_bon, char_mod, con_mod) {
 	};
 	// spellcasting ability
 	// class features
-	this.rage = {
+	this.class_specific_ability_1 = {
+		"name": "rage",
 		"description": "You fight with primal ferocity. On your turn, you can enter a rage as a bonus action. Your rage lasts for 1 minute. If you are able to cast spells, you can't cast or concentrate on them while raging. Your rage ends early if you are knocked unconscious or if your turn ends and you havent attacked a hostile creature since your last turn or havent taken damage since then.",
 		"benefits": "You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases based on your barbarian level. You have resistance to bludgeoning, piercing, and slashing damage.",
-		"restore": "Once you have used all your rage, which is based on your player level. You must finish a long rest before you can rage again."
+		"restore": "Once you have used all your rage, which is based on your player level. You must finish a long rest before you can rage again.",
+		"rage_per_level": [{
+			"level": 1, "rages": 2
+		}, {
+			"level": 3, "rages": 3
+		}, {
+			"level": 6, "rages": 4
+		}, {
+			"level": 12, "rages": 5
+		}, {
+			"level": 17, "rages": 6
+		}, {
+			"level": 20, "rages": "unlimited"
+		}],
+		"rage_damage": [{
+			"level": 1, "damage": 2
+		}, {
+			"level": 9, "damage": 3
+		}, {
+			"level": 16, "damage": 4
+		}]
 	};
-	this.rage_per_level = [{
-		"level": 1, "rages": 2
-	}, {
-		"level": 3, "rages": 3
-	}, {
-		"level": 6, "rages": 4
-	}, {
-		"level": 12, "rages": 5
-	}, {
-		"level": 17, "rages": 6
-	}, {
-		"level": 20, "rages": "unlimited"
-	}];
-	this.rage_damage = [{
-		"level": 1, "damage": 2
-	}, {
-		"level": 9, "damage": 3
-	}, {
-		"level": 16, "damage": 4
-	}];
-	this.class_feature_1 = {
+	this.class_specific_ability_2 = {
 		"name": "unarmored defense",
 		"desc": "While you are not wearing any armor, your armor class equals 10 plus your Dexterity modifier. plus your Constitution modifier. You can still use a shield and have this benefit."
 	};
-	this.class_feature_2 = {
+	this.class_specific_ability_3 = {
 		"name": "reckless attack",
 		"desc": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
 	};
-	this.class_feature_3 = {
+	this.class_specific_ability_4 = {
 		"name": "danger sense",
 		"desc": "At 2nd level, you gain an uncanny sense of when things nearby arent as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
 	};
