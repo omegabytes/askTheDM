@@ -15,8 +15,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 		"url": "url",
 		"damage": "damage",
 		"healing": "healing"
-	},
-	"SLOT_LEVEL": {
+	}, "SLOT_LEVEL": {
 		"1st": 1,
 		"1": 1,
 		"2nd": 2,
@@ -57,8 +56,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 		"19": 19,
 		"20th": 20,
 		"20": 20
-	},
-	"SPELLS": {
+	}, "SPELLS": {
 		"move earth": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 2 hours",
@@ -170,17 +168,8 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1dlO for each slot level above 1st.",
 			"url": "https://www.dnd-spells.com/spell/hellish-rebuke",
 			"damage": {
-				"type": "fire damage",
-				"levels": {
-					1: "2d10",
-					2: "3d10",
-					3: "4d10",
-					4: "5d10",
-					5: "6d10",
-					6: "7d10",
-					7: "8d10",
-					8: "9d10",
-					9: "10d10"
+				"type": "fire damage", "levels": {
+					1: "2d10", 2: "3d10", 3: "4d10", 4: "5d10", 5: "6d10", 6: "7d10", 7: "8d10", 8: "9d10", 9: "10d10"
 				}
 			}
 		}, "sleep": {
@@ -218,8 +207,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn. The spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
 			"url": "https://www.dnd-spells.com/spell/frostbite",
 			"damage": {
-				"type": "cold damage",
-				"levels": {
+				"type": "cold damage", "levels": {
 					1: "1d6",
 					2: "1d6",
 					3: "1d6",
@@ -3698,21 +3686,11 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"longDescription": "You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts. A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one. At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th.",
 			"url": "https://www.dnd-spells.com/spell/chain-lightning",
 			"damage": {
-				"type": "lightning damage",
-				"levels": {
-					1: 0,
-					2: 0,
-					3: 0,
-					4: 0,
-					5: 0,
-					6: "10d8",
-					7: "11d8",
-					8: "12d8",
-					9: "13d8"
+				"type": "lightning damage", "levels": {
+					1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: "10d8", 7: "11d8", 8: "12d8", 9: "13d8"
 				}
 			}
-		},
-		"shillelagh": {
+		}, "shillelagh": {
 			"castingTime": "1 Bonus Action",
 			"duration": "1 minute",
 			"range": "Touch",
@@ -3723,8 +3701,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks, and the damage die becomes a d8",
 			"longDescription": "The wood of a club or quarterstaff you are holding is imbued with natures power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapons damage die becomes a d8. The weapon also becomes magical, if it isnt already. The spell ends if you cast it again or if you let go of the weapon.",
 			"url": "https://www.dnd-spells.com/spell/shillelagh"
-		},
-		"true polymorph": {
+		}, "true polymorph": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 hour",
 			"range": "30 feet",
@@ -3735,8 +3712,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. Transform a creature into a different creature, a creature into an object, or an object into a creature. If you concentrate on this spell for the full duration, the transformation becomes permanent. See long description.",
 			"longDescription": "Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent. Shapechangers arent affected by this spell. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isnt affected by this spell. Creature into Creature. If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the targets (or its level, if the target doesnt have a challenge rating). The targets game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality. The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesnt reduce the creatures normal form to 0 hit points, it isnt knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it cant speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions. The targets gear melds into the new form. The creature cant activate, use, wield, or otherwise benefit from any of its equipment. Object into Creature. You can turn an object into any kind of creature, as long as the creatures size is no larger than the objects size and the creatures challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The D. M. has the creatures statistics and resolves all of its actions and movement. If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it. Creature into Object. If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form. The creatures statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.",
 			"url": "https://www.dnd-spells.com/spell/true-polymorph"
-		},
-		"giant insect": {
+		}, "giant insect": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 10 minutes",
 			"range": "30 feet",
@@ -3747,8 +3723,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration, that obey your commands and acts on your turn. The D. M. resolves their actions and movement.",
 			"longDescription": "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion. Each creature obeys your verbal commands, and in combat, they act on your turn each round. The D. M. has the statistics for these creatures and resolves their actions and movement. A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it. The D. M. might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.",
 			"url": "https://www.dnd-spells.com/spell/giant-insect"
-		},
-		"dispel evil and good": {
+		}, "dispel evil and good": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
 			"range": "Self",
