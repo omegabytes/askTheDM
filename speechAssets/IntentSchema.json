@@ -42,6 +42,15 @@
     {
       "slots": [
         {
+          "name": "EquipmentPack",
+          "type": "LIST_OF_EQUIPMENT_PACKS"
+        }
+      ],
+      "intent": "EquipmentPackIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Feat",
           "type": "LIST_OF_FEATS"
         },
