@@ -27,13 +27,18 @@ function Barbarian(prof_bon, char_mod, con_mod) {
 	this.starting_equipment = ["explorer\'s pack", "four javelins"];
 	this.weapon_choices = ["greataxe", "martial melee weapons", "two handaxes", "simple weapons"]; //fixme: 'simple weapon' is item.itemType['simple melee weapon'] use this to list out all 'simple weapon' weapons
 	this.equip_pack_1 = { // fixme: split these into [{item name : quantity},{...}]
-		"name": "explorer\'s pack", "items": [{"name": "backpack", "quantity": 1}, {"name": "bedroll", "quantity": 1}, {
-			"name": "mess kit", "quantity": 1
-		}, {"name": "tinderbox", "quantity": 1}, {"name": "torches", "quantity": 10}, {
-			"name": "rations", "quantity": 10
-		}, {"name": "waterskin", "quantity": 1}, {"name": "hempen rope: 50ft", "quantity": 1}, {
-			"name": "gold pieces", "quantity": 10
-		}]
+		"name": "explorer\'s pack",
+		"items": [
+			{"name": "backpack", "quantity": 1},
+			{"name": "bedroll", "quantity": 1},
+			{"name": "mess kit", "quantity": 1},
+			{"name": "tinderbox", "quantity": 1},
+			{"name": "torches", "quantity": 10},
+			{"name": "rations", "quantity": 10},
+			{"name": "waterskin", "quantity": 1},
+			{"name": "hempen rope: 50ft", "quantity": 1},
+			{"name": "gold pieces", "quantity": 10}
+		]
 	};
 	//other equipment
 	//put recommended items first, followed by all possible items?
