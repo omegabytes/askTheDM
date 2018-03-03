@@ -184,6 +184,8 @@ ExhaustionLevelIntent I forgot how {ExLevel} level exhaustion affects a creature
 ExhaustionLevelIntent I forgot how {ExLevel} level exhaustion affects a character
 ExhaustionLevelIntent I forgot how {ExLevel} level exhaustion affects someone
 
+EquipmentPackIntent what is in the {EquipmentPack}
+
 FeatsIntent what does {Feat} do
 FeatsIntent what does {Feat} affect
 FeatsIntent what does {Feat} mean
