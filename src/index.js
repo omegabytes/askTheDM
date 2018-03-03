@@ -49,7 +49,18 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'FeatsIntent': function () {
+	},
+	'EquipmentPackIntent': function() {
+		let requestedEquipmentPack = dndLib.validateAndSetSlot(this.event.request.intent.slots.EquipmentPack);
+		this.attributes['repromptSpeech'] = langEN.REPROMPT;
+		this.attributes['speechOutput'] = dndLib.getEquipmentPack(requestedEquipmentPack);
+		if (this.attributes['continue']) {
+			this.emit(':ask', this.attributes['speechOutput'] + ". " + this.attributes['repromptSpeech']);
+		} else {
+			this.emit(':tell', this.attributes['speechOutput']);
+		}
+	},
+	'FeatsIntent': function () {
 		let requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
 		let requestedFeat = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
