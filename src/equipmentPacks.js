@@ -23,13 +23,16 @@ module.exports = {
 				"name": "soap", "quantity": 1
 			}, {"name": "gold pieces", "quantity": 39}]
 		}, "dungeoneer\'s pack": {
-			"items": [{"name": "backpack", "quantity": 1}, {"name": "bedroll", "quantity": 1}, {
-				"name": "mess kit", "quantity": 1
+			"items": [{"name": "backpack", "quantity": 1}, {"name": "crowbar", "quantity": 1}, {
+				"name": "hammer",
+				"quantity": 1
 			}, {"name": "tinderbox", "quantity": 1}, {"name": "torches", "quantity": 10}, {
-				"name": "rations", "quantity": 10
-			}, {"name": "waterskin", "quantity": 1}, {"name": "hempen rope: 50ft", "quantity": 1}, {
-				"name": "gold pieces", "quantity": 10
-			}]
+				"name": "rations",
+				"quantity": 10
+			}, {"name": "waterskin", "quantity": 1}, {"name": "pitons", "quantity": 10}, {
+				"name": "hempen rope: 50ft",
+				"quantity": 1
+			}, {"name": "gold pieces", "quantity": 12}]
 		}, "entertainer\'s pack": {
 			"items": [{"name": "backpack", "quantity": 1}, {"name": "bedroll", "quantity": 1}, {
 				"name": "costume", "quantity": 2
@@ -45,21 +48,30 @@ module.exports = {
 				"name": "gold pieces", "quantity": 10
 			}]
 		}, "priest\'s pack": {
-			"items": [{"name": "backpack", "quantity": 1}, {"name": "bedroll", "quantity": 1}, {
-				"name": "mess kit", "quantity": 1
-			}, {"name": "tinderbox", "quantity": 1}, {"name": "torches", "quantity": 10}, {
-				"name": "rations", "quantity": 10
-			}, {"name": "waterskin", "quantity": 1}, {"name": "hempen rope: 50ft", "quantity": 1}, {
-				"name": "gold pieces", "quantity": 10
-			}]
+			"items": [{"name": "backpack", "quantity": 1}, {"name": "blanket", "quantity": 1}, {
+				"name": "candles",
+				"quantity": 10
+			}, {"name": "tinderbox", "quantity": 1}, {"name": "alms box", "quantity": 1}, {
+				"name": "rations",
+				"quantity": 2
+			}, {"name": "waterskin", "quantity": 1}, {"name": "blocks of incense", "quantity": 2}, {
+				"name": "censer",
+				"quantity": 1
+			}, {"name": "vestments", "quantity": 1}, {
+				"name": "hempen rope: 50ft",
+				"quantity": 1
+			}, {"name": "gold pieces", "quantity": 19}]
 		}, "scholar\'s pack": {
-			"items": [{"name": "backpack", "quantity": 1}, {"name": "bedroll", "quantity": 1}, {
-				"name": "mess kit", "quantity": 1
-			}, {"name": "tinderbox", "quantity": 1}, {"name": "torches", "quantity": 10}, {
-				"name": "rations", "quantity": 10
-			}, {"name": "waterskin", "quantity": 1}, {"name": "hempen rope: 50ft", "quantity": 1}, {
-				"name": "gold pieces", "quantity": 10
-			}]
+			"items": [{"name": "backpack", "quantity": 1}, {
+				"name": "book of lore",
+				"quantity": 1
+			}, {"name": "bottle of ink", "quantity": 1}, {
+				"name": "ink pen",
+				"quantity": 1
+			}, {"name": "sheet of parchment", "quantity": 10}, {
+				"name": "little bag of sand",
+				"quantity": 1
+			}, {"name": "small knife", "quantity": 1}, {"name": "gold pieces", "quantity": 40}]
 		}
 	}
 };
