@@ -59,8 +59,105 @@
     this.spell_focus = this.musical_inst;                     // spell focus
 
     // class features
+	this.class_specific_ability_1 = {
+		"name": "",
+		"desc": "",
+		"benefits": "",
+		"restore": "",
+	};
+	this.class_specific_ability_2 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_specific_ability_3 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_specific_ability_4 = {
+		"name": "",
+		"desc": ""
+	};
     // class skills
+	this.ability_score_improvement = {
+		"levels": [4, 8, 12, 16, 19], "benefit": "Increase one ability score by 2, or increase 2 ability scores by 1."
+	};
+	this.extra_attack = "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.";
+	this.class_skill_1 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_2 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_3 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_4 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_5 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_6 = {
+		"name": "",
+		"desc": ""
+	};
+	this.class_skill_7 = {
+		"name": "",
+		"desc": ""
+	};
     // subclasses
+	this.subclass_description = {
+		"name": "",
+		"desc": "",
+	};
+	this.subclass_1 = {
+		"name": "path of the berserker",
+		"desc": "For some barbarians, rage is a means to an end, that end being violence. The path of the berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
+		"feature_1": {
+			"name": "",
+			"desc": ""
+		},
+		"feature_2": {
+			"name": "",
+			"desc": ""
+		},
+		"feature_3": {
+			"name": "",
+			"desc": ""
+		},
+		"feature_4": {
+			"name": "",
+			"desc": ""
+		}
+	};
+	this.subclass_2 = {
+		"name": "",
+		"desc": "",
+		"feature_1": {
+			"name": "",
+			"desc": ""
+		},
+		"feature_2": {
+			"name": "",
+			"desc": "",
+		},
+		"feature_3": {
+			"name": "",
+			"desc": "",
+		},
+		"feature_4": {
+			"name": "",
+			"desc": ""
+		},
+		"feature_5": {
+			"name": "", "desc": "",
+		}
+	};
 }
 */
 
