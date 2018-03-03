@@ -5,6 +5,7 @@ let items = require('./items');
 let feats = require('./feats');
 let spells = require('./spells');
 let classes = require('./classes');
+let equipment = require('./equipmentPacks');
 module.exports = {
 	"en": {
 		"translation": {
@@ -14,6 +15,7 @@ module.exports = {
 			"CLASSES": classes.CLASSES,
 			"CLASSES_LIST": classes.CLASSES_LIST,
 			"EXHAUSTION_LEVELS": exhaustionLevel.EXHAUSTION_LEVELS,
+			"EQUIPMENT_PACKS": equipment.EQUIPMENT_PACKS,
 			"FEATS": feats.FEATS,
 			"FEAT_ATTRIBUTES": feats.FEAT_ATTRIBUTES,
 			"INDEX": indexInfo.INDEX,
