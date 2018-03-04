@@ -1,4 +1,4 @@
-import {Char_Class} from "./Char_class";
+import {Char_Class} from "./Char_Class";
 
 class Magic_Class extends Char_Class {
 	constructor(charClass) {
