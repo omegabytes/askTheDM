@@ -26,7 +26,10 @@ export class Barbarian {
 		this.weapon_prof = ["simple weapons", "martial weapons"];
 		this.tool_prof = [];
 		this.saving_throw_prof = ["Strength", "Constitution"];
-		this.skill_prof = ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"];
+		this.skill_prof = {
+			"quantity": 2,
+			"skills_available": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"]
+		};
 		//equipment
 		this.starting_equipment = ["explorer\'s pack", "four javelins"];
 		this.weapon_choices = ["greataxe", "martial melee weapons", "two handaxes", "simple weapons"]; //fixme: 'simple weapon' is item.itemType['simple melee weapon'] use this to list out all 'simple weapon' weapons
