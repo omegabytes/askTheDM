@@ -1,11 +1,11 @@
-let conditions = require('./conditions');
-let exhaustionLevel = require('./exhaustionLevel');
-let indexInfo = require('./indexInfo');
-let items = require('./items');
-let feats = require('./feats');
-let spells = require('./spells');
-let classes = require('./classes');
-let equipment = require('./equipmentPacks');
+import conditions from "./conditions";
+import exhaustionLevel from "./exhaustionLevel";
+import indexInfo from "./indexInfo";
+import items from "./items";
+import feats from "./feats";
+import spells from "./spells";
+import classes from "./classes";
+import equipment from "./equipmentPacks";
 module.exports = {
 	"en": {
 		"translation": {
