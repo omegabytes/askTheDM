@@ -14,31 +14,25 @@ import wizard from "./Wizard";
 class Char_Class {
 	constructor(charClass) {
 		// general
-		this.charClass        = charClass;
+		this.charClass = charClass;
 		this.shortDescription = charClass.class_description.shortDescription;
-		this.longDescription  = charClass.class_description.longDescription;
-
+		this.longDescription = charClass.class_description.longDescription;
 		// health
-		let hitDice        = charClass.class_hit_point.hit_dice;
-		let higherLevels   = charClass.class_hit_point.higher_levels;
+		let hitDice = charClass.class_hit_point.hit_dice;
+		let higherLevels = charClass.class_hit_point.higher_levels;
 		let startingHealth = charClass.class_hit_point.first_level;
-
 		// proficiencies
-		let armorProf       = [];
-		let weaponProf      = [];
-		let toolProf        = [];
+		let armorProf = [];
+		let weaponProf = [];
+		let toolProf = [];
 		let savingThrowProf = [];
-		let skillProf       = [];
-
+		let skillProf = [];
 		// equipment
 		let startingEquipmentPack;
 		let startingWeapons;
-
 		let subclasses = [];
-
 		// class features
 		let classFeatures = charClass.class_features;
-
 	}
 
 	calcStartingHealth(modifer) {
@@ -49,15 +43,13 @@ class Char_Class {
 	setSkillProf() {
 		let selection = ""; // prompt user
 		// ask the user to chose two skills to be proficient in
-		for(let i = 0; i < charClass.class_proficiencies.skills.quantity; i++) {
+		for (let i = 0; i < charClass.class_proficiencies.skills.quantity; i++) {
 			this.skillProf += selection;
 		}
 	}
-
 }
 
 export {Char_Class};
-
 let myBard = new Char_Class("bard");
 let myBarbarian = new Char_Class("barbarian");
 let myCleric = new Char_Class("cleric");
