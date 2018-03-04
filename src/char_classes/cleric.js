@@ -57,7 +57,7 @@ module.exports = {
 					}
 				},
 				"replenish": "A short or long rest. Beginning at 6th level you can use this twice, and beginning at 18th level you can use this three times between rests."
-			}, "class_feature_1": "", "class_feature_2": "", "destroy undead": {
+			}, "destroy undead": {
 				"description": "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold. To learn more, ask about the destroy undead table.",
 				"table": {
 					5: "1/2 or lower", 8: "1 or lower", 11: "2 or lower", 14: "3 or lower", 17: "4 or lower"
@@ -69,7 +69,7 @@ module.exports = {
 				"description": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deitys aid requires you to use your action, describe the assistance you seek and roll percentile dice.",
 				"more_info": "If you roll a number equal to or lower than your cleric level, your deity intervenes. Meaning if you are a level 10 cleric and roll between 1 and 10, this feature works. The D.M. chooses the nature of the intervention. At 20th level your call for intervention succeeds automatically, no roll required.",
 				"replenish": "If your deity intervenes, you cant use this feature again for 7 days. Otherwise, you must finish a long rest."
-			}, "class_specific_ability_2": "", "class_specific_ability_3": "", "class_specific_ability_4": ""
+			}
 		}, "subclass": {
 			"subclass_paths": {
 				"subclass_description": "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Your choice could also simply be a matter of personal preference, the aspect of the deity that appeals to you most.",
