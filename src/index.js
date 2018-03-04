@@ -1,8 +1,9 @@
 'use strict';
-let Alexa = require('alexa-sdk');
-let id = require('./appId.js');
-let languageStrings = require('./languageStrings');
-let dndLib = require('./dndLib.js');
+import Alexa from "alexa-sdk";
+import id from "./appId.js";
+import languageStrings from "./languageStrings";
+import dndLib from "./dndLib.js";
+
 let APP_ID = id.APP_ID;
 let langEN = languageStrings.en.translation;
 // noinspection JSUnusedLocalSymbols

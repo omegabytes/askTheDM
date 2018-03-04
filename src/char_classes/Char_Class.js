@@ -1,15 +1,15 @@
-let barbarian       = require('./char_classes/barbarian.js');
-let bard            = require('./char_classes/bard');
-let cleric          = require('./char_classes/cleric');
-let druid           = require('./char_classes/druid');
-let fighter         = require('./char_classes/fighter');
-let monk            = require('./char_classes/monk');
-let paladin         = require('./char_classes/paladin');
-let ranger          = require('./char_classes/ranger');
-let rogue           = require('./char_classes/rogue');
-let sorcerer        = require('./char_classes/sorcerer');
-let warlock         = require('./char_classes/warlock');
-let wizard          = require('./char_classes/wizard');
+import barbarian from "./char_classes/Barbarian";
+import bard from "./char_classes/Bard";
+import cleric from "./char_classes/Cleric";
+import druid from "./char_classes/Druid";
+import fighter from "./char_classes/Fighter";
+import monk from "./char_classes/Monk";
+import paladin from "./char_classes/Paladin";
+import ranger from "./char_classes/Ranger";
+import rogue from "./char_classes/Rogue";
+import sorcerer from "./char_classes/Sorcerer";
+import warlock from "./char_classes/Warlock";
+import wizard from "./char_classes/Wizard";
 
 class Char_Class {
 	constructor(charClass) {
@@ -56,6 +56,7 @@ class Char_Class {
 
 }
 
-//export Char_Class;
+export {Char_Class};
 
 let myBard = new Char_Class("bard");
+let myBarbarian = new Char_Class("barbarian");

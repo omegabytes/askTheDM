@@ -1,3 +1,5 @@
+import {Char_Class} from "./Char_class";
+
 class Magic_Class extends Char_Class {
 	constructor(charClass) {
 		// spells
