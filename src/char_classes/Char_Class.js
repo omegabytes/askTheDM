@@ -1,15 +1,15 @@
-import barbarian from "./char_classes/Barbarian";
-import bard from "./char_classes/Bard";
-import cleric from "./char_classes/Cleric";
-import druid from "./char_classes/Druid";
-import fighter from "./char_classes/Fighter";
-import monk from "./char_classes/Monk";
-import paladin from "./char_classes/Paladin";
-import ranger from "./char_classes/Ranger";
-import rogue from "./char_classes/Rogue";
-import sorcerer from "./char_classes/Sorcerer";
-import warlock from "./char_classes/Warlock";
-import wizard from "./char_classes/Wizard";
+import barbarian from "./Barbarian";
+import bard from "./Bard";
+import cleric from "./Cleric";
+import druid from "./Druid";
+import fighter from "./Fighter";
+import monk from "./Monk";
+import paladin from "./Paladin";
+import ranger from "./Ranger";
+import rogue from "./Rogue";
+import sorcerer from "./Sorcerer";
+import warlock from "./Warlock";
+import wizard from "./Wizard";
 
 class Char_Class {
 	constructor(charClass) {
@@ -60,3 +60,13 @@ export {Char_Class};
 
 let myBard = new Char_Class("bard");
 let myBarbarian = new Char_Class("barbarian");
+let myCleric = new Char_Class("cleric");
+let myDruid = new Char_Class("druid");
+let myFighter = new Char_Class("fighter");
+let myMonk = new Char_Class("monk");
+let myPaladin = new Char_Class("paladin");
+let myRanger = new Char_Class("ranger");
+let myRogue = new Char_Class("rogue");
+let mySorcerer = new Char_Class("sorcerer");
+let myWarlock = new Char_Class("warlock");
+let myWizard = new Char_Class("wizard");
