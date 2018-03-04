@@ -1,4 +1,4 @@
-import languageStrings from "./languageStrings";
+import languageStrings from "../languageStrings.js";
 let langEN = languageStrings.en.translation;
 let char_classes = langEN.CLASSES;
 let equipment = langEN.EQUIPMENT_PACKS;
