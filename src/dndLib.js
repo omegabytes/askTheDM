@@ -1,4 +1,4 @@
-let languageStrings = require('./languageStrings');
+import languageStrings from "./languageStrings";
 let langEN = languageStrings.en.translation;
 // not found message handler
 exports.notFoundMessage = function (slotName, userInput) {
@@ -105,6 +105,31 @@ exports.getExhaustion = function (requestedExhaustionLevel) {
 		output = langEN.UNHANDLED;
 	}
 	return output;
+};
+//returns the equipment packs that each player can choose
+exports.getEquipmentPack = function (requestedEquipmentPack){
+		let output = "";
+		let equipmentPack = langEN.EQUIPMENT_PACKS[requestedEquipmentPack];
+		let packItems = equipmentPack.items;
+
+		if(equipmentPack){
+			if(packItems){
+				output = "The contents of " + requestedEquipmentPack + " are ";
+				for(let i = 0; i < packItems.length; i++){
+					let itemObj = packItems[i];
+					for (let x in itemObj) {
+						output += (itemObj[x] + "\n");
+					}
+				}
+			}else {
+				output = equipmentPack;
+			}
+		} else if (requestedEquipmentPack){
+			output = exports.notFoundMessage(this.event.request.intent.slots.EquipmentPack.name, requestedEquipmentPack);
+		} else {
+			output = langEN.UNHANDLED;
+		}
+		return output;
 };
 //returns the feats that each player can choose
 exports.getFeats = function (requestedFeat, requestedFeatAttribute) {
