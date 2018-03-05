@@ -11,7 +11,7 @@ export class Bard {
 		this.cha_mod = char_mod;
 		this.con_mod = con_mod;
 		// class_desc
-		this.short_description = "A story teller or musician using his wits, magic, and lore to get out of or avoid tight situations."; // short
+		this.short_description = "A story teller or musician using their wits, magic, and lore to get out of or avoid tight situations."; // short
 		this.long_description = "The bard uses music and magic to support and inspire the rest of the party. Bards can specialize in the College of Lore, which allows for a more versatile character who can learn some spells and become proficient in the player's choice of skills, or the College of Valor, which makes the bard more martial and combat-oriented, or a number of other directions based on their focus.";  // long
 		// health
 		// todo: use con mod param to help generate these values
