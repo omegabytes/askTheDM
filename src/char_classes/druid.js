@@ -51,11 +51,6 @@ module.exports = {
 			"spell_attack_mod": "your proficiency bonus plus your wisdom modifier.",
 			"spell_focus": "druidic focus."
 		}, "class_features": {
-			"main_class_feature": {
-				"description": "", "benefits": "", "replenish": ""
-			},
-			"class_feature_1": "",
-			"class_feature_2": "",
 			"Druidic": "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the messages presence with a successful DC 15 wisdom (perception) check but cant decipher it without magic.",
 			"ability_score_improvement": {
 				"levels": [4, 8, 12, 16, 19],
