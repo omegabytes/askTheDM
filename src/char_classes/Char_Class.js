@@ -21,6 +21,10 @@ class Char_Class {
 		let hitDice = charClass.hit_dice;
 		let higherLevels = charClass.avg_increase_per_level; //this is the attribute that scales based on each level
 		let startingHealth = charClass.first_level;
+		// primary abilities
+		let recomAbilities = charClass.rec_abilities;
+		let recomBackground = charClass.rec_background;
+		let recomStartingSpells = charClass.rec_starting_spells;
 		// proficiencies
 		let armorProf = [];
 		let weaponProf = [];
@@ -30,9 +34,14 @@ class Char_Class {
 		// equipment
 		let startingEquipmentPack;
 		let startingWeapons;
-		let subclasses = [];
+		let startingArmor; //todo: there is a armor_choices variable in some melee focused classes, maybe add an if-block to check if said class has this variable, if not pull data from starting_equipment
+		let equipPack;
+		let extraEquipment;
+		// list of class spells & spellcasting info --if spell caster call MagicClass file here
 		// class features
 		let classFeatures = charClass.class_features; //fixme: this needs to be changed to either individually point to each class_specific_ability *OR* in each individual PClass object(ie:Druid.js) group 'class features' into a subcategory similar to 'subclasses'
+		// class skills
+		// subclasses
 	}
 
 	calcStartingHealth(modifer) {
