@@ -14,7 +14,8 @@
 // let equipment = langEN.EQUIPMENT_PACKS;
 // "use strict";
 //
-// export class _className_(prof_bon, char_mod, con_mod){
+// export class _className_ {
+//  constructor(prof_bon, char_mod, con_mod) {
 // 	this.prof_bonus = prof_bon;
 // 	this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 // 	this.con_mod = con_mod;
@@ -64,7 +65,7 @@
 // 	// spellcasting ability
 // 	this.spell_save_dc = 8 + this.prof_bonus + this.cha_mod;  // spell save dc
 // 	this.spell_attack_mod = this.prof_bonus + this.cha_mod;   // spell attack modifier
-// 	this.spell_focus = this.musical_inst;                     // spell focus
+// 	this.spell_focus = "";                     // spell focus
 //
 // 	// class features
 // 	this.class_specific_ability_1 = {
@@ -166,6 +167,7 @@
 // 			"name": "", "desc": "",
 // 		}
 // 	};
+// }
 // }
 
 // ---class object prototype---
