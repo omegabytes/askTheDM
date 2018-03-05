@@ -1,17 +1,17 @@
 module.exports = {
   "fighter": {
     "class_description" : {
-      "shortDesc": "",
-      "longDesc" : ""
+      "shortDesc": "Skilled combatant or strategist typically relying on his heavy armor and weapons to cut down their enemies. His training gives him unique abilities.",
+      "longDesc" : "A master of martial combat, skilled with a variety of weapons and armours, d10, Strength & Constitution, all armor, shields, simple and martial weapons."
     },
     "class_hit_point" : {
-      "hit_dice"     : "",
-      "first_level"    : "",
-      "higher_levels": ""
+      "hit_dice"     : "1d10",
+      "first_level"    : "10 plus your constitution modifier.",
+      "higher_levels": "Based on average rolls, 6 plus your constitution modifier."
     },
     "class_primary_ability" : {
-      "ability_scores" : "",
-      "background"     : "",
+      "ability_scores" : "Recommended to choose strength as your highest ability score, followed by constitution. Unless you adopt the eldritch knight martial archetype.",
+      "background"     : "soldier",
       "starting_spells": ""
     },
     "class_proficiencies" : {
