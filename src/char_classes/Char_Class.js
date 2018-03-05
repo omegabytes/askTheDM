@@ -15,12 +15,12 @@ class Char_Class {
 	constructor(charClass) {
 		// general
 		this.charClass = charClass;
-		this.shortDescription = charClass.class_description.shortDescription;
-		this.longDescription = charClass.class_description.longDescription;
+		this.shortDescription = charClass.short_description;
+		this.longDescription = charClass.long_description;
 		// health
-		let hitDice = charClass.class_hit_point.hit_dice;
-		let higherLevels = charClass.class_hit_point.higher_levels;
-		let startingHealth = charClass.class_hit_point.first_level;
+		let hitDice = charClass.hit_dice;
+		let higherLevels = charClass.avg_increase_per_level; //this is the attribute that scales based on each level
+		let startingHealth = charClass.first_level;
 		// proficiencies
 		let armorProf = [];
 		let weaponProf = [];
@@ -32,7 +32,7 @@ class Char_Class {
 		let startingWeapons;
 		let subclasses = [];
 		// class features
-		let classFeatures = charClass.class_features;
+		let classFeatures = charClass.class_features; //fixme: this needs to be changed to either individually point to each class_specific_ability *OR* in each individual PClass object(ie:Druid.js) group 'class features' into a subcategory similar to 'subclasses'
 	}
 
 	calcStartingHealth(modifer) {
@@ -43,7 +43,7 @@ class Char_Class {
 	setSkillProf() {
 		let selection = ""; // prompt user
 		// ask the user to chose two skills to be proficient in
-		for (let i = 0; i < charClass.class_proficiencies.skills.quantity; i++) {
+		for (let i = 0; i < charClass.skills.quantity; i++) {
 			this.skillProf += selection;
 		}
 	}
