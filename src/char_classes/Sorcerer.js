@@ -12,8 +12,8 @@ export class Sorcerer {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "a magic user who draws his power from within, summoning his innate magical power and bending it to his will.";
+		this.long_description = "a spellcaster who draws on inherent magic from a gift or bloodline, d6, Constitution and Charisma, daggers, darts, slings, quarterstaffs, light crossbows.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;

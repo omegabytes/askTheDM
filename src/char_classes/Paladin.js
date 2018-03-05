@@ -12,8 +12,8 @@ export class Paladin {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "nearly as skilled as the Fighter but using divine magic they bolster their efforts. Through their devotion they gain special boons from their god.";
+		this.long_description = "a holy warrior bound to a sacred oath, d10, Strength, Wisdom and Charisma, all armor, shields, simple and martial weapons.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;

@@ -12,8 +12,8 @@ export class Wizard {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "keeper of arcane secrets and forgotten knowledge, the wizard manipulates magic and spells with cunning.";
+		this.long_description = "a scholarly magic-user capable of manipulating the structures of reality, d6, Intelligence and Wisdom, daggers, darts, slings, quarterstaffs, light crossbows.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;

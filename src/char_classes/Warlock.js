@@ -12,8 +12,8 @@ export class Warlock {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "tied to a powerful entity through pact-magic, the warlock trades favors for boons and spells.";
+		this.long_description = "a wielder of magic that is derived from a bargain with an extraplanar entity, d8, Wisdom and Charisma, light armor, simple weapons.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;

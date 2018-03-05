@@ -12,8 +12,8 @@ export class Ranger {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "one who uses a unique blend of wilderness knowledge and martial ability to be a deadly hunter, with a bow, a pet or melee weapons.";
+		this.long_description = "a master of ranged combat, one with nature, d10, Dexterity and Strength, light and medium armor, shield, simple weapons, martial weapons.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;

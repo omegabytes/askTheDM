@@ -12,8 +12,8 @@ export class Rogue {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "a thief, assassin or stealthy character who has a knack for picking out his enemies weaknesses and exploiting them.";
+		this.long_description = "a scoundrel and agile warrior who uses stealth and trickery to overcome obstacles and enemies, d8, Dexterity and Intelligence, light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;
