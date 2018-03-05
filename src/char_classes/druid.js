@@ -132,8 +132,7 @@ module.exports = {
 							5: ["gaseous form","stinking cloud"],
 							7: ["greater invisibility","stone shape"],
 							9: ["cloudkill","insect plague"]
-						},
-
+						}
 					},
 					"land\'s stride": "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.",
 					"nature\'s ward":"When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.",
