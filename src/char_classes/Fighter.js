@@ -9,29 +9,30 @@ let equipment = langEN.EQUIPMENT_PACKS;
 export class Fighter {
 	constructor(prof_bon, char_mod, con_mod) {
 		this.prof_bonus = prof_bon;
-		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
+		this.str_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "skilled combatant or strategist typically relying on his heavy armor and weapons to cut down their enemies. His training gives him unique abilities.";
+		this.long_description = "a master of martial combat, skilled with a variety of weapons and armours, d10, Strength and Constitution, all armor, shields, simple and martial weapons.";
 		//health
-		this.hit_dice = "1dX";
-		this.first_level = X + this.con_mod;
-		this.avg_increase_per_level = AVG;
+		this.hit_dice = "1d10";
+		this.first_level = 10 + this.con_mod;
+		this.avg_increase_per_level = 6;
 		//primary abilities, descending priority
-		this.rec_abilities = ["", ""];
-		this.rec_background = [""];
-		this.rec_starting_spells = ["", "", ""];
+		this.rec_abilities = ["strength", "constitution", "intelligence (if you choose eldritch knight martial archetype)"]; //fixme: add caveat in code for the sentence in parenthesis, regarding intelligence
+		this.rec_background = ["soldier"];
+		this.rec_starting_spells = [];
 		//proficiencies
-		this.armor_prof = [""]; //fixme: items.itemType['light armor']
-		this.weapon_prof = ["", "", ""]; //fixme: 'simple weapon' is item.itemType['simple melee weapon']
+		this.armor_prof = ["all armor","shields"]; //fixme: items.itemType['light armor']
+		this.weapon_prof = ["simple weapons", "martial weapons"]; //fixme: 'simple weapon' is item.itemType['simple melee weapon']
 		this.tool_prof = []; //fixme: items.itemType['musical instrument'] for list of all musical instruments
-		this.saving_throw_prof = ["", ""];
+		this.saving_throw_prof = ["strength", "constitution"];
 		this.skill_prof = {
-			"quantity": 2, "skills_available": ["history", "insight", "medicine", "persuasion", "religion"]
+			"quantity": 2, "skills_available": ["acrobatics", "animal handling", "athletics", "history", "intimidation","perception","survival"]
 		};
 		//equipment
-		this.starting_equipment = ["", ""];
+		this.starting_equipment = [];
+		this.armor_choices = ["chain mail","leather armor"];
 		this.weapon_choices = ["", ""]; //fixme: 'simple weapon' is item.itemType['simple melee weapon'] use this to list out all 'simple weapon' weapons
 		this.equip_pack_1 = dndLib.getEquipmentPack("");
 		this.equip_pack_2 = dndLib.getEquipmentPack("");
