@@ -12,8 +12,8 @@ export class Monk {
 		this.char_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
 		this.con_mod = con_mod;
 		//class_desc
-		this.short_description = "";
-		this.long_description = "";
+		this.short_description = "martial artist pulling on the power of his own body to produce impressive results.";
+		this.long_description = "a master of martial arts, skilled with fighting hands and martial monk weapons, d8, Dexterity and Strength (At lvl 14 monk proficiency in all) simple weapons, shortswords.";
 		//health
 		this.hit_dice = "1dX";
 		this.first_level = X + this.con_mod;
