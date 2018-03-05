@@ -10,7 +10,7 @@ let equipment = langEN.EQUIPMENT_PACKS;
 export class Cleric {
 	constructor(prof_bon, char_mod, con_mod) {
 		this.prof_bonus = prof_bon;
-		this.wis_mod = char_mod; //make sure to adjust this.char_mod to be this.str_mod or this.wis_mod, etc for each class respective
+		this.wis_mod = char_mod;
 		this.con_mod = con_mod;
 		//class_desc
 		this.short_description = "A holy man devoted to a deity. capable of bolstering the party and heal their wounds, or laying low their enemies with divine wrath.";
