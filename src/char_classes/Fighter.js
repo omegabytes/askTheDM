@@ -21,7 +21,7 @@ export class Fighter {
 		//primary abilities, descending priority
 		this.rec_abilities = ["strength", "constitution", "intelligence (if you choose eldritch knight martial archetype)"]; //fixme: add caveat in code for the sentence in parenthesis, regarding intelligence
 		this.rec_background = ["soldier"];
-		this.rec_starting_spells = [];
+		this.rec_starting_spells = "See Eldritch Knight martial archetype for information on spells for Fighters.";
 		//proficiencies
 		this.armor_prof = ["all armor", "shields"]; //fixme: items.itemType['light armor']
 		this.weapon_prof = ["simple weapons", "martial weapons"]; //fixme: 'simple weapon' is item.itemType['simple melee weapon']
@@ -52,7 +52,9 @@ export class Fighter {
 		// eldritch knight spellcasting mods
 		this.int_mod = char_mod;//fixme: only if the player chose Int as their char_mod
 		this.spell_save_dc = 8 + this.prof_bonus + this.int_mod;   // spell save dc
+		//this.spell_save_dc = this.subclass_3.feature_1.spellcasting_ability.spell_save_dc; // fixme: will this work? it should ¯\_(ツ)_/¯
 		this.spell_attack_mod = this.prof_bonus + this.int_mod;    // spell attack modifier
+		//this.spell_attack_mod = this.subclass_3.feature_1.spellcasting_ability.spell_atk_mod; // fixme: will this work? it should ¯\_(ツ)_/¯
 		this.spell_focus = "";
 		// class features
 		this.class_specific_ability_1 = {
@@ -301,8 +303,8 @@ export class Fighter {
 				},
 				"spellcasting_ability": {
 					"desc": "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability.",
-					"spell_save_dc": "", // fixme: not sure to access variables above and store them here. I suppose we dont necessarily have to do that, in code we can just point to those vars
-					"spell_atk_mod": "" // fixme: see above fixme for spell_save_dc
+					"spell_save_dc": 8 + prof_bon + int_mod, // fixme: not sure to access variables above and store them here. I suppose we dont necessarily have to do that, in code we can just point to those vars
+					"spell_atk_mod": prof_bon + int_mod // fixme: see above fixme for spell_save_dc
 				}
 			},
 			"feature_2": {
