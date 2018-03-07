@@ -21,7 +21,13 @@ export class Fighter {
 		//primary abilities, descending priority
 		this.rec_abilities = ["strength", "constitution", "intelligence (if you choose eldritch knight martial archetype)"]; //fixme: add caveat in code for the sentence in parenthesis, regarding intelligence
 		this.rec_background = ["soldier"];
-		this.rec_starting_spells = "See Eldritch Knight martial archetype for information on spells for Fighters.";
+		this.rec_starting_spells = { // fixme: Alex we need to take a look at this, this seems like an okay way to store this information to be accessed later
+			"desc": "See Eldritch Knight martial archetype for information on spells for Fighters.",
+			"list": {
+				"rec_cantrips": ["booming blade", "poison spray"],
+				"rec_1st_spells": ["absorb elementals", "protection from evil and good", "find familiar"]
+			}
+		};
 		//proficiencies
 		this.armor_prof = ["all armor", "shields"]; //fixme: items.itemType['light armor']
 		this.weapon_prof = ["simple weapons", "martial weapons"]; //fixme: 'simple weapon' is item.itemType['simple melee weapon']
