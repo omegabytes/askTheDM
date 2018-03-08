@@ -45,7 +45,7 @@ export class Monk {
 			// iterate through the list of spells in spells.js, grabbing any spell where
 			// [spell].spellClass.bard == true
 			// this just compiles an array of spell objects, we will use other methods for user input/output
-		}
+		};
 		// spellcasting ability
 		this.spell_save_dc = "";  // spell save dc
 		this.spell_attack_mod = "";   // spell attack modifier

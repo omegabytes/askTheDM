@@ -45,7 +45,7 @@ export class Druid {
 			// iterate through the list of spells in spells.js, grabbing any spell where
 			// [spell].spellClass.bard == true
 			// this just compiles an array of spell objects, we will use other methods for user input/output
-		}
+		};
 		// spellcasting ability
 		this.spell_save_dc = 8 + this.prof_bonus + this.wis_mod;   // spell save dc
 		this.spell_attack_mod = this.prof_bonus + this.wis_mod;    // spell attack modifier

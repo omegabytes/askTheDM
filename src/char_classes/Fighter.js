@@ -53,7 +53,7 @@ export class Fighter {
 			// iterate through the list of spells in spells.js, grabbing any spell where
 			// [spell].spellClass.bard == true
 			// this just compiles an array of spell objects, we will use other methods for user input/output
-		}
+		};
 		// spellcasting ability
 		// eldritch knight spellcasting mods
 		this.int_mod = char_mod;//fixme: only if the player chose Int as their char_mod
