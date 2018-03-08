@@ -11,6 +11,8 @@ import sorcerer from "./Sorcerer";
 import warlock from "./Warlock";
 import wizard from "./Wizard";
 
+// fixme: each class will most likely need a 'class table' as depicted in the class section in the PHB (ie: Cleric table on PHB 57 (51PDF)
+
 class Char_Class {
 	constructor(charClass) {
 		// general
