@@ -12,7 +12,7 @@ let indexInfo = require("./indexInfo");
 let items = require ("./items");
 let feats = require("./feats");
 let spells = require("./spells");
-let classes = require("./char_classes/Char_Class"); // todo: go back and adjust this
+let classes = require("./char_classes/Char_Class"); // todo: go back and adjust this, and change them accordingly in the below "CLASSES" && "CLASSES_LIST"
 let equipment = require("./equipmentPacks");
 
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
 			//json resources
 			"SPELL_ATTRIBUTES": spells.SPELL_ATTRIBUTES,
 			"CONDITIONS": conditions.CONDITIONS,
-			// "CLASSES": classes.CLASSES,
-			// "CLASSES_LIST": classes.CLASSES_LIST,
+			"CLASSES": classes.CLASSES,
+			"CLASSES_LIST": classes.CLASSES_LIST,
 			"EXHAUSTION_LEVELS": exhaustionLevel.EXHAUSTION_LEVELS,
 			"EQUIPMENT_PACKS": equipment.EQUIPMENT_PACKS,
 			"FEATS": feats.FEATS,

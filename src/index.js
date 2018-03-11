@@ -2,7 +2,7 @@
 let Alexa = require("alexa-sdk");
 let languageStrings = require("./languageStrings");
 let dndLib = require("./dndLib");
-let APP_ID = process.env("appId");
+let APP_ID = process.env.appId;
 let langEN = languageStrings.en.translation;
 // noinspection JSUnusedLocalSymbols
 exports.handler = function (event, context, callback) {
