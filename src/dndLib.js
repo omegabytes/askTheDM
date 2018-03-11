@@ -214,34 +214,13 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
 			output = "no";
 		} else {
-			if (spell.slotLevel > level) { //if the requested level(player or spell_slot) exists, and the requested class exists
-				// output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
+			if (spell.slotLevel > level) {
                 output = "no";
 			} else {
 				output = "yes";
 			}
 		}
 	}
-	/*
-	 "Can a -wizard- cast _fireball_ at level =3=?"
-	 "... at ~player~ level =3=?"
-	 "... at ~slot~ level =3=?"
-
-	 "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
-
-	 if(!this.attributes['player_or_slot']){
-	 output = "say stuff";
-	 this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
-	 }
-	 */
-	//TODO: review this comment block for if session attribute doesn't exist.
-	/*
-	 'MoreInfoIntent' : function () {
-	 if(!this.attributes['character']) {
-	 output = "Which character would you like more info about?";
-	 this.emit(':elicitSlot','MoreInfo',output);
-	 }
-	 */
 	return output;
 };
 //returns the requested spell damage from the user
