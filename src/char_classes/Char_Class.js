@@ -1,15 +1,3 @@
-// import barbarian from "./Barbarian";
-// import bard from "./Bard";
-// import cleric from "./Cleric";
-// import druid from "./Druid";
-// import fighter from "./Fighter";
-// import monk from "./Monk";
-// import paladin from "./Paladin";
-// import ranger from "./Ranger";
-// import rogue from "./Rogue";
-// import sorcerer from "./Sorcerer";
-// import warlock from "./Warlock";
-// import wizard from "./Wizard";
 let barbarian = require("./Barbarian");
 let bard = require("./Bard");
 let cleric = require("./Cleric");
@@ -18,9 +6,12 @@ let fighter = require("./Fighter");
 let monk = require("./Monk");
 let paladin = require("./Paladin");
 let ranger = require("./Ranger");
-let
+let rogue = require("./Rogue");
+let sorcerer = require("./Sorcerer");
+let warlock = require("./warlock");
+let wizard = require("./wizard");
 
-// fixme: each class will most likely need a 'class table' as depicted in the class section in the PHB (ie: Cleric table on PHB 57 (51PDF)
+// fixme: each class will most likely need a 'class table' as depicted in the class section in the PHB (ie: Cleric table on PHB 57 (51PDF))
 
 class Char_Class {
 	constructor(charClass) {
