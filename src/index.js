@@ -27,7 +27,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'DiceIntent': function () {
+	},
+	'DiceIntent': function () {
 		let numberOfDice = dndLib.validateAndSetSlot(this.event.request.intent.slots.Quantity) || 1; //get the number of dice from the user, default 1 when not provided
 		let modifier = dndLib.validateAndSetSlot(this.event.request.intent.slots.Modifier) || 0; //get the number to add to the roll from the user, default 0 when not provided
 		let diceSides = dndLib.validateAndSetSlot(this.event.request.intent.slots.Sides);
@@ -39,7 +40,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'ExhaustionLevelIntent': function () {
+	},
+	'ExhaustionLevelIntent': function () {
 		let requestedExhaustionLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.ExLevel);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getExhaustion(requestedExhaustionLevel);
@@ -69,7 +71,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'IndexIntent': function () {
+	},
+	'IndexIntent': function () {
 		let requestedIndexName = dndLib.validateAndSetSlot(this.event.request.intent.slots.Index);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getIndex(requestedIndexName);
@@ -78,7 +81,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'ItemsIntent': function () {
+	},
+	'ItemsIntent': function () {
 		let requestedItem = dndLib.validateAndSetSlot(this.event.request.intent.slots.Item);
 		let requestedItemAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.ItemAttribute);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -88,7 +92,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'SpellCastIntent': function () {
+	},
+	'SpellCastIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getSpellCast(requestedSpell);
@@ -97,7 +102,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'SpellClassIntent': function () {
+	},
+	'SpellClassIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 		let requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass); //fixme: .PlayerClass doesnt resolve because it is not being used in test.js
 		let requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
@@ -109,7 +115,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'SpellDamageIntent': function () {
+	},
+	'SpellDamageIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 		let requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -119,7 +126,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'SpellHealIntent': function () {
+	},
+	'SpellHealIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 		let requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.SlotLevel);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -129,7 +137,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'SpellsIntent': function () {
+	},
+	'SpellsIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
 		let requestedSpellAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.Attribute);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -139,7 +148,8 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	}, 'Unhandled': function () {
+	},
+	'Unhandled': function () {
 		this.attributes['continue'] = true;
 		this.attributes['speechOutput'] = langEN.UNHANDLED;
 		this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
@@ -153,17 +163,22 @@ let handlers = {
 		this.attributes['speechOutput'] = langEN.WELCOME_MESSAGE;
 		this.attributes['repromptSpeech'] = langEN.WELCOME_REPROMPT;
 		this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-	}, 'AMAZON.HelpIntent': function () {
+	},
+	'AMAZON.HelpIntent': function () {
 		this.attributes['speechOutput'] = langEN.HELP_MESSAGE;
 		this.attributes['repromptSpeech'] = langEN.HELP_REPROMPT;
 		this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-	}, 'AMAZON.RepeatIntent': function () {
+	},
+	'AMAZON.RepeatIntent': function () {
 		this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech']);
-	}, 'AMAZON.StopIntent': function () {
+	},
+	'AMAZON.StopIntent': function () {
 		this.emit('SessionEndedRequest');
-	}, 'AMAZON.CancelIntent': function () {
+	},
+	'AMAZON.CancelIntent': function () {
 		this.emit('SessionEndedRequest');
-	}, 'SessionEndedRequest': function () {
+	},
+	'SessionEndedRequest': function () {
 		this.emit(':tell', langEN.STOP_MESSAGE);
 	}
 };
