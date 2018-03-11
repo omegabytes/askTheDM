@@ -220,7 +220,7 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
 			output = requestedClass + "s can't cast " + requestedSpell + ".";
 		} else {
-			if (level && spell.spellClass.indexOf(requestedClass) > -1) { //if the requested level(player or spell_slot) exists, and the requested class exists
+			if (level >= requestedSpellLevel) { //if the requested level(player or spell_slot) exists, and the requested class exists
 				//set the following attribute states based on the user provided info
 				this.attributes['spell'] = requestedSpell;
 				this.attributes['level'] = requestedSpellLevel;
