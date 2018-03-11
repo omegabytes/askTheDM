@@ -33,5 +33,7 @@
     "mocha": "^3.5.3",
     "nyc": "^11.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+  }
 }

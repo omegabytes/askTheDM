@@ -26,22 +26,13 @@
   },
   "homepage": "",
   "devDependencies": {
-<<<<<<< HEAD
-    "alexa-sdk": "^1.0.25",
-=======
-    "alexa-sdk": "^1.0.14",
->>>>>>> 9605526eb8cf1ded0d0de86cd3bebb5d92b6ad18
     "bespoken-tools": "^1.1.0",
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
     "nyc": "^11.2.1"
   },
-<<<<<<< HEAD
-  "dependencies": {}
-=======
   "dependencies": {
     "alexa-sdk": "^1.0.8"
   }
->>>>>>> 9605526eb8cf1ded0d0de86cd3bebb5d92b6ad18
 }
