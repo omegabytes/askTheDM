@@ -6,11 +6,11 @@ let APP_ID = process.env.appId;
 let langEN = languageStrings.en.translation;
 // noinspection JSUnusedLocalSymbols
 exports.handler = function (event, context, callback) {
-    let alexa = Alexa.handler(event, context);
-    alexa.appId = APP_ID;
-    alexa.resources = languageStrings;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
+	let alexa = Alexa.handler(event, context);
+	alexa.appId = APP_ID;
+	alexa.resources = languageStrings;
+	alexa.registerHandlers(handlers);
+	alexa.execute();
 };
 let handlers = {
     'ConditionsIntent': function () {
