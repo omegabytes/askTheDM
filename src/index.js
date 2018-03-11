@@ -49,7 +49,7 @@ let handlers = {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
 	},
-	'EquipmentPackIntent': function() {
+	'EquipmentPackIntent': function () {
 		let requestedEquipmentPack = dndLib.validateAndSetSlot(this.event.request.intent.slots.EquipmentPack);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getEquipmentPack(requestedEquipmentPack);

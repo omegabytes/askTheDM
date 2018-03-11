@@ -107,29 +107,28 @@ exports.getExhaustion = function (requestedExhaustionLevel) {
 	return output;
 };
 //returns the equipment packs that each player can choose
-exports.getEquipmentPack = function (requestedEquipmentPack){
-		let output = "";
-		let equipmentPack = langEN.EQUIPMENT_PACKS[requestedEquipmentPack];
-		let packItems = equipmentPack.items;
-
-		if(equipmentPack){
-			if(packItems){
-				output = "The contents of " + requestedEquipmentPack + " are ";
-				for(let i = 0; i < packItems.length; i++){
-					let itemObj = packItems[i];
-					for (let x in itemObj) {
-						output += (itemObj[x] + "\n");
-					}
+exports.getEquipmentPack = function (requestedEquipmentPack) {
+	let output = "";
+	let equipmentPack = langEN.EQUIPMENT_PACKS[requestedEquipmentPack];
+	let packItems = equipmentPack.items;
+	if (equipmentPack) {
+		if (packItems) {
+			output = "The contents of " + requestedEquipmentPack + " are ";
+			for (let i = 0; i < packItems.length; i++) {
+				let itemObj = packItems[i];
+				for (let x in itemObj) {
+					output += (itemObj[x] + "\n");
 				}
-			}else {
-				output = equipmentPack;
 			}
-		} else if (requestedEquipmentPack){
-			output = exports.notFoundMessage(this.event.request.intent.slots.EquipmentPack.name, requestedEquipmentPack);
 		} else {
-			output = langEN.UNHANDLED;
+			output = equipmentPack;
 		}
-		return output;
+	} else if (requestedEquipmentPack) {
+		output = exports.notFoundMessage(this.event.request.intent.slots.EquipmentPack.name, requestedEquipmentPack);
+	} else {
+		output = langEN.UNHANDLED;
+	}
+	return output;
 };
 //returns the feats that each player can choose
 exports.getFeats = function (requestedFeat, requestedFeatAttribute) {
@@ -214,7 +213,7 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
 	/* --classes.js-- slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
 	 * let ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
-     * let ClassPlayerLevel =
+	 * let ClassPlayerLevel =
 	 */
 	if (spell) { //if the requested spell exists
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
@@ -236,24 +235,24 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 		}
 	}
 	/*
-	   "Can a -wizard- cast _fireball_ at level =3=?"
-	   "... at ~player~ level =3=?"
-	   "... at ~slot~ level =3=?"
+	 "Can a -wizard- cast _fireball_ at level =3=?"
+	 "... at ~player~ level =3=?"
+	 "... at ~slot~ level =3=?"
 
-	   "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
+	 "Can a <PlayerClass> cast <Spell> at <Player_or_Slot> level <Level>?"
 
-		if(!this.attributes['player_or_slot']){
-			output = "say stuff";
-			this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
-		}
+	 if(!this.attributes['player_or_slot']){
+	 output = "say stuff";
+	 this.emit(':elicitSlot', 'playerSlotIntent'); //this calls new intent
+	 }
 	 */
 	//TODO: review this comment block for if session attribute doesn't exist.
 	/*
-	'MoreInfoIntent' : function () {
-		if(!this.attributes['character']) {
-			output = "Which character would you like more info about?";
-			this.emit(':elicitSlot','MoreInfo',output);
-		}
+	 'MoreInfoIntent' : function () {
+	 if(!this.attributes['character']) {
+	 output = "Which character would you like more info about?";
+	 this.emit(':elicitSlot','MoreInfo',output);
+	 }
 	 */
 	return output;
 };
