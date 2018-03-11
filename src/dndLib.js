@@ -1,5 +1,6 @@
 let languageStrings = require("./languageStrings");
 let langEN = languageStrings.en.translation;
+
 // not found message handler
 exports.notFoundMessage = function (slotName, userInput) {
 	let speechOutput = langEN.NOT_FOUND_MESSAGE;
@@ -205,33 +206,20 @@ exports.getSpellCast = function (requestedSpell) {
 };
 //returns the requested class spell information from the user
 exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requestedClass) {
-//TODO: logic for SpellClassIntent to handle user requesting playerLevel and slotLevel
-	let spell = langEN.SPELLS[requestedSpell];
-	let classes = langEN.CLASSES[requestedClass]; //this points to classes.js file, and should be used to compare the slotLevel and playerLevel attributes, with the spells that each class can cast at requested level
-	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
+	let spell 	= langEN.SPELLS[requestedSpell];
+	let level 	= langEN.SLOT_LEVEL[requestedSpellLevel];
 	let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"];
 	let output = "";
-	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
-	/* --classes.js-- slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
-	 * let ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
-     * let ClassPlayerLevel =
-	 */
+
 	if (spell) { //if the requested spell exists
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
-			output = requestedClass + "s can't cast " + requestedSpell + ".";
+			output = "no";
 		} else {
-			if (level >= requestedSpellLevel) { //if the requested level(player or spell_slot) exists, and the requested class exists
-				//set the following attribute states based on the user provided info
-				this.attributes['spell'] = requestedSpell;
-				this.attributes['level'] = requestedSpellLevel;
-				//call the spell dmg function and output the result
-				output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
-			} else if (!level && spell.spellClass.indexOf(requestedClass) > -1) {
-				//if the user does not provide a level
-				//TODO: work on logic for this
-				output = "No level provided";
+			if (spell.slotLevel > level) { //if the requested level(player or spell_slot) exists, and the requested class exists
+				// output = exports.getSpellDamage(requestedSpell, requestedSpellLevel);
+                output = "no";
 			} else {
-				output = "Yes. " + requestedSpell + " can be cast by the following classes. " + classes;
+				output = "yes";
 			}
 		}
 	}
