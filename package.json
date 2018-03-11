@@ -35,5 +35,6 @@
   },
   "dependencies": {
     "alexa-sdk": "^1.0.25",
+    "ask-cli": "^1.1.1"
   }
 }
