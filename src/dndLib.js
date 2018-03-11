@@ -191,7 +191,7 @@ exports.getSpellCast = function (requestedSpell) {
 	let output = "";
 	//user requests information on casting spell
 	if (spell) {
-		if (spell.slotLevel === "cantrip") {
+		if (spell.slotLevel === "0") {
 			output = requestedSpell + " is a " + spell.school + " cantrip. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
 		} else {
 			output = requestedSpell + " is a level " + spell.slotLevel + " " + spell.school + " spell. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
@@ -235,7 +235,7 @@ exports.getSpellDamage = function (requestedSpell, requestedSpellLevel) {
 	} else if (spell && typeof spell.damage === 'string') {
 		output = spell.damage;
 	} else {
-		if (spell && spell['slotLevel'] === 'cantrip') { //if the requested spell is a cantrip
+		if (spell && spell.slotLevel === "0") { //if the requested spell is a cantrip
 			//dmg     = spell.damage.playerLevel[level];
 			output = "At player level " + level + " the cantrip " + requestedSpell + " does " + dmg + " " + dmgType + ".";
 		} else if (spell && level > 9) {
