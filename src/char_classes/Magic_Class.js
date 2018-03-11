@@ -1,4 +1,5 @@
-import {Char_Class} from "./Char_Class";
+// import {Char_Class} from "./Char_Class";
+let Char_Class = require("./Char_Class");
 
 class Magic_Class extends Char_Class {
 	constructor(charClass) {

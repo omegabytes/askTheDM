@@ -1,4 +1,5 @@
-import languageStrings from "../languageStrings";
+let languageStrings = require("../languageStrings");
+let dndLib = require("../dndLib");
 let langEN = languageStrings.en.translation;
 let char_classes = langEN.CLASSES;
 let equipment = langEN.EQUIPMENT_PACKS;

@@ -1,4 +1,4 @@
-import languageStrings from "./languageStrings";
+let languageStrings = require("./languageStrings");
 let langEN = languageStrings.en.translation;
 // not found message handler
 exports.notFoundMessage = function (slotName, userInput) {
@@ -216,7 +216,6 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 	 * let ClassSlotLevel   = classes.class.class_spells.slot_level; //can now check this new variable against the minPlayerLevel?? //TODO: review this logic
      * let ClassPlayerLevel =
 	 */
-	//TODO: YOU LEFT OFF HERE TRYING TO FIGURE OUT WHY THIS FUNCTION NO LONGER WORKS
 	if (spell) { //if the requested spell exists
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
 			output = requestedClass + "s can't cast " + requestedSpell + ".";
