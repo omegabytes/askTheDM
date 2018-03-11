@@ -118,3 +118,5 @@ export class Warlock {
 		};
 	}
 }
+
+let warlock_class = new Warlock();

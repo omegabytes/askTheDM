@@ -118,3 +118,5 @@ export class Rogue {
 		};
 	}
 }
+
+let rogue_class = new Rogue();

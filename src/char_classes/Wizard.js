@@ -118,3 +118,5 @@ export class Wizard {
 		};
 	}
 }
+
+let wizard_class = new Wizard();

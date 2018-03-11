@@ -118,3 +118,5 @@ export class Ranger {
 		};
 	}
 }
+
+let ranger_class = new Ranger();

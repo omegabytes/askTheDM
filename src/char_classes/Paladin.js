@@ -271,3 +271,5 @@ export class Paladin {
 		};
 	}
 }
+
+let paladin_class = new Paladin();

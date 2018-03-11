@@ -118,3 +118,5 @@ export class Sorcerer {
 		};
 	}
 }
+
+let sorcerer_class = new Sorcerer();
