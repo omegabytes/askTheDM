@@ -209,7 +209,7 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 	let spell = langEN.SPELLS[requestedSpell];
 	let classes = langEN.CLASSES[requestedClass]; //this points to classes.js file, and should be used to compare the slotLevel and playerLevel attributes, with the spells that each class can cast at requested level
 	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
-	let spellClasses = langEN.CLASSES_LIST[requestedClass]; //used to compare if the requested class by the user exists
+	let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"];
 	let output = "";
 	//logic for checking if classes can cast certain spells should goes as follows //TODO: Have code review with alex over this
 	/* --classes.js-- slot_level : [minPlayerLvl, "spell 1", "spell 2", ...],
@@ -231,7 +231,7 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 				//TODO: work on logic for this
 				output = "No level provided";
 			} else {
-				output = "Yes. " + requestedSpell + " can be cast by the following classes. " + classes; //FIXME: make sure 'classes' points to the list of classes found in classes.js
+				output = "Yes. " + requestedSpell + " can be cast by the following classes. " + classes;
 			}
 		}
 	}

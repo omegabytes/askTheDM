@@ -1,4 +1,4 @@
-module.exports = {  //TODO: take out 'At higher Level:' in long description and place in its own attribute
+module.exports = {
 	"SPELL_ATTRIBUTES": {
 		"casting time": "castingTime",
 		"cast": "castingTime",
