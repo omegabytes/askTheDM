@@ -1,6 +1,5 @@
 let languageStrings = require("./languageStrings");
 let langEN = languageStrings.en.translation;
-
 // not found message handler
 exports.notFoundMessage = function (slotName, userInput) {
 	let speechOutput = langEN.NOT_FOUND_MESSAGE;
@@ -196,7 +195,7 @@ exports.getSpellCast = function (requestedSpell) {
 		} else {
 			output = requestedSpell + " is a level " + spell.slotLevel + " " + spell.school + " spell. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
 		}
-	} else if (!spell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
 		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
 	} else {
 		output = langEN.UNHANDLED;
@@ -205,21 +204,24 @@ exports.getSpellCast = function (requestedSpell) {
 };
 //returns the requested class spell information from the user
 exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requestedClass) {
-	let spell 	= langEN.SPELLS[requestedSpell];
-	let level 	= langEN.SLOT_LEVEL[requestedSpellLevel];
+	let spell = langEN.SPELLS[requestedSpell];
+	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
 	let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"];
 	let output = "";
-
 	if (spell) { //if the requested spell exists
 		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
 			output = "no";
 		} else {
 			if (spell.slotLevel > level) {
-                output = "no";
+				output = "no";
 			} else {
 				output = "yes";
 			}
 		}
+	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+	} else {
+		output = langEN.UNHANDLED; //no longer need unhandled
 	}
 	return output;
 };
@@ -227,26 +229,30 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 exports.getSpellDamage = function (requestedSpell, requestedSpellLevel) {
 	let spell = langEN.SPELLS[requestedSpell];
 	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
-	let output = "";
-	let dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
-	let dmgType = spell.damage.type;
-	if (spell && spell.damage === undefined) {
-		output = "That spell does not do damage."
-	} else if (spell && typeof spell.damage === 'string') {
-		output = spell.damage;
-	} else {
-		if (spell && spell.slotLevel === "0") { //if the requested spell is a cantrip
-			//dmg     = spell.damage.playerLevel[level];
-			output = "At player level " + level + " the cantrip " + requestedSpell + " does " + dmg + " " + dmgType + ".";
-		} else if (spell && level > 9) {
-			output = "Player level only effects the damage done by cantrips. " + requestedSpell + " is a spell, and is cast using spell slots.";
-		} else if (spell && !level) {
-			output = "For damage amount, please include the slot or player level you wish to cast it at.";
-		} else if (!spell || !level) {
-			output = "I didn't hear the level or the spell name, please ask again.";
-		} else { //if the requested spell is a normal spell
-			output = "A level " + level + ", " + requestedSpell + " does " + dmg + " " + dmgType + ".";
+	let output = "That spell does not do damage.";
+	let dmg;
+	let dmgType;
+	if (spell && level) {
+		if (spell.damage) {
+			if (spell.damage.desc) {
+				output = spell.damage.desc;
+			}
+			if (spell.damage.type) {
+				dmg = spell.damage.levels[level]; //stores the the damage of the spell at requested level
+				dmgType = spell.damage.type;
+				if (spell.slotLevel === "0") { //if the requested spell is a cantrip
+					output = "At player level " + level + " the cantrip " + requestedSpell + " does " + dmg + " " + dmgType + ".";
+				} else if (level > 9) { //if the requested level is above 9, it does cantrip damage progression
+					output = "Player level only effects the damage done by cantrips. " + requestedSpell + " is a spell, and is cast using spell slots.";
+				} else {
+					output = "A level " + level + ", " + requestedSpell + " does " + dmg + " " + dmgType + ".";
+				}
+			}
 		}
+	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+	} else {
+		output = "I didn't hear the level or the spell name, please ask again.";
 	}
 	return output;
 };
@@ -254,52 +260,45 @@ exports.getSpellDamage = function (requestedSpell, requestedSpellLevel) {
 exports.getSpellHeal = function (requestedSpell, requestedSpellLevel) {
 	let spell = langEN.SPELLS[requestedSpell];
 	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
-	let output = "";
-	let heals = spell.healing.levels[level];
-	if (spell && spell.healing === undefined) {
-		output = "That spell does not restore health.";
-	} else if (spell && typeof spell.healing === "string") {
-		output = spell.healing;
-	} else if (spell && !level) { //if the requested spell is provided but not the level
-		output = "For healing amount, please include the spell slot level you wish to cast it at.";
-	} else if (level && !spell) { //if the level is provided but not the spell
+	let output = "That spell does not restore health.";
+	let heals;
+	if (spell && level) {
+		if (spell.healing) {
+			output = spell.healing.desc;
+		}
+		if (spell.healing.levels) {
+			heals = spell.healing.levels[level];
+			if (heals > 9) {
+				output = "Healing spells can not be cast using spell slots above level 9.";
+			} else {
+				output = "At level " + requestedSpellLevel + " " + requestedSpell + " heals " + heals + " plus your spellcasting ability" +
+					" modifier.";
+			}
+		}
+	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
 		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
 	} else {
-		//heals = spell.healing.levels[level];
-		if (spell && level > 9) { //if the requested spell is cast using a slot above 9th
-			output = "Healing spells can not be cast using spell slots above level 9.";
-		} else {
-			output = "At level " + level + " " + requestedSpell + " heals " + heals + " plus your spellcasting ability modifier.";
-		}
+		output = "For healing amount, please include the spell slot level you wish to cast it at.";
 	}
 	return output;
 };
 //returns the requested spell and spell attribute from the user
 exports.getSpells = function (requestedSpell, requestedSpellAttribute) {
-	let output = "";
 	let spell = langEN.SPELLS[requestedSpell];                    //spell exists in the list of spells
 	let spellAttribute = langEN.SPELL_ATTRIBUTES[requestedSpellAttribute]; //spell attribute exists in the list of attributes
+	let output = spell[spellAttribute];
 	//if the user asks for the attribute of a spell
-	if (spell && requestedSpellAttribute) {
+	if (spell && spellAttribute) {
 		//if the attribute is damage and the requested spell does not have damage
-		if ((requestedSpellAttribute === "damage" || requestedSpellAttribute === "healing") && spell[spellAttribute] === undefined) {
-			output = requestedSpell + " does not have " + requestedSpellAttribute + ".";
-		} else if ((requestedSpellAttribute === "damage" || requestedSpellAttribute === "healing") && typeof spellAttribute === typeof String) {
-			output = spell[spellAttribute];
-		} else if (requestedSpellAttribute === "damage") {
-			let dmgType = spell.damage.type;
-			output = requestedSpell + " does " + dmgType + " . For damage amount, please include the slot or player level you wish to cast it at.";
-		} else if (requestedSpellAttribute === "healing") { //i think we need this, but im not 100% sure
-			output = "For healing amount, please include the spell slot level you wish to cast it at.";
-		} else {
-			output = spell[spellAttribute];
+		if (requestedSpellAttribute === "damage") {
+			output = exports.getSpellDamage(requestedSpell);
+		} else if (requestedSpellAttribute === "healing") {
+			output = exports.getSpellHeal(requestedSpell);
 		}
-	} else if (spell && !spellAttribute) {
-		output = spell.shortDescription;
 	} else if (requestedSpell) {
 		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
 	} else {
-		output = langEN.UNHANDLED;
+		output = spell.shortDescription;
 	}
 	return output;
 };
