@@ -40,7 +40,7 @@ module.exports = {
 			"prereq": "Strength 13 or higher."
 		}, "great weapon master": {
 			"description": "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes.",
-			"benefits": "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with a critical hit, you can make one melee weapon attack as a bonus action. Before you make a melee attack with a heavy weapon that you are proficient with, you can chooose to take a -5 penalty to the attack roll, if it hits add +10 to the attack's damage."
+			"benefits": "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with a critical hit, you can make one melee weapon attack as a bonus action. Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll, if it hits add +10 to the attack's damage."
 		}, "healer": {
 			"description": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight.",
 			"benefits": "When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point. As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6+4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
@@ -63,7 +63,7 @@ module.exports = {
 			"description": "You have trained to become a master of fighting in light armor.",
 			"benefits": "Increase your Strength or Dexterity score by 1 to a maximum of 20, and gain proficiency with light armor."
 		}, "linguist": {
-			"description": "You have studied languages and codes throughly. Becoming able to decipher three languages that you have studied, and can create written ciphers based on them.",
+			"description": "You have studied languages and codes thoroughly. Becoming able to decipher three languages that you have studied, and can create written ciphers based on them.",
 			"benefits": "Increase you Intelligence score by 1 to a maximum of 20. You also learn 3 languages of your choice, and can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check(DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
 		}, "lucky": {
 			"description": "You have inexplicable luck that seems to kick in at just the right moment.",
@@ -124,12 +124,12 @@ module.exports = {
 			"benefits": "You can try to hide when you are lightly obscured from a creature that you are hiding from. When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position. Additionally, dim light doesn't impose disadvantage on your Wisdom(Perception) checks relying on sight.",
 			"prereq": "Dexterity 13 or higher."
 		}, "spell sniper": {
-			"description": "You have learned techniques to enhance your spells to better suit your needs. You can also aim your spells with better percision, completely ignoring half and three-quarters cover.",
+			"description": "You have learned techniques to enhance your spells to better suit your needs. You can also aim your spells with better precision, completely ignoring half and three-quarters cover.",
 			"benefits": "When you cast a spell that requires you to make an attack roll, the spell's range is doubled. Your ranged spell attacks ignore half cover and three-quarters cover. Additionally, you learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid, and Intelligence for wizard.",
 			"prereq": "The ability to cast at lease one spell."
 		}, "tavern brawler": {
 			"description": "You are accustomed to the no holds barred way of fighting after a drunken night, using any weapon that happens to be at hand.",
-			"benefits": "Increase your Strength or Constitution score by 1 to a maximum of 20, and are proficient with improvised weapons and unarmed strikes, which uses a d4 for damage. When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus acion to attempt to grapple the target."
+			"benefits": "Increase your Strength or Constitution score by 1 to a maximum of 20, and are proficient with improvised weapons and unarmed strikes, which uses a d4 for damage. When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target."
 		}, "tough": {
 			"description": "You have built up your resolve over your time adventuring. When you have conquered new heights in yourself, you know how to steel your resolve even further.",
 			"benefits": "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
