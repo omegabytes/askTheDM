@@ -2,13 +2,13 @@ let languageStrings = require("./languageStrings");
 let langEN = languageStrings.en.translation;
 // not found message handler
 exports.notFoundMessage = function (slotName, userInput) {
-	let speechOutput = langEN.NOT_FOUND_MESSAGE;
+	let output = langEN.NOT_FOUND_MESSAGE;
 	if (userInput) {
-		speechOutput += "the " + slotName + " info for " + userInput + ".";
+		output += "the " + slotName + " info for " + userInput + ".";
 	} else {
-		speechOutput += langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
+		output += langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
 	}
-	return speechOutput;
+	return output;
 };
 // returns the page(s) where a subject can be found
 // in the 5e player's handbook
@@ -54,7 +54,7 @@ exports.getConditions = function (requestedConditionName) {
 	if (condition) { //user requests information on condition
 		output = condition;
 	} else if (requestedConditionName) {
-		output = exports.notFoundMessage(this.event.request.intent.slots.Condition.name, requestedConditionName);
+		output = exports.notFoundMessage(condition.name, requestedConditionName);
 	} else {
 		output = langEN.UNHANDLED;
 	}
@@ -98,11 +98,9 @@ exports.getExhaustion = function (requestedExhaustionLevel) {
 	if (exhaustionLevel) { //user requests information on exhaustion levels
 		output = exhaustionLevel;
 	} else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.ExLevel.name, requestedExhaustionLevel) + " exhaustion.";
-	} else if (!requestedExhaustionLevel) {
+		output = exports.notFoundMessage(exhaustionLevel.name, requestedExhaustionLevel) + " exhaustion.";
+	} else{
 		output = langEN.CONDITIONS.exhaustion;
-	} else {
-		output = langEN.UNHANDLED;
 	}
 	return output;
 };
@@ -117,14 +115,14 @@ exports.getEquipmentPack = function (requestedEquipmentPack) {
 			for (let i = 0; i < packItems.length; i++) {
 				let itemObj = packItems[i];
 				for (let x in itemObj) {
-					output += (itemObj[x] + "\n");
+					output += (itemObj[x.hasOwnProperty()] + "\n"); // fixme:not sure if this is working, will have to come back and double check
 				}
 			}
 		} else {
 			output = equipmentPack;
 		}
 	} else if (requestedEquipmentPack) {
-		output = exports.notFoundMessage(this.event.request.intent.slots.EquipmentPack.name, requestedEquipmentPack);
+		output = exports.notFoundMessage(equipmentPack.name, requestedEquipmentPack);
 	} else {
 		output = langEN.UNHANDLED;
 	}
@@ -133,17 +131,15 @@ exports.getEquipmentPack = function (requestedEquipmentPack) {
 //returns the feats that each player can choose
 exports.getFeats = function (requestedFeat, requestedFeatAttribute) {
 	let output = "";
-	let thisFeat = langEN.FEATS[requestedFeat];
-	let thisFeatAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
+	let Feat = langEN.FEATS[requestedFeat];
+	let FeatAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 	//user requests information on feats
-	if (thisFeat && thisFeatAttribute) {
-		output = thisFeat[thisFeatAttribute];
-	} else if (thisFeat && !thisFeatAttribute) {
-		output = thisFeat.description;
+	if (Feat && FeatAttribute) {
+		output = Feat[FeatAttribute];
 	} else if (requestedFeat) { //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.Feat.name, requestedFeat);
+		output = exports.notFoundMessage(Feat.name, requestedFeat);
 	} else {
-		output = langEN.UNHANDLED;
+		output = Feat.description;
 	}
 	return output;
 };
@@ -154,33 +150,25 @@ exports.getIndex = function (requestedIndexName) {
 	if (index) {
 		output = exports.pageFind(index, requestedIndexName);
 	} else if (requestedIndexName) {
-		output = exports.notFoundMessage(this.event.request.intent.slots.Index.name, requestedIndexName);
-	} else {
-		output = langEN.UNHANDLED;
+		output = exports.notFoundMessage(index.name, requestedIndexName);
 	}
 	return output;
 };
 //returns the items and their respective info requested from the user
 exports.getItems = function (requestedItem, requestedItemAttribute) {
-	let output = "";
 	let item = langEN.ITEMS[requestedItem];
 	let itemAttribute = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
+	let output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
 	if (item && itemAttribute) {
-		if (!item[itemAttribute]) { //if requested item attribute doesnt exist for requested item
-			output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
-		} else {
-			output = item[itemAttribute];
-		}
-	} else if (item && !itemAttribute) { //user provides the item but the attributes doesnt exist. ie: shield has attribute 'strength', while daggers do not
 		if (item.itemType) {
 			output = "It is a " + item.itemType;
 		} else {
 			output = "It is a " + item.category;
 		}
 	} else if (requestedItem) {
-		output = exports.notFoundMessage(this.event.request.intent.slots.Item.name, requestedItem);
+		output = exports.notFoundMessage(item.name, requestedItem);
 	} else {
-		output = langEN.UNHANDLED;
+		output = item[itemAttribute];
 	}
 	return output;
 };
@@ -196,7 +184,7 @@ exports.getSpellCast = function (requestedSpell) {
 			output = requestedSpell + " is a level " + spell.slotLevel + " " + spell.school + " spell. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+		output = exports.notFoundMessage(spell.name, requestedSpell);
 	} else {
 		output = langEN.UNHANDLED;
 	}
@@ -219,7 +207,7 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 			}
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+		output = exports.notFoundMessage(spell.name, requestedSpell);
 	} else {
 		output = langEN.UNHANDLED; //no longer need unhandled
 	}
@@ -250,7 +238,7 @@ exports.getSpellDamage = function (requestedSpell, requestedSpellLevel) {
 			}
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+		output = exports.notFoundMessage(spell.name, requestedSpell);
 	} else {
 		output = "I didn't hear the level or the spell name, please ask again.";
 	}
@@ -276,7 +264,7 @@ exports.getSpellHeal = function (requestedSpell, requestedSpellLevel) {
 			}
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
-		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+		output = exports.notFoundMessage(spell.name, requestedSpell);
 	} else {
 		output = "For healing amount, please include the spell slot level you wish to cast it at.";
 	}
@@ -295,8 +283,8 @@ exports.getSpells = function (requestedSpell, requestedSpellAttribute) {
 		} else if (requestedSpellAttribute === "healing") {
 			output = exports.getSpellHeal(requestedSpell);
 		}
-	} else if (requestedSpell) {
-		output = exports.notFoundMessage(this.event.request.intent.slots.Spell.name, requestedSpell);
+	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
+		output = exports.notFoundMessage(spell.name, requestedSpell);
 	} else {
 		output = spell.shortDescription;
 	}
