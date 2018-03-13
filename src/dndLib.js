@@ -99,7 +99,7 @@ exports.getExhaustion = function (requestedExhaustionLevel) {
 		output = exhaustionLevel;
 	} else if (requestedExhaustionLevel) { //otherwise, the user asks for an unknown exhaustion level, or Alexa doesn't understand
 		output = exports.notFoundMessage(exhaustionLevel.name, requestedExhaustionLevel) + " exhaustion.";
-	} else{
+	} else {
 		output = langEN.CONDITIONS.exhaustion;
 	}
 	return output;
@@ -136,7 +136,7 @@ exports.getFeats = function (requestedFeat, requestedFeatAttribute) {
 	//user requests information on feats
 	if (feat) {
 		output = feat.description;
-		if(featAttribute) {
+		if (featAttribute) {
 			output = feat[featAttribute];
 		}
 	} else if (requestedFeat) { //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
@@ -161,10 +161,10 @@ exports.getItems = function (requestedItem, requestedItemAttribute) {
 	let itemAttribute = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
 	let output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
 	if (item) {
-		if(itemAttribute) {
+		if (itemAttribute) {
 			if (item.itemType) {
 				output = "It is a " + item.itemType;
-			}  else {
+			} else {
 				output = item[itemAttribute];
 			}
 		}
@@ -181,9 +181,9 @@ exports.getSpellCast = function (requestedSpell) {
 	//user requests information on casting spell
 	if (spell) {
 		if (spell.slotLevel === "0") {
-			output = requestedSpell + " is a " + spell.school + " cantrip. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
+			output = requestedSpell + " is a " + spell.school + " cantrip. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range + ".";
 		} else {
-			output = requestedSpell + " is a level " + spell.slotLevel + " " + spell.school + " spell. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range;
+			output = requestedSpell + " is a level " + spell.slotLevel + " " + spell.school + " spell. To cast, you need the following: " + spell.components + ". The spell duration is " + spell.duration + " and has a range of " + spell.range + ".";
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
 		output = exports.notFoundMessage(spell.name, requestedSpell);
