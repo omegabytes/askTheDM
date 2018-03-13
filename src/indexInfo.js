@@ -2,2185 +2,3275 @@ module.exports = {
 	"INDEX": {
 		"0 hit points": {
 			"pages": ["197-198"]
-		}, "ability check": {
+		},
+		"ability check": {
 			"pages": [7, 12, "173-179", 186]
-		}, "ability modifier": {
+		},
+		"ability modifier": {
 			"pages": [7, 13, 173]
-		}, "ability score": {
+		},
+		"ability score": {
 			"pages": [7, "12-13", 173]
-		}, "ability score improvement": {
+		},
+		"ability score improvement": {
 			"pages": [45, "see specific class entries"]
-		}, "abjuration": {
+		},
+		"abjuration": {
 			"pages": [115, 204]
-		}, "abjuration savant": {
+		},
+		"abjuration savant": {
 			"pages": [115]
-		}, "abjure enemy": {
+		},
+		"abjure enemy": {
 			"pages": [88]
-		}, "abjurer": {
+		},
+		"abjurer": {
 			"pages": [115]
-		}, "the abyss": {
+		},
+		"the abyss": {
 			"pages": [302]
-		}, "abyssal": {
+		},
+		"abyssal": {
 			"pages": [123]
-		}, "ac": {
+		},
+		"ac": {
 			"pages": [7, 14, 144, 177]
-		}, "archeron": {
+		},
+		"archeron": {
 			"pages": [302]
-		}, "acid damage": {
+		},
+		"acid damage": {
 			"pages": [196]
-		}, "acolyte": {
+		},
+		"acolyte": {
 			"pages": [127]
-		}, "acolyte of nature": {
+		},
+		"acolyte of nature": {
 			"pages": [62]
-		}, "acrobatics": {
+		},
+		"acrobatics": {
 			"pages": [176]
-		}, "action": {
+		},
+		"action": {
 			"pages": [189, "192-193"]
-		}, "action surge": {
+		},
+		"action surge": {
 			"pages": [72]
-		}, "advancement": {
+		},
+		"advancement": {
 			"pages": [15]
-		}, "advantage": {
+		},
+		"advantage": {
 			"pages": [7, 173]
-		}, "adventure": {
+		},
+		"adventure": {
 			"pages": [5, "7-8"]
-		}, "adventurer": {
+		},
+		"adventurer": {
 			"pages": [5, "11-15"]
-		}, "adventuring": {
+		},
+		"adventuring": {
 			"pages": ["181-187"]
-		}, "adventuring gear": {
+		},
+		"adventuring gear": {
 			"pages": [148, "150-153"]
-		}, "age": {
+		},
+		"age": {
 			"pages": [17]
-		}, "agonizing blast": {
+		},
+		"agonizing blast": {
 			"pages": [110]
-		}, "alignment": {
+		},
+		"alignment": {
 			"pages": [122]
-		}, "alter memories": {
+		},
+		"alter memories": {
 			"pages": [117]
-		}, "ammunition": {
+		},
+		"ammunition": {
 			"pages": [146]
-		}, "animal handling": {
+		},
+		"animal handling": {
 			"pages": [178]
-		}, "aquan": {
+		},
+		"aquan": {
 			"pages": [123]
-		}, "arborea": {
+		},
+		"arborea": {
 			"pages": [302]
-		}, "arcadia": {
+		},
+		"arcadia": {
 			"pages": [302]
-		}, "arcana": {
+		},
+		"arcana": {
 			"pages": [177]
-		}, "arcane charge": {
+		},
+		"arcane charge": {
 			"pages": [75]
-		}, "arcane focus": {
+		},
+		"arcane focus": {
 			"pages": [151]
-		}, "arcane magic": {
+		},
+		"arcane magic": {
 			"pages": [205]
-		}, "arcane recovery": {
+		},
+		"arcane recovery": {
 			"pages": [115]
-		}, "arcane tradition": {
+		},
+		"arcane tradition": {
 			"pages": [115]
-		}, "arcane traditions": {
+		},
+		"arcane traditions": {
 			"pages": ["115-119"]
-		}, "arcane trickster": {
+		},
+		"arcane trickster": {
 			"pages": [97]
-		}, "arcane ward": {
+		},
+		"arcane ward": {
 			"pages": [115]
-		}, "archdruid": {
+		},
+		"archdruid": {
 			"pages": ["67-68"]
-		}, "archery": {
+		},
+		"archery": {
 			"pages": [72, 91]
-		}, "the archfey": {
+		},
+		"the archfey": {
 			"pages": ["108-109"]
-		}, "area of effect": {
+		},
+		"area of effect": {
 			"pages": ["204-205"]
-		}, "armor and shields": {
+		},
+		"armor and shields": {
 			"pages": ["144-146"]
-		}, "armor class": {
+		},
+		"armor class": {
 			"pages": [7, 14, 144, 177]
-		}, "armor of shadows": {
+		},
+		"armor of shadows": {
 			"pages": [110]
-		}, "armor proficiency": {
+		},
+		"armor proficiency": {
 			"pages": [144]
-		}, "artificer's lore": {
+		},
+		"artificer's lore": {
 			"pages": [37]
-		}, "ascendant step": {
+		},
+		"ascendant step": {
 			"pages": [110]
-		}, "aspect of the beast": {
+		},
+		"aspect of the beast": {
 			"pages": [50]
-		}, "assassin": {
+		},
+		"assassin": {
 			"pages": [97]
-		}, "assassinate": {
+		},
+		"assassinate": {
 			"pages": [97]
-		}, "astral plane": {
+		},
+		"astral plane": {
 			"pages": [302]
-		}, "athletics": {
+		},
+		"athletics": {
 			"pages": [175]
-		}, "attack of opportunity": {
+		},
+		"attack of opportunity": {
 			"pages": [195]
-		}, "attack": {
+		},
+		"attack": {
 			"pages": [14, "193-196"]
-		}, "attack action": {
+		},
+		"attack action": {
 			"pages": [192]
-		}, "attack modifier": {
+		},
+		"attack modifier": {
 			"pages": [14, 194]
-		}, "attack roll": {
+		},
+		"attack roll": {
 			"pages": [7, 14, 176, 177, 194]
-		}, "auran": {
+		},
+		"auran": {
 			"pages": [123]
-		}, "aura of courage": {
+		},
+		"aura of courage": {
 			"pages": [85]
-		}, "aura of devotion": {
+		},
+		"aura of devotion": {
 			"pages": [86]
-		}, "aura of protection": {
+		},
+		"aura of protection": {
 			"pages": [85]
-		}, "aura of warding": {
+		},
+		"aura of warding": {
 			"pages": [87]
-		}, "automatic hit": {
+		},
+		"automatic hit": {
 			"pages": [194]
-		}, "automatic miss": {
+		},
+		"automatic miss": {
 			"pages": [194]
-		}, "avatar of battle": {
+		},
+		"avatar of battle": {
 			"pages": [63]
-		}, "avenging angel": {
+		},
+		"avenging angel": {
 			"pages": [88]
-		}, "awakened mind": {
+		},
+		"awakened mind": {
 			"pages": [110]
-		}, "background": {
+		},
+		"background": {
 			"pages": [11, 12, "13-14", "125-141"]
-		}, "bad reputation": {
+		},
+		"bad reputation": {
 			"pages": [139]
-		}, "barbarian": {
+		},
+		"barbarian": {
 			"pages": [45, "46-50"]
-		}, "bard": {
+		},
+		"bard": {
 			"pages": [45, "51-55"]
-		}, "bard college": {
+		},
+		"bard college": {
 			"pages": [54]
-		}, "bard colleges": {
+		},
+		"bard colleges": {
 			"pages": ["54-55"]
-		}, "bardic inspiration": {
+		},
+		"bardic inspiration": {
 			"pages": ["53-54"]
-		}, "barding": {
+		},
+		"barding": {
 			"pages": [155, 310]
-		}, "base attack bonus": {
+		},
+		"base attack bonus": {
 			"pages": [12, "15 (table)", 173]
-		}, "base save bonus": {
+		},
+		"base save bonus": {
 			"pages": [12, "15 (table)", 173]
-		}, "bat": {
+		},
+		"bat": {
 			"pages": [304]
-		}, "battle magic": {
+		},
+		"battle magic": {
 			"pages": [55]
-		}, "battle master": {
+		},
+		"battle master": {
 			"pages": [73]
-		}, "black bear": {
+		},
+		"black bear": {
 			"pages": [304]
-		}, " brown bear": {
+		},
+		" brown bear": {
 			"pages": [304]
-		}, "the beastlands": {
+		},
+		"the beastlands": {
 			"pages": [302]
-		}, "beast master": {
+		},
+		"beast master": {
 			"pages": [93]
-		}, "beast speech": {
+		},
+		"beast speech": {
 			"pages": [110]
-		}, "beast spells": {
+		},
+		"beast spells": {
 			"pages": [67]
-		}, "beguiling defenses": {
+		},
+		"beguiling defenses": {
 			"pages": [109]
-		}, "beguiling influence": {
+		},
+		"beguiling influence": {
 			"pages": [110]
-		}, "bend luck": {
+		},
+		"bend luck": {
 			"pages": [103]
-		}, "benign transposition": {
+		},
+		"benign transposition": {
 			"pages": [116]
-		}, "bestial fury": {
+		},
+		"bestial fury": {
 			"pages": [93]
-		}, "bewitching whispers": {
+		},
+		"bewitching whispers": {
 			"pages": [110]
-		}, "blessed healer": {
+		},
+		"blessed healer": {
 			"pages": [60]
-		}, "blessings of knowledge": {
+		},
+		"blessings of knowledge": {
 			"pages": [59]
-		}, "blessing of the trickster": {
+		},
+		"blessing of the trickster": {
 			"pages": [63]
-		}, "blinded": {
+		},
+		"blinded": {
 			"pages": [290]
-		}, "blindsense": {
+		},
+		"blindsense": {
 			"pages": [96]
-		}, "blindsight": {
+		},
+		"blindsight": {
 			"pages": [183]
-		}, "bludgeoning damage": {
+		},
+		"bludgeoning damage": {
 			"pages": [196]
-		}, "boar": {
+		},
+		"boar": {
 			"pages": [304]
-		}, "bonds": {
+		},
+		"bonds": {
 			"pages": [124]
-		}, "bonus": {
+		},
+		"bonus": {
 			"pages": [7]
-		}, "bonus action": {
+		},
+		"bonus action": {
 			"pages": [189]
-		}, "book of ancient secrets": {
+		},
+		"book of ancient secrets": {
 			"pages": [110]
-		}, "book of shadows": {
+		},
+		"book of shadows": {
 			"pages": [108]
-		}, "border ethereal": {
+		},
+		"border ethereal": {
 			"pages": [302]
-		}, "brave": {
+		},
+		"brave": {
 			"pages": [28]
-		}, "breaking concentration": {
+		},
+		"breaking concentration": {
 			"pages": [203]
-		}, "breath of winter": {
+		},
+		"breath of winter": {
 			"pages": [81]
-		}, "breath weapon": {
+		},
+		"breath weapon": {
 			"pages": [34]
-		}, "bright light": {
+		},
+		"bright light": {
 			"pages": [183]
-		}, "bringing back the dead": {
+		},
+		"bringing back the dead": {
 			"pages": "see the spell descriptions for raise dead (270), reincarnate (271), resurrection (272), revivify (272), true resurrection (284)"
-		}, "brutal critical": {
+		},
+		"brutal critical": {
 			"pages": [49]
-		}, "bull rush": {
+		},
+		"bull rush": {
 			"pages": [195]
-		}, "by popular demand": {
+		},
+		"by popular demand": {
 			"pages": [130]
-		}, "bytopia": {
+		},
+		"bytopia": {
 			"pages": [302]
-		}, "calishite": {
+		},
+		"calishite": {
 			"pages": [30]
-		}, "campaign": {
+		},
+		"campaign": {
 			"pages": [5, 6]
-		}, "cantrips": {
+		},
+		"cantrips": {
 			"pages": [201]
-		}, "carceri": {
+		},
+		"carceri": {
 			"pages": [302]
-		}, "careful spell": {
+		},
+		"careful spell": {
 			"pages": [102]
-		}, "carrying capacity": {
+		},
+		"carrying capacity": {
 			"pages": [176]
-		}, "casting a spell": {
+		},
+		"casting a spell": {
 			"pages": ["201-205"]
-		}, "casting time": {
+		},
+		"casting time": {
 			"pages": [202]
-		}, "cat": {
+		},
+		"cat": {
 			"pages": [305]
-		}, "celestial": {
+		},
+		"celestial": {
 			"pages": [123]
-		}, "chains of carceri": {
+		},
+		"chains of carceri": {
 			"pages": [110]
-		}, "champion": {
+		},
+		"champion": {
 			"pages": [72]
-		}, "channel divinity, cleric": {
+		},
+		"channel divinity, cleric": {
 			"pages": ["58-63"]
-		}, "channel divinity, paladin": {
+		},
+		"channel divinity, paladin": {
 			"pages": ["86-88"]
-		}, "chaotic evil": {
+		},
+		"chaotic evil": {
 			"pages": [122]
-		}, "chaotic good": {
+		},
+		"chaotic good": {
 			"pages": [122]
-		}, "chaotic neutral": {
+		},
+		"chaotic neutral": {
 			"pages": [122]
-		}, "character": {
+		},
+		"character": {
 			"pages": [5, "11-15"]
-		}, "character sheet": {
+		},
+		"character sheet": {
 			"pages": [11, "317-319"]
-		}, "charisma": {
+		},
+		"charisma": {
 			"pages": [12, "178-179"]
-		}, "charlatan": {
+		},
+		"charlatan": {
 			"pages": [128]
-		}, "charm animals and plants": {
+		},
+		"charm animals and plants": {
 			"pages": [62]
-		}, "charmed": {
+		},
+		"charmed": {
 			"pages": [290]
-		}, "check": {
+		},
+		"check": {
 			"pages": "see ability check"
-		}, "chondathan": {
+		},
+		"chondathan": {
 			"pages": [30]
-		}, "circle forms": {
+		},
+		"circle forms": {
 			"pages": [69]
-		}, "circle of the land": {
+		},
+		"circle of the land": {
 			"pages": [68]
-		}, "circle of the moon": {
+		},
+		"circle of the moon": {
 			"pages": [69]
-		}, "circle spells": {
+		},
+		"circle spells": {
 			"pages": [68]
-		}, "city secrets": {
+		},
+		"city secrets": {
 			"pages": [141]
-		}, "cleansing touch": {
+		},
+		"cleansing touch": {
 			"pages": [85]
-		}, "cloak of shadows": {
+		},
+		"cloak of shadows": {
 			"pages": [63, 80]
-		}, "class": {
+		},
+		"class": {
 			"pages": [11, 45]
-		}, "clear path to the target": {
+		},
+		"clear path to the target": {
 			"pages": [204]
-		}, "clench of the north wind": {
+		},
+		"clench of the north wind": {
 			"pages": [81]
-		}, "cleric": {
+		},
+		"cleric": {
 			"pages": [45, "56-63"]
-		}, "climbing": {
+		},
+		"climbing": {
 			"pages": [182, 190]
-		}, "coinage": {
+		},
+		"coinage": {
 			"pages": [143]
-		}, "cold damage": {
+		},
+		"cold damage": {
 			"pages": [196]
-		}, "college of lore": {
+		},
+		"college of lore": {
 			"pages": [54]
-		}, "college of valor": {
+		},
+		"college of valor": {
 			"pages": [55]
-		}, "colossus slayer": {
+		},
+		"colossus slayer": {
 			"pages": [93]
-		}, "combat": {
+		},
+		"combat": {
 			"pages": [8, "189-198"]
-		}, "combat inspiration": {
+		},
+		"combat inspiration": {
 			"pages": [55]
-		}, "combat round": {
+		},
+		"combat round": {
 			"pages": [181, 189]
-		}, "combat superiority": {
+		},
+		"combat superiority": {
 			"pages": [73]
-		}, "combat wild shape": {
+		},
+		"combat wild shape": {
 			"pages": [69]
-		}, "combining spell effects": {
+		},
+		"combining spell effects": {
 			"pages": [205]
-		}, "commander's strike maneuver": {
+		},
+		"commander's strike maneuver": {
 			"pages": [74]
-		}, "common": {
+		},
+		"common": {
 			"pages": [123]
-		}, "common races": {
+		},
+		"common races": {
 			"pages": [17]
-		}, "command undead": {
+		},
+		"command undead": {
 			"pages": [119]
-		}, "spell component": {
+		},
+		"spell component": {
 			"pages": [203]
-		}, "concentration": {
+		},
+		"concentration": {
 			"pages": ["203-204"]
-		}, "conditions": {
+		},
+		"conditions": {
 			"pages": ["290-292"]
-		}, "cone": {
+		},
+		"cone": {
 			"pages": [204]
-		}, "conjuration": {
+		},
+		"conjuration": {
 			"pages": [116, 203]
-		}, "conjuration savant": {
+		},
+		"conjuration savant": {
 			"pages": [116]
-		}, "conjurer": {
+		},
+		"conjurer": {
 			"pages": [116]
-		}, "constitution": {
+		},
+		"constitution": {
 			"pages": [12, 172]
-		}, "container capacity": {
+		},
+		"container capacity": {
 			"pages": [153]
-		}, "contest": {
+		},
+		"contest": {
 			"pages": [174]
-		}, "controlled chaos": {
+		},
+		"controlled chaos": {
 			"pages": [103]
-		}, "converting a spell slot to sorcery points": {
+		},
+		"converting a spell slot to sorcery points": {
 			"pages": [101]
-		}, "copper piece (cp)": {
+		},
+		"copper piece (cp)": {
 			"pages": [143]
-		}, "corona of light": {
+		},
+		"corona of light": {
 			"pages": [61]
-		}, "countercharm": {
+		},
+		"countercharm": {
 			"pages": [54]
-		}, "cover": {
+		},
+		"cover": {
 			"pages": [196]
-		}, "crafting": {
+		},
+		"crafting": {
 			"pages": [187]
-		}, "crawling": {
+		},
+		"crawling": {
 			"pages": [182, 191]
-		}, "create thrall": {
+		},
+		"create thrall": {
 			"pages": [110]
-		}, "creating a character": {
+		},
+		"creating a character": {
 			"pages": ["11-15"]
-		}, "creating spell slots": {
+		},
+		"creating spell slots": {
 			"pages": [101]
-		}, "creature statistics": {
+		},
+		"creature statistics": {
 			"pages": ["304-311"]
-		}, "criminal": {
+		},
+		"criminal": {
 			"pages": ["129-130"]
-		}, "criminal contact": {
+		},
+		"criminal contact": {
 			"pages": [129]
-		}, "critical hit": {
+		},
+		"critical hit": {
 			"pages": [197]
-		}, "crocodile": {
+		},
+		"crocodile": {
 			"pages": [305]
-		}, "cube": {
+		},
+		"cube": {
 			"pages": [204]
-		}, "cunning action": {
+		},
+		"cunning action": {
 			"pages": [96]
-		}, "current hit points": {
+		},
+		"current hit points": {
 			"pages": [196]
-		}, "cutting words": {
+		},
+		"cutting words": {
 			"pages": ["54-55"]
-		}, "cylinder": {
+		},
+		"cylinder": {
 			"pages": [204]
-		}, "damage": {
+		},
+		"damage": {
 			"pages": [14, "196-197"]
-		}, "damage resistance": {
+		},
+		"damage resistance": {
 			"pages": [34, 97]
-		}, "damage roll": {
+		},
+		"damage roll": {
 			"pages": [14, 176, 177, 196]
-		}, "damage types": {
+		},
+		"damage types": {
 			"pages": [196]
-		}, "damage vulnerability": {
+		},
+		"damage vulnerability": {
 			"pages": [197]
-		}, "damaran": {
+		},
+		"damaran": {
 			"pages": [31]
-		}, "dampen elements": {
+		},
+		"dampen elements": {
 			"pages": [62]
-		}, "danger sense": {
+		},
+		"danger sense": {
 			"pages": [48]
-		}, "dark delirium": {
+		},
+		"dark delirium": {
 			"pages": [109]
-		}, "dark elf": {
+		},
+		"dark elf": {
 			"pages": [24]
-		}, "darkness": {
+		},
+		"darkness": {
 			"pages": [183]
-		}, "dark one's blessing": {
+		},
+		"dark one's blessing": {
 			"pages": [109]
-		}, "dark one's own luck": {
+		},
+		"dark one's own luck": {
 			"pages": [109]
-		}, "darkvision": {
+		},
+		"darkvision": {
 			"pages": [183, 185]
-		}, "dash action": {
+		},
+		"dash action": {
 			"pages": [192]
-		}, "dc": {
+		},
+		"dc": {
 			"pages": [7, 174]
-		}, "dead": {
+		},
+		"dead": {
 			"pages": [197]
-		}, "deafened": {
+		},
+		"deafened": {
 			"pages": [290]
-		}, "death": {
+		},
+		"death": {
 			"pages": [197]
-		}, "death domain": {
+		},
+		"death domain": {
 			"pages": [293]
-		}, "death saving throw": {
+		},
+		"death saving throw": {
 			"pages": [197]
-		}, "death strike": {
+		},
+		"death strike": {
 			"pages": [97]
-		}, "deception": {
+		},
+		"deception": {
 			"pages": [178]
-		}, "deep gnome": {
+		},
+		"deep gnome": {
 			"pages": [36]
-		}, "deep speech": {
+		},
+		"deep speech": {
 			"pages": [123]
-		}, "defense": {
+		},
+		"defense": {
 			"pages": [72, 84, 91]
-		}, "defensive tactics": {
+		},
+		"defensive tactics": {
 			"pages": [93]
-		}, "deflect missiles": {
+		},
+		"deflect missiles": {
 			"pages": [78]
-		}, "dehydration": {
+		},
+		"dehydration": {
 			"pages": [185]
-		}, "deities": {
+		},
+		"deities": {
 			"pages": ["293-299"]
-		}, "demiplanes": {
+		},
+		"demiplanes": {
 			"pages": [302]
-		}, "destroy undead": {
+		},
+		"destroy undead": {
 			"pages": [59]
-		}, "destructive wrath": {
+		},
+		"destructive wrath": {
 			"pages": [62]
-		}, "devil's sight": {
+		},
+		"devil's sight": {
 			"pages": [110]
-		}, "dexterity": {
+		},
+		"dexterity": {
 			"pages": [12, "176-177"]
-		}, "diamond soul": {
+		},
+		"diamond soul": {
 			"pages": [79]
-		}, "d": {
+		},
+		"d": {
 			"pages": ["6-7"]
-		}, "dice": {
+		},
+		"dice": {
 			"pages": ["6-7"]
-		}, "difficult terrain": {
+		},
+		"difficult terrain": {
 			"pages": [182, 190]
-		}, "difficulty class": {
+		},
+		"difficulty class": {
 			"pages": [7, 174]
-		}, "dim light": {
+		},
+		"dim light": {
 			"pages": [183]
-		}, "disadvantage": {
+		},
+		"disadvantage": {
 			"pages": [7, 173]
-		}, "disarming attack maneuver": {
+		},
+		"disarming attack maneuver": {
 			"pages": [74]
-		}, "disciple of life": {
+		},
+		"disciple of life": {
 			"pages": [60]
-		}, "disciple of the elements": {
+		},
+		"disciple of the elements": {
 			"pages": [80]
-		}, "discovery": {
+		},
+		"discovery": {
 			"pages": [134]
-		}, "disengage action": {
+		},
+		"disengage action": {
 			"pages": [192]
-		}, "distant spell": {
+		},
+		"distant spell": {
 			"pages": [102]
-		}, "distracting strike maneuver": {
+		},
+		"distracting strike maneuver": {
 			"pages": [74]
-		}, "divination": {
+		},
+		"divination": {
 			"pages": ["116-117", 203]
-		}, "divination savant": {
+		},
+		"divination savant": {
 			"pages": [116]
-		}, "divine domain": {
+		},
+		"divine domain": {
 			"pages": [58]
-		}, "divine domains": {
+		},
+		"divine domains": {
 			"pages": [59]
-		}, "divine health": {
+		},
+		"divine health": {
 			"pages": [85]
-		}, "divine intervention": {
+		},
+		"divine intervention": {
 			"pages": [59]
-		}, "divine magic": {
+		},
+		"divine magic": {
 			"pages": [205]
-		}, "diviner": {
+		},
+		"diviner": {
 			"pages": [116]
-		}, "divine sense": {
+		},
+		"divine sense": {
 			"pages": [84]
-		}, "divine smite": {
+		},
+		"divine smite": {
 			"pages": [85]
-		}, "divine strike": {
+		},
+		"divine strike": {
 			"pages": [60, 62, 62, 63, 63]
-		}, "dm": {
+		},
+		"dm": {
 			"pages": [5]
-		}, "dodge action": {
+		},
+		"dodge action": {
 			"pages": [192]
-		}, "domain spells": {
+		},
+		"domain spells": {
 			"pages": [59]
-		}, "donning and doffing armor": {
+		},
+		"donning and doffing armor": {
 			"pages": [146]
-		}, "downtime activities": {
+		},
+		"downtime activities": {
 			"pages": [187]
-		}, "draconians": {
+		},
+		"draconians": {
 			"pages": [34]
-		}, "draconic": {
+		},
+		"draconic": {
 			"pages": [34, 124, 17, 34, 123]
-		}, "draconic ancestry": {
+		},
+		"draconic ancestry": {
 			"pages": [24]
-		}, "draconic presence": {
+		},
+		"draconic presence": {
 			"pages": [102]
-		}, "draconic resilience": {
+		},
+		"draconic resilience": {
 			"pages": [102]
-		}, "dragon ancestor": {
+		},
+		"dragon ancestor": {
 			"pages": [102]
-		}, "dragonborn": {
+		},
+		"dragonborn": {
 			"pages": ["32-34"]
-		}, "dragonborn names": {
+		},
+		"dragonborn names": {
 			"pages": ["33-34"]
-		}, "dragonborn traits": {
+		},
+		"dragonborn traits": {
 			"pages": [34]
-		}, "dragon wings": {
+		},
+		"dragon wings": {
 			"pages": [103]
-		}, "draw or sheathe a weapon": {
+		},
+		"draw or sheathe a weapon": {
 			"pages": [190]
-		}, "dreadful word": {
+		},
+		"dreadful word": {
 			"pages": [110]
-		}, "drink": {
+		},
+		"drink": {
 			"pages": [158]
-		}, "drop an object": {
+		},
+		"drop an object": {
 			"pages": [190]
-		}, "drow": {
+		},
+		"drow": {
 			"pages": [24]
-		}, "drow magic": {
+		},
+		"drow magic": {
 			"pages": [24]
-		}, "druid": {
+		},
+		"druid": {
 			"pages": [45, "64-69"]
-		}, "druid circle": {
+		},
+		"druid circle": {
 			"pages": [67]
-		}, "druid circles": {
+		},
+		"druid circles": {
 			"pages": ["68-69"]
-		}, "druidic": {
+		},
+		"druidic": {
 			"pages": [66]
-		}, "druidic focus": {
+		},
+		"druidic focus": {
 			"pages": [150, 151]
-		}, "druids and the gods": {
+		},
+		"druids and the gods": {
 			"pages": [69]
-		}, "dueling": {
+		},
+		"dueling": {
 			"pages": [72, 84, 91]
-		}, "duergar (gray dwarf)": {
+		},
+		"duergar (gray dwarf)": {
 			"pages": [20]
-		}, "dungeon master": {
+		},
+		"dungeon master": {
 			"pages": [5]
-		}, "durable summons": {
+		},
+		"durable summons": {
 			"pages": [116]
-		}, "duration": {
+		},
+		"duration": {
 			"pages": ["203-204"]
-		}, "dwarf": {
+		},
+		"dwarf": {
 			"pages": ["18-20"]
-		}, "dwarf names": {
+		},
+		"dwarf names": {
 			"pages": [20]
-		}, "dwarf traits": {
+		},
+		"dwarf traits": {
 			"pages": [20]
-		}, "dwarven armor training": {
+		},
+		"dwarven armor training": {
 			"pages": [20]
-		}, "dwarven combat training": {
+		},
+		"dwarven combat training": {
 			"pages": [20]
-		}, "dwarven resilience": {
+		},
+		"dwarven resilience": {
 			"pages": [20]
-		}, "dwarven toughness": {
+		},
+		"dwarven toughness": {
 			"pages": [20]
-		}, "dwarvish": {
+		},
+		"dwarvish": {
 			"pages": [20]
-		}, "giant eagle": {
+		},
+		"giant eagle": {
 			"pages": [306]
-		}, "effect": {
+		},
+		"effect": {
 			"pages": [201]
-		}, "elder champion": {
+		},
+		"elder champion": {
 			"pages": [87]
-		}, "eldritch invocations": {
+		},
+		"eldritch invocations": {
 			"pages": [107, "110-111"]
-		}, "eldritch knight": {
+		},
+		"eldritch knight": {
 			"pages": [74]
-		}, "eldritch master": {
+		},
+		"eldritch master": {
 			"pages": [108]
-		}, "eldritch sight": {
+		},
+		"eldritch sight": {
 			"pages": [110]
-		}, "eldritch spear": {
+		},
+		"eldritch spear": {
 			"pages": [111]
-		}, "eldritch strike": {
+		},
+		"eldritch strike": {
 			"pages": [75]
-		}, "electrum piece (ep)": {
+		},
+		"electrum piece (ep)": {
 			"pages": [143]
-		}, "elemental affinity": {
+		},
+		"elemental affinity": {
 			"pages": [103]
-		}, "elemental attunement": {
+		},
+		"elemental attunement": {
 			"pages": [81]
-		}, "elemental chaos": {
+		},
+		"elemental chaos": {
 			"pages": [301]
-		}, "elemental disciplines": {
+		},
+		"elemental disciplines": {
 			"pages": [81]
-		}, "elemental planes": {
+		},
+		"elemental planes": {
 			"pages": [301]
-		}, "elemental wild shape": {
+		},
+		"elemental wild shape": {
 			"pages": [69]
-		}, "elf": {
+		},
+		"elf": {
 			"pages": ["21-24"]
-		}, "elf names": {
+		},
+		"elf names": {
 			"pages": ["22-23"]
-		}, "elf traits": {
+		},
+		"elf traits": {
 			"pages": ["23-24"]
-		}, "elf weapon training": {
+		},
+		"elf weapon training": {
 			"pages": [23, 24]
-		}, "elusive": {
+		},
+		"elusive": {
 			"pages": [96]
-		}, "elvish": {
+		},
+		"elvish": {
 			"pages": [23]
-		}, "elysium": {
+		},
+		"elysium": {
 			"pages": [302]
-		}, "empowered evocation": {
+		},
+		"empowered evocation": {
 			"pages": [117]
-		}, "empowered spell": {
+		},
+		"empowered spell": {
 			"pages": [102]
-		}, "empty body": {
+		},
+		"empty body": {
 			"pages": [79]
-		}, "enchantment": {
+		},
+		"enchantment": {
 			"pages": [117, 203]
-		}, "enchantment savant": {
+		},
+		"enchantment savant": {
 			"pages": [117]
-		}, "enchanter": {
+		},
+		"enchanter": {
 			"pages": [117]
-		}, "encounters": {
+		},
+		"encounters": {
 			"pages": [183]
-		}, "encumbrance": {
+		},
+		"encumbrance": {
 			"pages": [176]
-		}, "entertainer": {
+		},
+		"entertainer": {
 			"pages": ["130-131"]
-		}, "entropic ward": {
+		},
+		"entropic ward": {
 			"pages": [110]
-		}, "environment": {
+		},
+		"environment": {
 			"pages": [14, 125, "143-161"]
-		}, "equipment": {
+		},
+		"equipment": {
 			"pages": [143]
-		}, "equipment packs": {
+		},
+		"equipment packs": {
 			"pages": [151]
-		}, "escape the horde": {
+		},
+		"escape the horde": {
 			"pages": [93]
-		}, "escaping a grapple": {
+		},
+		"escaping a grapple": {
 			"pages": [195]
-		}, "eternal mountain defense": {
+		},
+		"eternal mountain defense": {
 			"pages": [81]
-		}, "ethereal plane": {
+		},
+		"ethereal plane": {
 			"pages": [301]
-		}, "evasion": {
+		},
+		"evasion": {
 			"pages": [79, 93, 96]
-		}, "evasive footwork maneuver": {
+		},
+		"evasive footwork maneuver": {
 			"pages": [74]
-		}, "evocation": {
+		},
+		"evocation": {
 			"pages": ["117-118", 203]
-		}, "evocation savant": {
+		},
+		"evocation savant": {
 			"pages": [117]
-		}, "evoker": {
+		},
+		"evoker": {
 			"pages": [117]
-		}, "exceptional training": {
+		},
+		"exceptional training": {
 			"pages": [93]
-		}, "exception-based rules": {
+		},
+		"exception-based rules": {
 			"pages": [7]
-		}, "exhaustion": {
+		},
+		"exhaustion": {
 			"pages": [181, 185, 291]
-		}, "exotic language": {
+		},
+		"exotic language": {
 			"pages": [123]
-		}, "expenses": {
+		},
+		"expenses": {
 			"pages": ["157-158", 187]
-		}, "experience points": {
+		},
+		"experience points": {
 			"pages": [15]
-		}, "expert divination": {
+		},
+		"expert divination": {
 			"pages": [116]
-		}, "expertise": {
+		},
+		"expertise": {
 			"pages": [54, 96]
-		}, "exploration": {
+		},
+		"exploration": {
 			"pages": [8]
-		}, "extended spell": {
+		},
+		"extended spell": {
 			"pages": [102]
-		}, "extra attack": {
+		},
+		"extra attack": {
 			"pages": [49, 55, 72, 79, 85, 92]
-		}, "eyes of the rune keeper": {
+		},
+		"eyes of the rune keeper": {
 			"pages": [111]
-		}, "faerie": {
+		},
+		"faerie": {
 			"pages": [300]
-		}, "falling": {
+		},
+		"falling": {
 			"pages": [183]
-		}, "false identity": {
+		},
+		"false identity": {
 			"pages": [128]
-		}, "familiar": {
+		},
+		"familiar": {
 			"pages": [107]
-		}, "fangs of the fire snake": {
+		},
+		"fangs of the fire snake": {
 			"pages": [81]
-		}, "far realm": {
+		},
+		"far realm": {
 			"pages": [302]
-		}, "fast hands": {
+		},
+		"fast hands": {
 			"pages": [97]
-		}, "fast movement": {
+		},
+		"fast movement": {
 			"pages": [49]
-		}, "favored enemy": {
+		},
+		"favored enemy": {
 			"pages": [91]
-		}, "feats": {
+		},
+		"feats": {
 			"pages": ["165-170"]
-		}, "feinting attack maneuver": {
+		},
+		"feinting attack maneuver": {
 			"pages": [74]
-		}, "feral instinct": {
+		},
+		"feral instinct": {
 			"pages": [49]
-		}, "feral senses": {
+		},
+		"feral senses": {
 			"pages": [92]
-		}, "fey ancestry": {
+		},
+		"fey ancestry": {
 			"pages": [23, 39]
-		}, "fey presence": {
+		},
+		"fey presence": {
 			"pages": [108]
-		}, "the feywild": {
+		},
+		"the feywild": {
 			"pages": [300]
-		}, "fiendish resilience": {
+		},
+		"fiendish resilience": {
 			"pages": [10]
-		}, "fiendish vigor": {
+		},
+		"fiendish vigor": {
 			"pages": [111]
-		}, "the fiend": {
+		},
+		"the fiend": {
 			"pages": [109]
-		}, "fighter": {
+		},
+		"fighter": {
 			"pages": [45, "70-75"]
-		}, "fighting style": {
+		},
+		"fighting style": {
 			"pages": [72, 84, 91]
-		}, "fighting styles": {
+		},
+		"fighting styles": {
 			"pages": [72, 84, 91]
-		}, "finding a hidden creature": {
+		},
+		"finding a hidden creature": {
 			"pages": [177]
-		}, "finding a hidden object": {
+		},
+		"finding a hidden object": {
 			"pages": [178]
-		}, "finesse": {
+		},
+		"finesse": {
 			"pages": [147]
-		}, "fire damage": {
+		},
+		"fire damage": {
 			"pages": [196]
-		}, "fist of four thunders": {
+		},
+		"fist of four thunders": {
 			"pages": [81]
-		}, "fist of unbroken air": {
+		},
+		"fist of unbroken air": {
 			"pages": [81]
-		}, "flames of the phoenix": {
+		},
+		"flames of the phoenix": {
 			"pages": [81]
-		}, "flaws": {
+		},
+		"flaws": {
 			"pages": [124]
-		}, "fleet of foot": {
+		},
+		"fleet of foot": {
 			"pages": [24]
-		}, "flexible casting": {
+		},
+		"flexible casting": {
 			"pages": [101]
-		}, "flurry of blows": {
+		},
+		"flurry of blows": {
 			"pages": [78]
-		}, "flying": {
+		},
+		"flying": {
 			"pages": [191]
-		}, "focused conjuration": {
+		},
+		"focused conjuration": {
 			"pages": [116]
-		}, "foe slayer": {
+		},
+		"foe slayer": {
 			"pages": [92]
-		}, "folk hero": {
+		},
+		"folk hero": {
 			"pages": ["131-132"]
-		}, "font of inspiration": {
+		},
+		"font of inspiration": {
 			"pages": [54]
-		}, "font of magic": {
+		},
+		"font of magic": {
 			"pages": [101]
-		}, "food and drink": {
+		},
+		"food and drink": {
 			"pages": [158, 185]
-		}, "foraging": {
+		},
+		"foraging": {
 			"pages": [183]
-		}, "force damage": {
+		},
+		"force damage": {
 			"pages": [196]
-		}, "forced march": {
+		},
+		"forced march": {
 			"pages": [181]
-		}, "forest gnome": {
+		},
+		"forest gnome": {
 			"pages": [37]
-		}, "frenzy": {
+		},
+		"frenzy": {
 			"pages": [49]
-		}, "frightened": {
+		},
+		"frightened": {
 			"pages": [290]
-		}, "frog": {
+		},
+		"frog": {
 			"pages": [305]
-		}, "gaining a level": {
+		},
+		"gaining a level": {
 			"pages": [15]
-		}, "gargantuan": {
+		},
+		"gargantuan": {
 			"pages": [191]
-		}, "gaze of 2 minds": {
+		},
+		"gaze of 2 minds": {
 			"pages": [111]
-		}, "gehenna": {
+		},
+		"gehenna": {
 			"pages": [302]
-		}, "gender": {
+		},
+		"gender": {
 			"pages": [121]
-		}, "getting into and out of armor": {
+		},
+		"getting into and out of armor": {
 			"pages": [146]
-		}, "giant": {
+		},
+		"giant": {
 			"pages": [123]
-		}, "giant killer": {
+		},
+		"giant killer": {
 			"pages": [93]
-		}, "gladiator": {
+		},
+		"gladiator": {
 			"pages": [131]
-		}, "gnome": {
+		},
+		"gnome": {
 			"pages": ["35-37"]
-		}, "gnome cunning": {
+		},
+		"gnome cunning": {
 			"pages": [37]
-		}, "gnome names": {
+		},
+		"gnome names": {
 			"pages": [36]
-		}, "gnome traits": {
+		},
+		"gnome traits": {
 			"pages": ["36-37"]
-		}, "gnomish": {
+		},
+		"gnomish": {
 			"pages": [37, 123]
-		}, "goading attack maneuver": {
+		},
+		"goading attack maneuver": {
 			"pages": [74]
-		}, "gold dwarf": {
+		},
+		"gold dwarf": {
 			"pages": [20]
-		}, "gold piece": {
+		},
+		"gold piece": {
 			"pages": [14]
-		}, "gong of the summit": {
+		},
+		"gong of the summit": {
 			"pages": [81]
-		}, "grappled": {
+		},
+		"grappled": {
 			"pages": [290]
-		}, "grappling": {
+		},
+		"grappling": {
 			"pages": [195]
-		}, "gray dwarf (duergar)": {
+		},
+		"gray dwarf (duergar)": {
 			"pages": [20]
-		}, "greater portent": {
+		},
+		"greater portent": {
 			"pages": [117]
-		}, "the great old one": {
+		},
+		"the great old one": {
 			"pages": ["109-110"]
-		}, "great weapon fighting": {
+		},
+		"great weapon fighting": {
 			"pages": [72, 84]
-		}, "the great wheel": {
+		},
+		"the great wheel": {
 			"pages": [302]
-		}, "grid": {
+		},
+		"grid": {
 			"pages": [192]
-		}, "grim harvest": {
+		},
+		"grim harvest": {
 			"pages": [118]
-		}, "group checks": {
+		},
+		"group checks": {
 			"pages": [175]
-		}, "guided strike": {
+		},
+		"guided strike": {
 			"pages": [63]
-		}, "guild artisan": {
+		},
+		"guild artisan": {
 			"pages": ["132-133"]
-		}, "guild membership": {
+		},
+		"guild membership": {
 			"pages": [133]
-		}, "guild merchant": {
+		},
+		"guild merchant": {
 			"pages": [133]
-		}, "hades": {
+		},
+		"hades": {
 			"pages": [302]
-		}, "half cover": {
+		},
+		"half cover": {
 			"pages": [196]
-		}, "half-elf": {
+		},
+		"half-elf": {
 			"pages": ["38-39"]
-		}, "half-elf names": {
+		},
+		"half-elf names": {
 			"pages": [39]
-		}, "half-elf traits": {
+		},
+		"half-elf traits": {
 			"pages": [39]
-		}, "halfling": {
+		},
+		"halfling": {
 			"pages": ["26-28"]
-		}, "halfing": {
+		},
+		"halfing": {
 			"pages": [28, 123]
-		}, "halfling names": {
+		},
+		"halfling names": {
 			"pages": [27]
-		}, "halfling nimbleness": {
+		},
+		"halfling nimbleness": {
 			"pages": [28]
-		}, "halfling traits": {
+		},
+		"halfling traits": {
 			"pages": [28]
-		}, "half-orc": {
+		},
+		"half-orc": {
 			"pages": ["40-41"]
-		}, "half-orc names": {
+		},
+		"half-orc names": {
 			"pages": [41]
-		}, "half-orc traits": {
+		},
+		"half-orc traits": {
 			"pages": [41]
-		}, "hawk (falcon)": {
+		},
+		"hawk (falcon)": {
 			"pages": [306]
-		}, "healing": {
+		},
+		"healing": {
 			"pages": [197]
-		}, "hearing": {
+		},
+		"hearing": {
 			"pages": [178]
-		}, "heavily obscured": {
+		},
+		"heavily obscured": {
 			"pages": [183]
-		}, "heavy": {
+		},
+		"heavy": {
 			"pages": [147]
-		}, "heavy armor": {
+		},
+		"heavy armor": {
 			"pages": [145]
-		}, "heavy weapons and small creatures": {
+		},
+		"heavy weapons and small creatures": {
 			"pages": [147]
-		}, "height and weight": {
+		},
+		"height and weight": {
 			"pages": [121]
-		}, "heightened spell": {
+		},
+		"heightened spell": {
 			"pages": [102]
-		}, "hellish resistance": {
+		},
+		"hellish resistance": {
 			"pages": [43]
-		}, "help action": {
+		},
+		"help action": {
 			"pages": [192]
-		}, "hermit": {
+		},
+		"hermit": {
 			"pages": ["134-135"]
-		}, "hidden": {
+		},
+		"hidden": {
 			"pages": [177, 178]
-		}, "hide action": {
+		},
+		"hide action": {
 			"pages": [192]
-		}, "hide in plain sight": {
+		},
+		"hide in plain sight": {
 			"pages": [92]
-		}, "hiding": {
+		},
+		"hiding": {
 			"pages": [177]
-		}, "high elf": {
+		},
+		"high elf": {
 			"pages": [23]
-		}, "hill dwarf": {
+		},
+		"hill dwarf": {
 			"pages": [20]
-		}, "hirelings": {
+		},
+		"hirelings": {
 			"pages": [159]
-		}, "history": {
+		},
+		"history": {
 			"pages": ["177-178"]
-		}, "hit dice": {
+		},
+		"hit dice": {
 			"pages": [12]
-		}, "hit point maximum": {
+		},
+		"hit point maximum": {
 			"pages": [12, 15, 177]
-		}, "hit points": {
+		},
+		"hit points": {
 			"pages": [12, 13, 15, 177, "196-198"]
-		}, "holding breath": {
+		},
+		"holding breath": {
 			"pages": [183]
-		}, "holy nimbus": {
+		},
+		"holy nimbus": {
 			"pages": [86]
-		}, "holy symbol": {
+		},
+		"holy symbol": {
 			"pages": [57, 58, 84, 85]
-		}, "horde breaker": {
+		},
+		"horde breaker": {
 			"pages": [93]
-		}, "riding horse": {
+		},
+		"riding horse": {
 			"pages": [310]
-		}, "how to play": {
+		},
+		"how to play": {
 			"pages": [6]
-		}, "huge": {
+		},
+		"huge": {
 			"pages": [191]
-		}, "human": {
+		},
+		"human": {
 			"pages": ["29-31"]
-		}, "human ethnicities": {
+		},
+		"human ethnicities": {
 			"pages": ["30-31"]
-		}, "human names": {
+		},
+		"human names": {
 			"pages": [30, 31]
-		}, "human traits": {
+		},
+		"human traits": {
 			"pages": [31]
-		}, "hunter": {
+		},
+		"hunter": {
 			"pages": [93]
-		}, "hunter's prey": {
+		},
+		"hunter's prey": {
 			"pages": [93]
-		}, "hurl through hell": {
+		},
+		"hurl through hell": {
 			"pages": [109]
-		}, "hustle": {
+		},
+		"hustle": {
 			"pages": [192]
-		}, "hypnotic gaze": {
+		},
+		"hypnotic gaze": {
 			"pages": [117]
-		}, "ideals": {
+		},
+		"ideals": {
 			"pages": [124]
-		}, "ignan": {
+		},
+		"ignan": {
 			"pages": [123]
-		}, "illusion": {
+		},
+		"illusion": {
 			"pages": [118, 203]
-		}, "illusionist": {
+		},
+		"illusionist": {
 			"pages": [118]
-		}, "illusion savant": {
+		},
+		"illusion savant": {
 			"pages": [118]
-		}, "illuskan": {
+		},
+		"illuskan": {
 			"pages": [31]
-		}, "illusory reality": {
+		},
+		"illusory reality": {
 			"pages": [118]
-		}, "illusory self": {
+		},
+		"illusory self": {
 			"pages": [118]
-		}, "imp": {
+		},
+		"imp": {
 			"pages": [306]
-		}, "impostor": {
+		},
+		"impostor": {
 			"pages": [97]
-		}, "improved abjuration": {
+		},
+		"improved abjuration": {
 			"pages": [115]
-		}, "improved combat superiority": {
+		},
+		"improved combat superiority": {
 			"pages": [74]
-		}, "improved critical": {
+		},
+		"improved critical": {
 			"pages": [72]
-		}, "improved divine smite": {
+		},
+		"improved divine smite": {
 			"pages": [85]
-		}, "improved duplicity": {
+		},
+		"improved duplicity": {
 			"pages": [63]
-		}, "improved flare": {
+		},
+		"improved flare": {
 			"pages": [61]
-		}, "improved minor illusion": {
+		},
+		"improved minor illusion": {
 			"pages": [118]
-		}, "improved war magic": {
+		},
+		"improved war magic": {
 			"pages": [75]
-		}, "improvised weapons": {
+		},
+		"improvised weapons": {
 			"pages": ["147-148"]
-		}, "incapacitated": {
+		},
+		"incapacitated": {
 			"pages": [290]
-		}, "indomitable": {
+		},
+		"indomitable": {
 			"pages": [72]
-		}, "indomitable might": {
+		},
+		"indomitable might": {
 			"pages": [49]
-		}, "infernal": {
+		},
+		"infernal": {
 			"pages": [123]
-		}, "infernal legacy": {
+		},
+		"infernal legacy": {
 			"pages": [43]
-		}, "infiltration expertise": {
+		},
+		"infiltration expertise": {
 			"pages": [97]
-		}, "initiative": {
+		},
+		"initiative": {
 			"pages": [177, 189]
-		}, "inner planes": {
+		},
+		"inner planes": {
 			"pages": [301]
-		}, "insight": {
+		},
+		"insight": {
 			"pages": [178]
-		}, "inspiration": {
+		},
+		"inspiration": {
 			"pages": [125]
-		}, "instantaneous": {
+		},
+		"instantaneous": {
 			"pages": [203]
-		}, "instinctive charm": {
+		},
+		"instinctive charm": {
 			"pages": [117]
-		}, "intelligence": {
+		},
+		"intelligence": {
 			"pages": [12, "177-178"]
-		}, "intimidating presence": {
+		},
+		"intimidating presence": {
 			"pages": ["49-50"]
-		}, "intimidation": {
+		},
+		"intimidation": {
 			"pages": [179]
-		}, "inured to undeath": {
+		},
+		"inured to undeath": {
 			"pages": [119]
-		}, "investigation": {
+		},
+		"investigation": {
 			"pages": [178]
-		}, "invisible": {
+		},
+		"invisible": {
 			"pages": [291]
-		}, "invoke duplicity": {
+		},
+		"invoke duplicity": {
 			"pages": [63]
-		}, "jack of all trades": {
+		},
+		"jack of all trades": {
 			"pages": [54]
-		}, "jumping": {
+		},
+		"jumping": {
 			"pages": [182, 190]
-		}, "keen senses": {
+		},
+		"keen senses": {
 			"pages": [23]
-		}, "ki": {
+		},
+		"ki": {
 			"pages": [78]
-		}, "ki-empowered strikes": {
+		},
+		"ki-empowered strikes": {
 			"pages": [79]
-		}, "ki points": {
+		},
+		"ki points": {
 			"pages": [78]
-		}, "knight": {
+		},
+		"knight": {
 			"pages": [136]
-		}, "knocking a creature out": {
+		},
+		"knocking a creature out": {
 			"pages": [198]
-		}, "know your enemy": {
+		},
+		"know your enemy": {
 			"pages": ["73-74"]
-		}, "knowledge domain": {
+		},
+		"knowledge domain": {
 			"pages": ["59-60"]
-		}, "knowledge of the ages": {
+		},
+		"knowledge of the ages": {
 			"pages": [59]
-		}, "land's stride": {
+		},
+		"land's stride": {
 			"pages": [69, 92]
-		}, "language": {
+		},
+		"language": {
 			"pages": [17, 123, 125]
-		}, "large": {
+		},
+		"large": {
 			"pages": [191]
-		}, "lawful evil": {
+		},
+		"lawful evil": {
 			"pages": [122]
-		}, "lawful good": {
+		},
+		"lawful good": {
 			"pages": [122]
-		}, "lawful neutral": {
+		},
+		"lawful neutral": {
 			"pages": [122]
-		}, "lay on hands": {
+		},
+		"lay on hands": {
 			"pages": [84]
-		}, "learning spells": {
+		},
+		"learning spells": {
 			"pages": "see specific class spellcasting entries: bard (52); cleric (58); druid (66); fighter, eldritch knight (75); ranger (91); rogue, arcane trickster (98); sorcerer (101); warlock (107); wizard (114)"
-		}, "lethal damage": {
+		},
+		"lethal damage": {
 			"pages": [197]
-		}, "level": {
+		},
+		"level": {
 			"pages": [11, 15]
-		}, "life domain": {
+		},
+		"life domain": {
 			"pages": [60]
-		}, "lifedrinker": {
+		},
+		"lifedrinker": {
 			"pages": [111]
-		}, "lifestyle": {
+		},
+		"lifestyle": {
 			"pages": [157]
-		}, "lifting and carrying": {
+		},
+		"lifting and carrying": {
 			"pages": [176]
-		}, "light": {
+		},
+		"light": {
 			"pages": [147, 183]
-		}, "light armor": {
+		},
+		"light armor": {
 			"pages": [144]
-		}, "light domain": {
+		},
+		"light domain": {
 			"pages": ["60-61"]
-		}, "lightly obscured": {
+		},
+		"lightly obscured": {
 			"pages": [183]
-		}, "lightning damage": {
+		},
+		"lightning damage": {
 			"pages": [196]
-		}, "limbo": {
+		},
+		"limbo": {
 			"pages": [302]
-		}, "line": {
+		},
+		"line": {
 			"pages": [205]
-		}, "line of sight": {
+		},
+		"line of sight": {
 			"pages": [204]
-		}, "lion": {
+		},
+		"lion": {
 			"pages": [307]
-		}, "listening": {
+		},
+		"listening": {
 			"pages": [178]
-		}, "loading": {
+		},
+		"loading": {
 			"pages": [147]
-		}, "lock opening or picking": {
+		},
+		"lock opening or picking": {
 			"pages": [154]
-		}, "lock picking": {
+		},
+		"lock picking": {
 			"pages": [154]
-		}, "lodging": {
+		},
+		"lodging": {
 			"pages": [158]
-		}, "lolth": {
+		},
+		"lolth": {
 			"pages": [24, 296]
-		}, "long rest": {
+		},
+		"long rest": {
 			"pages": [186]
-		}, "lower planes": {
+		},
+		"lower planes": {
 			"pages": [302]
-		}, "low-light vision": {
+		},
+		"low-light vision": {
 			"pages": [183, 185]
-		}, "lucky": {
+		},
+		"lucky": {
 			"pages": [28]
-		}, "lunging attack maneuver": {
+		},
+		"lunging attack maneuver": {
 			"pages": [74]
-		}, "mage hand legerdemain": {
+		},
+		"mage hand legerdemain": {
 			"pages": [98]
-		}, "magical ambush": {
+		},
+		"magical ambush": {
 			"pages": [98]
-		}, "magical secrets": {
+		},
+		"magical secrets": {
 			"pages": [54]
-		}, "magic": {
+		},
+		"magic": {
 			"pages": [8, "201-289"]
-		}, "magic item": {
+		},
+		"magic item": {
 			"pages": [144]
-		}, "magic-user": {
+		},
+		"magic-user": {
 			"pages": [45, "112-119"]
-		}, "malleable illusions": {
+		},
+		"malleable illusions": {
 			"pages": [118]
-		}, "maneuver": {
+		},
+		"maneuver": {
 			"pages": [73]
-		}, "maneuvering attack maneuver": {
+		},
+		"maneuvering attack maneuver": {
 			"pages": [74]
-		}, "maneuvers": {
+		},
+		"maneuvers": {
 			"pages": [73, 74]
-		}, "mapping": {
+		},
+		"mapping": {
 			"pages": [183]
-		}, "marching order": {
+		},
+		"marching order": {
 			"pages": [182]
-		}, "martial archetype": {
+		},
+		"martial archetype": {
 			"pages": [72]
-		}, "martial archetypes": {
+		},
+		"martial archetypes": {
 			"pages": ["72-75"]
-		}, "martial arts": {
+		},
+		"martial arts": {
 			"pages": [78]
-		}, "martial weapon": {
+		},
+		"martial weapon": {
 			"pages": [146]
-		}, "mask of many faces": {
+		},
+		"mask of many faces": {
 			"pages": [111]
-		}, "mask of the wild": {
+		},
+		"mask of the wild": {
 			"pages": [24]
-		}, "master of myriad forms": {
+		},
+		"master of myriad forms": {
 			"pages": [111]
-		}, "master of nature": {
+		},
+		"master of nature": {
 			"pages": [62]
-		}, "master transmuter": {
+		},
+		"master transmuter": {
 			"pages": [119]
-		}, "mastiff": {
+		},
+		"mastiff": {
 			"pages": [307]
-		}, "material spell component": {
+		},
+		"material spell component": {
 			"pages": [203]
-		}, "material plane": {
+		},
+		"material plane": {
 			"pages": [300]
-		}, "mechanus": {
+		},
+		"mechanus": {
 			"pages": [302]
-		}, "medicine": {
+		},
+		"medicine": {
 			"pages": [178]
-		}, "medium": {
+		},
+		"medium": {
 			"pages": [191]
-		}, "medium armor": {
+		},
+		"medium armor": {
 			"pages": [144]
-		}, "melee attack": {
+		},
+		"melee attack": {
 			"pages": [195]
-		}, "melee weapon": {
+		},
+		"melee weapon": {
 			"pages": [14, 146, 149, 195]
-		}, "menacing": {
+		},
+		"menacing": {
 			"pages": [41]
-		}, "menacing attack maneuver": {
+		},
+		"menacing attack maneuver": {
 			"pages": [74]
-		}, "metamagic": {
+		},
+		"metamagic": {
 			"pages": ["101-102"]
-		}, "military rank": {
+		},
+		"military rank": {
 			"pages": [140]
-		}, "mindless rage": {
+		},
+		"mindless rage": {
 			"pages": [49]
-		}, "minions of chaos": {
+		},
+		"minions of chaos": {
 			"pages": [111]
-		}, "minor alchemy": {
+		},
+		"minor alchemy": {
 			"pages": [119]
-		}, "minor conjuration": {
+		},
+		"minor conjuration": {
 			"pages": [116]
-		}, "mire the mind": {
+		},
+		"mire the mind": {
 			"pages": [111]
-		}, "mist stance": {
+		},
+		"mist stance": {
 			"pages": [81]
-		}, "misty escape": {
+		},
+		"misty escape": {
 			"pages": [109]
-		}, "misty visions": {
+		},
+		"misty visions": {
 			"pages": [111]
-		}, "modifier": {
+		},
+		"modifier": {
 			"pages": [7]
-		}, "monastic orders": {
+		},
+		"monastic orders": {
 			"pages": [81]
-		}, "monastic tradition": {
+		},
+		"monastic tradition": {
 			"pages": [78]
-		}, "monastic traditions": {
+		},
+		"monastic traditions": {
 			"pages": ["79-81"]
-		}, "monk": {
+		},
+		"monk": {
 			"pages": [45, "76-81"]
-		}, "monk weapons": {
+		},
+		"monk weapons": {
 			"pages": [78]
-		}, "moon elf": {
+		},
+		"moon elf": {
 			"pages": [23]
-		}, "mount": {
+		},
+		"mount": {
 			"pages": [155, 157]
-		}, "mountain dwarf": {
+		},
+		"mountain dwarf": {
 			"pages": [20]
-		}, "mount celestia": {
+		},
+		"mount celestia": {
 			"pages": [302]
-		}, "mounted combat": {
+		},
+		"mounted combat": {
 			"pages": [198]
-		}, "mounts and vehicles": {
+		},
+		"mounts and vehicles": {
 			"pages": [155, 157]
-		}, "move action": {
+		},
+		"move action": {
 			"pages": [189, "190-191"]
-		}, "movement": {
+		},
+		"movement": {
 			"pages": ["181-183", "190-192"]
-		}, "moving a grappled creature": {
+		},
+		"moving a grappled creature": {
 			"pages": [195]
-		}, "mulan": {
+		},
+		"mulan": {
 			"pages": [31]
-		}, "mule": {
+		},
+		"mule": {
 			"pages": [307]
-		}, "multiattack": {
+		},
+		"multiattack": {
 			"pages": [93]
-		}, "multiattack defense": {
+		},
+		"multiattack defense": {
 			"pages": [93]
-		}, "multiclassing": {
+		},
+		"multiclassing": {
 			"pages": ["163-164"]
-		}, "multiverse": {
+		},
+		"multiverse": {
 			"pages": ["5-6", 293, 300]
-		}, "mystic arcanum": {
+		},
+		"mystic arcanum": {
 			"pages": [108]
-		}, "name": {
+		},
+		"name": {
 			"pages": [121]
-		}, "natural explorer": {
+		},
+		"natural explorer": {
 			"pages": [91]
-		}, "natural illusionist": {
+		},
+		"natural illusionist": {
 			"pages": [37]
-		}, "naturally stealthy": {
+		},
+		"naturally stealthy": {
 			"pages": [28]
-		}, "natural recovery": {
+		},
+		"natural recovery": {
 			"pages": [68]
-		}, "nature": {
+		},
+		"nature": {
 			"pages": [178]
-		}, "nature domain": {
+		},
+		"nature domain": {
 			"pages": ["61-62"]
-		}, "nature's sanctuary": {
+		},
+		"nature's sanctuary": {
 			"pages": [69]
-		}, "nature's ward": {
+		},
+		"nature's ward": {
 			"pages": [69]
-		}, "nature's wrath": {
+		},
+		"nature's wrath": {
 			"pages": [87]
-		}, "navigating": {
+		},
+		"navigating": {
 			"pages": [183]
-		}, "necromancer": {
+		},
+		"necromancer": {
 			"pages": ["118-119"]
-		}, "necromancy": {
+		},
+		"necromancy": {
 			"pages": [118, 203]
-		}, "necromancy savant": {
+		},
+		"necromancy savant": {
 			"pages": [118]
-		}, "necrotic damage": {
+		},
+		"necrotic damage": {
 			"pages": [196]
-		}, "negative plane": {
+		},
+		"negative plane": {
 			"pages": [300]
-		}, "neutral": {
+		},
+		"neutral": {
 			"pages": [122]
-		}, "neutral evil": {
+		},
+		"neutral evil": {
 			"pages": [122]
-		}, "neutral good": {
+		},
+		"neutral good": {
 			"pages": [122]
-		}, "the 9 hells": {
+		},
+		"the 9 hells": {
 			"pages": [302]
-		}, "noble": {
+		},
+		"noble": {
 			"pages": ["135-136"]
-		}, "noble knight": {
+		},
+		"noble knight": {
 			"pages": [136]
-		}, "nonplayer character": {
+		},
+		"nonplayer character": {
 			"pages": [8, 159, 185, 189, 198]
-		}, "nonlethal damage": {
+		},
+		"nonlethal damage": {
 			"pages": [196]
-		}, "npc": {
+		},
+		"npc": {
 			"pages": [8, 159, 185, 189, 198]
-		}, "oath of devotion": {
+		},
+		"oath of devotion": {
 			"pages": ["85-86"]
-		}, "oath of the ancients": {
+		},
+		"oath of the ancients": {
 			"pages": ["86-87"]
-		}, "oath of vengeance": {
+		},
+		"oath of vengeance": {
 			"pages": ["87-88"]
-		}, "oath spells": {
+		},
+		"oath spells": {
 			"pages": ["85-88"]
-		}, "objects": {
+		},
+		"objects": {
 			"pages": [185]
-		}, "one with shadows": {
+		},
+		"one with shadows": {
 			"pages": [111]
-		}, "open hand technique": {
+		},
+		"open hand technique": {
 			"pages": [79]
-		}, "open locks": {
+		},
+		"open locks": {
 			"pages": [154]
-		}, "opportunist": {
+		},
+		"opportunist": {
 			"pages": [80]
-		}, "opportunity attack": {
+		},
+		"opportunity attack": {
 			"pages": [195]
-		}, "orc": {
+		},
+		"orc": {
 			"pages": [41]
-		}, "orison": {
+		},
+		"orison": {
 			"pages": [201]
-		}, "otherworldly leap": {
+		},
+		"otherworldly leap": {
 			"pages": [111]
-		}, "otherworldly patron": {
+		},
+		"otherworldly patron": {
 			"pages": [107]
-		}, "otherworldly patrons": {
+		},
+		"otherworldly patrons": {
 			"pages": ["108-110"]
-		}, "outer planes": {
+		},
+		"outer planes": {
 			"pages": [300, 301]
-		}, "outlander": {
+		},
+		"outlander": {
 			"pages": ["136-137"]
-		}, "the outlands": {
+		},
+		"the outlands": {
 			"pages": [302]
-		}, "overchannel": {
+		},
+		"overchannel": {
 			"pages": [118]
-		}, "owl": {
+		},
+		"owl": {
 			"pages": [308]
-		}, "pact boon": {
+		},
+		"pact boon": {
 			"pages": ["107-108"]
-		}, "pact magic": {
+		},
+		"pact magic": {
 			"pages": [107]
-		}, "pact weapon": {
+		},
+		"pact weapon": {
 			"pages": ["107-108"]
-		}, "paladin": {
+		},
+		"paladin": {
 			"pages": [45, "82-88"]
-		}, "pandemonium": {
+		},
+		"pandemonium": {
 			"pages": [302]
-		}, "panther": {
+		},
+		"panther": {
 			"pages": [308]
-		}, "paralyzed": {
+		},
+		"paralyzed": {
 			"pages": [291]
-		}, "parry maneuver": {
+		},
+		"parry maneuver": {
 			"pages": [74]
-		}, "party": {
+		},
+		"party": {
 			"pages": [15]
-		}, "passive check": {
+		},
+		"passive check": {
 			"pages": [175]
-		}, "path of the berserker": {
+		},
+		"path of the berserker": {
 			"pages": ["49-50"]
-		}, "path of the totem warrior": {
+		},
+		"path of the totem warrior": {
 			"pages": [50]
-		}, "patient defense": {
+		},
+		"patient defense": {
 			"pages": [78]
-		}, "peerless skill": {
+		},
+		"peerless skill": {
 			"pages": [55]
-		}, "penalty": {
+		},
+		"penalty": {
 			"pages": [6]
-		}, "percentile": {
+		},
+		"percentile": {
 			"pages": [6]
-		}, "perception": {
+		},
+		"perception": {
 			"pages": [178]
-		}, "perfect self": {
+		},
+		"perfect self": {
 			"pages": [79]
-		}, "performance": {
+		},
+		"performance": {
 			"pages": [179]
-		}, "persistent rage": {
+		},
+		"persistent rage": {
 			"pages": [49]
-		}, "personality": {
+		},
+		"personality": {
 			"pages": ["122-124"]
-		}, "persuasion": {
+		},
+		"persuasion": {
 			"pages": [179]
-		}, "petrified": {
+		},
+		"petrified": {
 			"pages": [291]
-		}, "pick locks": {
+		},
+		"pick locks": {
 			"pages": [154]
-		}, "pick pockets": {
+		},
+		"pick pockets": {
 			"pages": [177]
-		}, "piercing damage": {
+		},
+		"piercing damage": {
 			"pages": [196]
-		}, "pirate": {
+		},
+		"pirate": {
 			"pages": [139]
-		}, "planar travel": {
+		},
+		"planar travel": {
 			"pages": [301]
-		}, "plane of air": {
+		},
+		"plane of air": {
 			"pages": [301]
-		}, "plane of earth": {
+		},
+		"plane of earth": {
 			"pages": [301]
-		}, "plane of faerie": {
+		},
+		"plane of faerie": {
 			"pages": [301]
-		}, "plane of fire": {
+		},
+		"plane of fire": {
 			"pages": [301]
-		}, "plane of shadow": {
+		},
+		"plane of shadow": {
 			"pages": [301]
-		}, "plane of water": {
+		},
+		"plane of water": {
 			"pages": [301]
-		}, "planes of existence": {
+		},
+		"planes of existence": {
 			"pages": [5, "300-303"]
-		}, "platinum piece (pp)": {
+		},
+		"platinum piece (pp)": {
 			"pages": [143]
-		}, "player character": {
+		},
+		"player character": {
 			"pages": [5, "11-15"]
-		}, "point of origin": {
+		},
+		"point of origin": {
 			"pages": [204]
-		}, "poison damage": {
+		},
+		"poison damage": {
 			"pages": [196]
-		}, "poisoned": {
+		},
+		"poisoned": {
 			"pages": [292]
-		}, "position of privilege": {
+		},
+		"position of privilege": {
 			"pages": [135]
-		}, "positive plane": {
+		},
+		"positive plane": {
 			"pages": [300]
-		}, "portent": {
+		},
+		"portent": {
 			"pages": [116]
-		}, "potent cantrip": {
+		},
+		"potent cantrip": {
 			"pages": [117]
-		}, "potent spellcasting": {
+		},
+		"potent spellcasting": {
 			"pages": [60, 61]
-		}, "precision attack maneuver": {
+		},
+		"precision attack maneuver": {
 			"pages": [74]
-		}, "preparing spells": {
+		},
+		"preparing spells": {
 			"pages": [58, "(druid) 66", "(paladin) 84-85", "(wizard) 114", "see spellcasting"]
-		}, "preserve life": {
+		},
+		"preserve life": {
 			"pages": [60]
-		}, "primal champion": {
+		},
+		"primal champion": {
 			"pages": [49]
-		}, "primal path": {
+		},
+		"primal path": {
 			"pages": [48]
-		}, "primal paths": {
+		},
+		"primal paths": {
 			"pages": ["49-50"]
-		}, "primal strike": {
+		},
+		"primal strike": {
 			"pages": [69]
-		}, "primeval awareness": {
+		},
+		"primeval awareness": {
 			"pages": [92]
-		}, "primordial": {
+		},
+		"primordial": {
 			"pages": [123]
-		}, "profession": {
+		},
+		"profession": {
 			"pages": [187]
-		}, "proficiencies": {
+		},
+		"proficiencies": {
 			"pages": [11, 12, 14, 155]
-		}, "proficiency bonus": {
+		},
+		"proficiency bonus": {
 			"pages": [14, "173-174", 194]
-		}, "projected ward": {
+		},
+		"projected ward": {
 			"pages": [115]
-		}, "projectile weapon": {
+		},
+		"projectile weapon": {
 			"pages": [146]
-		}, "prone": {
+		},
+		"prone": {
 			"pages": ["190-191"]
-		}, "protection": {
+		},
+		"protection": {
 			"pages": [72, 84]
-		}, "pseudodragon": {
+		},
+		"pseudodragon": {
 			"pages": [308]
-		}, "psychic damage": {
+		},
+		"psychic damage": {
 			"pages": [196]
-		}, "punching": {
+		},
+		"punching": {
 			"pages": [195]
-		}, "purity of body": {
+		},
+		"purity of body": {
 			"pages": [79]
-		}, "purity of spirit": {
+		},
+		"purity of spirit": {
 			"pages": [86]
-		}, "pushing attack maneuver": {
+		},
+		"pushing attack maneuver": {
 			"pages": [74]
-		}, "quasit": {
+		},
+		"quasit": {
 			"pages": [309]
-		}, "quick build": {
+		},
+		"quick build": {
 			"pages": [11]
-		}, "quickened spell": {
+		},
+		"quickened spell": {
 			"pages": [102]
-		}, "quivering palm": {
+		},
+		"quivering palm": {
 			"pages": [80]
-		}, "race": {
+		},
+		"race": {
 			"pages": [11]
-		}, "racial ability score increase": {
+		},
+		"racial ability score increase": {
 			"pages": [11, 12, 13, 17]
-		}, "racial traits": {
+		},
+		"racial traits": {
 			"pages": [11, 17]
-		}, "radiance of the dawn": {
+		},
+		"radiance of the dawn": {
 			"pages": [61]
-		}, "radiant damage": {
+		},
+		"radiant damage": {
 			"pages": [196]
-		}, "rage": {
+		},
+		"rage": {
 			"pages": [48]
-		}, "rally maneuver": {
+		},
+		"rally maneuver": {
 			"pages": [74]
-		}, "range": {
+		},
+		"range": {
 			"pages": [146, 195]
-		}, "ranged attack": {
+		},
+		"ranged attack": {
 			"pages": [195]
-		}, "ranged weapon": {
+		},
+		"ranged weapon": {
 			"pages": [14, 146, 149, 195]
-		}, "ranger": {
+		},
+		"ranger": {
 			"pages": [45, "89-93"]
-		}, "ranger archetype": {
+		},
+		"ranger archetype": {
 			"pages": [92]
-		}, "ranger archetypes": {
+		},
+		"ranger archetypes": {
 			"pages": [93]
-		}, "ranger's companion": {
+		},
+		"ranger's companion": {
 			"pages": [93]
-		}, "rashemi": {
+		},
+		"rashemi": {
 			"pages": [31]
-		}, "rat": {
+		},
+		"rat": {
 			"pages": [309]
-		}, "raven": {
+		},
+		"raven": {
 			"pages": [309]
-		}, "reach": {
+		},
+		"reach": {
 			"pages": [147]
-		}, "reaction": {
+		},
+		"reaction": {
 			"pages": [190]
-		}, "read thoughts": {
+		},
+		"read thoughts": {
 			"pages": [59]
-		}, "ready action": {
+		},
+		"ready action": {
 			"pages": [193]
-		}, "reckless attack": {
+		},
+		"reckless attack": {
 			"pages": [48]
-		}, "recovering ammunition": {
+		},
+		"recovering ammunition": {
 			"pages": [146]
-		}, "recuperating": {
+		},
+		"recuperating": {
 			"pages": [187]
-		}, "refitting plate armor": {
+		},
+		"refitting plate armor": {
 			"pages": [144]
-		}, "relentless": {
+		},
+		"relentless": {
 			"pages": [78]
-		}, "relentless avenger": {
+		},
+		"relentless avenger": {
 			"pages": [88]
-		}, "relentless endurance": {
+		},
+		"relentless endurance": {
 			"pages": [41]
-		}, "relentless rage": {
+		},
+		"relentless rage": {
 			"pages": [49]
-		}, "reliable talent": {
+		},
+		"reliable talent": {
 			"pages": [96]
-		}, "religion": {
+		},
+		"religion": {
 			"pages": [178, 293]
-		}, "reloading": {
+		},
+		"reloading": {
 			"pages": [146]
-		}, "remarkable athlete": {
+		},
+		"remarkable athlete": {
 			"pages": [72]
-		}, "repelling blast": {
+		},
+		"repelling blast": {
 			"pages": [111]
-		}, "research": {
+		},
+		"research": {
 			"pages": [187]
-		}, "researcher": {
+		},
+		"researcher": {
 			"pages": [138]
-		}, "resistance": {
+		},
+		"resistance": {
 			"pages": [97]
-		}, "resting": {
+		},
+		"resting": {
 			"pages": [186]
-		}, "restrained": {
+		},
+		"restrained": {
 			"pages": [292]
-		}, "result": {
+		},
+		"result": {
 			"pages": [7]
-		}, "retainers": {
+		},
+		"retainers": {
 			"pages": [136]
-		}, "retaliation": {
+		},
+		"retaliation": {
 			"pages": [50]
-		}, "ride the wind": {
+		},
+		"ride the wind": {
 			"pages": [81]
-		}, "riposte maneuver": {
+		},
+		"riposte maneuver": {
 			"pages": [74]
-		}, "ritual casting": {
+		},
+		"ritual casting": {
 			"pages": [169, "see spellcasting: bard (52-53); cleric (58); druid (66); wizard"]
-		}, "rituals": {
+		},
+		"rituals": {
 			"pages": ["201-202"]
-		}, "river of hungry flame": {
+		},
+		"river of hungry flame": {
 			"pages": [81]
-		}, "rock gnome": {
+		},
+		"rock gnome": {
 			"pages": [37]
-		}, "rogue": {
+		},
+		"rogue": {
 			"pages": [45, "94-98"]
-		}, "roguish archetype": {
+		},
+		"roguish archetype": {
 			"pages": [96]
-		}, "roguish archetypes": {
+		},
+		"roguish archetypes": {
 			"pages": ["97-98"]
-		}, "roleplaying": {
+		},
+		"roleplaying": {
 			"pages": [8, "185-186"]
-		}, "roll": {
+		},
+		"roll": {
 			"pages": ["6-7"]
-		}, "round": {
+		},
+		"round": {
 			"pages": [181, 189]
-		}, "rounding numbers": {
+		},
+		"rounding numbers": {
 			"pages": [7]
-		}, "rowed vessel": {
+		},
+		"rowed vessel": {
 			"pages": ["155-157"]
-		}, "rules": {
+		},
+		"rules": {
 			"pages": ["6-7"]
-		}, "run": {
+		},
+		"run": {
 			"pages": [192]
-		}, "rush of the gale spirits": {
+		},
+		"rush of the gale spirits": {
 			"pages": [81]
-		}, "rustic hospitality": {
+		},
+		"rustic hospitality": {
 			"pages": [131]
-		}, "sacred oath": {
+		},
+		"sacred oath": {
 			"pages": [85]
-		}, "sacred oaths": {
+		},
+		"sacred oaths": {
 			"pages": ["85-88"]
-		}, "sacred plants and wood": {
+		},
+		"sacred plants and wood": {
 			"pages": [66]
-		}, "sacred weapon": {
+		},
+		"sacred weapon": {
 			"pages": [86]
-		}, "sage": {
+		},
+		"sage": {
 			"pages": ["137-138"]
-		}, "sailor": {
+		},
+		"sailor": {
 			"pages": [139]
-		}, "savage attacks": {
+		},
+		"savage attacks": {
 			"pages": [41]
-		}, "saving throw": {
+		},
+		"saving throw": {
 			"pages": [7, 12, 179, 205]
-		}, "saving throw modifier": {
+		},
+		"saving throw modifier": {
 			"pages": [12, 179, 205]
-		}, "school of abjuration": {
+		},
+		"school of abjuration": {
 			"pages": ["115-116"]
-		}, "school of conjuration": {
+		},
+		"school of conjuration": {
 			"pages": [116]
-		}, "school of divination": {
+		},
+		"school of divination": {
 			"pages": ["116-117"]
-		}, "school of enchantment": {
+		},
+		"school of enchantment": {
 			"pages": [117]
-		}, "school of evocation": {
+		},
+		"school of evocation": {
 			"pages": ["117-118"]
-		}, "school of illusion": {
+		},
+		"school of illusion": {
 			"pages": [118]
-		}, "school of necromancy": {
+		},
+		"school of necromancy": {
 			"pages": ["118-119"]
-		}, "school of transmutation": {
+		},
+		"school of transmutation": {
 			"pages": [119]
-		}, "schools of magic": {
+		},
+		"schools of magic": {
 			"pages": ["115-119"]
-		}, "sculptor of flesh": {
+		},
+		"sculptor of flesh": {
 			"pages": [111]
-		}, "sculpt spells": {
+		},
+		"sculpt spells": {
 			"pages": [117]
-		}, "second-story work": {
+		},
+		"second-story work": {
 			"pages": [97]
-		}, "second wind": {
+		},
+		"second wind": {
 			"pages": [72]
-		}, "search action": {
+		},
+		"search action": {
 			"pages": [193]
-		}, "self": {
+		},
+		"self": {
 			"pages": ["202-203", 204]
-		}, "selling treasure": {
+		},
+		"selling treasure": {
 			"pages": [144]
-		}, "services": {
+		},
+		"services": {
 			"pages": [159]
-		}, "sex": {
+		},
+		"sex": {
 			"pages": [121]
-		}, "shadow arts": {
+		},
+		"shadow arts": {
 			"pages": [80]
-		}, "the shadowfell": {
+		},
+		"the shadowfell": {
 			"pages": [300]
-		}, "shadow step": {
+		},
+		"shadow step": {
 			"pages": [80]
-		}, "shapechanger": {
+		},
+		"shapechanger": {
 			"pages": [119]
-		}, "shape the flowing river": {
+		},
+		"shape the flowing river": {
 			"pages": [81]
-		}, "share spells": {
+		},
+		"share spells": {
 			"pages": [93]
-		}, "reef shark": {
+		},
+		"reef shark": {
 			"pages": [309]
-		}, "shelter of the faithful": {
+		},
+		"shelter of the faithful": {
 			"pages": [127]
-		}, "shield": {
+		},
+		"shield": {
 			"pages": [144]
-		}, "shield dwarf": {
+		},
+		"shield dwarf": {
 			"pages": [20]
-		}, "ship's passage": {
+		},
+		"ship's passage": {
 			"pages": [139]
-		}, "short rest": {
+		},
+		"short rest": {
 			"pages": [186]
-		}, "shou": {
+		},
+		"shou": {
 			"pages": [31]
-		}, "shoving": {
+		},
+		"shoving": {
 			"pages": [195]
-		}, "sigil": {
+		},
+		"sigil": {
 			"pages": [302]
-		}, "signature spells": {
+		},
+		"signature spells": {
 			"pages": [115]
-		}, "sign of ill omen": {
+		},
+		"sign of ill omen": {
 			"pages": [111]
-		}, "silvered weapon": {
+		},
+		"silvered weapon": {
 			"pages": [148]
-		}, "silver piece (sp)": {
+		},
+		"silver piece (sp)": {
 			"pages": [143]
-		}, "simple weapon": {
+		},
+		"simple weapon": {
 			"pages": [146]
-		}, "size": {
+		},
+		"size": {
 			"pages": [176, "191-192"]
-		}, "size category": {
+		},
+		"size category": {
 			"pages": [191]
-		}, "skeleton": {
+		},
+		"skeleton": {
 			"pages": [310]
-		}, "skill check": {
+		},
+		"skill check": {
 			"pages": ["174-175"]
-		}, "skill versatility": {
+		},
+		"skill versatility": {
 			"pages": [39]
-		}, "skills with different abilities": {
+		},
+		"skills with different abilities": {
 			"pages": [175]
-		}, "slashing damage": {
+		},
+		"slashing damage": {
 			"pages": [196]
-		}, "sleight of hand": {
+		},
+		"sleight of hand": {
 			"pages": [177]
-		}, "slippery mind": {
+		},
+		"slippery mind": {
 			"pages": [96]
-		}, "slow fall": {
+		},
+		"slow fall": {
 			"pages": [78]
-		}, "small": {
+		},
+		"small": {
 			"pages": [191]
-		}, "constrictor snake": {
+		},
+		"constrictor snake": {
 			"pages": [305]
-		}, "poisonous snake": {
+		},
+		"poisonous snake": {
 			"pages": [308]
-		}, "sneak attack": {
+		},
+		"sneak attack": {
 			"pages": [96]
-		}, "social interaction": {
+		},
+		"social interaction": {
 			"pages": [8, "185-186"]
-		}, "soldier": {
+		},
+		"soldier": {
 			"pages": ["140-141"]
-		}, "somatic spell component": {
+		},
+		"somatic spell component": {
 			"pages": [203]
-		}, "song of rest": {
+		},
+		"song of rest": {
 			"pages": [54]
-		}, "sorcerer": {
+		},
+		"sorcerer": {
 			"pages": [45, "99-104"]
-		}, "sorcerous origin": {
+		},
+		"sorcerous origin": {
 			"pages": [101]
-		}, "sorcerous origins": {
+		},
+		"sorcerous origins": {
 			"pages": ["102-104"]
-		}, "sorcerous restoration": {
+		},
+		"sorcerous restoration": {
 			"pages": [102]
-		}, "sorcery pointer": {
+		},
+		"sorcery pointer": {
 			"pages": [101]
-		}, "soul of vengeance": {
+		},
+		"soul of vengeance": {
 			"pages": [88]
-		}, "space": {
+		},
+		"space": {
 			"pages": ["191-192"]
-		}, "speak with small beasts": {
+		},
+		"speak with small beasts": {
 			"pages": [37]
-		}, "special": {
+		},
+		"special": {
 			"pages": [147]
-		}, "speed": {
+		},
+		"speed": {
 			"pages": [14, 17, 181]
-		}, "spell": {
+		},
+		"spell": {
 			"pages": [201]
-		}, "spell attack modifier": {
+		},
+		"spell attack modifier": {
 			"pages": "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
-		}, "spell attack roll": {
+		},
+		"spell attack roll": {
 			"pages": [205]
-		}, "spell bombardment": {
+		},
+		"spell bombardment": {
 			"pages": [103]
-		}, "spellbook": {
+		},
+		"spellbook": {
 			"pages": [114]
-		}, "spellcaster": {
+		},
+		"spellcaster": {
 			"pages": [201]
-		}, "spellcasting": {
+		},
+		"spellcasting": {
 			"pages": ["52-53", 58, 66, 75, 164, "84-85", "91-92", "97-98", 101, 107, 114]
-		}, "spellcasting ability": {
+		},
+		"spellcasting ability": {
 			"pages": [178, 179, 205]
-		}, "spellcasting focus": {
+		},
+		"spellcasting focus": {
 			"pages": "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
-		}, "spell components": {
+		},
+		"spell components": {
 			"pages": [203]
-		}, "spell descriptions": {
+		},
+		"spell descriptions": {
 			"pages": ["211-289"]
-		}, "spell level": {
+		},
+		"spell level": {
 			"pages": [201]
-		}, "spell list": {
+		},
+		"spell list": {
 			"pages": ["207-211"]
-		}, "spell mastery": {
+		},
+		"spell mastery": {
 			"pages": [115]
-		}, "spell preparation": {
+		},
+		"spell preparation": {
 			"pages": [165, "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"]
-		}, "spell resistance": {
+		},
+		"spell resistance": {
 			"pages": [116]
-		}, "spell save dc": {
+		},
+		"spell save dc": {
 			"pages": [205]
-		}, "spell saving throws": {
+		},
+		"spell saving throws": {
 			"pages": [205]
-		}, "spells known": {
+		},
+		"spells known": {
 			"pages": [201]
-		}, "spell slots": {
+		},
+		"spell slots": {
 			"pages": [201]
-		}, "spell thief": {
+		},
+		"spell thief": {
 			"pages": [98]
-		}, "sphere": {
+		},
+		"sphere": {
 			"pages": [205]
-		}, "giant spider": {
+		},
+		"giant spider": {
 			"pages": [306]
-		}, "spirit seeker": {
+		},
+		"spirit seeker": {
 			"pages": [50]
-		}, "spirit walker": {
+		},
+		"spirit walker": {
 			"pages": [50]
-		}, "split enchantment": {
+		},
+		"split enchantment": {
 			"pages": [118]
-		}, "sprite": {
+		},
+		"sprite": {
 			"pages": [310]
-		}, "spy": {
+		},
+		"spy": {
 			"pages": [130]
-		}, "squeezing": {
+		},
+		"squeezing": {
 			"pages": [192]
-		}, "stabilizing a creature": {
+		},
+		"stabilizing a creature": {
 			"pages": [197]
-		}, "stable": {
+		},
+		"stable": {
 			"pages": ["197-198"]
-		}, "stacking": {
+		},
+		"stacking": {
 			"pages": [205]
-		}, "standard action": {
+		},
+		"standard action": {
 			"pages": [192]
-		}, "standard language": {
+		},
+		"standard language": {
 			"pages": [123]
-		}, "stand against the tide": {
+		},
+		"stand against the tide": {
 			"pages": [93]
-		}, "starting wealth": {
+		},
+		"starting wealth": {
 			"pages": [143]
-		}, "starvation": {
+		},
+		"starvation": {
 			"pages": [185]
-		}, "stealth": {
+		},
+		"stealth": {
 			"pages": [177]
-		}, "steel will": {
+		},
+		"steel will": {
 			"pages": [93]
-		}, "step of the wind": {
+		},
+		"step of the wind": {
 			"pages": [78]
-		}, "stillness of mind": {
+		},
+		"stillness of mind": {
 			"pages": [79]
-		}, "stonecunning": {
+		},
+		"stonecunning": {
 			"pages": [20]
-		}, "stormborn": {
+		},
+		"stormborn": {
 			"pages": [62]
-		}, "stout resilience": {
+		},
+		"stout resilience": {
 			"pages": [28]
-		}, "strength": {
+		},
+		"strength": {
 			"pages": [12, "175-176"]
-		}, "stroke of luck": {
+		},
+		"stroke of luck": {
 			"pages": [96]
-		}, "strongheart halfling": {
+		},
+		"strongheart halfling": {
 			"pages": [28]
-		}, "student of war": {
+		},
+		"student of war": {
 			"pages": [73]
-		}, "stunned": {
+		},
+		"stunned": {
 			"pages": [292]
-		}, "stunning strike": {
+		},
+		"stunning strike": {
 			"pages": [79]
-		}, "subrace": {
+		},
+		"subrace": {
 			"pages": [17]
-		}, "subtle spell": {
+		},
+		"subtle spell": {
 			"pages": [102]
-		}, "suffocating": {
+		},
+		"suffocating": {
 			"pages": [183]
-		}, "sun elf": {
+		},
+		"sun elf": {
 			"pages": [23]
-		}, "sunlight sensitivity": {
+		},
+		"sunlight sensitivity": {
 			"pages": [24]
-		}, "superior critical": {
+		},
+		"superior critical": {
 			"pages": [73]
-		}, "superior darkvision": {
+		},
+		"superior darkvision": {
 			"pages": [24]
-		}, "superior hunter's defense": {
+		},
+		"superior hunter's defense": {
 			"pages": [93]
-		}, "superior inspiration": {
+		},
+		"superior inspiration": {
 			"pages": [54]
-		}, "superiority dice": {
+		},
+		"superiority dice": {
 			"pages": [73]
-		}, "supreme healing": {
+		},
+		"supreme healing": {
 			"pages": [60]
-		}, "supreme sneak": {
+		},
+		"supreme sneak": {
 			"pages": [97]
-		}, "surprise": {
+		},
+		"surprise": {
 			"pages": [189]
-		}, "survival": {
+		},
+		"survival": {
 			"pages": [178]
-		}, "survivor": {
+		},
+		"survivor": {
 			"pages": [73]
-		}, "svirfneblin (deep gnome)": {
+		},
+		"svirfneblin (deep gnome)": {
 			"pages": [36]
-		}, "sweeping attack maneuver": {
+		},
+		"sweeping attack maneuver": {
 			"pages": [74]
-		}, "sweeping cinder strike": {
+		},
+		"sweeping cinder strike": {
 			"pages": [81]
-		}, "sylvan": {
+		},
+		"sylvan": {
 			"pages": [123]
-		}, "targeting a spell": {
+		},
+		"targeting a spell": {
 			"pages": [204]
-		}, "target number": {
+		},
+		"target number": {
 			"pages": [7]
-		}, "tempest domain": {
+		},
+		"tempest domain": {
 			"pages": [62]
-		}, "temporary hit points": {
+		},
+		"temporary hit points": {
 			"pages": [198]
-		}, "tenets of devotion": {
+		},
+		"tenets of devotion": {
 			"pages": [86]
-		}, "tenets of the ancients": {
+		},
+		"tenets of the ancients": {
 			"pages": ["86-87"]
-		}, "tenets of vengeance": {
+		},
+		"tenets of vengeance": {
 			"pages": [88]
-		}, "terran": {
+		},
+		"terran": {
 			"pages": [123]
-		}, "tethyrian": {
+		},
+		"tethyrian": {
 			"pages": [31]
-		}, "thac0": {
+		},
+		"thac0": {
 			"pages": [7, 14, 176, 177, 194]
-		}, "thief": {
+		},
+		"thief": {
 			"pages": [97]
-		}, "thief of five fates": {
+		},
+		"thief of five fates": {
 			"pages": [111]
-		}, "thief's reflexes": {
+		},
+		"thief's reflexes": {
 			"pages": [97]
-		}, "thieves' cant": {
+		},
+		"thieves' cant": {
 			"pages": [96]
-		}, "thieves' tools": {
+		},
+		"thieves' tools": {
 			"pages": [154]
-		}, "the third eye": {
+		},
+		"the third eye": {
 			"pages": ["116-117"]
-		}, "thirsting blade": {
+		},
+		"thirsting blade": {
 			"pages": [111]
-		}, "thought shield": {
+		},
+		"thought shield": {
 			"pages": [110]
-		}, "thousand forms": {
+		},
+		"thousand forms": {
 			"pages": [69]
-		}, "three-quarters cover": {
+		},
+		"three-quarters cover": {
 			"pages": [196]
-		}, "thrown": {
+		},
+		"thrown": {
 			"pages": [147]
-		}, "thunderbolt strike": {
+		},
+		"thunderbolt strike": {
 			"pages": [62]
-		}, "thunder damage": {
+		},
+		"thunder damage": {
 			"pages": [196]
-		}, "tides of chaos": {
+		},
+		"tides of chaos": {
 			"pages": [103]
-		}, "tiefling": {
+		},
+		"tiefling": {
 			"pages": ["42-43"]
-		}, "tiefling names": {
+		},
+		"tiefling names": {
 			"pages": [43]
-		}, "tiefling traits": {
+		},
+		"tiefling traits": {
 			"pages": [43]
-		}, "tiers of play": {
+		},
+		"tiers of play": {
 			"pages": [15]
-		}, "tiger": {
+		},
+		"tiger": {
 			"pages": [311]
-		}, "time": {
+		},
+		"time": {
 			"pages": [181]
-		}, "timeless body": {
+		},
+		"timeless body": {
 			"pages": [67, 79]
-		}, "tinker": {
+		},
+		"tinker": {
 			"pages": [37]
-		}, "tiny": {
+		},
+		"tiny": {
 			"pages": [191]
-		}, "tongue of the sun and moon": {
+		},
+		"tongue of the sun and moon": {
 			"pages": [79]
-		}, "tools": {
+		},
+		"tools": {
 			"pages": [154]
-		}, "total": {
+		},
+		"total": {
 			"pages": [7]
-		}, "total cover": {
+		},
+		"total cover": {
 			"pages": [196]
-		}, "totemic attunement": {
+		},
+		"totemic attunement": {
 			"pages": [50]
-		}, "totem spirit": {
+		},
+		"totem spirit": {
 			"pages": [50]
-		}, "tracking": {
+		},
+		"tracking": {
 			"pages": [183]
-		}, "trade goods": {
+		},
+		"trade goods": {
 			"pages": [144, 157]
-		}, "training": {
+		},
+		"training": {
 			"pages": [187]
-		}, "traits": {
+		},
+		"traits": {
 			"pages": [123]
-		}, "trance": {
+		},
+		"trance": {
 			"pages": [23]
-		}, "transitive planes": {
+		},
+		"transitive planes": {
 			"pages": [301]
-		}, "tranquility": {
+		},
+		"tranquility": {
 			"pages": [80]
-		}, "transmutation": {
+		},
+		"transmutation": {
 			"pages": [119, 203]
-		}, "transmutation savant": {
+		},
+		"transmutation savant": {
 			"pages": [119]
-		}, "transmuter": {
+		},
+		"transmuter": {
 			"pages": [119]
-		}, "transmuter's stone": {
+		},
+		"transmuter's stone": {
 			"pages": [119]
-		}, "finding traps": {
+		},
+		"finding traps": {
 			"pages": [178, 178]
-		}, "removing traps": {
+		},
+		"removing traps": {
 			"pages": [154]
-		}, "disabling traps": {
+		},
+		"disabling traps": {
 			"pages": [154]
-		}, "travel": {
+		},
+		"travel": {
 			"pages": ["181-183"]
-		}, "trickery domain": {
+		},
+		"trickery domain": {
 			"pages": ["62-63"]
-		}, "trinkets": {
+		},
+		"trinkets": {
 			"pages": ["160-161"]
-		}, "trip attack maneuver": {
+		},
+		"trip attack maneuver": {
 			"pages": [74]
-		}, "truesight": {
+		},
+		"truesight": {
 			"pages": [185]
-		}, "turami": {
+		},
+		"turami": {
 			"pages": [31]
-		}, "turn": {
+		},
+		"turn": {
 			"pages": [189]
-		}, "taking your turn": {
+		},
+		"taking your turn": {
 			"pages": ["189-190"]
-		}, "turn the faithless": {
+		},
+		"turn the faithless": {
 			"pages": [87]
-		}, "turn the unholy": {
+		},
+		"turn the unholy": {
 			"pages": [86]
-		}, "turn undead": {
+		},
+		"turn undead": {
 			"pages": [59]
-		}, "twinned spell": {
+		},
+		"twinned spell": {
 			"pages": [102]
-		}, "two-handed": {
+		},
+		"two-handed": {
 			"pages": [147]
-		}, "two-weapon fighting": {
+		},
+		"two-weapon fighting": {
 			"pages": [72, 91, 195]
-		}, "unarmed": {
+		},
+		"unarmed": {
 			"pages": [195]
-		}, "unarmored defense": {
+		},
+		"unarmored defense": {
 			"pages": [48, 78]
-		}, "unarmored movement": {
+		},
+		"unarmored movement": {
 			"pages": [78]
-		}, "uncanny dodge": {
+		},
+		"uncanny dodge": {
 			"pages": [93, 96]
-		}, "undead thralls": {
+		},
+		"undead thralls": {
 			"pages": [119]
-		}, "underdark": {
+		},
+		"underdark": {
 			"pages": [17]
-		}, "undying sentinel": {
+		},
+		"undying sentinel": {
 			"pages": [87]
-		}, "uncommon races": {
+		},
+		"uncommon races": {
 			"pages": [33]
-		}, "unconscious": {
+		},
+		"unconscious": {
 			"pages": [197, 198]
-		}, "undercommon": {
+		},
+		"undercommon": {
 			"pages": [123]
-		}, "underwater combat": {
+		},
+		"underwater combat": {
 			"pages": [198]
-		}, "unseen attackers and targets": {
+		},
+		"unseen attackers and targets": {
 			"pages": ["194-195"]
-		}, "upper planes": {
+		},
+		"upper planes": {
 			"pages": [302]
-		}, "urchin": {
+		},
+		"urchin": {
 			"pages": [141]
-		}, "use an object action": {
+		},
+		"use an object action": {
 			"pages": [193]
-		}, "use magic device": {
+		},
+		"use magic device": {
 			"pages": [97]
-		}, "using this book": {
+		},
+		"using this book": {
 			"pages": [6]
-		}, "vanish": {
+		},
+		"vanish": {
 			"pages": [92]
-		}, "vehicle": {
+		},
+		"vehicle": {
 			"pages": [155, 157]
-		}, "verbal spell component": {
+		},
+		"verbal spell component": {
 			"pages": [203]
-		}, "versatile": {
+		},
+		"versatile": {
 			"pages": [147]
-		}, "versatile trickster": {
+		},
+		"versatile trickster": {
 			"pages": [98]
-		}, "vision": {
+		},
+		"vision": {
 			"pages": [183]
-		}, "visions of distant realms": {
+		},
+		"visions of distant realms": {
 			"pages": [111]
-		}, "visions of the past": {
+		},
+		"visions of the past": {
 			"pages": [60]
-		}, "voice of the chain master": {
+		},
+		"voice of the chain master": {
 			"pages": [111]
-		}, "volley": {
+		},
+		"volley": {
 			"pages": [93]
-		}, "vow of enmity": {
+		},
+		"vow of enmity": {
 			"pages": [88]
-		}, "vulnerability": {
+		},
+		"vulnerability": {
 			"pages": [197]
-		}, "wanderer": {
+		},
+		"wanderer": {
 			"pages": [136]
-		}, "warding flare": {
+		},
+		"warding flare": {
 			"pages": [61]
-		}, "war domain": {
+		},
+		"war domain": {
 			"pages": [63]
-		}, "war god's blessing": {
+		},
+		"war god's blessing": {
 			"pages": [63]
-		}, "warhorse": {
+		},
+		"warhorse": {
 			"pages": [311]
-		}, "war magic": {
+		},
+		"war magic": {
 			"pages": [75]
-		}, "war priest": {
+		},
+		"war priest": {
 			"pages": [63]
-		}, "water whip": {
+		},
+		"water whip": {
 			"pages": [81]
-		}, "warlock": {
+		},
+		"warlock": {
 			"pages": [45, "105-111"]
-		}, "wave of rolling earth": {
+		},
+		"wave of rolling earth": {
 			"pages": [81]
-		}, "wealth": {
+		},
+		"wealth": {
 			"pages": ["143-144"]
-		}, "weapon": {
+		},
+		"weapon": {
 			"pages": [14, "146-148", 149]
-		}, "weapon bond": {
+		},
+		"weapon bond": {
 			"pages": [75]
-		}, "weapon categories": {
+		},
+		"weapon categories": {
 			"pages": [146]
-		}, "weapon proficiency": {
+		},
+		"weapon proficiency": {
 			"pages": [14, 146]
-		}, "weapon properties": {
+		},
+		"weapon properties": {
 			"pages": ["146-147"]
-		}, "the weave": {
+		},
+		"the weave": {
 			"pages": [205]
-		}, "whirlwind attack": {
+		},
+		"whirlwind attack": {
 			"pages": [93]
-		}, "whispers of the grave": {
+		},
+		"whispers of the grave": {
 			"pages": [111]
-		}, "wholeness of body": {
+		},
+		"wholeness of body": {
 			"pages": ["79-80"]
-		}, "wild elf": {
+		},
+		"wild elf": {
 			"pages": [24]
-		}, "wild magic": {
+		},
+		"wild magic": {
 			"pages": [103]
-		}, "wild magic surge": {
+		},
+		"wild magic surge": {
 			"pages": [103]
-		}, "wild shape": {
+		},
+		"wild shape": {
 			"pages": ["66-67"]
-		}, "wisdom": {
+		},
+		"wisdom": {
 			"pages": [12, 178]
-		}, "witch sight": {
+		},
+		"witch sight": {
 			"pages": [111]
-		}, "wizard": {
+		},
+		"wizard": {
 			"pages": [45, "112-119"]
-		}, "dire wolf": {
+		},
+		"dire wolf": {
 			"pages": [305]
-		}, "wolf": {
+		},
+		"wolf": {
 			"pages": [311]
-		}, "wood elf": {
+		},
+		"wood elf": {
 			"pages": [24]
-		}, "world": {
+		},
+		"world": {
 			"pages": ["5-6", 8]
-		}, "wraith of the storm": {
+		},
+		"wraith of the storm": {
 			"pages": [62]
-		}, "xp": {
+		},
+		"xp": {
 			"pages": [15]
-		}, "ysgard": {
+		},
+		"ysgard": {
 			"pages": [302]
-		}, "zombie": {
+		},
+		"zombie": {
 			"pages": [311]
 		}
 	}
