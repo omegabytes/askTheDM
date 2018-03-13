@@ -717,7 +717,7 @@ module.exports = {
 			"category": "Adventure Gear"
 		},
 		"chalk": {
-			"cost": "1 peice for 1 copper",
+			"cost": "1 piece for 1 copper",
 			"weight": "None",
 			"category": "Adventure Gear"
 		},
@@ -1220,7 +1220,7 @@ module.exports = {
 			"category": "Adventure Gear",
 			"itemType": "Artisan's tools"
 		},
-		"leatherworker's tools": {
+		"leatherworker\'s tools": {
 			"cost": "5 gold",
 			"weight": "5 lb",
 			"category": "Adventure Gear",
@@ -1313,12 +1313,6 @@ module.exports = {
 		"jewelers tools": {
 			"cost": "25 gold",
 			"weight": "2 lb",
-			"category": "Adventure Gear",
-			"itemType": "Artisan's tools"
-		},
-		"leatherworkers tools": {
-			"cost": "5 gold",
-			"weight": "5 lb",
 			"category": "Adventure Gear",
 			"itemType": "Artisan's tools"
 		},

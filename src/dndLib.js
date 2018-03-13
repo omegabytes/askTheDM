@@ -130,16 +130,17 @@ exports.getEquipmentPack = function (requestedEquipmentPack) {
 };
 //returns the feats that each player can choose
 exports.getFeats = function (requestedFeat, requestedFeatAttribute) {
+	let feat = langEN.FEATS[requestedFeat];
+	let featAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 	let output = "";
-	let Feat = langEN.FEATS[requestedFeat];
-	let FeatAttribute = langEN.FEAT_ATTRIBUTES[requestedFeatAttribute];
 	//user requests information on feats
-	if (Feat && FeatAttribute) {
-		output = Feat[FeatAttribute];
+	if (feat) {
+		output = feat.description;
+		if(featAttribute) {
+			output = feat[featAttribute];
+		}
 	} else if (requestedFeat) { //otherwise, the user asks for an unknown feat, or Alexa doesn't understand
-		output = exports.notFoundMessage(Feat.name, requestedFeat);
-	} else {
-		output = Feat.description;
+		output = exports.notFoundMessage(feat.name, requestedFeat);
 	}
 	return output;
 };
@@ -159,11 +160,13 @@ exports.getItems = function (requestedItem, requestedItemAttribute) {
 	let item = langEN.ITEMS[requestedItem];
 	let itemAttribute = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
 	let output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
-	if (item && itemAttribute) {
-		if (item.itemType) {
-			output = "It is a " + item.itemType;
-		} else {
-			output = "It is a " + item.category;
+	if (item) {
+		if(itemAttribute) {
+			if (item.itemType) {
+				output = "It is a " + item.itemType;
+			} else {
+				output = "It is a " + item.category;
+			}
 		}
 	} else if (requestedItem) {
 		output = exports.notFoundMessage(item.name, requestedItem);
