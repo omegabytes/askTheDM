@@ -164,14 +164,13 @@ exports.getItems = function (requestedItem, requestedItemAttribute) {
 		if(itemAttribute) {
 			if (item.itemType) {
 				output = "It is a " + item.itemType;
-			} else {
-				output = "It is a " + item.category;
+			}  else {
+				output = item[itemAttribute];
 			}
 		}
+		output = "It is a " + item.category;
 	} else if (requestedItem) {
 		output = exports.notFoundMessage(item.name, requestedItem);
-	} else {
-		output = item[itemAttribute];
 	}
 	return output;
 };
