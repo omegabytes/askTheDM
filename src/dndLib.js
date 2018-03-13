@@ -197,21 +197,38 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 	let spell = langEN.SPELLS[requestedSpell];
 	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
 	let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"];
-	let output = "";
+	let spellClassChecker;
+	let output = "I\'m sorry please provide the player class, spell level, and spell name you wish to know more information about.";
 	if (spell) { //if the requested spell exists
-		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes
-			output = "no";
-		} else {
-			if (spell.slotLevel > level) {
-				output = "no";
+		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes found in spells.js for requested spell
+			for (let i = 0; i < spell.spellClass.length; i++) {
+				if (spell.spellClass[i] !== spellClasses[i]) {
+					return spellClassChecker = false;
+				} else {
+					return spellClassChecker = true;
+				}
+			}
+			if (spellClassChecker === true) {
+				if (level) { //if the requested spell can be cast at the requested level
+					if (spell.slotLevel > level) { //if requested spell is a cantrip
+						output = "no, this is a cantrip.";
+					} else { //if requested spell is a spell using spell slots
+						output = "yes a " + requestedClass + " can cast " + requestedSpell + " using a " + requestedSpellLevel + " spell slot.";
+					}
+				}
 			} else {
-				output = "yes";
+				output = "The class " + requestedClass + " cannot cast the spell " + requestedSpell + ".";
 			}
 		}
+		// if (level) { //if the requested spell can be cast at the requested level
+		// 	if (spell.slotLevel > level) { //if requested spell is a cantrip
+		// 		output = "no, this is a cantrip.";
+		// 	} else { //if requested spell is a spell using spell slots
+		// 		output = "yes a "+requestedClass+" can cast "+requestedSpell+" using a "+requestedSpellLevel+" spell slot.";
+		// 	}
+		// }
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
 		output = exports.notFoundMessage(spell.name, requestedSpell);
-	} else {
-		output = langEN.UNHANDLED; //no longer need unhandled
 	}
 	return output;
 };
