@@ -6226,7 +6226,7 @@ module.exports = {
 			"slotLevel": "2",
 			"school": "Enchantment",
 			"spellClass": ["bard", "warlock"],
-			"shortDescription": "On a failed wisdom save, the target has disadvantage on perception checks against other creatures. Does not affect targts immune to charm, and targets in combat have advantage",
+			"shortDescription": "On a failed wisdom save, the target has disadvantage on perception checks against other creatures. Does not affect targets immune to charm, and targets in combat have advantage",
 			"longDescription": "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that cant be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.",
 			"url": "https://www.dnd-spells.com/spell/enthrall"
 		},

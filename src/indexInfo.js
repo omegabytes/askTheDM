@@ -2716,7 +2716,10 @@ module.exports = {
 			"pages": [115]
 		},
 		"spell preparation": {
-			"pages": [165, "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"]
+			"pages": [
+				165,
+				"see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"
+			]
 		},
 		"spell resistance": {
 			"pages": [116]
