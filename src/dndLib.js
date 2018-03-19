@@ -67,7 +67,7 @@ exports.getDiceRoll = function (numberOfDice, modifier, diceSides, status) {
 	let secondRoll;
 	let result;
 	if ((diceSides == null) || (diceSides === "?") || (numberOfDice === "?")) {
-		output = "I'm sorry I didn't quite catch that, please ask again";
+		output = "I'm sorry I didn't quite catch that, please ask again.";
 		this.emit(':ask', output);
 	}
 	diceSides = diceSides.match(/\d+/).join("");
@@ -87,7 +87,7 @@ exports.getDiceRoll = function (numberOfDice, modifier, diceSides, status) {
 		}
 		output = "You roll with " + status + ". Your first roll is " + firstRoll + ", and your second roll is " + secondRoll + ". The result of the roll with modifiers is " + result;
 	} else {
-		output = "You can only have advantage or disadvantage on d 20 rolls"
+		output = "You can only have advantage or disadvantage on d 20 rolls."
 	}
 	return output;
 };
@@ -117,7 +117,7 @@ exports.getEquipmentPack = function (requestedEquipmentPack) {
 					let packItems = equipmentPack.contents[i];
 					for(let x in packItems){ //iterate through the contents of the requested equipment pack
 						if(packItems.hasOwnProperty(x)){
-							output = packItems.quantity + " " + packItems.name;
+							output = packItems.quantity + " " + packItems.name; //todo: add a newline after each packItem is spit out
 						}
 					}
 				}
