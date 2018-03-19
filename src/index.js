@@ -2,7 +2,7 @@
 let Alexa = require("alexa-sdk");
 let languageStrings = require("./languageStrings");
 let dndLib = require("./dndLib");
-let APP_ID = process.env("appId");
+let APP_ID = process.env.appId;
 let langEN = languageStrings.en.translation;
 // noinspection JSUnusedLocalSymbols
 exports.handler = function (event, context, callback) {
@@ -48,8 +48,7 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	},
-	'EquipmentPackIntent': function() {
+	}, 'EquipmentPackIntent': function () {
 		let requestedEquipmentPack = dndLib.validateAndSetSlot(this.event.request.intent.slots.EquipmentPack);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
 		this.attributes['speechOutput'] = dndLib.getEquipmentPack(requestedEquipmentPack);
@@ -58,8 +57,7 @@ let handlers = {
 		} else {
 			this.emit(':tell', this.attributes['speechOutput']);
 		}
-	},
-	'FeatsIntent': function () {
+	}, 'FeatsIntent': function () {
 		let requestedFeatAttribute = dndLib.validateAndSetSlot(this.event.request.intent.slots.FeatAttribute);
 		let requestedFeat = dndLib.validateAndSetSlot(this.event.request.intent.slots.Feat);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
@@ -99,10 +97,9 @@ let handlers = {
 		}
 	}, 'SpellClassIntent': function () {
 		let requestedSpell = dndLib.validateAndSetSlot(this.event.request.intent.slots.Spell);
-		let requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass); //fixme: .PlayerClass doesnt resolve because it is not being used in test.js
+		let requestedClass = dndLib.validateAndSetSlot(this.event.request.intent.slots.PlayerClass);
 		let requestedSpellLevel = dndLib.validateAndSetSlot(this.event.request.intent.slots.Level);
 		this.attributes['repromptSpeech'] = langEN.REPROMPT;
-		//be careful 'class' is a special keyword
 		this.attributes['speechOutput'] = dndLib.getClassLevel(requestedSpell, requestedSpellLevel, requestedClass);
 		if (this.attributes['continue']) {
 			this.emit(':ask', this.attributes['speechOutput'] + " " + this.attributes['repromptSpeech']);

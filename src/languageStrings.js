@@ -1,18 +1,10 @@
-// import conditions from "./conditions";
-// import exhaustionLevel from "./exhaustionLevel";
-// import indexInfo from "./indexInfo";
-// import items from "./items";
-// import feats from "./feats";
-// import spells from "./spells";
-// import classes from "./classes";
-// import equipment from "./equipmentPacks";
 let conditions = require("./conditions");
 let exhaustionLevel = require("./exhaustionLevel");
 let indexInfo = require("./indexInfo");
 let items = require ("./items");
 let feats = require("./feats");
 let spells = require("./spells");
-let classes = require("./char_classes/Char_Class"); // todo: go back and adjust this
+let classes = require("./char_classes/Char_Class");
 let equipment = require("./equipmentPacks");
 
 module.exports = {
@@ -21,8 +13,7 @@ module.exports = {
 			//json resources
 			"SPELL_ATTRIBUTES": spells.SPELL_ATTRIBUTES,
 			"CONDITIONS": conditions.CONDITIONS,
-			// "CLASSES": classes.CLASSES,
-			// "CLASSES_LIST": classes.CLASSES_LIST,
+			"CLASSES": classes.Char_Class,
 			"EXHAUSTION_LEVELS": exhaustionLevel.EXHAUSTION_LEVELS,
 			"EQUIPMENT_PACKS": equipment.EQUIPMENT_PACKS,
 			"FEATS": feats.FEATS,
@@ -31,7 +22,7 @@ module.exports = {
 			"ITEMS": items.ITEMS,
 			"ITEM_ATTRIBUTES": items.ITEM_ATTRIBUTES,
 			"SLOT_LEVEL": spells.SLOT_LEVEL,
-			"SPELLS": spells.SPELLS, //output strings
+			"SPELLS": spells.SPELLS,
 			"DISPLAY_CARD_TITLE": "%s  - Info for %s.",
 			"HELP_MESSAGE": "Ask the DM was created to provide quick reference to many of the mechanics of Dungeons and Dragons. The fastest way to interact with this application is by saying Alexa, Ask the DM, and follow with your question. For example say: Alexa: ask the DM what is the range of fireball. As of version 2.0, you can roll multiple dice, and roll dee twenties with advantage and disadvantage. I have a working index, and can tell you what page in the players handbook you can find more information on many subjects. Also, you can get information about conditions, spells, feats, and items. For spells, you can get the following information: casting time, duration, range, components, spell type, damage and healing by level, short description and long description. For conditions and feats, simply include their name when asking for information. Items includes an exhaustive list of attributes like cost, type, or armor class.  If you are in interactive mode, say exit to quit. Now, what was your question?",
 			"HELP_REPROMPT": "You can say things like, whats Death Ward, or you can say exit...Now, what can I help you with?",

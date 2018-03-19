@@ -413,9 +413,7 @@ module.exports = {
 		}, "damage": {
 			"pages": [14, "196-197"]
 		}, "damage resistance": {
-			"pages": [97]
-		}, "damage resistance": {
-			"pages": [34]
+			"pages": [34, 97]
 		}, "damage roll": {
 			"pages": [14, 176, 177, 196]
 		}, "damage types": {
@@ -619,9 +617,7 @@ module.exports = {
 		}, "elder champion": {
 			"pages": [87]
 		}, "eldritch invocations": {
-			"pages": [107]
-		}, "eldritch invocations": {
-			"pages": ["110-111"]
+			"pages": [107, "110-111"]
 		}, "eldritch knight": {
 			"pages": [74]
 		}, "eldritch master": {
@@ -1117,9 +1113,7 @@ module.exports = {
 		}, "lifting and carrying": {
 			"pages": [176]
 		}, "light": {
-			"pages": [183]
-		}, "light": {
-			"pages": [147]
+			"pages": [147, 183]
 		}, "light armor": {
 			"pages": [144]
 		}, "light domain": {
@@ -1533,9 +1527,7 @@ module.exports = {
 		}, "rally maneuver": {
 			"pages": [74]
 		}, "range": {
-			"pages": [195]
-		}, "range": {
-			"pages": [146]
+			"pages": [146, 195]
 		}, "ranged attack": {
 			"pages": [195]
 		}, "ranged weapon": {
@@ -1581,9 +1573,7 @@ module.exports = {
 		}, "reliable talent": {
 			"pages": [96]
 		}, "religion": {
-			"pages": [293]
-		}, "religion": {
-			"pages": [178]
+			"pages": [178, 293]
 		}, "reloading": {
 			"pages": [146]
 		}, "remarkable athlete": {
@@ -1821,7 +1811,8 @@ module.exports = {
 		}, "spell mastery": {
 			"pages": [115]
 		}, "spell preparation": {
-			"pages": [165, "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"]
+			"pages": [
+				165, "see spellcasting: bard (53); cleric (58); druid (66); paladin (85); sorcerer (101); warlock (107); wizard (114)"]
 		}, "spell resistance": {
 			"pages": [116]
 		}, "spell save dc": {
@@ -2063,9 +2054,7 @@ module.exports = {
 		}, "two-handed": {
 			"pages": [147]
 		}, "two-weapon fighting": {
-			"pages": [195]
-		}, "two-weapon fighting": {
-			"pages": [72, 91]
+			"pages": [72, 91, 195]
 		}, "unarmed": {
 			"pages": [195]
 		}, "unarmored defense": {

@@ -12,6 +12,15 @@
     {
       "slots": [
         {
+          "name": "Classes",
+          "type": "LIST_OF_CLASSES"
+        }
+      ],
+      "intent": "ClassesIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "Quantity",
           "type": "AMAZON.NUMBER"
         },

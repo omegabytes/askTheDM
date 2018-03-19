@@ -476,9 +476,7 @@ module.exports = {
 			"cost": "2 gold", "weight": "2 lb", "category": "Adventure Gear"
 		}, "acid": {
 			"cost": "25 gold", "weight": "1 lb", "category": "Adventure Gear"
-		}, "alchemist's fire": {
-			"cost": "50 gold per flask", "weight": "1 lb", "category": "Adventure Gear"
-		}, "alchemists fire": {
+		}, "alchemist\'s fire": {
 			"cost": "50 gold per flask", "weight": "1 lb", "category": "Adventure Gear"
 		}, "arrows": {
 			"cost": "20 for 1 gold", "weight": "1 lb", "category": "Adventure Gear", "itemType": "Ammunition"
@@ -544,12 +542,10 @@ module.exports = {
 		}, "chain": {
 			"cost": "5 gold per 10 feet", "weight": "10 lb", "category": "Adventure Gear"
 		}, "chalk": {
-			"cost": "1 peice for 1 copper", "weight": "None", "category": "Adventure Gear"
+			"cost": "1 piece for 1 copper", "weight": "None", "category": "Adventure Gear"
 		}, "chest": {
 			"cost": "5 gold", "weight": "25 lb", "category": "Adventure Gear"
-		}, "climber's kit": {
-			"cost": "25 gold", "weight": "12 lb", "category": "Adventure Gear"
-		}, "climbers kit": {
+		}, "climber\'s kit": {
 			"cost": "25 gold", "weight": "12 lb", "category": "Adventure Gear"
 		}, "common clothes": {
 			"cost": "5 silver", "weight": "3 lb", "category": "Adventure Gear"
@@ -557,9 +553,7 @@ module.exports = {
 			"cost": "5 gold", "weight": "4 lb", "category": "Adventure Gear"
 		}, "fine clothes": {
 			"cost": "15 gold", "weight": "6 lb", "category": "Adventure Gear"
-		}, "traveler's clothes": {
-			"cost": "2 gold", "weight": "4 lb", "category": "Adventure Gear"
-		}, "travelers clothes": {
+		}, "traveler\'s clothes": {
 			"cost": "2 gold", "weight": "4 lb", "category": "Adventure Gear"
 		}, "component pouch": {
 			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear"
@@ -589,7 +583,7 @@ module.exports = {
 			"cost": "2 gold", "weight": "10 lb", "category": "Adventure Gear"
 		}, "sledgehammer": {
 			"cost": "2 gold", "weight": "10 lb", "category": "Adventure Gear"
-		}, "healer's kit": {
+		}, "healer\'s kit": {
 			"cost": "5 gold", "weight": "3 lb", "category": "Adventure Gear"
 		}, "amulet": {
 			"cost": "5 gold", "weight": "1 lb", "category": "Adventure Gear", "itemType": "Holy symbol"
@@ -641,9 +635,7 @@ module.exports = {
 			"cost": "1 silver per sheet", "weight": "None", "category": "Adventure Gear"
 		}, "perfume": {
 			"cost": "5 gold", "weight": "None", "category": "Adventure Gear"
-		}, "miner's pick": {
-			"cost": "2 gold", "weight": "10 lb", "category": "Adventure Gear", "itemType": "Holy symbol"
-		}, "miners pick": {
+		}, "miner\'s pick": {
 			"cost": "2 gold", "weight": "10 lb", "category": "Adventure Gear", "itemType": "Holy symbol"
 		}, "piton": {
 			"cost": "5 copper", "weight": "1/4 lb", "category": "Adventure Gear"
@@ -675,9 +667,7 @@ module.exports = {
 			"cost": "10 gold per 50 feet", "weight": "5 lb", "category": "Adventure Gear"
 		}, "sack": {
 			"cost": "1 copper", "weight": "1/2 lb", "category": "Adventure Gear"
-		}, "merchant's scale": {
-			"cost": "5 gold", "weight": "3 lb", "category": "Adventure Gear"
-		}, "merchants scale": {
+		}, "merchant\'s scale": {
 			"cost": "5 gold", "weight": "3 lb", "category": "Adventure Gear"
 		}, "sealing wax": {
 			"cost": "5 silver", "weight": "None", "category": "Adventure Gear"
@@ -717,78 +707,44 @@ module.exports = {
 			"cost": "1 copper", "weight": "1 lb", "category": "Adventure Gear"
 		}, "wet stone": {
 			"cost": "1 copper", "weight": "1 lb", "category": "Adventure Gear"
-		}, "alchemist's supplies": {
-			"cost": "50 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "alchemists supplies": {
-			"cost": "50 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "brewer's supplies": {
-			"cost": "20 gold", "weight": "9 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "calligrapher's supplies": {
-			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "carpenter's tools": {
-			"cost": "8 gold", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cartographer's tools": {
-			"cost": "15 gold.", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cobbler's tools": {
-			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cook's utensils": {
-			"cost": "1 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "glassblower's tools": {
-			"cost": "30 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "jeweler's tools": {
-			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "leatherworker's tools": {
-			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "mason's tools": {
-			"cost": "10 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "painter's supplies": {
-			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "potter's tools": {
-			"cost": "10 gold", "weight": "3 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "smith's tools": {
-			"cost": "20 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "tinker's tools": {
-			"cost": "50 gold", "weight": "10 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "weaver's tools": {
-			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "woodcarver's tools": {
-			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "brewers supplies": {
-			"cost": "20 gold", "weight": "9 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "calligraphers supplies": {
-			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "carpenters tools": {
-			"cost": "8 gold", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cartographers tools": {
-			"cost": "15 gold.", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cobblers tools": {
-			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "cooks utensils": {
-			"cost": "1 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "glassblowers tools": {
-			"cost": "30 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "jewelers tools": {
-			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "leatherworkers tools": {
-			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "masons tools": {
-			"cost": "10 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "painters supplies": {
-			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "potters tools": {
-			"cost": "10 gold", "weight": "3 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "smiths tools": {
-			"cost": "20 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "tinkers tools": {
-			"cost": "50 gold", "weight": "10 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "weavers tools": {
-			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
-		}, "woodcarvers tools": {
-			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
+		}, "alchemist\'s supplies": {
+			"cost": "50 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "brewer\'s supplies": {
+			"cost": "20 gold", "weight": "9 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "calligrapher\'s supplies": {
+			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "carpenter\'s tools": {
+			"cost": "8 gold", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "cartographer\'s tools": {
+			"cost": "15 gold.", "weight": "6 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "cobbler\'s tools": {
+			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "cook\'s utensils": {
+			"cost": "1 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "glassblower\'s tools": {
+			"cost": "30 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "jeweler\'s tools": {
+			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "leatherworker\'s tools": {
+			"cost": "5 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "mason\'s tools": {
+			"cost": "10 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "painter\'s supplies": {
+			"cost": "10 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "potter\'s tools": {
+			"cost": "10 gold", "weight": "3 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "smith\'s tools": {
+			"cost": "20 gold", "weight": "8 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "tinker\'s tools": {
+			"cost": "50 gold", "weight": "10 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "weaver\'s tools": {
+			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
+		}, "woodcarver\'s tools": {
+			"cost": "1 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
 		}, "disguise kit": {
-			"cost": "25 gold", "weight": "3 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
+			"cost": "25 gold", "weight": "3 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
 		}, "forgery kit": {
-			"cost": "15 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan's tools"
+			"cost": "15 gold", "weight": "5 lb", "category": "Adventure Gear", "itemType": "Artisan\'s tools"
 		}, "dice set": {
 			"cost": "1 silver", "weight": "None", "category": "Adventure Gear", "itemType": "Gaming set"
 		}, "playing card set": {
@@ -815,18 +771,16 @@ module.exports = {
 			"cost": "2 gold", "weight": "1 lb", "category": "Adventure Gear", "itemType": "Musical instrument"
 		}, "viol": {
 			"cost": "30 gold", "weight": "1 lb", "category": "Adventure Gear", "itemType": "Musical instrument"
-		}, "navigator's tools": {
+		}, "navigator\'s tools": {
 			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear"
-		}, "poisoner's kit": {
+		}, "poisoner\'s kit": {
 			"cost": "50 gold", "weight": "2 lb", "category": "Adventure Gear"
-		}, "thieves' tools": {
+		}, "thieves\' tools": {
 			"cost": "25 gold", "weight": "1 lb", "category": "Adventure Gear"
 		}, "navigators tools": {
 			"cost": "25 gold", "weight": "2 lb", "category": "Adventure Gear"
 		}, "poisoners kit": {
 			"cost": "50 gold", "weight": "2 lb", "category": "Adventure Gear"
-		}, "thieves tools": {
-			"cost": "25 gold", "weight": "1 lb", "category": "Adventure Gear"
 		}, "camel": {
 			"cost": "50 gold", "speed": "50 ft.", "carryCapacity": "480 lb", "category": "Vehicle", "itemType": "Mount"
 		}, "donkey": {

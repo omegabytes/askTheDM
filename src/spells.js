@@ -1,4 +1,4 @@
-module.exports = {  //TODO: take out 'At higher Level:' in long description and place in its own attribute
+module.exports = {
 	"SPELL_ATTRIBUTES": {
 		"casting time": "castingTime",
 		"cast": "castingTime",
@@ -139,7 +139,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 minute",
 			"range": "Touch",
 			"components": "Verbal, Somatic, Material (a miniature cloak)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Abjuration",
 			"spellClass": ["cleric", "druid"],
 			"shortDescription": "The target can add a d4 to a saving throw of its choice, before or after the throw. Needs concentration.",
@@ -194,13 +194,15 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Affects creatures in 60ft cone on a failed Dexterity save, with half damage on a winning save. Emits eight multicolored rays of light, each with a different damage determined by d8. 1 is Red or 10d6 fire, 2 is Orange or 10d6 acid, 3 is Yellow or 10d6 lightning, 4 is Green or 10d6 poison, 5 is Blue or 10d6 cold. 6 is Indigo to restrain target. Needs a Constitution save after each of the targets turns. 3 wins ends spell, 3 fails petrifies target. 7 is Violet, which blinds target. Spell ends with a successful Wisdom safe at start of casters next turn. Otherwise, target is sent to a plane of existence of D. M.s choosing. 8 is Special. Roll twice more, re-rolling any 8.",
 			"longDescription": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it. 1. Red. The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one. 2. Orange. The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one. 3. Yellow. The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. 4. Green. The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one. 5. Blue. The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one. 6. Indigo. On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures dont need to be consecutive; keep track of both until the target collects three of a kind. 7. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the D. M.s choosing and is no longer blinded. (Typically, a creature that is on a plane that isnt its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) 8. Special. The target is struck by two rays. Roll twice more, rerolling any 8.",
 			"url": "https://www.dnd-spells.com/spell/prismatic-spray",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "frostbite": {
 			"castingTime": "1 Action",
 			"duration": "Instantaneous",
 			"range": "60 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["druid", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Deals 1d6 cold damage and to a target seen within 60ft range after a failed Constitution save. Also gives disadvantage to next weapon attack roll. Damage increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.",
@@ -273,7 +275,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "30 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid"],
 			"shortDescription": "Choose one of the follow four: Create a tiny, harmless sensory effect to predict the weather for the next 24 hours at your location, this effect last 1 round. Instantly make a flower bloom, seed pod open, or leaf bud bloom. In a 5-foot cube create a harmless sensory effect, such as the sound of a small animal. Instantly light or snuff out a candle, torch, or a small campfire.",
@@ -295,7 +297,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 minute",
 			"range": "Touch",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Divination",
 			"spellClass": ["cleric", "druid"],
 			"shortDescription": "Touch one target to add d4 to an ability check of its choice. Needs concentration.",
@@ -415,7 +417,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "You create a 90 foot long, 30 foot high, and 1 inch thick-centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point. The wall sheds bright light out to a range of 100 feet, and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves within 20 feet or starts its turn there, the creature makes a Constitution save or becomes blinded for 1 minute. The wall consists of 7 layers, each with a different color. When a creature attempts to reach into or pass through the wall it does so one layer at a time. As it passes or reaches through each layer, the creature must make a Dexterity save or be affected by that layers properties as described. Red: The creature takes 10d6 fire damage on a failed save, or half as much on success. Orange: The creature takes 10d6 acid damage on a failed save, or half as much on success. Yellow: The creature takes 10d6 lightning damage on a failed save, or half as much on success. Green: The creature takes 10d6 poison damage on a failed save, or half as much on success. Blue: The creature takes 10d6 cold damage on a failed save, or half as much on success. Indigo: On a failed save, the creature is restrained, it must make a Constitution save at the end of each of its turns. Violet: On a failed save the creature is blinded. It must make a Wisdom save at the start of your next turn.",
 			"longDescription": "A shimmering, multicolored plane of light forms a vertical opaque wall, up to 90 feet long, 30 feet high, and 1 inch thick, centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted. The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become blinded for 1 minute. The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the walls layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layers properties as described below. The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. A rod of cancellation destroys a prismatic wall, but an antimagic field has no effect on it. 1) Red. The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks cant pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it. 2) Orange. The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks cant pass through the wall. The layer is destroyed by a strong wind. 3) Yellow. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it. 4) Green. The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer. 5) Blue. The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it. 6) Indigo. On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures dont need to be consecutive: keep track of both until the creature collects three of a kind. While this layer is in place, spells cant be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level. 7) Violet. On a failed save, the creature is blinded. It must then make a wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the D. M.s choosing and is no longer blinded. (Typically, a creature that is on a plane that isnt its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.",
 			"url": "https://www.dnd-spells.com/spell/prismatic-wall",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "shapechange": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 hour",
@@ -449,7 +453,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. While merged with the stone, you cant see what occurs outside it, and any Wisdom(Perception) checks you make to hear sounds outside it are made with disadvantage. You may cast spells on yourself while merged. You can use your movement to leave the stone where you entered it, which ends the spell, otherwise you cant move. If expelled, you fall prone in an unoccupied space closest to where you entered.",
 			"longDescription": "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses. While merged with the stone, you cant see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise cant move. Minor physical damage to the stone doesnt harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stones complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.",
 			"url": "https://www.dnd-spells.com/spell/meld-into-stone-ritual",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "ice storm": {
 			"castingTime": "1 Action",
 			"duration": "Instantaneous",
@@ -566,7 +572,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous or 1 hour",
 			"range": "60 feet",
 			"components": "Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid", "sorcerer", "wizard"],
 			"shortDescription": "Choose a nonmagical flame you can see within range and that fits within a 5 foot cube. You affect it in one of the following ways: Instantly expand the flame 5 feet in one direction, provided wood or other fuel is present in the new location. Instantly extinguish the flames within the cube. Double or halve the area of bright light and dim light produced by the flame, and change the color, this lasts 1 hour. Cause simple shapes to appear within the flames and animate as you like, this lasts for 1 hour. Can be cast multiple times to have up to three non-instant effects at a time.",
@@ -588,7 +594,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "5 feet",
 			"components": "Verbal, Material (a weapon) ",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "warlock", "wizard"],
 			"shortDescription": "Make a melee attack with a weapon against one creature within the spells range, otherwise it fails. On a hit, the target suffers the attacks normal effects and green fire leaps from the target to a different creature of your choice within 5 feet. The second creature takes fire damage equal to your spellcasting mod. When cast at level 5, melee attack deals an extra 1d8 fire damage, to the second creature an extra 1d8 fire damage plus your spellcasting mod. Both damage rolls increase by 1d8 at level 11 and 17th.",
@@ -623,7 +629,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "30 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid", "sorcerer", "wizard"],
 			"shortDescription": "Control the air to create one of the following effects at a point within range: One medium or smaller creature that you choose must succeed on a Strength save or be pushed up to 5 feet away from you. Create a small blast of air able to move one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away. Create a harmless sensory affect using air, such as rustling some jimmies.",
@@ -656,7 +662,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "60 feet",
 			"components": "Verbal",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Enchantment",
 			"spellClass": ["bard"],
 			"shortDescription": "Target a creature that can hear you within range, on a failed Wisdom save the creature takes 1d4 psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn, and is visually emotionally hurt. Damage is increased by 1d4 at 5th level, 2d4 at level 11, and 3d4 at level 17 and your insults are saltier.",
@@ -697,7 +703,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "One of the mightiest spells a mortal creature can cast, thus has no component requirement except verbal. This spell is used to duplicate any other spell of 8th level or lower or you may choose one of the following effects: Create one object up to 25,000 GP in value that isnt a magic item, the object can be no more than 300 feet in any dimension. Allow up to twenty creatures that you can see to regain all hit points, and end all effects on them described in the greater restoration spell. Grant up to ten creatures that you can see resistance to a damage type you choose. Grant up to ten creatures you can see, immunity to a single spell or other magical effect for 8 hours. You can undo a single recent event by forcing a reroll of any roll made within the last round, reshaping reality to the new outcome, you can force the reroll to have advantage or disadvantage and choose the reroll or the original. You can also state a wish, not listed, to the D. M. as precisely as possible and the D. M. will make a ruling to the effectiveness of the created wish. The stress of casting this spell to produce any effect other than duplicating another spell weakens you, each time you cast a spell until you finish a long rest take 1d10 necrotic damage per level of that spell. In addition your strength drops to 3 for 2d4 days. Finally there is a 33 percent chance that you are unable to cast wish ever again if you suffer this stress.",
 			"longDescription": "Wish is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires. The basic use of this spell is to duplicate any other spell of 8th level or lower. You dont need to meet any requirements in that spell, including costly components. The spell simply takes effect. Alternatively, you can create one of the following effects of your choice. You create one object of up to 25,000 gold pieces in value that isnt a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground. You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the greater restoration spell. You grant up to ten creatures that you can see resistance to a damage type you choose. You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lichs life drain attack. You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a wish spell could undo an opponents successful save, a foes critical hit, or a friends failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll. You might be able to achieve something beyond the scope of the above examples. State your wish to the D. M. as precisely as possible. The D. M. has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might only be partly achieved, or you might suffer some unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a legendary magic item or artifact might instantly transport you to the presence of the items current owner. The stress of casting this spell to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a long rest, you take 1d10 necrotic damage per level of that spell. This damage cant be reduced or prevented in any way. In addition, your Strength drops to 3, if it isnt 3 or lower already, for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast wish ever again if you suffer this stress.",
 			"url": "https://www.dnd-spells.com/spell/wish",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "crusaders mantle": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
@@ -834,7 +842,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "5 feet",
 			"components": "Verbal",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["sorcerer", "warlock", "wizard"],
 			"shortDescription": "You create a momentary circle of spectral blades that sweep around you. Each creature within range, other than you, must succeed on a Dexterity saving throw or take 1d6 force damage. At higher levels: This spells damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
@@ -945,7 +953,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 round",
 			"range": "Self",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Abjuration",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage from weapon attacks.",
@@ -984,7 +992,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Needs concentration. Conjure a mass of thick sticky webbing at a point within range. The webs fill a 20 foot cube, are difficult terrain and lightly obscure the area. Each creature that starts its turn in the webs or that enters them during its turn, must make a Dexterity save or be restrained. A creature restrained by the webs can use its action to make a Strength check against your spell save DC to break free. The webs are flammable, any 5 foot cube of web exposed to fire burns away in 1 round dealing 2d4 fire damage to any creature that starts its turn in the fire.",
 			"longDescription": "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area. If the webs arent anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet. Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free. A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained. The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.",
 			"url": "https://www.dnd-spells.com/spell/web",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "wind walk": {
 			"castingTime": "1 Minute",
 			"duration": "8 hours",
@@ -1296,7 +1306,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Needs concentration. Flames surround you, shedding bright light in a 30 foot radius and dim for an additional 30 feet. Gain the following benefits: Immune to fire damage, and have resistance to cold damage. Any creature that moves within 5 feet of you for the first time or ends its turn there takes 1d10 fire damage. Use your action to create a line of fire 15 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Dexterity save or take 4d8 fire damage, or half on a success.",
 			"longDescription": "Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spells duration. The flames dont harm you. Until the spell ends, you gain the following benefits. You are immune to fire damage and have resistance to cold damage. Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage. You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.",
 			"url": "https://www.dnd-spells.com/spell/investiture-of-flame",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "magic mouth": {
 			"castingTime": "1 Minute",
 			"duration": "Until dispelled",
@@ -1428,7 +1440,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Needs concentration. Create a seismic disturbance at a point on the ground you can see within range. For the duration, tremors affect the ground in a 100 foot radius circle centered on the point. The ground becomes difficult terrain, each creature on the ground that is concentrating must make a Constitution save or have their concentration broken. When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground must make a Dexterity save or be knocked prone. Depending on the terrain in the area, determined by the D. M.. Create a total of 1d6 fissures, starting on your next turn, open in locations chosen by the D. M.. Each is 1d10 by 10feet deep, 10 feet wide and extends from one edge of the spell area to the opposite. A creature standing on a spot where a fissure opens must make a Dexterity save or fall in. The tremor deals 50 bludgeoning damage to any structure in contact with the affected ground, and at the start of each of your turns. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of the structures height must make a Dexterity save or take 5d6 bludgeoning damage, knocked prone, and is buried in rubble, requiring a DC 20 Strength(Athletics) check as an action to escape.",
 			"longDescription": "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area. The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creatures concentration is broken. When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked prone. This spell can have additional effects depending on the terrain in the area, as determined by the D. M.. Fissures. Fissures open throughout the spells area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the D. M.. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spells area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissures edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below). Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structures height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The D. M. can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesnt fall prone or become buried.",
 			"url": "https://www.dnd-spells.com/spell/earthquake",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "eyebite": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
@@ -1527,7 +1541,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Up to 1 hour",
 			"range": "10 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "You create one of the following magical effects within range. You create an instantaneous, harmless sensory effect, such as a shower of sparks, or an odd odor like the faint smell of pickles. You instantaneously light or snuff out a candle, a torch, or a small campfire. You instantaneously clean or soil an object no larger than 1 cubic foot. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. You make a color, a small mark, or a symbol appear on an object or surface for 1 hour. You create a nonmagical trinket or an illusory image that can fit in your hand and lasts until the end of your next turn.",
@@ -1582,7 +1596,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Needs concentration. Craft an illusion in the mind of a creature you can see within range. The target must make an Intelligence save or be afflicted by the phantasmal object, creature or other visible phenomenon of your choice that is no larger than 10 cubic feet that is perceivable only to the target. The target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC and can detect the illusion. While affected, the target treats the phantasm as if it were real. Rationalizing any illogical outcomes from the interaction with the phantasm. A phantasmal creature can attack the target, each round on your turn the phantasm can deal 1d6 psychic damage.",
 			"longDescription": "You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs. The phantasm includes sound, temperature, and other stimuli, also evident only to the creature. The target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends. While a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall, it was pushed, it slipped, or a strong wind might have knocked it off. An affected target is so convinced of the phantasms reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasms area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion.",
 			"url": "https://www.dnd-spells.com/spell/phantasmal-force",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "word of recall": {
 			"castingTime": "1 Action",
 			"duration": "Instantaneous",
@@ -1878,7 +1894,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Instantly transport you and up to 8 willing creatures to a destination you select. The destination must be known to you, and on the same plane of existence. Your familiarity with the destination determines the success of arrival. The Dm rolls a d100 and consults the table in the Alexa app or on page 281 in the Players handbook.",
 			"longDescription": "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it cant be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The D. M. rolls d100 and consults the table in the Alexa app or on page 281 of the players handbook. Familiarity. Permanent circle means a permanent teleportation circle whose sigil sequence you know. Associated object means that you possess an object taken from the desired destination within the last six months, such as a book from a wizards library, bed linen from a royal suite, or a chunk of marble from a lichs secret tomb. Very familiar is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. Seen casually is someplace you have seen more than once but with which you arent very familiar. Viewed once is a place you have seen once, possibly using magic. Description is a place whose location and appearance you know through someone elses description, perhaps from a map. False destination is a place that doesnt exist. Perhaps you tried to scry an enemys sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists. On Target. You and your group (or the target object) appear where you want to. Off Target. You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The D. M. determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble. Similar Area. You and your group (or the target object) wind up in a different area thats visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizards laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane. Mishap. The spells unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the D. M. rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).",
 			"url": "https://www.dnd-spells.com/spell/teleport",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "continual flame": {
 			"castingTime": "1 Action",
 			"duration": "Until dispelled",
@@ -1977,7 +1995,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "120 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "wizard"],
 			"shortDescription": "Make a ranged spell attack against a target, on a hit the target takes 1d10 fire damage. The spell damage increases by 1d10 each time when you reach level 5, 11 and 17.",
@@ -2115,7 +2133,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Needs concentration. Touch a creature, they must succeed on a Wisdom save or be curses for the duration. Choose one of the following 4 curses: 1) Choose one ability score, the target now has disadvantage on checks and saves made with that score. 2) While cursed, the target now has disadvantage on attack rolls against you. 3) While cursed, target must succeed on a Wisdom save at the start of each of its turns or wastes its action doing nothing. 4) While cursed, your attacks and spells deal an extra 1d8 necrotic damage. When cast at a spell slot of 4th or higher, the duration is now concentration up to 10 minutes. If cast using a spell slot of 5th or higher the duration is 8 hours. At 7th level spell slot, the duration is 24 hours, and at 9th level the spell lasts until dispelled.",
 			"longDescription": "You touch a creature, and that creature must succeed on a wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following 4 options: 1) Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score. 2) While cursed, the target has disadvantage on attack rolls against you. 3) While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing. 4) While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target. A remove curse spell ends this effect. At the D. M.s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The D. M. has final say on such a curses effect. At Higher Levels. If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesnt require concentration.",
 			"url": "https://www.dnd-spells.com/spell/bestow-curse",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "clone": {
 			"castingTime": "1 Hour",
 			"duration": "Instantaneous",
@@ -2198,7 +2218,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Mentally contact a demigod, spirit of a long-dead sage, or other mysterious entity from another plane. Make a DC 15 Intelligence save or take 6d6 psychic damage and are insane until you finish a long rest. On a success you can ask up to 5 questions, and ask them before the spell ends, the entity responds with a one word response.",
 			"longDescription": "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you cant take actions, cant understand what other creatures say, cant read, and speak only in gibberish. A greater restoration spell cast on you ends this effect. On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The D. M. answers each question with one word, such as yes, no, maybe, never, irrelevant, or unclear (if the entity doesnt know the answer to the question). If a one-word answer would be misleading, the D. M. might instead offer a short phrase as an answer.",
 			"url": "https://www.dnd-spells.com/spell/contact-other-plane-ritual",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "bane": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
@@ -2303,7 +2325,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "10 minutes",
 			"range": "Self",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["druid"],
 			"shortDescription": "Conjure a flame in your hand that can produce bright light in a radius of 10ft and dim light in another 10ft. You may attack using the flame, which ends the spell. As an action you can hurl the flame at a creature in 30ft, make a ranged spell attack, on a hit the target takes 1d8 fire damage. When you reach level 5, 11 and 17 increase the damage by an additional 1d8 each time.",
@@ -2420,7 +2442,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "You or a messenger of your choosing enters a sleeping targets dreams and converses with it. If you make the messenger appear monstrous, the target must make a wisdom save. Ona fail, the messenger spawns a nightmare and the target doesnt get the benefit of the rest. If it wakes up, it takes 3d6 psychic damage.",
 			"longDescription": "This spell shapes a creatures dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that dont sleep, such as elves, cant be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but cant take actions or move. If the target is asleep, the messenger appears in the targets dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the targets dreams. You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the targets sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage. If you have a body part, lock of hair, clipping from a nail, or similar portion of the targets body, the target makes its saving throw with disadvantage.",
 			"url": "https://www.dnd-spells.com/spell/dream",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "blade barrier": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 10 minutes",
@@ -2486,7 +2510,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "Touch",
 			"components": "Verbal, Somatic, Material (two lodestones)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["bard", "cleric", "druid", "sorcerer", "wizard"],
 			"shortDescription": "Mend any break or tear in an object that is less than 1 foot in any dimension.",
@@ -2567,7 +2591,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 minute",
 			"range": "30 feet",
 			"components": "Somatic, Material (a bit of fleece)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Illusion",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Create a sound or image of your choosing that lasts for a minute. Physical interaction with the illusion reveals it to be a fake, as well as a successful investigation check.",
@@ -2720,7 +2744,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. Cause a creature or object to grow larger or smaller. Unwilling creatures need to make a Constitution save. For enlarge, the target doubles in size and weighs 8 times as much, and has advantage on strength checks and saves. Enlarged weapons do an extra 1d4 damage. Reduce has the opposite effect.",
 			"longDescription": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Enlarge. The targets size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category, from Medium to Large, for example. If there isnt enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The targets weapons also grow to match its new size. While these weapons are enlarged, the targets attacks with them deal 1d4 extra damage. Reduce. The targets size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category, from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The targets weapons also shrink to match its new size. While these weapons are reduced, the targets attacks with them deal 1d4 less damage (this cant reduce the damage below 1).",
 			"url": "https://www.dnd-spells.com/spell/enlargereduce",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "rope trick": {
 			"castingTime": "1 Action",
 			"duration": "1 hour",
@@ -2808,7 +2834,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous or 1 hour",
 			"range": "30 feet",
 			"components": "Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid", "sorcerer", "wizard"],
 			"shortDescription": "You can modify water that fits within a 5 foot cube. You can change the flow of the water, form it into simple shapes, change its color or opacity, or freeze it provided there are no creatures in it. Effects last an hour.",
@@ -2895,7 +2921,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 round",
 			"range": "120 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Necromancy",
 			"spellClass": ["sorcerer", "warlock", "wizard"],
 			"shortDescription": "A ghostly skeletal hand attacks a creature within 120 feet. If a ranged spell attack hits, the target takes 1d8 necrotic damage and cant regain health until the start of your next turn.",
@@ -2941,7 +2967,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "30 feet",
 			"components": "Verbal, Somatic, Material (the stem of a plant with thorns)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid"],
 			"shortDescription": "If you succeed on a melee spell attack roll, the target takes 1d6 piercing damage and large or smaller creatures are pulled 10 feet closer to you.",
@@ -3030,7 +3056,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 minute",
 			"range": "30 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Create a floating hand that you can control with your action. It must stay within 30 feet of you. It cant attack, activate magic items, or carry more than 10 lbs.",
@@ -3095,7 +3121,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 round",
 			"range": "30 feet",
 			"components": "Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Divination",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Requires concentration. On your next turn, you gain advantage on your first attack roll against the target.",
@@ -3123,7 +3149,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Requires concentration. Create a wall of water up to 300 feet long, 300 feet high, and 50 feet thick. Creatures in the wave take 6d10 bludgeoning damage on a failed strength save, half as much on a success. Each turn, the wall moves 50 feet away from you, taking huge or smaller creatures with it. Creatures subsequently struck by the wave take 5d10 bludgeoning damage, or half as much on a strength save. The walls height reduces by 50 feet each turn, and damage is reduced by 1d10.",
 			"longDescription": "A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much damage on a successful save. At the start of each of your turns after the wall appears, the wall, along with any creatures in it, moves 50 feet away from you. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take 5d10 bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the walls height is reduced by 50 feet, and the damage creatures take from the spell on subsequent rounds is reduced by 1d10. When the wall reaches 0 feet in height, the spell ends. A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength (Athletics) check against your spell save DC in order to move at all. If it fails the check, it cant move. A creature that moves out of the area falls to the ground.",
 			"url": "https://www.dnd-spells.com/spell/tsunami",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "incendiary cloud": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
@@ -3267,7 +3295,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 					1: 0, 2: 0, 3: "3d6", 4: "4d6", 5: "5d6", 6: "6d6", 7: "7d6", 8: "8d6", 9: "9d6"
 				}
 			},
-			"healing": "You restore half the amount of damage you deal, regardless of level cast at."
+			"healing": {
+				"desc": "You restore half the amount of damage you deal, regardless of level cast at."
+			}
 		}, "magic weapon": {
 			"castingTime": "1 Bonus Action",
 			"duration": "Concentration, up to 1 hour",
@@ -3284,7 +3314,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "60 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["cleric"],
 			"shortDescription": "The target must succeed on a Dexterity saving throw or take 1d8 radiant damage.",
@@ -3411,7 +3441,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "10 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["druid", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "A creature must succeed a Constitution save or take 1d12 poison damage",
@@ -3484,7 +3514,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "Touch",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "wizard"],
 			"shortDescription": "Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it cant take reactions until the start of its next turn.",
@@ -3695,7 +3725,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 minute",
 			"range": "Touch",
 			"components": "Verbal, Somatic, Material (mistletoe, a shamrock leaf, and a club or quarterstaff)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid"],
 			"shortDescription": "Use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks, and the damage die becomes a d8",
@@ -3739,7 +3769,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 round",
 			"range": "5 feet",
 			"components": "Verbal, Material (a weapon) ",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "warlock", "wizard"],
 			"shortDescription": "Make a melee attack with a weapon against one creature. On a hit, the target suffers the weapons normal effects and is surrounded by booming energy. If it moves before your next turn, it takes 1d8 thunder damage.",
@@ -4227,7 +4257,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 round",
 			"range": "120 feet",
 			"components": "Verbal, Somatic, Material (a short piece of copper wire)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["bard", "sorcerer", "wizard"],
 			"shortDescription": "A target hears a message and can reply, only the two of you can hear the exchange.",
@@ -4309,7 +4339,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Up to 1 minute",
 			"range": "30 feet",
 			"components": "Verbal",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["cleric"],
 			"shortDescription": "Manifest a sign of supernatural power that has one of the following six effects: 1) Your voice becomes three times as loud, 2) alter flame brightness or color, 3) harmless ground tremors, 4) throw a created sound, 5) open or slam an unlocked door or window, 6) alter the appearance of your eyes",
@@ -4407,7 +4437,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "60 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["sorcerer", "wizard"],
 			"shortDescription": "Up to two creatures within 5 feet of each other must succeed a Dexterity save or take 1d6 acid damage.",
@@ -4523,7 +4553,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 minute",
 			"range": "Touch",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid", "warlock"],
 			"shortDescription": "Up to three pebbles can be thrown up to 60 feet, add your spellcasting ability modifier to the attack roll, and do 1d6 + your spellcasting ability modifier damage.",
@@ -4632,7 +4662,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "15 feet",
 			"components": "Verbal",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "warlock", "wizard"],
 			"shortDescription": "One target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you. ",
@@ -4722,7 +4752,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "teleport yourself to any spot you can see, visualize, or describe by direction and distance. You can bring objects you can carry, or one willing creature your size or smaller with 5ft of you.",
 			"longDescription": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as 200 feet straight downward or upward to the northwest at a 45-degree angle, 300 feet. You can bring along objects as long as their weight doesnt exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.",
 			"url": "https://www.dnd-spells.com/spell/dimension-door",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "speak with animals": {
 			"castingTime": "1 Action",
 			"duration": "10 minutes",
@@ -4739,7 +4771,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous or 1 hour",
 			"range": "30 feet",
 			"components": "Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Transmutation",
 			"spellClass": ["druid", "sorcerer", "wizard"],
 			"shortDescription": "You may move loose dirt up to five feet away, or you can create words or images in dirt or stone that last one hour, or you can toggle difficult terrain. You can cast this spell multiple times.",
@@ -4815,7 +4847,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "1 hour",
 			"range": "Touch",
 			"components": "Verbal, Material (a firefly or phosphorescent moss)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["bard", "cleric", "sorcerer", "wizard"],
 			"shortDescription": "Any 10ft or smaller object you touch sheds bright light in a 20ft radius. Objects held by creatures are resisted with a Dexterity save",
@@ -4826,7 +4858,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 minute",
 			"range": "120 feet",
 			"components": "Verbal, Somatic, Material  (a bit of phosphorus or wychwood, or a glowworm)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["bard", "sorcerer", "wizard"],
 			"shortDescription": "Create up to four torch-sized lights that hover in the air and must remain within 10ft of each other. You can also combine the lights into a vaguely humanoid form. Each light sheds dim light within 10ft. Move the lights as a bonus action.",
@@ -4853,7 +4885,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "120 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["warlock"],
 			"shortDescription": "Make a ranged spell attack against the target. On a hit, the target takes 1dlO force damage.",
@@ -4864,7 +4896,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "60 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["sorcerer", "wizard"],
 			"shortDescription": "Target takes 1d8 cold damage and its speed is reduced by 10 until the end of your next turn",
@@ -5055,7 +5087,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"slotLevel": "2",
 			"school": "Enchantment",
 			"spellClass": ["bard", "warlock"],
-			"shortDescription": "On a failed wisdom save, the target has disadvantage on perception checks against other creatures. Does not affect targts immune to charm, and targets in combat have advantage",
+			"shortDescription": "On a failed wisdom save, the target has disadvantage on perception checks against other creatures. Does not affect targets immune to charm, and targets in combat have advantage",
 			"longDescription": "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that cant be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.",
 			"url": "https://www.dnd-spells.com/spell/enthrall"
 		}, "reverse gravity": {
@@ -5129,7 +5161,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Cast a glyph on a surface or object. The glyph breaks if the object is moved more than 10ft. The glyph requires an Investigation check to find. You decide what triggers the glyph. Once the glyph is triggered, it fills a 60ft radius sphere with fim light for 10 minutes. The glyph affects creatures in the sphere when its activated, when the enter it for the first time, or when they end their turn in the sphere. Choose one of the following 8 effects: 1) Death: creatures take 10d10 necrotic damage on a failed Constitution save, half as much on a success. 2) Discord: On a failed Constitution save, each target is incapable of communication and has disadvantage on attack rolls and ability checks for one minute. 3) Fear: On a failed wisdom save, each target drops what it was holding and move at least 20 ft from the glyph for one minute. 4) Hopelessness: On a failed Charisma save, targets are overwhelmed with despair for 1 minute and cannot take harmful actions. 5) Insanity: Each target is driven insane for 1 minute on a failed intelligence save. The target cannot take actions, speak, understand, and is moved randomly by the D. M.. 6) Pain: each target becomes incapacitated for one minute on a failed Constitution save. 7) Sleep: Each target falls unconscious for 10 minutes on a failed Constitution save. Awakens by damage or if another creature uses an action to wake it. 8) Stunning: targets stunned for one minute on a failed wisdom save.",
 			"longDescription": "When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it. You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph. You can further refine the trigger so the spell is activated only under certain circumstances or according to a creatures physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that dont trigger the glyph, such as those who say a certain password. When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there. Death. Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save. Discord. Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks. Fear. Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able. Hopelessness. Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it cant attack or target any creature with harmful abilities, spells, or other magical effects. Insanity. Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature cant take actions, cant understand what other creatures say, cant read, and speaks only in gibberish. The D. M. controls its movement, which is erratic. Pain. Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save. Sleep. Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake. Stunning. Each target must make a wisdom saving throw and becomes stunned for 1 minute on a failed save.",
 			"url": "https://www.dnd-spells.com/spell/symbol",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "branding smite": {
 			"castingTime": "1 Bonus Action",
 			"duration": "Concentration, up to 1 minute",
@@ -5157,7 +5191,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "A 20ft radius sphere blinds creatures inside of it. The area inside is difficult terrain, and any creature that starts its turn inside takes 2d6 cold damage, and must succeed a Dexterity save at the end of their turn or take 2d6 acid damage.",
 			"longDescription": "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded. The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it.",
 			"url": "https://www.dnd-spells.com/spell/hunger-of-hadar",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "elemental bane": {
 			"castingTime": "1 Action",
 			"duration": "Concentration, up to 1 minute",
@@ -5185,7 +5221,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Instantaneous",
 			"range": "Touch",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Necromancy",
 			"spellClass": ["cleric"],
 			"shortDescription": "stabilize a creature with 0 health",
@@ -5202,13 +5238,15 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "You transmute rock into mud, or mud into rock. In mud, creatures sink, move at 1/4 speed. Each turn, a creature must make a strength save or become restrained unless it uses an action. If you cast mud on a ceiling, creatures must make a Dexterity save or take 4d8 bludgeoning damage (half as much on a save). If you turn mud into rock, creatures in the mud become restrained on a Dexterity fail. The creature can use an action or deal 25 damage to the rock to break free.",
 			"longDescription": "You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the 2 following effects. 1) Transmute Rock to Mud. Nonmagical rock of any sort in the area becomes an equal volume of thick and flowing mud that remains for the spells duration. If you cast the spell on an area of ground, it becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength saving throw. A creature must also make this save the first time it enters the area on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is restrained, though it can use an action to end the restrained condition on itself by pulling itself free of the mud. If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one. 2) Transmute Mud to Rock. Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spells duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a failed save, a creature becomes restrained by the rock. The restrained creature can use an action to try to break free by succeeding on a Strength check (DC 20) or by dealing 25 damage to the rock around it. On a successful save, a creature is shunted safely to the surface to an unoccupied space.",
 			"url": "https://www.dnd-spells.com/spell/transmute-rock",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "thunderclap": {
 			"castingTime": "1 Action",
 			"duration": "Instantaneous",
 			"range": "Self (5-foot radius)",
 			"components": "Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Evocation",
 			"spellClass": ["bard", "druid", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "On a failed Constitution save, each creature within 5 ft of you takes 1d6 thunder damage.",
@@ -5254,7 +5292,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 minute",
 			"range": "Self",
 			"components": "Somatic, Material (a small amount of makeup applied to the face as this spell is cast)",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Enchantment",
 			"spellClass": ["bard", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "You have advantage on all Charisma checks against a nonhostile target. The target realizes you cast a spell when it ends, and may attack you or seek retribution per the D. M.",
@@ -5331,7 +5369,7 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"duration": "Concentration, up to 1 minute",
 			"range": "60 feet",
 			"components": "Verbal, Somatic",
-			"slotLevel": "cantrip",
+			"slotLevel": "0",
 			"school": "Conjuration",
 			"spellClass": ["druid", "sorcerer", "warlock", "wizard"],
 			"shortDescription": "Any creature starting, ending or moving through the 5ft cube of the bonfire takes 1d8 fire damage on a Dexterity fail.",
@@ -5461,7 +5499,9 @@ module.exports = {  //TODO: take out 'At higher Level:' in long description and 
 			"shortDescription": "Effects increase by round. Round 1: Each creature less then 5000ft under the storm cloud must make a Constitution save or take 2d6 thunder damage and is deafened for 5 minutes. Round 2: Each creature takes 1d6 acid damage from rain. Round 3: Call six bolts of lightning. Up to six creatures take 10d6 lightning damage on a dex fail, half as much on a save. Round 4: Each creature takes 2d6 bludgeoning damage from hail. Rounds 5 through 10: The area becomes difficult terrain. Each creature takes 1d6 cold damage. Ranged weapon attacks are impossible. Concentration is broken. Fog and mists are dispersed.",
 			"longDescription": "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes. Each round you maintain concentration on this spell, the storm produces additional effects on your turn. Round 2. Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage. Round 3. You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object cant be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. Round 4. Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage. Round 5-10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.",
 			"url": "https://www.dnd-spells.com/spell/storm-of-vengeance",
-			"damage": "Complex Damage Progression. Please consult short or long descriptions"
+			"damage": {
+				"desc": "Complex Damage Progression. Please consult short or long descriptions"
+			}
 		}, "find traps": {
 			"castingTime": "1 Action",
 			"duration": "Instantaneous",
