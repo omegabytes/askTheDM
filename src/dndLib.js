@@ -66,7 +66,7 @@ exports.getDiceRoll = function (numberOfDice, modifier, diceSides, status) {
 	let firstRoll;
 	let secondRoll;
 	let result;
-	if ((diceSides == null) || (diceSides == "?") || (numberOfDice == "?")) {
+	if ((diceSides == null) || (diceSides === "?") || (numberOfDice === "?")) {
 		output = "I'm sorry I didn't quite catch that, please ask again";
 		this.emit(':ask', output);
 	}
@@ -75,7 +75,7 @@ exports.getDiceRoll = function (numberOfDice, modifier, diceSides, status) {
 		// calculate the result of a normal roll
 		result = exports.rollDice(numberOfDice, diceSides) + Number(modifier);
 		output = "The result of the roll is " + result;
-	} else if (diceSides == 20) {
+	} else if (diceSides === 20) {
 		// calculate the result of a roll with advantage/disadvantage
 		firstRoll = exports.rollDice(numberOfDice, diceSides);
 		secondRoll = exports.rollDice(numberOfDice, diceSides);
@@ -109,13 +109,17 @@ exports.getEquipmentPack = function (requestedEquipmentPack) {
 	let output = "";
 	let equipmentPack = langEN.EQUIPMENT_PACKS[requestedEquipmentPack];
 	let packItems = equipmentPack.items;
-	if (equipmentPack) {
-		if (packItems) {
+	if (equipmentPack) { // if requested equipment pack exists
+		if (packItems) { //if the equipment pack has items
 			output = "The contents of " + requestedEquipmentPack + " are ";
-			for (let i = 0; i < packItems.length; i++) {
-				let itemObj = packItems[i];
-				for (let x in itemObj) {
-					output += (itemObj[x.hasOwnProperty()] + "\n"); // fixme:not sure if this is working, will have to come back and double check
+			for (let i in packItems) {
+				if (packItems.hasOwnProperty(i)) {
+					let itemObj = packItems[i];
+					for (let x in itemObj) {
+						if (itemObj.hasOwnProperty(x)) {
+							output += (itemObj[x] + "\n");
+						}
+					}
 				}
 			}
 		} else {
@@ -159,18 +163,19 @@ exports.getIndex = function (requestedIndexName) {
 exports.getItems = function (requestedItem, requestedItemAttribute) {
 	let item = langEN.ITEMS[requestedItem];
 	let itemAttribute = langEN.ITEM_ATTRIBUTES[requestedItemAttribute];
-	let output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
-	if (item) {
-		if (itemAttribute) {
-			if (item.itemType) {
-				output = "It is a " + item.itemType;
-			} else {
-				output = item[itemAttribute];
-			}
+	let output = "";
+	if (item) { // if requested item exists
+		if (itemAttribute) { // if requested attribute exists for that item
+			output = item[itemAttribute];
+		} else if (!itemAttribute && item.itemType) { // if no attribute provided, but item has a type
+			output = "It is a " + item.itemType;
+		} else { //if no item type, default to category
+			output = "It is a " + item.category;
 		}
-		output = "It is a " + item.category;
 	} else if (requestedItem) {
 		output = exports.notFoundMessage(item.name, requestedItem);
+	} else {
+		output = langEN.NOT_FOUND_MESSAGE + langEN.NOT_FOUND_WITHOUT_OBJECT_NAME;
 	}
 	return output;
 };
@@ -196,37 +201,33 @@ exports.getSpellCast = function (requestedSpell) {
 exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requestedClass) {
 	let spell = langEN.SPELLS[requestedSpell];
 	let level = langEN.SLOT_LEVEL[requestedSpellLevel];
-	let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"];
-	let spellClassChecker;
+	// let spellClasses = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"]; //todo: this variable not needed in this iteration of getClassLevel, might be used once we incorporate PClasses and their spellLists
 	let output = "I\'m sorry please provide the player class, spell level, and spell name you wish to know more information about.";
-	if (spell) { //if the requested spell exists
-		if (spell.spellClass.indexOf(requestedClass) === -1) { //if the requested class does not exist in the array of classes found in spells.js for requested spell
-			for (let i = 0; i < spell.spellClass.length; i++) {
-				if (spell.spellClass[i] !== spellClasses[i]) {
-					return spellClassChecker = false;
-				} else {
-					return spellClassChecker = true;
-				}
-			}
-			if (spellClassChecker === true) {
-				if (level) { //if the requested spell can be cast at the requested level
-					if (spell.slotLevel > level) { //if requested spell is a cantrip
-						output = "no, this is a cantrip.";
-					} else { //if requested spell is a spell using spell slots
-						output = "yes a " + requestedClass + " can cast " + requestedSpell + " using a " + requestedSpellLevel + " spell slot.";
+	;
+	if (spell) { // if the requested spell exists
+		if (spell.spellClass.indexOf(requestedClass) === -1) { // if the requested class does not exist in the array of classes found in spells.js for requested spell
+			output = "The class " + requestedClass + " cannot cast the spell " + requestedSpell + ".";
+		} else { // the requested class exists in the array of classes in spells.js for requested spell
+			for (let i in spell.spellClass) { // looks at each element in the array of able-classes for requested spell
+				if (spell.spellClass.hasOwnProperty(i)) { //makes sure that spell.spellClass array has at least 1 element in its array
+					if (level) { //if the requested spell can be cast at the requested level
+						if (spell.slotLevel === "0") { //if requested spell is a cantrip
+							output = "This spell is a cantrip, so the class " + requestedClass + " can cast the spell " + requestedSpell + " without the need of a spell slot.";
+						} else if (level > 9) { //if user provides a level above allowed spell slots
+							output = "A " + requestedClass + " can cast this spell. However, the level you provided is above the necessary spell slots.";
+						} else { //if requested spell is a spell using spell slots
+							if(level < spell.slotLevel){ //if the requested level is lower than the level needed to cast the spell
+								output = "Yes, a " + requestedClass + " is able to cast " + requestedSpell + ", but the provided level is too low of a spell slot to cast it.";
+							}else{
+								output = "Yes, a " + requestedClass + " can cast " + requestedSpell + " using a " + requestedSpellLevel + " level spell slot.";
+							}
+						}
+					} else { //if the user doesn't provide level
+						output = "I\'m sorry please provide a level for the spell you wish to know more information about.";
 					}
 				}
-			} else {
-				output = "The class " + requestedClass + " cannot cast the spell " + requestedSpell + ".";
 			}
 		}
-		// if (level) { //if the requested spell can be cast at the requested level
-		// 	if (spell.slotLevel > level) { //if requested spell is a cantrip
-		// 		output = "no, this is a cantrip.";
-		// 	} else { //if requested spell is a spell using spell slots
-		// 		output = "yes a "+requestedClass+" can cast "+requestedSpell+" using a "+requestedSpellLevel+" spell slot.";
-		// 	}
-		// }
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
 		output = exports.notFoundMessage(spell.name, requestedSpell);
 	}
@@ -278,8 +279,7 @@ exports.getSpellHeal = function (requestedSpell, requestedSpellLevel) {
 			if (heals > 9) {
 				output = "Healing spells can not be cast using spell slots above level 9.";
 			} else {
-				output = "At level " + requestedSpellLevel + " " + requestedSpell + " heals " + heals + " plus your spellcasting ability" +
-					" modifier.";
+				output = "At level " + requestedSpellLevel + " " + requestedSpell + " heals " + heals + " plus your spellcasting ability" + " modifier.";
 			}
 		}
 	} else if (requestedSpell) { //otherwise, the user asks for an unknown spell, or Alexa doesn't understand
