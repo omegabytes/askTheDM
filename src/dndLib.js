@@ -108,25 +108,23 @@ exports.getExhaustion = function (requestedExhaustionLevel) {
 exports.getEquipmentPack = function (requestedEquipmentPack) {
 	let output = "";
 	let equipmentPack = langEN.EQUIPMENT_PACKS[requestedEquipmentPack];
-	let packItems = equipmentPack.items;
+	//let packItems = equipmentPack.contents;
 	if (equipmentPack) { // if requested equipment pack exists
-		if (packItems) { //if the equipment pack has items
+		if (equipmentPack.contents) { //if the equipment pack has contents
 			output = "The contents of " + requestedEquipmentPack + " are ";
-			for (let i in packItems) {
-				if (packItems.hasOwnProperty(i)) {
-					let itemObj = packItems[i];
-					for (let x in itemObj) {
-						if (itemObj.hasOwnProperty(x)) {
-							output += (itemObj[x] + "\n");
+			for (let i in equipmentPack.contents) { //iterate through the requested equipment pack
+				if (equipmentPack.contents.hasOwnProperty(i)) {
+					let packItems = equipmentPack.contents[i];
+					for(let x in packItems){ //iterate through the contents of the requested equipment pack
+						if(packItems.hasOwnProperty(x)){
+							output = packItems.quantity + " " + packItems.name;
 						}
 					}
 				}
 			}
-		} else {
-			output = equipmentPack;
 		}
 	} else if (requestedEquipmentPack) {
-		output = exports.notFoundMessage(equipmentPack.name, requestedEquipmentPack);
+		output = exports.notFoundMessage(equipmentPack, requestedEquipmentPack);
 	} else {
 		output = langEN.UNHANDLED;
 	}
@@ -216,9 +214,9 @@ exports.getClassLevel = function (requestedSpell, requestedSpellLevel, requested
 						} else if (level > 9) { //if user provides a level above allowed spell slots
 							output = "A " + requestedClass + " can cast this spell. However, the level you provided is above the necessary spell slots.";
 						} else { //if requested spell is a spell using spell slots
-							if(level < spell.slotLevel){ //if the requested level is lower than the level needed to cast the spell
+							if (level < spell.slotLevel) { //if the requested level is lower than the level needed to cast the spell
 								output = "Yes, a " + requestedClass + " is able to cast " + requestedSpell + ", but the provided level is too low of a spell slot to cast it.";
-							}else{
+							} else {
 								output = "Yes, a " + requestedClass + " can cast " + requestedSpell + " using a " + requestedSpellLevel + " level spell slot.";
 							}
 						}
